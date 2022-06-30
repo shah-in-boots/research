@@ -17,9 +17,9 @@ __Topic__: stress and arrhythmogenesis
 __Scope__: translational to clinical   
 __Mechanism__: How does stress lead to arrhythmia at the population level, down to the cellular changes that precede and manifest as electrical disturbances?  
 
-# Clinical Focus
+## Clinical Focus
 
-# Translational Focus
+## Translational Focus
 
 Clinical: ECG-based risk assessment for stress, mortality, arrhythmia
 Basic
