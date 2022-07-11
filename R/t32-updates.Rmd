@@ -41,7 +41,7 @@ style_mono_light(
 )
 ```
 
-# .center[ Weekly Updates]
+# .center[Weekly Updates]
 
 ---
 
