@@ -1,0 +1,91 @@
+---
+title: "T32/F32: Research-In-Progress"
+author: "Anish Sanjay Shah, MD/MS<br><span style = 'font-size: 70%;'>Cardiology Fellow<br>University of Illinois at Chicago</span>"
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css"]
+    self_contained: false
+    nature:
+      titleSlideClass: [left, middle, inverse]
+      highlightLines: true
+---
+
+```{r setup, echo = FALSE, include = FALSE}
+library(tidyverse)
+
+print.tbl_df <- function(x, ...) {
+	print.data.frame(x, right = FALSE, ...)
+	invisible(x)
+}
+
+# Options
+options(digits = 2)
+```
+
+```{r themer, echo=FALSE, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_light(
+	base_color = "#374e55", # gray
+	colors = c(
+		emory = "#00a1d5", # blue
+		uic = "#df8f44", # orange
+		computer = "#79af97", # green
+		clinical = "#b24745", # red
+		purple = "#6a6599", # purple
+		brown = "80796b" # brown
+	),
+	footnote_position_bottom = "1px",
+	extra_css = list(
+		".remark-slide-number" = list("display" = "none")
+	)
+)
+```
+
+# .center[ Weekly Updates]
+
+---
+
+class: inverse, middle
+# July 11, 2022
+
+---
+class: inverse
+
+.pull-left[
+
+.emory[Mental Stress and Autonomic Reactivity] 
+- Result section being completed
+- Table and figures complete
+- _Share with coauthors_
+
+.emory[HRV and Coronary Vascular Tone]
+- Enrolling new patients with continuous ECG recordings 
+- Revisitng analyses
+
+.clinical[Endocarditis]
+- _Outlining_ review paper on arrhythmias and IE 
+- Pixel density being _analyzed_ for vegetation chronicity
+- IRB pending
+]
+
+.pull-right[
+.uic[AF Registry]
+- _Revising_ data dictionary
+- Obtaining EGM data from EP stations at UIC and JBVA
+
+.uic[Isoproterenol washout and membrane potentials]
+- Researching background data
+- Evaluating potential test models (animal versus cellular)
+
+.computer[Modeling software]
+- _Revising_ R package on model formulas and DAGs
+
+.computer[Circadian rhythms]
+- Algorithm for extracting rhythm patterns from continuous data
+- Cosinor analysis modification in R
+]
+
+.footnote[
+.emory[Stress Epidemiology], .uic[Arrhythmia Mechanisms], .computer[Biostatistics & Signal Processing], .clinical[Clinical]
+]
+
