@@ -12,6 +12,7 @@ output:
 
 ```{r setup, echo = FALSE, include = FALSE}
 library(tidyverse)
+library(gt)
 
 print.tbl_df <- function(x, ...) {
 	print.data.frame(x, right = FALSE, ...)
@@ -21,25 +22,74 @@ print.tbl_df <- function(x, ...) {
 # Options
 options(digits = 2)
 ```
+	
+```{r, knitr, include=FALSE}
+knitr::opts_chunk$set(
+   fig.retina = 3,
+   warning = FALSE,
+   message = FALSE,
+   echo = FALSE,
+   cache = TRUE
+)
+```
 
-```{r themer, echo=FALSE, include=FALSE, warning=FALSE}
+```{r themer, include=FALSE}
+library(scales)
+library(ggsci)
+
+# Golf scoring, lower is darker, higher is lighter
+stress <- pal_material("blue", reverse = TRUE)(9)
+arrhythmia <- pal_material("yellow", reverse = TRUE)(9)
+clinical <- pal_material("pink", reverse = TRUE)(9)
+computational <- pal_material("teal", reverse = TRUE)(9)
+text <- pal_material("blue-grey", reverse = TRUE)(9)
+
 library(xaringanthemer)
 style_mono_light(
-	base_color = "#374e55", # gray
+	base_color = text[1],
+	white_color = text[9],
 	colors = c(
-		emory = "#00a1d5", # blue
-		uic = "#df8f44", # orange
-		computer = "#79af97", # green
-		clinical = "#b24745", # red
-		purple = "#6a6599", # purple
-		brown = "80796b" # brown
+		stress = stress[5],
+		rhythm = arrhythmia[2],
+		clin = clinical[3],
+		comp = computational[4],
+		grey = text[5],
+		light = text[7]
 	),
 	footnote_position_bottom = "1px",
 	extra_css = list(
 		".remark-slide-number" = list("display" = "none")
 	)
 )
+
 ```
+
+```{r projects, echo=FALSE}
+st <- "stress"
+ar <- "arrhythmia"
+cl <- "clinical"
+co <- "computational"
+
+# Starting point, to be updated each week in teh weekly report
+updates <- tribble(
+	~Type, ~Project, ~Status, ~Effort,
+	st, "MS and CV Mortality", "draft to coauthors", .2,
+	ar, "AF Registry", "data validation started, revisit variables", .2,
+	cl, "PERT", "education and research IRB to submit", .05,
+	ar, "F32/T32", "reviewing autonomic literature at translational/basic science level", 0.2,
+	ar, "K23", "not yet started", 0,
+	cl, "Studying", "general cardiology and echo boards", 0.05,
+	cl, "UIC Clinic", "weekly clinic with Mary", 0.10,
+	cl, "Endocarditis and Pixel Density", "need to process images still", 0.05,
+	ar, "Endocarditis and Arrhythmias", "students working on outline", 0.01,
+	co, "Modeling Software", "writing code for generation of forest plots by subgroups {R}", 0.02,
+	co, "EGM Signal Processing", "practicing data extraction from UIC with OpenEP, need access to JBVA data exports still {MATLAB}", 0.05,
+	st, "HRV and CAD", "research team is currently enrolling on my behalf", 0.01,
+	cl, "EP Lab", "considering 1-2 cases per week", 0.10
+)
+
+```
+
 
 # .center[Weekly Updates]
 
@@ -53,39 +103,138 @@ class: inverse
 
 .pull-left[
 
-.emory[Mental Stress and Autonomic Reactivity] 
+.stress[Mental Stress and Autonomic Reactivity] 
 - Result section being completed
 - Table and figures complete
 - _Share with coauthors_
 
-.emory[HRV and Coronary Vascular Tone]
+.stress[HRV and Coronary Vascular Tone]
 - Enrolling new patients with continuous ECG recordings 
 - Revisitng analyses
 
-.clinical[Endocarditis]
+.clin[Endocarditis]
 - _Outlining_ review paper on arrhythmias and IE 
 - Pixel density being _analyzed_ for vegetation chronicity
 - IRB pending
 ]
 
 .pull-right[
-.uic[AF Registry]
+.rhythm[AF Registry]
 - _Revising_ data dictionary
 - Obtaining EGM data from EP stations at UIC and JBVA
 
-.uic[Isoproterenol washout and membrane potentials]
+.rhythm[Isoproterenol washout and membrane potentials]
 - Researching background data
 - Evaluating potential test models (animal versus cellular)
 
-.computer[Modeling software]
+.comp[Modeling software]
 - _Revising_ R package on model formulas and DAGs
 
-.computer[Circadian rhythms]
+.comp[Circadian rhythms]
 - Algorithm for extracting rhythm patterns from continuous data
 - Cosinor analysis modification in R
 ]
 
 .footnote[
-.emory[Stress Epidemiology], .uic[Arrhythmia Mechanisms], .computer[Biostatistics & Signal Processing], .clinical[Clinical]
+.stress[Stress Epidemiology], .rhythm[Arrhythmia Mechanisms], .clin[Clinical], .comp[Computational]
 ]
 
+
+---
+
+class: inverse, middle
+# July 18, 2022
+
+---
+class: inverse
+
+```{r}
+updates <-
+	updates |>
+	dplyr::arrange(desc(Effort)) 
+
+updates |>
+	gt(rowname_col = "Project") |>
+	tab_stubhead("Projects") |>
+	cols_hide("Type") |>
+	fmt_percent(columns = "Effort", decimals = 0) |>
+	tab_style(
+		style = cell_text(align = "left"),
+		locations = cells_stub()
+	) |>
+	cols_align(align = "right", columns = c("Effort")) |>
+	tab_style(
+		style = list(cell_fill(color = stress[5]),
+								 cell_borders(sides = "all", color = stress[5])),
+		locations = cells_stub(rows = Type == "stress")
+	) |>
+	tab_style(
+		style = list(cell_fill(color = arrhythmia[2]),
+								 cell_borders(sides = "all", color = arrhythmia[2])),
+		locations = cells_stub(rows = Type == "arrhythmia")
+	) |>
+	tab_style(
+		style = list(cell_fill(color = clinical[5]),
+								 cell_borders(sides = "all", color = clinical[5])),
+		locations = cells_stub(rows = Type == "clinical")
+	) |>
+	tab_style(
+		style = list(cell_fill(color = computational[5]),
+								 cell_borders(sides = "all", color = computational[5])),
+		locations = cells_stub(rows = Type == "computational")
+	) |>
+	tab_style(
+		style = list(cell_fill(color = text[1]), 
+								 cell_text(color = "white"),
+								 cell_borders(sides = "all", color = text[1])),
+		locations = list(cells_stubhead(), cells_column_labels())
+	) |>
+	tab_style(
+		style = list(cell_borders(sides = "left", 
+															color = text[1], 
+															weight = px(2))),
+		locations = list(cells_body(columns = c("Effort")),
+										 cells_stub())
+	) |>
+	tab_style(
+		style = list(cell_borders(sides = "all", 
+															color = text[1], 
+															weight = px(2))),
+		locations = list(cells_column_labels(columns = everything()),
+										 cells_stubhead())
+	) |>
+	tab_style(
+		style = cell_fill(color = text[9]),
+		locations = cells_body(columns = c("Status", "Effort"))
+	) |>
+	tab_style(
+		style = cell_borders(sides = "right", 
+												 color = text[9]),
+		locations = cells_body(columns = c("Effort"))
+	) |>
+	tab_style(
+		style = cell_text(color = "white"),
+		locations = list(cells_stub())
+	)
+	
+```
+
+.footnote[
+.stress[Stress Epidemiology], .rhythm[Arrhythmia Mechanisms], .clin[Clinical], .comp[Computational]
+]
+
+---
+
+## AF Registry
+
+The AF registry is described [here](https://asshah4.github.io/afib). Current issues:
+
+1. Data quality
+1. Missingness
+1. Variable selection
+1. Management
+1. Adjudication/review
+
+.footnote[
+.stress[Stress Epidemiology], .rhythm[Arrhythmia Mechanisms], .clin[Clinical], .comp[Computational]
+]

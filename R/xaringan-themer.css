@@ -43,29 +43,29 @@
   --header-h3-font-size: 1.75rem;
 
   /* Colors */
-  --text-color: #26363B;
-  --header-color: #374e55;
-  --background-color: #EBEDEE;
-  --link-color: #374e55;
-  --text-bold-color: #374e55;
+  --text-color: #1A2327;
+  --header-color: #263238FF;
+  --background-color: #CED8DCFF;
+  --link-color: #263238FF;
+  --text-bold-color: #263238FF;
   --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: #EBEDEE;
-  --inverse-background-color: #374e55;
-  --inverse-header-color: #EBEDEE;
-  --inverse-link-color: #374e55;
-  --title-slide-background-color: #374e55;
-  --title-slide-text-color: #EBEDEE;
-  --header-background-color: #374e55;
-  --header-background-text-color: #EBEDEE;
-  --base: #374e55;
-  --white: #EBEDEE;
-  --black: #26363B;
-  --emory: #00a1d5;
-  --uic: #df8f44;
-  --computer: #79af97;
-  --clinical: #b24745;
-  --purple: #6a6599;
-  --brown: 80796b;
+  --inverse-text-color: #CED8DCFF;
+  --inverse-background-color: #263238FF;
+  --inverse-header-color: #CED8DCFF;
+  --inverse-link-color: #263238FF;
+  --title-slide-background-color: #263238FF;
+  --title-slide-text-color: #CED8DCFF;
+  --header-background-color: #263238FF;
+  --header-background-text-color: #CED8DCFF;
+  --base: #263238FF;
+  --white: #CED8DCFF;
+  --black: #1A2327;
+  --stress: #2096F2FF;
+  --rhythm: #F8A725FF;
+  --clin: #C1185AFF;
+  --comp: #00887AFF;
+  --grey: #5F7D8BFF;
+  --light: #90A4ADFF;
 }
 
 html {
@@ -106,10 +106,10 @@ h1, h2, h3 {
 }
 .remark-inline-code {
   font-size: var(--code-inline-font-size);
-  color: #374e55;
+  color: #263238FF;
 }
 .remark-slide-number {
-  color: #374e55;
+  color: #263238FF;
   opacity: 1;
   font-size: 0.9rem;
 }
@@ -157,10 +157,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #374e5599;
+  color: #263238FF99;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #374e55;
+  color: #263238FF;
 }
 .right-column {
   width: 75%;
@@ -182,7 +182,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #374e5580;
+  border-left: solid 5px #263238FF80;
   padding-left: 1em;
 }
 .remark-slide table {
@@ -197,7 +197,7 @@ th, td {
   padding: 5px;
 }
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
-  background: #D7DBDD;
+  background: #D3D6D7;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -207,7 +207,7 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #D7DBDD;
+  background-color: #D3D6D7;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -295,41 +295,41 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 .bg-black {
   background-color: var(--black);
 }
-.emory {
-  color: var(--emory);
+.stress {
+  color: var(--stress);
 }
-.bg-emory {
-  background-color: var(--emory);
+.bg-stress {
+  background-color: var(--stress);
 }
-.uic {
-  color: var(--uic);
+.rhythm {
+  color: var(--rhythm);
 }
-.bg-uic {
-  background-color: var(--uic);
+.bg-rhythm {
+  background-color: var(--rhythm);
 }
-.computer {
-  color: var(--computer);
+.clin {
+  color: var(--clin);
 }
-.bg-computer {
-  background-color: var(--computer);
+.bg-clin {
+  background-color: var(--clin);
 }
-.clinical {
-  color: var(--clinical);
+.comp {
+  color: var(--comp);
 }
-.bg-clinical {
-  background-color: var(--clinical);
+.bg-comp {
+  background-color: var(--comp);
 }
-.purple {
-  color: var(--purple);
+.grey {
+  color: var(--grey);
 }
-.bg-purple {
-  background-color: var(--purple);
+.bg-grey {
+  background-color: var(--grey);
 }
-.brown {
-  color: var(--brown);
+.light {
+  color: var(--light);
 }
-.bg-brown {
-  background-color: var(--brown);
+.bg-light {
+  background-color: var(--light);
 }
 
 

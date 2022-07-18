@@ -1,5 +1,32 @@
 ---
-title: "Research"
+title: "Summary of Research Efforts"
 ---
 
-Research [updates](https://asshah4.github.io/research/R/t32-updates.html) will be made on a weekly basis.
+This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of `r format(Sys.Date(), "%A, %B %d, %Y")`. Please see here for weekly [updates](https://asshah4.github.io/research/R/t32-updates.html).
+
+The major research focuses are currently on:
+
+1. __Stress and Clinical Neurocardiology__: Physiological and psychological stress and cardiovascular mortality, from a neurocardiac perspective.
+1. __Stress and Arrhythmogenesis__: Mechanisms behind stress and arrhythmia generation (or degeneration) in a pre-clinical and clinical electrophysiology context.
+1. __Clinical Projects__: Work being done as a cardiology fellow at UIC/JBVA.
+
+# Stress and Clinical Neurocardiology
+
+- Effect of autonomic reactivity and resting vagal tone in cardiovascular mortality
+- Depression and dysregulation of the autonomic nervous system
+- Circadian variability in autonomic function and microvascular coronary disease
+
+# Stress and Arrhythmognesis
+
+Currently a work in progress as building a repertoire of pre-clinical literature.
+
+## Atrial Fibrillation Registry
+
+A catheter-ablation registry is being developed. The current status of the data acquisition process can be seen [here](https://asshah4.github.io/afib). No clinical data is available externally. 
+
+# Clinical Projects
+
+- Atrial fibrillation and efficacy of cardioversion
+- Pulmonary embolism management with a coordinated response team (PERT)
+- Endocarditis lesion characteristics in a gain-independent manner using pixel density changes
+- Arrhythmia and device management in setting of endocarditis
