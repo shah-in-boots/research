@@ -45,11 +45,14 @@ computational <- pal_material("teal", reverse = TRUE)(9)
 text <- pal_material("blue-grey", reverse = TRUE)(9)
 
 library(xaringanthemer)
-style_mono_light(
+style_mono_accent(
 	base_color = text[1],
-	white_color = text[9],
+	black_color = text[1],
+	white_color = "white",
+	link_color = computational[4],
+	inverse_link_color = computational[4],
 	colors = c(
-		stress = stress[5],
+		stress = stress[4],
 		rhythm = arrhythmia[2],
 		clin = clinical[3],
 		comp = computational[4],
@@ -146,7 +149,7 @@ class: inverse, middle
 # July 18, 2022
 
 ---
-class: inverse
+class: inverse, center
 
 ```{r}
 updates <-
@@ -158,6 +161,7 @@ updates |>
 	tab_stubhead("Projects") |>
 	cols_hide("Type") |>
 	fmt_percent(columns = "Effort", decimals = 0) |>
+	# Fill all borders to match background
 	tab_style(
 		style = cell_text(align = "left"),
 		locations = cells_stub()
@@ -190,11 +194,17 @@ updates |>
 		locations = list(cells_stubhead(), cells_column_labels())
 	) |>
 	tab_style(
-		style = list(cell_borders(sides = "left", 
+		style = cell_borders(sides = "left", 
 															color = text[1], 
-															weight = px(2))),
-		locations = list(cells_body(columns = c("Effort")),
-										 cells_stub())
+															weight = px(2)),
+		locations = cells_body(columns = c("Effort"))
+	) |>
+	tab_style(
+		style = cell_borders(sides = "bottom", 
+															color = text[1], 
+															weight = px(2)),
+		locations = list(cells_column_labels(columns = everything()),
+										 cells_stubhead())
 	) |>
 	tab_style(
 		style = list(cell_borders(sides = "all", 
@@ -204,17 +214,8 @@ updates |>
 										 cells_stubhead())
 	) |>
 	tab_style(
-		style = cell_fill(color = text[9]),
-		locations = cells_body(columns = c("Status", "Effort"))
-	) |>
-	tab_style(
-		style = cell_borders(sides = "right", 
-												 color = text[9]),
-		locations = cells_body(columns = c("Effort"))
-	) |>
-	tab_style(
-		style = cell_text(color = "white"),
-		locations = list(cells_stub())
+		style = cell_fill(color = "white"),
+		locations = cells_body(columns = everything())
 	)
 	
 ```
@@ -229,11 +230,11 @@ updates |>
 
 The AF registry is described [here](https://asshah4.github.io/afib). Current issues:
 
-1. Data quality
-1. Missingness
-1. Variable selection
-1. Management
-1. Adjudication/review
+1. Data quality - consistency between reviewers
+1. Missingness - decisions on acceptable thresholds
+1. Variable selection - echo findings, EP studies, medications, labs, symptoms
+1. Management - REDCap, shared excel sheet
+1. Adjudication/review - outcomes, clinical follow-up length
 
 .footnote[
 .stress[Stress Epidemiology], .rhythm[Arrhythmia Mechanisms], .clin[Clinical], .comp[Computational]

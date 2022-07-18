@@ -43,24 +43,24 @@
   --header-h3-font-size: 1.75rem;
 
   /* Colors */
-  --text-color: #1A2327;
+  --text-color: #263238FF;
   --header-color: #263238FF;
-  --background-color: #CED8DCFF;
-  --link-color: #263238FF;
+  --background-color: white;
+  --link-color: #00887AFF;
   --text-bold-color: #263238FF;
   --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: #CED8DCFF;
+  --inverse-text-color: white;
   --inverse-background-color: #263238FF;
-  --inverse-header-color: #CED8DCFF;
-  --inverse-link-color: #263238FF;
+  --inverse-header-color: white;
+  --inverse-link-color: #00887AFF;
   --title-slide-background-color: #263238FF;
-  --title-slide-text-color: #CED8DCFF;
+  --title-slide-text-color: white;
   --header-background-color: #263238FF;
-  --header-background-text-color: #CED8DCFF;
+  --header-background-text-color: white;
   --base: #263238FF;
-  --white: #CED8DCFF;
-  --black: #1A2327;
-  --stress: #2096F2FF;
+  --white: white;
+  --black: #263238FF;
+  --stress: #1E87E5FF;
   --rhythm: #F8A725FF;
   --clin: #C1185AFF;
   --comp: #00887AFF;
