@@ -3,13 +3,17 @@ title: "T32/F32: Research-In-Progress"
 author: "Anish Sanjay Shah, MD/MS<br><span style = 'font-size: 70%;'>Cardiology Fellow<br>University of Illinois at Chicago</span>"
 output:
   xaringan::moon_reader:
-    css: ["xaringan-themer.css"]
-    self_contained: true
-    anchor_sections: true
+    css: ["xaringan-themer.css", "custom.css"]
+    self_contained: false
     nature:
       titleSlideClass: [left, middle, inverse]
       highlightLines: true
 ---
+
+<style type="text/css">
+.remark-code {font-size: 50%}
+.remark-inline-code {font-size: 70%}
+</style>
 
 ```{r setup, echo = FALSE, include = FALSE}
 library(tidyverse)
@@ -29,7 +33,7 @@ knitr::opts_chunk$set(
    warning = FALSE,
    message = FALSE,
    echo = FALSE,
-   cache = TRUE
+   cache = FALSE
 )
 ```
 
@@ -76,31 +80,29 @@ co <- "computational"
 # Starting point, to be updated each week in teh weekly report
 updates <- tribble(
 	~Type, ~Project, ~Status, ~Effort,
-	st, "MS and CV Mortality", "draft to coauthors", .2,
-	ar, "AF Registry", "data validation started, revisit variables", .2,
-	cl, "PERT", "education and research IRB to submit", .05,
-	ar, "F32/T32/K23", "reviewing autonomic literature at translational/basic science level", 0.2,
-	cl, "Studying", "general cardiology and echo boards", 0.05,
-	cl, "UIC Clinic", "weekly clinic with Mary", 0.10,
-	cl, "Endocarditis and Pixel Density", "need to process images still", 0.05,
-	ar, "Endocarditis and Arrhythmias", "students working on outline", 0.01,
-	co, "Modeling Software", "writing code for generation of forest plots by subgroups {R}", 0.02,
-	co, "EGM Signal Processing", "practicing data extraction from UIC with OpenEP, need access to JBVA data exports still {MATLAB}", 0.05,
-	st, "HRV and CAD", "research team is currently enrolling on my behalf", 0.01,
-	cl, "EP Lab", "considering 1-2 cases per week", 0.10
+	st, "MS and CV Mortality", NA_character_, 0,
+	ar, "AF Registry", NA_character_, 0,
+	cl, "PERT", NA_character_, 0,
+	ar, "F32/T32/K23", NA_character_, 0, 
+	cl, "Studying", NA_character_, 0,
+	cl, "UIC Clinic", NA_character_, 0, 
+	cl, "Endocarditis and Pixel Density", NA_character_, 0,
+	ar, "Endocarditis and Arrhythmias", NA_character_, 0,
+	co, "Modeling Software", NA_character_, 0,
+	co, "EGM Signal Processing", NA_character_, 0,
+	st, "HRV and CAD", NA_character_, 0,
+	cl, "EP Lab", NA_character_, 0
 )
 
-```
-
-```{r gt, echo=FALSE}
-library(gt)
-
 # Thematic changes and management of columns and styles
+library(gt)
 tbl_research_updates <- function(data) {
 	gt(data, rowname_col = "Project") |>
 		tab_stubhead("Projects") |>
 		cols_hide("Type") |>
 		fmt_percent(columns = "Effort", decimals = 0) |>
+		opt_table_lines(extent = "none") |>
+		opt_row_striping(row_striping = FALSE) |>
 		# Fill all borders to match background
 		tab_style(
 			style = cell_text(align = "left"),
@@ -164,7 +166,9 @@ tbl_research_updates <- function(data) {
 			Effort ~ pct(10)
 		) |>
 		tab_style(style = cell_text(size = "x-small"),
-							locations = "Status")
+							locations = cells_body(
+								columns = Status
+							))
 }
 ```
 
@@ -174,6 +178,7 @@ tbl_research_updates <- function(data) {
 .pull-left[
 - [July 11, 2022](#july-11-22)
 - [July 18, 2022](#july-18-22)
+- [July 25, 2022](#july-18-22)
 ]
 
 ---
@@ -232,7 +237,50 @@ class: inverse, center
 ```{r}
 updates <-
 	updates |>
-	dplyr::arrange(desc(Effort)) 
+	mutate(Status = case_when(
+		Project == "MS and CV Mortality" ~ 
+			"Team = Amit Shah (*Emory*)  
+			Draft to co-authors",
+		Project == "AF Registry" ~ 
+			"Data validation started, revisit variables",
+		Project == "PERT" ~ 
+			"Education and research IRB",
+		Project == "F32/T32/K23" ~ 
+			"Reviewing autonomic literature at translational/basic science level",
+		Project == "Studying" ~ 
+			"General cardiology/echo boards in **Fall 2023",
+		Project == "UIC Clinic" ~ 
+			"Weekly clinic with Mary",
+		Project == "Endocarditis and Pixel Density" ~ 
+			"Processing images pending",
+		Project == "Endocarditis and Arrhythmias" ~ 
+			"Outlining with student",
+		Project == "Modeling Software" ~ 
+			"Writing code for forest plots in {R}",
+		Project == "EGM Signal Processing" ~ 
+			"Practicing data extraction at UIC, but still need JBVA access {MATLAB}",
+		Project == "HRV and CAD" ~ 
+			"Emory Biobank continually recruiting",
+		Project == "EP Lab" ~ 
+			"Considering 1 to 2 cases this week",
+		TRUE ~ Status
+	)) |>
+	mutate(Effort = case_when(
+		Project == "MS and CV Mortality" ~ 0.2,
+		Project == "AF Registry" ~ 0.2,
+		Project == "PERT" ~ 0.05,
+		Project == "F32/T32/K23" ~ 0.2,
+		Project == "Studying" ~ 0.05,
+		Project == "UIC Clinic" ~ 0.1,
+		Project == "Endocarditis and Pixel Density" ~ 0.05,
+		Project == "Endocarditis and Arrhythmias" ~ 0.02,
+		Project == "Modeling Software" ~ 0.05,
+		Project == "EGM Signal Processing" ~ 0.05,
+		Project == "HRV and CAD" ~ 0.01,
+		Project == "EP Lab" ~ 0.1,
+		TRUE ~ Effort
+	)) |>
+	arrange(desc(Effort))
 
 tbl_research_updates(updates)
 ```
@@ -243,7 +291,7 @@ tbl_research_updates(updates)
 
 ---
 
-## AF Registry
+### AF Registry
 
 The AF registry is described [here](https://asshah4.github.io/afib). Current issues:
 
@@ -328,39 +376,59 @@ tbl_research_updates(updates)
 
 ---
 
-## Forest Plots
+### Forest Plots
 
 .pull-left[
-```{r}
+```{r, echo = TRUE}
+# Forest Plots
 library(volundr)
-x <- rx(Petal.Length ~ X(Sepal.Length) + Petal.Width + S(Species),
-				label = list(Petal.Length ~ "Length of Petals",
-										 Species ~ "Genus of the Flower"),
-				pattern = "direct")
-f <- fmls(x, order = 2) 
-m <- 
-	fit(f, .fit = lm, data = iris, archetype = TRUE) |>
+m <- rx(
+	Petal.Length ~ X(Sepal.Length) + Petal.Width + S(Species),
+	label = list(
+		Petal.Length ~ "Length of Petals", 
+		Species ~ "Genus of the Flower"
+	),
+	pattern = "direct"
+	) |>
+	fmls(order = 2) |>
+	fit(.fit = lm,
+			data = iris,
+			archetype = TRUE) |>
 	mdls()
-
-tbl <- tbl_forest(
-	object = m,
-	y = "Petal.Length",
-	x = "Sepal.Length",
-	groups = "Species",
-	columns = list(beta ~ "Beta Estimate",
-								 conf ~ "95% Confidence Interval",
-								 n ~ "No."),
-	axis = list(lim ~ c(0, 3),
-							breaks ~ c(0, 1, 2),
-							lab ~ "ß (95% CI)",
-							title ~ "Association of Petal Length with Sepal Length")
-)
 ```
 ]
 
 .pull-right[
-```{r, echo = FALSE}
-tbl
+```{r, echo = TRUE}
+tbl <- tbl_forest( #<<
+	object = m,
+	y = "Petal.Length",
+	x = "Sepal.Length",
+	groups = "Species",
+	columns = list(
+		beta ~ "Estimate",
+		conf ~ "95% Confidence Interval",
+		n ~ "Number of Samples"
+	),
+	axis = list(
+		lim ~ c(0, 3),
+		breaks ~ c(0, 1, 2),
+		lab ~ "ß (95% CI)",
+		title ~ "Petal Length by Sepal Length"
+	)
+)
 ```
 ]
+
+A simple way to make sub-group analysis Forest plots, working on improving customization.
+
+---
+
+class: middle
+```{r, echo = FALSE}
+tbl |>
+	tab_style(style = cell_fill(color = "white"),
+						locations = cells_body(columns = everything()))
+```
+
 
