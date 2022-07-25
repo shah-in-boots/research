@@ -4,7 +4,8 @@ author: "Anish Sanjay Shah, MD/MS<br><span style = 'font-size: 70%;'>Cardiology 
 output:
   xaringan::moon_reader:
     css: ["xaringan-themer.css"]
-    self_contained: false
+    self_contained: true
+    anchor_sections: true
     nature:
       titleSlideClass: [left, middle, inverse]
       highlightLines: true
@@ -12,7 +13,6 @@ output:
 
 ```{r setup, echo = FALSE, include = FALSE}
 library(tidyverse)
-library(gt)
 
 print.tbl_df <- function(x, ...) {
 	print.data.frame(x, right = FALSE, ...)
@@ -79,8 +79,7 @@ updates <- tribble(
 	st, "MS and CV Mortality", "draft to coauthors", .2,
 	ar, "AF Registry", "data validation started, revisit variables", .2,
 	cl, "PERT", "education and research IRB to submit", .05,
-	ar, "F32/T32", "reviewing autonomic literature at translational/basic science level", 0.2,
-	ar, "K23", "not yet started", 0,
+	ar, "F32/T32/K23", "reviewing autonomic literature at translational/basic science level", 0.2,
 	cl, "Studying", "general cardiology and echo boards", 0.05,
 	cl, "UIC Clinic", "weekly clinic with Mary", 0.10,
 	cl, "Endocarditis and Pixel Density", "need to process images still", 0.05,
@@ -93,11 +92,91 @@ updates <- tribble(
 
 ```
 
+```{r gt, echo=FALSE}
+library(gt)
+
+# Thematic changes and management of columns and styles
+tbl_research_updates <- function(data) {
+	gt(data, rowname_col = "Project") |>
+		tab_stubhead("Projects") |>
+		cols_hide("Type") |>
+		fmt_percent(columns = "Effort", decimals = 0) |>
+		# Fill all borders to match background
+		tab_style(
+			style = cell_text(align = "left"),
+			locations = cells_stub()
+		) |>
+		cols_align(align = "right", columns = c("Effort")) |>
+		tab_style(
+			style = list(cell_fill(color = stress[5]),
+									 cell_borders(sides = "all", color = stress[5])),
+			locations = cells_stub(rows = Type == "stress")
+		) |>
+		tab_style(
+			style = list(cell_fill(color = arrhythmia[2]),
+									 cell_borders(sides = "all", color = arrhythmia[2])),
+			locations = cells_stub(rows = Type == "arrhythmia")
+		) |>
+		tab_style(
+			style = list(cell_fill(color = clinical[5]),
+									 cell_borders(sides = "all", color = clinical[5])),
+			locations = cells_stub(rows = Type == "clinical")
+		) |>
+		tab_style(
+			style = list(cell_fill(color = computational[5]),
+									 cell_borders(sides = "all", color = computational[5])),
+			locations = cells_stub(rows = Type == "computational")
+		) |>
+		tab_style(
+			style = list(cell_fill(color = text[1]), 
+									 cell_text(color = "white"),
+									 cell_borders(sides = "all", color = text[1])),
+			locations = list(cells_stubhead(), cells_column_labels())
+		) |>
+		tab_style(
+			style = cell_borders(sides = "left", 
+																color = text[1], 
+																weight = px(2)),
+			locations = cells_body(columns = c("Effort"))
+		) |>
+		tab_style(
+			style = cell_borders(sides = "bottom", 
+																color = text[1], 
+																weight = px(2)),
+			locations = list(cells_column_labels(columns = everything()),
+											 cells_stubhead())
+		) |>
+		tab_style(
+			style = list(cell_borders(sides = "all", 
+																color = text[1], 
+																weight = px(2))),
+			locations = list(cells_column_labels(columns = everything()),
+											 cells_stubhead())
+		) |>
+		tab_style(
+			style = cell_fill(color = "white"),
+			locations = cells_body(columns = everything())
+		) |> 
+		fmt_markdown(columns = everything()) |>
+		cols_width(
+			Project ~ pct(20),
+			Status ~ pct(70),
+			Effort ~ pct(10)
+		) |>
+		tab_style(style = cell_text(size = "x-small"),
+							locations = "Status")
+}
+```
+
 
 # .center[Weekly Updates]
 
----
+.pull-left[
+- [July 11, 2022](#july-11-22)
+- [July 18, 2022](#july-18-22)
+]
 
+---
 class: inverse, middle
 # July 11, 2022
 
@@ -144,7 +223,6 @@ class: inverse
 
 
 ---
-
 class: inverse, middle
 # July 18, 2022
 
@@ -156,68 +234,7 @@ updates <-
 	updates |>
 	dplyr::arrange(desc(Effort)) 
 
-updates |>
-	gt(rowname_col = "Project") |>
-	tab_stubhead("Projects") |>
-	cols_hide("Type") |>
-	fmt_percent(columns = "Effort", decimals = 0) |>
-	# Fill all borders to match background
-	tab_style(
-		style = cell_text(align = "left"),
-		locations = cells_stub()
-	) |>
-	cols_align(align = "right", columns = c("Effort")) |>
-	tab_style(
-		style = list(cell_fill(color = stress[5]),
-								 cell_borders(sides = "all", color = stress[5])),
-		locations = cells_stub(rows = Type == "stress")
-	) |>
-	tab_style(
-		style = list(cell_fill(color = arrhythmia[2]),
-								 cell_borders(sides = "all", color = arrhythmia[2])),
-		locations = cells_stub(rows = Type == "arrhythmia")
-	) |>
-	tab_style(
-		style = list(cell_fill(color = clinical[5]),
-								 cell_borders(sides = "all", color = clinical[5])),
-		locations = cells_stub(rows = Type == "clinical")
-	) |>
-	tab_style(
-		style = list(cell_fill(color = computational[5]),
-								 cell_borders(sides = "all", color = computational[5])),
-		locations = cells_stub(rows = Type == "computational")
-	) |>
-	tab_style(
-		style = list(cell_fill(color = text[1]), 
-								 cell_text(color = "white"),
-								 cell_borders(sides = "all", color = text[1])),
-		locations = list(cells_stubhead(), cells_column_labels())
-	) |>
-	tab_style(
-		style = cell_borders(sides = "left", 
-															color = text[1], 
-															weight = px(2)),
-		locations = cells_body(columns = c("Effort"))
-	) |>
-	tab_style(
-		style = cell_borders(sides = "bottom", 
-															color = text[1], 
-															weight = px(2)),
-		locations = list(cells_column_labels(columns = everything()),
-										 cells_stubhead())
-	) |>
-	tab_style(
-		style = list(cell_borders(sides = "all", 
-															color = text[1], 
-															weight = px(2))),
-		locations = list(cells_column_labels(columns = everything()),
-										 cells_stubhead())
-	) |>
-	tab_style(
-		style = cell_fill(color = "white"),
-		locations = cells_body(columns = everything())
-	)
-	
+tbl_research_updates(updates)
 ```
 
 .footnote[
@@ -239,3 +256,111 @@ The AF registry is described [here](https://asshah4.github.io/afib). Current iss
 .footnote[
 .stress[Stress Epidemiology], .rhythm[Arrhythmia Mechanisms], .clin[Clinical], .comp[Computational]
 ]
+
+---
+class: inverse, middle
+# July 25, 2022
+
+---
+class: inverse, center
+
+```{r}
+updates <-
+	updates |>
+	mutate(Status = case_when(
+		Project == "MS and CV Mortality" ~ 
+			"Team = Amit Shah (*Emory*)  
+			Final figures of mortality by subgroups **7/25**  
+			Revise discussion on vagal withdrawal **6/26**",
+		Project == "AF Registry" ~ 
+			"Decide on retrospective/prospective cohort definitions **TBD**",
+		Project == "PERT" ~ 
+			"Submit IRB for education and clinical data **7/28**",
+		Project == "F32/T32/K23" ~ 
+			"Aim 1 = Human vagolysis and SCD  
+			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
+			Active research into model development **daily**",
+		Project == "Studying" ~ 
+			"General cardiology/echo boards in **Fall 2023",
+		Project == "UIC Clinic" ~ 
+			"Weekly clinic with Dr. Ziccardi",
+		Project == "Endocarditis and Pixel Density" ~ 
+			"Team = Lee Frazin, Satish Mishra, David Polman
+			Revise still images to create standard for processing and SOP **7/30**",
+		Project == "Endocarditis and Arrhythmias" ~ 
+			"Meet with Atreya Mishra to complete outline **07/28**",
+		Project == "Modeling Software" ~ 
+			"Forest plots by subgroups in {R}, **drafted**",
+		Project == "EGM Signal Processing" ~ 
+			"Convert CARTO data into OpenEP **7/31**",
+		Project == "HRV and CAD" ~ 
+			"Emory Biobank continually recruiting  
+			Meet with staff to assess data quality **TBD**",
+		Project == "EP Lab" ~ 
+			"Discuss with Adam which cases to cover this week  ",
+		TRUE ~ Status
+	)) |>
+	mutate(Effort = case_when(
+		Project == "MS and CV Mortality" ~ 0.2,
+		Project == "AF Registry" ~ 0.1,
+		Project == "PERT" ~ 0.1,
+		Project == "F32/T32/K23" ~ 0.2,
+		Project == "Studying" ~ 0.03,
+		Project == "UIC Clinic" ~ 0.1,
+		Project == "Endocarditis and Pixel Density" ~ 0.1,
+		Project == "Endocarditis and Arrhythmias" ~ 0.02,
+		Project == "Modeling Software" ~ 0.05,
+		Project == "EGM Signal Processing" ~ 0.05,
+		Project == "HRV and CAD" ~ 0.01,
+		Project == "EP Lab" ~ 0.1,
+		TRUE ~ Effort
+	)) |>
+	arrange(desc(Effort))
+	
+tbl_research_updates(updates)
+
+```
+
+
+.footnote[
+.stress[Stress Epidemiology], .rhythm[Arrhythmia Mechanisms], .clin[Clinical], .comp[Computational]
+]
+
+---
+
+## Forest Plots
+
+.pull-left[
+```{r}
+library(volundr)
+x <- rx(Petal.Length ~ X(Sepal.Length) + Petal.Width + S(Species),
+				label = list(Petal.Length ~ "Length of Petals",
+										 Species ~ "Genus of the Flower"),
+				pattern = "direct")
+f <- fmls(x, order = 2) 
+m <- 
+	fit(f, .fit = lm, data = iris, archetype = TRUE) |>
+	mdls()
+
+tbl <- tbl_forest(
+	object = m,
+	y = "Petal.Length",
+	x = "Sepal.Length",
+	groups = "Species",
+	columns = list(beta ~ "Beta Estimate",
+								 conf ~ "95% Confidence Interval",
+								 n ~ "No."),
+	axis = list(lim ~ c(0, 3),
+							breaks ~ c(0, 1, 2),
+							lab ~ "ß (95% CI)",
+							title ~ "Association of Petal Length with Sepal Length")
+)
+```
+]
+
+.pull-right[
+```{r, echo = FALSE}
+tbl
+```
+]
+
