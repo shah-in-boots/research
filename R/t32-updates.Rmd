@@ -72,26 +72,43 @@ style_mono_accent(
 ```
 
 ```{r projects, echo=FALSE}
+# Topic areas
 st <- "stress"
 ar <- "arrhythmia"
 cl <- "clinical"
 co <- "computational"
 
+# Projects
+p <- list(
+	mental_stress = "MS and CV Mortality",
+	af_registry = "AF Registry",
+	pert = "PERT",
+	grants = "F32/T32/K23",
+	study = "Studying",
+	clinic = "UIC Clinic",
+	pixel = "Endocarditis and Pixel Density",
+	endocarditis = "Endocarditis and Arrhythmias",
+	modeling = "Modeling Software",
+	signals = "Signal Processing",
+	biobank = "HRV and CAD",
+	eps = "EP Lab"
+)
+
 # Starting point, to be updated each week in teh weekly report
 updates <- tribble(
-	~Type, ~Project, ~Status, ~Effort,
-	st, "MS and CV Mortality", NA_character_, 0,
-	ar, "AF Registry", NA_character_, 0,
-	cl, "PERT", NA_character_, 0,
-	ar, "F32/T32/K23", NA_character_, 0, 
-	cl, "Studying", NA_character_, 0,
-	cl, "UIC Clinic", NA_character_, 0, 
-	cl, "Endocarditis and Pixel Density", NA_character_, 0,
-	ar, "Endocarditis and Arrhythmias", NA_character_, 0,
-	co, "Modeling Software", NA_character_, 0,
-	co, "EGM Signal Processing", NA_character_, 0,
-	st, "HRV and CAD", NA_character_, 0,
-	cl, "EP Lab", NA_character_, 0
+	~Type, ~Project, ~Status, ~Product, ~Effort,
+	st, p$mental_stress, NA_character_, NA_character_, 0,
+	ar, p$af_registry, NA_character_, NA_character_, 0,
+	cl, p$pert, NA_character_, NA_character_, 0,
+	ar, p$grants, NA_character_, NA_character_, 0, 
+	cl, p$study, NA_character_, NA_character_, 0,
+	cl, p$clinic, NA_character_, NA_character_, 0, 
+	cl, p$pixel, NA_character_, NA_character_, 0,
+	ar, p$endocarditis, NA_character_, NA_character_, 0,
+	co, p$modeling, NA_character_, NA_character_, 0,
+	co, p$signals, NA_character_, NA_character_, 0,
+	st, p$biobank, NA_character_, NA_character_, 0,
+	cl, p$eps, NA_character_, NA_character_, 0
 )
 
 # Thematic changes and management of columns and styles
@@ -103,6 +120,7 @@ tbl_research_updates <- function(data) {
 		fmt_percent(columns = "Effort", decimals = 0) |>
 		opt_table_lines(extent = "none") |>
 		opt_row_striping(row_striping = FALSE) |>
+		tab_options(data_row.padding = px(2)) |>
 		# Fill all borders to match background
 		tab_style(
 			style = cell_text(align = "left"),
@@ -142,6 +160,12 @@ tbl_research_updates <- function(data) {
 			locations = cells_body(columns = c("Effort"))
 		) |>
 		tab_style(
+			style = cell_borders(sides = "left", 
+																color = text[1], 
+																weight = px(2)),
+			locations = cells_body(columns = c("Product"))
+		) |>
+		tab_style(
 			style = cell_borders(sides = "bottom", 
 																color = text[1], 
 																weight = px(2)),
@@ -159,16 +183,27 @@ tbl_research_updates <- function(data) {
 			style = cell_fill(color = "white"),
 			locations = cells_body(columns = everything())
 		) |> 
+		tab_style(
+			style = cell_text(color = "white"),
+			locations = cells_body(columns = Product,
+														 rows = is.na(Product))
+		) |>
 		fmt_markdown(columns = everything()) |>
 		cols_width(
 			Project ~ pct(20),
-			Status ~ pct(70),
-			Effort ~ pct(10)
+			Status ~ pct(60),
+			Product ~ pct(15),
+			Effort ~ pct(5)
 		) |>
 		tab_style(style = cell_text(size = "x-small"),
 							locations = cells_body(
-								columns = Status
-							))
+								columns = c(Status, Product)) 
+		) |>
+		tab_style(style = cell_text(size = "x-small"),
+							locations = list(cells_body(columns = everything(),
+																					rows = Effort < 0.05),
+															 cells_stub(rows = Effort < 0.05))
+		)
 }
 ```
 
@@ -178,7 +213,7 @@ tbl_research_updates <- function(data) {
 .pull-left[
 - [July 11, 2022](#july-11-22)
 - [July 18, 2022](#july-18-22)
-- [July 25, 2022](#july-18-22)
+- [July 25, 2022](#july-25-22)
 ]
 
 ---
@@ -238,46 +273,46 @@ class: inverse, center
 updates <-
 	updates |>
 	mutate(Status = case_when(
-		Project == "MS and CV Mortality" ~ 
+		Project == p$mental_stress ~
 			"Team = Amit Shah (*Emory*)  
 			Draft to co-authors",
-		Project == "AF Registry" ~ 
+		Project == p$af_registry ~
 			"Data validation started, revisit variables",
-		Project == "PERT" ~ 
+		Project == p$pert ~ 
 			"Education and research IRB",
-		Project == "F32/T32/K23" ~ 
+		Project == p$grants ~ 
 			"Reviewing autonomic literature at translational/basic science level",
-		Project == "Studying" ~ 
+		Project == p$study ~
 			"General cardiology/echo boards in **Fall 2023",
-		Project == "UIC Clinic" ~ 
+		Project == p$clinic ~ 
 			"Weekly clinic with Mary",
-		Project == "Endocarditis and Pixel Density" ~ 
+		Project == p$pixel ~
 			"Processing images pending",
-		Project == "Endocarditis and Arrhythmias" ~ 
+		Project == p$endocarditis ~
 			"Outlining with student",
-		Project == "Modeling Software" ~ 
+		Project == p$modeling ~
 			"Writing code for forest plots in {R}",
-		Project == "EGM Signal Processing" ~ 
+		Project == p$signals ~
 			"Practicing data extraction at UIC, but still need JBVA access {MATLAB}",
-		Project == "HRV and CAD" ~ 
+		Project == p$biobank ~
 			"Emory Biobank continually recruiting",
-		Project == "EP Lab" ~ 
+		Project == p$eps ~
 			"Considering 1 to 2 cases this week",
 		TRUE ~ Status
 	)) |>
 	mutate(Effort = case_when(
-		Project == "MS and CV Mortality" ~ 0.2,
-		Project == "AF Registry" ~ 0.2,
-		Project == "PERT" ~ 0.05,
-		Project == "F32/T32/K23" ~ 0.2,
-		Project == "Studying" ~ 0.05,
-		Project == "UIC Clinic" ~ 0.1,
-		Project == "Endocarditis and Pixel Density" ~ 0.05,
-		Project == "Endocarditis and Arrhythmias" ~ 0.02,
-		Project == "Modeling Software" ~ 0.05,
-		Project == "EGM Signal Processing" ~ 0.05,
-		Project == "HRV and CAD" ~ 0.01,
-		Project == "EP Lab" ~ 0.1,
+		Project == p$mental_stress ~ 0.2,
+		Project == p$af_registry ~ 0.2, 
+		Project == p$pert ~ 0.05,
+		Project == p$grants ~ 0.2, 
+		Project == p$study ~ 0.05,
+		Project == p$clinic ~ 0.1, 
+		Project == p$pixel ~ 0.05,
+		Project == p$endocarditis ~ 0.02,
+		Project == p$modeling ~ 0.05, 
+		Project == p$signals ~ 0.05, 
+		Project == p$biobank ~ 0.01,
+		Project == p$eps ~ 0.1,
 		TRUE ~ Effort
 	)) |>
 	arrange(desc(Effort))
@@ -316,51 +351,51 @@ class: inverse, center
 updates <-
 	updates |>
 	mutate(Status = case_when(
-		Project == "MS and CV Mortality" ~ 
+		Project == p$mental_stress ~
 			"Team = Amit Shah (*Emory*)  
 			Final figures of mortality by subgroups **7/25**  
 			Revise discussion on vagal withdrawal **6/26**",
-		Project == "AF Registry" ~ 
+		Project == p$af_registry ~
 			"Decide on retrospective/prospective cohort definitions **TBD**",
-		Project == "PERT" ~ 
+		Project == p$pert ~ 
 			"Submit IRB for education and clinical data **7/28**",
-		Project == "F32/T32/K23" ~ 
+		Project == p$grants ~ 
 			"Aim 1 = Human vagolysis and SCD  
 			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
 			Active research into model development **daily**",
-		Project == "Studying" ~ 
+		Project == p$study ~
 			"General cardiology/echo boards in **Fall 2023",
-		Project == "UIC Clinic" ~ 
+		Project == p$clinic ~ 
 			"Weekly clinic with Dr. Ziccardi",
-		Project == "Endocarditis and Pixel Density" ~ 
+		Project == p$pixel ~
 			"Team = Lee Frazin, Satish Mishra, David Polman
 			Revise still images to create standard for processing and SOP **7/30**",
-		Project == "Endocarditis and Arrhythmias" ~ 
+		Project == p$endocarditis ~
 			"Meet with Atreya Mishra to complete outline **07/28**",
-		Project == "Modeling Software" ~ 
+		Project == p$modeling ~
 			"Forest plots by subgroups in {R}, **drafted**",
-		Project == "EGM Signal Processing" ~ 
+		Project == p$signals ~
 			"Convert CARTO data into OpenEP **7/31**",
-		Project == "HRV and CAD" ~ 
+		Project == p$biobank ~
 			"Emory Biobank continually recruiting  
 			Meet with staff to assess data quality **TBD**",
-		Project == "EP Lab" ~ 
+		Project == p$eps ~
 			"Discuss with Adam which cases to cover this week  ",
 		TRUE ~ Status
 	)) |>
 	mutate(Effort = case_when(
-		Project == "MS and CV Mortality" ~ 0.2,
-		Project == "AF Registry" ~ 0.1,
-		Project == "PERT" ~ 0.1,
-		Project == "F32/T32/K23" ~ 0.2,
-		Project == "Studying" ~ 0.03,
-		Project == "UIC Clinic" ~ 0.1,
-		Project == "Endocarditis and Pixel Density" ~ 0.1,
-		Project == "Endocarditis and Arrhythmias" ~ 0.02,
-		Project == "Modeling Software" ~ 0.05,
-		Project == "EGM Signal Processing" ~ 0.05,
-		Project == "HRV and CAD" ~ 0.01,
-		Project == "EP Lab" ~ 0.1,
+		Project == p$mental_stress ~ 0.2,
+		Project == p$af_registry ~ 0.1, 
+		Project == p$pert ~ 0.1,
+		Project == p$grants ~ 0.2, 
+		Project == p$study ~ 0.03,
+		Project == p$clinic ~ 0.1, 
+		Project == p$pixel ~ 0.1,
+		Project == p$endocarditis ~ 0.02,
+		Project == p$modeling ~ 0.05, 
+		Project == p$signals ~ 0.05, 
+		Project == p$biobank ~ 0.01,
+		Project == p$eps ~ 0.1,
 		TRUE ~ Effort
 	)) |>
 	arrange(desc(Effort))
@@ -402,8 +437,7 @@ m <- rx(
 ```{r, echo = TRUE}
 tbl <- tbl_forest( #<<
 	object = m,
-	y = "Petal.Length",
-	x = "Sepal.Length",
+	formula = Petal.Length ~ Sepal.Length,
 	groups = "Species",
 	columns = list(
 		beta ~ "Estimate",
@@ -431,4 +465,99 @@ tbl |>
 						locations = cells_body(columns = everything()))
 ```
 
+---
+
+class: inverse, middle
+# August 1, 2022
+
+---
+class: inverse, center
+
+```{r}
+updates <-
+	updates |>
+	mutate(Status = case_when(
+		Project == p$mental_stress ~
+			"Team = Amit Shah (*Emory*)  
+			Draft to co-authors **8/1**",
+		Project == p$af_registry ~
+			"Decide on retrospective/prospective cohort definitions **TBD**",
+		Project == p$pert ~ 
+			"Plan for IM Conference and Survey **8/5**",
+		Project == p$grants ~ 
+			"Aim 1 = Human vagolysis and SCD  
+			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
+			Active research into model development **daily**",
+		Project == p$study ~
+			"General cardiology/echo boards in **Fall 2023",
+		Project == p$clinic ~ 
+			"Weekly clinic with Dr. Ziccardi",
+		Project == p$pixel ~
+			"Team = Lee Frazin, Satish Mishra, David Polman
+			Revise still images to create standard for processing and SOP **8/3**",
+		Project == p$endocarditis ~
+			"Meet with Atreya Mishra to complete outline **8/2**",
+		Project == p$modeling ~
+			"Forest plots by subgroups in {R}, **complete**  
+			Revise multiple modeling approach in formulas",
+		Project == p$signals ~
+			"CARTO into OpenEP **8/2**",
+		Project == p$biobank ~
+			"Emory Biobank continually recruiting  
+			Meet with staff to assess data quality **TBD**",
+		Project == p$eps ~
+			"Confirm one day in EP lab  ",
+		TRUE ~ Status
+	)) |>
+	mutate(Product = case_when(
+		Project == p$mental_stress ~ 
+			"Manuscript - 1st Author, High Impact",
+		Project == p$af_registry ~
+			"*TBD*",
+		Project == p$pert ~
+			"Manuscript - Medical Education",
+		Project == p$grants ~ 
+			"*Funding*",
+		Project == p$study ~ 
+			"Board Certification",
+		Project == p$clinic ~
+			NA_character_,
+		Project == p$pixel ~
+			"Pilot Study",
+		Project == p$endocarditis ~  
+			"Manuscript - Review Paper",
+		Project == p$modeling ~ 
+			"Software Publication x 2-3",
+		Project == p$signals ~ 
+			"Software Publication",
+		Project == p$biobank ~
+			"*Paper*",
+		Project == "EP Lab" ~ 
+			"*EP Fellowship*",
+		TRUE ~ Product
+	)) |>
+	mutate(Effort = case_when(
+		Project == p$mental_stress ~ 0.2,
+		Project == p$af_registry ~ 0.1, 
+		Project == p$pert ~ 0.05,
+		Project == p$grants ~ 0.2, 
+		Project == p$study ~ 0.01,
+		Project == p$clinic ~ 0.1, 
+		Project == p$pixel ~ 0.1,
+		Project == p$endocarditis ~ 0.01,
+		Project == p$modeling ~ 0.01, 
+		Project == p$signals ~ 0.05, 
+		Project == p$biobank ~ 0.01,
+		Project == p$eps ~ 0.2,
+		TRUE ~ Effort
+	)) |>
+	arrange(desc(Effort))
+	
+tbl_research_updates(updates)
+```
+
+
+.footnote[
+.stress[Stress Epidemiology], .rhythm[Arrhythmia Mechanisms], .clin[Clinical], .comp[Computational]
+]
 
