@@ -576,10 +576,10 @@ Will check with the MESA and ARIC data base on how repeat events were defined.
 
 ## Murine EP Studies
 
-background-image: url("electromap.png")
+background-image: url("../resources/electromap.png")
 
 ---
 
 ## Human EP Studies 
 
-background-image: url("openep-ablation.png")
+background-image: url("../resources/openep-ablation.png")
