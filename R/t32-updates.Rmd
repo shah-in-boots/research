@@ -573,13 +573,18 @@ Consider additional variables:
 Will check with the MESA and ARIC data base on how repeat events were defined.
 
 ---
-
+class: center
 ## Murine EP Studies
 
-background-image: url("../resources/electromap.png")
+```{r, out.width = "60%"}
+knitr::include_graphics("../resources/electromap.png")
+```
 
 ---
+class: center
+## Human EP Studies
 
-## Human EP Studies 
+```{r}
+knitr::include_graphics("../resources/openep-ablation.png")
+```
 
-background-image: url("../resources/openep-ablation.png")
