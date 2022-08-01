@@ -561,3 +561,25 @@ tbl_research_updates(updates)
 .stress[Stress Epidemiology], .rhythm[Arrhythmia Mechanisms], .clin[Clinical], .comp[Computational]
 ]
 
+---
+
+## AF Registry
+
+Consider additional variables:
+
+- Recurrent events and adjudication (HF, cardiac admission, MACE)
+- Holter/ECG data and repeat collection (P-wave morphology, Wilson's vector gradient, amplitude of AF waves "coarseness")
+
+Will check with the MESA and ARIC data base on how repeat events were defined.
+
+---
+
+## Murine EP Studies
+
+background-image: url("electromap.png")
+
+---
+
+## Human EP Studies 
+
+background-image: url("openep-ablation.png")
