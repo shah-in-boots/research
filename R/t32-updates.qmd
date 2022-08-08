@@ -529,3 +529,94 @@ knitr::include_graphics("../resources/electromap.png")
 ```{r}
 knitr::include_graphics("../resources/openep-ablation.png")
 ```
+
+---
+
+# August 8, 2022
+
+---
+
+```{r}
+#| label: Week 6 updates
+updates <-
+	updates |>
+	mutate(Status = case_when(
+		Project == p$mental_stress ~
+			"Team = Amit Shah (*Emory*)  
+			Draft to co-authors **8/9**",
+		Project == p$af_registry ~
+			"Complete AF registry for catheter ablation data dictionary **8/2**",
+		Project == p$pert ~ 
+			"Plan for IM Conference and Survey **8/10**",
+		Project == p$grants ~ 
+			"Aim 1 = Human vagolysis and SCD  
+			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
+			Active research into model development **daily**",
+		Project == p$study ~
+			"General cardiology/echo boards in **Fall 2023**  
+			ITE **10/18**",
+		Project == p$clinic ~ 
+			"Weekly clinic with Dr. Ziccardi",
+		Project == p$pixel ~
+			"Team = Lee Frazin, Satish Mishra, David Polman
+			Revise still images to create standard for processing and SOP **8/11**",
+		Project == p$endocarditis ~
+			"Meet with Atreya Mishra to complete outline **8/12**",
+		Project == p$modeling ~
+			"Forest plots by subgroups in {R}, **complete**  
+			Revise multiple modeling approach in formulas",
+		Project == p$signals ~
+			"CARTO into OpenEP **8/9**",
+		Project == p$biobank ~
+			"Emory Biobank continually recruiting  
+			Meet with staff to assess data quality **TBD**",
+		Project == p$eps ~
+			"EP lab on **8/8, 8/10, 8/11**",
+		TRUE ~ Status
+	)) |>
+	mutate(Product = case_when(
+		Project == p$mental_stress ~ 
+			"Manuscript - 1st Author, High Impact",
+		Project == p$af_registry ~
+			"*TBD*",
+		Project == p$pert ~
+			"Manuscript - Medical Education",
+		Project == p$grants ~ 
+			"*Funding*",
+		Project == p$study ~ 
+			"Board Certification",
+		Project == p$clinic ~
+			NA_character_,
+		Project == p$pixel ~
+			"Pilot Study",
+		Project == p$endocarditis ~  
+			"Manuscript - Review Paper",
+		Project == p$modeling ~ 
+			"Software Publication x 2-3",
+		Project == p$signals ~ 
+			"Software Publication",
+		Project == p$biobank ~
+			"*Paper*",
+		Project == "EP Lab" ~ 
+			"*EP Fellowship*",
+		TRUE ~ Product
+	)) |>
+	mutate(Effort = case_when(
+		Project == p$mental_stress ~ 0.1,
+		Project == p$af_registry ~ 0.2, 
+		Project == p$pert ~ 0.05,
+		Project == p$grants ~ 0.2, 
+		Project == p$study ~ 0.01,
+		Project == p$clinic ~ 0.1, 
+		Project == p$pixel ~ 0.1,
+		Project == p$endocarditis ~ 0.01,
+		Project == p$modeling ~ 0.01, 
+		Project == p$signals ~ 0.05, 
+		Project == p$biobank ~ 0.01,
+		Project == p$eps ~ 0.3,
+		TRUE ~ Effort
+	)) |>
+	arrange(desc(Effort))
+	
+tbl_research_updates(updates)
+```
