@@ -620,3 +620,139 @@ updates <-
 	
 tbl_research_updates(updates)
 ```
+
+# August 15, 2022
+
+---
+
+```{r}
+#| label: Week 7 updates
+updates <-
+	updates |>
+	mutate(Status = case_when(
+		Project == p$mental_stress ~
+			"Team = Amit Shah (*Emory*)  
+			Draft to co-authors **8/16**",
+		Project == p$af_registry ~
+			"AF registry needs revamp",
+		Project == p$pert ~ 
+			"Plan for IM Conference and Survey **8/18**",
+		Project == p$grants ~ 
+			"Aim 1 = Human vagolysis and SCD  
+			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
+			Active research into model development **daily**",
+		Project == p$study ~
+			"General cardiology/echo boards in **Fall 2023**  
+			ITE **10/18**",
+		Project == p$clinic ~ 
+			"Weekly clinic with Dr. Ziccardi",
+		Project == p$pixel ~
+			"Team = Lee Frazin, Satish Mishra, David Polman
+			Images collected for 3/10 patients, finish patients **8/16**",
+		Project == p$endocarditis ~
+			"Meet with Atreya Mishra to complete outline **8/18**",
+		Project == p$modeling ~
+			"On hold",
+		Project == p$signals ~
+			"LSPro and CARTO into Matlab, **8/19**",
+		Project == p$biobank ~
+			"Emory Biobank continually recruiting  
+			Meet with staff to assess data quality **TBD**",
+		Project == p$eps ~
+			"EP lab scheduled TBD",
+		TRUE ~ Status
+	)) |>
+	mutate(Product = case_when(
+		Project == p$mental_stress ~ 
+			"Manuscript - 1st Author, High Impact",
+		Project == p$af_registry ~
+			"*TBD*",
+		Project == p$pert ~
+			"Manuscript - Medical Education",
+		Project == p$grants ~ 
+			"*Funding*",
+		Project == p$study ~ 
+			"Board Certification",
+		Project == p$clinic ~
+			NA_character_,
+		Project == p$pixel ~
+			"Pilot Study",
+		Project == p$endocarditis ~  
+			"Manuscript - Review Paper",
+		Project == p$modeling ~ 
+			"Software Publication x 2-3",
+		Project == p$signals ~ 
+			"Software Publication",
+		Project == p$biobank ~
+			"*Paper*",
+		Project == "EP Lab" ~ 
+			"*EP Fellowship*",
+		TRUE ~ Product
+	)) |>
+	mutate(Effort = case_when(
+		Project == p$mental_stress ~ 0.2,
+		Project == p$af_registry ~ 0.3, 
+		Project == p$pert ~ 0.05,
+		Project == p$grants ~ 0.1, 
+		Project == p$study ~ 0.01,
+		Project == p$clinic ~ 0.1, 
+		Project == p$pixel ~ 0.1,
+		Project == p$endocarditis ~ 0.01,
+		Project == p$modeling ~ 0.01, 
+		Project == p$signals ~ 0.05, 
+		Project == p$biobank ~ 0.01,
+		Project == p$eps ~ 0.2,
+		TRUE ~ Effort
+	)) |>
+	arrange(desc(Effort))
+	
+tbl_research_updates(updates)
+```
+
+---
+
+```{r}
+#| echo: false
+ccts <- read_rds("~/projects/afib/_targets/objects/ccts_data")
+af <- read_rds("~/projects/afib/_targets/objects/prospective_data")
+
+ccts_n <- nrow(ccts)
+ccts_early <- min(ccts$procedure_date)
+ccts_late <- max(ccts$procedure_date)
+
+af_n <- nrow(af)
+af_early <- min(af$ablation_date, na.rm = TRUE)
+af_late <- max(af$ablation_date, na.rm = TRUE)
+af_missing <- sum(is.na(af$ablation_date))
+```
+
+:::: {.columns}
+
+::: {.column width="40%"}
+__UIC-wide data summary__
+
+- N=`r ccts_n` had ablation
+- Date range from `r ccts_early` to `r_ccts_late`
+
+__AF registry data__
+- N=`r af_n` had ablation
+- Date range from `r af_early` to `r_af_late`
+- N=`r af_missing` have missing ablation dates
+
+
+:::
+
+::: {.column width="40%"}
+__Next Steps__
+
+1. Generate list of MRN for data collection
+1. Use new REDCap to obtain ECG/ablation data
+1. Run preliminary analysis on first 100 patients
+1. Consider expansion to JBVA/ACMC data
+:::
+
+::::
+
+---
+
+
