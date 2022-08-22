@@ -17,6 +17,8 @@ library(scales)
 library(ggsci)
 library(gt)
 library(volundr)
+library(googledrive)
+library(googlesheets4)
 
 # Used in YAML above as well - lower is darker, higher is lighter
 stress <- pal_material("blue", reverse = TRUE)(9)
@@ -523,7 +525,6 @@ Will check with the MESA and ARIC data base on how repeat events were defined.
 knitr::include_graphics("../resources/electromap.png")
 ```
 
-
 ## Human EP Studies
 
 ```{r}
@@ -709,7 +710,7 @@ updates <-
 tbl_research_updates(updates)
 ```
 
----
+--- {.smaller}
 
 ```{r}
 #| echo: false
@@ -754,5 +755,130 @@ __Next Steps__
 ::::
 
 ---
+
+# August 22, 2022
+
+---
+
+```{r}
+#| label: Week 8 updates
+updates <-
+	updates |>
+	mutate(Status = case_when(
+		Project == p$mental_stress ~
+			"Team = Amit Shah (*Emory*)  
+			Final draft for co-authors **8/22**",
+		Project == p$af_registry ~
+			"Team = Shaurya, Hatem, Malek,
+			Complete review 200 charts to add ablation data **8/26**  
+			Complete 50 of 100 current UIC ablation patients in REDCap **8/26**  
+			Provide SOP for data collection **8/22**",
+		Project == p$pert ~ 
+			"Plan for IM Conference and Survey **8/24**",
+		Project == p$grants ~ 
+			"Aim 1 = Human vagolysis and SCD  
+			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
+			Active research into model development **daily**",
+		Project == p$study ~
+			"General cardiology/echo boards in **Fall 2023**  
+			ITE **10/18**",
+		Project == p$clinic ~ 
+			"Weekly clinic with Dr. Ziccardi",
+		Project == p$pixel ~
+			"Team = Lee Frazin, Satish Mishra, David Polman
+			Images collected for 3/10 patients, finish patients **8/26**",
+		Project == p$endocarditis ~
+			"Meet with Atreya **TBD**",
+		Project == p$modeling ~
+			"On hold",
+		Project == p$signals ~
+			"LSPro and CARTO into Matlab **success**",
+		Project == p$biobank ~
+			"Emory Biobank continually recruiting  
+			Meet with staff to assess data quality **TBD**",
+		Project == p$eps ~
+			"EP lab scheduled TBD",
+		TRUE ~ Status
+	)) |>
+	mutate(Product = case_when(
+		Project == p$mental_stress ~ 
+			"Manuscript - 1st Author, High Impact",
+		Project == p$af_registry ~
+			"*TBD*",
+		Project == p$pert ~
+			"Manuscript - Medical Education",
+		Project == p$grants ~ 
+			"*Funding*",
+		Project == p$study ~ 
+			"Board Certification",
+		Project == p$clinic ~
+			NA_character_,
+		Project == p$pixel ~
+			"Pilot Study",
+		Project == p$endocarditis ~  
+			"Manuscript - Review Paper",
+		Project == p$modeling ~ 
+			"Software Publication x 2-3",
+		Project == p$signals ~ 
+			"Software Publication",
+		Project == p$biobank ~
+			"*Paper*",
+		Project == "EP Lab" ~ 
+			"*EP Fellowship*",
+		TRUE ~ Product
+	)) |>
+	mutate(Effort = case_when(
+		Project == p$mental_stress ~ 0.1,
+		Project == p$af_registry ~ 0.3, 
+		Project == p$pert ~ 0.1,
+		Project == p$grants ~ 0.5, 
+		Project == p$study ~ 0.05,
+		Project == p$clinic ~ 0.1, 
+		Project == p$pixel ~ 0.2,
+		Project == p$endocarditis ~ 0.01,
+		Project == p$modeling ~ 0.01, 
+		Project == p$signals ~ 0.05, 
+		Project == p$biobank ~ 0.01,
+		Project == p$eps ~ 0.1,
+		TRUE ~ Effort
+	)) |>
+	arrange(desc(Effort))
+	
+tbl_research_updates(updates)
+```
+
+## AF Registry {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+__Status__
+
+- REDCap is in progress
+- Have an additional list of registry patients that may/may not have had ablation
+
+:::
+
+::: {.column width="40%"}
+__Next Steps__
+
+1. Complete 100 REDCap patients
+1. Identify 300 patients that have potentially had ablation
+
+:::
+
+::::
+
+---
+
+## CARTO Maps {.smaller}
+
+- Ablation quantification
+- Activation mapping
+- EGM annotation
+- Voltage mapping
+- Conduction velocity
+- Earliest/latest activation
+- Geometry data
 
 
