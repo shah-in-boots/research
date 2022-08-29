@@ -522,13 +522,13 @@ Will check with the MESA and ARIC data base on how repeat events were defined.
 ## Murine EP Studies
 
 ```{r, out.width = "60%"}
-knitr::include_graphics("../resources/electromap.png")
+knitr::include_graphics("../figures/electromap.png")
 ```
 
 ## Human EP Studies
 
 ```{r}
-knitr::include_graphics("../resources/openep-ablation.png")
+knitr::include_graphics("../figures/openep-ablation.png")
 ```
 
 ---
