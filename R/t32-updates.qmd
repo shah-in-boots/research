@@ -16,9 +16,9 @@ library(tidyverse)
 library(scales)
 library(ggsci)
 library(gt)
+library(arcana)
 library(volundr)
-library(googledrive)
-library(googlesheets4)
+library(durandal)
 
 # Used in YAML above as well - lower is darker, higher is lighter
 stress <- pal_material("blue", reverse = TRUE)(9)
@@ -175,6 +175,34 @@ updates <- tribble(
 )
 
 ```
+
+```{r}
+#| label: calendar log
+#| include: false
+library(googledrive)
+library(googlesheets4)
+library(clock)
+
+# This may need to be refreshed on google drive for recent updates
+# Converts names to be simpler
+log <- 
+	googledrive::drive_get("research_log") |>
+	googlesheets4::read_sheet(sheet = "calendar_sheet") |>
+	mutate(
+		Start = date_start(Start, "minute"),
+		End = date_end(End, "minute")
+	) |>
+	mutate(Duration = difftime(End, Start, units = "hours")) |>
+	filter(str_detect(Calendar, "Clinical|Research|Academics|Administrative")) |>
+	filter(Duration < 24) |>
+	mutate(Type = gsub("Research/", "", gsub("/Service", "", gsub("/Extracurricular", "", Calendar)))) |>
+	select(-c(Calendar, Description))
+
+prog <-
+	googledrive::drive_get("research_log") |>
+	googlesheets4::read_sheet(sheet = "progress_sheet")
+```
+
 
 # July 11, 2022
 
@@ -392,7 +420,7 @@ m <- rx(
 tbl <- tbl_forest( #<<
 	object = m,
 	formula = Petal.Length ~ Sepal.Length,
-	groups = "Species",
+	vars = "Species",
 	columns = list(
 		beta ~ "Estimate",
 		conf ~ "95% Confidence Interval",
@@ -881,4 +909,41 @@ __Next Steps__
 - Earliest/latest activation
 - Geometry data
 
+# September 12, 2022
 
+```{r}
+dt <- date_build(year = 2022, month = 09, day = 5)
+
+tbl <-
+	log |>
+	filter(Start >= dt) |>
+	filter(Start > dt & End < add_days(dt, 7)) |>
+	inner_join(prog, by = "Type") |>
+	select(Type, Project, Title, Description, Status, Duration)
+```
+
+## AF Registry {.smaller}
+
+REDCap data dictionary is finalized. Next steps are:
+
+1. Data entry for outcomes
+2. Finalization of new patients to add from AF ablation registry
+
+## Genetics {.smaller}
+
+Currently able to:
+
+- Format large SNP data sets into appropriate tables
+- Utilize `PLINK` and `MERLIN` to process Chen's genetics data
+- Run from R to help analyze findings
+
+Next steps:
+
+- Confirm ancestry (for practice) percent likelihood 
+- Then, once outcome data is complete, analyze differences by race
+
+Analytical methods:
+
+- Time to binary outcome of recurrence
+- Recurrent event analysis for AF recurrence
+- Can revise with Bayesian modeling in `STAN` as well
