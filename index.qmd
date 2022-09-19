@@ -2,7 +2,7 @@
 title: "Summary of Research Efforts"
 ---
 
-This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of `r format(Sys.Date(), "%A, %B %d, %Y")`. Please see here for weekly [updates](https://asshah4.github.io/research/R/t32-updates.html).
+This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of `r format(Sys.Date(), "%A, %B %d, %Y")`. Please see here for weekly [updates](https://asshah4.github.io/research/t32/t32-updates.html).
 
 The major research focuses are currently on:
 

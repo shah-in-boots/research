@@ -11,7 +11,6 @@ format:
 ```{r}
 #| label: setup
 #| include: false
-
 library(tidyverse)
 library(scales)
 library(ggsci)
@@ -19,6 +18,9 @@ library(gt)
 library(arcana)
 library(volundr)
 library(durandal)
+library(googledrive)
+library(googlesheets4)
+library(clock)
 
 # Used in YAML above as well - lower is darker, higher is lighter
 stress <- pal_material("blue", reverse = TRUE)(9)
@@ -26,6 +28,64 @@ arrhythmia <- pal_material("yellow", reverse = TRUE)(9)
 clinical <- pal_material("pink", reverse = TRUE)(9)
 computational <- pal_material("teal", reverse = TRUE)(9)
 text <- pal_material("blue-grey", reverse = TRUE)(9)
+
+# Topic areas
+st <- "stress"
+ar <- "arrhythmia"
+cl <- "clinical"
+co <- "computational"
+
+# Projects
+p <- list(
+	mental_stress = "MS and CV Mortality",
+	af_registry = "AF Registry",
+	pert = "PERT",
+	grants = "F32/T32/K23",
+	study = "Studying",
+	clinic = "UIC Clinic",
+	pixel = "Endocarditis and Pixel Density",
+	endocarditis = "Endocarditis and Arrhythmias",
+	modeling = "Modeling Software",
+	signals = "Signal Processing",
+	biobank = "HRV and CAD",
+	eps = "EP Lab"
+)
+
+# Starting point, to be updated each week in teh weekly report
+updates <- tribble(
+	~Type, ~Project, ~Status, ~Product, ~Effort,
+	st, p$mental_stress, NA_character_, NA_character_, 0,
+	ar, p$af_registry, NA_character_, NA_character_, 0,
+	cl, p$pert, NA_character_, NA_character_, 0,
+	ar, p$grants, NA_character_, NA_character_, 0, 
+	cl, p$study, NA_character_, NA_character_, 0,
+	cl, p$clinic, NA_character_, NA_character_, 0, 
+	cl, p$pixel, NA_character_, NA_character_, 0,
+	ar, p$endocarditis, NA_character_, NA_character_, 0,
+	co, p$modeling, NA_character_, NA_character_, 0,
+	co, p$signals, NA_character_, NA_character_, 0,
+	st, p$biobank, NA_character_, NA_character_, 0,
+	cl, p$eps, NA_character_, NA_character_, 0
+)
+
+# This may need to be refreshed on google drive for recent updates
+# Converts names to be simpler
+log <- 
+	googledrive::drive_get("research_log") |>
+	googlesheets4::read_sheet(sheet = "calendar_sheet") |>
+	mutate(
+		Start = date_start(Start, "minute"),
+		End = date_end(End, "minute")
+	) |>
+	mutate(Duration = difftime(End, Start, units = "hours")) |>
+	filter(str_detect(Calendar, "Clinical|Research|Academics|Administrative")) |>
+	filter(Duration < 24) |>
+	mutate(Type = gsub("Research/", "", gsub("/Service", "", gsub("/Extracurricular", "", Calendar)))) |>
+	select(-c(Calendar, Description))
+
+prog <-
+	googledrive::drive_get("research_log") |>
+	googlesheets4::read_sheet(sheet = "progress_sheet")
 
 # Thematic changes and management of columns and styles
 tbl_research_updates <- function(data) {
@@ -129,80 +189,14 @@ tbl_research_updates <- function(data) {
 		) 
 }
 
+# Second version
+tbl_status_updates <- function(data) {
+	
+	data |>
+		
+	gt(data, rowname_col = Project)
+}
 ```
-
-```{r}
-#| label: updates and colors
-#| include: false
-
-# Topic areas
-st <- "stress"
-ar <- "arrhythmia"
-cl <- "clinical"
-co <- "computational"
-
-# Projects
-p <- list(
-	mental_stress = "MS and CV Mortality",
-	af_registry = "AF Registry",
-	pert = "PERT",
-	grants = "F32/T32/K23",
-	study = "Studying",
-	clinic = "UIC Clinic",
-	pixel = "Endocarditis and Pixel Density",
-	endocarditis = "Endocarditis and Arrhythmias",
-	modeling = "Modeling Software",
-	signals = "Signal Processing",
-	biobank = "HRV and CAD",
-	eps = "EP Lab"
-)
-
-# Starting point, to be updated each week in teh weekly report
-updates <- tribble(
-	~Type, ~Project, ~Status, ~Product, ~Effort,
-	st, p$mental_stress, NA_character_, NA_character_, 0,
-	ar, p$af_registry, NA_character_, NA_character_, 0,
-	cl, p$pert, NA_character_, NA_character_, 0,
-	ar, p$grants, NA_character_, NA_character_, 0, 
-	cl, p$study, NA_character_, NA_character_, 0,
-	cl, p$clinic, NA_character_, NA_character_, 0, 
-	cl, p$pixel, NA_character_, NA_character_, 0,
-	ar, p$endocarditis, NA_character_, NA_character_, 0,
-	co, p$modeling, NA_character_, NA_character_, 0,
-	co, p$signals, NA_character_, NA_character_, 0,
-	st, p$biobank, NA_character_, NA_character_, 0,
-	cl, p$eps, NA_character_, NA_character_, 0
-)
-
-```
-
-```{r}
-#| label: calendar log
-#| include: false
-library(googledrive)
-library(googlesheets4)
-library(clock)
-
-# This may need to be refreshed on google drive for recent updates
-# Converts names to be simpler
-log <- 
-	googledrive::drive_get("research_log") |>
-	googlesheets4::read_sheet(sheet = "calendar_sheet") |>
-	mutate(
-		Start = date_start(Start, "minute"),
-		End = date_end(End, "minute")
-	) |>
-	mutate(Duration = difftime(End, Start, units = "hours")) |>
-	filter(str_detect(Calendar, "Clinical|Research|Academics|Administrative")) |>
-	filter(Duration < 24) |>
-	mutate(Type = gsub("Research/", "", gsub("/Service", "", gsub("/Extracurricular", "", Calendar)))) |>
-	select(-c(Calendar, Description))
-
-prog <-
-	googledrive::drive_get("research_log") |>
-	googlesheets4::read_sheet(sheet = "progress_sheet")
-```
-
 
 # July 11, 2022
 
@@ -947,3 +941,23 @@ Analytical methods:
 - Time to binary outcome of recurrence
 - Recurrent event analysis for AF recurrence
 - Can revise with Bayesian modeling in `STAN` as well
+
+# September 19, 2022
+
+```{r}
+dt <- 
+	date_build(year = 2022, month = 09, day = 19) |>
+	add_days(-7)
+
+effort <-
+	log |>
+	filter(Start >= dt) |>
+	filter(Start > dt & End < add_days(dt, 7)) |> 
+	select(Type, Title, Duration) |>
+	group_by(Type) |>
+	summarize(Effort = sum(Duration)) |>
+	mutate(Effort = paste0(signif(as.numeric(Effort)/0.4, 3), "%")) 
+
+	
+```
+
