@@ -4,7 +4,7 @@ author: "Anish Sanjay Shah, MD/MS<br><span style = 'font-size: 70%;'>Cardiology 
 format: 
   revealjs:
     theme: simple
-    footer: "[Stress Epidemiology]{style='color:#1E87E5FF'}, [Arrhythmia Mechanisms]{style='color:#F8A725FF'}, [Clinical]{style='color:#C1185AFF'}, [Computational]{style='color:#00887AFF'}"
+    footer: "[Stress Epidemiology]{style='color:#1E87E5FF'}, [Arrhythmia Mechanisms]{style='color:#F8A725FF'}, [Clinical]{style='color:#C1185AFF'}, [Computational Neurocardiology]{style='color:#00887AFF'}"
 ---
 
 
@@ -28,6 +28,126 @@ arrhythmia <- pal_material("yellow", reverse = TRUE)(9)
 clinical <- pal_material("pink", reverse = TRUE)(9)
 computational <- pal_material("teal", reverse = TRUE)(9)
 text <- pal_material("blue-grey", reverse = TRUE)(9)
+
+# This may need to be refreshed on google drive for recent updates
+# Converts names to be simpler
+log <- 
+	googledrive::drive_get("research_log") |>
+	googlesheets4::read_sheet(sheet = "calendar_sheet") |>
+	mutate(
+		Start = date_start(Start, "minute"),
+		End = date_end(End, "minute")
+	) |>
+	mutate(Duration = difftime(End, Start, units = "hours")) |>
+	filter(str_detect(Calendar, "Clinical|Research|Academics|Administrative")) |>
+	filter(Duration < 24) |>
+	mutate(Type = gsub("Research/", "", gsub("/Service", "", gsub("/Extracurricular", "", Calendar)))) |>
+	select(-c(Calendar, Description))
+
+prog <-
+	googledrive::drive_get("research_log") |>
+	googlesheets4::read_sheet(sheet = "status_sheet")
+
+# Second version
+tbl_status_updates <- function(progress, effort) {
+	
+	data <-
+		left_join(progress, effort, by = "Type") |>
+		group_by(Type) |>
+		arrange(Effort, Priority) |>
+		mutate(Type = paste0(Type, " (", Effort, ")")) |>
+		mutate(Deadline = as.Date(Deadline)) |>
+		select(-Effort)
+	
+	data |>
+		gt(rowname_col = "Project", groupname_col = "Type") |>
+		opt_table_lines(extent = "none") |>
+		opt_row_striping(row_striping = FALSE) |>
+		tab_options(data_row.padding = px(2)) |>
+		# Headers and Row Groups
+		tab_style(
+			style =  cell_text(
+				size = "large",
+				weight = "bold",
+				transform = "capitalize"
+			),
+			locations = cells_column_labels()
+		) |> 
+		tab_style(
+			style = list(cell_fill(color = stress[5]),
+									 cell_text(color = "white"),
+									 cell_borders(sides = "all", color = stress[5])),
+			locations = cells_row_groups(groups = contains("Epidemiology"))
+		) |>
+		tab_style(
+			style = list(cell_fill(color = arrhythmia[2]),
+									 cell_text(color = "white"),
+									 cell_borders(sides = "all", color = arrhythmia[2])),
+			locations = cells_row_groups(groups = contains("Arrhythmia"))
+		) |>
+		tab_style(
+			style = list(cell_fill(color = clinical[5]),
+									 cell_text(color = "white"),
+									 cell_borders(sides = "all", color = clinical[5])),
+			locations = cells_row_groups(groups = contains("Clinical"))
+		) |>
+		tab_style(
+			style = list(cell_fill(color = computational[3]),
+									 cell_text(color = "white"),
+									 cell_borders(sides = "all", color = computational[3])),
+			locations = cells_row_groups(groups = contains("Computational"))
+		) |>
+		tab_style(
+			style = list(cell_fill(color = text[3]),
+									 cell_text(color = "white"),
+									 cell_borders(sides = "all", color = text[3])),
+			locations = cells_row_groups(groups = contains("Academic"))
+		) |>
+		# General formatting
+		tab_style(
+			style = cell_text(color = "white"),
+			locations = cells_body(columns = Aim,
+														 rows = is.na(Aim))
+		) |>
+		tab_style(
+			style = cell_text(color = "white"),
+			locations = cells_body(columns = Deadline,
+														 rows = is.na(Deadline))
+		) |>
+		tab_style(
+			style = cell_text(align = "right"),
+			locations = cells_stub()
+		) |>
+		tab_style(
+			style = cell_borders(sides = "bottom", color = text[5]),
+			locations = list(cells_body(columns = everything()), cells_stub(rows = everything()))
+		)  |>
+		# Columns
+		cols_hide("Priority") |>
+		fmt_date(columns = "Deadline", date_style = "iso") |>
+		tab_style(
+			style = cell_text(size = "x-small"),
+			locations = cells_body(columns = "Deadline")
+		) |>
+		tab_style(
+			style = cell_text(size = "small"),
+			locations = cells_body(columns = "Description")
+		) |>
+		tab_style(
+			style = cell_text(style = "italic"),
+			locations = cells_stub()
+		) |>
+		cols_width(
+			Project ~ pct(20),
+			Aim ~ pct(30),
+			Description ~ pct(35),
+			Deadline ~ pct(15)
+		) 
+		
+}
+```
+
+```{r, old version}
 
 # Topic areas
 st <- "stress"
@@ -67,25 +187,6 @@ updates <- tribble(
 	st, p$biobank, NA_character_, NA_character_, 0,
 	cl, p$eps, NA_character_, NA_character_, 0
 )
-
-# This may need to be refreshed on google drive for recent updates
-# Converts names to be simpler
-log <- 
-	googledrive::drive_get("research_log") |>
-	googlesheets4::read_sheet(sheet = "calendar_sheet") |>
-	mutate(
-		Start = date_start(Start, "minute"),
-		End = date_end(End, "minute")
-	) |>
-	mutate(Duration = difftime(End, Start, units = "hours")) |>
-	filter(str_detect(Calendar, "Clinical|Research|Academics|Administrative")) |>
-	filter(Duration < 24) |>
-	mutate(Type = gsub("Research/", "", gsub("/Service", "", gsub("/Extracurricular", "", Calendar)))) |>
-	select(-c(Calendar, Description))
-
-prog <-
-	googledrive::drive_get("research_log") |>
-	googlesheets4::read_sheet(sheet = "progress_sheet")
 
 # Thematic changes and management of columns and styles
 tbl_research_updates <- function(data) {
@@ -188,15 +289,233 @@ tbl_research_updates <- function(data) {
 			Effort ~ pct(5)
 		) 
 }
-
-# Second version
-tbl_status_updates <- function(data) {
-	
-	data |>
-		
-	gt(data, rowname_col = Project)
-}
 ```
+
+
+# September 26, 2022
+
+```{r}
+dt <- 
+	date_build(year = 2022, month = 09, day = 26) |>
+	add_days(-7)
+
+effort <-
+	log |>
+	filter(Start >= dt) |>
+	filter(Start > dt & End < add_days(dt, 7)) |>
+	select(Type, Title, Duration) |>
+	group_by(Type) |>
+	summarize(Effort = sum(Duration)) |>
+	mutate(Effort = paste0(signif(as.numeric(Effort)/0.4, 2), "%")) 
+
+tbl_status_updates(prog, effort)
+```
+
+## AF Registry
+
+:::: {.columns}
+
+::: {.column width="40%"}
+__Analysis__
+
+- Genetic analysis in PLINK complete
+- Models are set up for analysis once data intake is done
+:::
+
+::: {.column width="40%"}
+__Status__
+
+1. Have n = 238 currently
+1. Reviewed 95 charts thus far (CAR team)
+1. Of n = 108, 75 have had recurrence, 33 without (rate of about 70% of anyarrhythmia)
+1. Of ECG based confirmation, 43 AF recurrence events (53%)
+
+:::
+
+::::
+
+
+# September 19, 2022
+
+```{r}
+dt <- 
+	date_build(year = 2022, month = 09, day = 19) |>
+	add_days(-7)
+
+effort <-
+	log |>
+	filter(Start >= dt) |>
+	filter(Start > dt & End < add_days(dt, 7)) |> 
+	select(Type, Title, Duration) |>
+	group_by(Type) |>
+	summarize(Effort = sum(Duration)) |>
+	mutate(Effort = paste0(signif(as.numeric(Effort)/0.4, 3), "%")) 
+	
+```
+
+# September 12, 2022
+
+```{r}
+dt <- date_build(year = 2022, month = 09, day = 5)
+
+tbl <-
+	log |>
+	filter(Start >= dt) |>
+	filter(Start > dt & End < add_days(dt, 7)) |>
+	inner_join(prog, by = "Type") 
+```
+
+## AF Registry {.smaller}
+
+REDCap data dictionary is finalized. Next steps are:
+
+1. Data entry for outcomes
+2. Finalization of new patients to add from AF ablation registry
+
+## Genetics {.smaller}
+
+Currently able to:
+
+- Format large SNP data sets into appropriate tables
+- Utilize `PLINK` and `MERLIN` to process Chen's genetics data
+- Run from R to help analyze findings
+
+Next steps:
+
+- Confirm ancestry (for practice) percent likelihood 
+- Then, once outcome data is complete, analyze differences by race
+
+Analytical methods:
+
+- Time to binary outcome of recurrence
+- Recurrent event analysis for AF recurrence
+- Can revise with Bayesian modeling in `STAN` as well
+
+
+# August 22, 2022
+
+---
+
+```{r}
+#| label: Week 8 updates
+updates <-
+	updates |>
+	mutate(Status = case_when(
+		Project == p$mental_stress ~
+			"Team = Amit Shah (*Emory*)  
+			Final draft for co-authors **8/22**",
+		Project == p$af_registry ~
+			"Team = Shaurya, Hatem, Malek,
+			Complete review 200 charts to add ablation data **8/26**  
+			Complete 50 of 100 current UIC ablation patients in REDCap **8/26**  
+			Provide SOP for data collection **8/22**",
+		Project == p$pert ~ 
+			"Plan for IM Conference and Survey **8/24**",
+		Project == p$grants ~ 
+			"Aim 1 = Human vagolysis and SCD  
+			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
+			Active research into model development **daily**",
+		Project == p$study ~
+			"General cardiology/echo boards in **Fall 2023**  
+			ITE **10/18**",
+		Project == p$clinic ~ 
+			"Weekly clinic with Dr. Ziccardi",
+		Project == p$pixel ~
+			"Team = Lee Frazin, Satish Mishra, David Polman
+			Images collected for 3/10 patients, finish patients **8/26**",
+		Project == p$endocarditis ~
+			"Meet with Atreya **TBD**",
+		Project == p$modeling ~
+			"On hold",
+		Project == p$signals ~
+			"LSPro and CARTO into Matlab **success**",
+		Project == p$biobank ~
+			"Emory Biobank continually recruiting  
+			Meet with staff to assess data quality **TBD**",
+		Project == p$eps ~
+			"EP lab scheduled TBD",
+		TRUE ~ Status
+	)) |>
+	mutate(Product = case_when(
+		Project == p$mental_stress ~ 
+			"Manuscript - 1st Author, High Impact",
+		Project == p$af_registry ~
+			"*TBD*",
+		Project == p$pert ~
+			"Manuscript - Medical Education",
+		Project == p$grants ~ 
+			"*Funding*",
+		Project == p$study ~ 
+			"Board Certification",
+		Project == p$clinic ~
+			NA_character_,
+		Project == p$pixel ~
+			"Pilot Study",
+		Project == p$endocarditis ~  
+			"Manuscript - Review Paper",
+		Project == p$modeling ~ 
+			"Software Publication x 2-3",
+		Project == p$signals ~ 
+			"Software Publication",
+		Project == p$biobank ~
+			"*Paper*",
+		Project == "EP Lab" ~ 
+			"*EP Fellowship*",
+		TRUE ~ Product
+	)) |>
+	mutate(Effort = case_when(
+		Project == p$mental_stress ~ 0.1,
+		Project == p$af_registry ~ 0.3, 
+		Project == p$pert ~ 0.1,
+		Project == p$grants ~ 0.5, 
+		Project == p$study ~ 0.05,
+		Project == p$clinic ~ 0.1, 
+		Project == p$pixel ~ 0.2,
+		Project == p$endocarditis ~ 0.01,
+		Project == p$modeling ~ 0.01, 
+		Project == p$signals ~ 0.05, 
+		Project == p$biobank ~ 0.01,
+		Project == p$eps ~ 0.1,
+		TRUE ~ Effort
+	)) |>
+	arrange(desc(Effort))
+	
+tbl_research_updates(updates)
+```
+
+## AF Registry {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+__Status__
+
+- REDCap is in progress
+- Have an additional list of registry patients that may/may not have had ablation
+
+:::
+
+::: {.column width="40%"}
+__Next Steps__
+
+1. Complete 100 REDCap patients
+1. Identify 300 patients that have potentially had ablation
+
+:::
+
+::::
+
+---
+
+## CARTO Maps {.smaller}
+
+- Ablation quantification
+- Activation mapping
+- EGM annotation
+- Voltage mapping
+- Conduction velocity
+- Earliest/latest activation
+- Geometry data
 
 # July 11, 2022
 
@@ -390,6 +709,7 @@ tbl_research_updates(updates)
 :::{.column width="50%"}
 ```{r}
 #| echo: true
+#| eval: false
 # Forest Plots
 library(volundr)
 m <- rx(
@@ -411,6 +731,7 @@ m <- rx(
 :::{.column width="50%"}
 ```{r}
 #| echo: true
+#| eval: false
 tbl <- tbl_forest( #<<
 	object = m,
 	formula = Petal.Length ~ Sepal.Length,
@@ -439,6 +760,7 @@ A simple way to make sub-group analysis Forest plots, working on improving custo
 ```{r}
 #| label: Example forest plot
 #| echo: false
+#| eval: false
 tbl |>
 	tab_style(style = cell_fill(color = "white"),
 						locations = cells_body(columns = everything()))
@@ -777,187 +1099,4 @@ __Next Steps__
 ::::
 
 ---
-
-# August 22, 2022
-
----
-
-```{r}
-#| label: Week 8 updates
-updates <-
-	updates |>
-	mutate(Status = case_when(
-		Project == p$mental_stress ~
-			"Team = Amit Shah (*Emory*)  
-			Final draft for co-authors **8/22**",
-		Project == p$af_registry ~
-			"Team = Shaurya, Hatem, Malek,
-			Complete review 200 charts to add ablation data **8/26**  
-			Complete 50 of 100 current UIC ablation patients in REDCap **8/26**  
-			Provide SOP for data collection **8/22**",
-		Project == p$pert ~ 
-			"Plan for IM Conference and Survey **8/24**",
-		Project == p$grants ~ 
-			"Aim 1 = Human vagolysis and SCD  
-			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
-			Active research into model development **daily**",
-		Project == p$study ~
-			"General cardiology/echo boards in **Fall 2023**  
-			ITE **10/18**",
-		Project == p$clinic ~ 
-			"Weekly clinic with Dr. Ziccardi",
-		Project == p$pixel ~
-			"Team = Lee Frazin, Satish Mishra, David Polman
-			Images collected for 3/10 patients, finish patients **8/26**",
-		Project == p$endocarditis ~
-			"Meet with Atreya **TBD**",
-		Project == p$modeling ~
-			"On hold",
-		Project == p$signals ~
-			"LSPro and CARTO into Matlab **success**",
-		Project == p$biobank ~
-			"Emory Biobank continually recruiting  
-			Meet with staff to assess data quality **TBD**",
-		Project == p$eps ~
-			"EP lab scheduled TBD",
-		TRUE ~ Status
-	)) |>
-	mutate(Product = case_when(
-		Project == p$mental_stress ~ 
-			"Manuscript - 1st Author, High Impact",
-		Project == p$af_registry ~
-			"*TBD*",
-		Project == p$pert ~
-			"Manuscript - Medical Education",
-		Project == p$grants ~ 
-			"*Funding*",
-		Project == p$study ~ 
-			"Board Certification",
-		Project == p$clinic ~
-			NA_character_,
-		Project == p$pixel ~
-			"Pilot Study",
-		Project == p$endocarditis ~  
-			"Manuscript - Review Paper",
-		Project == p$modeling ~ 
-			"Software Publication x 2-3",
-		Project == p$signals ~ 
-			"Software Publication",
-		Project == p$biobank ~
-			"*Paper*",
-		Project == "EP Lab" ~ 
-			"*EP Fellowship*",
-		TRUE ~ Product
-	)) |>
-	mutate(Effort = case_when(
-		Project == p$mental_stress ~ 0.1,
-		Project == p$af_registry ~ 0.3, 
-		Project == p$pert ~ 0.1,
-		Project == p$grants ~ 0.5, 
-		Project == p$study ~ 0.05,
-		Project == p$clinic ~ 0.1, 
-		Project == p$pixel ~ 0.2,
-		Project == p$endocarditis ~ 0.01,
-		Project == p$modeling ~ 0.01, 
-		Project == p$signals ~ 0.05, 
-		Project == p$biobank ~ 0.01,
-		Project == p$eps ~ 0.1,
-		TRUE ~ Effort
-	)) |>
-	arrange(desc(Effort))
-	
-tbl_research_updates(updates)
-```
-
-## AF Registry {.smaller}
-
-:::: {.columns}
-
-::: {.column width="40%"}
-__Status__
-
-- REDCap is in progress
-- Have an additional list of registry patients that may/may not have had ablation
-
-:::
-
-::: {.column width="40%"}
-__Next Steps__
-
-1. Complete 100 REDCap patients
-1. Identify 300 patients that have potentially had ablation
-
-:::
-
-::::
-
----
-
-## CARTO Maps {.smaller}
-
-- Ablation quantification
-- Activation mapping
-- EGM annotation
-- Voltage mapping
-- Conduction velocity
-- Earliest/latest activation
-- Geometry data
-
-# September 12, 2022
-
-```{r}
-dt <- date_build(year = 2022, month = 09, day = 5)
-
-tbl <-
-	log |>
-	filter(Start >= dt) |>
-	filter(Start > dt & End < add_days(dt, 7)) |>
-	inner_join(prog, by = "Type") |>
-	select(Type, Project, Title, Description, Status, Duration)
-```
-
-## AF Registry {.smaller}
-
-REDCap data dictionary is finalized. Next steps are:
-
-1. Data entry for outcomes
-2. Finalization of new patients to add from AF ablation registry
-
-## Genetics {.smaller}
-
-Currently able to:
-
-- Format large SNP data sets into appropriate tables
-- Utilize `PLINK` and `MERLIN` to process Chen's genetics data
-- Run from R to help analyze findings
-
-Next steps:
-
-- Confirm ancestry (for practice) percent likelihood 
-- Then, once outcome data is complete, analyze differences by race
-
-Analytical methods:
-
-- Time to binary outcome of recurrence
-- Recurrent event analysis for AF recurrence
-- Can revise with Bayesian modeling in `STAN` as well
-
-# September 19, 2022
-
-```{r}
-dt <- 
-	date_build(year = 2022, month = 09, day = 19) |>
-	add_days(-7)
-
-effort <-
-	log |>
-	filter(Start >= dt) |>
-	filter(Start > dt & End < add_days(dt, 7)) |> 
-	select(Type, Title, Duration) |>
-	group_by(Type) |>
-	summarize(Effort = sum(Duration)) |>
-	mutate(Effort = paste0(signif(as.numeric(Effort)/0.4, 3), "%")) 
-
-	
-```
 
