@@ -116,7 +116,7 @@ tbl_status_updates <- function(progress, effort) {
 		) |>
 		tab_style(
 			style = cell_text(align = "right"),
-			locations = cells_stub()
+			locations = list(cells_stub(), cells_column_labels())
 		) |>
 		tab_style(
 			style = cell_borders(sides = "bottom", color = text[5]),
@@ -138,8 +138,8 @@ tbl_status_updates <- function(progress, effort) {
 			locations = cells_stub()
 		) |>
 		cols_width(
-			Project ~ pct(20),
-			Aim ~ pct(30),
+			Project ~ pct(10),
+			Aim ~ pct(40),
 			Description ~ pct(35),
 			Deadline ~ pct(15)
 		) 
@@ -147,154 +147,12 @@ tbl_status_updates <- function(progress, effort) {
 }
 ```
 
-```{r, old version}
-
-# Topic areas
-st <- "stress"
-ar <- "arrhythmia"
-cl <- "clinical"
-co <- "computational"
-
-# Projects
-p <- list(
-	mental_stress = "MS and CV Mortality",
-	af_registry = "AF Registry",
-	pert = "PERT",
-	grants = "F32/T32/K23",
-	study = "Studying",
-	clinic = "UIC Clinic",
-	pixel = "Endocarditis and Pixel Density",
-	endocarditis = "Endocarditis and Arrhythmias",
-	modeling = "Modeling Software",
-	signals = "Signal Processing",
-	biobank = "HRV and CAD",
-	eps = "EP Lab"
-)
-
-# Starting point, to be updated each week in teh weekly report
-updates <- tribble(
-	~Type, ~Project, ~Status, ~Product, ~Effort,
-	st, p$mental_stress, NA_character_, NA_character_, 0,
-	ar, p$af_registry, NA_character_, NA_character_, 0,
-	cl, p$pert, NA_character_, NA_character_, 0,
-	ar, p$grants, NA_character_, NA_character_, 0, 
-	cl, p$study, NA_character_, NA_character_, 0,
-	cl, p$clinic, NA_character_, NA_character_, 0, 
-	cl, p$pixel, NA_character_, NA_character_, 0,
-	ar, p$endocarditis, NA_character_, NA_character_, 0,
-	co, p$modeling, NA_character_, NA_character_, 0,
-	co, p$signals, NA_character_, NA_character_, 0,
-	st, p$biobank, NA_character_, NA_character_, 0,
-	cl, p$eps, NA_character_, NA_character_, 0
-)
-
-# Thematic changes and management of columns and styles
-tbl_research_updates <- function(data) {
-	gt(data, rowname_col = "Project") |>
-		tab_stubhead("Projects") |>
-		cols_hide("Type") |>
-		fmt_percent(columns = "Effort", decimals = 0) |>
-		opt_table_lines(extent = "none") |>
-		opt_row_striping(row_striping = FALSE) |>
-		tab_options(data_row.padding = px(2)) |>
-		# Fill all borders to match background
-		tab_style(
-			style = cell_text(align = "left"),
-			locations = cells_stub()
-		) |>
-		cols_align(align = "right", columns = c("Effort")) |>
-		tab_style(
-			style = cell_borders(sides = "bottom", color = text[1]),
-			locations = cells_body(columns = everything())
-		) |>
-		tab_style(
-			style = list(cell_fill(color = stress[5]),
-									 cell_borders(sides = "all", color = stress[5])),
-			locations = cells_stub(rows = Type == "stress")
-		) |>
-		tab_style(
-			style = list(cell_fill(color = arrhythmia[2]),
-									 cell_borders(sides = "all", color = arrhythmia[2])),
-			locations = cells_stub(rows = Type == "arrhythmia")
-		) |>
-		tab_style(
-			style = list(cell_fill(color = clinical[5]),
-									 cell_borders(sides = "all", color = clinical[5])),
-			locations = cells_stub(rows = Type == "clinical")
-		) |>
-		tab_style(
-			style = list(cell_fill(color = computational[3]),
-									 cell_borders(sides = "all", color = computational[3])),
-			locations = cells_stub(rows = Type == "computational")
-		) |>
-		tab_style(
-			style = list(cell_fill(color = text[1]), 
-									 cell_text(color = "white"),
-									 cell_borders(sides = "all", color = text[1])),
-			locations = list(cells_stubhead(), cells_column_labels())
-		) |>
-		tab_style(
-			style = cell_borders(
-				sides = c("left", "right"),
-				color = text[1],
-				weight = px(2)
-			),
-			locations = cells_body(columns = c("Effort"))
-		) |> 
-		tab_style(
-			style = cell_borders(
-				sides = "left",
-				color = text[1],
-				weight = px(2)
-			),
-			locations = cells_body(columns = c("Product"))
-		) |> 
-		tab_style(
-			style = cell_borders(
-				sides = "bottom",
-				color = text[1],
-				weight = px(2)
-			),
-			locations = list(cells_column_labels(columns = everything()),
-											 cells_stubhead())
-		) |> 
-		tab_style(
-			style = list(cell_borders(sides = "all", 
-																color = text[1], 
-																weight = px(2))),
-			locations = list(cells_column_labels(columns = everything()),
-											 cells_stubhead())
-		) |>
-		tab_style(
-			style = cell_fill(color = "white"),
-			locations = cells_body(columns = everything())
-		) |> 
-		tab_style(
-			style = cell_text(color = "white"),
-			locations = cells_body(columns = Product,
-														 rows = is.na(Product))
-		) |>
-		fmt_markdown(columns = everything()) |>
-		tab_style(
-			style = cell_text(size = "large"),
-			locations = list(cells_body(), 
-											 cells_stubhead(), 
-											 cells_stub(), 
-											 cells_column_labels())
-		) |>
-		cols_width(
-			Project ~ pct(20),
-			Status ~ pct(50),
-			Product ~ pct(25),
-			Effort ~ pct(5)
-		) 
-}
-```
-
-
 # September 26, 2022
 
+---
+
 ```{r}
+#| label: block 4, week 4
 dt <- 
 	date_build(year = 2022, month = 09, day = 26) |>
 	add_days(-7)
@@ -311,7 +169,7 @@ effort <-
 tbl_status_updates(prog, effort)
 ```
 
-## AF Registry
+## AF Registry {.smaller}
 
 :::: {.columns}
 
@@ -334,36 +192,9 @@ __Status__
 
 ::::
 
-
-# September 19, 2022
-
-```{r}
-dt <- 
-	date_build(year = 2022, month = 09, day = 19) |>
-	add_days(-7)
-
-effort <-
-	log |>
-	filter(Start >= dt) |>
-	filter(Start > dt & End < add_days(dt, 7)) |> 
-	select(Type, Title, Duration) |>
-	group_by(Type) |>
-	summarize(Effort = sum(Duration)) |>
-	mutate(Effort = paste0(signif(as.numeric(Effort)/0.4, 3), "%")) 
-	
-```
-
 # September 12, 2022
 
-```{r}
-dt <- date_build(year = 2022, month = 09, day = 5)
-
-tbl <-
-	log |>
-	filter(Start >= dt) |>
-	filter(Start > dt & End < add_days(dt, 7)) |>
-	inner_join(prog, by = "Type") 
-```
+---
 
 ## AF Registry {.smaller}
 
@@ -395,93 +226,6 @@ Analytical methods:
 # August 22, 2022
 
 ---
-
-```{r}
-#| label: Week 8 updates
-updates <-
-	updates |>
-	mutate(Status = case_when(
-		Project == p$mental_stress ~
-			"Team = Amit Shah (*Emory*)  
-			Final draft for co-authors **8/22**",
-		Project == p$af_registry ~
-			"Team = Shaurya, Hatem, Malek,
-			Complete review 200 charts to add ablation data **8/26**  
-			Complete 50 of 100 current UIC ablation patients in REDCap **8/26**  
-			Provide SOP for data collection **8/22**",
-		Project == p$pert ~ 
-			"Plan for IM Conference and Survey **8/24**",
-		Project == p$grants ~ 
-			"Aim 1 = Human vagolysis and SCD  
-			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
-			Active research into model development **daily**",
-		Project == p$study ~
-			"General cardiology/echo boards in **Fall 2023**  
-			ITE **10/18**",
-		Project == p$clinic ~ 
-			"Weekly clinic with Dr. Ziccardi",
-		Project == p$pixel ~
-			"Team = Lee Frazin, Satish Mishra, David Polman
-			Images collected for 3/10 patients, finish patients **8/26**",
-		Project == p$endocarditis ~
-			"Meet with Atreya **TBD**",
-		Project == p$modeling ~
-			"On hold",
-		Project == p$signals ~
-			"LSPro and CARTO into Matlab **success**",
-		Project == p$biobank ~
-			"Emory Biobank continually recruiting  
-			Meet with staff to assess data quality **TBD**",
-		Project == p$eps ~
-			"EP lab scheduled TBD",
-		TRUE ~ Status
-	)) |>
-	mutate(Product = case_when(
-		Project == p$mental_stress ~ 
-			"Manuscript - 1st Author, High Impact",
-		Project == p$af_registry ~
-			"*TBD*",
-		Project == p$pert ~
-			"Manuscript - Medical Education",
-		Project == p$grants ~ 
-			"*Funding*",
-		Project == p$study ~ 
-			"Board Certification",
-		Project == p$clinic ~
-			NA_character_,
-		Project == p$pixel ~
-			"Pilot Study",
-		Project == p$endocarditis ~  
-			"Manuscript - Review Paper",
-		Project == p$modeling ~ 
-			"Software Publication x 2-3",
-		Project == p$signals ~ 
-			"Software Publication",
-		Project == p$biobank ~
-			"*Paper*",
-		Project == "EP Lab" ~ 
-			"*EP Fellowship*",
-		TRUE ~ Product
-	)) |>
-	mutate(Effort = case_when(
-		Project == p$mental_stress ~ 0.1,
-		Project == p$af_registry ~ 0.3, 
-		Project == p$pert ~ 0.1,
-		Project == p$grants ~ 0.5, 
-		Project == p$study ~ 0.05,
-		Project == p$clinic ~ 0.1, 
-		Project == p$pixel ~ 0.2,
-		Project == p$endocarditis ~ 0.01,
-		Project == p$modeling ~ 0.01, 
-		Project == p$signals ~ 0.05, 
-		Project == p$biobank ~ 0.01,
-		Project == p$eps ~ 0.1,
-		TRUE ~ Effort
-	)) |>
-	arrange(desc(Effort))
-	
-tbl_research_updates(updates)
-```
 
 ## AF Registry {.smaller}
 
@@ -517,117 +261,8 @@ __Next Steps__
 - Earliest/latest activation
 - Geometry data
 
-# July 11, 2022
-
----
-
-```{r}
-#| label: Week 2 updates
-updates <-
-	updates |>
-	mutate(Status = case_when(
-		Project == p$mental_stress ~
-			"Working on tables and figures",
-		Project == p$af_registry ~
-			"Revise data dictionary",
-		Project == p$pert ~ 
-			"TBD",
-		Project == p$grants ~ 
-			"Considering isoproterenol washout",
-		Project == p$study ~
-			"TBD",
-		Project == p$clinic ~ 
-			"Weekly clinic with Mary",
-		Project == p$pixel ~
-			"TBD",
-		Project == p$endocarditis ~
-			"Outlining",
-		Project == p$modeling ~
-			"Modeling in epidemiology",
-		Project == p$signals ~
-			"TBD",
-		Project == p$biobank ~
-			"Continuous ECG recordings at Emory in CAD patients",
-		Project == p$eps ~
-			"TBD",
-		TRUE ~ Status
-	)) |>
-	mutate(Effort = case_when(
-		Project == p$mental_stress ~ 0.2,
-		Project == p$af_registry ~ 0.2, 
-		Project == p$pert ~ 0.05,
-		Project == p$grants ~ 0.2, 
-		Project == p$study ~ 0.05,
-		Project == p$clinic ~ 0.1, 
-		Project == p$pixel ~ 0.05,
-		Project == p$endocarditis ~ 0.02,
-		Project == p$modeling ~ 0.05, 
-		Project == p$signals ~ 0.05, 
-		Project == p$biobank ~ 0.01,
-		Project == p$eps ~ 0.1,
-		TRUE ~ Effort
-	)) |>
-	arrange(desc(Effort))
-
-tbl_research_updates(updates)
-```
-
 
 # July 18, 2022
-
----
-
-```{r}
-#| label: Week 3 updates
-updates <-
-	updates |>
-	mutate(Status = case_when(
-		Project == p$mental_stress ~
-			"Team = Amit Shah (*Emory*)  
-			Draft to co-authors",
-		Project == p$af_registry ~
-			"Data validation started, revisit variables",
-		Project == p$pert ~ 
-			"Education and research IRB",
-		Project == p$grants ~ 
-			"Reviewing autonomic literature at translational/basic science level",
-		Project == p$study ~
-			"General cardiology/echo boards in **Fall 2023",
-		Project == p$clinic ~ 
-			"Weekly clinic with Mary",
-		Project == p$pixel ~
-			"Processing images pending",
-		Project == p$endocarditis ~
-			"Outlining with student",
-		Project == p$modeling ~
-			"Writing code for forest plots in {R}",
-		Project == p$signals ~
-			"Practicing data extraction at UIC, but still need JBVA access {MATLAB}",
-		Project == p$biobank ~
-			"Emory Biobank continually recruiting",
-		Project == p$eps ~
-			"Considering 1 to 2 cases this week",
-		TRUE ~ Status
-	)) |>
-	mutate(Effort = case_when(
-		Project == p$mental_stress ~ 0.2,
-		Project == p$af_registry ~ 0.2, 
-		Project == p$pert ~ 0.05,
-		Project == p$grants ~ 0.2, 
-		Project == p$study ~ 0.05,
-		Project == p$clinic ~ 0.1, 
-		Project == p$pixel ~ 0.05,
-		Project == p$endocarditis ~ 0.02,
-		Project == p$modeling ~ 0.05, 
-		Project == p$signals ~ 0.05, 
-		Project == p$biobank ~ 0.01,
-		Project == p$eps ~ 0.1,
-		TRUE ~ Effort
-	)) |>
-	arrange(desc(Effort))
-
-tbl_research_updates(updates)
-```
 
 
 ## AF Registry
@@ -640,67 +275,79 @@ The AF registry is described [here](https://asshah4.github.io/afib). Current iss
 1. Management - REDCap, shared excel sheet
 1. Adjudication/review - outcomes, clinical follow-up length
 
-# July 25, 2022
+# August 15, 2022
 
----
+--- {.smaller}
 
 ```{r}
-#| label: Week 4 updates 
-updates <-
-	updates |>
-	mutate(Status = case_when(
-		Project == p$mental_stress ~
-			"Team = Amit Shah (*Emory*)  
-			Final figures of mortality by subgroups **7/25**  
-			Revise discussion on vagal withdrawal **6/26**",
-		Project == p$af_registry ~
-			"Decide on retrospective/prospective cohort definitions **TBD**",
-		Project == p$pert ~ 
-			"Submit IRB for education and clinical data **7/28**",
-		Project == p$grants ~ 
-			"Aim 1 = Human vagolysis and SCD  
-			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
-			Active research into model development **daily**",
-		Project == p$study ~
-			"General cardiology/echo boards in **Fall 2023",
-		Project == p$clinic ~ 
-			"Weekly clinic with Dr. Ziccardi",
-		Project == p$pixel ~
-			"Team = Lee Frazin, Satish Mishra, David Polman
-			Revise still images to create standard for processing and SOP **7/30**",
-		Project == p$endocarditis ~
-			"Meet with Atreya Mishra to complete outline **07/28**",
-		Project == p$modeling ~
-			"Forest plots by subgroups in {R}, **drafted**",
-		Project == p$signals ~
-			"Convert CARTO data into OpenEP **7/31**",
-		Project == p$biobank ~
-			"Emory Biobank continually recruiting  
-			Meet with staff to assess data quality **TBD**",
-		Project == p$eps ~
-			"Discuss with Adam which cases to cover this week  ",
-		TRUE ~ Status
-	)) |>
-	mutate(Effort = case_when(
-		Project == p$mental_stress ~ 0.2,
-		Project == p$af_registry ~ 0.1, 
-		Project == p$pert ~ 0.1,
-		Project == p$grants ~ 0.2, 
-		Project == p$study ~ 0.03,
-		Project == p$clinic ~ 0.1, 
-		Project == p$pixel ~ 0.1,
-		Project == p$endocarditis ~ 0.02,
-		Project == p$modeling ~ 0.05, 
-		Project == p$signals ~ 0.05, 
-		Project == p$biobank ~ 0.01,
-		Project == p$eps ~ 0.1,
-		TRUE ~ Effort
-	)) |>
-	arrange(desc(Effort))
-	
-tbl_research_updates(updates)
+#| echo: false
+ccts <- read_rds("~/projects/afib/_targets/objects/ccts_data")
+af <- read_rds("~/projects/afib/_targets/objects/prospective_data")
 
+ccts_n <- nrow(ccts)
+ccts_early <- min(ccts$procedure_date)
+ccts_late <- max(ccts$procedure_date)
+
+af_n <- nrow(af)
+af_early <- min(af$ablation_date, na.rm = TRUE)
+af_late <- max(af$ablation_date, na.rm = TRUE)
+af_missing <- sum(is.na(af$ablation_date))
 ```
+
+:::: {.columns}
+
+::: {.column width="40%"}
+__UIC-wide data summary__
+
+- N=`r ccts_n` had ablation
+- Date range from `r ccts_early` to `r_ccts_late`
+
+__AF registry data__
+- N=`r af_n` had ablation
+- Date range from `r af_early` to `r_af_late`
+- N=`r af_missing` have missing ablation dates
+
+
+:::
+
+::: {.column width="40%"}
+__Next Steps__
+
+1. Generate list of MRN for data collection
+1. Use new REDCap to obtain ECG/ablation data
+1. Run preliminary analysis on first 100 patients
+1. Consider expansion to JBVA/ACMC data
+:::
+
+::::
+
+
+# August 1, 2022
+
+
+## AF Registry
+
+Consider additional variables:
+
+- Recurrent events and adjudication (HF, cardiac admission, MACE)
+- Holter/ECG data and repeat collection (P-wave morphology, Wilson's vector gradient, amplitude of AF waves "coarseness")
+
+Will check with the MESA and ARIC data base on how repeat events were defined.
+
+## Murine EP Studies
+
+```{r, out.width = "60%"}
+knitr::include_graphics("../figures/electromap.png")
+```
+
+## Human EP Studies
+
+```{r}
+knitr::include_graphics("../figures/openep-ablation.png")
+```
+
+
+# July 25, 2022
 
 ## Forest Plots
 
@@ -765,338 +412,3 @@ tbl |>
 	tab_style(style = cell_fill(color = "white"),
 						locations = cells_body(columns = everything()))
 ```
-
-# August 1, 2022
-
----
-
-```{r}
-#| label: Week 5 updates
-updates <-
-	updates |>
-	mutate(Status = case_when(
-		Project == p$mental_stress ~
-			"Team = Amit Shah (*Emory*)  
-			Draft to co-authors **8/1**",
-		Project == p$af_registry ~
-			"Decide on retrospective/prospective cohort definitions **TBD**",
-		Project == p$pert ~ 
-			"Plan for IM Conference and Survey **8/5**",
-		Project == p$grants ~ 
-			"Aim 1 = Human vagolysis and SCD  
-			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
-			Active research into model development **daily**",
-		Project == p$study ~
-			"General cardiology/echo boards in **Fall 2023",
-		Project == p$clinic ~ 
-			"Weekly clinic with Dr. Ziccardi",
-		Project == p$pixel ~
-			"Team = Lee Frazin, Satish Mishra, David Polman
-			Revise still images to create standard for processing and SOP **8/3**",
-		Project == p$endocarditis ~
-			"Meet with Atreya Mishra to complete outline **8/2**",
-		Project == p$modeling ~
-			"Forest plots by subgroups in {R}, **complete**  
-			Revise multiple modeling approach in formulas",
-		Project == p$signals ~
-			"CARTO into OpenEP **8/2**",
-		Project == p$biobank ~
-			"Emory Biobank continually recruiting  
-			Meet with staff to assess data quality **TBD**",
-		Project == p$eps ~
-			"Confirm one day in EP lab  ",
-		TRUE ~ Status
-	)) |>
-	mutate(Product = case_when(
-		Project == p$mental_stress ~ 
-			"Manuscript - 1st Author, High Impact",
-		Project == p$af_registry ~
-			"*TBD*",
-		Project == p$pert ~
-			"Manuscript - Medical Education",
-		Project == p$grants ~ 
-			"*Funding*",
-		Project == p$study ~ 
-			"Board Certification",
-		Project == p$clinic ~
-			NA_character_,
-		Project == p$pixel ~
-			"Pilot Study",
-		Project == p$endocarditis ~  
-			"Manuscript - Review Paper",
-		Project == p$modeling ~ 
-			"Software Publication x 2-3",
-		Project == p$signals ~ 
-			"Software Publication",
-		Project == p$biobank ~
-			"*Paper*",
-		Project == "EP Lab" ~ 
-			"*EP Fellowship*",
-		TRUE ~ Product
-	)) |>
-	mutate(Effort = case_when(
-		Project == p$mental_stress ~ 0.2,
-		Project == p$af_registry ~ 0.1, 
-		Project == p$pert ~ 0.05,
-		Project == p$grants ~ 0.2, 
-		Project == p$study ~ 0.01,
-		Project == p$clinic ~ 0.1, 
-		Project == p$pixel ~ 0.1,
-		Project == p$endocarditis ~ 0.01,
-		Project == p$modeling ~ 0.01, 
-		Project == p$signals ~ 0.05, 
-		Project == p$biobank ~ 0.01,
-		Project == p$eps ~ 0.2,
-		TRUE ~ Effort
-	)) |>
-	arrange(desc(Effort))
-	
-tbl_research_updates(updates)
-```
-
-## AF Registry
-
-Consider additional variables:
-
-- Recurrent events and adjudication (HF, cardiac admission, MACE)
-- Holter/ECG data and repeat collection (P-wave morphology, Wilson's vector gradient, amplitude of AF waves "coarseness")
-
-Will check with the MESA and ARIC data base on how repeat events were defined.
-
-## Murine EP Studies
-
-```{r, out.width = "60%"}
-knitr::include_graphics("../figures/electromap.png")
-```
-
-## Human EP Studies
-
-```{r}
-knitr::include_graphics("../figures/openep-ablation.png")
-```
-
----
-
-# August 8, 2022
-
----
-
-```{r}
-#| label: Week 6 updates
-updates <-
-	updates |>
-	mutate(Status = case_when(
-		Project == p$mental_stress ~
-			"Team = Amit Shah (*Emory*)  
-			Draft to co-authors **8/9**",
-		Project == p$af_registry ~
-			"Complete AF registry for catheter ablation data dictionary **8/2**",
-		Project == p$pert ~ 
-			"Plan for IM Conference and Survey **8/10**",
-		Project == p$grants ~ 
-			"Aim 1 = Human vagolysis and SCD  
-			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
-			Active research into model development **daily**",
-		Project == p$study ~
-			"General cardiology/echo boards in **Fall 2023**  
-			ITE **10/18**",
-		Project == p$clinic ~ 
-			"Weekly clinic with Dr. Ziccardi",
-		Project == p$pixel ~
-			"Team = Lee Frazin, Satish Mishra, David Polman
-			Revise still images to create standard for processing and SOP **8/11**",
-		Project == p$endocarditis ~
-			"Meet with Atreya Mishra to complete outline **8/12**",
-		Project == p$modeling ~
-			"Forest plots by subgroups in {R}, **complete**  
-			Revise multiple modeling approach in formulas",
-		Project == p$signals ~
-			"CARTO into OpenEP **8/9**",
-		Project == p$biobank ~
-			"Emory Biobank continually recruiting  
-			Meet with staff to assess data quality **TBD**",
-		Project == p$eps ~
-			"EP lab on **8/8, 8/10, 8/11**",
-		TRUE ~ Status
-	)) |>
-	mutate(Product = case_when(
-		Project == p$mental_stress ~ 
-			"Manuscript - 1st Author, High Impact",
-		Project == p$af_registry ~
-			"*TBD*",
-		Project == p$pert ~
-			"Manuscript - Medical Education",
-		Project == p$grants ~ 
-			"*Funding*",
-		Project == p$study ~ 
-			"Board Certification",
-		Project == p$clinic ~
-			NA_character_,
-		Project == p$pixel ~
-			"Pilot Study",
-		Project == p$endocarditis ~  
-			"Manuscript - Review Paper",
-		Project == p$modeling ~ 
-			"Software Publication x 2-3",
-		Project == p$signals ~ 
-			"Software Publication",
-		Project == p$biobank ~
-			"*Paper*",
-		Project == "EP Lab" ~ 
-			"*EP Fellowship*",
-		TRUE ~ Product
-	)) |>
-	mutate(Effort = case_when(
-		Project == p$mental_stress ~ 0.1,
-		Project == p$af_registry ~ 0.2, 
-		Project == p$pert ~ 0.05,
-		Project == p$grants ~ 0.2, 
-		Project == p$study ~ 0.01,
-		Project == p$clinic ~ 0.1, 
-		Project == p$pixel ~ 0.1,
-		Project == p$endocarditis ~ 0.01,
-		Project == p$modeling ~ 0.01, 
-		Project == p$signals ~ 0.05, 
-		Project == p$biobank ~ 0.01,
-		Project == p$eps ~ 0.3,
-		TRUE ~ Effort
-	)) |>
-	arrange(desc(Effort))
-	
-tbl_research_updates(updates)
-```
-
-# August 15, 2022
-
----
-
-```{r}
-#| label: Week 7 updates
-updates <-
-	updates |>
-	mutate(Status = case_when(
-		Project == p$mental_stress ~
-			"Team = Amit Shah (*Emory*)  
-			Draft to co-authors **8/16**",
-		Project == p$af_registry ~
-			"AF registry needs revamp",
-		Project == p$pert ~ 
-			"Plan for IM Conference and Survey **8/18**",
-		Project == p$grants ~ 
-			"Aim 1 = Human vagolysis and SCD  
-			**Aim 2 = Murine model of vagal withdrawal and arrhythmia**  
-			Active research into model development **daily**",
-		Project == p$study ~
-			"General cardiology/echo boards in **Fall 2023**  
-			ITE **10/18**",
-		Project == p$clinic ~ 
-			"Weekly clinic with Dr. Ziccardi",
-		Project == p$pixel ~
-			"Team = Lee Frazin, Satish Mishra, David Polman
-			Images collected for 3/10 patients, finish patients **8/16**",
-		Project == p$endocarditis ~
-			"Meet with Atreya Mishra to complete outline **8/18**",
-		Project == p$modeling ~
-			"On hold",
-		Project == p$signals ~
-			"LSPro and CARTO into Matlab, **8/19**",
-		Project == p$biobank ~
-			"Emory Biobank continually recruiting  
-			Meet with staff to assess data quality **TBD**",
-		Project == p$eps ~
-			"EP lab scheduled TBD",
-		TRUE ~ Status
-	)) |>
-	mutate(Product = case_when(
-		Project == p$mental_stress ~ 
-			"Manuscript - 1st Author, High Impact",
-		Project == p$af_registry ~
-			"*TBD*",
-		Project == p$pert ~
-			"Manuscript - Medical Education",
-		Project == p$grants ~ 
-			"*Funding*",
-		Project == p$study ~ 
-			"Board Certification",
-		Project == p$clinic ~
-			NA_character_,
-		Project == p$pixel ~
-			"Pilot Study",
-		Project == p$endocarditis ~  
-			"Manuscript - Review Paper",
-		Project == p$modeling ~ 
-			"Software Publication x 2-3",
-		Project == p$signals ~ 
-			"Software Publication",
-		Project == p$biobank ~
-			"*Paper*",
-		Project == "EP Lab" ~ 
-			"*EP Fellowship*",
-		TRUE ~ Product
-	)) |>
-	mutate(Effort = case_when(
-		Project == p$mental_stress ~ 0.2,
-		Project == p$af_registry ~ 0.3, 
-		Project == p$pert ~ 0.05,
-		Project == p$grants ~ 0.1, 
-		Project == p$study ~ 0.01,
-		Project == p$clinic ~ 0.1, 
-		Project == p$pixel ~ 0.1,
-		Project == p$endocarditis ~ 0.01,
-		Project == p$modeling ~ 0.01, 
-		Project == p$signals ~ 0.05, 
-		Project == p$biobank ~ 0.01,
-		Project == p$eps ~ 0.2,
-		TRUE ~ Effort
-	)) |>
-	arrange(desc(Effort))
-	
-tbl_research_updates(updates)
-```
-
---- {.smaller}
-
-```{r}
-#| echo: false
-ccts <- read_rds("~/projects/afib/_targets/objects/ccts_data")
-af <- read_rds("~/projects/afib/_targets/objects/prospective_data")
-
-ccts_n <- nrow(ccts)
-ccts_early <- min(ccts$procedure_date)
-ccts_late <- max(ccts$procedure_date)
-
-af_n <- nrow(af)
-af_early <- min(af$ablation_date, na.rm = TRUE)
-af_late <- max(af$ablation_date, na.rm = TRUE)
-af_missing <- sum(is.na(af$ablation_date))
-```
-
-:::: {.columns}
-
-::: {.column width="40%"}
-__UIC-wide data summary__
-
-- N=`r ccts_n` had ablation
-- Date range from `r ccts_early` to `r_ccts_late`
-
-__AF registry data__
-- N=`r af_n` had ablation
-- Date range from `r af_early` to `r_af_late`
-- N=`r af_missing` have missing ablation dates
-
-
-:::
-
-::: {.column width="40%"}
-__Next Steps__
-
-1. Generate list of MRN for data collection
-1. Use new REDCap to obtain ECG/ablation data
-1. Run preliminary analysis on first 100 patients
-1. Consider expansion to JBVA/ACMC data
-:::
-
-::::
-
----
-
