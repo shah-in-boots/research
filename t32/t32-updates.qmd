@@ -12,28 +12,19 @@ format:
 #| label: setup
 #| include: false
 library(tidyverse)
-library(scales)
-library(ggsci)
-library(gt)
 library(arcana)
 library(volundr)
 library(durandal)
+library(coraline)
+
+# Googledrive sheets to be updated first
 library(googledrive)
 library(googlesheets4)
 library(clock)
 
-# Used in YAML above as well - lower is darker, higher is lighter
-stress <- pal_material("blue", reverse = TRUE)(9)
-arrhythmia <- pal_material("yellow", reverse = TRUE)(9)
-clinical <- pal_material("pink", reverse = TRUE)(9)
-computational <- pal_material("teal", reverse = TRUE)(9)
-text <- pal_material("blue-grey", reverse = TRUE)(9)
-
-# This may need to be refreshed on google drive for recent updates
-# Converts names to be simpler
 log <- 
-	googledrive::drive_get("research_log") |>
-	googlesheets4::read_sheet(sheet = "calendar_sheet") |>
+	drive_get("research_log") |>
+	read_sheet(sheet = "calendar_sheet") |>
 	mutate(
 		Start = date_start(Start, "minute"),
 		End = date_end(End, "minute")
@@ -45,10 +36,21 @@ log <-
 	select(-c(Calendar, Description))
 
 prog <-
-	googledrive::drive_get("research_log") |>
-	googlesheets4::read_sheet(sheet = "status_sheet")
+	drive_get("research_log") |>
+	read_sheet(sheet = "status_sheet")
 
-# Second version
+# Formating for table
+library(gt)
+library(ggsci)
+library(scales)
+
+# Used in YAML above as well - lower is darker, higher is lighter
+stress <- pal_material("blue", reverse = TRUE)(9)
+arrhythmia <- pal_material("yellow", reverse = TRUE)(9)
+clinical <- pal_material("pink", reverse = TRUE)(9)
+computational <- pal_material("teal", reverse = TRUE)(9)
+text <- pal_material("blue-grey", reverse = TRUE)(9)
+
 tbl_status_updates <- function(progress, effort) {
 	
 	data <-
@@ -115,7 +117,7 @@ tbl_status_updates <- function(progress, effort) {
 														 rows = is.na(Deadline))
 		) |>
 		tab_style(
-			style = cell_text(align = "right"),
+			style = cell_text(align = "center"),
 			locations = list(cells_stub(), cells_column_labels())
 		) |>
 		tab_style(
@@ -147,14 +149,11 @@ tbl_status_updates <- function(progress, effort) {
 }
 ```
 
-# September 26, 2022
-
----
-
 ```{r}
-#| label: block 4, week 4
+#| label: progress page
+#| echo: false
 dt <- 
-	date_build(year = 2022, month = 09, day = 26) |>
+	date_build(year = 2022, month = 10, day = 03) |>
 	add_days(-7)
 
 effort <-
@@ -168,6 +167,49 @@ effort <-
 
 tbl_status_updates(prog, effort)
 ```
+
+# October 2, 2022
+
+---
+
+__AF Registry__
+
+- Current number: 219
+- Recurrence rate: 46%
+- Death = 12 
+- MACE = 70 (including repeats)
+
+---
+
+```{r}
+#| echo: false
+curves <- read_rds("~/projects/mims/_targets/objects/curves")
+curves$hf_cv_grps
+```
+
+--- 
+
+```{r}
+x <- cardiac_atlas$right_atrium_rao
+
+ggplot() +
+	geom_sf(data = x$chambers, aes(fill = name)) +
+	geom_sf(data = x$projections, aes(fill = name)) + 
+	geom_sf(data = x$valves, aes(fill = name)) + 
+	geom_sf(data = x$septum, aes(fill = name)) + 
+	geom_sf(data = x$vessels, fill = "white") + 
+	scale_fill_brewer(palette = "YlGnBu") +
+	theme_void() + 
+	theme(legend.position = "none") 
+```
+
+GIS-based MAP of right atrium for mapping and localization purposes for publications.
+
+
+# September 26, 2022
+
+---
+
 
 ## AF Registry {.smaller}
 
@@ -262,22 +304,10 @@ __Next Steps__
 - Geometry data
 
 
-# July 18, 2022
-
-
-## AF Registry
-
-The AF registry is described [here](https://asshah4.github.io/afib). Current issues:
-
-1. Data quality - consistency between reviewers
-1. Missingness - decisions on acceptable thresholds
-1. Variable selection - echo findings, EP studies, medications, labs, symptoms
-1. Management - REDCap, shared excel sheet
-1. Adjudication/review - outcomes, clinical follow-up length
 
 # August 15, 2022
 
---- {.smaller}
+--- 
 
 ```{r}
 #| echo: false
@@ -412,3 +442,16 @@ tbl |>
 	tab_style(style = cell_fill(color = "white"),
 						locations = cells_body(columns = everything()))
 ```
+
+# July 18, 2022
+
+
+## AF Registry
+
+The AF registry is described [here](https://asshah4.github.io/afib). Current issues:
+
+1. Data quality - consistency between reviewers
+1. Missingness - decisions on acceptable thresholds
+1. Variable selection - echo findings, EP studies, medications, labs, symptoms
+1. Management - REDCap, shared excel sheet
+1. Adjudication/review - outcomes, clinical follow-up length

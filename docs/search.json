@@ -172,7 +172,7 @@
     "href": "t32/t32-updates.html#af-registry-3",
     "title": "Research-In-Progress",
     "section": "AF Registry",
-    "text": "AF Registry\nThe AF registry is described here. Current issues:\n\nData quality - consistency between reviewers\nMissingness - decisions on acceptable thresholds\nVariable selection - echo findings, EP studies, medications, labs, symptoms\nManagement - REDCap, shared excel sheet\nAdjudication/review - outcomes, clinical follow-up length"
+    "text": "AF Registry\nConsider additional variables:\n\nRecurrent events and adjudication (HF, cardiac admission, MACE)\nHolter/ECG data and repeat collection (P-wave morphology, Wilson’s vector gradient, amplitude of AF waves “coarseness”)\n\nWill check with the MESA and ARIC data base on how repeat events were defined."
   },
   {
     "objectID": "t32/t32-updates.html#forest-plots",
@@ -186,7 +186,7 @@
     "href": "t32/t32-updates.html#af-registry-4",
     "title": "Research-In-Progress",
     "section": "AF Registry",
-    "text": "AF Registry\nConsider additional variables:\n\nRecurrent events and adjudication (HF, cardiac admission, MACE)\nHolter/ECG data and repeat collection (P-wave morphology, Wilson’s vector gradient, amplitude of AF waves “coarseness”)\n\nWill check with the MESA and ARIC data base on how repeat events were defined."
+    "text": "AF Registry\nThe AF registry is described here. Current issues:\n\nData quality - consistency between reviewers\nMissingness - decisions on acceptable thresholds\nVariable selection - echo findings, EP studies, medications, labs, symptoms\nManagement - REDCap, shared excel sheet\nAdjudication/review - outcomes, clinical follow-up length\n\n\n\nStress Epidemiology, Arrhythmia Mechanisms, Clinical, Computational Neurocardiology"
   },
   {
     "objectID": "t32/t32-updates.html#murine-ep-studies",
@@ -201,5 +201,26 @@
     "title": "Research-In-Progress",
     "section": "Human EP Studies",
     "text": "Human EP Studies"
+  },
+  {
+    "objectID": "t32/t32-updates.html#vagal-withdrawal-in-ihd",
+    "href": "t32/t32-updates.html#vagal-withdrawal-in-ihd",
+    "title": "Research-In-Progress",
+    "section": "Vagal Withdrawal in IHD",
+    "text": "Vagal Withdrawal in IHD"
+  },
+  {
+    "objectID": "t32/t32-updates.html#cardiac-atlas",
+    "href": "t32/t32-updates.html#cardiac-atlas",
+    "title": "Research-In-Progress",
+    "section": "Cardiac Atlas",
+    "text": "Cardiac Atlas\n\n\nMap of cardiac structures."
+  },
+  {
+    "objectID": "t32/t32-updates.html#af-registry-5",
+    "href": "t32/t32-updates.html#af-registry-5",
+    "title": "Research-In-Progress",
+    "section": "AF Registry",
+    "text": "AF Registry\nConsider additional variables:\n\nRecurrent events and adjudication (HF, cardiac admission, MACE)\nHolter/ECG data and repeat collection (P-wave morphology, Wilson’s vector gradient, amplitude of AF waves “coarseness”)\n\nWill check with the MESA and ARIC data base on how repeat events were defined."
   }
 ]
