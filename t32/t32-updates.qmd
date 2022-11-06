@@ -153,7 +153,7 @@ tbl_status_updates <- function(progress, effort) {
 #| label: progress page
 #| echo: false
 dt <- 
-	date_build(year = 2022, month = 10, day = 03) |>
+	date_build(year = 2022, month = 10, day = 10) |>
 	add_days(-7)
 
 effort <-
@@ -167,6 +167,24 @@ effort <-
 
 tbl_status_updates(prog, effort)
 ```
+
+# October 10, 2022
+
+---
+
+__AF Registry__
+
+Status:
+
+- Current [overview](https://github.com/asshah4/aflubber/R/af_ablation_recurrence.html)
+- Not yet powered
+- Will need to revise out approach
+
+---
+
+__Early Onset Atrial Flutter__
+
+
 
 # October 2, 2022
 
@@ -183,8 +201,8 @@ __AF Registry__
 
 ```{r}
 #| echo: false
-curves <- read_rds("~/projects/mims/_targets/objects/curves")
-curves$hf_cv_grps
+#curves <- read_rds("~/projects/mims/_targets/objects/curves")
+#curves$hf_cv_grps
 ```
 
 --- 
@@ -309,34 +327,18 @@ __Next Steps__
 
 --- 
 
-```{r}
-#| echo: false
-ccts <- read_rds("~/projects/afib/_targets/objects/ccts_data")
-af <- read_rds("~/projects/afib/_targets/objects/prospective_data")
-
-ccts_n <- nrow(ccts)
-ccts_early <- min(ccts$procedure_date)
-ccts_late <- max(ccts$procedure_date)
-
-af_n <- nrow(af)
-af_early <- min(af$ablation_date, na.rm = TRUE)
-af_late <- max(af$ablation_date, na.rm = TRUE)
-af_missing <- sum(is.na(af$ablation_date))
-```
-
 :::: {.columns}
 
 ::: {.column width="40%"}
 __UIC-wide data summary__
 
-- N=`r ccts_n` had ablation
-- Date range from `r ccts_early` to `r_ccts_late`
+- N ~ XXX had ablation
+- Date range from >= 2010
 
 __AF registry data__
-- N=`r af_n` had ablation
-- Date range from `r af_early` to `r_af_late`
-- N=`r af_missing` have missing ablation dates
 
+- N=~300 had ablation
+- Date range from >= 2010
 
 :::
 
@@ -353,7 +355,6 @@ __Next Steps__
 
 
 # August 1, 2022
-
 
 ## AF Registry
 
@@ -375,7 +376,6 @@ knitr::include_graphics("../figures/electromap.png")
 ```{r}
 knitr::include_graphics("../figures/openep-ablation.png")
 ```
-
 
 # July 25, 2022
 
@@ -448,7 +448,7 @@ tbl |>
 
 ## AF Registry
 
-The AF registry is described [here](https://asshah4.github.io/afib). Current issues:
+The AF registry is described [here](https://asshah4.github.io/aflubber). Current issues:
 
 1. Data quality - consistency between reviewers
 1. Missingness - decisions on acceptable thresholds
