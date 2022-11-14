@@ -6,11 +6,12 @@ This serves as a summary of current research progress, updates, and projects (cl
 
 The major research focuses are currently on:
 
-1. __Stress and Clinical Neurocardiology__: Physiological and psychological stress and cardiovascular mortality, from a neurocardiac perspective.
+1. __Stress and Cardiovascular Epidemiology__: Physiological and psychological stress and cardiovascular mortality, from a neurocardiac perspective.
 1. __Stress and Arrhythmogenesis__: Mechanisms behind stress and arrhythmia generation (or degeneration) in a pre-clinical and clinical electrophysiology context.
+1. __Computational Neurocardiology and Biostatistics__: Programming-based approaches in signal processing and biostatistics.
 1. __Clinical Projects__: Work being done as a cardiology fellow at UIC/JBVA.
 
-# Stress and Clinical Neurocardiology
+# Stress and Cardiovascular Epidemiology
 
 - Effect of autonomic reactivity and resting vagal tone in cardiovascular mortality
 - Depression and dysregulation of the autonomic nervous system
@@ -18,11 +19,9 @@ The major research focuses are currently on:
 
 # Stress and Arrhythmognesis
 
-Currently a work in progress as building a repertoire of pre-clinical literature.
-
 ## Atrial Fibrillation Registry
 
-A catheter-ablation registry is being developed. The current status of the data acquisition process can be seen [here](https://asshah4.github.io/afib). No clinical data is available externally. 
+A catheter-ablation registry is being developed. The current status of the data acquisition process can be seen [here](https://asshah4.github.io/aflubber). No clinical data is available externally. 
 
 # Clinical Projects
 

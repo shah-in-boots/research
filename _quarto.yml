@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: .
+  render:
+    - "!f32/progress/"
 
 website:
   title: "Research"

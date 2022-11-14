@@ -5,17 +5,33 @@ format:
   revealjs:
     theme: simple
     footer: "[Stress Epidemiology]{style='color:#1E87E5FF'}, [Arrhythmia Mechanisms]{style='color:#F8A725FF'}, [Clinical]{style='color:#C1185AFF'}, [Computational Neurocardiology]{style='color:#00887AFF'}"
+    scrollable: true
+execute:
+  cache: false
 ---
 
 
 ```{r}
 #| label: setup
 #| include: false
+
+# Libraries
 library(tidyverse)
 library(arcana)
 library(volundr)
 library(durandal)
 library(coraline)
+
+# Location
+find_project_folder <- function() {
+	x <- sessionInfo()$running
+	if (grepl("mac", x)) {
+		file.path("/Users", "asshah4", "projects")
+	} else if (grepl("Windows", x)) {
+		file.path("..", "..", "projects") 
+	}
+}
+
 
 # Googledrive sheets to be updated first
 library(googledrive)
@@ -39,7 +55,7 @@ prog <-
 	drive_get("research_log") |>
 	read_sheet(sheet = "status_sheet")
 
-# Formating for table
+# Formatting for tables
 library(gt)
 library(ggsci)
 library(scales)
@@ -149,11 +165,12 @@ tbl_status_updates <- function(progress, effort) {
 }
 ```
 
+
 ```{r}
 #| label: progress page
 #| echo: false
 dt <- 
-	date_build(year = 2022, month = 10, day = 10) |>
+	date_build(year = 2022, month = 11, day = 14) |>
 	add_days(-7)
 
 effort <-
@@ -168,6 +185,87 @@ effort <-
 tbl_status_updates(prog, effort)
 ```
 
+# November 14, 2022
+
+## Early Onset Atrial Flutter
+
+1. Draft of paper expanded to include results
+1. Prominent findings of family history and association with arrhythmia
+1. Key tables and figures established
+
+```{r}
+#| cache: true
+store <- file.path(find_project_folder(), "aflubber", "_targets")
+afl_tbls <- targets::tar_read(flutter_tables, store = store)
+```
+
+---
+
+### Table: Cohort Descriptions
+
+```{r}
+#| echo: false
+afl_tbls$one |>
+	as_raw_html()
+```
+
+---
+
+### Table: Chi Square (Early ~ Race | Family)
+
+```{r}
+#| echo: false
+afl_tbls$two |>
+	as_raw_html()
+```
+
+---
+
+### Table: Unadjusted Risk
+
+```{r}
+#| echo: false
+afl_tbls$supp_one |>
+	as_raw_html()
+```
+
+---
+
+### Table: Risk by Family History
+
+```{r}
+#| echo: false
+afl_tbls$supp_two |>
+	as_raw_html()
+```
+
+---
+
+### Table: Fully Adjusted Model
+
+```{r}
+#| echo: false
+afl_tbls$three |>
+	as_raw_html()
+```
+
+---
+
+### Table: Grouped Forest Plots
+
+```{r}
+#| echo: false
+afl_tbls$forest 
+```
+
+---
+
+Next steps:
+
+- Find agreement in key results and figures
+- Identify main finding
+- Complete discussion section
+
 # October 10, 2022
 
 ---
@@ -179,12 +277,6 @@ Status:
 - Current [overview](https://github.com/asshah4/aflubber/R/af_ablation_recurrence.html)
 - Not yet powered
 - Will need to revise out approach
-
----
-
-__Early Onset Atrial Flutter__
-
-
 
 # October 2, 2022
 
@@ -201,8 +293,10 @@ __AF Registry__
 
 ```{r}
 #| echo: false
-#curves <- read_rds("~/projects/mims/_targets/objects/curves")
-#curves$hf_cv_grps
+#| cache: true
+store <- file.path(find_project_folder(), "mims", "_targets")
+curves <- targets::tar_read(curves, store = store)
+curves$lf_stress
 ```
 
 --- 
