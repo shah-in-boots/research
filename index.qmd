@@ -4,6 +4,7 @@ title: "Summary of Research Efforts"
 
 This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of `r format(Sys.Date(), "%A, %B %d, %Y")`. Please see here for weekly [updates](https://asshah4.github.io/research/t32/t32-updates.html).
 
+
 The major research focuses are currently on:
 
 1. __Stress and Cardiovascular Epidemiology__: Physiological and psychological stress and cardiovascular mortality, from a neurocardiac perspective.
@@ -19,9 +20,10 @@ The major research focuses are currently on:
 
 # Stress and Arrhythmognesis
 
-## Atrial Fibrillation Registry
+## Atrial Fibrillation 
 
-A catheter-ablation registry is being developed. The current status of the data acquisition process can be seen [here](https://asshah4.github.io/aflubber). No clinical data is available externally. 
+- A catheter-ablation registry is being developed. The current status of the data acquisition process can be seen [here](https://asshah4.github.io/aflubber). No clinical data is available externally. 
+- [AHA Innovative Projects 2022](https://asshah4.github.io/research/grants/aha_innovative_project_2022.html) including atrial arrhythmia modulatio with NPY and atrial fibrillation phenotyping
 
 # Clinical Projects
 
