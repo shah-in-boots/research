@@ -1,0 +1,10 @@
+```{r}
+#| echo: false
+#| label: color theme
+# Used in YAML above as well - lower is darker, higher is lighter
+stress <- ggsci::pal_material("blue", reverse = TRUE)(9)
+arrhythmia <- ggsci::pal_material("yellow", reverse = TRUE)(9)
+clinical <- ggsci::pal_material("pink", reverse = TRUE)(9)
+computational <- ggsci::pal_material("teal", reverse = TRUE)(9)
+text <- ggsci::pal_material("blue-grey", reverse = TRUE)(9)
+```
