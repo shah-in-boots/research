@@ -1,8 +1,6 @@
 project:
   type: website
   output-dir: .
-  render:
-    - "!f32/progress/"
 
 website:
   title: "Research"
@@ -32,5 +30,7 @@ format:
     css: styles.css
     toc: true
     toc_float: true
+  docx:
+    reference-doc: template.docx
 
 

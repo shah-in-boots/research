@@ -1,0 +1,17 @@
+---
+format: docx
+---
+
+# Letter of Intent: Vagal Rescue for Atrial Arrhythmia Protection
+ 
+Atrial fibrillation (AF) is the most common arrhythmia worldwide, affecting over 1% of the population. There is poor understanding of both how the disease is triggered or maintained, and it is critical to understand alternative pathways for the management of AF. Moreover, in patients with dilated atria or known atrial myopathy, management is even less successful with either ablative or pharmacological approaches. Evaluating a distinct mechanistic pathway is critical to decreasing arrhythmia risk.
+
+The current problematic paradigm is that enlarged atria are not only prone to arrhythmia, but have limited therapeutic options. 
+The neural regulation of cardiac physiology is one of the most important pathways, but we are only starting to study how to modulate the autonomic nervous system (ANS) to decrease arrhythmia risk.
+
+The dilemma of atrial size and the increased risk of AF occurs not only in humans, but across most other mammalian species.  Horses, for example, have an incidence of AF of over 2%.  However, diving mammals such as whales have an almost non-existent risk, suggesting alternative mechanisms to maintain normal atrial conduction.  The likely cause of this difference is through the mammalian diver reflex, which leads to a vagal-mediated regulation of cardiac physiology. Diving leads to an increase in vagal tone, but simultaneously involves an increase in sympathetic tone, as the dive nadir are times of peak work or activity. During the descent, bradycardia becomes more profound, but is predominantly sinus. During the ascent however, there is a higher rate of arrhythmia, which suggests the importance of vagolysis.
+
+As the atria are heavily innervated by autonomic ganglionic plexuses, sympathovagal balance rises to the forefront of the pathogenesis of atrial arrhythmias. The role of cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons is likely the mediator of the vagolysis phenomenon. Although the direct effect of adrenergic neuron is the release of catecholamines, they additionally release neuropeptide Y (NPY), which binds directly to cholinergic neurons through the Y2R receptor. The effect of this is inhibition of cholinergic firing, which leads to local vagolysis. By mechanistically intervening and stopping vagolysis from occurring, we can demonstrate the importance of the vagal component of the development of arrhythmia.
+
+We propose to demonstrate the causal nature of vagolysis by expanding the strengths of our current lab with novel methodology. We will expand on our current murine model of AF to include those with atrial cardiomyopathy. We will use a non-traditional Langendorf preparation that spares the vagal nerve to establish both a baseline of atrial conduction properties and changes with vagal stimulation. We will infuse catecholamines along with NPY to simulate an increase in sympathetic drive, and then assess the change in atrial properties (such as increased heterogeneity, triggered activity, and conductive velocities). We then propose to rescue vagal activity through the introduction of Y2R antagonist to assess if the cardiac conduction properties return to baseline. These findings would establish a novel paradigm that highlights 1) the importance of vagolysis in arrhythmogenesis and 2) identifies a therapeutic pathway that may protect against these arrhythmia. Our findings will support a pharmacological intervention that may change how arrhythmia are managed.
+

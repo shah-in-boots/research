@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "grants/aha_innovative_project_2022.html#overview",
+    "href": "grants/aha_innovative_project_2022.html#overview",
+    "title": "AHA Innovative Project Grant",
+    "section": "Overview",
+    "text": "Overview\n\nDeadline for LOI: 12/3, 1 page\nDeadline for invited proposals: 03/10, 5 pages\nNo preliminary data accepted"
+  },
+  {
+    "objectID": "grants/aha_innovative_project_2022.html#background",
+    "href": "grants/aha_innovative_project_2022.html#background",
+    "title": "AHA Innovative Project Grant",
+    "section": "Background",
+    "text": "Background\n\nHigh levels of SNS stimulation are pro-arrhythmic for triggered activity\nCross-talk between SNS/PNS at intracardiac level is critical in arrhythmia generation\nSNS releases both catecholamines + NPY\nNPY: causes vagolysis at level of cholinergic neurons through Y2R"
+  },
+  {
+    "objectID": "grants/aha_innovative_project_2022.html#proposal",
+    "href": "grants/aha_innovative_project_2022.html#proposal",
+    "title": "AHA Innovative Project Grant",
+    "section": "Proposal",
+    "text": "Proposal\n\nMurine model of pro-atrial arrhythmia\nWhole heart + vagus nerve in Langendorf preparation\nVagal stimulation protocol for conduction property modulation\nCatecholamine infusion + NPY infusion that removes protection\nNPY Y2R blockade returns vagal protective effect"
+  },
+  {
+    "objectID": "grants/aha_innovative_project_2022.html#background-1",
+    "href": "grants/aha_innovative_project_2022.html#background-1",
+    "title": "AHA Innovative Project Grant",
+    "section": "Background",
+    "text": "Background\n\nCurrently use limited classification system:\n\nLone\nParoxysmal\nPersistent\nLong-standing Persistent\nPermanent\n\nDoes not capture underlying pathology, etiology, triggers, genetic components"
+  },
+  {
+    "objectID": "grants/aha_innovative_project_2022.html#proposal-1",
+    "href": "grants/aha_innovative_project_2022.html#proposal-1",
+    "title": "AHA Innovative Project Grant",
+    "section": "Proposal",
+    "text": "Proposal\nBig data:\n\nUse “big data” approach\nX-dimensionality clustering based on clincial covariates (support vector machines)\nWeight importance of clinical factors\n\nValidation:\n\nValidate with local cohorts and tie to both treatment + outcomes\nIntegration of intracardiac mapping data (voltage, geometry, volume, dominant frequency)"
+  },
+  {
+    "objectID": "t32/t32-updates.html#early-onset-atrial-flutter",
+    "href": "t32/t32-updates.html#early-onset-atrial-flutter",
+    "title": "Research-In-Progress",
+    "section": "Early Onset Atrial Flutter",
+    "text": "Early Onset Atrial Flutter\n\nDraft of paper expanded to include results\nProminent findings of family history and association with arrhythmia\nKey tables and figures established"
+  },
+  {
     "objectID": "t32/t32-updates.html#af-registry",
     "href": "t32/t32-updates.html#af-registry",
     "title": "Research-In-Progress",
@@ -74,7 +116,7 @@
     "href": "f32/readme.html",
     "title": "Research",
     "section": "",
-    "text": "Introduction\n\nProject Title\n\nProject Abstract\n\nProject Narrative\n\n\nBackground and Goals for Fellowship Training\n\nDoctoral Dissertation and Research Experience\nTraining Goals and Objectives\nActivities Planned Under this Award\n\nSpecific Aims\nResearch Strategy\n\nSignificance\nInnovation\nApproach\n\nRespective Contributions\nSelection of Sponsor and Institution\nTraining in the Responsible Conduct of Research\nSponsor and Co-sponsor Statements\nLetters of Support from Contributors\nDescription of Institutional Environment and Commitment to Training\nBiographical Sketch"
+    "text": "F32 Grant Outline\n\nIntroduction\n\nProject Title\n\nProject Abstract\n\nProject Narrative\n\n\nBackground and Goals for Fellowship Training\n\nDoctoral Dissertation and Research Experience\nTraining Goals and Objectives\nActivities Planned Under this Award\n\nSpecific Aims\nResearch Strategy\n\nSignificance\nInnovation\nApproach\n\nRespective Contributions\nSelection of Sponsor and Institution\nTraining in the Responsible Conduct of Research\nSponsor and Co-sponsor Statements\nLetters of Support from Contributors\nDescription of Institutional Environment and Commitment to Training\nBiographical Sketch"
   },
   {
     "objectID": "f32/brainstorming.html",
@@ -109,13 +151,13 @@
     "href": "index.html",
     "title": "Summary of Research Efforts",
     "section": "",
-    "text": "This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Friday, November 11, 2022. Please see here for weekly updates.\nThe major research focuses are currently on:"
+    "text": "This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Friday, November 18, 2022. Please see here for weekly updates.\nThe major research focuses are currently on:"
   },
   {
-    "objectID": "index.html#atrial-fibrillation-registry",
-    "href": "index.html#atrial-fibrillation-registry",
+    "objectID": "index.html#atrial-fibrillation",
+    "href": "index.html#atrial-fibrillation",
     "title": "Summary of Research Efforts",
-    "section": "Atrial Fibrillation Registry",
-    "text": "Atrial Fibrillation Registry\nA catheter-ablation registry is being developed. The current status of the data acquisition process can be seen here. No clinical data is available externally."
+    "section": "Atrial Fibrillation",
+    "text": "Atrial Fibrillation\n\nA catheter-ablation registry is being developed. The current status of the data acquisition process can be seen here. No clinical data is available externally.\nAHA Innovative Projects 2022 including atrial arrhythmia modulatio with NPY and atrial fibrillation phenotyping"
   }
 ]
