@@ -23,7 +23,7 @@ The major research focuses are currently on:
 ## Atrial Fibrillation 
 
 - A catheter-ablation registry is being developed. The current status of the data acquisition process can be seen [here](https://asshah4.github.io/aflubber). No clinical data is available externally. 
-- [AHA Innovative Projects 2022](https://asshah4.github.io/research/grants/aha_innovative_project_2022.html) including atrial arrhythmia modulatio with NPY and atrial fibrillation phenotyping
+- [AHA Innovative Projects 2022](https://asshah4.github.io/research/grants/aha_innovative_project_2022.html) including atrial arrhythmia modulatio with NPY 
 
 # Clinical Projects
 
