@@ -32,5 +32,6 @@ format:
     toc_float: true
   docx:
     reference-doc: template.docx
-
+    bibliography: ../bibliography/Neurocardiology.bib
+    csl: ../bibliography/circulation.csl
 
