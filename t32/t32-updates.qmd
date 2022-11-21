@@ -170,7 +170,7 @@ tbl_status_updates <- function(progress, effort) {
 #| label: progress page
 #| echo: false
 dt <- 
-	date_build(year = 2022, month = 11, day = 14) |>
+	date_build(year = 2022, month = 11, day = 21) |>
 	add_days(-7)
 
 effort <-
@@ -184,6 +184,15 @@ effort <-
 
 tbl_status_updates(prog, effort)
 ```
+
+# November 21, 2022
+
+## Updates
+
+- AHA IPA: Completed draft, pending revisions
+- AFL Paper: Draft to be done by Wednesday
+- AF Ablation + Biorepository: Pending IRB
+- Stress and CVD Mortality: Submitted to _Circulation_, revisions Pending
 
 # November 14, 2022
 
