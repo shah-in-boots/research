@@ -28,7 +28,7 @@ find_project_folder <- function() {
 	if (grepl("mac", x)) {
 		file.path("/Users", "asshah4", "projects")
 	} else if (grepl("Windows", x)) {
-		file.path("..", "..", "projects") 
+		file.path("C:/Users", "asshah4", "projects")
 	}
 }
 
@@ -193,6 +193,13 @@ tbl_status_updates(prog, effort)
 - AFL Paper: Draft to be done by Wednesday
 - AF Ablation + Biorepository: Pending IRB
 - Stress and CVD Mortality: Submitted to _Circulation_, revisions Pending
+
+## AHA IPA
+
+- Atrial fibrillation (AF) remains the most common arrhythmia worldwide, afflicting over 1% of the population, but there is poor understanding of how the arrhythmia is triggered and maintained. Dilated atria are heavily coincident in AF not only in humans but across land mammals, such as the 2-3% burden seen in equine species. Growing evidence supports the role of the autonomic nervous system (ANS) in AF however, such as the sympathovagal imbalance prior to onset or protective effects of vagal tone in diving mammals. Establishing the important, pathological contribution of local vagolysis changes how we view the interplay of the sympathetic and parasympathetic nervous systems, and allows us to take a novel direction in the management of an incredibly burdensome disease.
+- The atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties. The key mechanism that we will explore is the intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons. Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY). NPY binds to cholinergic neurons through the Y2R receptor, inhibiting firing and leading to vagolytic effects on the myocardium.
+- We propose that triggered AF occurs due to vagolysis in the setting of increased sympathetic activity. We hypothesize that 1) vagal stimulation protects against AF in pro-arrhythmic murine models, and 2) blockade of vagolysis through Y2R antagonism under increased sympathetic activity protects from AF and creates improve myocardial conductive properties. We will utilize ex-vivo, whole heart explants in vagal-sparing Langendorf preparations in an established murine model of AF. Vagal nerve stimulation protocols and catecholamine infusion will mimick local autonomic activity. We will measure atrial conductive properties (phase slope changes, after depolarizations, ectopy) at baseline, with infusion of NPY, and with Y2R antagonists. If, as we hypothesize, vagolysis leads to triggered AF, and NPY blockade rescues the arrhythmia burden, we will have established an innovative, causal mechanism in the pathogenesis of AF.
+- Our lab is uniquely suited to explore these questions, as a leading center of murine and induced pluripotent stem cell models of atrial arrhythmias. We have demonstrated competence in patch clamping and measurement of cardiac tissue conductive properties through Langendorf preparations, and are able to leverage our extensive electrophysiological expertise with both basic and clinical scientists. Not only does this proposal explore the novel contribution of vagolysis in arrhythmogenesis, it identifies a pharmacological target for potential interventions.
 
 # November 14, 2022
 
