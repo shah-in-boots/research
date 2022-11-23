@@ -104,7 +104,7 @@ tbl_status_updates <- function(progress, effort) {
 			locations = cells_row_groups(groups = contains("Arrhythmia"))
 		) |>
 		tab_style(
-			style = list(cell_fill(color = clinical[5]),
+			style = list(cefill(color = clinical[5]),
 									 cell_text(color = "white"),
 									 cell_borders(sides = "all", color = clinical[5])),
 			locations = cells_row_groups(groups = contains("Clinical"))
