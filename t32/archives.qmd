@@ -1,0 +1,347 @@
+# November 21, 2022
+
+## Updates
+
+- AHA IPA: Completed draft, pending revisions
+- AFL Paper: Draft to be done by Wednesday
+- AF Ablation + Biorepository: Pending IRB
+- Stress and CVD Mortality: Submitted to _Circulation_, revisions Pending
+
+# November 14, 2022  ## Early Onset Atrial Flutter  1. Draft of paper expanded to include results 1. Prominent findings of family history and association with arrhythmia 1. Key tables and figures established  ```{r} #| cache: true store <- file.path(find_project_folder(), "aflubber", "_targets") afl_tbls <- targets::tar_read(flutter_tables, store = store) ```  ---  ### Table: Cohort Descriptions  ```{r} #| echo: false afl_tbls$one |> as_raw_html() ```  ---  ### Table: Chi Square (Early ~ Race | Family)
+
+```{r}
+#| echo: false
+afl_tbls$two |>
+	as_raw_html()
+```
+
+---
+
+### Table: Unadjusted Risk
+
+```{r}
+#| echo: false
+afl_tbls$supp_one |>
+	as_raw_html()
+```
+
+---
+
+### Table: Risk by Family History
+
+```{r}
+#| echo: false
+afl_tbls$supp_two |>
+	as_raw_html()
+```
+
+---
+
+### Table: Fully Adjusted Model
+
+```{r}
+#| echo: false
+afl_tbls$three |>
+	as_raw_html()
+```
+
+---
+
+### Table: Grouped Forest Plots
+
+```{r}
+#| echo: false
+afl_tbls$forest 
+```
+
+---
+
+Next steps:
+
+- Find agreement in key results and figures
+- Identify main finding
+- Complete discussion section
+
+# October 10, 2022
+
+---
+
+__AF Registry__
+
+Status:
+
+- Current [overview](https://github.com/asshah4/aflubber/R/af_ablation_recurrence.html)
+- Not yet powered
+- Will need to revise out approach
+
+# October 2, 2022
+
+---
+
+__AF Registry__
+
+- Current number: 219
+- Recurrence rate: 46%
+- Death = 12 
+- MACE = 70 (including repeats)
+
+---
+
+```{r}
+#| echo: false
+#| cache: true
+store <- file.path(find_project_folder(), "mims", "_targets")
+curves <- targets::tar_read(curves, store = store)
+curves$lf_stress
+```
+
+--- 
+
+```{r}
+x <- cardiac_atlas$right_atrium_rao
+
+ggplot() +
+	geom_sf(data = x$chambers, aes(fill = name)) +
+	geom_sf(data = x$projections, aes(fill = name)) + 
+	geom_sf(data = x$valves, aes(fill = name)) + 
+	geom_sf(data = x$septum, aes(fill = name)) + 
+	geom_sf(data = x$vessels, fill = "white") + 
+	scale_fill_brewer(palette = "YlGnBu") +
+	theme_void() + 
+	theme(legend.position = "none") 
+```
+
+GIS-based MAP of right atrium for mapping and localization purposes for publications.
+
+
+# September 26, 2022
+
+---
+
+
+## AF Registry {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+__Analysis__
+
+- Genetic analysis in PLINK complete
+- Models are set up for analysis once data intake is done
+:::
+
+::: {.column width="40%"}
+__Status__
+
+1. Have n = 238 currently
+1. Reviewed 95 charts thus far (CAR team)
+1. Of n = 108, 75 have had recurrence, 33 without (rate of about 70% of anyarrhythmia)
+1. Of ECG based confirmation, 43 AF recurrence events (53%)
+
+:::
+
+::::
+
+# September 12, 2022
+
+---
+
+## AF Registry {.smaller}
+
+REDCap data dictionary is finalized. Next steps are:
+
+1. Data entry for outcomes
+2. Finalization of new patients to add from AF ablation registry
+
+## Genetics {.smaller}
+
+Currently able to:
+
+- Format large SNP data sets into appropriate tables
+- Utilize `PLINK` and `MERLIN` to process Chen's genetics data
+- Run from R to help analyze findings
+
+Next steps:
+
+- Confirm ancestry (for practice) percent likelihood 
+- Then, once outcome data is complete, analyze differences by race
+
+Analytical methods:
+
+- Time to binary outcome of recurrence
+- Recurrent event analysis for AF recurrence
+- Can revise with Bayesian modeling in `STAN` as well
+
+
+# August 22, 2022
+
+---
+
+## AF Registry {.smaller}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+__Status__
+
+- REDCap is in progress
+- Have an additional list of registry patients that may/may not have had ablation
+
+:::
+
+::: {.column width="40%"}
+__Next Steps__
+
+1. Complete 100 REDCap patients
+1. Identify 300 patients that have potentially had ablation
+
+:::
+
+::::
+
+---
+
+## CARTO Maps {.smaller}
+
+- Ablation quantification
+- Activation mapping
+- EGM annotation
+- Voltage mapping
+- Conduction velocity
+- Earliest/latest activation
+- Geometry data
+
+
+
+# August 15, 2022
+
+--- 
+
+:::: {.columns}
+
+::: {.column width="40%"}
+__UIC-wide data summary__
+
+- N ~ XXX had ablation
+- Date range from >= 2010
+
+__AF registry data__
+
+- N=~300 had ablation
+- Date range from >= 2010
+
+:::
+
+::: {.column width="40%"}
+__Next Steps__
+
+1. Generate list of MRN for data collection
+1. Use new REDCap to obtain ECG/ablation data
+1. Run preliminary analysis on first 100 patients
+1. Consider expansion to JBVA/ACMC data
+:::
+
+::::
+
+
+# August 1, 2022
+
+## AF Registry
+
+Consider additional variables:
+
+- Recurrent events and adjudication (HF, cardiac admission, MACE)
+- Holter/ECG data and repeat collection (P-wave morphology, Wilson's vector gradient, amplitude of AF waves "coarseness")
+
+Will check with the MESA and ARIC data base on how repeat events were defined.
+
+## Murine EP Studies
+
+```{r, out.width = "60%"}
+knitr::include_graphics("../figures/electromap.png")
+```
+
+## Human EP Studies
+
+```{r}
+knitr::include_graphics("../figures/openep-ablation.png")
+```
+
+# July 25, 2022
+
+## Forest Plots
+
+::::{.columns}
+
+:::{.column width="50%"}
+```{r}
+#| echo: true
+#| eval: false
+# Forest Plots
+library(volundr)
+m <- rx(
+	Petal.Length ~ X(Sepal.Length) + Petal.Width + S(Species),
+	label = list(
+		Petal.Length ~ "Length of Petals", 
+		Species ~ "Genus of the Flower"
+	),
+	pattern = "direct"
+	) |>
+	fmls(order = 2) |>
+	fit(.fit = lm,
+			data = iris,
+			archetype = TRUE) |>
+	mdls()
+```
+:::
+
+:::{.column width="50%"}
+```{r}
+#| echo: true
+#| eval: false
+tbl <- tbl_forest( #<<
+	object = m,
+	formula = Petal.Length ~ Sepal.Length,
+	vars = "Species",
+	columns = list(
+		beta ~ "Estimate",
+		conf ~ "95% Confidence Interval",
+		n ~ "Number of Samples"
+	),
+	axis = list(
+		lim ~ c(0, 3),
+		breaks ~ c(0, 1, 2),
+		lab ~ "ß (95% CI)",
+		title ~ "Petal Length by Sepal Length"
+	)
+)
+```
+:::
+
+::::
+
+A simple way to make sub-group analysis Forest plots, working on improving customization.
+
+---
+
+```{r}
+#| label: Example forest plot
+#| echo: false
+#| eval: false
+tbl |>
+	tab_style(style = cell_fill(color = "white"),
+						locations = cells_body(columns = everything()))
+```
+
+# July 18, 2022
+
+
+## AF Registry
+
+The AF registry is described [here](https://asshah4.github.io/aflubber). Current issues:
+
+1. Data quality - consistency between reviewers
+1. Missingness - decisions on acceptable thresholds
+1. Variable selection - echo findings, EP studies, medications, labs, symptoms
+1. Management - REDCap, shared excel sheet
+1. Adjudication/review - outcomes, clinical follow-up length

@@ -173,5 +173,40 @@
     "title": "Research-In-Progress",
     "section": "AHA IPA",
     "text": "AHA IPA\n\nAtrial fibrillation (AF) remains the most common arrhythmia worldwide, afflicting over 1% of the population, but there is poor understanding of how the arrhythmia is triggered and maintained. Dilated atria are heavily coincident in AF not only in humans but across land mammals, such as the 2-3% burden seen in equine species. Growing evidence supports the role of the autonomic nervous system (ANS) in AF however, such as the sympathovagal imbalance prior to onset or protective effects of vagal tone in diving mammals. Establishing the important, pathological contribution of local vagolysis changes how we view the interplay of the sympathetic and parasympathetic nervous systems, and allows us to take a novel direction in the management of an incredibly burdensome disease.\nThe atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties. The key mechanism that we will explore is the intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons. Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY). NPY binds to cholinergic neurons through the Y2R receptor, inhibiting firing and leading to vagolytic effects on the myocardium.\nWe propose that triggered AF occurs due to vagolysis in the setting of increased sympathetic activity. We hypothesize that 1) vagal stimulation protects against AF in pro-arrhythmic murine models, and 2) blockade of vagolysis through Y2R antagonism under increased sympathetic activity protects from AF and creates improve myocardial conductive properties. We will utilize ex-vivo, whole heart explants in vagal-sparing Langendorf preparations in an established murine model of AF. Vagal nerve stimulation protocols and catecholamine infusion will mimick local autonomic activity. We will measure atrial conductive properties (phase slope changes, after depolarizations, ectopy) at baseline, with infusion of NPY, and with Y2R antagonists. If, as we hypothesize, vagolysis leads to triggered AF, and NPY blockade rescues the arrhythmia burden, we will have established an innovative, causal mechanism in the pathogenesis of AF.\nOur lab is uniquely suited to explore these questions, as a leading center of murine and induced pluripotent stem cell models of atrial arrhythmias. We have demonstrated competence in patch clamping and measurement of cardiac tissue conductive properties through Langendorf preparations, and are able to leverage our extensive electrophysiological expertise with both basic and clinical scientists. Not only does this proposal explore the novel contribution of vagolysis in arrhythmogenesis, it identifies a pharmacological target for potential interventions."
+  },
+  {
+    "objectID": "t32/t32-updates.html#af-catheter-ablation-and-recurrence",
+    "href": "t32/t32-updates.html#af-catheter-ablation-and-recurrence",
+    "title": "Research-In-Progress",
+    "section": "AF Catheter Ablation and Recurrence",
+    "text": "AF Catheter Ablation and Recurrence\nData/power increase:\n\nInclusion of VA data\nAdditional data pull from EPIC by Scott Uphouse (pending)\nInclusion of UIC billing code data?"
+  },
+  {
+    "objectID": "t32/t32-updates.html#atrial-flutter-and-family-history",
+    "href": "t32/t32-updates.html#atrial-flutter-and-family-history",
+    "title": "Research-In-Progress",
+    "section": "Atrial Flutter and Family History",
+    "text": "Atrial Flutter and Family History\nPedigrees:\n\nHow should these be incorporated into the manuscript?\n\nGenetics:\n\n305 patients that have undergone whole exome sequencing, but unclear how to match these to the AFL data\nShould we genotype the rest of the EO-AFL patients?"
+  },
+  {
+    "objectID": "t32/t32-updates.html#ecgegm-analysis",
+    "href": "t32/t32-updates.html#ecgegm-analysis",
+    "title": "Research-In-Progress",
+    "section": "ECG/EGM analysis",
+    "text": "ECG/EGM analysis"
+  },
+  {
+    "objectID": "t32/t32-updates.html#k23-aims",
+    "href": "t32/t32-updates.html#k23-aims",
+    "title": "Research-In-Progress",
+    "section": "K23 Aims",
+    "text": "K23 Aims\nObjective: Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms\n\nVagal tone and triggered arrhythmias\n\n\nManuscript on stress-induced vagolysis and CV mortality under review\nANS dysfunction during/with ischemia work-in-progress\n[Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}\n\n\nArrhythmia phenotyping\n\n\nAFL/FH manuscript work-in-progress\nAF/race project work-in-progress\n[Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}\n\nMentorship Team: Amit J. Shah, Dawood Darbar, Rachel Lampert, Viola Vaccarino, Mark McCauley, Andrew Boyd, Alvaro Alonso"
+  },
+  {
+    "objectID": "t32/t32-updates.html#murine-model-of-vagolysis",
+    "href": "t32/t32-updates.html#murine-model-of-vagolysis",
+    "title": "Research-In-Progress",
+    "section": "Murine Model of Vagolysis",
+    "text": "Murine Model of Vagolysis\n\nAtria are heavily innervated by ANS ganglia\n\nSympathovagal balance locally mediated through adrenergic lysis of cholinergic activity\nNeuropeptide Y (NPY) causes cholinergic inhibition through Y2R\n\nPro-arrhythmic murine model (compared to healthy controls)\n\nEx-vivo vagal-sparing Langendorf preparation\nCatecholamine infusion and NPY Y2R antagonists to modulate arrhythmic state\n\nMeasure atrial conductive properties as outcome\n\nBaseline, with catecholamine infusion, VNS stimulation, and Y2R antagonism\n\n\n\n\nStress Epidemiology, Arrhythmia Mechanisms, Clinical, Computational Neurocardiology"
   }
 ]
