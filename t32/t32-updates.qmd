@@ -227,19 +227,26 @@ ggm(x, channels = c("I", "CS", "HIS M", "HIS D", "RV")) |>
 
 Objective: _Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms_
 
-1. Vagal tone and triggered arrhythmias
+
+1. Evaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)
+1. Using computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation
+
+
+Mentorship Team: __Amit J. Shah__, __Dawood Darbar__, Rachel Lampert, Viola Vaccarino, Mark McCauley, Andrew Boyd, Alvaro Alonso
+
+## K23 Approach
+
+__Vagal tone and triggered arrhythmias__
 
 - Manuscript on stress-induced vagolysis and CV mortality __under review__
 - ANS dysfunction during/with ischemia __work-in-progress__
 - [Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}
 
-2. Arrhythmia phenotyping
+__Arrhythmia phenotyping__
 
 - AFL/FH manuscript __work-in-progress__
 - AF/race project __work-in-progress__
 - [Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}
-
-Mentorship Team: __Amit J. Shah__, __Dawood Darbar__, Rachel Lampert, Viola Vaccarino, Mark McCauley, Andrew Boyd, Alvaro Alonso
 
 ## Murine Model of Vagolysis {.smaller}
 

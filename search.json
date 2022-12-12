@@ -200,7 +200,7 @@
     "href": "t32/t32-updates.html#k23-aims",
     "title": "Research-In-Progress",
     "section": "K23 Aims",
-    "text": "K23 Aims\nObjective: Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms\n\nVagal tone and triggered arrhythmias\n\n\nManuscript on stress-induced vagolysis and CV mortality under review\nANS dysfunction during/with ischemia work-in-progress\n[Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}\n\n\nArrhythmia phenotyping\n\n\nAFL/FH manuscript work-in-progress\nAF/race project work-in-progress\n[Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}\n\nMentorship Team: Amit J. Shah, Dawood Darbar, Rachel Lampert, Viola Vaccarino, Mark McCauley, Andrew Boyd, Alvaro Alonso"
+    "text": "K23 Aims\nObjective: Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms\n\nEvaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)\nUsing computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation\n\nMentorship Team: Amit J. Shah, Dawood Darbar, Rachel Lampert, Viola Vaccarino, Mark McCauley, Andrew Boyd, Alvaro Alonso"
   },
   {
     "objectID": "t32/t32-updates.html#murine-model-of-vagolysis",
@@ -208,5 +208,12 @@
     "title": "Research-In-Progress",
     "section": "Murine Model of Vagolysis",
     "text": "Murine Model of Vagolysis\n\nAtria are heavily innervated by ANS ganglia\n\nSympathovagal balance locally mediated through adrenergic lysis of cholinergic activity\nNeuropeptide Y (NPY) causes cholinergic inhibition through Y2R\n\nPro-arrhythmic murine model (compared to healthy controls)\n\nEx-vivo vagal-sparing Langendorf preparation\nCatecholamine infusion and NPY Y2R antagonists to modulate arrhythmic state\n\nMeasure atrial conductive properties as outcome\n\nBaseline, with catecholamine infusion, VNS stimulation, and Y2R antagonism\n\n\n\n\nStress Epidemiology, Arrhythmia Mechanisms, Clinical, Computational Neurocardiology"
+  },
+  {
+    "objectID": "t32/t32-updates.html#k23-approach",
+    "href": "t32/t32-updates.html#k23-approach",
+    "title": "Research-In-Progress",
+    "section": "K23 Approach",
+    "text": "K23 Approach\nVagal tone and triggered arrhythmias\n\nManuscript on stress-induced vagolysis and CV mortality under review\nANS dysfunction during/with ischemia work-in-progress\n[Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}\n\nArrhythmia phenotyping\n\nAFL/FH manuscript work-in-progress\nAF/race project work-in-progress\n[Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}"
   }
 ]
