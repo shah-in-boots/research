@@ -104,7 +104,7 @@ tbl_status_updates <- function(progress, effort) {
 			locations = cells_row_groups(groups = contains("Arrhythmia"))
 		) |>
 		tab_style(
-			style = list(cefill(color = clinical[5]),
+			style = list(cell_fill(color = clinical[5]),
 									 cell_text(color = "white"),
 									 cell_borders(sides = "all", color = clinical[5])),
 			locations = cells_row_groups(groups = contains("Clinical"))
@@ -167,7 +167,7 @@ tbl_status_updates <- function(progress, effort) {
 
 
 ```{r}
-#| label: progress page
+#| label: product  page
 #| echo: false
 dt <- 
 	date_build(year = 2022, month = 11, day = 21) |>
@@ -184,6 +184,59 @@ effort <-
 
 tbl_status_updates(prog, effort)
 ```
+
+---
+
+```{r}
+#| label: research products
+products <-
+	drive_get("research_log") |>
+	read_sheet(sheet = "product_sheet") |>
+	filter(Deadline >= date_build(year = 2020, month = 07, day = 01)) 
+	
+```
+
+# December 12, 2022
+
+
+## AF/Recurrence
+
+- Need data...
+
+## AFL/FH
+
+- Pedigrees and Manuscript
+
+## ECG/EGM analysis
+
+- Ability to detect peaks and intervals from raw multi-channel ECGs
+
+## K23 Aims {.smaller}
+
+Objective: _Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms_
+
+1. Vagal tone and triggered arrhythmias
+- Manuscript on stress-induced vagolysis and CV mortality __under review__
+- ANS dysfunction during/with ischemia __work-in-progress__
+- [Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}
+
+1. Arrhythmia phenotyping
+- AFL/FH manuscript __work-in-progress__
+- AF/race project __work-in-progress__
+- [Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}
+
+Mentorship Team: __Amit J. Shah__, __Dawood Darbar__, Rachel Lampert, Viola Vaccarino, Mark McCauley, Andrew Boyd, Alvaro Alonso
+
+## Murine Model of Vagolysis {.smaller}
+
+- Atria are heavily innervated by ANS ganglia
+	- Sympathovagal balance locally mediated through adrenergic lysis of cholinergic activity 
+	- Neuropeptide Y (NPY) causes cholinergic inhibition through Y2R 
+- Pro-arrhythmic murine model (compared to healthy controls)
+	- Ex-vivo vagal-sparing Langendorf preparation
+	- Catecholamine infusion and NPY Y2R antagonists to modulate arrhythmic state
+- Measure atrial conductive properties as outcome
+	- Baseline, with catecholamine infusion, VNS stimulation, and Y2R antagonism
 
 # November 21, 2022
 
