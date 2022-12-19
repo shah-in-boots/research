@@ -198,12 +198,14 @@ tbl_status_updates(progress, effort)
 :::: {.columns}
 ::: {.column width="50%"}
 AFL/FH:
+
 - Pedigrees TBD
 - Draft completed, pending feedback
 - Supplemental tables needed?
 :::
 ::: {.column width="50%"}
 AF/Recurrence:
+
 - Scott added additional patients from UIC (September 2020 to now)
 - Data collection pending
 :::
