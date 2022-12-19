@@ -63,7 +63,7 @@ log <-
 
 progress <-
 	drive_get("research_log") |>
-	read_sheet(sheet = "status_sheet")
+	read_sheet(sheet = "progress_sheet")
 
 
 tbl_status_updates <- function(progress, effort) {
@@ -191,6 +191,58 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
+# December 19, 2022
+
+## Updates
+
+:::: {.columns}
+::: {.column width="50%"}
+AFL/FH:
+- Pedigrees TBD
+- Draft completed, pending feedback
+- Supplemental tables needed?
+:::
+::: {.column width="50%"}
+AF/Recurrence:
+- Scott added additional patients from UIC (September 2020 to now)
+- Data collection pending
+:::
+::::
+
+## K23 Aims {.smaller}
+
+Objective: _Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms_
+
+1. Evaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)
+1. Using computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation
+
+Mentorship Team: __Amit J. Shah__, __Dawood Darbar__, Rachel Lampert, Viola Vaccarino, Mark McCauley, Andrew Boyd, Alvaro Alonso
+
+## K23 Approach
+
+__Vagal tone and triggered arrhythmias__
+
+- Manuscript on stress-induced vagolysis and CV mortality __under review__
+- ANS dysfunction during/with ischemia __work-in-progress__
+- [Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}
+
+__Arrhythmia phenotyping__
+
+- AFL/FH manuscript __work-in-progress__
+- AF/race project __work-in-progress__
+- [Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}
+
+## Murine Model of Vagolysis {.smaller}
+
+- Atria are heavily innervated by ANS ganglia
+	- Sympathovagal balance locally mediated through adrenergic lysis of cholinergic activity 
+	- Neuropeptide Y (NPY) causes cholinergic inhibition through Y2R 
+- Pro-arrhythmic murine model (compared to healthy controls)
+	- Ex-vivo vagal-sparing Langendorf preparation
+	- Catecholamine infusion and NPY Y2R antagonists to modulate arrhythmic state
+- Measure atrial conductive properties as outcome
+	- Baseline, with catecholamine infusion, VNS stimulation, and Y2R antagonism
+
 # December 12, 2022
 
 ## AF Catheter Ablation and Recurrence
@@ -231,39 +283,6 @@ ggm(x, channels = c("I", "CS", "HIS M", "HIS D", "RV")) |>
 ```
 
 
-## K23 Aims {.smaller}
-
-Objective: _Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms_
-
-1. Evaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)
-1. Using computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation
-
-Mentorship Team: __Amit J. Shah__, __Dawood Darbar__, Rachel Lampert, Viola Vaccarino, Mark McCauley, Andrew Boyd, Alvaro Alonso
-
-## K23 Approach
-
-__Vagal tone and triggered arrhythmias__
-
-- Manuscript on stress-induced vagolysis and CV mortality __under review__
-- ANS dysfunction during/with ischemia __work-in-progress__
-- [Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}
-
-__Arrhythmia phenotyping__
-
-- AFL/FH manuscript __work-in-progress__
-- AF/race project __work-in-progress__
-- [Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}
-
-## Murine Model of Vagolysis {.smaller}
-
-- Atria are heavily innervated by ANS ganglia
-	- Sympathovagal balance locally mediated through adrenergic lysis of cholinergic activity 
-	- Neuropeptide Y (NPY) causes cholinergic inhibition through Y2R 
-- Pro-arrhythmic murine model (compared to healthy controls)
-	- Ex-vivo vagal-sparing Langendorf preparation
-	- Catecholamine infusion and NPY Y2R antagonists to modulate arrhythmic state
-- Measure atrial conductive properties as outcome
-	- Baseline, with catecholamine infusion, VNS stimulation, and Y2R antagonism
 
 # November 21, 2022
 
@@ -297,8 +316,9 @@ afl_tbls$two |>
 ### Table: Unadjusted Risk
 
 ```{r}
+#| eval: false
 #| echo: false
-afl_tbls$supp_one |>
+afl_tbls$supp_one 
 	as_raw_html()
 ```
 
@@ -365,6 +385,7 @@ __AF Registry__
 ---
 
 ```{r}
+#| eval: false
 #| echo: false
 #| cache: true
 store <- file.path(find_project_folder(), "mims", "_targets")
@@ -378,13 +399,13 @@ curves$lf_stress
 x <- cardiac_atlas$right_atrium_rao
 
 ggplot() +
-	geom_sf(data = x$chambers, aes(fill = name)) +
-	geom_sf(data = x$projections, aes(fill = name)) + 
-	geom_sf(data = x$valves, aes(fill = name)) + 
-	geom_sf(data = x$septum, aes(fill = name)) + 
-	geom_sf(data = x$vessels, fill = "white") + 
+	theme_void() +
+	geom_sf(data = x$chambers, aes(fill = structure)) +
+	geom_sf(data = x$projections, aes(fill = structure)) + 
+	geom_sf(data = x$valves, aes(fill = structure)) + 
+	geom_sf(data = x$septum, aes(fill = structure)) + 
+	geom_sf(data = x$vessels, fill = "white") +
 	scale_fill_brewer(palette = "YlGnBu") +
-	theme_void() + 
 	theme(legend.position = "none") 
 ```
 
