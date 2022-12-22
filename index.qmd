@@ -1,31 +1,67 @@
 ---
-title: "Summary of Research Efforts"
+title: "Research Efforts"
+format: html
 ---
 
-This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of `r format(Sys.Date(), "%A, %B %d, %Y")`. Please see here for weekly [updates](https://asshah4.github.io/research/t32/t32-updates.html).
+Douglas Zipes asked the question "Why did he die on Tuesday and not on Monday?"
+In the 50 years since the advent of the coronary care unit,[@Lown1968] we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.[@Hayashi2015; @Lown1977]. 
+The problem can be broken down into two components: 1) a substrate and 2) a trigger. 
+My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. 
+My computational approach parallels these topics by combining biostatistics and digital signal processing.
+
+This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). 
+The most recent update to this page was as of `r format(Sys.Date(), "%A, %B %d, %Y")`. 
+Please see here for weekly [updates](https://asshah4.github.io/research/t32/t32-updates.html).
 
 
-The major research focuses are currently on:
+| | | |
+| --- | --- | --- |
+| MSIMI and CV Mortality | A large prospective cohort study measuring myocardial ischemia in response to mental stress, with extensive follow-up. Analytical skills included the development of recurrent event models (AG, PWP, MSM, marginal, conditional). Recurrent event software in R was developed. Middle-author Publication in JAMA | 2019-2020 |
+| HRV and Myocardial Perfusion | Evaluated circadian patterns in autonomic function using 24-hour Holter data, generating HRV with a focus on spectral density analyses. Compared these patterns with CFR on quantitate PET, finding a relationship with CFR and early morning low HRV. First-author publication in IJC | 2017-2020 |
+| GEH and Diabetes | Using the CARRS cohort, evaluated ECG-based patterns of GEH and diabetes, finding a strong relationship with cardiac fibrosis and widening of specific GEH parameters. WIP | 2018-2019 |
+| HRV and Psychosocial Factors | Evaluated changes in HRV from baseline to several years later in the ARIC Study. Found that psychosomatic stress (in the form of vital exhaustion) led to a persistent decrease in high frequency HRV, a surrogate of vagal tone. First-author Publication in JAHA | 2016-2020 |
+| AFL and Family History | Statistical analysis of relationship between early onset AFL and family history, which notably yields different phenotypes in Whites and Blacks. [WIP](https://asshah4.github.io/aflubber) | 2022 |
+| Disturbances of Neurocardiac Axis | TL1 and F32 grant focused on evaluating of myocardial ischemia and changes in autonomic function using HRV. Pilot study with completed recruitment. Publication of Thesis and WIP | 2019-now | 
 
-1. __Stress and Cardiovascular Epidemiology__: Physiological and psychological stress and cardiovascular mortality, from a neurocardiac perspective.
-1. __Stress and Arrhythmogenesis__: Mechanisms behind stress and arrhythmia generation (or degeneration) in a pre-clinical and clinical electrophysiology context.
-1. __Computational Neurocardiology and Biostatistics__: Programming-based approaches in signal processing and biostatistics.
-1. __Clinical Projects__: Work being done as a cardiology fellow at UIC/JBVA.
+*GEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography*
 
-# Stress and Cardiovascular Epidemiology
+Technical research skills:
+
+- epidemiology and biostatistics
+- study design (IRB, informed consent, subjection enrollment)
+- digital signal processing (HRV, ECG)
+- programming in R, MATLAB
+- harmonic regression
+- advanced survival models with recurrent events
+
+# Research Foci
+
+## Stress and Cardiovascular Epidemiology
+
+_Physiological and psychological stress and cardiovascular mortality, from a neurocardiac perspective_
 
 - Effect of autonomic reactivity and resting vagal tone in cardiovascular mortality
-- Depression and dysregulation of the autonomic nervous system
-- Circadian variability in autonomic function and microvascular coronary disease
+- Depression and dysregulation of the autonomic nervous system, published in [JAHA](https://doi.org/10.1161/JAHA.120.017172)
+- Circadian variability in autonomic function and microvascular coronary disease, published in [IJC](https://doi.org/10.1016/j.ijcard.2020.01.069)
+- Atrial fibrillation recurrence after catheter ablation
+- Family history and genetic basis of [atrial flutter](https://asshah4.github.io/aflubber)
+- Cardiovascular biorepository for computational assessment of trajectories/history
 
-# Stress and Arrhythmognesis
+## Stress and Arrhythmognesis
 
-## Atrial Fibrillation 
+_Mechanisms behind stress and arrhythmia generation (or degeneration) in a pre-clinical and clinical electrophysiology context_
 
-- A catheter-ablation registry is being developed. The current status of the data acquisition process can be seen [here](https://asshah4.github.io/aflubber). No clinical data is available externally. 
-- [AHA Innovative Projects 2022](https://asshah4.github.io/research/grants/aha_innovative_project_2022.html) including atrial arrhythmia modulatio with NPY 
+- Murine models of vagolysis leading to triggered arrhythmias, which was initially proposed as an [AHA IPA](https://asshah4.github.io/research/grants/aha_innovative_project_2022.html), but then withdrawn and considered as [initial proposal](https://asshah4.github.io/research/t32/aims.html) for T32/F32 transition to K08/K23
 
-# Clinical Projects
+## Computational Neurocardiology and Biostatistics
+
+_Programming-based approaches in signal processing and biostatistics_
+
+- Measuring circadian patterns and disturbances using a [cosinor regression method](https://asshah4.github.io/card)
+
+## Clinical Projects
+
+_Work being done as a cardiology fellow at UIC/JBVA_
 
 - Atrial fibrillation and efficacy of cardioversion
 - Pulmonary embolism management with a coordinated response team (PERT)

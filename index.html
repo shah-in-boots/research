@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research - Summary of Research Efforts</title>
+<title>Research - Research Efforts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,25 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
 }
 </style>
 
@@ -125,12 +144,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#stress-and-cardiovascular-epidemiology" id="toc-stress-and-cardiovascular-epidemiology" class="nav-link active" data-scroll-target="#stress-and-cardiovascular-epidemiology">Stress and Cardiovascular Epidemiology</a></li>
-  <li><a href="#stress-and-arrhythmognesis" id="toc-stress-and-arrhythmognesis" class="nav-link" data-scroll-target="#stress-and-arrhythmognesis">Stress and Arrhythmognesis</a>
+  <li><a href="#research-foci" id="toc-research-foci" class="nav-link active" data-scroll-target="#research-foci">Research Foci</a>
   <ul class="collapse">
-  <li><a href="#atrial-fibrillation" id="toc-atrial-fibrillation" class="nav-link" data-scroll-target="#atrial-fibrillation">Atrial Fibrillation</a></li>
-  </ul></li>
+  <li><a href="#stress-and-cardiovascular-epidemiology" id="toc-stress-and-cardiovascular-epidemiology" class="nav-link" data-scroll-target="#stress-and-cardiovascular-epidemiology">Stress and Cardiovascular Epidemiology</a></li>
+  <li><a href="#stress-and-arrhythmognesis" id="toc-stress-and-arrhythmognesis" class="nav-link" data-scroll-target="#stress-and-arrhythmognesis">Stress and Arrhythmognesis</a></li>
+  <li><a href="#computational-neurocardiology-and-biostatistics" id="toc-computational-neurocardiology-and-biostatistics" class="nav-link" data-scroll-target="#computational-neurocardiology-and-biostatistics">Computational Neurocardiology and Biostatistics</a></li>
   <li><a href="#clinical-projects" id="toc-clinical-projects" class="nav-link" data-scroll-target="#clinical-projects">Clinical Projects</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -139,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Summary of Research Efforts</h1>
+<h1 class="title">Research Efforts</h1>
 </div>
 
 
@@ -154,34 +174,83 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Friday, November 18, 2022. Please see here for weekly <a href="https://asshah4.github.io/research/t32/t32-updates.html">updates</a>.</p>
-<p>The major research focuses are currently on:</p>
-<ol type="1">
-<li><strong>Stress and Cardiovascular Epidemiology</strong>: Physiological and psychological stress and cardiovascular mortality, from a neurocardiac perspective.</li>
-<li><strong>Stress and Arrhythmogenesis</strong>: Mechanisms behind stress and arrhythmia generation (or degeneration) in a pre-clinical and clinical electrophysiology context.</li>
-<li><strong>Computational Neurocardiology and Biostatistics</strong>: Programming-based approaches in signal processing and biostatistics.</li>
-<li><strong>Clinical Projects</strong>: Work being done as a cardiology fellow at UIC/JBVA.</li>
-</ol>
-<section id="stress-and-cardiovascular-epidemiology" class="level1">
-<h1>Stress and Cardiovascular Epidemiology</h1>
+<p>Douglas Zipes asked the question “Why did he die on Tuesday and not on Monday?” In the 50 years since the advent of the coronary care unit,<span class="citation" data-cites="Lown1968"><sup><a href="#ref-Lown1968" role="doc-biblioref">1</a></sup></span> we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.<span class="citation" data-cites="Hayashi2015 Lown1977"><sup><a href="#ref-Hayashi2015" role="doc-biblioref">2</a>,<a href="#ref-Lown1977" role="doc-biblioref">3</a></sup></span>. The problem can be broken down into two components: 1) a substrate and 2) a trigger. My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. My computational approach parallels these topics by combining biostatistics and digital signal processing.</p>
+<p>This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Thursday, December 22, 2022. Please see here for weekly <a href="https://asshah4.github.io/research/t32/t32-updates.html">updates</a>.</p>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td>MSIMI and CV Mortality</td>
+<td>A large prospective cohort study measuring myocardial ischemia in response to mental stress, with extensive follow-up. Analytical skills included the development of recurrent event models (AG, PWP, MSM, marginal, conditional). Recurrent event software in R was developed. Middle-author Publication in JAMA</td>
+<td>2019-2020</td>
+</tr>
+<tr class="even">
+<td>HRV and Myocardial Perfusion</td>
+<td>Evaluated circadian patterns in autonomic function using 24-hour Holter data, generating HRV with a focus on spectral density analyses. Compared these patterns with CFR on quantitate PET, finding a relationship with CFR and early morning low HRV. First-author publication in IJC</td>
+<td>2017-2020</td>
+</tr>
+<tr class="odd">
+<td>GEH and Diabetes</td>
+<td>Using the CARRS cohort, evaluated ECG-based patterns of GEH and diabetes, finding a strong relationship with cardiac fibrosis and widening of specific GEH parameters. WIP</td>
+<td>2018-2019</td>
+</tr>
+<tr class="even">
+<td>HRV and Psychosocial Factors</td>
+<td>Evaluated changes in HRV from baseline to several years later in the ARIC Study. Found that psychosomatic stress (in the form of vital exhaustion) led to a persistent decrease in high frequency HRV, a surrogate of vagal tone. First-author Publication in JAHA</td>
+<td>2016-2020</td>
+</tr>
+<tr class="odd">
+<td>AFL and Family History</td>
+<td>Statistical analysis of relationship between early onset AFL and family history, which notably yields different phenotypes in Whites and Blacks. <a href="https://asshah4.github.io/aflubber">WIP</a></td>
+<td>2022</td>
+</tr>
+<tr class="even">
+<td>Disturbances of Neurocardiac Axis</td>
+<td>TL1 and F32 grant focused on evaluating of myocardial ischemia and changes in autonomic function using HRV. Pilot study with completed recruitment. Publication of Thesis and WIP</td>
+<td>2019-now</td>
+</tr>
+</tbody>
+</table>
+<p><em>GEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography</em></p>
+<p>Technical research skills:</p>
+<ul>
+<li>epidemiology and biostatistics</li>
+<li>study design (IRB, informed consent, subjection enrollment)</li>
+<li>digital signal processing (HRV, ECG)</li>
+<li>programming in R, MATLAB</li>
+<li>harmonic regression</li>
+<li>advanced survival models with recurrent events</li>
+</ul>
+<section id="research-foci" class="level1">
+<h1>Research Foci</h1>
+<section id="stress-and-cardiovascular-epidemiology" class="level2">
+<h2 class="anchored" data-anchor-id="stress-and-cardiovascular-epidemiology">Stress and Cardiovascular Epidemiology</h2>
+<p><em>Physiological and psychological stress and cardiovascular mortality, from a neurocardiac perspective</em></p>
 <ul>
 <li>Effect of autonomic reactivity and resting vagal tone in cardiovascular mortality</li>
-<li>Depression and dysregulation of the autonomic nervous system</li>
-<li>Circadian variability in autonomic function and microvascular coronary disease</li>
+<li>Depression and dysregulation of the autonomic nervous system, published in <a href="https://doi.org/10.1161/JAHA.120.017172">JAHA</a></li>
+<li>Circadian variability in autonomic function and microvascular coronary disease, published in <a href="https://doi.org/10.1016/j.ijcard.2020.01.069">IJC</a></li>
+<li>Atrial fibrillation recurrence after catheter ablation</li>
+<li>Family history and genetic basis of <a href="https://asshah4.github.io/aflubber">atrial flutter</a></li>
+<li>Cardiovascular biorepository for computational assessment of trajectories/history</li>
 </ul>
 </section>
-<section id="stress-and-arrhythmognesis" class="level1">
-<h1>Stress and Arrhythmognesis</h1>
-<section id="atrial-fibrillation" class="level2">
-<h2 class="anchored" data-anchor-id="atrial-fibrillation">Atrial Fibrillation</h2>
+<section id="stress-and-arrhythmognesis" class="level2">
+<h2 class="anchored" data-anchor-id="stress-and-arrhythmognesis">Stress and Arrhythmognesis</h2>
+<p><em>Mechanisms behind stress and arrhythmia generation (or degeneration) in a pre-clinical and clinical electrophysiology context</em></p>
 <ul>
-<li>A catheter-ablation registry is being developed. The current status of the data acquisition process can be seen <a href="https://asshah4.github.io/aflubber">here</a>. No clinical data is available externally.</li>
-<li><a href="https://asshah4.github.io/research/grants/aha_innovative_project_2022.html">AHA Innovative Projects 2022</a> including atrial arrhythmia modulatio with NPY and atrial fibrillation phenotyping</li>
+<li>Murine models of vagolysis leading to triggered arrhythmias, which was initially proposed as an <a href="https://asshah4.github.io/research/grants/aha_innovative_project_2022.html">AHA IPA</a>, but then withdrawn and considered as <a href="https://asshah4.github.io/research/t32/aims.html">initial proposal</a> for T32/F32 transition to K08/K23</li>
 </ul>
 </section>
+<section id="computational-neurocardiology-and-biostatistics" class="level2">
+<h2 class="anchored" data-anchor-id="computational-neurocardiology-and-biostatistics">Computational Neurocardiology and Biostatistics</h2>
+<p><em>Programming-based approaches in signal processing and biostatistics</em></p>
+<ul>
+<li>Measuring circadian patterns and disturbances using a <a href="https://asshah4.github.io/card">cosinor regression method</a></li>
+</ul>
 </section>
-<section id="clinical-projects" class="level1">
-<h1>Clinical Projects</h1>
+<section id="clinical-projects" class="level2">
+<h2 class="anchored" data-anchor-id="clinical-projects">Clinical Projects</h2>
+<p><em>Work being done as a cardiology fellow at UIC/JBVA</em></p>
 <ul>
 <li>Atrial fibrillation and efficacy of cardioversion</li>
 <li>Pulmonary embolism management with a coordinated response team (PERT)</li>
@@ -190,9 +259,21 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
+
+</section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-Lown1968" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Lown B, Selzer A. <span class="nocase">The coronary care unit</span>. The American Journal of Cardiology 1968;22:597–602. doi:<a href="https://doi.org/10.1016/0002-9149(68)90167-7">10.1016/0002-9149(68)90167-7</a>.</div>
+</div>
+<div id="ref-Hayashi2015" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Hayashi M, Shimizu W, Albert CM. <span class="nocase">The Spectrum of Epidemiology Underlying Sudden Cardiac Death</span>. Circulation Research 2015;116:1887–1906. doi:<a href="https://doi.org/10.1161/CIRCRESAHA.116.304521">10.1161/CIRCRESAHA.116.304521</a>.</div>
+</div>
+<div id="ref-Lown1977" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Lown B, Verrier RL, Rabinowitz SH. <span class="nocase">Neural and psychologic mechanisms and the problem of sudden cardiac death</span>. The American Journal of Cardiology 1977;39:890–902. doi:<a href="https://doi.org/10.1016/S0002-9149(77)80044-1">10.1016/S0002-9149(77)80044-1</a>.</div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -88,14 +88,14 @@
     "href": "t32/t32-updates.html#murine-ep-studies",
     "title": "Research-In-Progress",
     "section": "Murine EP Studies",
-    "text": "Murine EP Studies"
+    "text": "Murine EP Studies\n\nknitr::include_graphics(\"../figures/electromap.png\")"
   },
   {
     "objectID": "t32/t32-updates.html#human-ep-studies",
     "href": "t32/t32-updates.html#human-ep-studies",
     "title": "Research-In-Progress",
     "section": "Human EP Studies",
-    "text": "Human EP Studies"
+    "text": "Human EP Studies\n\nknitr::include_graphics(\"../figures/openep-ablation.png\")"
   },
   {
     "objectID": "t32/t32-updates.html#forest-plots",
@@ -109,7 +109,7 @@
     "href": "t32/t32-updates.html#af-registry-4",
     "title": "Research-In-Progress",
     "section": "AF Registry",
-    "text": "AF Registry\nThe AF registry is described here. Current issues:\n\nData quality - consistency between reviewers\nMissingness - decisions on acceptable thresholds\nVariable selection - echo findings, EP studies, medications, labs, symptoms\nManagement - REDCap, shared excel sheet\nAdjudication/review - outcomes, clinical follow-up length\n\n\n\nStress Epidemiology, Arrhythmia Mechanisms, Clinical, Computational Neurocardiology"
+    "text": "AF Registry\nThe AF registry is described here. Current issues:\n\nData quality - consistency between reviewers\nMissingness - decisions on acceptable thresholds\nVariable selection - echo findings, EP studies, medications, labs, symptoms\nManagement - REDCap, shared excel sheet\nAdjudication/review - outcomes, clinical follow-up length"
   },
   {
     "objectID": "f32/readme.html",
@@ -149,9 +149,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Summary of Research Efforts",
+    "title": "Research Efforts",
     "section": "",
-    "text": "This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Friday, November 18, 2022. Please see here for weekly updates.\nThe major research focuses are currently on:"
+    "text": "Douglas Zipes asked the question “Why did he die on Tuesday and not on Monday?” In the 50 years since the advent of the coronary care unit,1 we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.2,3. The problem can be broken down into two components: 1) a substrate and 2) a trigger. My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. My computational approach parallels these topics by combining biostatistics and digital signal processing.\nThis serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Thursday, December 22, 2022. Please see here for weekly updates.\nGEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography\nTechnical research skills:"
   },
   {
     "objectID": "index.html#atrial-fibrillation",
@@ -193,7 +193,7 @@
     "href": "t32/t32-updates.html#ecgegm-analysis",
     "title": "Research-In-Progress",
     "section": "ECG/EGM analysis",
-    "text": "ECG/EGM analysis"
+    "text": "ECG/EGM analysis\n\nlibrary(rhythm)\n\nLoading required package: data.table\n\n\n\nAttaching package: 'data.table'\n\n\nThe following objects are masked from 'package:dplyr':\n\n    between, first, last\n\n\nThe following object is masked from 'package:purrr':\n\n    transpose\n\n\n\nAttaching package: 'rhythm'\n\n\nThe following object is masked from 'package:grDevices':\n\n    cm\n\nx <- read_lspro(file = file.path(find_project_folder(), \"research\", \"t32\", \"sample-egm.txt\"))\n\nggm(x, channels = c(\"I\", \"CS\", \"HIS M\", \"HIS D\", \"RV\")) |>\n    add_intervals(channel = \"I\")"
   },
   {
     "objectID": "t32/t32-updates.html#k23-aims",
@@ -320,5 +320,54 @@
     "title": "Research Aims",
     "section": "",
     "text": "1. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Coote JH. Myths and realities of the cardiac vagus 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n4. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide Y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n5. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide Y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase C-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide Y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519.\n\n\n8. Hennis K, Rötzer RD, Rilling J, Wu Y, Thalhammer SB, Biel M, et al. In vivo and ex vivo electrophysiological study of the mouse heart to characterize the cardiac conduction system, including atrial and ventricular vulnerability 2022;17:1189–1222. doi:10.1038/s41596-021-00678-z."
+  },
+  {
+    "objectID": "index.html#stress-and-cardiovascular-epidemiology",
+    "href": "index.html#stress-and-cardiovascular-epidemiology",
+    "title": "Research Efforts",
+    "section": "Stress and Cardiovascular Epidemiology",
+    "text": "Stress and Cardiovascular Epidemiology\nPhysiological and psychological stress and cardiovascular mortality, from a neurocardiac perspective\n\nEffect of autonomic reactivity and resting vagal tone in cardiovascular mortality\nDepression and dysregulation of the autonomic nervous system, published in JAHA\nCircadian variability in autonomic function and microvascular coronary disease, published in IJC\nAtrial fibrillation recurrence after catheter ablation\nFamily history and genetic basis of atrial flutter\nCardiovascular biorepository for computational assessment of trajectories/history"
+  },
+  {
+    "objectID": "index.html#stress-and-arrhythmognesis",
+    "href": "index.html#stress-and-arrhythmognesis",
+    "title": "Research Efforts",
+    "section": "Stress and Arrhythmognesis",
+    "text": "Stress and Arrhythmognesis\nMechanisms behind stress and arrhythmia generation (or degeneration) in a pre-clinical and clinical electrophysiology context\n\nMurine models of vagolysis leading to triggered arrhythmias, which was initially proposed as an AHA IPA, but then withdrawn and considered as initial proposal for T32/F32 transition to K08/K23"
+  },
+  {
+    "objectID": "index.html#computational-neurocardiology-and-biostatistics",
+    "href": "index.html#computational-neurocardiology-and-biostatistics",
+    "title": "Research Efforts",
+    "section": "Computational Neurocardiology and Biostatistics",
+    "text": "Computational Neurocardiology and Biostatistics\nProgramming-based approaches in signal processing and biostatistics\n\nMeasuring circadian patterns and disturbances using a cosinor regression method"
+  },
+  {
+    "objectID": "index.html#clinical-projects",
+    "href": "index.html#clinical-projects",
+    "title": "Research Efforts",
+    "section": "Clinical Projects",
+    "text": "Clinical Projects\nWork being done as a cardiology fellow at UIC/JBVA\n\nAtrial fibrillation and efficacy of cardioversion\nPulmonary embolism management with a coordinated response team (PERT)\nEndocarditis lesion characteristics in a gain-independent manner using pixel density changes\nArrhythmia and device management in setting of endocarditis"
+  },
+  {
+    "objectID": "grants/loi.html",
+    "href": "grants/loi.html",
+    "title": "Research",
+    "section": "",
+    "text": "December 2, 2022\nAmerican Heart Association\n2023 Innovative Project Award\nThe Division of Cardiology at the University of Illinois at Chicago (UIC) is seeking support for an innovative approach to identifying a causal, mechanistic step in atrial fibrillation.\nAtrial fibrillation (AF) remains the most common arrhythmia worldwide, afflicting over 1% of the population, but there is poor understanding of how the arrhythmia is triggered and maintained. Dilated atria are heavily coincident in AF not only in humans but across land mammals, such as the 2-3% burden seen in equine species. Growing evidence supports the role of the autonomic nervous system (ANS) in AF however, such as the sympathovagal imbalance prior to onset or protective effects of vagal tone in diving mammals. Establishing the important, pathological contribution of local vagolysis changes how we view the interplay of the sympathetic and parasympathetic nervous systems, and allows us to take a novel direction in the management of an incredibly burdensome disease.\nThe atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties. The key mechanism that we will explore is the intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons. Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY). NPY binds to cholinergic neurons through the Y2R receptor, inhibiting firing and leading to vagolytic effects on the myocardium.\nWe propose that triggered AF occurs due to vagolysis in the setting of increased sympathetic activity. We hypothesize that 1) vagal stimulation protects against AF in pro-arrhythmic murine models, and 2) blockade of vagolysis through Y2R antagonism under increased sympathetic activity protects from AF and creates improve myocardial conductive properties. We will utilize ex-vivo, whole heart explants in vagal-sparing Langendorf preparations in an established murine model of AF. Vagal nerve stimulation protocols and catecholamine infusion will mimick local autonomic activity. We will measure atrial conductive properties (phase slope changes, after depolarizations, ectopy) at baseline, with infusion of NPY, and with Y2R antagonists. If, as we hypothesize, vagolysis leads to triggered AF, and NPY blockade rescues the arrhythmia burden, we will have established an innovative, causal mechanism in the pathogenesis of AF.\nOur lab is uniquely suited to explore these questions, as a leading center of murine and induced pluripotent stem cell models of atrial arrhythmias. We have demonstrated competence in patch clamping and measurement of cardiac tissue conductive properties through Langendorf preparations, and are able to leverage our extensive electrophysiological expertise with both basic and clinical scientists. Not only does this proposal explore the novel contribution of vagolysis in arrhythmogenesis, it identifies a pharmacological target for potential interventions.\nWe are thankful for the opportunity to discuss our proposal with the Review Committee, and welcome the opportunity to share any additional information as requested.\nAnish S. Shah, MD, MS\nDivision of Cardiology\nUniversity of Illinois at Chicago"
+  },
+  {
+    "objectID": "t32/t32-updates.html",
+    "href": "t32/t32-updates.html",
+    "title": "Research-In-Progress",
+    "section": "",
+    "text": "Task\n      Deadline\n    \n  \n  \n    \n      Arrhythmia (16%)\n    \n    Atrial Flutter and Family History\nManuscript revision\n2022-12-16\n    Atrial Flutter and Family History\nPedigree data completion\nNA\n    Vagoloysis Leads to Arrhythmogenesis\nDevelopment of protocol\n2022-12-16\n    \n      Clinical (33%)\n    \n    Clinic\nHeart Failure Clinic\n2023-06-30\n    Clinic\nJBVA FIT Clinic\n2023-06-30\n    \n      Epidemiology (5.7%)\n    \n    Mental Stress and CV Mortality\nUnder review at with Circulation (re-submitted 11/10/22)\nNA\n    Emory Biobank\nObtain working dataset for current ECG patch data\n2022-12-16\n    \n      Computational (26%)\n    \n    Rhythm Analysis\nv0.1.0 = LS Pro data intake and visualization\n2022-12-09\n    Cardiovascular Biorepository\nIRB pending (under review)\nNA"
+  },
+  {
+    "objectID": "f32/progress/year_one/b_accomplishments.html",
+    "href": "f32/progress/year_one/b_accomplishments.html",
+    "title": "Research",
+    "section": "",
+    "text": "This project was an extension of my TL1 to understand and evaluate neurocardiac pathophysiology as a clinician-scientist. The major goals of the project were encapsulated within the specific aims:\n\nQuantify the relationship between depressive symptoms and autonomic dysfunction\nExamine the relationships of ischemic heart disease with autonomic dysfunction\n\nAdditionally, goals incorporated within the training plan included: expansion of biostatistical skills, signal processing techniques, and understanding of stress physiology.\nIn terms of future planning, the end of the F32 is to help bridge me towards a K23 or K08 to move towards independence.\n\n\n\nThese goals allowed me to expand upon academic training, clinical training, and impactful scientific discoveries.\n\nMaster of Science degree: Able to complete a Master’s Thesis and defend this using dedicated time from the F32 funding period.\nClinical training: Completion of time as a clinical cardiology fellow, and movement towards electrophysiology training\nTranslational skills: Observation and development of basic science skills to allow for translational opportunities using mice models and IPSC models.\nPublications: “Alterations in heart rate variability are associated with abnormal myocardial perfusion” (PMID: 32024598) and “Association of Psychosocial Factors With Short‐Term Resting Heart Rate Variability: The Atherosclerosis Risk in Communities Study” (PMID: 33631952) as first author publications. Additionally, a key middle author publication in JAMA “Association of Mental Stress-Induced Myocardial Ischemia with Cardiovascular Events in Patients with Coronary Heart Disease” (PMID: 34751708).\nSoftware development: During the learning of MATLAB, R, and other biostatistical techniques, I was able to generate and publish software on cosinor analyses, recurrent event analyses, and DAG-oriented modeling. These are actively maintained software packages that are furthering in development.\n\n\n\n\nComputational: The project has allowed me to develop an extensive technical skill base using programming techniques to learn biostatistics and signal processing. I have now become proficient in R and MATLAB, and routinely use this software on a daily basis.\nClinical: I have entered and finished a majority of clinical cardiology training, and will expand my knowledge base as a researcher prior to entering clinical electrophysiology. I have made broad connections with federally funded investigators and continue to expand my pool of mentors.\n\n\n\nI have published within both JAHA, IJC, and JAMA, along with sending publications in abstract form to local and national conferences.\n\n\n\nI plan to complete data collection on patients being enrolled at my research center (Emory), and develop a translational model in animals to evaluate this further with my other mentors."
   }
 ]
