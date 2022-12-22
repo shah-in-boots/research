@@ -1,0 +1,120 @@
+---
+title: Research Aims
+subtitle: T32/F32 to K08/K23 Transition 
+author: Anish S. Shah, MD|MS
+format: 
+  revealjs:
+    scrollable: true
+revealjs-plugins:
+  - attribution
+---
+
+```{r}
+#| label: setup
+#| echo: false
+library(tidyverse)
+library(gt)
+library(ggsci)
+library(scales)
+library(ggdag)
+
+# Colors
+stress <- pal_material("blue", reverse = TRUE)(9)
+arrhythmia <- pal_material("yellow", reverse = TRUE)(9)
+clinical <- pal_material("pink", reverse = TRUE)(9)
+computational <- pal_material("teal", reverse = TRUE)(9)
+text <- pal_material("blue-grey", reverse = TRUE)(9)
+```
+
+# K23 Overview {.smaller}
+
+---
+
+_Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms_
+
+:::: {.columns}
+::: {.column width="50%"}
+__Vagolysis and Triggered Arrhythmias__
+
+- Evaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)
+- [Create murine/translational model for vagolysis and triggered arrhythmias]{.red}
+:::
+::: {.column width="50%"}
+__Arrhythmia Phenotypes__
+
+- Using computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation
+- [Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.blue}
+:::
+::::
+
+## Mentorship Committee {.smaller}
+
+| Mentor | Attributes |
+| --- | --- | 
+| Amit J. Shah, MD, MS (Cardiologist) | stress epidemiology, autonomic dysfunction |
+| Dawood Darbar, MBCHB, MD (Electrophysiologist) | atrial arrhythmias, genetics |
+| Mark McCauley, MD, PHD (Electrophysiologist) | atrial arrhythmias, basic/translational science |
+| Alvaro Alonso, MD, PHD (Epidemiologist) | atrial fibrillation epidemiology, ARIC investigator | 
+| Viola Vaccarino, MD, PHD (Epidemiologist) | stress epidemiology |
+| Jalees Rehman, MD (Cardiologist) | computational biology | 
+| Rachel Lampert, MD (Electrophysiologist) | autonomic dysfunction, sudden cardiac death |
+| Andrew Boyd, MD (Clinical Bioinformatics) | biomedical informatics |
+
+# 1) Vagolysis & Arrhythmias
+
+## Background {.smaller}
+
+__Mechanism__: The key mechanism to explore is intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons.
+	
+- Atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties[@Hoover2009; @Armour1997] 
+- Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)[@Coote2013]
+- NPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium[@Kalla2020; @Herring2008]
+
+---
+
+![Cardiac sympatho-vagal crosstalk](herring-2012-cellular-sympathovagal-crosstalk.png)
+
+::: {.attribution}
+@Herring2012
+:::
+	
+---
+
+![Increased Sympathetic Tone and NPY](hoang-2020-npy-blockade.png)
+
+::: {.attribution}
+@Hoang2020
+:::
+
+---
+
+1. **Explore the role of vagolysis in triggered arrhythmias.** 
+	1a. Unopposed &uarr; SNA is arrhythmogeneic.
+	1b. 
+	
+
+Hypothesis: arrhythmia thresholds will be reduced by blockade of vagolysis (as opposed to only adrenergic stimulation). 
+
+
+
+## Methods
+
+In a murine model of arrhythmia, I propose to study the characteristics of myocardial conduction properties (phase slope changes, after depolarizations, ectopy) in a series of experiments that modulate the sympathetic nervous system at the level of the myocardium. 
+These models will be prepared as ex-vivo, vagal-sparing whole heart explants in Langendorf preparations. 
+	
+# 2) Arrhythmia Phenotypes
+
+## Background {.invisible}
+
+1. **Identify phenotypes of triggered arrhythmia.** Hypothesis: clinical phenotypes of atrial fibrillation exist that will classify increased burden of pulmonary vein triggers as measured by electrophysiology study.
+
+Using several "big-data" cohorts apart from UIC, including ARIC, MESA, MVP, the VA Research Database, I will create computational models to classify atrial fibrillation phenotypes (based on clinical, ECG, and echocardiographic parameters). 
+These classification clusters will be used to compare findings from intracardiac monitoring during EPS/PVI, such as LA geometry, atrial scar and voltage burden, dominant AF frequencies, ectopy, etc. 
+This project remains a work-in-progress and will need further credentials, computational power, and signal processing efforts to realize.
+
+# References
+
+## {.smaller}
+
+::: {#refs}
+:::

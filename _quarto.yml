@@ -23,6 +23,9 @@ website:
   page-navigation: true
   page-footer: "Copyright (c) 2022, Anish. S. Shah, MD, MS"
 
+bibliography: ../bibliography/Research.bib
+csl: ../bibliography/circulation.csl
+
 format:
   html:
     theme: flatly
@@ -32,6 +35,11 @@ format:
     toc_float: true
   docx:
     reference-doc: template.docx
-    bibliography: ../bibliography/Neurocardiology.bib
-    csl: ../bibliography/circulation.csl
+  revealjs:
+    theme: [simple, styles.scss]
+    slide-tone: true
+    fig-cap-location: bottom
+    fig-align: center
+    fig-responsive: true
+
 

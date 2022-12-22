@@ -1,0 +1,194 @@
+---
+title: Individual Development Plan
+subtitle: T32/F32 to K08/K23 Transition 
+author: Anish S. Shah, MD|MS
+format: docx
+---
+
+```{r}
+#| label: setup
+#| echo: false
+#| warning: false
+library(tidyverse)
+library(gt)
+library(ggsci)
+library(scales)
+
+# Colors
+stress <- pal_material("blue", reverse = TRUE)(9)
+arrhythmia <- pal_material("yellow", reverse = TRUE)(9)
+clinical <- pal_material("pink", reverse = TRUE)(9)
+computational <- pal_material("teal", reverse = TRUE)(9)
+text <- pal_material("blue-grey", reverse = TRUE)(9)
+```
+
+\newpage
+
+# Education 
+
+## Clinical Rotations
+
+Table 1: 
+
+| | |
+| --- | --- | 
+| Coronary/Cardiac Care Unit | 3 blocks |
+| General Cardiology Consults | 4 blocks |
+| Electrophysiology Consults | 2 blocks |
+| Non-invasive Imaging | 6.25 blocks |
+| Catheterization Laboratory | 4 blocks |
+| Heart Failure | 0.5 blocks | 
+| Research | 11 blocks | 
+| Clinic (Half Days) | 117 clinics |
+
+## Academic Training
+
+Table 2: 
+
+| | | |
+| --- | --- | --- |
+| Emory University | Bachelor of Science | 2011 |
+| Texas A&M University | Doctor of Medicine | 2016 |
+| Emory University | J. Willis Hurst Internal Medicine Residency | 2019 |
+| Emory University | Master of Science | 2020 |
+| University of Illinois at Chicago | Cardiology Fellowship | - |
+
+\newpage
+
+# Research Experience
+
+During this time I also developed a research background through projects that focused on computational neurocardiology. 
+The projects and their descriptions are listed below...
+
+Table 3:
+
+| | | |
+| --- | --- | --- |
+| MSIMI and CV Mortality | A large prospective cohort study measuring myocardial ischemia in response to mental stress, with extensive follow-up. Analytical skills included the development of recurrent event models (AG, PWP, MSM, marginal, conditional). Recurrent event software in R was developed. Middle-author Publication in JAMA | 2019-2020 |
+| HRV and Myocardial Perfusion | Evaluated circadian patterns in autonomic function using 24-hour Holter data, generating HRV with a focus on spectral density analyses. Compared these patterns with CFR on quantitate PET, finding a relationship with CFR and early morning low HRV. First-author Publication in IJC | 2017-2020 |
+| GEH and Diabetes | Using the CARRS cohort, evaluated ECG-based patterns of GEH and diabetes, finding a strong relationship with cardiac fibrosis and widening of specific GEH parameters. WIP | 2018-2019 |
+| HRV and Psychosocial Factors | Evaluated changes in HRV from baseline to several years later in the ARIC Study. Found that psychosomatic stress (in the form of vital exhaustion) led to a persistent decrease in high frequency HRV, a surrogate of vagal tone. First-author Publication in JAHA | 2016-2020 |
+| AFL and Family History | Statistical analysis of relationship between early onset AFL and family history, which notably yields different phenotypes in Whites and Blacks. WIP | 2022 |
+| Disturbances of Neurocardiac Axis | TL1 and F32 grant focused on evaluating of myocardial ischemia and changes in autonomic function using HRV. Pilot study with completed recruitment. Publication of Thesis and WIP | 2019-now | 
+| Harmonic Regression Analysis | Measuring circadian patterns and disturbances using a cosinor regression method. First-author Publication of Software Package (CRAN) | 2019 |
+
+*GEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography*
+
+Technical research skills:
+
+- epidemiology and biostatistics
+- study design (IRB, informed consent, subjection enrollment)
+- digital signal processing (HRV, ECG)
+- programming in R, MATLAB
+- harmonic regression
+- advanced survival models with recurrent events
+
+\newpage
+
+# Personal Goals
+
+Douglas Zipes asked the question "Why did he die on Tuesday and not on Monday?"
+In the 50 years since the advent of the coronary care unit,[@Lown1968] we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.[@Hayashi2015; @Lown1977]. 
+The problem can be broken down into two components: 1) a substrate and 2) a trigger. 
+My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. 
+My computational approach parallels these topics by combining biostatistics and digital signal processing.
+
+## Short Term
+
+My short-term goals are the following...
+
+1. General Cardiology Fellowship, with General and Echocardiography Board Certifications
+1. Clinical Electrophysiology Fellowship, focused on Chicago-land training opportunities.
+1. K23/K08/CDA grant application
+
+As I have already had an extensive background in biostatistics and epidemiology, my focus is to reframe my training to include "wet lab" methodologies, including applied physiology and genetics.
+This is to help support my next grant application, by highlighting research strengths in the two core areas of **stress epidmeiology** and **triggered arrhythmias**. 
+I will need 2-3 first-author publications in these areas over the next 1-2 years. 
+
+## Long Term
+
+My long-term goal is to be a federally-funded computational neurocardiologist and a clinical electrophysiologist. This entails working as an attending physician-scientist, with a division of time as seen below...
+
+Table 4:
+
+| **FTE** | **Description** |
+| --- | --- | 
+| 0.4 | Electrophysiology Lab | 
+| 0.1 | Clinic |
+| 0.2 | Epidemiology Research |
+| 0.2 | Arrhythmia Research |
+| 0.1 | Administrative Time |
+
+\newpage
+
+# Research Plan
+
+## Committee Members
+
+The committee members have multiple R01-level funding, with differential strengths to complement my training plan.
+
+1. Amit J. Shah, MD, MS (Cardiologist): stress epidemiology, autonomic dysfunction
+1. Dawood Darbar, MBCHB, MD (Electrophysiologist): atrial arrhythmias, genetics
+1. Mark McCauley, MD, PHD (Electrophysiologist): atrial arrhythmias, basic/translational science
+1. Alvaro Alonso, MD, PHD (Epidemiologist): atrial fibrillation epidemiology, ARIC investigator
+1. Viola Vaccarino, MD, PHD (Epidemiologist): stress epidemiology
+1. Jalees Rehman, MD (Cardiologist): computational biology
+1. Rachel Lampert, MD (Electrophysiologist): autonomic dysfunction, sudden cardiac death
+1. Andrew Boyd, MD (Clinical Bioinformatics): biomedical informatics
+
+This still needs to be narrowed down for the eventual grant proposal after the core aims are formalized.
+
+## Proposal
+
+My proposal is divided into two aims: 1) vagolysis-triggered arrhythmogenesis, 2) arrhythmia phenotyping.
+Both will be further developed into the aims and sub-aims for my future K-grant. 
+
+1. **Explore the role of vagolysis in triggered arrhythmias.** Hypothesis: arrhythmia thresholds will be reduced by blockade of vagolysis (as opposed to only adrenergic stimulation). 
+
+The atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties.[@Hoover2009; @Armour1997] 
+The key mechanism that we will explore is the intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons.
+Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY).[@Coote2013]
+NPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium.[@Kalla2020; @Herring2008]
+
+In a murine model of arrhythmia, I propose to study the characteristics of myocardial conduction properties (phase slope changes, after depolarizations, ectopy) in a series of experiments that modulate the sympathetic nervous system at the level of the myocardium. 
+These models will be prepared as ex-vivo, vagal-sparing whole heart explants in Langendorf preparations. 
+
+1. **Identify phenotypes of triggered arrhythmia.** Hypothesis: clinical phenotypes of atrial fibrillation exist that will classify increased burden of pulmonary vein triggers as measured by electrophysiology study.
+
+Using several "big-data" cohorts apart from UIC, including ARIC, MESA, MVP, the VA Research Database, I will create computational models to classify atrial fibrillation phenotypes (based on clinical, ECG, and echocardiographic parameters). 
+These classification clusters will be used to compare findings from intracardiac monitoring during EPS/PVI, such as LA geometry, atrial scar and voltage burden, dominant AF frequencies, ectopy, etc. 
+This project remains a work-in-progress and will need further credentials, computational power, and signal processing efforts to realize.
+
+\newpage
+
+# Publications and Funding
+
+Publications after fellowship are listed below:
+
+<div class="csl-entry">Shah, A. S., Alonso, A., Whitsel, E. A., Soliman, E. Z., Vaccarino, V., &#38; Shah, A. J. (2021). Association of Psychosocial Factors With Short‐Term Resting Heart Rate Variability: The Atherosclerosis Risk in Communities Study. <i>Journal of the American Heart Association</i>, <i>10</i>(5), e017172. https://doi.org/10.1161/JAHA.120.017172</div>
+
+<div class="csl-entry">Shah, A. S. (2021). <i>Stress Reactivity: Disturbances of the Neurocardiac Axis</i>. https://etd.library.emory.edu/concern/etds/tx31qj818</div>
+
+<div class="csl-entry">Vaccarino, V., Almuwaqqat, Z., Kim, J. H., Hammadah, M., Shah, A. J. A., Ko, Y. A., Elon, L., Sullivan, S., Shah, A. J. A., Alkhoder, A., Lima, B. B., Pearce, B., Ward, L., Kutner, M., Hu, Y., Lewis, T. T., Garcia, E. v., Nye, J., Sheps, D. S., … Quyyumi, A. A. (2021). Association of Mental Stress-Induced Myocardial Ischemia with Cardiovascular Events in Patients with Coronary Heart Disease. <i>JAMA - Journal of the American Medical Association</i>, <i>326</i>(18), 1818–1828. https://doi.org/10.1001/jama.2021.17649</div>
+
+<div class="csl-entry">Shah, A. S., Shah, A. J., Lampert, R., Goldberg, J., Bremner, J. D., Li, L., Thames, M. D., Vaccarino, V., &#38; Shah, A. S. A. J. (2020). Alterations in heart rate variability are associated with abnormal myocardial perfusion. <i>International Journal of Cardiology</i>, <i>305</i>, 99–105. https://doi.org/10.1016/j.ijcard.2020.01.069</div>
+
+Pending publications include:
+
+- Manuscript submitted to Circulation: Mental Stress-Induced Autonomic Dysfunction is Associated with Cardiovascular Mortality
+- Abstract submitted to ACC: Mental Stress-Induced Autonomic Dysfunction is Associated with Cardiovascular Mortality
+- Abstract submitted to HRS: AFL and Family Histoory
+- Abstract submitted to HRS: AF Recurrence by Race/Ethnicity
+
+Funding:
+
+- F32 received
+- AHA IPA (withdrawn)
+- K23 in planning stages
+
+\newpage
+
+# References 
+
+::: {#refs}
+:::

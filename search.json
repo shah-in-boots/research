@@ -222,5 +222,61 @@
     "title": "Research-In-Progress",
     "section": "Updates",
     "text": "Updates\n\nAHA IPA: Completed draft, pending revisions\nAFL Paper: Draft to be done by Wednesday\nAF Ablation + Biorepository: Pending IRB\nStress and CVD Mortality: Submitted to Circulation, revisions Pending"
+  },
+  {
+    "objectID": "t32/aims.html#k23-overview",
+    "href": "t32/aims.html#k23-overview",
+    "title": "Research Aims",
+    "section": "K23 Overview",
+    "text": "K23 Overview\nObjective: Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms\n\n\nVagolysis and Triggered Arrhythmias\n\nEvaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)\n[Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}\n\n\nArrhythmia Phenotypes\n\nUsing computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation\n[Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}"
+  },
+  {
+    "objectID": "t32/aims.html#murine-model-of-vagolysis",
+    "href": "t32/aims.html#murine-model-of-vagolysis",
+    "title": "Research Aims",
+    "section": "Murine Model of Vagolysis",
+    "text": "Murine Model of Vagolysis\n\nAtria are heavily innervated by ANS ganglia\n\nSympathovagal balance locally mediated through adrenergic lysis of cholinergic activity\nNeuropeptide Y (NPY) causes cholinergic inhibition through Y2R\n\nPro-arrhythmic murine model (compared to healthy controls)\n\nEx-vivo vagal-sparing Langendorf preparation\nCatecholamine infusion and NPY Y2R antagonists to modulate arrhythmic state\n\nMeasure atrial conductive properties as outcome\n\nBaseline, with catecholamine infusion, VNS stimulation, and Y2R antagonism"
+  },
+  {
+    "objectID": "t32/aims.html#mentorship-committee",
+    "href": "t32/aims.html#mentorship-committee",
+    "title": "Research Aims",
+    "section": "Mentorship Committee",
+    "text": "Mentorship Committee\n\n\n\n\n\n\n\nMentor\nAttributes\n\n\n\n\nAmit J. Shah, MD, MS (Cardiologist)\nstress epidemiology, autonomic dysfunction\n\n\nDawood Darbar, MBCHB, MD (Electrophysiologist)\natrial arrhythmias, genetics\n\n\nMark McCauley, MD, PHD (Electrophysiologist)\natrial arrhythmias, basic/translational science\n\n\nAlvaro Alonso, MD, PHD (Epidemiologist)\natrial fibrillation epidemiology, ARIC investigator\n\n\nViola Vaccarino, MD, PHD (Epidemiologist)\nstress epidemiology\n\n\nJalees Rehman, MD (Cardiologist)\ncomputational biology\n\n\nRachel Lampert, MD (Electrophysiologist)\nautonomic dysfunction, sudden cardiac death\n\n\nAndrew Boyd, MD (Clinical Bioinformatics)\nbiomedical informatics"
+  },
+  {
+    "objectID": "t32/aims.html#background",
+    "href": "t32/aims.html#background",
+    "title": "Research Aims",
+    "section": "Background",
+    "text": "Background\nMechanism: The key mechanism to explore is intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons.\n\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties1,2\nAdrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)3\nNPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium4,5"
+  },
+  {
+    "objectID": "t32/aims.html#objectives",
+    "href": "t32/aims.html#objectives",
+    "title": "Research Aims",
+    "section": "Objectives",
+    "text": "Objectives\nClinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms\n\n\nVagolysis and Triggered Arrhythmias\n\nEvaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)\nCreate murine/translational model for vagolysis and triggered arrhythmias\n\n\nArrhythmia Phenotypes\n\nUsing computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation\nClassification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)"
+  },
+  {
+    "objectID": "t32/aims.html#background-1",
+    "href": "t32/aims.html#background-1",
+    "title": "Research Aims",
+    "section": "Background",
+    "text": "Background\n\nIdentify phenotypes of triggered arrhythmia. Hypothesis: clinical phenotypes of atrial fibrillation exist that will classify increased burden of pulmonary vein triggers as measured by electrophysiology study.\n\nUsing several “big-data” cohorts apart from UIC, including ARIC, MESA, MVP, the VA Research Database, I will create computational models to classify atrial fibrillation phenotypes (based on clinical, ECG, and echocardiographic parameters). These classification clusters will be used to compare findings from intracardiac monitoring during EPS/PVI, such as LA geometry, atrial scar and voltage burden, dominant AF frequencies, ectopy, etc. This project remains a work-in-progress and will need further credentials, computational power, and signal processing efforts to realize."
+  },
+  {
+    "objectID": "t32/aims.html#background-2",
+    "href": "t32/aims.html#background-2",
+    "title": "Research Aims",
+    "section": "Background",
+    "text": "Background\n\nIdentify phenotypes of triggered arrhythmia. Hypothesis: clinical phenotypes of atrial fibrillation exist that will classify increased burden of pulmonary vein triggers as measured by electrophysiology study.\n\nUsing several “big-data” cohorts apart from UIC, including ARIC, MESA, MVP, the VA Research Database, I will create computational models to classify atrial fibrillation phenotypes (based on clinical, ECG, and echocardiographic parameters). These classification clusters will be used to compare findings from intracardiac monitoring during EPS/PVI, such as LA geometry, atrial scar and voltage burden, dominant AF frequencies, ectopy, etc. This project remains a work-in-progress and will need further credentials, computational power, and signal processing efforts to realize."
+  },
+  {
+    "objectID": "t32/aims.html#section",
+    "href": "t32/aims.html#section",
+    "title": "Research Aims",
+    "section": "",
+    "text": "1. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Coote JH. Myths and realities of the cardiac vagus 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n4. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide Y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n5. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide Y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase C-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide Y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
   }
 ]

@@ -3,7 +3,6 @@ title: "Research-In-Progress"
 author: "Anish Sanjay Shah, MD/MS<br><span style = 'font-size: 70%;'>Cardiology Fellow<br>University of Illinois at Chicago</span>"
 format: 
   revealjs:
-    theme: simple
     footer: "[Stress Epidemiology]{style='color:#1E87E5FF'}, [Arrhythmia Mechanisms]{style='color:#F8A725FF'}, [Clinical]{style='color:#C1185AFF'}, [Computational Neurocardiology]{style='color:#00887AFF'}"
     scrollable: true
 execute:
