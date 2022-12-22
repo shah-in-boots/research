@@ -26,24 +26,20 @@ computational <- pal_material("teal", reverse = TRUE)(9)
 text <- pal_material("blue-grey", reverse = TRUE)(9)
 ```
 
-# K23 Overview {.smaller}
-
----
-
-_Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms_
+## {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
 __Vagolysis and Triggered Arrhythmias__
 
 - Evaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)
-- [Create murine/translational model for vagolysis and triggered arrhythmias]{.red}
+- Murine model showing the [decrease in arrhythmias]{.blue} with VNS and [increase with vagolysis]{.red}
 :::
 ::: {.column width="50%"}
 __Arrhythmia Phenotypes__
 
 - Using computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation
-- [Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.blue}
+- [Classification of arrhythmias]{.green} using "big data" and comparison with intracardiac [electrophysiological patterns]{.orange}
 :::
 ::::
 
