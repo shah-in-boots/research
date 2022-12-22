@@ -60,7 +60,7 @@ __Arrhythmia Phenotypes__
 | Rachel Lampert, MD (Electrophysiologist) | autonomic dysfunction, sudden cardiac death |
 | Andrew Boyd, MD (Clinical Bioinformatics) | biomedical informatics |
 
-# 1) Vagolysis & Arrhythmias
+# 1. Vagolysis/Arrhythmias
 
 ## Background {.smaller}
 
@@ -86,31 +86,83 @@ __Mechanism__: The key mechanism to explore is intracardiac cross-talk between a
 @Hoang2020
 :::
 
+## Methods {.smaller}
+
+1. Ex-vivo, vagal-sparing whole heart explant of murine model in Langendorf preparation[@Hennis2022]
+1. Exposures are varying levels of sympathetic and vagal stimulation
+	- nor epinephrine infusion (NE)
+	- neuropeptide Y infusion (NPY)
+	- vagal nerve stimulation (VNS)
+	- beta blockade (BB)
+	- Y2 receptor antagonism (Y2Ra) 
+1. Outcomes will be measurement of myocardial conductioin properties
+	- phase/slope changes
+	- after-depolarization
+	- ectopy
+	- velocity
+
+## {.smaller}
+
+| Condition | Adrenergic | Cholinergic | Arrhythmia |
+| ---:| --- | --- | --- |
+| A | - | - | [&harr;]{.grey} |
+| B | NE | - | [&uarr;]{.red} |
+| C | NE & NPY | - | [&uarr;&uarr;]{.red} |
+| D | NE & NPY | Y2Ra | [&uarr;]{.red} |
+| E | - | VNS | [&darr;]{.blue} |
+| F | - | VNS & Y2Ra | [&darr;&darr;]{.blue} |
+| G | NPY | VNS & Y2Ra | [&darr;]{.blue} |
+| H | NE + NPY | VNS & Y2Ra | [&harr;]{.grey} |
+| I | NE & NPY + BB | VNS & Y2Ra | [&darr;]{.blue} |
+
+::: aside
+NE = nor ephinephrine; NPY = neuropeptide Y; VNS = vagal nerve stimulation; Y2Ra = Y2 receptor antagonist
+:::
+
 ---
 
-1. **Explore the role of vagolysis in triggered arrhythmias.** 
-	1a. Unopposed &uarr; SNA is arrhythmogeneic.
-	1b. 
+## {.smaller}
+
+__Explore the role of vagolysis in triggered arrhythmias.__
+
+In a murine model of arrhythmia, we will measure myocardial conduction properties (phase slope changes, after-depolarizations, ectopy, velocity) with and without adrenergic stimulation, NPY infusion, VNS, and Y2R antagonism.
+
+a. In the setting of catecholamine infusion, NPY will [increase arrhythmias]{.red} and Y2Ra will [decrease arrhythmias]{.blue}
+a. In the setting of catecholamine infusion, addition of NPY and Y2Ra simulatenously will have [no effect on arrhythmias]{.grey}
+a. In the setting of VNS, addition of NPY will [increase arrhythmias]{.red} and addition of Y2Ra will [decrease arrhythmias]{.blue} 
 	
+# 2. Arrhythmic Phenotypes
 
-Hypothesis: arrhythmia thresholds will be reduced by blockade of vagolysis (as opposed to only adrenergic stimulation). 
+## Background {.smaller}
 
+__Mechanism__: Triggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes.
 
+> TO BE DETERMINED
 
-## Methods
+## Methods {.smaller}
 
-In a murine model of arrhythmia, I propose to study the characteristics of myocardial conduction properties (phase slope changes, after depolarizations, ectopy) in a series of experiments that modulate the sympathetic nervous system at the level of the myocardium. 
-These models will be prepared as ex-vivo, vagal-sparing whole heart explants in Langendorf preparations. 
-	
-# 2) Arrhythmia Phenotypes
+1. Create cohort from "big data" 
+	- UIC/CCTS
+	- Atherosclerosis Risk in Communities Study
+	- VA Research Database
+	- Million Veterans Project
+1. Computational models to classify atrial fibrillation based on clinical, ECG, echocardiographic parameters
+1. Intracardiac monitoring will be used to generate features from EPS (electrophysiological studies) for clustering
+	- left atrial volume
+	- scar/fractionation
+	- dominant pulmonary vein frequencies
+	- voltage / viability
+	- ectopy
+1. Classification clusters will be validated against EPS in a prospective manner
 
-## Background {.invisible}
+## {.smaller}
 
-1. **Identify phenotypes of triggered arrhythmia.** Hypothesis: clinical phenotypes of atrial fibrillation exist that will classify increased burden of pulmonary vein triggers as measured by electrophysiology study.
+__Identify phenotypes of triggered atrial arrhythmia.__
 
-Using several "big-data" cohorts apart from UIC, including ARIC, MESA, MVP, the VA Research Database, I will create computational models to classify atrial fibrillation phenotypes (based on clinical, ECG, and echocardiographic parameters). 
-These classification clusters will be used to compare findings from intracardiac monitoring during EPS/PVI, such as LA geometry, atrial scar and voltage burden, dominant AF frequencies, ectopy, etc. 
-This project remains a work-in-progress and will need further credentials, computational power, and signal processing efforts to realize.
+Current classification of atrial fibrillation subtypes is inadequate to determine association between symptom burden, clinical trajectory, and treatment response. We will use computational/machine-learning approaches in identifying and reclassifying triggered atrial arrhythmias.
+
+a. Using clinical, ECG, and echocardiographic parameters, atrial fibrillation can be [classified into reliable/stable clusters]{.green}
+a. Clusters will [correlate with intracardiac features]{.orange} from EPS
 
 # References
 
