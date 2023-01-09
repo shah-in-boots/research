@@ -88,14 +88,14 @@
     "href": "t32/t32-updates.html#murine-ep-studies",
     "title": "Research-In-Progress",
     "section": "Murine EP Studies",
-    "text": "Murine EP Studies\n\nknitr::include_graphics(\"../figures/electromap.png\")"
+    "text": "Murine EP Studies"
   },
   {
     "objectID": "t32/t32-updates.html#human-ep-studies",
     "href": "t32/t32-updates.html#human-ep-studies",
     "title": "Research-In-Progress",
     "section": "Human EP Studies",
-    "text": "Human EP Studies\n\nknitr::include_graphics(\"../figures/openep-ablation.png\")"
+    "text": "Human EP Studies"
   },
   {
     "objectID": "t32/t32-updates.html#forest-plots",
@@ -109,7 +109,7 @@
     "href": "t32/t32-updates.html#af-registry-4",
     "title": "Research-In-Progress",
     "section": "AF Registry",
-    "text": "AF Registry\nThe AF registry is described here. Current issues:\n\nData quality - consistency between reviewers\nMissingness - decisions on acceptable thresholds\nVariable selection - echo findings, EP studies, medications, labs, symptoms\nManagement - REDCap, shared excel sheet\nAdjudication/review - outcomes, clinical follow-up length"
+    "text": "AF Registry\nThe AF registry is described here. Current issues:\n\nData quality - consistency between reviewers\nMissingness - decisions on acceptable thresholds\nVariable selection - echo findings, EP studies, medications, labs, symptoms\nManagement - REDCap, shared excel sheet\nAdjudication/review - outcomes, clinical follow-up length\n\n\n\nStress Epidemiology, Arrhythmia Mechanisms, Clinical, Computational Neurocardiology"
   },
   {
     "objectID": "f32/readme.html",
@@ -165,7 +165,7 @@
     "href": "t32/t32-updates.html#updates",
     "title": "Research-In-Progress",
     "section": "Updates",
-    "text": "Updates\n\n\nAFL/FH:\n\nPedigrees TBD\nDraft completed, pending feedback\nSupplemental tables needed?\n\n\nAF/Recurrence:\n\nScott added additional patients from UIC (September 2020 to now)\nData collection pending"
+    "text": "Updates\n\n\nAFL/FH:\n\nPedigrees/genetics completed (thanks to Ana, Shashank, Mike)\nOutline/draft to be re-written\n\n\n\nHRV/CV Mortality paper rejected, need to re-think strategy with senior authors\nK23 aims to include 1) EP lab as translational component, 2) arrhythmia risk prediction as [computational]{green} component"
   },
   {
     "objectID": "t32/t32-updates.html#aha-ipa",
@@ -193,7 +193,7 @@
     "href": "t32/t32-updates.html#ecgegm-analysis",
     "title": "Research-In-Progress",
     "section": "ECG/EGM analysis",
-    "text": "ECG/EGM analysis\n\nlibrary(rhythm)\n\nLoading required package: data.table\n\n\n\nAttaching package: 'data.table'\n\n\nThe following objects are masked from 'package:dplyr':\n\n    between, first, last\n\n\nThe following object is masked from 'package:purrr':\n\n    transpose\n\n\n\nAttaching package: 'rhythm'\n\n\nThe following object is masked from 'package:grDevices':\n\n    cm\n\nx <- read_lspro(file = file.path(find_project_folder(), \"research\", \"t32\", \"sample-egm.txt\"))\n\nggm(x, channels = c(\"I\", \"CS\", \"HIS M\", \"HIS D\", \"RV\")) |>\n    add_intervals(channel = \"I\")"
+    "text": "ECG/EGM analysis"
   },
   {
     "objectID": "t32/t32-updates.html#k23-aims",
@@ -221,7 +221,7 @@
     "href": "t32/t32-updates.html#updates-1",
     "title": "Research-In-Progress",
     "section": "Updates",
-    "text": "Updates\n\nAHA IPA: Completed draft, pending revisions\nAFL Paper: Draft to be done by Wednesday\nAF Ablation + Biorepository: Pending IRB\nStress and CVD Mortality: Submitted to Circulation, revisions Pending"
+    "text": "Updates\n\n\nAFL/FH:\n\nPedigrees TBD\nDraft completed, pending feedback\nSupplemental tables needed?\n\n\nAF/Recurrence:\n\nScott added additional patients from UIC (September 2020 to now)\nData collection pending"
   },
   {
     "objectID": "t32/aims.html#k23-overview",
@@ -376,5 +376,26 @@
     "title": "Research Aims",
     "section": "",
     "text": "1. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Coote JH. Myths and realities of the cardiac vagus 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n4. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide Y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n5. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide Y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase C-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide Y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519.\n\n\n8. Hennis K, Rötzer RD, Rilling J, Wu Y, Thalhammer SB, Biel M, et al. In vivo and ex vivo electrophysiological study of the mouse heart to characterize the cardiac conduction system, including atrial and ventricular vulnerability 2022;17:1189–1222. doi:10.1038/s41596-021-00678-z."
+  },
+  {
+    "objectID": "t32/t32-updates.html#aflfh",
+    "href": "t32/t32-updates.html#aflfh",
+    "title": "Research-In-Progress",
+    "section": "AFL/FH",
+    "text": "AFL/FH\n\nPedigrees completed (thanks to Ana and Shashank)\nDraft/outline to be re-written\nGenetic data completed (thanks to Mike)\nOverview of results"
+  },
+  {
+    "objectID": "t32/t32-updates.html#aflgenetics",
+    "href": "t32/t32-updates.html#aflgenetics",
+    "title": "Research-In-Progress",
+    "section": "AFL/genetics",
+    "text": "AFL/genetics\n\n~87 individuals with +FH\n~81 individuals with WES\n~18 individuals with VUS in total\n1 individual with VUS + FH"
+  },
+  {
+    "objectID": "t32/t32-updates.html#updates-2",
+    "href": "t32/t32-updates.html#updates-2",
+    "title": "Research-In-Progress",
+    "section": "Updates",
+    "text": "Updates\n\nAHA IPA: Completed draft, pending revisions\nAFL Paper: Draft to be done by Wednesday\nAF Ablation + Biorepository: Pending IRB\nStress and CVD Mortality: Submitted to Circulation, revisions Pending"
   }
 ]

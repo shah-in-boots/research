@@ -68,7 +68,7 @@ __Mechanism__: The key mechanism to explore is intracardiac cross-talk between a
 
 ---
 
-![Cardiac sympatho-vagal crosstalk](herring-2012-cellular-sympathovagal-crosstalk.png)
+![Cardiac sympatho-vagal crosstalk](../figures/herring-2012-cellular-sympathovagal-crosstalk.png)
 
 ::: {.attribution}
 @Herring2012
@@ -76,7 +76,7 @@ __Mechanism__: The key mechanism to explore is intracardiac cross-talk between a
 	
 ---
 
-![Increased Sympathetic Tone and NPY](hoang-2020-npy-blockade.png)
+![Increased Sympathetic Tone and NPY](../figures/hoang-2020-npy-blockade.png)
 
 ::: {.attribution}
 @Hoang2020

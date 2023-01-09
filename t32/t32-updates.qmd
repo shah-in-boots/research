@@ -9,7 +9,6 @@ execute:
   cache: true
 ---
 
-
 ```{r}
 #| label: setup
 #| include: false
@@ -76,7 +75,7 @@ tbl_status_updates <- function(progress, effort) {
 		mutate(Deadline = as.Date(Deadline)) |>
 		select(-Effort) |>
 		filter(Priority < 3) |>
-		select(Type, Project, Task, Deadline, Priority) |>
+		select(Type, Project, Task, Deadline, Priority, Status) |>
 		group_by(Project) |>
 		mutate(num = 1:n()) 
 		
@@ -148,8 +147,13 @@ tbl_status_updates <- function(progress, effort) {
 			style = cell_borders(sides = "bottom", color = text[5]),
 			locations = list(cells_body(columns = everything()), cells_stub(rows = everything()))
 		)  |>
+		tab_style(
+			style = cell_text(color = "grey"),
+			locations = cells_body(columns = Task,
+														 rows = Status == "complete")
+		) |>
 		# Columns
-		cols_hide(columns = c(Priority, num)) |>
+		cols_hide(columns = c(Priority, num, Status)) |>
 		fmt_date(columns = "Deadline", date_style = "iso") |>
 		tab_style(
 			style = cell_text(size = "x-small"),
@@ -174,8 +178,8 @@ tbl_status_updates <- function(progress, effort) {
 #| label: product  page
 #| echo: false
 dt <- 
-	date_build(year = 2022, month = 12, day = 12) |>
-	add_days(-7)
+	date_build(year = 2023, month = 1, day = 9) |>
+	add_days(-14)
 
 effort <-
 	log |>
@@ -189,6 +193,93 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# January 9, 2022
+
+## Updates
+
+:::: {.columns}
+::: {.column width="50%"}
+AFL/FH:
+
+- Pedigrees/genetics completed (thanks to [Ana]{.blue}, [Shashank]{.blue}, [Mike]{.blue})
+- Outline/draft to be re-written
+:::
+::: {.column width="50%"}
+1. [HRV/CV Mortality]{.blue} paper rejected, need to re-think strategy with senior authors
+1. K23 aims to include 1) EP lab as [translational]{.orange} component, 2) [arrhythmia risk prediction]{.blue} as [computational]{green} component
+:::
+::::
+
+
+```{r} 
+#| cache: true 
+store <- file.path(find_project_folder(), "aflubber", "_targets") 
+afl_tbls <- targets::tar_read(flutter_tables, store = store)  
+```
+
+---
+
+::: {.panel-tabset}
+
+## Onset
+
+```{r}
+afl_tbls$early
+```
+
+## Adjusted Models
+
+```{r}
+afl_tbls$adjusted
+```
+
+## Individual Risk
+
+```{r}
+afl_tbls$individual
+```
+
+## Risk by +/- FH
+
+```{r}
+afl_tbls$individual_by_family
+```
+
+:::
+
+## [AFL/genetics]{.blue}
+
+- ~87 individuals with +FH
+- ~81 individuals with WES
+- ~18 individuals with VUS in total
+- **1 individual** with VUS + FH
+
+---
+
+::: {.panel-tabset}
+
+## Multiple Pedigrees
+
+![AFL/surrogate disease burden](../figures/multiple_pedigree_plot.png)
+
+## Cohort with Variants
+
+```{r}
+afl_tbls$variant_cohort
+```
+
+## TTN Mutant
+
+![AFL/mutant](../figures/pedigree_uic0530.png)
+
+## Variant Overview
+
+```{r}
+afl_tbls$variant_table
+```
+
+:::
 
 # December 19, 2022
 
@@ -308,7 +399,7 @@ afl_tbls <- targets::tar_read(flutter_tables, store = store)
 
 ```{r}
 #| echo: false
-afl_tbls$two |>
+afl_tbls$early |>
 	as_raw_html()
 ```
 
@@ -319,7 +410,7 @@ afl_tbls$two |>
 ```{r}
 #| eval: false
 #| echo: false
-afl_tbls$supp_one 
+afl_tbls$individual
 	as_raw_html()
 ```
 
@@ -329,7 +420,7 @@ afl_tbls$supp_one
 
 ```{r}
 #| echo: false
-afl_tbls$supp_two |>
+afl_tbls$individual_by_family |>
 	as_raw_html()
 ```
 
@@ -339,7 +430,7 @@ afl_tbls$supp_two |>
 
 ```{r}
 #| echo: false
-afl_tbls$three |>
+afl_tbls$adjusted |>
 	as_raw_html()
 ```
 
