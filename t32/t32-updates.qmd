@@ -207,7 +207,7 @@ AFL/FH:
 :::
 ::: {.column width="50%"}
 1. [HRV/CV Mortality]{.blue} paper rejected, need to re-think strategy with senior authors
-1. K23 aims to include 1) EP lab as [translational]{.orange} component, 2) [arrhythmia risk prediction]{.blue} as [computational]{green} component
+1. K23 aims to include 1) EP lab as [translational]{.orange} component, 2) [arrhythmia risk prediction]{.blue} as [computational]{.green} component
 :::
 ::::
 
