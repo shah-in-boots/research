@@ -27,43 +27,62 @@ computational <- pal_material("teal", reverse = TRUE)(9)
 text <- pal_material("blue-grey", reverse = TRUE)(9)
 ```
 
-## {.smaller}
 
-:::: {.columns}
-::: {.column width="50%"}
-__Vagolysis and Triggered Arrhythmias__
+## Overview
 
-- Evaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)
-- Murine model showing the [decrease in arrhythmias]{.blue} with VNS and [increase with vagolysis]{.red}
+1. Impact/significance of proposal
+1. Support
+1. Aims
+1. Approach and relevant methodology
+
+## Impact
+
+> Why did he die on Tuesday and not on Monday?
+>> _Douglas Zipes_
+
+- Unknown if autonomic phenotypes exist
+- Unknown mechanism of triggered arrhythmia
+
+## Relevant skills
+
+- epidemiology and biostatistics
+- study design (IRB, informed consent, subject enrollment)
+- __digital signal processing__ (HRV, ECG, EGM)
+- programming in R, MATLAB
+- harmonic regression
+- advanced survival models with recurrent events
+- __genetics__
+
+::: aside
+__Skills__ that will be learned
 :::
-::: {.column width="50%"}
-__Arrhythmia Phenotypes__
 
-- Using computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation
-- [Classification of arrhythmias]{.green} using "big data" and comparison with intracardiac [electrophysiological patterns]{.orange}
-:::
-::::
-
-## {.smaller}
+## Mentorship {.smaller}
 
 | Mentor | Focus |
 | --- | --- | 
-| Amit J. Shah, MD, MS (Cardiologist) | stress epidemiology, autonomic dysfunction |
-| Dawood Darbar, MBCHB, MD (Electrophysiologist) | atrial arrhythmias, genetics |
-| Mark McCauley, MD, PHD (Electrophysiologist) | atrial arrhythmias, basic/translational science |
-| Alvaro Alonso, MD, PHD (Epidemiologist) | atrial fibrillation epidemiology, ARIC investigator | 
-| Viola Vaccarino, MD, PHD (Epidemiologist) | stress epidemiology |
-| Jalees Rehman, MD (Cardiologist) | computational biology | 
-| Rachel Lampert, MD (Electrophysiologist) | autonomic dysfunction, sudden cardiac death |
-| Andrew Boyd, MD (Clinical Bioinformatics) | biomedical informatics |
+| Amit J. Shah, MD, MS (CV) | epidemiology, autonomic dysfunction |
+| Dawood Darbar, MBCHB, MD (EP) | atrial arrhythmias, genetics |
+| Mark McCauley, MD, PHD (EP) | atrial arrhythmias, basic/translational science |
+| Alvaro Alonso, MD, PHD (EPI) | atrial fibrillation epidemiology, ARIC investigator | 
+| Viola Vaccarino, MD, PHD (EPI) | stress epidemiology |
+| Jalees Rehman, MD (CV) | computational biology | 
+| Rachel Lampert, MD (EP) | autonomic dysfunction, sudden cardiac death |
+| Andrew Boyd, MD | biomedical informatics |
 
-: Mentorship committee {#tbl-mentors}
+: Potential committee members {#tbl-mentors}
 
-# 1. Vagolysis/Arrhythmias
+## Aims
+
+1. Mechanism of mental stress on the risk of triggered atrial arrhythmia
+1. Phenotypes of vagal-mediated atrial fibrillation
+1. Genetic and/or molecular markers of vagolysis
+
+# Mental Stress + Arrhythmias
 
 ## Background {.smaller}
 
-__Mechanism__: The key mechanism to explore is intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons.
+__Mechanism__: intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis
 	
 - Atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties[@Hoover2009; @Armour1997] 
 - Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)[@Coote2013]
@@ -85,50 +104,23 @@ __Mechanism__: The key mechanism to explore is intracardiac cross-talk between a
 @Hoang2020
 :::
 
-## Methods {.smaller}
-
-1. Ex-vivo, vagal-sparing whole heart explant of murine model in Langendorf preparation[@Hennis2022]
-1. Exposures are varying levels of sympathetic and vagal stimulation
-	- nor epinephrine infusion (NE)
-	- neuropeptide Y infusion (NPY)
-	- vagal nerve stimulation (VNS)
-	- beta blockade (BB)
-	- Y2 receptor antagonism (Y2Ra) 
-1. Outcomes will be measurement of myocardial conductioin properties
-	- phase/slope changes
-	- after-depolarization
-	- ectopy
-	- velocity
+---
 
 ## {.smaller}
 
-| Condition | Adrenergic | Cholinergic | Arrhythmia |
-| ---:| --- | --- | --- |
-| A | - | - | [&harr;]{.grey} |
-| B | NE | - | [&uarr;]{.red} |
-| C | NE & NPY | - | [&uarr;&uarr;]{.red} |
-| D | NE & NPY | Y2Ra | [&uarr;]{.red} |
-| E | - | VNS | [&darr;]{.blue} |
-| F | - | VNS & Y2Ra | [&darr;&darr;]{.blue} |
-| G | NPY | VNS & Y2Ra | [&darr;]{.blue} |
-| H | NE + NPY | VNS & Y2Ra | [&harr;]{.grey} |
-| I | NE & NPY + BB | VNS & Y2Ra | [&darr;]{.blue} |
+__Identify the effect of mental stress on vagolysis and triggered arrhythmias__
+
+In participants that are undergoing electrophysiology studies, we will cause vagolysis and measure the effect on intracardiac conduction properties using mental stress induction, vagal nerve stimulation, and pharmacological methods.
+
+
+
+## Methods {.smaller}
+
 
 ::: aside
 NE = nor ephinephrine; NPY = neuropeptide Y; VNS = vagal nerve stimulation; Y2Ra = Y2 receptor antagonist
 :::
 
----
-
-## {.smaller}
-
-__Explore the role of vagolysis in triggered arrhythmias.__
-
-In a murine model of arrhythmia, we will measure myocardial conduction properties (phase slope changes, after-depolarizations, ectopy, velocity) with and without adrenergic stimulation, NPY infusion, VNS, and Y2R antagonism.
-
-a. In the setting of catecholamine infusion, NPY will [increase arrhythmias]{.red} and Y2Ra will [decrease arrhythmias]{.blue}
-a. In the setting of catecholamine infusion, addition of NPY and Y2Ra simulatenously will have [no effect on arrhythmias]{.grey}
-a. In the setting of VNS, addition of NPY will [increase arrhythmias]{.red} and addition of Y2Ra will [decrease arrhythmias]{.blue} 
 	
 # 2. Arrhythmic Phenotypes
 

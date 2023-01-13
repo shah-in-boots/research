@@ -284,7 +284,7 @@
     "href": "t32/aims.html#methods",
     "title": "Research Aims",
     "section": "Methods",
-    "text": "Methods\n\nEx-vivo, vagal-sparing whole heart explant of murine model in Langendorf preparation8\nExposures are varying levels of sympathetic and vagal stimulation\n\nnor epinephrine infusion (NE)\nneuropeptide Y infusion (NPY)\nvagal nerve stimulation (VNS)\nbeta blockade (BB)\nY2 receptor antagonism (Y2Ra)\n\nOutcomes will be measurement of myocardial conductioin properties\n\nphase/slope changes\nafter-depolarization\nectopy\nvelocity"
+    "text": "Methods\n\nEx-vivo, vagal-sparing whole heart explant of murine model in Langendorf preparationHennis2022?\nExposures are varying levels of sympathetic and vagal stimulation\n\nnor epinephrine infusion (NE)\nneuropeptide Y infusion (NPY)\nvagal nerve stimulation (VNS)\nbeta blockade (BB)\nY2 receptor antagonism (Y2Ra)\n\nOutcomes will be measurement of myocardial conductioin properties\n\nphase/slope changes\nafter-depolarization\nectopy\nvelocity"
   },
   {
     "objectID": "t32/aims.html#explore-the-role-of-vagolysis-in-triggered-arrhythmias.",
@@ -298,14 +298,14 @@
     "href": "t32/aims.html#section-1",
     "title": "Research Aims",
     "section": "",
-    "text": "Condition\nAdrenergic\nCholinergic\nArrhythmia\n\n\n\n\nA\n-\n-\n↔︎\n\n\nB\nNE\n-\n↑\n\n\nC\nNE & NPY\n-\n↑↑\n\n\nD\nNE & NPY\nY2Ra\n↑\n\n\nE\n-\nVNS\n↓\n\n\nF\n-\nVNS & Y2Ra\n↓↓\n\n\nG\nNPY\nVNS & Y2Ra\n↓\n\n\nH\nNE + NPY\nVNS & Y2Ra\n↔︎\n\n\nI\nNE & NPY + BB\nVNS & Y2Ra\n↓\n\n\n\n\n\nNE = nor ephinephrine; NPY = neuropeptide Y; VNS = vagal nerve stimulation; Y2Ra = Y2 receptor antagonist"
+    "text": "Table 1: Mentorship committee\n\n\n\n\n\n\nMentor\nFocus\n\n\n\n\nAmit J. Shah, MD, MS (Cardiologist)\nstress epidemiology, autonomic dysfunction\n\n\nDawood Darbar, MBCHB, MD (Electrophysiologist)\natrial arrhythmias, genetics\n\n\nMark McCauley, MD, PHD (Electrophysiologist)\natrial arrhythmias, basic/translational science\n\n\nAlvaro Alonso, MD, PHD (Epidemiologist)\natrial fibrillation epidemiology, ARIC investigator\n\n\nViola Vaccarino, MD, PHD (Epidemiologist)\nstress epidemiology\n\n\nJalees Rehman, MD (Cardiologist)\ncomputational biology\n\n\nRachel Lampert, MD (Electrophysiologist)\nautonomic dysfunction, sudden cardiac death\n\n\nAndrew Boyd, MD (Clinical Bioinformatics)\nbiomedical informatics"
   },
   {
     "objectID": "t32/aims.html#section-2",
     "href": "t32/aims.html#section-2",
     "title": "Research Aims",
     "section": "",
-    "text": "Explore the role of vagolysis in triggered arrhythmias.\nIn a murine model of arrhythmia, we will measure myocardial conduction properties (phase slope changes, after-depolarizations, ectopy, velocity) with and without adrenergic stimulation, NPY infusion, VNS, and Y2R antagonism.\n\nIn the setting of catecholamine infusion, NPY will increase arrhythmias and Y2Ra will decrease arrhythmias\nIn the setting of catecholamine infusion, addition of NPY and Y2Ra simulatenously will have no effect on arrhythmias\nIn the setting of VNS, addition of NPY will increase arrhythmias and addition of Y2Ra will decrease arrhythmias"
+    "text": "Condition\nAdrenergic\nCholinergic\nArrhythmia\n\n\n\n\nA\n-\n-\n↔︎\n\n\nB\nNE\n-\n↑\n\n\nC\nNE & NPY\n-\n↑↑\n\n\nD\nNE & NPY\nY2Ra\n↑\n\n\nE\n-\nVNS\n↓\n\n\nF\n-\nVNS & Y2Ra\n↓↓\n\n\nG\nNPY\nVNS & Y2Ra\n↓\n\n\nH\nNE + NPY\nVNS & Y2Ra\n↔︎\n\n\nI\nNE & NPY + BB\nVNS & Y2Ra\n↓\n\n\n\n\n\nNE = nor ephinephrine; NPY = neuropeptide Y; VNS = vagal nerve stimulation; Y2Ra = Y2 receptor antagonist"
   },
   {
     "objectID": "t32/aims.html#methods-1",
@@ -319,7 +319,7 @@
     "href": "t32/aims.html#section-3",
     "title": "Research Aims",
     "section": "",
-    "text": "Identify phenotypes of triggered atrial arrhythmia.\nCurrent classification of atrial fibrillation subtypes is inadequate to determine association between symptom burden, clinical trajectory, and treatment response. We will use computational/machine-learning approaches in identifying and reclassifying triggered atrial arrhythmias.\n\nUsing clinical, ECG, and echocardiographic parameters, atrial fibrillation can be classified into reliable/stable clusters\nClusters will correlate with intracardiac features from EPS"
+    "text": "Explore the role of vagolysis in triggered arrhythmias.\nIn a murine model of arrhythmia, we will measure myocardial conduction properties (phase slope changes, after-depolarizations, ectopy, velocity) with and without adrenergic stimulation, NPY infusion, VNS, and Y2R antagonism.\n\nIn the setting of catecholamine infusion, NPY will increase arrhythmias and Y2Ra will decrease arrhythmias\nIn the setting of catecholamine infusion, addition of NPY and Y2Ra simulatenously will have no effect on arrhythmias\nIn the setting of VNS, addition of NPY will increase arrhythmias and addition of Y2Ra will decrease arrhythmias"
   },
   {
     "objectID": "index.html#stress-and-cardiovascular-epidemiology",
@@ -375,7 +375,7 @@
     "href": "t32/aims.html#section-4",
     "title": "Research Aims",
     "section": "",
-    "text": "1. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Coote JH. Myths and realities of the cardiac vagus 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n4. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide Y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n5. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide Y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase C-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide Y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519.\n\n\n8. Hennis K, Rötzer RD, Rilling J, Wu Y, Thalhammer SB, Biel M, et al. In vivo and ex vivo electrophysiological study of the mouse heart to characterize the cardiac conduction system, including atrial and ventricular vulnerability 2022;17:1189–1222. doi:10.1038/s41596-021-00678-z."
+    "text": "Identify phenotypes of triggered atrial arrhythmia.\nCurrent classification of atrial fibrillation subtypes is inadequate to determine association between symptom burden, clinical trajectory, and treatment response. We will use computational/machine-learning approaches in identifying and reclassifying triggered atrial arrhythmias.\n\nUsing clinical, ECG, and echocardiographic parameters, atrial fibrillation can be classified into reliable/stable clusters\nClusters will correlate with intracardiac features from EPS"
   },
   {
     "objectID": "t32/t32-updates.html#aflfh",
@@ -397,5 +397,12 @@
     "title": "Research-In-Progress",
     "section": "Updates",
     "text": "Updates\n\nAHA IPA: Completed draft, pending revisions\nAFL Paper: Draft to be done by Wednesday\nAF Ablation + Biorepository: Pending IRB\nStress and CVD Mortality: Submitted to Circulation, revisions Pending"
+  },
+  {
+    "objectID": "t32/aims.html#section-5",
+    "href": "t32/aims.html#section-5",
+    "title": "Research Aims",
+    "section": "",
+    "text": "1. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n4. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n5. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
   }
 ]

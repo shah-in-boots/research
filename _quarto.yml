@@ -23,7 +23,8 @@ website:
   page-navigation: true
   page-footer: "Copyright (c) 2022, Anish. S. Shah, MD, MS"
 
-bibliography: ../bibliography/Research.bib
+bibliography:
+  - ../bibliography/research-autonomics.bib
 csl: ../bibliography/circulation.csl
 
 format:
