@@ -249,7 +249,7 @@
     "href": "t32/aims.html#background",
     "title": "Research Aims",
     "section": "Background",
-    "text": "Background\nMechanism: The key mechanism to explore is intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons.\n\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties1,2\nAdrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)3\nNPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium4,5"
+    "text": "Background\nMechanism: intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis\n\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties1,2\nAdrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)3\nNPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium4,5"
   },
   {
     "objectID": "t32/aims.html#objectives",
@@ -263,28 +263,28 @@
     "href": "t32/aims.html#background-1",
     "title": "Research Aims",
     "section": "Background",
-    "text": "Background\nMechanism: Triggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes.\n\nTO BE DETERMINED"
+    "text": "Background\nMechanism: Triggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes."
   },
   {
     "objectID": "t32/aims.html#background-2",
     "href": "t32/aims.html#background-2",
     "title": "Research Aims",
     "section": "Background",
-    "text": "Background\n\nIdentify phenotypes of triggered arrhythmia. Hypothesis: clinical phenotypes of atrial fibrillation exist that will classify increased burden of pulmonary vein triggers as measured by electrophysiology study.\n\nUsing several “big-data” cohorts apart from UIC, including ARIC, MESA, MVP, the VA Research Database, I will create computational models to classify atrial fibrillation phenotypes (based on clinical, ECG, and echocardiographic parameters). These classification clusters will be used to compare findings from intracardiac monitoring during EPS/PVI, such as LA geometry, atrial scar and voltage burden, dominant AF frequencies, ectopy, etc. This project remains a work-in-progress and will need further credentials, computational power, and signal processing efforts to realize."
+    "text": "Background"
   },
   {
     "objectID": "t32/aims.html#section",
     "href": "t32/aims.html#section",
     "title": "Research Aims",
     "section": "",
-    "text": "Vagolysis and Triggered Arrhythmias\n\nEvaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)\nMurine model showing the decrease in arrhythmias with VNS and increase with vagolysis\n\n\nArrhythmia Phenotypes\n\nUsing computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation\nClassification of arrhythmias using “big data” and comparison with intracardiac electrophysiological patterns"
+    "text": "Identify the effect of mental stress on vagolysis and triggered arrhythmias\nIn participants that are undergoing electrophysiology studies, we will cause vagolysis and measure the effect on intracardiac conduction properties using mental stress induction, vagal nerve stimulation, and pharmacological methods."
   },
   {
     "objectID": "t32/aims.html#methods",
     "href": "t32/aims.html#methods",
     "title": "Research Aims",
     "section": "Methods",
-    "text": "Methods\n\nEx-vivo, vagal-sparing whole heart explant of murine model in Langendorf preparationHennis2022?\nExposures are varying levels of sympathetic and vagal stimulation\n\nnor epinephrine infusion (NE)\nneuropeptide Y infusion (NPY)\nvagal nerve stimulation (VNS)\nbeta blockade (BB)\nY2 receptor antagonism (Y2Ra)\n\nOutcomes will be measurement of myocardial conductioin properties\n\nphase/slope changes\nafter-depolarization\nectopy\nvelocity"
+    "text": "Methods\n\n\nNE = nor ephinephrine; NPY = neuropeptide Y; VNS = vagal nerve stimulation; Y2Ra = Y2 receptor antagonist"
   },
   {
     "objectID": "t32/aims.html#explore-the-role-of-vagolysis-in-triggered-arrhythmias.",
@@ -298,14 +298,14 @@
     "href": "t32/aims.html#section-1",
     "title": "Research Aims",
     "section": "",
-    "text": "Table 1: Mentorship committee\n\n\n\n\n\n\nMentor\nFocus\n\n\n\n\nAmit J. Shah, MD, MS (Cardiologist)\nstress epidemiology, autonomic dysfunction\n\n\nDawood Darbar, MBCHB, MD (Electrophysiologist)\natrial arrhythmias, genetics\n\n\nMark McCauley, MD, PHD (Electrophysiologist)\natrial arrhythmias, basic/translational science\n\n\nAlvaro Alonso, MD, PHD (Epidemiologist)\natrial fibrillation epidemiology, ARIC investigator\n\n\nViola Vaccarino, MD, PHD (Epidemiologist)\nstress epidemiology\n\n\nJalees Rehman, MD (Cardiologist)\ncomputational biology\n\n\nRachel Lampert, MD (Electrophysiologist)\nautonomic dysfunction, sudden cardiac death\n\n\nAndrew Boyd, MD (Clinical Bioinformatics)\nbiomedical informatics"
+    "text": "Identify phenotypes of triggered atrial arrhythmia.\nCurrent classification of atrial fibrillation subtypes is inadequate to determine association between symptom burden, clinical trajectory, and treatment response. We will use computational/machine-learning approaches in identifying and reclassifying triggered atrial arrhythmias.\n\nUsing clinical, ECG, and echocardiographic parameters, atrial fibrillation can be classified into reliable/stable clusters\nClusters will correlate with intracardiac features from EPS"
   },
   {
     "objectID": "t32/aims.html#section-2",
     "href": "t32/aims.html#section-2",
     "title": "Research Aims",
     "section": "",
-    "text": "Condition\nAdrenergic\nCholinergic\nArrhythmia\n\n\n\n\nA\n-\n-\n↔︎\n\n\nB\nNE\n-\n↑\n\n\nC\nNE & NPY\n-\n↑↑\n\n\nD\nNE & NPY\nY2Ra\n↑\n\n\nE\n-\nVNS\n↓\n\n\nF\n-\nVNS & Y2Ra\n↓↓\n\n\nG\nNPY\nVNS & Y2Ra\n↓\n\n\nH\nNE + NPY\nVNS & Y2Ra\n↔︎\n\n\nI\nNE & NPY + BB\nVNS & Y2Ra\n↓\n\n\n\n\n\nNE = nor ephinephrine; NPY = neuropeptide Y; VNS = vagal nerve stimulation; Y2Ra = Y2 receptor antagonist"
+    "text": "1. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Coote JH. Myths and realities of the cardiac vagus 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n4. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide Y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n5. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide Y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase C-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide Y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519.\n\n\n\n\nStress Epidemiology, Arrhythmia Mechanisms, Clinical, Computational Neurocardiology"
   },
   {
     "objectID": "t32/aims.html#methods-1",
@@ -319,7 +319,7 @@
     "href": "t32/aims.html#section-3",
     "title": "Research Aims",
     "section": "",
-    "text": "Explore the role of vagolysis in triggered arrhythmias.\nIn a murine model of arrhythmia, we will measure myocardial conduction properties (phase slope changes, after-depolarizations, ectopy, velocity) with and without adrenergic stimulation, NPY infusion, VNS, and Y2R antagonism.\n\nIn the setting of catecholamine infusion, NPY will increase arrhythmias and Y2Ra will decrease arrhythmias\nIn the setting of catecholamine infusion, addition of NPY and Y2Ra simulatenously will have no effect on arrhythmias\nIn the setting of VNS, addition of NPY will increase arrhythmias and addition of Y2Ra will decrease arrhythmias"
+    "text": "Identify phenotypes of triggered atrial arrhythmia.\nCurrent classification of atrial fibrillation subtypes is inadequate to determine association between symptom burden, clinical trajectory, and treatment response. We will use computational/machine-learning approaches in identifying and reclassifying triggered atrial arrhythmias.\n\nUsing clinical, ECG, and echocardiographic parameters, atrial fibrillation can be classified into reliable/stable clusters\nClusters will correlate with intracardiac features from EPS"
   },
   {
     "objectID": "index.html#stress-and-cardiovascular-epidemiology",
@@ -375,7 +375,7 @@
     "href": "t32/aims.html#section-4",
     "title": "Research Aims",
     "section": "",
-    "text": "Identify phenotypes of triggered atrial arrhythmia.\nCurrent classification of atrial fibrillation subtypes is inadequate to determine association between symptom burden, clinical trajectory, and treatment response. We will use computational/machine-learning approaches in identifying and reclassifying triggered atrial arrhythmias.\n\nUsing clinical, ECG, and echocardiographic parameters, atrial fibrillation can be classified into reliable/stable clusters\nClusters will correlate with intracardiac features from EPS"
+    "text": "1. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Coote JH. Myths and realities of the cardiac vagus 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n4. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide Y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n5. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide Y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase C-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide Y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519.\n\n\n\n\nStress Epidemiology, Arrhythmia Mechanisms, Clinical, Computational Neurocardiology"
   },
   {
     "objectID": "t32/t32-updates.html#aflfh",
@@ -404,5 +404,75 @@
     "title": "Research Aims",
     "section": "",
     "text": "1. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n4. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n5. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
+  },
+  {
+    "objectID": "t32/aims.html#overview",
+    "href": "t32/aims.html#overview",
+    "title": "Research Aims",
+    "section": "Overview",
+    "text": "Overview\n\nImpact/significance of proposal\nSupport\nAims\nApproach and relevant methodology"
+  },
+  {
+    "objectID": "t32/aims.html#impact",
+    "href": "t32/aims.html#impact",
+    "title": "Research Aims",
+    "section": "Impact",
+    "text": "Impact\n\nUnknown if autonomic phenotypes exist\nUnknown mechanism of triggered arrhythmia"
+  },
+  {
+    "objectID": "t32/aims.html#relevant-skills",
+    "href": "t32/aims.html#relevant-skills",
+    "title": "Research Aims",
+    "section": "Relevant skills",
+    "text": "Relevant skills\n\nepidemiology and biostatistics\nstudy design (IRB, informed consent, subject enrollment)\ndigital signal processing (HRV, ECG, EGM)\nprogramming in R, MATLAB\nharmonic regression\nadvanced survival models with recurrent events\ngenetics\n\n\n\nSkills that will be learned"
+  },
+  {
+    "objectID": "t32/aims.html#mentorship",
+    "href": "t32/aims.html#mentorship",
+    "title": "Research Aims",
+    "section": "Mentorship",
+    "text": "Mentorship\n\n\nTable 1: Potential committee members\n\n\n\n\n\n\nMentor\nFocus\n\n\n\n\nAmit J. Shah, MD, MS (CV)\nepidemiology, autonomic dysfunction\n\n\nDawood Darbar, MBCHB, MD (EP)\natrial arrhythmias, genetics\n\n\nMark McCauley, MD, PHD (EP)\natrial arrhythmias, basic/translational science\n\n\nAlvaro Alonso, MD, PHD (EPI)\natrial fibrillation epidemiology, ARIC investigator\n\n\nViola Vaccarino, MD, PHD (EPI)\nstress epidemiology\n\n\nJalees Rehman, MD (CV)\ncomputational biology\n\n\nRachel Lampert, MD (EP)\nautonomic dysfunction, sudden cardiac death\n\n\nAndrew Boyd, MD\nbiomedical informatics"
+  },
+  {
+    "objectID": "t32/aims.html#aims",
+    "href": "t32/aims.html#aims",
+    "title": "Research Aims",
+    "section": "Aims",
+    "text": "Aims\n\nMechanism of mental stress on the risk of triggered atrial arrhythmia\nPhenotypes of vagal-mediated atrial fibrillation\nGenetic and/or molecular markers of vagolysis"
+  },
+  {
+    "objectID": "t32/aims.html#important-skills",
+    "href": "t32/aims.html#important-skills",
+    "title": "Research Aims",
+    "section": "Important skills",
+    "text": "Important skills\n\n\n\nEpidemiology\nElectrophysiology\n\n\n\n\ngenetic analyses, e.g. GWAS/WES\ndigital signal processing\n\n\nbiostatistics\nprogramming in R, MATLAB, Julia, Python\n\n\nstudy design\nharmonic regression\n\n\nsurvival models with recurrent events\n\n\n\n\n\n\nGoal is to expand and learn more about each of these"
+  },
+  {
+    "objectID": "t32/aims.html#outline",
+    "href": "t32/aims.html#outline",
+    "title": "Research Aims",
+    "section": "Outline",
+    "text": "Outline\n\nImpact/significance of proposal\nSupport\nAims\nApproach and relevant methodology"
+  },
+  {
+    "objectID": "t32/aims.html#research-skills",
+    "href": "t32/aims.html#research-skills",
+    "title": "Research Aims",
+    "section": "Research skills",
+    "text": "Research skills\n\n\nTable 1: Research skills to be developed\n\n\nEpidemiology\nElectrophysiology\n\n\n\n\ncausal inference\ncardiac electrophysiology\n\n\ngenetic analyses, e.g. GWAS/WES\ndigital signal processing\n\n\nbiostatistics\nprogramming in R, MATLAB, Julia, Python\n\n\nstudy design\nharmonic regression\n\n\nsurvival models with recurrent events"
+  },
+  {
+    "objectID": "t32/aims.html#committee",
+    "href": "t32/aims.html#committee",
+    "title": "Research Aims",
+    "section": "Committee",
+    "text": "Committee\n\n\nTable 2: Potential committee members\n\n\nMentor\nField\nSpecialty\n\n\n\n\nAmit J. Shah MD/MS\nCV/EPI\nmental stress, autonomic dysfunction\n\n\nDawood Darbar MBCHB/MD\nCV/EPI\natrial arrhythmias, genetics\n\n\nMark McCauley MD/PHD\nCV/EP\natrial arrhythmias\n\n\nAlvaro Alonso MD/PHD\nEPI\natrial fibrillation, ARIC investigator\n\n\nViola Vaccarino MD/PHD\nEPI\nmental stress\n\n\nJalees Rehman MD\nCV\ncomputational biology\n\n\nRachel Lampert MD\nCV/EP\nautonomic dysfunction\n\n\nAndrew Boyd MD\n-\nbiomedical informatics"
+  },
+  {
+    "objectID": "t32/aims.html#methods-2",
+    "href": "t32/aims.html#methods-2",
+    "title": "Research Aims",
+    "section": "Methods",
+    "text": "Methods"
   }
 ]

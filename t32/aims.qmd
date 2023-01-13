@@ -8,6 +8,7 @@ format:
 revealjs-plugins:
   - attribution
 tbl-cap-location: top
+fig-cap-location: top
 ---
 
 ```{r}
@@ -27,8 +28,12 @@ computational <- pal_material("teal", reverse = TRUE)(9)
 text <- pal_material("blue-grey", reverse = TRUE)(9)
 ```
 
+> Why did he die on Tuesday and not on Monday?  
+>> _Douglas Zipes_
 
-## Overview
+# Planning
+
+## Outline
 
 1. Impact/significance of proposal
 1. Support
@@ -37,38 +42,33 @@ text <- pal_material("blue-grey", reverse = TRUE)(9)
 
 ## Impact
 
-> Why did he die on Tuesday and not on Monday?
->> _Douglas Zipes_
-
 - Unknown if autonomic phenotypes exist
 - Unknown mechanism of triggered arrhythmia
 
-## Relevant skills
+## Research skills {.smaller}
 
-- epidemiology and biostatistics
-- study design (IRB, informed consent, subject enrollment)
-- __digital signal processing__ (HRV, ECG, EGM)
-- programming in R, MATLAB
-- harmonic regression
-- advanced survival models with recurrent events
-- __genetics__
+| Epidemiology | Electrophysiology |
+| --- | --- |
+| causal inference | cardiac electrophysiology |
+| genetic analyses, e.g. GWAS/WES | digital signal processing |
+| biostatistics | programming in R, MATLAB, Julia, Python |
+| study design | harmonic regression |
+| survival models with recurrent events | |
 
-::: aside
-__Skills__ that will be learned
-:::
+: Research skills to be developed {#tbl-skills}
 
-## Mentorship {.smaller}
+## Committee {.smaller}
 
-| Mentor | Focus |
-| --- | --- | 
-| Amit J. Shah, MD, MS (CV) | epidemiology, autonomic dysfunction |
-| Dawood Darbar, MBCHB, MD (EP) | atrial arrhythmias, genetics |
-| Mark McCauley, MD, PHD (EP) | atrial arrhythmias, basic/translational science |
-| Alvaro Alonso, MD, PHD (EPI) | atrial fibrillation epidemiology, ARIC investigator | 
-| Viola Vaccarino, MD, PHD (EPI) | stress epidemiology |
-| Jalees Rehman, MD (CV) | computational biology | 
-| Rachel Lampert, MD (EP) | autonomic dysfunction, sudden cardiac death |
-| Andrew Boyd, MD | biomedical informatics |
+| Mentor | Field | Specialty |
+| --- | --- | --- | 
+| Amit J. Shah MD/MS | CV/EPI | mental stress, autonomic dysfunction |
+| Dawood Darbar MBCHB/MD | CV/EPI | atrial arrhythmias, genetics |
+| Mark McCauley MD/PHD | CV/EP | atrial arrhythmias | 
+| Alvaro Alonso MD/PHD | EPI | atrial fibrillation, ARIC investigator | 
+| Viola Vaccarino MD/PHD | EPI | mental stress |
+| Jalees Rehman MD | CV | computational biology | 
+| Rachel Lampert MD | CV/EP | autonomic dysfunction |
+| Andrew Boyd MD | - | biomedical informatics |
 
 : Potential committee members {#tbl-mentors}
 
@@ -78,7 +78,7 @@ __Skills__ that will be learned
 1. Phenotypes of vagal-mediated atrial fibrillation
 1. Genetic and/or molecular markers of vagolysis
 
-# Mental Stress + Arrhythmias
+# Mental Stress + Arrhythmias {.smaller}
 
 ## Background {.smaller}
 
@@ -90,7 +90,7 @@ __Mechanism__: intracardiac cross-talk between adrenergic (sympathetic) and chol
 
 ---
 
-![Cardiac sympatho-vagal crosstalk](../figures/herring-2012-cellular-sympathovagal-crosstalk.png)
+![Cardiac sympatho-vagal crosstalk](../figures/herring-2012-cellular-sympathovagal-crosstalk.png){#fig-ans-crosstalk}
 
 ::: {.attribution}
 @Herring2012
@@ -98,7 +98,7 @@ __Mechanism__: intracardiac cross-talk between adrenergic (sympathetic) and chol
 	
 ---
 
-![Increased Sympathetic Tone and NPY](../figures/hoang-2020-npy-blockade.png)
+![Increased sympathetic activity and NPY](../figures/hoang-2020-npy-blockade.png){#fig-npy-blockade}
 
 ::: {.attribution}
 @Hoang2020
@@ -106,29 +106,21 @@ __Mechanism__: intracardiac cross-talk between adrenergic (sympathetic) and chol
 
 ---
 
-## {.smaller}
+## Aim #1 {.smaller}
 
 __Identify the effect of mental stress on vagolysis and triggered arrhythmias__
 
 In participants that are undergoing electrophysiology studies, we will cause vagolysis and measure the effect on intracardiac conduction properties using mental stress induction, vagal nerve stimulation, and pharmacological methods.
 
-
-
-## Methods {.smaller}
-
-
 ::: aside
 NE = nor ephinephrine; NPY = neuropeptide Y; VNS = vagal nerve stimulation; Y2Ra = Y2 receptor antagonist
 :::
 
-	
-# 2. Arrhythmic Phenotypes
+# Arrhythmia Phenotypes {.smaller}
 
 ## Background {.smaller}
 
 __Mechanism__: Triggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes.
-
-> TO BE DETERMINED
 
 ## Methods {.smaller}
 
@@ -146,7 +138,7 @@ __Mechanism__: Triggered forms of arrhythmias, such as pulmonary vein triggers o
 	- ectopy
 1. Classification clusters will be validated against EPS in a prospective manner
 
-## {.smaller}
+## Aim #2 {.smaller}
 
 __Identify phenotypes of triggered atrial arrhythmia.__
 
@@ -154,6 +146,14 @@ Current classification of atrial fibrillation subtypes is inadequate to determin
 
 a. Using clinical, ECG, and echocardiographic parameters, atrial fibrillation can be [classified into reliable/stable clusters]{.green}
 a. Clusters will [correlate with intracardiac features]{.orange} from EPS
+
+# Genetics + Vagolysis {.smaller}
+
+## Background
+
+## Aim #3 {.smaller}
+
+## Methods
 
 # References
 
