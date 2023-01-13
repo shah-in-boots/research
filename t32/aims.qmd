@@ -7,6 +7,7 @@ format:
     scrollable: true
 revealjs-plugins:
   - attribution
+tbl-cap-location: top
 ---
 
 ```{r}
@@ -43,9 +44,9 @@ __Arrhythmia Phenotypes__
 :::
 ::::
 
-## Mentorship Committee {.smaller}
+## {.smaller}
 
-| Mentor | Attributes |
+| Mentor | Focus |
 | --- | --- | 
 | Amit J. Shah, MD, MS (Cardiologist) | stress epidemiology, autonomic dysfunction |
 | Dawood Darbar, MBCHB, MD (Electrophysiologist) | atrial arrhythmias, genetics |
@@ -55,6 +56,8 @@ __Arrhythmia Phenotypes__
 | Jalees Rehman, MD (Cardiologist) | computational biology | 
 | Rachel Lampert, MD (Electrophysiologist) | autonomic dysfunction, sudden cardiac death |
 | Andrew Boyd, MD (Clinical Bioinformatics) | biomedical informatics |
+
+: Mentorship committee {#tbl-mentors}
 
 # 1. Vagolysis/Arrhythmias
 
