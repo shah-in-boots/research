@@ -14,6 +14,7 @@ The most recent update to this page was as of `r format(Sys.Date(), "%A, %B %d, 
 Please see here for weekly [updates](https://asshah4.github.io/research/t32/t32-updates.html).
 
 
+
 | | | |
 | --- | --- | --- |
 | MSIMI and CV Mortality | A large prospective cohort study measuring myocardial ischemia in response to mental stress, with extensive follow-up. Analytical skills included the development of recurrent event models (AG, PWP, MSM, marginal, conditional). Recurrent event software in R was developed. Middle-author Publication in JAMA | 2019-2020 |
@@ -22,6 +23,7 @@ Please see here for weekly [updates](https://asshah4.github.io/research/t32/t32-
 | HRV and Psychosocial Factors | Evaluated changes in HRV from baseline to several years later in the ARIC Study. Found that psychosomatic stress (in the form of vital exhaustion) led to a persistent decrease in high frequency HRV, a surrogate of vagal tone. First-author Publication in JAHA | 2016-2020 |
 | AFL and Family History | Statistical analysis of relationship between early onset AFL and family history, which notably yields different phenotypes in Whites and Blacks. [WIP](https://asshah4.github.io/aflubber) | 2022 |
 | Disturbances of Neurocardiac Axis | TL1 and F32 grant focused on evaluating of myocardial ischemia and changes in autonomic function using HRV. Pilot study with completed recruitment. Publication of Thesis and WIP | 2019-now | 
+| Vagolysis and Arrhythmogenesis | Measurement of vagolysis in arrhythmogenesis in the electrophysiology lab and using clinical and epidemiological data. Currently working on the development/progress [towards a K08/K23 award](https://asshah4.github.io/research/t32/aims.html), including pilot data collection. | 2022-now |
 
 *GEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography*
 
@@ -51,7 +53,7 @@ _Physiological and psychological stress and cardiovascular mortality, from a neu
 
 _Mechanisms behind stress and arrhythmia generation (or degeneration) in a pre-clinical and clinical electrophysiology context_
 
-- Murine models of vagolysis leading to triggered arrhythmias, which was initially proposed as an [AHA IPA](https://asshah4.github.io/research/grants/aha_innovative_project_2022.html), but then withdrawn and considered as [initial proposal](https://asshah4.github.io/research/t32/aims.html) for T32/F32 transition to K08/K23
+- Murine models of vagolysis leading to triggered arrhythmias, which was initially proposed as an [AHA IPA](https://asshah4.github.io/research/grants/aha_innovative_project_2022.html), but then withdrawn
 
 ## Computational Neurocardiology and Biostatistics
 

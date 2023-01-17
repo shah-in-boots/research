@@ -29,7 +29,7 @@ text <- pal_material("blue-grey", reverse = TRUE)(9)
 ```
 
 > Why did he die on Tuesday and not on Monday?  
->> _Douglas Zipes_
+> ~ _Douglas Zipes_
 
 # Planning
 
@@ -72,88 +72,122 @@ text <- pal_material("blue-grey", reverse = TRUE)(9)
 
 : Potential committee members {#tbl-mentors}
 
-## Aims
+## Specific Aims 
 
-1. Mechanism of mental stress on the risk of triggered atrial arrhythmia
-1. Phenotypes of vagal-mediated atrial fibrillation
-1. Genetic and/or molecular markers of vagolysis
+1. To identify the effect of mental stress on triggered arrhythmias.
+1. To identify genetic and molecular markers associated with inappropriate vagolysis. 
+1. To identify genetic and molecular markers associated with inappropriate vagolysis. 
 
-# Mental Stress + Arrhythmias {.smaller}
+# Stress + Arrhythmias {.smaller}
 
 ## Background {.smaller}
 
-__Mechanism__: intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis
-	
+- Intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress
 - Atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties[@Hoover2009; @Armour1997] 
-- Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)[@Coote2013]
-- NPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium[@Kalla2020; @Herring2008]
+- Sympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis
 
----
+## Aim #1: Translational/Computational {.smaller}
 
-![Cardiac sympatho-vagal crosstalk](../figures/herring-2012-cellular-sympathovagal-crosstalk.png){#fig-ans-crosstalk}
-
-::: {.attribution}
-@Herring2012
-:::
-	
----
-
-![Increased sympathetic activity and NPY](../figures/hoang-2020-npy-blockade.png){#fig-npy-blockade}
-
-::: {.attribution}
-@Hoang2020
-:::
-
----
-
-## Aim #1 {.smaller}
-
-__Identify the effect of mental stress on vagolysis and triggered arrhythmias__
-
-In participants that are undergoing electrophysiology studies, we will cause vagolysis and measure the effect on intracardiac conduction properties using mental stress induction, vagal nerve stimulation, and pharmacological methods.
+1. __To identify the effect of mental stress on triggered arrhythmias.__
+_Mental stress leads to decrease in arrhythmia threshold by acute vagolysis._
+	a. Mental stress challenge will lead to acute [decrease in arrhythmia threshold]{.orange} from baseline.
+	a. Catecholamine infusion during mental stress challenge will to a [greater decrease in arrhythmia threshold]{.orange}.
+	a. VNS during mental stress challenge will [protect against decreases in arrhythmia threshold]{.orange}.
 
 ::: aside
-NE = nor ephinephrine; NPY = neuropeptide Y; VNS = vagal nerve stimulation; Y2Ra = Y2 receptor antagonist
+EPS = electrophysiology study;
+VNS = vagal nerve stimulation;
 :::
 
 # Arrhythmia Phenotypes {.smaller}
 
 ## Background {.smaller}
 
-__Mechanism__: Triggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes.
+- Research work has started to evaluate clusters of AF phenotypes using small computational models
+- Triggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes.
+- Vagal AF is likely a triggered subtype
+
+## Aim #2: Epidemiology/Computational
+
+2. __To classify phenotypes of triggered atrial arrhythmias__.
+_Clinical phenotypes of atrial arrhythmias exist that have differential responses to therapy._
+	a. Surface/non-invasive clinical features will identify stable, novel [clusters of arrhythmia phenotypes]{.blue}.
+	a. Identified clusters will correlate with [arrhythmia phenotypes generated from intracardiac features]{.green} obtained from EPS.
+
+::: aside
+AF = atrial fibrillation;
+EPS = electrophysiology study
+:::
 
 ## Methods {.smaller}
 
-1. Create cohort from "big data" 
-	- UIC/CCTS
-	- Atherosclerosis Risk in Communities Study
-	- VA Research Database
-	- Million Veterans Project
+1. Create cohort from "big data"
+	a. e.g. UIC/CCTS, ARIC, MVP
 1. Computational models to classify atrial fibrillation based on clinical, ECG, echocardiographic parameters
-1. Intracardiac monitoring will be used to generate features from EPS (electrophysiological studies) for clustering
-	- left atrial volume
-	- scar/fractionation
-	- dominant pulmonary vein frequencies
-	- voltage / viability
-	- ectopy
+1. Intracardiac monitoring will be used to generate features from EPS for clustering
+	a. e.g. LA volume, scar/voltage, complex fractionated atrial electrograms, dominant PV frequencies, ectopy
 1. Classification clusters will be validated against EPS in a prospective manner
 
-## Aim #2 {.smaller}
-
-__Identify phenotypes of triggered atrial arrhythmia.__
-
-Current classification of atrial fibrillation subtypes is inadequate to determine association between symptom burden, clinical trajectory, and treatment response. We will use computational/machine-learning approaches in identifying and reclassifying triggered atrial arrhythmias.
-
-a. Using clinical, ECG, and echocardiographic parameters, atrial fibrillation can be [classified into reliable/stable clusters]{.green}
-a. Clusters will [correlate with intracardiac features]{.orange} from EPS
+::: aside
+UIC = University of Illinois at Chicago;
+CCTS = Center for Translational Research;
+ARIC = Atherosclerotic Risk in Communities;
+MVP = Million Veterans Project;
+LA = left atrium;
+PV = pulmonary veins;
+EPS = electrophysiology study
+:::
 
 # Genetics + Vagolysis {.smaller}
 
-## Background
+## Background {.smaller}
 
-## Aim #3 {.smaller}
+- Arrhythmia thresholds affected by sympathetic and vagal activity 
+- Sympathetic neurons released both NE and NPY which inhibits anticholinergic activity
+- Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)[@Coote2013]
+- NPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium[@Kalla2020; @Herring2008]
+- NPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)
+- Mutations have been found in rs16147 and perceived stress [@Chang2016]
+
+::: aside
+NE = nor epinephrine;
+NPY = neuropeptide Y
+:::
+
+---
+
+![Cardiac sympatho-vagal crosstalk @Herring2012](../figures/herring-2012-cellular-sympathovagal-crosstalk.png){#fig-ans-crosstalk}
+	
+---
+
+![Increased sympathetic activity and NPY @Hoang2020](../figures/hoang-2020-npy-blockade.png){#fig-npy-blockade}
+
+---
+
+## Aim #3: Epidemiology/Genetics {.smaller}
+
+3. __To identify genetic and molecular markers associated with inappropriate vagolysis__. 
+_Inappropriate vagolysis results from differential expression of autonomic hormones and receptors along the neurocardiac axis._
+	a. Those with an increased arrhythmia burden will have higher levels of catecholamines and NPY levels after mental stress challenge.
+	a. Those with an increased arrhythmia burden will have an increased burden of genetic polymorphisms in the NPY and its receptors.
+
+::: aside
+_Aim #3 is linked to Aim #1, and will be measured simultaneously in the lab setting._ 
+NPY = neuropeptide Y;
+:::
 
 ## Methods
+
+1. Collect blood during EPS for atrial arrhythmias (paroxysmal/triggered)
+	a. DNA samples
+	a. Catecholamine levels
+	a. NPY levels
+1. Whole exome sequencing of DNA to identify SNP in NPY regions
+1. Correlate arrhythmia phenotype with NPY variants
+	
+::: aside
+NPY = neuropeptide Y
+:::
 
 # References
 
