@@ -72,19 +72,63 @@ text <- pal_material("blue-grey", reverse = TRUE)(9)
 
 : Potential committee members {#tbl-mentors}
 
-## Specific Aims 
+## Aims Overview
 
-1. To identify the effect of mental stress on triggered arrhythmias.
-1. To identify genetic and molecular markers associated with inappropriate vagolysis. 
-1. To identify genetic and molecular markers associated with inappropriate vagolysis. 
+:::: {.columns}
+::: {.column width="50%"}
+__Elucidate the cardiac signature of mental stress__:
 
-# Stress + Arrhythmias {.smaller}
+- Translating from animal-models to humans
+- MD-conducted [electrophysiology studies]{.orange} 
+- [Genetic]{.blue} and molecular pathway component
+- Targets for [pharmacological interventions]{.red}
+:::
+::: {.column width="50%"}
+__Identify phenotypes of mental stress-triggered atrial tachyarrhythmias__:
+
+- Intracardiac electroanatomical [mapping data and signal processing]{.green}
+- Epidemiology-based [clustering/classification of patients]{.blue}
+- Surface-based [electrocardiography signal processing]{.green}
+:::
+::::
+
+# Background
+
+- Arrhythmia thresholds affected by sympathetic and vagal activity 
+- Sympathetic neurons released both NE and NPY which inhibits anticholinergic activity
+- Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)[@Coote2013]
+- NPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium[@Kalla2020; @Herring2008]
+- NPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)
+- Mutations have been found in rs16147 and perceived stress [@Chang2016]
+
+::: aside
+NE = nor epinephrine;
+NPY = neuropeptide Y
+:::
 
 ## Background {.smaller}
 
 - Intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress
 - Atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties[@Hoover2009; @Armour1997] 
 - Sympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis
+
+## Background {.smaller}
+
+- Research work has started to evaluate clusters of AF phenotypes using small computational models
+- Triggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes.
+- Vagal AF is likely a triggered subtype
+
+
+---
+
+![Cardiac sympatho-vagal crosstalk @Herring2012](../figures/herring-2012-cellular-sympathovagal-crosstalk.png){#fig-ans-crosstalk}
+	
+---
+
+![Increased sympathetic activity and NPY @Hoang2020](../figures/hoang-2020-npy-blockade.png){#fig-npy-blockade}
+
+
+# Aims
 
 ## Aim #1: Translational/Computational {.smaller}
 
@@ -98,14 +142,6 @@ _Mental stress leads to decrease in arrhythmia threshold by acute vagolysis._
 EPS = electrophysiology study;
 VNS = vagal nerve stimulation;
 :::
-
-# Arrhythmia Phenotypes {.smaller}
-
-## Background {.smaller}
-
-- Research work has started to evaluate clusters of AF phenotypes using small computational models
-- Triggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes.
-- Vagal AF is likely a triggered subtype
 
 ## Aim #2: Epidemiology/Computational
 
@@ -138,41 +174,14 @@ PV = pulmonary veins;
 EPS = electrophysiology study
 :::
 
-# Genetics + Vagolysis {.smaller}
+## Aim #2: Epidemiology/Genetics {.smaller}
 
-## Background {.smaller}
-
-- Arrhythmia thresholds affected by sympathetic and vagal activity 
-- Sympathetic neurons released both NE and NPY which inhibits anticholinergic activity
-- Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)[@Coote2013]
-- NPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium[@Kalla2020; @Herring2008]
-- NPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)
-- Mutations have been found in rs16147 and perceived stress [@Chang2016]
-
-::: aside
-NE = nor epinephrine;
-NPY = neuropeptide Y
-:::
-
----
-
-![Cardiac sympatho-vagal crosstalk @Herring2012](../figures/herring-2012-cellular-sympathovagal-crosstalk.png){#fig-ans-crosstalk}
-	
----
-
-![Increased sympathetic activity and NPY @Hoang2020](../figures/hoang-2020-npy-blockade.png){#fig-npy-blockade}
-
----
-
-## Aim #3: Epidemiology/Genetics {.smaller}
-
-3. __To identify genetic and molecular markers associated with inappropriate vagolysis__. 
+2. __To identify genetic and molecular markers associated with inappropriate vagolysis__. 
 _Inappropriate vagolysis results from differential expression of autonomic hormones and receptors along the neurocardiac axis._
 	a. Those with an increased arrhythmia burden will have higher levels of catecholamines and NPY levels after mental stress challenge.
 	a. Those with an increased arrhythmia burden will have an increased burden of genetic polymorphisms in the NPY and its receptors.
 
 ::: aside
-_Aim #3 is linked to Aim #1, and will be measured simultaneously in the lab setting._ 
 NPY = neuropeptide Y;
 :::
 
