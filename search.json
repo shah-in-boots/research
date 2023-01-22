@@ -151,7 +151,7 @@
     "href": "index.html",
     "title": "Research Efforts",
     "section": "",
-    "text": "Douglas Zipes asked the question “Why did he die on Tuesday and not on Monday?” In the 50 years since the advent of the coronary care unit,1 we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.2,3. The problem can be broken down into two components: 1) a substrate and 2) a trigger. My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. My computational approach parallels these topics by combining biostatistics and digital signal processing.\nThis serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Thursday, December 22, 2022. Please see here for weekly updates.\nGEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography\nTechnical research skills:"
+    "text": "Douglas Zipes asked the question “Why did he die on Tuesday and not on Monday?” In the 50 years since the advent of the coronary care unit,Lown1968? we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.1,Hayashi2015?. The problem can be broken down into two components: 1) a substrate and 2) a trigger. My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. My computational approach parallels these topics by combining biostatistics and digital signal processing.\nThis serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Saturday, January 21, 2023. Please see here for weekly updates.\nGEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography\nTechnical research skills:"
   },
   {
     "objectID": "index.html#atrial-fibrillation",
@@ -263,21 +263,21 @@
     "href": "t32/aims.html#background-1",
     "title": "Research Aims",
     "section": "Background",
-    "text": "Background\n\nResearch work has started to evaluate clusters of AF phenotypes using small computational models\nTriggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes.\nVagal AF is likely a triggered subtype"
+    "text": "Background\n\nIntracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties4,5\nSympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis"
   },
   {
     "objectID": "t32/aims.html#background-2",
     "href": "t32/aims.html#background-2",
     "title": "Research Aims",
     "section": "Background",
-    "text": "Background\n\nArrhythmia thresholds affected by sympathetic and vagal activity\nSympathetic neurons released both NE and NPY which inhibits anticholinergic activity\nAdrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)3\nNPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium4,5\nNPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)\nMutations have been found in rs16147 and perceived stress6\n\n\n\nNE = nor epinephrine; NPY = neuropeptide Y"
+    "text": "Background\n\nResearch work has started to evaluate clusters of AF phenotypes using small computational models\nTriggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes.\nVagal AF is likely a triggered subtype"
   },
   {
     "objectID": "t32/aims.html#section",
     "href": "t32/aims.html#section",
     "title": "Research Aims",
     "section": "",
-    "text": "1. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n4. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n5. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n6. Chang H-A, Fang W-H, Chang T-C, Huang S-Y, Chang C-C. Association of neuropeptide y promoter polymorphism (rs16147) with perceived stress and cardiac vagal outflow in humans. Scientific Reports 2016;6:31683. doi:10.1038/srep31683.\n\n\n7. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n8. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
+    "text": "1. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n2. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n3. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n4. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n5. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
   },
   {
     "objectID": "t32/aims.html#methods",
@@ -333,7 +333,7 @@
     "href": "index.html#stress-and-arrhythmognesis",
     "title": "Research Efforts",
     "section": "Stress and Arrhythmognesis",
-    "text": "Stress and Arrhythmognesis\nMechanisms behind stress and arrhythmia generation (or degeneration) in a pre-clinical and clinical electrophysiology context\n\nMurine models of vagolysis leading to triggered arrhythmias, which was initially proposed as an AHA IPA, but then withdrawn and considered as initial proposal for T32/F32 transition to K08/K23"
+    "text": "Stress and Arrhythmognesis\nMechanisms behind stress and arrhythmia generation (or degeneration) in a pre-clinical and clinical electrophysiology context\n\nMurine models of vagolysis leading to triggered arrhythmias, which was initially proposed as an AHA IPA, but then withdrawn"
   },
   {
     "objectID": "index.html#computational-neurocardiology-and-biostatistics",
@@ -537,5 +537,96 @@
     "title": "Research Aims",
     "section": "Aim #3: Epidemiology/Genetics",
     "text": "Aim #3: Epidemiology/Genetics\n\nTo identify genetic and molecular markers associated with inappropriate vagolysis. Inappropriate vagolysis results from differential expression of autonomic hormones and receptors along the neurocardiac axis.\n\nThose with an increased arrhythmia burden will have higher levels of catecholamines and NPY levels after mental stress challenge.\nThose with an increased arrhythmia burden will have an increased burden of genetic polymorphisms in the NPY and its receptors.\n\n\n\n\nAim #3 is linked to Aim #1, and will be measured simultaneously in the lab setting. NPY = neuropeptide Y;"
+  },
+  {
+    "objectID": "f32/progress/year_one/2022_progress-updates.html",
+    "href": "f32/progress/year_one/2022_progress-updates.html",
+    "title": "Research",
+    "section": "",
+    "text": "5F32HL154707-03: The Association of Autonomic Dysfunction with the Relationship between Depression and Coronary Disease\nResearch Performance Progress Report\nOctober 3rd, 2022"
+  },
+  {
+    "objectID": "f32/progress/year_one/2022_progress-updates.html#b1.-what-are-the-major-goals-of-the-project",
+    "href": "f32/progress/year_one/2022_progress-updates.html#b1.-what-are-the-major-goals-of-the-project",
+    "title": "Research",
+    "section": "B1. What are the major goals of the project?",
+    "text": "B1. What are the major goals of the project?\nThis project was an extension of my TL1 to understand and evaluate neurocardiac pathophysiology as a clinician-scientist. The major goals of the project were encapsulated within the specific aims:\n\nQuantify the relationship between depressive symptoms and autonomic dysfunction\nExamine the relationships of ischemic heart disease with autonomic dysfunction\n\nAdditionally, goals incorporated within the training plan included: expansion of biostatistical skills, signal processing techniques, and understanding of stress physiology.\nIn terms of future planning, the end of the F32 is to help bridge me towards a K23 or K08 to move towards independence."
+  },
+  {
+    "objectID": "f32/progress/year_one/2022_progress-updates.html#b2.-what-was-accomplished-under-these-goals",
+    "href": "f32/progress/year_one/2022_progress-updates.html#b2.-what-was-accomplished-under-these-goals",
+    "title": "Research",
+    "section": "B2. What was accomplished under these goals?",
+    "text": "B2. What was accomplished under these goals?\nThese goals allowed me to expand upon academic training, clinical training, and impactful scientific discoveries.\n\nMaster of Science degree: Able to complete a Master’s Thesis and defend this using dedicated time from the F32 funding period.\nClinical training: Completion of time as a clinical cardiology fellow, and movement towards electrophysiology training\nTranslational skills: Observation and development of basic science skills to allow for translational opportunities using mice models and IPSC models.\nPublications: “Alterations in heart rate variability are associated with abnormal myocardial perfusion” (PMID: 32024598) and “Association of Psychosocial Factors With Short‐Term Resting Heart Rate Variability: The Atherosclerosis Risk in Communities Study” (PMID: 33631952) as first author publications. Additionally, a key middle author publication in JAMA “Association of Mental Stress-Induced Myocardial Ischemia with Cardiovascular Events in Patients with Coronary Heart Disease” (PMID: 34751708).\nSoftware development: During the learning of MATLAB, R, and other biostatistical techniques, I was able to generate and publish software on cosinor analyses, recurrent event analyses, and DAG-oriented modeling. These are actively maintained software packages that are furthering in development."
+  },
+  {
+    "objectID": "f32/progress/year_one/2022_progress-updates.html#b4.-what-opportunities-for-training-and-professional-development-has-the-project-provided",
+    "href": "f32/progress/year_one/2022_progress-updates.html#b4.-what-opportunities-for-training-and-professional-development-has-the-project-provided",
+    "title": "Research",
+    "section": "B4. What opportunities for training and professional development has the project provided?",
+    "text": "B4. What opportunities for training and professional development has the project provided?\nComputational: The project has allowed me to develop an extensive technical skill base using programming techniques to learn biostatistics and signal processing. I have now become proficient in R and MATLAB, and routinely use this software on a daily basis.\nClinical: I have entered and finished a majority of clinical cardiology training, and will expand my knowledge base as a researcher prior to entering clinical electrophysiology. I have made broad connections with federally funded investigators and continue to expand my pool of mentors."
+  },
+  {
+    "objectID": "f32/progress/year_one/2022_progress-updates.html#b5.-how-have-the-results-been-disseminated-to-communities-of-interest",
+    "href": "f32/progress/year_one/2022_progress-updates.html#b5.-how-have-the-results-been-disseminated-to-communities-of-interest",
+    "title": "Research",
+    "section": "B5. How have the results been disseminated to communities of interest?",
+    "text": "B5. How have the results been disseminated to communities of interest?\nI have published within both JAHA, IJC, and JAMA, along with sending publications in abstract form to local and national conferences."
+  },
+  {
+    "objectID": "f32/progress/year_one/2022_progress-updates.html#b6.-what-do-you-plan-to-do-during-the-next-reporting-period-to-accomplish-the-goals",
+    "href": "f32/progress/year_one/2022_progress-updates.html#b6.-what-do-you-plan-to-do-during-the-next-reporting-period-to-accomplish-the-goals",
+    "title": "Research",
+    "section": "B6. What do you plan to do during the next reporting period to accomplish the goals?",
+    "text": "B6. What do you plan to do during the next reporting period to accomplish the goals?\nI plan to complete data collection on patients being enrolled at my research center (Emory), and develop a translational model in animals to evaluate this further with my other mentors."
+  },
+  {
+    "objectID": "f32/progress/year_one/2022_progress-updates.html#c5.-other-products-and-resource-sharing",
+    "href": "f32/progress/year_one/2022_progress-updates.html#c5.-other-products-and-resource-sharing",
+    "title": "Research",
+    "section": "C5. Other products and resource sharing",
+    "text": "C5. Other products and resource sharing\nI have published software on a public/open-source, peer-reviewed platform for statistically analyses (CRAN)."
+  },
+  {
+    "objectID": "f32/progress/year_one/2022_progress-updates.html#f2.-acutal-or-anticpated-challenges-or-delays-and-actions-or-plans-to-resolve-them",
+    "href": "f32/progress/year_one/2022_progress-updates.html#f2.-acutal-or-anticpated-challenges-or-delays-and-actions-or-plans-to-resolve-them",
+    "title": "Research",
+    "section": "F2. Acutal or anticpated challenges or delays and actions or plans to resolve them",
+    "text": "F2. Acutal or anticpated challenges or delays and actions or plans to resolve them\nCOVID of course has made enrollment more challenging. In addition, the granularity of ECG-based data is difficult to ascertain based on context (e.g. time of day, activity level). I have planned to supplement this with data from device monitoring companies, and include a machine-learning approach to handle the large volume of data (e.g. using the MVP data at the VA systems)."
+  },
+  {
+    "objectID": "f32/progress/year_one/2022_progress-updates.html#g2.-responsible-conduct-of-research",
+    "href": "f32/progress/year_one/2022_progress-updates.html#g2.-responsible-conduct-of-research",
+    "title": "Research",
+    "section": "G2. Responsible Conduct of Research",
+    "text": "G2. Responsible Conduct of Research\nDuring the reporting period, I have completed a Master of Science that included responsible research curriculum. Subsequently, I have continued training at institutional level on responsible research conduct as well as attending local seminars at the 1-3 month interval."
+  },
+  {
+    "objectID": "f32/progress/year_one/revision-response.html",
+    "href": "f32/progress/year_one/revision-response.html",
+    "title": "Research Performance Progress Report: Response to Revision",
+    "section": "",
+    "text": "Kevin Purkiser and James Hennigan\nNational Institutes of Health\nNational Heart, Lung, and Blood Institute\nEpidemiology Branch\nDear Drs. Purkiser and Hennigan,\nThank you for your response to my progress report. I apologize for the areas requiring revisions, and I appreciate the opportunity to do so, as my first time going through the NIH grant process. Below is the initial revision request, quoted:\n\n1) It’s not clear what has been accomplished in the past year toward your specific aims. The aims indicated in the competing application are to quantify the relationship between depressive symptoms and ANS dysfunction, and examine the relationship of obstructive CAD with ANS dysfunction and its potential dose response relationship. You indicate you have completed your Master’s thesis, participated in electrophysiology and other clinical training, analyzed mice models and stem cell models, and developed software. These are all great accomplishments, however, please clarify what you have done pursuant to the project’s specific aims.\n2) You cite 3 publications, however, these were all published before the start of this project. Table C.1. should include only publications directly arising from this project. Please remove these publications from table C.1.\n3) Enrollment: we acknowledge the continuing pandemic would cause enrollment to be lower than anticipated, however we are a little surprised there has been no enrollment at all, and the project is heading into its final year. Please send us your current enrollment for this project in 3 months.\n4) Some sections have been duplicated in the report (i.e. accomplishments, products, etc). Please resend the report deleting these duplications.\n\nAnish S. Shah, MD, MS\nF32 Postdoctoral Fellow\nDivision of Cardiology\nUniversity of Illinois at Chicago\n(e) ashah282@uic.edu\n(c) 469-835-7606\n(p) 773-222-5619\n\n1. Accomplishments and Specific Aims\nIn summary, my aims were to evaluate the relationship of stress, autononomic dysfunction, and structural/ischemic heart disease. Due to the limitations of enrollment over the past several years, my mentors and I addressed this early on by delaying the start of the grant and diversifying the population we evaluated. We broadened the term depression to include other forms of psychological stress and evaluated additional cohorts. This was a natural extension of my work on neurocardiac pathophysiology that began under my previous TL1 grant. As quoted below:\n\nAim 1. Quantify the relationship between depressive symptoms and ANS dysfunction.\nAim 2. Examine the relationship of obstructive CAD with ANS dysfunction and its potential dose-response relationship.\n\nFor both of these aims, I needed additional background training in the measurement of autonomic physiology using electrocardiogram metrics and the evaluation of coronary artery disease through multiple imaging modalities. I used three cohorts: 1) Biobank Cohort (coronary angiography and heart rate variability via electrocardiogram patch), 2) Emory Twins Study (myocardial perfusion imaging and 24-hour Holter monitoring) and 3) Myocardial Ischemia and Mental Stress (mental stress challenge with both myocardial perfusion imaging and coronary angiography). This led to several accomplishments, both formal and informal, within my training plan.\nBiobank Cohort\n\nUtilizing the Master of Science in Clinical Research degree awarded from the TL-1 program, I successfully completed and the appropriate training needed to enroll patients for this project. I was able to consent and enroll over 50 individuals myself, and also trained part of our research team to enroll patients on my behalf.\nI learned how to organized and safely/confidentially store data using REDCap, creating an efficient standardized operating protocol for enrollment of patients. This is actively being used by our study staff to include more patients (usually several per week).\nI developed computational and signal processing skills to be able to interpret ECG data collected directly from enrolled patients. This ECG data serves as a surrogate for autonomic function by measuring heart rate variability, and allows an understanding of dynamic changes in sympathovagal balance.\n\nEmory Twins Study\n\nTo help evaluate changes in autonomic tone that may be circadian in nature, I wrote statistical software to analyze changes in heart rate variability by time of day through the cosinor method of harmonic regressions. This is a work in progress but the first software package was released this year online.\nI’ve initially analyzed this data and related it to the burden of depressive symptoms. This is a work-in-progress to become a manuscript hopefully in the next year.\n\nMyocardial Ischemia and Mental Stress\n\nI analyzed data involving acute psychological stress responses of heart rate and correlated this with cardiovascular mortality. This has subsequently turned into a first-author manuscript that is under revision with Circulation.\nThis same cohort analysis (which showed a strong relationship between vagolysis and psychological stress), was accepted as an abstract at ACC 2023 of this year.\n\nIn summary, my findings pursuant to the specific aims are 1) association of depression and psychological stress with autonomic dysfunction and 2) association of autonomic dysfunction with cardiovascular mortality. These findings have led to software development, manuscript authorship, biostatistical analytical skills, and further learning in signal processing, which are all directly related to my overall training plan and specific aims.\n\n\n2. Publications and Products\nThe F32 was activated in December 2021. Since this time, there have been no manuscripts published, however I have drafted and submitted a manuscript that directly relates autonomic dysfunction under acute psychological stress with cardiovascular mortality, which is currently under revision in Circulation. This manuscript was also accepted in the form of an abstract to the American College of Cardiology 2023 Conference.\nDuring this time, I have continued to work on patient enrollment to achieve adequate power (Biobank Cohort) to evaluate the dose-relationship between autonomic dysfunction and coronary artery disease.\n\n\n3. Enrollment\nThe enrollment documentation was submitted incorrectly. During the last year, we have seen an increase in the number of enrollments into the primary Biobank Cohort study.\nThe enrollment involves patients with suspected coronary artery disease that are undergoing routine/clinically-indicated coronary angiography. Continuous electrocardiogram data is being collected via ECG patch, that is subsequently being analyzed by myself. During their enrollment, the patients are being assessed for depressive symptom burden.\nEnrollment Table:\n\n\n\nEthnicity\nFemale\nMale\nTotal\n\n\n\n\nAmerican Indian\n0\n0\n0\n\n\nAsian\n1\n11\n12\n\n\nBlack\n9\n14\n23\n\n\nWhite\n20\n27\n47\n\n\nUnknown/Mixed\n4\n2\n6\n\n\nTotal\n34\n54\n88"
+  },
+  {
+    "objectID": "t32/aims.html",
+    "href": "t32/aims.html",
+    "title": "Research Aims",
+    "section": "",
+    "text": "── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.4.0      ✔ purrr   0.3.5 \n✔ tibble  3.1.8      ✔ dplyr   1.0.10\n✔ tidyr   1.2.1      ✔ stringr 1.5.0 \n✔ readr   2.1.3      ✔ forcats 0.5.2 \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nAttaching package: 'scales'\n\n\nThe following object is masked from 'package:purrr':\n\n    discard\n\n\nThe following object is masked from 'package:readr':\n\n    col_factor\n\n\n\nAttaching package: 'ggdag'\n\n\nThe following object is masked from 'package:stats':\n\n    filter"
+  },
+  {
+    "objectID": "t32/aims.html#aims-overview",
+    "href": "t32/aims.html#aims-overview",
+    "title": "Research Aims",
+    "section": "Aims Overview",
+    "text": "Aims Overview\n\n\nElucidate the cardiac signature of mental stress:\n\nTranslating from animal-models to humans\nMD-conducted electrophysiology studies\nGenetic and molecular pathway component\nTargets for pharmacological interventions\n\n\nIdentify phenotypes of mental stress-triggered atrial tachyarrhythmias:\n\nIntracardiac electroanatomical mapping data and signal processing\nEpidemiology-based clustering/classification of patients\nSurface-based electrocardiography signal processing"
+  },
+  {
+    "objectID": "t32/aims.html#aim-2-epidemiologygenetics",
+    "href": "t32/aims.html#aim-2-epidemiologygenetics",
+    "title": "Research Aims",
+    "section": "Aim #2: Epidemiology/Genetics",
+    "text": "Aim #2: Epidemiology/Genetics\n\nTo identify genetic and molecular markers associated with inappropriate vagolysis. Inappropriate vagolysis results from differential expression of autonomic hormones and receptors along the neurocardiac axis.\n\nThose with an increased arrhythmia burden will have higher levels of catecholamines and NPY levels after mental stress challenge.\nThose with an increased arrhythmia burden will have an increased burden of genetic polymorphisms in the NPY and its receptors.\n\n\n\n\nNPY = neuropeptide Y;"
   }
 ]

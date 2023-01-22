@@ -11,6 +11,9 @@ tbl-cap-location: top
 fig-cap-location: top
 ---
 
+> Why did he die on Tuesday and not on Monday?  
+> ~ _Douglas Zipes_
+
 ```{r}
 #| label: setup
 #| echo: false
@@ -27,9 +30,6 @@ clinical <- pal_material("pink", reverse = TRUE)(9)
 computational <- pal_material("teal", reverse = TRUE)(9)
 text <- pal_material("blue-grey", reverse = TRUE)(9)
 ```
-
-> Why did he die on Tuesday and not on Monday?  
-> ~ _Douglas Zipes_
 
 # Planning
 
@@ -72,25 +72,54 @@ text <- pal_material("blue-grey", reverse = TRUE)(9)
 
 : Potential committee members {#tbl-mentors}
 
-## Aims Overview
+## Aims Overview {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
-__Elucidate the cardiac signature of mental stress__:
+__Elucidate the cardiac signature of mental stress__
 
 - Translating from animal-models to humans
-- MD-conducted [electrophysiology studies]{.orange} 
+- Physician-conducted [electrophysiology studies]{.orange} 
 - [Genetic]{.blue} and molecular pathway component
 - Targets for [pharmacological interventions]{.red}
 :::
 ::: {.column width="50%"}
-__Identify phenotypes of mental stress-triggered atrial tachyarrhythmias__:
+__Identify phenotypes of mental stress-triggered atrial tachyarrhythmias__
 
-- Intracardiac electroanatomical [mapping data and signal processing]{.green}
+- Intracardiac electroanatomical mapping [data and signal processing]{.green}
+- Surface-based electrocardiography [signal processing]{.green}
 - Epidemiology-based [clustering/classification of patients]{.blue}
-- Surface-based [electrocardiography signal processing]{.green}
 :::
 ::::
+
+## 
+
+```{r}
+#| label: fig-dag
+#| fig-cap: "Graphical representation of specific aims"
+
+dagify(
+	eps ~ md,
+	dsp ~ eps + ecg,
+	ecg ~ md,
+	dna ~ eps,
+	stress ~ eps,
+	npy ~ stress,
+	npy ~ eps,
+	labels = list(
+		ecg = "Surface electrocardiography",
+		md = "Physician",
+		dsp = "Signal Processing"
+	)
+) |>
+	tidy_dagitty(layout = "graphopt", seed = 2) |>
+	ggplot(aes(x = x, y = y, xend = xend, yend = yend)) +
+	geom_dag_point() + 
+	geom_dag_label_repel(aes(label = label)) + 
+	geom_dag_edges() + 
+	theme_dag() 
+
+```
 
 # Background
 
