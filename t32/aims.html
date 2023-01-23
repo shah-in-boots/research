@@ -360,29 +360,30 @@ Anish S. Shah, MD|MS
 </section>
 <section class="slide level2">
 
-<div class="cell">
-
-</div>
+<div class="columns">
+<div class="column" style="width:30%;">
+<ol type="1">
+<li class="fragment">Planning</li>
+<li class="fragment">Background</li>
+<li class="fragment">Aims</li>
+</ol>
+</div><div class="column" style="width:70%;">
 <dl>
 <dt class="fragment">Why did he die on Tuesday and not on Monday?</dt>
 <dd class="fragment">
 <em>Douglas Zipes</em>
 </dd>
 </dl>
+</div>
+</div>
+<div class="cell">
+
+</div>
 </section>
 <section>
 <section id="planning" class="title-slide slide level1 center">
 <h1>Planning</h1>
 
-</section>
-<section id="outline" class="slide level2">
-<h2>Outline</h2>
-<ol type="1">
-<li>Impact/significance of proposal</li>
-<li>Support</li>
-<li>Aims</li>
-<li>Approach and relevant methodology</li>
-</ol>
 </section>
 <section id="impact" class="slide level2">
 <h2>Impact</h2>
@@ -461,115 +462,175 @@ Anish S. Shah, MD|MS
 <td>atrial fibrillation, ARIC investigator</td>
 </tr>
 <tr class="odd">
-<td>Viola Vaccarino MD/PHD</td>
-<td>EPI</td>
-<td>mental stress</td>
-</tr>
-<tr class="even">
-<td>Jalees Rehman MD</td>
-<td>CV</td>
-<td>computational biology</td>
-</tr>
-<tr class="odd">
 <td>Rachel Lampert MD</td>
 <td>CV/EP</td>
 <td>autonomic dysfunction</td>
-</tr>
-<tr class="even">
-<td>Andrew Boyd MD</td>
-<td>-</td>
-<td>biomedical informatics</td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="aims-overview" class="slide level2">
+<section id="aims-overview" class="slide level2 smaller">
 <h2>Aims Overview</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Elucidate the cardiac signature of mental stress</strong>:</p>
+<p><strong>Autonomic signature in cardiac physiology</strong></p>
 <ul>
 <li>Translating from animal-models to humans</li>
-<li>MD-conducted <span class="orange">electrophysiology studies</span></li>
+<li>Physician-conducted <span class="orange">electrophysiology studies</span></li>
 <li><span class="blue">Genetic</span> and molecular pathway component</li>
 <li>Targets for <span class="red">pharmacological interventions</span></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><strong>Identify phenotypes of mental stress-triggered atrial tachyarrhythmias</strong>:</p>
+<p><strong>Phenotypes of atrial arrhythmias</strong></p>
 <ul>
-<li>Intracardiac electroanatomical <span class="green">mapping data and signal processing</span></li>
+<li>Intracardiac electroanatomical mapping <span class="green">data and signal processing</span></li>
+<li>Surface-based electrocardiography <span class="green">signal processing</span></li>
 <li>Epidemiology-based <span class="blue">clustering/classification of patients</span></li>
-<li>Surface-based <span class="green">electrocardiography signal processing</span></li>
 </ul>
 </div>
 </div>
-</section></section>
+</section>
+<section class="slide level2">
+
+
+<img data-src="aims_files/figure-revealjs/fig-dag-1.png" class="img-fluid r-stretch quarto-figure-center" width="960"><p class="caption">Figure&nbsp;1: Graphical representation of specific aims</p></section></section>
 <section>
 <section id="background" class="title-slide slide level1 center">
 <h1>Background</h1>
+
+</section>
+<section id="autonomic-control-of-the-heart" class="slide level2 smaller">
+<h2>Autonomic control of the heart</h2>
+<ul>
+<li>Neurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels<span class="citation" data-cites="Armour1997"><sup><a href="#/references" role="doc-biblioref" onclick="">1</a></sup></span>
+<ul>
+<li>Cortex ↔︎ brainstem</li>
+<li>Spinal cord ↔︎ extracardiac ganglia (e.g.&nbsp;stellate)</li>
+<li>Intrinsic cardiac nervous system (ICNS) ↔︎ heart</li>
+</ul></li>
+<li>Autonomic regulation is critical in the development of most CVD
+<ul>
+<li>Disregulated catecholamines in heart failure</li>
+<li>Post myocardial infarct VF</li>
+<li>Triggered arrhythmias such as VT</li>
+</ul></li>
+</ul>
+
+<aside><div>
+<p>SNS = sympathetic nervous system; PNS = parasympathetic nervous system; CVD = cardiovascular disease; VT/VF = ventricular tachycardia/fibrillation</p>
+</div></aside></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/shivkumar-2022_neurocardiac-axis.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;2: Cardiac neurotransmission<span class="citation" data-cites="Shivkumar2016a"><sup><a href="#/references" role="doc-biblioref" onclick="">2</a></sup></span></p></section>
+<section id="neurovisceral-integration" class="slide level2">
+<h2>Neurovisceral integration</h2>
+<ul>
+<li><strong>Lower levels</strong> of networked structures (ICNS, hypothalamus) integrate afferent information about metabolic demands</li>
+<li><strong>Higher levels</strong> of networked structures (amydala, cortex) integrate lower networks and generate conscious/uncscious CV state representations</li>
+<li>Allows for environmental/psychological factors to interplay with cardiac physiology, e.g.&nbsp;<span class="blue">mental stress</span> causing <span class="orange">arrhythmia</span></li>
+</ul>
+</section>
+<section id="critical-role-of-the-vagus" class="slide level2 smaller">
+<h2>Critical role of the vagus</h2>
+<ul>
+<li>Embryologically, vagus nerve sprouts from medulla and extends to distant organs (thus long pre-ganglionic axons) e.g.&nbsp;heart, lung, intestines</li>
+<li>Parasympathetic control is evolutionarily more primitive in vertebrates, preceeding sympathetic control
+<ul>
+<li>Sharks exhihibt phasic HRV without sympathetic innervation<span class="citation" data-cites="Taylor2022"><sup><a href="#/references" role="doc-biblioref" onclick=""><strong>Taylor2022?</strong></a></sup></span></li>
+<li>Mammalian vagal control is more complex, with multiple nuclei, e.g.&nbsp;polyvagal<span class="citation" data-cites="Porges2009"><sup><a href="#/references" role="doc-biblioref" onclick="">3</a></sup></span></li>
+</ul></li>
+<li>Mammalian vagal outflow is particularly coupled with cardiorespiratory control
+<ul>
+<li>Leads to <span class="orange">respiratory sinus arrhythmia</span></li>
+<li>Respiratory changes occur at a high-frequency, can be <span class="green">measured by HRV</span></li>
+</ul></li>
+</ul>
+
+<aside><div>
+<p>Stephen Porges proposed the Polyvagal Theory during his tenure at UIC. HRV = heart rate variability;</p>
+</div></aside></section>
+<section id="vagal-therapeutic-interventions" class="slide level2 smaller">
+<h2>Vagal therapeutic interventions</h2>
+<ul>
+<li>Chronic VNS reduces drop in ejection fraction in different animal models of cardiomyopathy, including MI, but studies have mixed results in humans
+<ul>
+<li>NECTAR-HF ~ VNS or sham, no difference at 6 months in LV size/function, n = 96</li>
+<li>INOVATE-HF ~ right VNS + GDMT vs.&nbsp;GDMT, no difference in mortality, n = 700</li>
+<li>ANTHEM-HF ~ non-randomized VNS, improved LV function, pilot study (<em>required titrated VNS to cause decrease in HR</em>)</li>
+</ul></li>
+<li>VNS may be anti-arrhythmic in animal models, with decreased VT/VF, but minimal human studies
+<ul>
+<li>GANGLIA-AF, paroxysmal AF randomized to PVI or atrial GP ablation, decreased AAD dosages in GP group, n = 102</li>
+</ul></li>
+</ul>
+
+<aside><div>
+<p>VNS = vagal nerve stimulation; MI = myocardial infarction; LV = left ventricle; GP = ganglionated plexi; AF = atrial fibrillation; AAD = anti-arrhythmic drugs</p>
+</div></aside></section>
+<section id="sympathovagal-crosstalk" class="slide level2 smaller">
+<h2>Sympathovagal crosstalk</h2>
 <ul>
 <li>Arrhythmia thresholds affected by sympathetic and vagal activity</li>
-<li>Sympathetic neurons released both NE and NPY which inhibits anticholinergic activity</li>
-<li>Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)<span class="citation" data-cites="Coote2013"><sup><a href="#/section" role="doc-biblioref" onclick="">1</a></sup></span></li>
-<li>NPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium<span class="citation" data-cites="Kalla2020 Herring2008"><sup><a href="#/section" role="doc-biblioref" onclick="">2</a>,<a href="#/section" role="doc-biblioref" onclick="">3</a></sup></span></li>
-<li>NPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)</li>
-<li>Mutations have been found in rs16147 and perceived stress<span class="citation" data-cites="Chang2016"><sup><a href="#/section" role="doc-biblioref" onclick=""><strong>Chang2016?</strong></a></sup></span></li>
+<li>Intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress</li>
+<li>Atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties<span class="citation" data-cites="Hoover2009 Armour1997"><sup><a href="#/references" role="doc-biblioref" onclick="">1</a>,<a href="#/references" role="doc-biblioref" onclick="">4</a></sup></span></li>
+<li>Sympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis</li>
+</ul>
+</section>
+<section id="molecular-mechanisms" class="slide level2 smaller">
+<h2>Molecular mechanisms</h2>
+<ul>
+<li>Sympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium</li>
+<li>NPY and galanin is also released, which both inhibit cholinergic activity<span class="citation" data-cites="Herring2015 Herring2012"><sup><a href="#/references" role="doc-biblioref" onclick="">5</a>,<a href="#/references" role="doc-biblioref" onclick="">6</a></sup></span></li>
+<li>Both inhibit firing and leading to vagolytic effects on the myocardium<span class="citation" data-cites="Kalla2020 Herring2008"><sup><a href="#/references" role="doc-biblioref" onclick="">7</a>,<a href="#/references" role="doc-biblioref" onclick="">8</a></sup></span>
+<ul>
+<li>Galanin released as a adrenergic co-transmitter, binding to GalR1 receptors</li>
+<li>NPY binds to cholinergic neurons through the Y2 receptor</li>
+<li>Both directly/indirectly involve protein kinase C</li>
+</ul></li>
+<li>NPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)<span class="citation" data-cites="Coote2013"><sup><a href="#/references" role="doc-biblioref" onclick="">9</a></sup></span></li>
 </ul>
 
 <aside><div>
 <p>NE = nor epinephrine; NPY = neuropeptide Y</p>
 </div></aside></section>
-<section id="background-1" class="slide level2 smaller">
-<h2>Background</h2>
-<ul>
-<li>Intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress</li>
-<li>Atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties<span class="citation" data-cites="Hoover2009 Armour1997"><sup><a href="#/section" role="doc-biblioref" onclick="">4</a>,<a href="#/section" role="doc-biblioref" onclick="">5</a></sup></span></li>
-<li>Sympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis</li>
-</ul>
-</section>
-<section id="background-2" class="slide level2 smaller">
-<h2>Background</h2>
-<ul>
-<li>Research work has started to evaluate clusters of AF phenotypes using small computational models</li>
-<li>Triggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes.</li>
-<li>Vagal AF is likely a triggered subtype</li>
-</ul>
-</section>
 <section class="slide level2">
 
 
-<img data-src="../figures/herring-2012-cellular-sympathovagal-crosstalk.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;1: Cardiac sympatho-vagal crosstalk<span class="citation" data-cites="Herring2012"><sup><a href="#/section" role="doc-biblioref" onclick="">6</a></sup></span></p></section>
+<img data-src="../figures/herring-2012-cellular-sympathovagal-crosstalk.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;3: Cardiac sympatho-vagal crosstalk<span class="citation" data-cites="Herring2012"><sup><a href="#/references" role="doc-biblioref" onclick="">6</a></sup></span></p></section>
 <section class="slide level2">
 
 
-<img data-src="../figures/hoang-2020-npy-blockade.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;2: Increased sympathetic activity and NPY<span class="citation" data-cites="Hoang2020"><sup><a href="#/section" role="doc-biblioref" onclick="">7</a></sup></span></p></section></section>
+<img data-src="../figures/hoang-2020-npy-blockade.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;4: Increased sympathetic activity and NPY<span class="citation" data-cites="Hoang2020"><sup><a href="#/references" role="doc-biblioref" onclick="">10</a></sup></span></p></section></section>
 <section>
 <section id="aims" class="title-slide slide level1 center">
 <h1>Aims</h1>
 
 </section>
-<section id="aim-1-translationalcomputational" class="slide level2 smaller">
-<h2>Aim #1: Translational/Computational</h2>
+<section id="aim-1-translational" class="slide level2 smaller">
+<h2>Aim #1: Translational</h2>
 <ol type="1">
-<li><strong>To identify the effect of mental stress on triggered arrhythmias.</strong> <em>Mental stress leads to decrease in arrhythmia threshold by acute vagolysis.</em>
+<li><strong>To evaluate the expression of cardiac neuropeptides in paroxysmal AF.</strong> <em>The burden and phenotype of AF will correlate with the expression of differential structural and autonomic biomarkers.</em>
 <ol type="a">
-<li>Mental stress challenge will lead to acute <span class="orange">decrease in arrhythmia threshold</span> from baseline.</li>
-<li>Catecholamine infusion during mental stress challenge will to a <span class="orange">greater decrease in arrhythmia threshold</span>.</li>
-<li>VNS during mental stress challenge will <span class="orange">protect against decreases in arrhythmia threshold</span>.</li>
+<li><span class="red">Baseline levels of autonomic hormones (NE, NPY, galanin) and structural hormones (ANP, BNP)</span> will correlate with the burden and chronicity of AF as a result of both electrical and mechanical remodeling.</li>
+<li>Increased adrenergic/physiological stress <span class="red">through catecholamine infusion</span> (and/or mental stress) will lead to ↓NE, &amp;darr$NPY, ↓galanin expression.</li>
+<li>Decrease vagal afferent activity <span class="red">through modification of ICNS</span> with GP ablation during PVI will lead to ↑NE, &amp;uarr$NPY, ↑galanin expression.</li>
+<li><span class="orange">Atrial arrhythmia thresholds</span> will be acutely decreased after GP ablation.</li>
 </ol></li>
 </ol>
 
 <aside><div>
-<p>EPS = electrophysiology study; VNS = vagal nerve stimulation;</p>
+<p>ANP/BNP = atrial/brain natriuretic peptide; PVI = pulmonary vein isolation</p>
 </div></aside></section>
-<section id="aim-2-epidemiologycomputational" class="slide level2">
-<h2>Aim #2: Epidemiology/Computational</h2>
+<section id="aim-2-clinical" class="slide level2 smaller">
+<h2>Aim #2: Clinical</h2>
 <ol start="2" type="1">
-<li><strong>To classify phenotypes of triggered atrial arrhythmias</strong>. <em>Clinical phenotypes of atrial arrhythmias exist that have differential responses to therapy.</em>
+<li><strong>To identify clinical phenotypes of vagal-mediated paroxysmal AF.</strong> <em>Clusters of clinical features will identify AF that will correlate with differential responses to treatment strategies.</em>
 <ol type="a">
-<li>Surface/non-invasive clinical features will identify stable, novel <span class="blue">clusters of arrhythmia phenotypes</span>.</li>
-<li>Identified clusters will correlate with <span class="green">arrhythmia phenotypes generated from intracardiac features</span> obtained from EPS.</li>
+<li>Clinical history, disease progression, and surface/non-invasive cardiac imaging will identify stable, novel clusters of AF phenotypes in <span class="blue">population-level datasets</span></li>
+<li><span class="red">Intracardiac findings during EPS</span> will identify novel clusters of subtypes of AF using a combination of <span class="green">electroanatomical mapping and signal processing</span>.</li>
+<li>Increased arrhythmia burden will be associated with an increased risk of <span class="blue">genetic polymorphisms</span> in candidate genes known to be expressed by cholinergic neurons (e.g.&nbsp;<strong>rs16147</strong><span class="citation" data-cites="Chang2016"><sup><a href="#/references" role="doc-biblioref" onclick="">11</a></sup></span>)</li>
 </ol></li>
 </ol>
 
@@ -578,79 +639,80 @@ Anish S. Shah, MD|MS
 </div></aside></section>
 <section id="methods" class="slide level2 smaller">
 <h2>Methods</h2>
-<ol type="1">
-<li>Create cohort from “big data”
-<ol type="a">
-<li>e.g.&nbsp;UIC/CCTS, ARIC, MVP</li>
-</ol></li>
-<li>Computational models to classify atrial fibrillation based on clinical, ECG, echocardiographic parameters</li>
-<li>Intracardiac monitoring will be used to generate features from EPS for clustering
-<ol type="a">
-<li>e.g.&nbsp;LA volume, scar/voltage, complex fractionated atrial electrograms, dominant PV frequencies, ectopy</li>
-</ol></li>
-<li>Classification clusters will be validated against EPS in a prospective manner</li>
-</ol>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Electrophysiology Study</strong></p>
+<ul>
+<li>Baseline and post-procedural atrial conduction properties</li>
+<li>Coronary sinus + circulating blood samples (including DNA)</li>
+<li>Surface + intracardiac mapping and electrophysiological signal</li>
+<li>Vagal nerve stimulation</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Big Data</strong></p>
+<ul>
+<li>Cohort generated from population-level data (UIC/CCTS, ARIC, MVP/VAMC)</li>
+<li>Computational model to classify AF based on clinical + cardiac imaging features</li>
+<li>Whole exome sequencing of DNA in pAF patients to identify autonomic variants</li>
+<li>Extraction of intracardiac features from EPS (volume, scar, voltage, etc…)</li>
+</ul>
+</div>
+</div>
 
 <aside><div>
-<p>UIC = University of Illinois at Chicago; CCTS = Center for Translational Research; ARIC = Atherosclerotic Risk in Communities; MVP = Million Veterans Project; LA = left atrium; PV = pulmonary veins; EPS = electrophysiology study</p>
+<p>UIC = University of Illinois at Chicago; CCTS = Center for Translational Research; ARIC = Atherosclerotic Risk in Communities;</p>
 </div></aside></section>
-<section id="aim-2-epidemiologygenetics" class="slide level2 smaller">
-<h2>Aim #2: Epidemiology/Genetics</h2>
-<ol start="2" type="1">
-<li><strong>To identify genetic and molecular markers associated with inappropriate vagolysis</strong>. <em>Inappropriate vagolysis results from differential expression of autonomic hormones and receptors along the neurocardiac axis.</em>
-<ol type="a">
-<li>Those with an increased arrhythmia burden will have higher levels of catecholamines and NPY levels after mental stress challenge.</li>
-<li>Those with an increased arrhythmia burden will have an increased burden of genetic polymorphisms in the NPY and its receptors.</li>
-</ol></li>
-</ol>
+<section id="outcomes" class="slide level2">
+<h2>Outcomes</h2>
+<ul>
+<li>Mechanisms explored could identify candidate subjects for NPY2R/Gal1R receptor blockade or VNS therapy</li>
+<li>Efficacy of VNS therapy could be quantified through serum testing</li>
+<li>Genetic variants that affect autonomic function along the neurocardiac axis may interplay with known inherited arrhythmis, such as the vagal-mediated triggers of SCD in LQTS patients</li>
+</ul>
 
 <aside><div>
-<p>NPY = neuropeptide Y;</p>
-</div></aside></section>
-<section id="methods-1" class="slide level2">
-<h2>Methods</h2>
-<ol type="1">
-<li>Collect blood during EPS for atrial arrhythmias (paroxysmal/triggered)
-<ol type="a">
-<li>DNA samples</li>
-<li>Catecholamine levels</li>
-<li>NPY levels</li>
-</ol></li>
-<li>Whole exome sequencing of DNA to identify SNP in NPY regions</li>
-<li>Correlate arrhythmia phenotype with NPY variants</li>
-</ol>
-
-<aside><div>
-<p>NPY = neuropeptide Y</p>
+<p>SCD = sudden cardiac death; LQTS = Long QT syndrome</p>
 </div></aside></section></section>
 <section>
-<section id="references" class="title-slide slide level1 center">
-<h1>References</h1>
+<section id="end" class="title-slide slide level1 center">
+<h1>End</h1>
 
 </section>
-<section id="section" class="slide level2 smaller scrollable">
-<h2></h2>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-Coote2013" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:<a href="https://doi.org/10.1113/jphysiol.2013.257758">10.1113/jphysiol.2013.257758</a>.</div>
+<div id="ref-Armour1997" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:<a href="https://doi.org/10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L">10.1002/(SICI)1097-0185(199702)247:2&lt;289::AID-AR15&gt;3.0.CO;2-L</a>.</div>
 </div>
-<div id="ref-Kalla2020" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline">Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:<a href="https://doi.org/10.1093/eurheartj/ehz852">10.1093/eurheartj/ehz852</a>.</div>
+<div id="ref-Shivkumar2016a" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Shivkumar K, Ajijola OA, Anand I, Armour JA, Chen PS, Esler M, et al. Clinical neurocardiology defining the value of neuroscience-based cardiovascular therapeutics. Journal of Physiology 2016;594:3911–3954. doi:<a href="https://doi.org/10.1113/JP271870">10.1113/JP271870</a>.</div>
 </div>
-<div id="ref-Herring2008" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline">Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:<a href="https://doi.org/10.1016/j.yjmcc.2007.10.001">10.1016/j.yjmcc.2007.10.001</a>.</div>
+<div id="ref-Porges2009" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Porges SW. The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system. Cleveland Clinic Journal of Medicine 2009;76:S86. doi:<a href="https://doi.org/10.3949/ccjm.76.s2.17">10.3949/ccjm.76.s2.17</a>.</div>
 </div>
 <div id="ref-Hoover2009" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">4. </div><div class="csl-right-inline">Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:<a href="https://doi.org/10.1016/j.neuroscience.2009.09.001">10.1016/j.neuroscience.2009.09.001</a>.</div>
 </div>
-<div id="ref-Armour1997" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline">Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:<a href="https://doi.org/10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L">10.1002/(SICI)1097-0185(199702)247:2&lt;289::AID-AR15&gt;3.0.CO;2-L</a>.</div>
+<div id="ref-Herring2015" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Herring N. Autonomic control of the heart: Going beyond the classical neurotransmitters. Experimental Physiology 2015;100:354–358. doi:<a href="https://doi.org/10.1113/expphysiol.2014.080184">10.1113/expphysiol.2014.080184</a>.</div>
 </div>
 <div id="ref-Herring2012" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">6. </div><div class="csl-right-inline">Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:<a href="https://doi.org/10.1016/j.yjmcc.2011.11.016">10.1016/j.yjmcc.2011.11.016</a>.</div>
 </div>
+<div id="ref-Kalla2020" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:<a href="https://doi.org/10.1093/eurheartj/ehz852">10.1093/eurheartj/ehz852</a>.</div>
+</div>
+<div id="ref-Herring2008" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:<a href="https://doi.org/10.1016/j.yjmcc.2007.10.001">10.1016/j.yjmcc.2007.10.001</a>.</div>
+</div>
+<div id="ref-Coote2013" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:<a href="https://doi.org/10.1113/jphysiol.2013.257758">10.1113/jphysiol.2013.257758</a>.</div>
+</div>
 <div id="ref-Hoang2020" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline">Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:<a href="https://doi.org/10.1172/JCI.INSIGHT.135519">10.1172/JCI.INSIGHT.135519</a>.</div>
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:<a href="https://doi.org/10.1172/JCI.INSIGHT.135519">10.1172/JCI.INSIGHT.135519</a>.</div>
+</div>
+<div id="ref-Chang2016" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Chang H-A, Fang W-H, Chang T-C, Huang S-Y, Chang C-C. Association of neuropeptide y promoter polymorphism (rs16147) with perceived stress and cardiac vagal outflow in humans. Scientific Reports 2016;6:31683. doi:<a href="https://doi.org/10.1038/srep31683">10.1038/srep31683</a>.</div>
 </div>
 </div>
 
