@@ -91,41 +91,17 @@ VT/VF = ventricular tachycardia/fibrillation;
 
 | Mentor | Field | Specialty |
 | --- | --- | --- | 
-| Amit J. Shah MD/MS | CV/EPI | mental stress, autonomic dysfunction |
+| Amit J. Shah MD/MS | CV/EPI | mental stress, autonomic dysfunction, digital biomarkers |
 | Dawood Darbar MBCHB/MD | CV/EPI | atrial arrhythmias, genetics |
 | Mark McCauley MD/PHD | CV/EP | atrial arrhythmias | 
 | Alvaro Alonso MD/PHD | EPI | atrial fibrillation, ARIC investigator | 
-| Rachel Lampert MD | CV/EP | autonomic dysfunction |
+| Rachel Lampert MD | CV/EP | mental stress, autonomic dysfunction |
 
 : Potential committee members {#tbl-mentors}
 
 ::: aside
 Goal for next 1-2 years is to increase collaboration within committee in support of K23
 :::
-
-## Aims Overview {.smaller}
-
-:::: {.columns}
-::: {.column width="50%"}
-
-__Autonomic signature in cardiac physiology__
-
-- Translating from animal-models to humans
-- Physician-conducted [electrophysiology studies]{.orange} 
-- [Genetic]{.blue} and molecular pathway component
-- Targets for [pharmacological interventions]{.red}
-
-:::
-::: {.column width="50%"}
-
-__Phenotypes of atrial arrhythmias__
-
-- Intracardiac electroanatomical mapping [data and signal processing]{.green}
-- Surface-based electrocardiography [signal processing]{.green}
-- Epidemiology-based [clustering/classification of patients]{.blue}
-
-:::
-::::
 
 ---
 
@@ -135,29 +111,36 @@ __Phenotypes of atrial arrhythmias__
 dag <-
 	dagify(
 		stress ~ eps,
+		egm ~ eps,
 		labs ~ stress + eps,
-		clin ~ eps + epi + ecg + dna,
+		pheno ~ ecg + dna + egm + clin,
+		clin ~ epi,
 		ecg ~ epi,
 		dna ~ epi + labs,
 		snp ~ dna,
 		labs ~ snp,
 		stress ~ snp,
 		dna ~ eps,
-		exposure = c("eps", "epi"),
-		outcome = c("labs", "clin"),
+		ead ~ ipsc,
+		ipsc ~ labs + stress + snp,
+		exposure = c("eps", "epi", "ipsc"),
+		outcome = c("labs", "pheno", "ead"),
 		labels = list(
 			eps = "Electrophysiology study",
 			labs = "Cardiac biomarkers",
+			ead = "Early After Depolarizations",
 			stress = "Physiologic stress",
 			ecg = "Surface electrocardiography",
 			egm = "Intracardiac signals",
 			epi = "Big data",
-			clin = "Clinical phenotypes",
+			ipsc = "Cardiac Myocytes",
+			pheno = "Clinical phenotypes",
+			clin = "Clinical features",
 			snp = "Mutations/variants",
 			dna = "Genetic data"
 		)
 	) |>
-	tidy_dagitty(layout = "dh", seed = 1) |>
+	tidy_dagitty(layout = "tree") |>
 	node_status() 
 
 ggplot(dag, aes(x = x, y = y, xend = xend, yend = yend, color = status)) +
@@ -173,10 +156,12 @@ ggplot(dag, aes(x = x, y = y, xend = xend, yend = yend, color = status)) +
 		nudge_y = 0.5,
 		alpha = 0.9
 	) +
-	scale_color_manual(values = c("exposure" = green[2], "outcome" = orange[2]), na.value = grey[5]) + 
-	annotate("text", label = "Aim #1", x = -1, y = 0.4, size = 7) +
-	annotate("text", label = "Aim #2", x = -4, y = -3.7, size = 7) +
-	geom_hline(yintercept = -0.5, linetype = "dashed", color = grey[1], linewidth = 1.5) + 
+	scale_color_manual(values = c("exposure" = green[2], "outcome" = orange[2]), na.value = grey[5]) +
+	geom_segment(aes(x = 0, xend = 0.0, y = -0.5, yend = 3.5, color = grey[1]), linetype = "dashed", linewidth = 1) + 
+	geom_segment(aes(x = 0, xend = 3, y = 1.5, yend = 1.5, color = grey[1]), linetype = "dashed", linewidth = 1) + 
+	annotate("text", label = "Aim #1", x = -1.5, y = 0.0, size = 7) +
+	annotate("text", label = "Aim #2", x = 2.5, y = 2.5, size = 7) +
+	annotate("text", label = "Aim #3", x = 2.5, y = 0.0, size = 7) +
 	theme_dag(legend.position = "none") 
 ```
 
@@ -275,24 +260,21 @@ NPY = neuropeptide Y
 
 ## Aim #1: Clinical {.smaller}
 
-2. __To identify clinical phenotypes of vagal-mediated paroxysmal AF.__
+1. __To identify clinical phenotypes of vagal-mediated paroxysmal AF.__
 _Clusters of clinical features will identify AF that will correlate with differential responses to treatment strategies._
 	a. Clinical history, disease progression, and surface/non-invasive cardiac imaging will [identify stable, novel clusters]{.green} of AF phenotypes in [population-level datasets]{.blue}
 	a. [Intracardiac findings during EPS]{.red} will identify novel clusters of subtypes of AF using a combination of [electroanatomical mapping and signal processing]{.green}.
-	a. Increased [arrhythmia burden and &uarr;NE, &uarr;NPY, &uarr;Gal]{.orange} will be associated with an increased risk of [genetic polymorphisms]{.blue} in candidate genes known to be expressed by cholinergic neurons (e.g. **rs16147**[@Chang2016])
-
+	
 ::: aside
-Variant **rs6147** expressed in promoter region of NPY and associated with increased perception of environmental stress.[@Chang2016]
 EPS = electrophysiology study
 :::
 
 ## Aim #2: Translational {.smaller}
 
-1. __To evaluate the expression of cardiac neuropeptides in paroxysmal AF.__
+1. __To evaluate the effect of modifying the intrinsic cardiac nervous system in the ablative treatment of vagally-mediated paroxysmal AF.__
 _The burden and phenotype of AF will correlate with the expression of differential structural and autonomic biomarkers._
-	a. [Baseline levels of autonomic hormones (NE, NPY, galanin) and structural hormones (ANP, BNP, S100B)]{.orange} will correlate with the burden and chronicity of AF as a result of both electrical and mechanical remodeling.
-	a. Increased adrenergic/physiological stress [through catecholamine infusion]{.red} (and/or mental stress) will lead to &darr;NE, &darr;NPY, &darr;Gal expression.
-	a. Decrease vagal afferent activity [through modification of ICNS]{.red} with GP ablation during PVI, documented by release of S100B,[@Mehra2022] will lead to &uarr;NE, &uarr;NPY, &uarr;Gal expression.
+	a. [Baseline levels of autonomic hormones (NE, NPY, Gal)]{.orange} will correlate with the burden and chronicity of AF as a result of both electrical and mechanical remodeling. [Modification of the ICSN]{.red} through ablation during PVI, documented by the release of S100B,[@Mehra2022] will lead to will lead to &darr;NE, &darr;NPY, &darr;Gal expression (as a marker of decreased vagal afferent activity).
+	a. Increased adrenergic/physiological stress [through catecholamine infusion]{.red} (and/or mental stress) will lead to &darr;NE, &darr;NPY, &darr;Gal expression. 
 	a. [Atrial arrhythmia thresholds]{.orange} will be acutely decreased after GP ablation based on decreases in [electrical dispersion, triggered after-depolarizations, and HRV]{.green}.
 
 ::: aside
@@ -303,6 +285,12 @@ PVI = pulmonary vein isolation
 ## Aim #3: Basic {.smaller}
 
 1. __To elucidate the effect of 
+
+	a. Increased [arrhythmia burden and &uarr;NE, &uarr;NPY, &uarr;Gal]{.orange} will be associated with an increased risk of [genetic polymorphisms]{.blue} in candidate genes known to be expressed by cholinergic neurons (e.g. **rs16147**[@Chang2016])
+
+::: aside
+Variant **rs6147** expressed in promoter region of NPY and associated with increased perception of environmental stress.[@Chang2016]
+:::
 
 ## Methods {.smaller}
 
