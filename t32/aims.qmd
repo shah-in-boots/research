@@ -273,7 +273,20 @@ NPY = neuropeptide Y
 
 # Aims
 
-## Aim #1: Translational {.smaller}
+## Aim #1: Clinical {.smaller}
+
+2. __To identify clinical phenotypes of vagal-mediated paroxysmal AF.__
+_Clusters of clinical features will identify AF that will correlate with differential responses to treatment strategies._
+	a. Clinical history, disease progression, and surface/non-invasive cardiac imaging will [identify stable, novel clusters]{.green} of AF phenotypes in [population-level datasets]{.blue}
+	a. [Intracardiac findings during EPS]{.red} will identify novel clusters of subtypes of AF using a combination of [electroanatomical mapping and signal processing]{.green}.
+	a. Increased [arrhythmia burden and &uarr;NE, &uarr;NPY, &uarr;Gal]{.orange} will be associated with an increased risk of [genetic polymorphisms]{.blue} in candidate genes known to be expressed by cholinergic neurons (e.g. **rs16147**[@Chang2016])
+
+::: aside
+Variant **rs6147** expressed in promoter region of NPY and associated with increased perception of environmental stress.[@Chang2016]
+EPS = electrophysiology study
+:::
+
+## Aim #2: Translational {.smaller}
 
 1. __To evaluate the expression of cardiac neuropeptides in paroxysmal AF.__
 _The burden and phenotype of AF will correlate with the expression of differential structural and autonomic biomarkers._
@@ -287,18 +300,9 @@ ANP/BNP = atrial/brain natriuretic peptide;
 PVI = pulmonary vein isolation
 :::
 
-## Aim #2: Clinical {.smaller}
+## Aim #3: Basic {.smaller}
 
-2. __To identify clinical phenotypes of vagal-mediated paroxysmal AF.__
-_Clusters of clinical features will identify AF that will correlate with differential responses to treatment strategies._
-	a. Clinical history, disease progression, and surface/non-invasive cardiac imaging will [identify stable, novel clusters]{.green} of AF phenotypes in [population-level datasets]{.blue}
-	a. [Intracardiac findings during EPS]{.red} will identify novel clusters of subtypes of AF using a combination of [electroanatomical mapping and signal processing]{.green}.
-	a. Increased [arrhythmia burden and &uarr;NE, &uarr;NPY, &uarr;Gal]{.orange} will be associated with an increased risk of [genetic polymorphisms]{.blue} in candidate genes known to be expressed by cholinergic neurons (e.g. **rs16147**[@Chang2016])
-
-::: aside
-Variant **rs6147** expressed in promoter region of NPY and associated with increased perception of environmental stress.[@Chang2016]
-EPS = electrophysiology study
-:::
+1. __To elucidate the effect of 
 
 ## Methods {.smaller}
 
