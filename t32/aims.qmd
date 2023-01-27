@@ -263,18 +263,22 @@ NPY = neuropeptide Y
 1. __To identify clinical phenotypes of vagal-mediated paroxysmal AF.__
 _Clusters of clinical features will identify AF that will correlate with differential responses to treatment strategies._
 	a. Clinical history, disease progression, and surface/non-invasive cardiac imaging will [identify stable, novel clusters]{.green} of AF phenotypes in [population-level datasets]{.blue}
-	a. [Intracardiac findings during EPS]{.red} will identify novel clusters of subtypes of AF using a combination of [electroanatomical mapping and signal processing]{.green}.
-	
+	a. [Intracardiac findings during EPS]{.red} will [identify stable, novel clusters]{.green} of AF phenotypes using a combination of [electroanatomical mapping and signal processing]{.green}.
+	a. [Baseline serum levels of autonomic hormones (NE, NPY, Gal)]{.orange} will correlate with the burden and chronicity of AF. 
+	a. Increased [arrhythmia burden and &uarr;NE, &uarr;NPY, &uarr;Gal]{.orange} will be associated with an increased risk of [genetic polymorphisms]{.blue} in candidate genes known to be expressed by cholinergic neurons (e.g. **rs16147**[@Chang2016])
+
 ::: aside
+Variant **rs6147** expressed in promoter region of NPY and associated with increased perception of environmental stress.[@Chang2016]
 EPS = electrophysiology study
 :::
 
 ## Aim #2: Translational {.smaller}
 
-1. __To evaluate the effect of modifying the intrinsic cardiac nervous system in the ablative treatment of vagally-mediated paroxysmal AF.__
+1. __To evaluate the effect of modifying the intrinsic cardiac nervous system in the ablative treatment of vagal-mediated paroxysmal AF.__
 _The burden and phenotype of AF will correlate with the expression of differential structural and autonomic biomarkers._
-	a. [Baseline levels of autonomic hormones (NE, NPY, Gal)]{.orange} will correlate with the burden and chronicity of AF as a result of both electrical and mechanical remodeling. [Modification of the ICSN]{.red} through ablation during PVI, documented by the release of S100B,[@Mehra2022] will lead to will lead to &darr;NE, &darr;NPY, &darr;Gal expression (as a marker of decreased vagal afferent activity).
-	a. Increased adrenergic/physiological stress [through catecholamine infusion]{.red} (and/or mental stress) will lead to &darr;NE, &darr;NPY, &darr;Gal expression. 
+	a.  [Modification of the ICNS]{.red} through ablation during PVI, documented by the release of S100B,[@Mehra2022] will lead to [&darr;NE, &darr;NPY, &darr;Gal expression]{.orange} (as a marker of decreased vagal afferent activity).
+	a. Increased sympathetic/adrenergic stress [through catecholamine infusion]{.red} will lead to [&uarr;NE, &uarr;NPY, &uarr;Gal expression]{.orange}. 
+	a. Increased mental stress [through mental stress challenge]{.red} will lead to [&uarr;NE, &uarr;NPY, &uarr;Gal expression]{.orange} 
 	a. [Atrial arrhythmia thresholds]{.orange} will be acutely decreased after GP ablation based on decreases in [electrical dispersion, triggered after-depolarizations, and HRV]{.green}.
 
 ::: aside
@@ -284,12 +288,11 @@ PVI = pulmonary vein isolation
 
 ## Aim #3: Basic {.smaller}
 
-1. __To elucidate the effect of 
-
-	a. Increased [arrhythmia burden and &uarr;NE, &uarr;NPY, &uarr;Gal]{.orange} will be associated with an increased risk of [genetic polymorphisms]{.blue} in candidate genes known to be expressed by cholinergic neurons (e.g. **rs16147**[@Chang2016])
-
+3. __To assess the electrophysiological effects of autonomic hormones on _in vitro_ cardiac tissue.__
+_The increase in EAD seen in atrial cardiomyocytes due to vagolysis will be blunted by antagonism of NPY and Gal_.
+	
 ::: aside
-Variant **rs6147** expressed in promoter region of NPY and associated with increased perception of environmental stress.[@Chang2016]
+EAD = early after-depolarizations;
 :::
 
 ## Methods {.smaller}

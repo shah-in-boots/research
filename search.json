@@ -466,7 +466,7 @@
     "href": "t32/aims.html#committee",
     "title": "Research Aims",
     "section": "Committee",
-    "text": "Committee\n\n\nTable 2: Potential committee members\n\n\nMentor\nField\nSpecialty\n\n\n\n\nAmit J. Shah MD/MS\nCV/EPI\nmental stress, autonomic dysfunction\n\n\nDawood Darbar MBCHB/MD\nCV/EPI\natrial arrhythmias, genetics\n\n\nMark McCauley MD/PHD\nCV/EP\natrial arrhythmias\n\n\nAlvaro Alonso MD/PHD\nEPI\natrial fibrillation, ARIC investigator\n\n\nRachel Lampert MD\nCV/EP\nautonomic dysfunction\n\n\n\n\n\n\nGoal for next 1-2 years is to increase collaboration within committee in support of K23"
+    "text": "Committee\n\n\nTable 2: Potential committee members\n\n\n\n\n\n\n\nMentor\nField\nSpecialty\n\n\n\n\nAmit J. Shah MD/MS\nCV/EPI\nmental stress, autonomic dysfunction, digital biomarkers\n\n\nDawood Darbar MBCHB/MD\nCV/EPI\natrial arrhythmias, genetics\n\n\nMark McCauley MD/PHD\nCV/EP\natrial arrhythmias\n\n\nAlvaro Alonso MD/PHD\nEPI\natrial fibrillation, ARIC investigator\n\n\nRachel Lampert MD\nCV/EP\nmental stress, autonomic dysfunction\n\n\n\n\n\n\nGoal for next 1-2 years is to increase collaboration within committee in support of K23"
   },
   {
     "objectID": "t32/aims.html#methods-2",
@@ -712,5 +712,26 @@
     "title": "Research Aims",
     "section": "Significance",
     "text": "Significance\n\nKnowledge gaps:\n\nbiomarkers of response to neuromodulation therapy, including ablation\nunderstanding of regional variation in innervation affects arrhythmogenesis\ntranslation from single-cell studies to human models\n\nResearch priorities:\n\nrole of ANS signaling in emergence and maintenance of cardiac arrhythmias\ntarget modulation of ANS to attenuate electrical remodeling\npredict underlying biomarkers\nunderstand time course of ANS remodeling and neuropeptide expression\nsex/race differences in cardiac arrhythmogenesis\n\n\n\n\nNIH and NHLBI released 2022 Research Report on ANS in CV disease, with a focus on AF and VT/VF. ANS = autonomic nervous system; CV = cardiovascular; AF = atrial fibrillation; VT/VF = ventricular tachycardia/fibrillation;"
+  },
+  {
+    "objectID": "t32/aims.html#aim-1-clinical",
+    "href": "t32/aims.html#aim-1-clinical",
+    "title": "Research Aims",
+    "section": "Aim #1: Clinical",
+    "text": "Aim #1: Clinical\n\nTo classify clinical phenotypes of vagal-mediated paroxysmal AF. Clusters of clinical features will identify AF that will correlate with differential responses to treatment strategies.\n\nClinical history, disease progression, and surface/non-invasive cardiac imaging will identify stable, novel clusters of AF phenotypes in population-level datasets\nIntracardiac findings during EPS will identify stable, novel clusters of AF phenotypes using a combination of electroanatomical mapping and signal processing.\nBaseline serum levels of autonomic hormones (NE, NPY, Gal) will correlate with the burden and chronicity of AF.\n\n\n\n\nEPS = electrophysiology study"
+  },
+  {
+    "objectID": "t32/aims.html#aim-2-translational",
+    "href": "t32/aims.html#aim-2-translational",
+    "title": "Research Aims",
+    "section": "Aim #2: Translational",
+    "text": "Aim #2: Translational\n\nTo evaluate the effect of modifying the intrinsic cardiac nervous system in the ablative treatment of vagal-mediated paroxysmal AF. The burden and phenotype of AF will correlate with the expression of differential structural and autonomic biomarkers.\n\nModification of the ICNS through ablation during PVI, documented by the release of S100B,12 will lead to ↓NE, ↓NPY, ↓Gal expression (as a marker of decreased vagal afferent activity).\nIncreased sympathetic/adrenergic stress through catecholamine infusion will lead to ↑NE, ↑NPY, ↑Gal expression.\nIncreased mental stress through mental stress challenge will lead to ↑NE, ↑NPY, ↑Gal expression\nAtrial arrhythmia thresholds will be acutely decreased after GP ablation based on decreases in electrical dispersion, triggered after-depolarizations, and HRV.\n\n\n\n\nANP/BNP = atrial/brain natriuretic peptide; PVI = pulmonary vein isolation"
+  },
+  {
+    "objectID": "t32/aims.html#aim-3-basic",
+    "href": "t32/aims.html#aim-3-basic",
+    "title": "Research Aims",
+    "section": "Aim #3: Basic",
+    "text": "Aim #3: Basic\n\nTo identify the electrophysiological effects of autonomic hormones on in vitro cardiac tissue. _The effect of anti-cholinergic molecules will lead to an increase in early after-depolarizations in\n\nIncreased arrhythmia burden and ↑NE, ↑NPY, ↑Gal will be associated with an increased risk of genetic polymorphisms in candidate genes known to be expressed by cholinergic neurons (e.g. rs1614713)\n\n\n\n\nVariant rs6147 expressed in promoter region of NPY and associated with increased perception of environmental stress.13"
   }
 ]
