@@ -261,41 +261,28 @@ NPY = neuropeptide Y
 ## Aim #1: Clinical {.smaller}
 
 1. __Identify clinical phenotypes of vagally-triggered AF.__
-_Clinical, intracardiac, and genetic factors will contribute to clinically-relevant clusters of AF_.
-	a. We will [develop a pragmatic, population-level dataset]{.blue} to abstract clinical risk factors, ECG, and echocardiography features. [Using unsupervised learning models]{.green}, AF will be classified into seperate phenotypes.
-	a. The [clinical relevance of AF phenotypes]{.red} will be assessed through relevant outcomes (adverse events, disease burden/progression). AF phenotypes identified in __1a__ will have distinct hazard distributions [estimated through survival analysis]{.green}.
-	a. We will perform [whole exome sequencing]{.blue} on a subset of patients from each cluster defined in __1a__. Selected $\alpha$ and $\beta$ adrenergic receptors and cholinergic receptor polymorphisms will be associated with individual AF phenotypes and clinical outcomes.
+_Clinical, intracardiac, and genetic factors will contribute to clinically-relevant phenotypes of AF_.
+	a. We will [develop a pragmatic, population-level dataset]{.blue} to abstract clinical risk factors, ECG, and echocardiography features and therapy responses. [Using unsupervised learning models]{.green}, AF will be classified into seperate clusters.
+	a. The [clinical relevance of AF phenotypes]{.red} will be assessed through relevant outcomes (adverse events, disease burden/progression). AF clusters identified in __1a__ will have distinct hazard distributions [estimated through survival analysis]{.green}.
+	a. We will perform [whole exome sequencing]{.orange} on a subset of patients from each cluster defined in __1a__. Selected $\alpha$ and $\beta$ adrenergic receptors and cholinergic receptor polymorphisms will be associated with individual AF clusters and clinical outcomes.
 	
 ::: aside
-ECG = electrocardiography;
-:::
-
----
-
-	a. Increased [arrhythmia burden and &uarr;NE, &uarr;NPY, &uarr;Gal]{.orange} will be associated with an increased risk of [genetic polymorphisms]{.blue} in candidate genes known to be expressed by cholinergic neurons (e.g. **rs16147**[@Chang2016])
-
-::: aside
-Variant **rs6147** expressed in promoter region of NPY and associated with increased perception of environmental stress.[@Chang2016]
-EPS = electrophysiology study;
 ECG = electrocardiography;
 :::
 
 ## Aim #2: Translational {.smaller}
 
-1. __Determine the intracardiac characteristics of vagally-triggered AF.__
-_Structural and electrical features assessed through EPS will identify separate clinically-relevant clusters of AF._
-	a. 
-	a.  [Modification of the ICNS]{.red} through ablation during PVI, documented by the release of S100B,[@Mehra2022] will lead to [&darr;NE, &darr;NPY, &darr;Gal expression]{.orange} (as a marker of decreased vagal afferent activity).
-	a. Increased sympathetic/adrenergic stress [through catecholamine infusion]{.red} will lead to [&uarr;NE, &uarr;NPY, &uarr;Gal expression]{.orange}. 
-	a. Increased mental stress [through mental stress challenge]{.red} will lead to [&uarr;NE, &uarr;NPY, &uarr;Gal expression]{.orange} 
-	a. [Atrial arrhythmia thresholds]{.orange} will be acutely decreased after GP ablation based on decreases in [electrical dispersion, triggered after-depolarizations, and HRV]{.green}.
-	
-	a. We will obtained electroanatomical mapping from EPS in patients undergoing PVI, including intracardiac electrogram recordings. Using a combination of [signal processing and feature reduction]{.green}, we will identify individual structural and electrical AF phenotypes.
+2. __Determine the intracardiac characteristics of vagally-triggered AF.__
+_Structural and electrical features assessed through EPS will identify separate clinically-relevant phenotypes of AF._
+	a. We will collect electroanatomical mapping data and electrogram recordings [during PVI]{.red} of paroxysmal AF. Using [signal processing and feature reduction]{.green}, we will identify clusters of structural and electrical AF that correlate with those identified in __1a__. 
+	a. We will apply physiological stress and psychological stress [through catecholamine infusion and mental stress challenge]{.red}, respectively. Catecholamine infusion will lead to [&uarr;NE, &uarr;NPY, &uarr;Gal expression]{.orange} while mental stress will lead to [&uarr;NE, &uarr;NPY, &uarr;Gal expression]{.orange} 
+	a. In those with suspected vagally-triggered AF, there will be an increased risk of [Y2R and Gal1R receptor polymorphisms]{.orange}.
 
 ::: aside
-ANP/BNP = atrial/brain natriuretic peptide;
+ICNS = intracardiac nervous system;
 EPS = electrophysiology study;
 PVI = pulmonary vein isolation;
+HRV = heart rate variability;
 :::
 
 ## Methods {.smaller}
