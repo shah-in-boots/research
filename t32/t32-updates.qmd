@@ -7,6 +7,8 @@ format:
     scrollable: true
 execute:
   cache: true
+tbl-cap-location: bottom
+fig-cap-location: bottom
 ---
 
 ```{r}
@@ -17,8 +19,8 @@ execute:
 # Libraries
 library(tidyverse)
 library(arcana)
-library(volundr)
 library(durandal)
+library(volundr)
 library(coraline)
 library(googledrive)
 library(googlesheets4)
@@ -69,14 +71,13 @@ tbl_status_updates <- function(progress, effort) {
 	data <-
 		left_join(progress, effort, by = "Type") |>
 		group_by(Type) |>
-		arrange(Effort, Priority) |>
-		arrange(Priority) |>
 		mutate(Type = paste0(Type, " (", Effort, ")")) |>
 		mutate(Deadline = as.Date(Deadline)) |>
 		select(-Effort) |>
 		filter(Priority < 3) |>
 		select(Type, Project, Task, Deadline, Priority, Status) |>
 		group_by(Project) |>
+		arrange(Project, Priority) |>
 		mutate(num = 1:n()) 
 		
 	
@@ -175,10 +176,11 @@ tbl_status_updates <- function(progress, effort) {
 
 
 ```{r}
-#| label: product  page
+#| label: tbl-progress
+#| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 1, day = 9) |>
+	date_build(year = 2023, month = 2, day = 6) |>
 	add_days(-14)
 
 effort <-
@@ -194,7 +196,24 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
-# January 9, 2022
+# February 6, 2023
+
+## Updates
+
+- AFL/FH: __WES__ needed prior to completing revisions
+- ARIC: potential option to pursue genetic profiling in ARIC per Alvaro, need formal proposal
+- K23: drafting specific aims in 1-pager format
+- VCF: data able to be analyzed/cleaned, however requires more CPU to perform
+
+::: aside
+Currently on inpatient service with limited time
+:::
+
+---
+
+![Chromosome 1 summary](../figures/vcf-sample-chr-1-from-mike.png){#fig-vcfr-summary}
+
+# January 9, 2023
 
 ## Updates
 
@@ -375,7 +394,6 @@ ggm(x, channels = c("I", "CS", "HIS M", "HIS D", "RV")) |>
 ```
 
 
-
 # November 21, 2022
 
 ## Updates
@@ -385,7 +403,13 @@ ggm(x, channels = c("I", "CS", "HIS M", "HIS D", "RV")) |>
 - AF Ablation + Biorepository: Pending IRB
 - Stress and CVD Mortality: Submitted to _Circulation_, revisions Pending
 
-# November 14, 2022  ## Early Onset Atrial Flutter  1. Draft of paper expanded to include results 1. Prominent findings of family history and association with arrhythmia 1. Key tables and figures established  
+# November 14, 2022  
+
+## Early Onset Atrial Flutter  
+
+1. Draft of paper expanded to include results 
+1. Prominent findings of family history and association with arrhythmia 
+1. Key tables and figures established  
 
 ```{r} 
 #| cache: true 
