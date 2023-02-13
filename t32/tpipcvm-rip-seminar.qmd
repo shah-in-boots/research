@@ -263,7 +263,7 @@ __Summary__: Stress seems to increase risk of CV mortality, through autonomic me
 
 ![Resting HF and HF reactivity as additive markers of CV mortality](../figures/hf-hrv-reactivity-km-curves.png){#fig-hf-reactivity-curve.png}
 	
-## Jacksonian dissolution
+## Jacksonian dissolution {.smaller}
 
 Jacksonian dissolution is the concept that older, more primitive systems will take over when more evolved systems break down. Polyvagal theory (theorized by Porges)[@Porges2007] posits there are two branches of the vagus nerve
 
@@ -332,6 +332,8 @@ _However, these categories are skewed, with the younger, low-risk group being >5
 1. [Electrophysiology studies]{.red} are readily avaiable, with rich [electrical signal data]{.green}, for analysis in humans
 1. [Genetic variants]{.blue} lead to cardiomyocyte changes that predispose to AF, but there are also variants that affect cardiovagal outflow
 
+# Research proposal
+
 ## Research approach {.smaller}
 
 1. Identify within [pAF]{.orange} if there exist VTA __sub-phenotypes__ using [population-level]{.blue} data:
@@ -344,9 +346,7 @@ _However, these categories are skewed, with the younger, low-risk group being >5
 	- Electrophysiology properties of AF (dominant frequencies, pulmonary vein triggers, scar burden, atrial volume)
 	- Intracardiac biomarkers of vagolysis (both electrical and neurohormonal)
 	- Genetic variants that may be susceptible to abnormal cardiovagal outflow
-
-# Research proposal
-
+	
 ---
 
 ```{r}
