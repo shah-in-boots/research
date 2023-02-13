@@ -323,7 +323,7 @@ This may explain the additive effect of reduced resting HF HRV and reduced HF HR
 	
 _However, these categories are skewed, with the younger, low-risk group being >50% of the samples._
 
-## pAF as a model for VTA
+## pAF as a model for VTA {.smaller}
 
 1. pAF is both ubiquitous and poorly-classified
 1. Mechanism-driven therapies may exist for [sub-phenotypes and endo-phenotypes]{.blue}
