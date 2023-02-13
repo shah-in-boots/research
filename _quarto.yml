@@ -24,7 +24,12 @@ website:
   page-footer: "Copyright (c) 2022, Anish. S. Shah, MD, MS"
 
 bibliography:
+  - ../bibliography/publications.bib
   - ../bibliography/research-autonomics.bib
+  - ../bibliography/research-circadian.bib
+  - ../bibliography/research-measurement.bib
+  - ../bibliography/research-psych.bib
+  - ../bibliography/research-stress.bib
 csl: ../bibliography/circulation.csl
 
 format:

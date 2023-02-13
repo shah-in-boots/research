@@ -1,0 +1,434 @@
+---
+title: Vagolysis and Arrhythmogenesis
+subtitle: T32/TPIPCVM Seminar
+date: February 13, 2023
+author: Anish S. Shah, MD | MS
+institute: 
+- Division of Cardiology, University of Illinois at Chicago 
+- Rollins School of Public Health, Emory University
+format: 
+  revealjs:
+    scrollable: true
+revealjs-plugins:
+  - attribution
+tbl-cap-location: bottom
+fig-cap-location: bottom
+---
+
+```{r}
+#| label: setup
+#| echo: false
+library(tidyverse)
+library(gt)
+library(ggsci)
+library(scales)
+library(ggdag)
+
+# Colors
+blue <- pal_material("blue", reverse = TRUE)(9)
+orange <- pal_material("yellow", reverse = TRUE)(9)
+red <- pal_material("pink", reverse = TRUE)(9)
+green <- pal_material("teal", reverse = TRUE)(9)
+grey <- pal_material("blue-grey", reverse = TRUE)(9)
+```
+
+# Introduction
+
+## Outline 
+
+::: {.incremental}
+1. Overview
+1. Step 1: Establish relationship between ANS and __cardiac physiology__
+1. Step 2: Evaluate effect of __stress__ on __CV mortality__
+1. Step 3: Determine clinical impact of __vagal withdrawal__ 
+1. Step 4: Identify a representative disease model = __pAF__
+1. Research proposal
+:::
+
+## Significance {.smaller}
+
+- Knowledge gaps:
+	- biomarkers of response to neuromodulation therapy, including ablation
+	- understanding of regional variation in innervation affects arrhythmogenesis
+	- translation from single-cell studies to human models
+- Research priorities:
+	- role of ANS signaling in emergence and maintenance of cardiac arrhythmias
+	- target modulation of ANS to attenuate electrical remodeling 
+	- predict underlying biomarkers
+	- understand time course of ANS remodeling and neuropeptide expression
+	- sex/race differences in cardiac arrhythmogenesis
+
+::: aside
+@Mehra2022 has identified these gaps and priorities in a NHLBI-supported expert-led workshop
+:::
+
+## Objectives
+
+::: {.incremental}
+a. Understand importance of neural regulation of cardiac physiology
+a. Understand the role of cardiovagal activity in arrhythmogenesis
+a. Identify gaps in current diagnostic and treatment options
+a. Review a research proposal in autonomic and electrical heart disease
+:::
+
+---
+
+![Sympathetic and parasympathetic cardiac inputs](../figures/sns-pns-heart-cartoon.jpg){#fig-sns-pns-heart}
+
+---
+
+## {.smaller}
+
+__Hypothesis__: In humans with paroxysmal atrial fibrillation, during episodes of increased sympathetic outflow, _inappropriate or disproportionate vagal withdrawal (vagolysis) leads to arrhythmogenesis._
+
+. . .
+
+::: {.incremental}
+a. Changes in electrical activity precede the onset of arrhythmias 
+a. Arrhythmia onset requires both a structurally-susceptible heart and a trigger
+a. Triggers effect the electrical microcosm of the heart through autonomic outflows/imbalance
+:::
+
+. . .
+
+The concept of vagolysis and arrhythmogenesis will be referred to as __vagal-triggered arrhythmias (VTA)__ hereafter.
+
+## {.smaller}
+
+| Abbreviations | Definitions |
+| - | --- |
+| VTA | vagally-triggered arrhythmia |
+| (p)AF | (paroxysmal) atrial fibrillation |
+| AAD | anti-arrhythmic drugs |
+| ANS/SNS/PNS | autonomic/sympathetic/parasympathetic nervous sytem |
+| GP | ganglionated plexi |
+| NPY, Gal | neuropeptide Y, galanin |
+| HF, LF HRV | high & low frequency heart rate variability |
+| EPS, EAM | electrophysiology study, electro-anatomical mapping |
+| LA, RA, LV, RV | left/right atrium/ventricle |
+| CAD, MI | coronary artery disease, myocardial ischemia/infarction |
+| VNS | vagal nerve stimulation |
+
+---
+
+_To help follow along with the complexity of the topic, there is a consistent color scheme noted throughout._
+
+::: {.incremental}
+- [Computational]{.green} & [digital signal processing]{.green} methods will be noted in [green]{.green}
+- [Clinical data]{.red} that requires a physician or cardiologist to obtain are noted in [red]{.red}
+- [Arrhythmia]{.orange} and [electrical]{.orange} focused work is noted in [orange]{.orange}
+- [Epidemiological]{.blue} or [genetic]{.blue} based methods are noted in [blue]{.blue}
+:::
+
+
+# Relationship between ANS and cardiac physiology
+
+## Neurocardiac axis {.smaller}
+
+- Neurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels [@Armour1997]
+	- Cortex &harr; brainstem
+	- Spinal cord &harr; extracardiac ganglia (e.g. stellate)
+	- Intrinsic cardiac nervous system (ICNS) &harr; heart
+- Autonomic regulation is critical in the development of most CV disease
+	- Disregulated catecholamines in heart failure
+	- Post myocardial infarct VF
+	- Triggered arrhythmias such as VT
+	
+---
+
+![Cardiac neurotransmission @Shivkumar2016a](../figures/shivkumar-2022_neurocardiac-axis.png){#fig-neurocardiac-axis}
+
+---
+
+- **Lower levels** of networked structures (ICNS, hypothalamus) integrate afferent information about metabolic demands
+- **Higher levels** of networked structures (amydala, cortex) integrate lower networks and generate conscious/unconscious CV state representations
+- Allows for environmental/psychological factors to interplay with cardiac physiology, e.g. [mental stress]{.red} causing [arrhythmia]{.orange}
+
+## Assessment of the ANS
+
+- Sympathogal balance integrate at the heart, as seen in @fig-sns-pns-heart
+- HRV serves a surrogate for autonomic function
+- Variability occurs due to sympathovagal balance at level of sinoatrial node
+- Sympathetic outflow and vagal outflow occur at difference _speeds_ allowing some level of differentiation
+
+---
+
+![Power-spectral analysis of HRV @Akselrod1981](../figures/akselrod-1981-frequency-hrv.png){#fig-hrv-frequency-domain}
+
+## Autonomic function and coronary physiology
+
+A study in veteran twins:
+
+- Evaluated 24-hour HRV in controlled setting/scheduled
+- Evaluated quantitative myocardial perfusion imaging
+- Compared circadian patterns of HRV with coronary flow reserves
+
+::: aside
+HRV can be [processed]{.green} through open-source software[@Vest2018]
+:::
+
+---
+
+![Differences in HRV in twins with normal and abnormal myocardial perfusion @Shah2020](../figures/shah-2020-poincare-example.jpg){#fig-poincare}
+
+---
+
+![Risk of decreased myocardial perfusion @Shah2020](../figures/shah-2020-forest-plot.jpg){#fig-twins-forest}
+
+---
+
+![Circadian changes in HRV @Shah2020](../figures/shah-2020-circadian-pattern.jpg){#fig-twins-circadian}
+
+---
+
+__Summary__: HRV seems to correlate with clinically relevant ANS influences on the heart
+
+- ANS function varies with circadian rhythm[@Portaluppi2012]
+- Decrease HRV responsiveness to the _morning surge_ suggests dysfunction above the level of the heart
+- Decreased ANS variability also correlates with myocardial ischemia (particularly coronary flow reserve), which is partially mediated through adrenergic tone[@DelBuono2021]
+
+# Evaluate effect of stress on CV mortality
+
+## How do we perturb the ANS? {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+#### Chronic mental stress
+
+- Depression & anxiety disorders relate to CVD
+- Inflammatory mechanisms[@Hammadah2018a; @Pollitt2008]
+- Autonomic mechanisms[@Carney2005; @Huang2018; @Penninx2017; @Smolderen2017]
+
+:::
+::: {.column width="50%"}
+#### Acute mental stress
+
+- Associated with many changes to cardiac physiology[@Strike2003]
+- Peripheral vasoconstriction,[@Kim2019; @Lima2019]
+- Coronary vasomotion[@Hammadah2018b]
+- Mental stress-induced myocardial ischemia[@Vaccarino2021a], as seen in @fig-msimi-km-curves
+:::
+::::
+
+---
+
+![Neuropsychological effects on cardiac physiology @Taggart2011](../figures/taggart-2011-brain-heart-overview.png)
+
+---
+
+![Psychosomatic stress (vital exhaustion) leads to decreases in LF HRV @Shah2021a](../figures/shah-2021-hrv-age-exhaustion.jpeg)
+
+---
+
+![Mortality due to mental-stress induced myocardial ischemia @Vaccarino2021a](../figures/vaccarino-2021-msimi-survival-curves.png){#fig-msimi-km-curves}
+
+::: aside
+This uses an more complex approach of [survival analysis for recurrent events]{.blue}
+:::
+
+---
+
+![Reduced stress LF HRV increases risk of CV mortality](../figures/lf-stress-km-curves.png){#fig-lf-stress-curve.png}
+
+---
+
+__Summary__: Stress seems to increase risk of CV mortality, through autonomic mechanisms (as compared to ischemic)
+
+- Autonomic dysfunction correlates with future CV mortality[@LaRovere1998]
+- HRV seems to be associated with clinically features of CV mortality
+- Acute stress seems to be of particular importance
+
+# Determine clinical impact of vagal withdrawal
+
+## Critical role of the vagus {.smaller}
+
+- Embryologically, vagus nerve sprouts from medulla and extends to distant organs (thus long pre-ganglionic axons) e.g. heart, lung, intestines
+- Parasympathetic control is evolutionarily more primitive in vertebrates, pre-dating sympathetic control
+	- Sharks exhibit phasic HRV without sympathetic innervation [@Taylor2022]
+	- Mammalian vagal control is more complex, with multiple nuclei, e.g. polyvagal [@Porges2009]
+- Mammalian vagal outflow is particularly coupled with cardiorespiratory control
+	- Leads to [respiratory sinus arrhythmia]{.orange}
+	- Respiratory changes occur at a high-frequency, can be [measured by HRV]{.green}
+	
+## Vagal therapeutic interventions {.smaller}
+
+- Chronic VNS reduces drop in ejection fraction in different animal models of cardiomyopathy, including MI, but studies have mixed results in humans
+	- NECTAR-HF ~ VNS or sham, no difference at 6 months in LV size/function, n = 96
+	- INOVATE-HF ~ right VNS + GDMT vs. GDMT, no difference in mortality, n = 700
+	- ANTHEM-HF ~ non-randomized VNS, improved LV function, pilot study (*required titrated VNS to cause decrease in HR*)
+- VNS may be anti-arrhythmic in animal models, with decreased VT/VF, but minimal human studies
+	- GANGLIA-AF, paroxysmal AF randomized to PVI or atrial GP ablation, decreased AAD dosages in GP group, n = 102
+	
+---
+
+![Resting HF and HF reactivity as additive markers of CV mortality](../figures/hf-hrv-reactivity-km-curves.png){#fig-hf-reactivity-curve.png}
+	
+## Jacksonian dissolution
+
+Jacksonian dissolution is the concept that older, more primitive systems will take over when more evolved systems break down. Polyvagal theory (theorized by Porges)[@Porges2007] posits there are two branches of the vagus nerve
+
+1. _Reptilian vagus_: primitive, unmyelinated, controlled by the dorssal motor nucleus
+1. _Mammalian vagus_: evolved, myelinated, controlled by teh nucleus ambiguus
+
+This may explain the additive effect of reduced resting HF HRV and reduced HF HRV reactivity
+
+# Identify a representative disease model = paroxysmal AF
+
+## Sympathovagal crosstalk {.smaller}
+
+- Arrhythmia thresholds affected by sympathetic and vagal activity 
+- Intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress
+- Atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties[@Hoover2009; @Armour1997] 
+- Sympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis
+
+## Molecular mechanisms {.smaller}
+
+- Sympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium
+- NPY and galanin is also released, which both inhibit cholinergic activity [@Herring2015; @Herring2012]
+- Both inhibit firing and leading to vagolytic effects on the myocardium[@Kalla2020; @Herring2008]
+	- Galanin released as a adrenergic co-transmitter, binding to GalR1 receptors
+	- NPY binds to cholinergic neurons through the Y2 receptor
+	- Both directly/indirectly involve protein kinase C
+- NPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)[@Coote2013]
+
+---
+
+![Cardiac sympatho-vagal crosstalk @Herring2012](../figures/herring-2012-cellular-sympathovagal-crosstalk.png){#fig-ans-crosstalk}
+	
+---
+
+![Increased sympathetic activity and NPY @Hoang2020](../figures/hoang-2020-npy-blockade.png){#fig-npy-blockade}
+
+## Genetic variants
+
+| Variant | Description |
+| - | --- |
+| rs16147 | NPY promoter region | 
+| rs10842383 | LINC00477, HF HRV |
+| rs236349 | PPIL1, RMSSD |
+| rs4262 | GNG11, SDNN |
+| rs7980799 | SYT10, respiratory sinus arrhythmia |
+| rs12974991 | NDUFA11, HF HRV |
+
+## Inadequate classification
+
+- pAF has been separated into coarse, non-physiological groups (paroxysmal, persistent, permanent)
+- Diagnostic and treatment strategies are overally-generalized, and do not identify or target sub-phenotypes or endo-phenotypes that may exist
+	- e.g. vagally-mediated AF responds well to disopyramide
+- Attempts to re-classify/cluster AF have been performed,[@Watanabe2021; Vitolo2021; @Pastori2020] and generally suggest 4 broad categories:
+	1. Young, low risk
+	1. High CV risk factors
+	1. High comorbid CV disease
+	1. High comorbid non-CV disease
+	
+_However, these categories are skewed, with the younger, low-risk group being >50% of the samples._
+
+## pAF as a model for VTA
+
+1. pAF is both ubiquitous and poorly-classified
+1. Mechanism-driven therapies may exist for [sub-phenotypes and endo-phenotypes]{.blue}
+1. [Autonomic triggers]{.orange} associated with atrial arrhythmias
+1. Functional/anatomical relationship between atria and GP exist
+1. [Electrophysiology studies]{.red} are readily avaiable, with rich [electrical signal data]{.green}, for analysis in humans
+1. [Genetic variants]{.blue} lead to cardiomyocyte changes that predispose to AF, but there are also variants that affect cardiovagal outflow
+
+## Research approach {.smaller}
+
+1. Identify within [pAF]{.orange} if there exist VTA __sub-phenotypes__ using [population-level]{.blue} data:
+	- Clinical comorbidities
+	- Arrhythmia burden
+	- Psychosocial stressors 
+	- Ischemic and structural heart disease
+	- Cardiomyopathy (atrial and ventricular)
+1. Identify in individuals undergoing ablative therapy for pAF if there exist patterns that support a VTA __endo-phenotype__ using intracardiac data:
+	- Electrophysiology properties of AF (dominant frequencies, pulmonary vein triggers, scar burden, atrial volume)
+	- Intracardiac biomarkers of vagolysis (both electrical and neurohormonal)
+	- Genetic variants that may be susceptible to abnormal cardiovagal outflow
+
+# Research proposal
+
+---
+
+```{r}
+#| label: fig-dag
+#| fig-cap: "Graphical representation of specific aims"
+dag <-
+	dagify(
+		stress ~ eps,
+		egm ~ eps,
+		labs ~ stress + eps,
+		pheno ~ ecg + dna + egm + clin,
+		clin ~ epi,
+		ecg ~ epi,
+		dna ~ epi + labs,
+		snp ~ dna,
+		labs ~ snp,
+		stress ~ snp,
+		dna ~ eps,
+		ead ~ ipsc,
+		ipsc ~ labs + stress + snp,
+		exposure = c("eps", "epi", "ipsc"),
+		outcome = c("labs", "pheno", "ead"),
+		labels = list(
+			eps = "Electrophysiology study",
+			labs = "Cardiac biomarkers",
+			ead = "Early After Depolarizations",
+			stress = "Physiologic stress",
+			ecg = "Surface electrocardiography",
+			egm = "Intracardiac signals",
+			epi = "Big data",
+			ipsc = "Cardiac Myocytes",
+			pheno = "Clinical phenotypes",
+			clin = "Clinical features",
+			snp = "Mutations/variants",
+			dna = "Genetic data"
+		)
+	) |>
+	tidy_dagitty(layout = "tree") |>
+	node_status() 
+
+ggplot(dag, aes(x = x, y = y, xend = xend, yend = yend, color = status)) +
+	geom_dag_edges(
+		arrow_directed = grid::arrow(length = grid::unit(10, "pt"), type = "closed"),
+		arrow_bidirected = grid::arrow(length = grid::unit(10, "pt"), type = "open", ends = "both"),
+		edge_alpha = 0.8
+	) +
+	geom_dag_point() +
+	geom_dag_label_repel(
+		aes(label = label),
+		force = 1,
+		nudge_y = 0.5,
+		alpha = 0.9
+	) +
+	geom_segment(aes(x = 0, xend = 0.0, y = -0.5, yend = 3.5, color = grey[1]), linetype = "dashed", linewidth = 1) + 
+	geom_segment(aes(x = 0, xend = 3, y = 1.5, yend = 1.5, color = grey[1]), linetype = "dashed", linewidth = 1) + 
+	geom_rect(aes(xmin = 0, xmax = 3, ymin = -0.5, ymax = 1.5, color = grey[1]), alpha = 0.01) + 
+	annotate("text", label = "Aim #1", x = -1.5, y = 0.0, size = 7) +
+	annotate("text", label = "Aim #2", x = 2.5, y = 2.5, size = 7) +
+	annotate("text", label = "Exploratory/future", x = 2.0, y = 0.6, size = 5) +
+	scale_color_manual(values = c("exposure" = green[2], "outcome" = orange[2]), na.value = grey[5]) +
+	theme_dag(legend.position = "none") 
+```
+
+## Aim #1: Clinical {.smaller}
+
+1. __Identify clinical phenotypes of vagally-triggered AF.__
+_Clinical, intracardiac, and genetic factors will contribute to clinically-relevant phenotypes of AF_.
+	a. We will [develop a pragmatic, population-level dataset]{.blue} to abstract clinical risk factors, ECG, and echocardiography features and therapy responses. [Using unsupervised learning models]{.green}, AF will be classified into seperate clusters.
+	a. The [clinical relevance of AF phenotypes]{.red} will be assessed through relevant outcomes (adverse events, disease burden/progression). AF clusters identified in __1a__ will have distinct hazard distributions [estimated through survival analysis]{.green}.
+
+## Aim #2: Translational {.smaller}
+
+2. __Determine the intracardiac characteristics of vagally-triggered AF.__
+_Structural and electrical features assessed through EPS will identify separate clinically-relevant phenotypes of AF._
+	a. We will collect electroanatomical mapping data and electrogram recordings [during PVI]{.red} of paroxysmal AF. Using [signal processing and feature reduction]{.green}, we will identify clusters of structural and electrical AF that correlate with those identified in __1a__. 
+	a. We will apply physiological stress [through catecholamine infusion]{.red}, respectively. Catecholamine infusion will lead to [&uarr;NE, &uarr;NPY, &uarr;Gal expression]{.orange} while mental stress will lead to [&uarr;NE, &uarr;NPY, &uarr;Gal expression]{.orange} 
+	a. In those with suspected vagally-triggered AF, there will be an increased risk of [Y2R and Gal1R receptor polymorphisms]{.orange}.
+	a. We will perform [whole exome sequencing]{.orange} on a subset of patients from each cluster defined in __1a__. Selected $\alpha$ and $\beta$ adrenergic receptors and cholinergic receptor polymorphisms will be associated with individual AF clusters and clinical outcomes.
+
+# End
+
+## References {.smaller}
+
+::: {#refs}
+:::
