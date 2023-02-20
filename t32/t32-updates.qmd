@@ -22,6 +22,8 @@ library(arcana)
 library(durandal)
 library(volundr)
 library(coraline)
+library(aion)
+library(card)
 library(googledrive)
 library(googlesheets4)
 library(clock)
@@ -180,7 +182,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 2, day = 6) |>
+	date_build(year = 2023, month = 2, day = 20) |>
 	add_days(-14)
 
 effort <-
@@ -195,6 +197,58 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# February 20, 2023
+
+## AFL/FH
+
+- Genetic basis for FH may be more promising than association with FH broadly, but would require additional WES to be sent
+- Would need to repeat VCF analysis for an arrhythmia panel (instead of cardiomyopathy panel)
+
+## CBCD {.smaller}
+
+Computational biorepository for cardiovascular disease
+
+- Will need a large computational biorepository
+	- Claims data from both CPT/ICD codes
+	- Clinical documentation (raw text from clinical notes)
+	- Medication history
+	- Study data e.g. XML of ECG, echo reports, coronary angiograms, device interrogations, etc
+- CCTS to pull data, DRA to be submitted today
+	
+::: aside
+Also working on VA research database access, CART-CL reporting data, MVP, ARIC, and UK Biobank as additional large-scale data
+:::
+
+## HRV/CVD
+
+![Increase of ~10 fold in CV mortality in 1/4 patients identified by abnormal resting and reactive vagal tone. Robust classifier of resilience.](../figures/hf-hrv-reactivity-km-quartile-curves.png){#fig-hf-hrv-reactivity-quartiles}
+
+::: aside
+Non-linear relationship established by spline analysis against CV death.
+:::
+
+## Specific aims
+
+## {.smaller}
+
+1. __Identify clinical phenotypes of vagally-triggered AF.__: 
+	a. We will use a computational approach to [develop a pragmatic, population-level datasets]{.green} to identify phenotypes of pAF using clinical covariates, including ECG, TTE, cardiac monitoring devices, and markers of psychosocial stress. Hypothesis: _Low-burden groups will exist that have differences in clinical characteristics that can be used to reliably classify individuals._
+	a. We will assess [recurrent clinical outcomes]{.blue}, including arrhythmia burden, conduction disease, atrial and ventricular cardiomyopathy, along with types of therapies (pharmacological/interventional). Hypothesis: _The hazard distribution will vary amongst the identified clinical phenotypes. The rate of escalation of intervention will also vary based on phenotypes._
+
+## {.smaller}
+
+2. __Determine the intracardiac characteristics of vagally-triggered AF.__:
+	a. [Structural and electrical features]{.green} will be obtained through [EPS]{.red}. The EAM and EGM data collected will be used to identify intra-procedural AF phenotypes. Hypothesis: _Electrical and anatomical phenotypes will allow differentiation of re-entrant and triggered pAF._
+	a. Electrical phenotypes of pAF will be compared with phenotypes identified in __1a__. Hypothesis: _The clinical phenotypes will correlate with the unique electrical phenotypes obtained during EPS._
+	a. [Physiological stress, through catecholamine infusion, and neuropsychological stress, through mental stress challenge]{.red} will be applied during EPS to measure changes in electrical properties. Simultaneous measurement of critical [vagolytic neurohormones (NPY, Gal)]{.orange} will be measured at time of stressor. Hypothesis: _Catecholamine-infusion will lead to &darr;NPY and &darr;Gal, while mental stress will lead to &uarr;NPY and &uarr;Gal._
+	a. [Vagally-triggered AF]{.orange} will be identified by interview prior to EPS. Hypothesis: _In those with suspected VT-pAF, triggered firing of pulmonary veins will be seen, and AF will be reliably induced by vagolysis._
+	
+## {.smaller}
+
+3. __Evaluate role of common genetic variants in VTA.__:
+	a. We will use a candidate-gene approach to assess association of common genetic variants with the clinical and electrical phenotypes identified in __1a__ and __2a__ in [individuals undergoing EPS]{.red}. Hypothesis: _Variants in genes associated with the cardiovagal outflow (e.g. Y2R and Gal1R), will be more common in those with VT-pAF_
+	a. We will identify individuals that are classified as having [resting and stress-inducded vagal dysfunction]{.blue} (as standardized against CV death). Genetic data through [next-generation sequencing]{.green} will be obtained. Hypothesis: _We will identify novel variants that are associated with dysfunction in cardiovagal activity._
 
 # February 6, 2023
 

@@ -382,7 +382,7 @@
     "href": "t32/t32-updates.html#aflfh",
     "title": "Research-In-Progress",
     "section": "AFL/FH",
-    "text": "AFL/FH\n\nPedigrees completed (thanks to Ana and Shashank)\nDraft/outline to be re-written\nGenetic data completed (thanks to Mike)\nOverview of results"
+    "text": "AFL/FH\n\nGenetic basis for FH may be more promising than association with FH broadly, but would require additional WES to be sent\nWould need to repeat VCF analysis for an arrhythmia panel (instead of cardiomyopathy panel)"
   },
   {
     "objectID": "t32/t32-updates.html#aflgenetics",
@@ -1398,5 +1398,47 @@
     "title": "Vagolysis and Arrhythmogenesis",
     "section": "Research approach",
     "text": "Research approach\n\nIdentify within pAF if there exist VTA sub-phenotypes using population-level data:\n\nClinical comorbidities\nArrhythmia burden\nPsychosocial stressors\nIschemic and structural heart disease\nCardiomyopathy (atrial and ventricular)\n\nIdentify in individuals undergoing ablative therapy for pAF if there exist patterns that support a VTA endo-phenotype using intracardiac data:\n\nElectrophysiology properties of AF (dominant frequencies, pulmonary vein triggers, scar burden, atrial volume)\nIntracardiac biomarkers of vagolysis (both electrical and neurohormonal)\nGenetic variants that may be susceptible to abnormal cardiovagal outflow"
+  },
+  {
+    "objectID": "t32/t32-updates.html#cbcd",
+    "href": "t32/t32-updates.html#cbcd",
+    "title": "Research-In-Progress",
+    "section": "CBCD",
+    "text": "CBCD\nComputational biorepository for cardiovascular disease\n\nWill need a large computational biorepository\n\nClaims data from both CPT/ICD codes\nClinical documentation (raw text from clinical notes)\nMedication history\nStudy data e.g. XML of ECG, echo reports, coronary angiograms, device interrogations, etc\n\nCCTS to pull data, DRA to be submitted today\n\n\n\nAlso working on VA research database access, CART-CL reporting data, MVP, ARIC, and UK Biobank as additional large-scale data"
+  },
+  {
+    "objectID": "t32/t32-updates.html#hrvcvd",
+    "href": "t32/t32-updates.html#hrvcvd",
+    "title": "Research-In-Progress",
+    "section": "HRV/CVD",
+    "text": "HRV/CVD\n\n\n\nFigure 1: Increase of ~10 fold in CV mortality in 1/4 patients identified by abnormal resting and reactive vagal tone. Robust classifier of resilience.\n\n\n\n\nNon-linear relationship established by spline analysis against CV death."
+  },
+  {
+    "objectID": "t32/t32-updates.html#specific-aims",
+    "href": "t32/t32-updates.html#specific-aims",
+    "title": "Research-In-Progress",
+    "section": "Specific aims",
+    "text": "Specific aims"
+  },
+  {
+    "objectID": "t32/t32-updates.html#section",
+    "href": "t32/t32-updates.html#section",
+    "title": "Research-In-Progress",
+    "section": "",
+    "text": "Identify clinical phenotypes of vagally-triggered AF.:\n\nWe will use a computational approach to develop a pragmatic, population-level datasets to identify phenotypes of pAF using clinical covariates, including ECG, TTE, cardiac monitoring devices, and markers of psychosocial stress. Hypothesis: Low-burden groups will exist that have differences in clinical characteristics that can be used to reliably classify individuals.\nWe will assess recurrent clinical outcomes, including arrhythmia burden, conduction disease, atrial and ventricular cardiomyopathy, along with types of therapies (pharmacological/interventional). Hypothesis: The hazard distribution will vary amongst the identified clinical phenotypes. The rate of escalation of intervention will also vary based on phenotypes."
+  },
+  {
+    "objectID": "t32/t32-updates.html#section-1",
+    "href": "t32/t32-updates.html#section-1",
+    "title": "Research-In-Progress",
+    "section": "",
+    "text": "Determine the intracardiac characteristics of vagally-triggered AF.:\n\nStructural and electrical features will be obtained through EPS. The EAM and EGM data collected will be used to identify intra-procedural AF phenotypes. Hypothesis: Electrical and anatomical phenotypes will allow differentiation of re-entrant and triggered pAF.\nElectrical phenotypes of pAF will be compared with phenotypes identified in 1a. Hypothesis: The clinical phenotypes will correlate with the unique electrical phenotypes obtained during EPS.\nPhysiological stress, through catecholamine infusion, and neuropsychological stress, through mental stress challenge will be applied during EPS to measure changes in electrical properties. Simultaneous measurement of critical vagolytic neurohormones (NPY, Gal) will be measured at time of stressor. Hypothesis: Catecholamine-infusion will lead to ↓NPY and ↓Gal, while mental stress will lead to ↑NPY and ↑Gal.\nVagally-triggered AF will be identified by interview prior to EPS. Hypothesis: In those with suspected VT-pAF, triggered firing of pulmonary veins will be seen, and AF will be reliably induced by vagolysis."
+  },
+  {
+    "objectID": "t32/t32-updates.html#section-2",
+    "href": "t32/t32-updates.html#section-2",
+    "title": "Research-In-Progress",
+    "section": "",
+    "text": "Evaluate role of common genetic variants in VTA.:\n\nWe will use a candidate-gene approach to assess association of common genetic variants with the clinical and electrical phenotypes identified in 1a and 2a in individuals undergoing EPS. Hypothesis: Variants in genes associated with the cardiovagal outflow (e.g. Y2R and Gal1R), will be more common in those with VT-pAF\nWe will identify individuals that are classified as having resting and stress-inducded vagal dysfunction (as standardized against CV death). Genetic data through next-generation sequencing will be obtained. Hypothesis: We will identify novel variants that are associated with dysfunction in cardiovagal activity."
   }
 ]

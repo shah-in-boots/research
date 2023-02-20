@@ -261,7 +261,7 @@ __Summary__: Stress seems to increase risk of CV mortality, through autonomic me
 	
 ---
 
-![Resting HF and HF reactivity as additive markers of CV mortality](../figures/hf-hrv-reactivity-km-curves.png){#fig-hf-reactivity-curve.png}
+![Resting HF and HF reactivity as additive markers of CV mortality](../figures/hf-hrv-reactivity-km-quartile-curves.png){#fig-hf-reactivity-curve.png}
 	
 ## Jacksonian dissolution {.smaller}
 
