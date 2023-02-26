@@ -21,18 +21,130 @@
     "text": "Proposal\n\nMurine model of pro-atrial arrhythmia\nWhole heart + vagus nerve in Langendorf preparation\nVagal stimulation protocol for conduction property modulation\nCatecholamine infusion + NPY infusion that removes protection\nNPY Y2R blockade returns vagal protective effect"
   },
   {
-    "objectID": "grants/aha_innovative_project_2022.html#background-1",
-    "href": "grants/aha_innovative_project_2022.html#background-1",
-    "title": "AHA Innovative Project Grant",
-    "section": "Background",
-    "text": "Background\n\nCurrently use limited classification system:\n\nLone\nParoxysmal\nPersistent\nLong-standing Persistent\nPermanent\n\nDoes not capture underlying pathology, etiology, triggers, genetic components"
+    "objectID": "t32/t32-updates.html#aflfh",
+    "href": "t32/t32-updates.html#aflfh",
+    "title": "Research-In-Progress",
+    "section": "AFL/FH",
+    "text": "AFL/FH\n\nGenetic basis for FH may be more promising than association with FH broadly, but would require additional WES to be sent\nWould need to repeat VCF analysis for an arrhythmia panel (instead of cardiomyopathy panel)"
   },
   {
-    "objectID": "grants/aha_innovative_project_2022.html#proposal-1",
-    "href": "grants/aha_innovative_project_2022.html#proposal-1",
-    "title": "AHA Innovative Project Grant",
-    "section": "Proposal",
-    "text": "Proposal\nBig data:\n\nUse “big data” approach\nX-dimensionality clustering based on clincial covariates (support vector machines)\nWeight importance of clinical factors\n\nValidation:\n\nValidate with local cohorts and tie to both treatment + outcomes\nIntegration of intracardiac mapping data (voltage, geometry, volume, dominant frequency)"
+    "objectID": "t32/t32-updates.html#cbcd",
+    "href": "t32/t32-updates.html#cbcd",
+    "title": "Research-In-Progress",
+    "section": "CBCD",
+    "text": "CBCD\nComputational biorepository for cardiovascular disease\n\nWill need a large computational biorepository\n\nClaims data from both CPT/ICD codes\nClinical documentation (raw text from clinical notes)\nMedication history\nStudy data e.g. XML of ECG, echo reports, coronary angiograms, device interrogations, etc\n\nCCTS to pull data, DRA to be submitted today\n\n\n\nAlso working on VA research database access, CART-CL reporting data, MVP, ARIC, and UK Biobank as additional large-scale data"
+  },
+  {
+    "objectID": "t32/t32-updates.html#hrvcvd",
+    "href": "t32/t32-updates.html#hrvcvd",
+    "title": "Research-In-Progress",
+    "section": "HRV/CVD",
+    "text": "HRV/CVD\n\n\n\nFigure 1: Increase of ~10 fold in CV mortality in 1/4 patients identified by abnormal resting and reactive vagal tone. Robust classifier of resilience.\n\n\n\n\nNon-linear relationship established by spline analysis against CV death."
+  },
+  {
+    "objectID": "t32/t32-updates.html#specific-aims",
+    "href": "t32/t32-updates.html#specific-aims",
+    "title": "Research-In-Progress",
+    "section": "Specific aims",
+    "text": "Specific aims"
+  },
+  {
+    "objectID": "t32/t32-updates.html#section",
+    "href": "t32/t32-updates.html#section",
+    "title": "Research-In-Progress",
+    "section": "",
+    "text": "Identify clinical phenotypes of vagally-triggered AF.:\n\nWe will use a computational approach to develop a pragmatic, population-level datasets to identify phenotypes of pAF using clinical covariates, including ECG, TTE, cardiac monitoring devices, and markers of psychosocial stress. Hypothesis: Low-burden groups will exist that have differences in clinical characteristics that can be used to reliably classify individuals.\nWe will assess recurrent clinical outcomes, including arrhythmia burden, conduction disease, atrial and ventricular cardiomyopathy, along with types of therapies (pharmacological/interventional). Hypothesis: The hazard distribution will vary amongst the identified clinical phenotypes. The rate of escalation of intervention will also vary based on phenotypes."
+  },
+  {
+    "objectID": "t32/t32-updates.html#section-1",
+    "href": "t32/t32-updates.html#section-1",
+    "title": "Research-In-Progress",
+    "section": "",
+    "text": "Determine the intracardiac characteristics of vagally-triggered AF.:\n\nStructural and electrical features will be obtained through EPS. The EAM and EGM data collected will be used to identify intra-procedural AF phenotypes. Hypothesis: Electrical and anatomical phenotypes will allow differentiation of re-entrant and triggered pAF.\nElectrical phenotypes of pAF will be compared with phenotypes identified in 1a. Hypothesis: The clinical phenotypes will correlate with the unique electrical phenotypes obtained during EPS.\nPhysiological stress, through catecholamine infusion, and neuropsychological stress, through mental stress challenge will be applied during EPS to measure changes in electrical properties. Simultaneous measurement of critical vagolytic neurohormones (NPY, Gal) will be measured at time of stressor. Hypothesis: Catecholamine-infusion will lead to ↓NPY and ↓Gal, while mental stress will lead to ↑NPY and ↑Gal.\nVagally-triggered AF will be identified by interview prior to EPS. Hypothesis: In those with suspected VT-pAF, triggered firing of pulmonary veins will be seen, and AF will be reliably induced by vagolysis."
+  },
+  {
+    "objectID": "t32/t32-updates.html#section-2",
+    "href": "t32/t32-updates.html#section-2",
+    "title": "Research-In-Progress",
+    "section": "",
+    "text": "Evaluate role of common genetic variants in VTA.:\n\nWe will use a candidate-gene approach to assess association of common genetic variants with the clinical and electrical phenotypes identified in 1a and 2a in individuals undergoing EPS. Hypothesis: Variants in genes associated with the cardiovagal outflow (e.g. Y2R and Gal1R), will be more common in those with VT-pAF\nWe will identify individuals that are classified as having resting and stress-inducded vagal dysfunction (as standardized against CV death). Genetic data through next-generation sequencing will be obtained. Hypothesis: We will identify novel variants that are associated with dysfunction in cardiovagal activity."
+  },
+  {
+    "objectID": "t32/t32-updates.html#updates",
+    "href": "t32/t32-updates.html#updates",
+    "title": "Research-In-Progress",
+    "section": "Updates",
+    "text": "Updates\n\nAFL/FH: WES needed prior to completing revisions\nARIC: potential option to pursue genetic profiling in ARIC per Alvaro, need formal proposal\nK23: drafting specific aims in 1-pager format\nVCF: data able to be analyzed/cleaned, however requires more CPU to perform\n\n\n\nCurrently on inpatient service with limited time"
+  },
+  {
+    "objectID": "t32/t32-updates.html#updates-1",
+    "href": "t32/t32-updates.html#updates-1",
+    "title": "Research-In-Progress",
+    "section": "Updates",
+    "text": "Updates\n\n\nAFL/FH:\n\nPedigrees/genetics completed (thanks to Ana, Shashank, Mike)\nOutline/draft to be re-written\n\n\n\nHRV/CV Mortality paper rejected, need to re-think strategy with senior authors\nK23 aims to include 1) EP lab as translational component, 2) arrhythmia risk prediction as computational component"
+  },
+  {
+    "objectID": "t32/t32-updates.html#aflgenetics",
+    "href": "t32/t32-updates.html#aflgenetics",
+    "title": "Research-In-Progress",
+    "section": "AFL/genetics",
+    "text": "AFL/genetics\n\n~87 individuals with +FH\n~81 individuals with WES\n~18 individuals with VUS in total\n1 individual with VUS + FH"
+  },
+  {
+    "objectID": "t32/t32-updates.html#updates-2",
+    "href": "t32/t32-updates.html#updates-2",
+    "title": "Research-In-Progress",
+    "section": "Updates",
+    "text": "Updates\n\n\nAFL/FH:\n\nPedigrees TBD\nDraft completed, pending feedback\nSupplemental tables needed?\n\n\nAF/Recurrence:\n\nScott added additional patients from UIC (September 2020 to now)\nData collection pending"
+  },
+  {
+    "objectID": "t32/t32-updates.html#k23-aims",
+    "href": "t32/t32-updates.html#k23-aims",
+    "title": "Research-In-Progress",
+    "section": "K23 Aims",
+    "text": "K23 Aims\nObjective: Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms\n\nEvaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)\nUsing computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation\n\nMentorship Team: Amit J. Shah, Dawood Darbar, Rachel Lampert, Viola Vaccarino, Mark McCauley, Andrew Boyd, Alvaro Alonso"
+  },
+  {
+    "objectID": "t32/t32-updates.html#k23-approach",
+    "href": "t32/t32-updates.html#k23-approach",
+    "title": "Research-In-Progress",
+    "section": "K23 Approach",
+    "text": "K23 Approach\nVagal tone and triggered arrhythmias\n\nManuscript on stress-induced vagolysis and CV mortality under review\nANS dysfunction during/with ischemia work-in-progress\n[Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}\n\nArrhythmia phenotyping\n\nAFL/FH manuscript work-in-progress\nAF/race project work-in-progress\n[Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}"
+  },
+  {
+    "objectID": "t32/t32-updates.html#murine-model-of-vagolysis",
+    "href": "t32/t32-updates.html#murine-model-of-vagolysis",
+    "title": "Research-In-Progress",
+    "section": "Murine Model of Vagolysis",
+    "text": "Murine Model of Vagolysis\n\nAtria are heavily innervated by ANS ganglia\n\nSympathovagal balance locally mediated through adrenergic lysis of cholinergic activity\nNeuropeptide Y (NPY) causes cholinergic inhibition through Y2R\n\nPro-arrhythmic murine model (compared to healthy controls)\n\nEx-vivo vagal-sparing Langendorf preparation\nCatecholamine infusion and NPY Y2R antagonists to modulate arrhythmic state\n\nMeasure atrial conductive properties as outcome\n\nBaseline, with catecholamine infusion, VNS stimulation, and Y2R antagonism"
+  },
+  {
+    "objectID": "t32/t32-updates.html#af-catheter-ablation-and-recurrence",
+    "href": "t32/t32-updates.html#af-catheter-ablation-and-recurrence",
+    "title": "Research-In-Progress",
+    "section": "AF Catheter Ablation and Recurrence",
+    "text": "AF Catheter Ablation and Recurrence\nData/power increase:\n\nInclusion of VA data\nAdditional data pull from EPIC by Scott Uphouse (pending)\nInclusion of UIC billing code data?"
+  },
+  {
+    "objectID": "t32/t32-updates.html#atrial-flutter-and-family-history",
+    "href": "t32/t32-updates.html#atrial-flutter-and-family-history",
+    "title": "Research-In-Progress",
+    "section": "Atrial Flutter and Family History",
+    "text": "Atrial Flutter and Family History\n\n\nPedigrees:\n\nHow should these be incorporated into the manuscript?\n\n\nGenetics:\n\n305 patients that have undergone whole exome sequencing, but unclear how to match these to the AFL data\nShould we genotype the rest of the EO-AFL patients?"
+  },
+  {
+    "objectID": "t32/t32-updates.html#ecgegm-analysis",
+    "href": "t32/t32-updates.html#ecgegm-analysis",
+    "title": "Research-In-Progress",
+    "section": "ECG/EGM analysis",
+    "text": "ECG/EGM analysis"
+  },
+  {
+    "objectID": "t32/t32-updates.html#updates-3",
+    "href": "t32/t32-updates.html#updates-3",
+    "title": "Research-In-Progress",
+    "section": "Updates",
+    "text": "Updates\n\nAHA IPA: Completed draft, pending revisions\nAFL Paper: Draft to be done by Wednesday\nAF Ablation + Biorepository: Pending IRB\nStress and CVD Mortality: Submitted to Circulation, revisions Pending"
   },
   {
     "objectID": "t32/t32-updates.html#early-onset-atrial-flutter",
@@ -112,18 +224,151 @@
     "text": "AF Registry\nThe AF registry is described here. Current issues:\n\nData quality - consistency between reviewers\nMissingness - decisions on acceptable thresholds\nVariable selection - echo findings, EP studies, medications, labs, symptoms\nManagement - REDCap, shared excel sheet\nAdjudication/review - outcomes, clinical follow-up length\n\n\n\nStress Epidemiology, Arrhythmia Mechanisms, Clinical, Computational Neurocardiology"
   },
   {
-    "objectID": "f32/readme.html",
-    "href": "f32/readme.html",
-    "title": "Research",
-    "section": "",
-    "text": "F32 Grant Outline\n\nIntroduction\n\nProject Title\n\nProject Abstract\n\nProject Narrative\n\n\nBackground and Goals for Fellowship Training\n\nDoctoral Dissertation and Research Experience\nTraining Goals and Objectives\nActivities Planned Under this Award\n\nSpecific Aims\nResearch Strategy\n\nSignificance\nInnovation\nApproach\n\nRespective Contributions\nSelection of Sponsor and Institution\nTraining in the Responsible Conduct of Research\nSponsor and Co-sponsor Statements\nLetters of Support from Contributors\nDescription of Institutional Environment and Commitment to Training\nBiographical Sketch"
+    "objectID": "t32/tpipcvm-rip-seminar.html#outline",
+    "href": "t32/tpipcvm-rip-seminar.html#outline",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Outline",
+    "text": "Outline\n\n\nOverview\nStep 1: Establish relationship between ANS and cardiac physiology\nStep 2: Evaluate effect of stress on CV mortality\nStep 3: Determine clinical impact of vagal withdrawal\nStep 4: Identify a representative disease model = pAF\nResearch proposal"
   },
   {
-    "objectID": "f32/brainstorming.html",
-    "href": "f32/brainstorming.html",
-    "title": "Research",
+    "objectID": "t32/tpipcvm-rip-seminar.html#significance",
+    "href": "t32/tpipcvm-rip-seminar.html#significance",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Significance",
+    "text": "Significance\n\nKnowledge gaps:\n\nbiomarkers of response to neuromodulation therapy, including ablation\nunderstanding of regional variation in innervation affects arrhythmogenesis\ntranslation from single-cell studies to human models\n\nResearch priorities:\n\nrole of ANS signaling in emergence and maintenance of cardiac arrhythmias\ntarget modulation of ANS to attenuate electrical remodeling\npredict underlying biomarkers\nunderstand time course of ANS remodeling and neuropeptide expression\nsex/race differences in cardiac arrhythmogenesis\n\n\n\n\n1 has identified these gaps and priorities in a NHLBI-supported expert-led workshop"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#objectives",
+    "href": "t32/tpipcvm-rip-seminar.html#objectives",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Objectives",
+    "text": "Objectives\n\n\nUnderstand importance of neural regulation of cardiac physiology\nUnderstand the role of cardiovagal activity in arrhythmogenesis\nIdentify gaps in current diagnostic and treatment options\nReview a research proposal in autonomic and electrical heart disease"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#section",
+    "href": "t32/tpipcvm-rip-seminar.html#section",
+    "title": "Vagolysis and Arrhythmogenesis",
     "section": "",
-    "text": "Long term would like to end up with applied physiology lab Want to study more than individual folk Epidemiology to test for mechanisms in larger populations Professor/attending in medicine/cardiology"
+    "text": "Hypothesis: In humans with paroxysmal atrial fibrillation, during episodes of increased sympathetic outflow, inappropriate or disproportionate vagal withdrawal (vagolysis) leads to arrhythmogenesis.\n\n\n\nChanges in electrical activity precede the onset of arrhythmias\nArrhythmia onset requires both a structurally-susceptible heart and a trigger\nTriggers effect the electrical microcosm of the heart through autonomic outflows/imbalance\n\n\n\n\nThe concept of vagolysis and arrhythmogenesis will be referred to as vagal-triggered arrhythmias (VTA) hereafter."
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#section-1",
+    "href": "t32/tpipcvm-rip-seminar.html#section-1",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "",
+    "text": "Abbreviations\nDefinitions\n\n\n\n\nVTA\nvagally-triggered arrhythmia\n\n\n(p)AF\n(paroxysmal) atrial fibrillation\n\n\nAAD\nanti-arrhythmic drugs\n\n\nANS/SNS/PNS\nautonomic/sympathetic/parasympathetic nervous sytem\n\n\nGP\nganglionated plexi\n\n\nNPY, Gal\nneuropeptide Y, galanin\n\n\nHF, LF HRV\nhigh & low frequency heart rate variability\n\n\nEPS, EAM\nelectrophysiology study, electro-anatomical mapping\n\n\nLA, RA, LV, RV\nleft/right atrium/ventricle\n\n\nCAD, MI\ncoronary artery disease, myocardial ischemia/infarction\n\n\nVNS\nvagal nerve stimulation"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#neurocardiac-axis",
+    "href": "t32/tpipcvm-rip-seminar.html#neurocardiac-axis",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Neurocardiac axis",
+    "text": "Neurocardiac axis\n\nNeurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels2\n\nCortex ↔︎ brainstem\nSpinal cord ↔︎ extracardiac ganglia (e.g. stellate)\nIntrinsic cardiac nervous system (ICNS) ↔︎ heart\n\nAutonomic regulation is critical in the development of most CV disease\n\nDisregulated catecholamines in heart failure\nPost myocardial infarct VF\nTriggered arrhythmias such as VT"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#assessment-of-the-ans",
+    "href": "t32/tpipcvm-rip-seminar.html#assessment-of-the-ans",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Assessment of the ANS",
+    "text": "Assessment of the ANS\n\nSympathogal balance integrate at the heart, as seen in Figure 1\nHRV serves a surrogate for autonomic function\nVariability occurs due to sympathovagal balance at level of sinoatrial node\nSympathetic outflow and vagal outflow occur at difference speeds allowing some level of differentiation"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#autonomic-function-and-coronary-physiology",
+    "href": "t32/tpipcvm-rip-seminar.html#autonomic-function-and-coronary-physiology",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Autonomic function and coronary physiology",
+    "text": "Autonomic function and coronary physiology\nA study in veteran twins:\n\nEvaluated 24-hour HRV in controlled setting/scheduled\nEvaluated quantitative myocardial perfusion imaging\nCompared circadian patterns of HRV with coronary flow reserves\n\n\n\nHRV can be processed through open-source software5"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#how-do-we-perturb-the-ans",
+    "href": "t32/tpipcvm-rip-seminar.html#how-do-we-perturb-the-ans",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "How do we perturb the ANS?",
+    "text": "How do we perturb the ANS?\n\n\nChronic mental stress\n\nDepression & anxiety disorders relate to CVD\nInflammatory mechanisms9,10\nAutonomic mechanisms11–14\n\n\nAcute mental stress\n\nAssociated with many changes to cardiac physiology15\nPeripheral vasoconstriction,16,17\nCoronary vasomotion18\nMental stress-induced myocardial ischemia19, as seen in Figure 7"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#critical-role-of-the-vagus",
+    "href": "t32/tpipcvm-rip-seminar.html#critical-role-of-the-vagus",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Critical role of the vagus",
+    "text": "Critical role of the vagus\n\nEmbryologically, vagus nerve sprouts from medulla and extends to distant organs (thus long pre-ganglionic axons) e.g. heart, lung, intestines\nParasympathetic control is evolutionarily more primitive in vertebrates, pre-dating sympathetic control\n\nSharks exhibit phasic HRV without sympathetic innervation23\nMammalian vagal control is more complex, with multiple nuclei, e.g. polyvagal24\n\nMammalian vagal outflow is particularly coupled with cardiorespiratory control\n\nLeads to respiratory sinus arrhythmia\nRespiratory changes occur at a high-frequency, can be measured by HRV"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#vagal-therapeutic-interventions",
+    "href": "t32/tpipcvm-rip-seminar.html#vagal-therapeutic-interventions",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Vagal therapeutic interventions",
+    "text": "Vagal therapeutic interventions\n\nChronic VNS reduces drop in ejection fraction in different animal models of cardiomyopathy, including MI, but studies have mixed results in humans\n\nNECTAR-HF ~ VNS or sham, no difference at 6 months in LV size/function, n = 96\nINOVATE-HF ~ right VNS + GDMT vs. GDMT, no difference in mortality, n = 700\nANTHEM-HF ~ non-randomized VNS, improved LV function, pilot study (required titrated VNS to cause decrease in HR)\n\nVNS may be anti-arrhythmic in animal models, with decreased VT/VF, but minimal human studies\n\nGANGLIA-AF, paroxysmal AF randomized to PVI or atrial GP ablation, decreased AAD dosages in GP group, n = 102"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#jacksonian-dissolution",
+    "href": "t32/tpipcvm-rip-seminar.html#jacksonian-dissolution",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Jacksonian dissolution",
+    "text": "Jacksonian dissolution\nJacksonian dissolution is the concept that older, more primitive systems will take over when more evolved systems break down. Polyvagal theory (theorized by Porges)25 posits there are two branches of the vagus nerve\n\nReptilian vagus: primitive, unmyelinated, controlled by the dorssal motor nucleus\nMammalian vagus: evolved, myelinated, controlled by teh nucleus ambiguus\n\nThis may explain the additive effect of reduced resting HF HRV and reduced HF HRV reactivity"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#sympathovagal-crosstalk",
+    "href": "t32/tpipcvm-rip-seminar.html#sympathovagal-crosstalk",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Sympathovagal crosstalk",
+    "text": "Sympathovagal crosstalk\n\nArrhythmia thresholds affected by sympathetic and vagal activity\nIntracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties2,26\nSympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#molecular-mechanisms",
+    "href": "t32/tpipcvm-rip-seminar.html#molecular-mechanisms",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Molecular mechanisms",
+    "text": "Molecular mechanisms\n\nSympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium\nNPY and galanin is also released, which both inhibit cholinergic activity27,28\nBoth inhibit firing and leading to vagolytic effects on the myocardium29,30\n\nGalanin released as a adrenergic co-transmitter, binding to GalR1 receptors\nNPY binds to cholinergic neurons through the Y2 receptor\nBoth directly/indirectly involve protein kinase C\n\nNPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)31"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#genetic-variants",
+    "href": "t32/tpipcvm-rip-seminar.html#genetic-variants",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Genetic variants",
+    "text": "Genetic variants\n\n\n\nVariant\nDescription\n\n\n\n\nrs16147\nNPY promoter region\n\n\nrs10842383\nLINC00477, HF HRV\n\n\nrs236349\nPPIL1, RMSSD\n\n\nrs4262\nGNG11, SDNN\n\n\nrs7980799\nSYT10, respiratory sinus arrhythmia\n\n\nrs12974991\nNDUFA11, HF HRV"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#inadequate-classification",
+    "href": "t32/tpipcvm-rip-seminar.html#inadequate-classification",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Inadequate classification",
+    "text": "Inadequate classification\n\npAF has been separated into coarse, non-physiological groups (paroxysmal, persistent, permanent)\nDiagnostic and treatment strategies are overally-generalized, and do not identify or target sub-phenotypes or endo-phenotypes that may exist\n\ne.g. vagally-mediated AF responds well to disopyramide\n\nAttempts to re-classify/cluster AF have been performed,[Watanabe2021?; Vitolo2021;Pastori2020?] and generally suggest 4 broad categories:\n\nYoung, low risk\nHigh CV risk factors\nHigh comorbid CV disease\nHigh comorbid non-CV disease\n\n\nHowever, these categories are skewed, with the younger, low-risk group being >50% of the samples."
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#paf-as-a-model-for-vta",
+    "href": "t32/tpipcvm-rip-seminar.html#paf-as-a-model-for-vta",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "pAF as a model for VTA",
+    "text": "pAF as a model for VTA\n\npAF is both ubiquitous and poorly-classified\nMechanism-driven therapies may exist for sub-phenotypes and endo-phenotypes\nAutonomic triggers associated with atrial arrhythmias\nFunctional/anatomical relationship between atria and GP exist\nElectrophysiology studies are readily avaiable, with rich electrical signal data, for analysis in humans\nGenetic variants lead to cardiomyocyte changes that predispose to AF, but there are also variants that affect cardiovagal outflow"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#research-approach",
+    "href": "t32/tpipcvm-rip-seminar.html#research-approach",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Research approach",
+    "text": "Research approach\n\nIdentify within pAF if there exist VTA sub-phenotypes using population-level data:\n\nClinical comorbidities\nArrhythmia burden\nPsychosocial stressors\nIschemic and structural heart disease\nCardiomyopathy (atrial and ventricular)\n\nIdentify in individuals undergoing ablative therapy for pAF if there exist patterns that support a VTA endo-phenotype using intracardiac data:\n\nElectrophysiology properties of AF (dominant frequencies, pulmonary vein triggers, scar burden, atrial volume)\nIntracardiac biomarkers of vagolysis (both electrical and neurohormonal)\nGenetic variants that may be susceptible to abnormal cardiovagal outflow"
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#aim-1-clinical",
+    "href": "t32/tpipcvm-rip-seminar.html#aim-1-clinical",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Aim #1: Clinical",
+    "text": "Aim #1: Clinical\n\nIdentify clinical phenotypes of vagally-triggered AF. Clinical, intracardiac, and genetic factors will contribute to clinically-relevant phenotypes of AF.\n\nWe will develop a pragmatic, population-level dataset to abstract clinical risk factors, ECG, and echocardiography features and therapy responses. Using unsupervised learning models, AF will be classified into seperate clusters.\nThe clinical relevance of AF phenotypes will be assessed through relevant outcomes (adverse events, disease burden/progression). AF clusters identified in 1a will have distinct hazard distributions estimated through survival analysis."
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#aim-2-translational",
+    "href": "t32/tpipcvm-rip-seminar.html#aim-2-translational",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "Aim #2: Translational",
+    "text": "Aim #2: Translational\n\nDetermine the intracardiac characteristics of vagally-triggered AF. Structural and electrical features assessed through EPS will identify separate clinically-relevant phenotypes of AF.\n\nWe will collect electroanatomical mapping data and electrogram recordings during PVI of paroxysmal AF. Using signal processing and feature reduction, we will identify clusters of structural and electrical AF that correlate with those identified in 1a.\nWe will apply physiological stress through catecholamine infusion, respectively. Catecholamine infusion will lead to ↑NE, ↑NPY, ↑Gal expression while mental stress will lead to ↑NE, ↑NPY, ↑Gal expression\nIn those with suspected vagally-triggered AF, there will be an increased risk of Y2R and Gal1R receptor polymorphisms.\nWe will perform whole exome sequencing on a subset of patients from each cluster defined in 1a. Selected \\(\\alpha\\) and \\(\\beta\\) adrenergic receptors and cholinergic receptor polymorphisms will be associated with individual AF clusters and clinical outcomes."
+  },
+  {
+    "objectID": "t32/tpipcvm-rip-seminar.html#references",
+    "href": "t32/tpipcvm-rip-seminar.html#references",
+    "title": "Vagolysis and Arrhythmogenesis",
+    "section": "References",
+    "text": "References\n\n\n1. Mehra R, Tjurmina OA, Ajijola OA, Arora R, Bolser DC, Chapleau MW, et al. Research opportunities in autonomic neural mechanisms of cardiopulmonary regulation: A report from the national heart, lung, and blood institute and the national institutes of health office of the director workshop. JACC: Basic to Translational Science 2022;7:265–293. doi:10.1016/j.jacbts.2021.11.003.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Shivkumar K, Ajijola OA, Anand I, Armour JA, Chen PS, Esler M, et al. Clinical neurocardiology defining the value of neuroscience-based cardiovascular therapeutics. Journal of Physiology 2016;594:3911–3954. doi:10.1113/JP271870.\n\n\n4. S. A, D. G, A. U, D. S, C. B, R. C. Power spectrum analysis of heart rate fluctuation: A quantitative probe of beat-to-beat cardiovascular control. vol. 213. 1981.\n\n\n5. Vest AN, Poian GD, Li Q, Liu C, Nemati S, Shah AJ, et al. An open source benchmarked toolbox for cardiovascular waveform and interval analysis. Physiological Measurement 2018;39:105004. doi:10.1088/1361-6579/aae021.\n\n\n6. Shah AS, Shah AJ, Lampert R, Goldberg J, Bremner JD, Li L, et al. Alterations in heart rate variability are associated with abnormal myocardial perfusion. International Journal of Cardiology 2020;305:99–105. doi:10.1016/j.ijcard.2020.01.069.\n\n\n7. Portaluppi F, Tiseo R, Smolensky MH, Hermida RC, Ayala DE, Fabbian F. Circadian rhythms and cardiovascular health. Sleep Medicine Reviews 2012;16:151–166. doi:10.1016/j.smrv.2011.04.003.\n\n\n8. Buono MGD, Montone RA, Camilli M, Carbone S, Narula J, Lavie CJ, et al. Coronary microvascular dysfunction across the spectrum of cardiovascular diseases: JACC state-of-the-art review. Journal of the American College of Cardiology 2021;78:1352–1371. doi:10.1016/j.jacc.2021.07.042.\n\n\n9. Hammadah M, Sullivan S, Pearce B, Mheid IA, Wilmot K, Ramadan R, et al. Inflammatory response to mental stress and mental stress induced myocardial ischemia. Brain, Behavior, and Immunity 2018;68:90–97. doi:10.1016/j.bbi.2017.10.004.\n\n\n10. Pollitt RA, Kaufman JS, Rose KM, Diez-Roux AV, Zeng D, Heiss G. Cumulative life course and adult socioeconomic status and markers of inflammation in adulthood. Journal of Epidemiology and Community Health 2008;62:484–491. doi:10.1136/jech.2006.054106.\n\n\n11. Carney RM, Freedland KE, Veith RC. Depression, the autonomic nervous system, and coronary heart disease. Psychosomatic Medicine 2005;67:S29–S33. doi:10.1097/01.psy.0000162254.61556.d5.\n\n\n12. Huang M, Shah A, Su S, Goldberg J, Lampert RJ, Levantsevych OM, et al. Association of depressive symptoms and heart rate variability in vietnam war–era twins. JAMA Psychiatry 2018;75:705. doi:10.1001/jamapsychiatry.2018.0747.\n\n\n13. Penninx BWJH. Depression and cardiovascular disease: Epidemiological evidence on their linking mechanisms. Neuroscience and Biobehavioral Reviews 2017;74:277–286. doi:10.1016/j.neubiorev.2016.07.003.\n\n\n14. Smolderen KG, Buchanan DM, Gosch K, Whooley M, Chan PS, Vaccarino V, et al. Depression treatment and 1-year mortality after acute myocardial infarction: Insights from the TRIUMPH registry (translational research investigating underlying disparities in acute myocardial infarction patients’ health status). Circulation 2017;135:1681–1689. doi:10.1161/CIRCULATIONAHA.116.025140.\n\n\n15. Strike PC, Steptoe A. Systematic review of mental stress-induced myocardial ischaemia. European Heart Journal 2003;24:690–703. doi:10.1016/S0195-668X(02)00615-2.\n\n\n16. Kim JH, Almuwaqqat Z, Hammadah M, Liu C, Ko YA, Lima B, et al. Peripheral vasoconstriction during mental stress and adverse cardiovascular outcomes in patients with coronary artery disease. Circulation Research 2019;125:874–883. doi:10.1161/CIRCRESAHA.119.315005.\n\n\n17. Lima BB, Hammadah M, Kim JH, Uphoff I, Shah A, Levantsevych O, et al. Association of transient endothelial dysfunction induced by mental stress with major adverse cardiovascular events in men and women with coronary artery disease. JAMA Cardiology 2019;4:988–996. doi:10.1001/jamacardio.2019.3252.\n\n\n18. Hammadah M, Kim JH, Mheid IA, Tahhan AS, Wilmot K, Ramadan R, et al. Coronary and peripheral vasomotor responses to mental stress. Journal of the American Heart Association 2018;7. doi:10.1161/JAHA.118.008532.\n\n\n19. Vaccarino V, Almuwaqqat Z, Kim JH, Hammadah M, Shah AJA, Ko YA, et al. Association of mental stress-induced myocardial ischemia with cardiovascular events in patients with coronary heart disease. JAMA - Journal of the American Medical Association 2021;326:1818–1828. doi:10.1001/jama.2021.17649.\n\n\n20. Taggart P, Boyett MR, Logantha SJRJ, Lambiase PD. Anger, emotion, and arrhythmias: From brain to heart. Frontiers in Physiology 2011;2 OCT. doi:10.3389/fphys.2011.00067.\n\n\n21. Shah AS, Alonso A, Whitsel EA, Soliman EZ, Vaccarino V, Shah AJ. Association of psychosocial factors with short‐term resting heart rate variability: The atherosclerosis risk in communities study. Journal of the American Heart Association 2021;10:e017172. doi:10.1161/JAHA.120.017172.\n\n\n22. Rovere MTL, Bigger JT, Marcus FI, Mortara A, Schwartz PJ. Baroreflex sensitivity and heart-rate variability in prediction of total cardiac mortality after myocardial infarction. Lancet 1998;351:478–484. doi:10.1016/S0140-6736(97)11144-8.\n\n\n23. Taylor EW, Wang T, Leite CAC. An overview of the phylogeny of cardiorespiratory control in vertebrates with some reflections on the “polyvagal theory.” Biological Psychology 2022;172. doi:10.1016/j.biopsycho.2022.108382.\n\n\n24. Porges SW. The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system. Cleveland Clinic Journal of Medicine 2009;76:S86. doi:10.3949/ccjm.76.s2.17.\n\n\n25. Porges SW. The polyvagal perspective. Biological Psychology 2007;74:116–143. doi:10.1016/j.biopsycho.2006.06.009.\n\n\n26. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n27. Herring N. Autonomic control of the heart: Going beyond the classical neurotransmitters. Experimental Physiology 2015;100:354–358. doi:10.1113/expphysiol.2014.080184.\n\n\n28. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n29. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n30. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n31. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n32. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
   },
   {
     "objectID": "f32/brainstorming.html#r-series",
@@ -144,182 +389,14 @@
     "href": "f32/brainstorming.html#f-grant",
     "title": "Research",
     "section": "F grant",
-    "text": "F grant\nNeed tangible/incremental specific aims Don’t make it too “big”, - incorporating projects with MSNA may be overwhelming Needs to be with an R01-funded mentor\n\nBrainstorming\n\nmeasure alternative ECG markers and compare with MSNA data\nuse machine learning algorithm to compare ECG data with gold standard of MSNA data… feature identification\nGEH maybe helpful, more as an acute marker than as a chronic marker\ncompare mental stress to ECG and MSNA data?\nstress reactivity index of some kind\nocclusion plethysmography as surrogate SNS tone\n\n\n\nWhat is the story of the F32?\nHave 2 years of funding Work with EPICORE group But also dabble in applied physiology and computational bioinformatics Goal is to be academic cardiologist studying autonomic dysfunction Detecting non-invasive surrogates for worse outcomes / autonomic risk\n\n\nSpecific Aims\n\nBackground\nPsychological stress is bad. Likely due to changes in sympathovagal balance Vagal withdrawal increases risk High sympathetic tone increases risk ANS function can be quantified in several ways Invasive/extensive MSNA Reactive hyperemia Venous adrenergic Non-invasive ECG morphology (T wave area, Time-independent HRV (e.g. geometric, PSA) Time-dependent HRV (e.g. HRT, Dyx) Quantification of ANS tone Identifying ANS tone can identify at-risk individuals Can also test if treatment/interventions are successful Importance Few studies look at MSNA and ECG findings in real-time?\n\n\nHypothesis\n\ndisturbances of neurocardiac axis lead to ANS dysfunction\nquantified measures of ANS tone will reflect brain and heart metrics\nECG measures reflect this (PEP, T wave repolarization, HRV)\n\n\n\nAims\nDetermine relationship between MSNA and ECG findings during mental stress. P-wave morphology GEH TWA Measure correlation of MSNA with other non-invasive measures of autonomic tone SKNA VOP ML to detect ECG features that associate with MSNA\nECG data and cardiac catherization Have already enrolled ~ 200 patients Will have up to 2 years of data follow-up and outcomes Refine feature analysis and algorithm to detect CAD Add retrospective data on prior stress test (heavy chart review) Add machine learning or digital signal processing coursework MSNA and ECG clinical outcomes MSNA data has been collected with Jeanie Park"
+    "text": "F grant\nNeed tangible/incremental specific aims Don’t make it too “big”, - incorporating projects with MSNA may be overwhelming Needs to be with an R01-funded mentor\nBrainstorming\n\nmeasure alternative ECG markers and compare with MSNA data\nuse machine learning algorithm to compare ECG data with gold standard of MSNA data… feature identification\nGEH maybe helpful, more as an acute marker than as a chronic marker\ncompare mental stress to ECG and MSNA data?\nstress reactivity index of some kind\nocclusion plethysmography as surrogate SNS tone\n\nWhat is the story of the F32?\nHave 2 years of funding Work with EPICORE group But also dabble in applied physiology and computational bioinformatics Goal is to be academic cardiologist studying autonomic dysfunction Detecting non-invasive surrogates for worse outcomes / autonomic risk\nSpecific Aims\nBackground\nPsychological stress is bad. Likely due to changes in sympathovagal balance Vagal withdrawal increases risk High sympathetic tone increases risk ANS function can be quantified in several ways Invasive/extensive MSNA Reactive hyperemia Venous adrenergic Non-invasive ECG morphology (T wave area, Time-independent HRV (e.g. geometric, PSA) Time-dependent HRV (e.g. HRT, Dyx) Quantification of ANS tone Identifying ANS tone can identify at-risk individuals Can also test if treatment/interventions are successful Importance Few studies look at MSNA and ECG findings in real-time?\nHypothesis\n\ndisturbances of neurocardiac axis lead to ANS dysfunction\nquantified measures of ANS tone will reflect brain and heart metrics\nECG measures reflect this (PEP, T wave repolarization, HRV)\n\nAims\nDetermine relationship between MSNA and ECG findings during mental stress. P-wave morphology GEH TWA Measure correlation of MSNA with other non-invasive measures of autonomic tone SKNA VOP ML to detect ECG features that associate with MSNA\nECG data and cardiac catherization Have already enrolled ~ 200 patients Will have up to 2 years of data follow-up and outcomes Refine feature analysis and algorithm to detect CAD Add retrospective data on prior stress test (heavy chart review) Add machine learning or digital signal processing coursework MSNA and ECG clinical outcomes MSNA data has been collected with Jeanie Park"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Research Efforts",
     "section": "",
-    "text": "Douglas Zipes asked the question “Why did he die on Tuesday and not on Monday?” In the 50 years since the advent of the coronary care unit,Lown1968? we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.1,Hayashi2015?. The problem can be broken down into two components: 1) a substrate and 2) a trigger. My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. My computational approach parallels these topics by combining biostatistics and digital signal processing.\nThis serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Saturday, January 21, 2023. Please see here for weekly updates.\nGEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography\nTechnical research skills:"
-  },
-  {
-    "objectID": "index.html#atrial-fibrillation",
-    "href": "index.html#atrial-fibrillation",
-    "title": "Summary of Research Efforts",
-    "section": "Atrial Fibrillation",
-    "text": "Atrial Fibrillation\n\nA catheter-ablation registry is being developed. The current status of the data acquisition process can be seen here. No clinical data is available externally.\nAHA Innovative Projects 2022 including atrial arrhythmia modulatio with NPY and atrial fibrillation phenotyping"
-  },
-  {
-    "objectID": "t32/t32-updates.html#updates",
-    "href": "t32/t32-updates.html#updates",
-    "title": "Research-In-Progress",
-    "section": "Updates",
-    "text": "Updates\n\nAFL/FH: WES needed prior to completing revisions\nARIC: potential option to pursue genetic profiling in ARIC per Alvaro, need formal proposal\nK23: drafting specific aims in 1-pager format\nVCF: data able to be analyzed/cleaned, however requires more CPU to perform\n\n\n\nCurrently on inpatient service with limited time"
-  },
-  {
-    "objectID": "t32/t32-updates.html#aha-ipa",
-    "href": "t32/t32-updates.html#aha-ipa",
-    "title": "Research-In-Progress",
-    "section": "AHA IPA",
-    "text": "AHA IPA\n\nAtrial fibrillation (AF) remains the most common arrhythmia worldwide, afflicting over 1% of the population, but there is poor understanding of how the arrhythmia is triggered and maintained. Dilated atria are heavily coincident in AF not only in humans but across land mammals, such as the 2-3% burden seen in equine species. Growing evidence supports the role of the autonomic nervous system (ANS) in AF however, such as the sympathovagal imbalance prior to onset or protective effects of vagal tone in diving mammals. Establishing the important, pathological contribution of local vagolysis changes how we view the interplay of the sympathetic and parasympathetic nervous systems, and allows us to take a novel direction in the management of an incredibly burdensome disease.\nThe atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties. The key mechanism that we will explore is the intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons. Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY). NPY binds to cholinergic neurons through the Y2R receptor, inhibiting firing and leading to vagolytic effects on the myocardium.\nWe propose that triggered AF occurs due to vagolysis in the setting of increased sympathetic activity. We hypothesize that 1) vagal stimulation protects against AF in pro-arrhythmic murine models, and 2) blockade of vagolysis through Y2R antagonism under increased sympathetic activity protects from AF and creates improve myocardial conductive properties. We will utilize ex-vivo, whole heart explants in vagal-sparing Langendorf preparations in an established murine model of AF. Vagal nerve stimulation protocols and catecholamine infusion will mimick local autonomic activity. We will measure atrial conductive properties (phase slope changes, after depolarizations, ectopy) at baseline, with infusion of NPY, and with Y2R antagonists. If, as we hypothesize, vagolysis leads to triggered AF, and NPY blockade rescues the arrhythmia burden, we will have established an innovative, causal mechanism in the pathogenesis of AF.\nOur lab is uniquely suited to explore these questions, as a leading center of murine and induced pluripotent stem cell models of atrial arrhythmias. We have demonstrated competence in patch clamping and measurement of cardiac tissue conductive properties through Langendorf preparations, and are able to leverage our extensive electrophysiological expertise with both basic and clinical scientists. Not only does this proposal explore the novel contribution of vagolysis in arrhythmogenesis, it identifies a pharmacological target for potential interventions."
-  },
-  {
-    "objectID": "t32/t32-updates.html#af-catheter-ablation-and-recurrence",
-    "href": "t32/t32-updates.html#af-catheter-ablation-and-recurrence",
-    "title": "Research-In-Progress",
-    "section": "AF Catheter Ablation and Recurrence",
-    "text": "AF Catheter Ablation and Recurrence\nData/power increase:\n\nInclusion of VA data\nAdditional data pull from EPIC by Scott Uphouse (pending)\nInclusion of UIC billing code data?"
-  },
-  {
-    "objectID": "t32/t32-updates.html#atrial-flutter-and-family-history",
-    "href": "t32/t32-updates.html#atrial-flutter-and-family-history",
-    "title": "Research-In-Progress",
-    "section": "Atrial Flutter and Family History",
-    "text": "Atrial Flutter and Family History\n\n\nPedigrees:\n\nHow should these be incorporated into the manuscript?\n\n\nGenetics:\n\n305 patients that have undergone whole exome sequencing, but unclear how to match these to the AFL data\nShould we genotype the rest of the EO-AFL patients?"
-  },
-  {
-    "objectID": "t32/t32-updates.html#ecgegm-analysis",
-    "href": "t32/t32-updates.html#ecgegm-analysis",
-    "title": "Research-In-Progress",
-    "section": "ECG/EGM analysis",
-    "text": "ECG/EGM analysis"
-  },
-  {
-    "objectID": "t32/t32-updates.html#k23-aims",
-    "href": "t32/t32-updates.html#k23-aims",
-    "title": "Research-In-Progress",
-    "section": "K23 Aims",
-    "text": "K23 Aims\nObjective: Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms\n\nEvaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)\nUsing computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation\n\nMentorship Team: Amit J. Shah, Dawood Darbar, Rachel Lampert, Viola Vaccarino, Mark McCauley, Andrew Boyd, Alvaro Alonso"
-  },
-  {
-    "objectID": "t32/t32-updates.html#murine-model-of-vagolysis",
-    "href": "t32/t32-updates.html#murine-model-of-vagolysis",
-    "title": "Research-In-Progress",
-    "section": "Murine Model of Vagolysis",
-    "text": "Murine Model of Vagolysis\n\nAtria are heavily innervated by ANS ganglia\n\nSympathovagal balance locally mediated through adrenergic lysis of cholinergic activity\nNeuropeptide Y (NPY) causes cholinergic inhibition through Y2R\n\nPro-arrhythmic murine model (compared to healthy controls)\n\nEx-vivo vagal-sparing Langendorf preparation\nCatecholamine infusion and NPY Y2R antagonists to modulate arrhythmic state\n\nMeasure atrial conductive properties as outcome\n\nBaseline, with catecholamine infusion, VNS stimulation, and Y2R antagonism"
-  },
-  {
-    "objectID": "t32/t32-updates.html#k23-approach",
-    "href": "t32/t32-updates.html#k23-approach",
-    "title": "Research-In-Progress",
-    "section": "K23 Approach",
-    "text": "K23 Approach\nVagal tone and triggered arrhythmias\n\nManuscript on stress-induced vagolysis and CV mortality under review\nANS dysfunction during/with ischemia work-in-progress\n[Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}\n\nArrhythmia phenotyping\n\nAFL/FH manuscript work-in-progress\nAF/race project work-in-progress\n[Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}"
-  },
-  {
-    "objectID": "t32/t32-updates.html#updates-1",
-    "href": "t32/t32-updates.html#updates-1",
-    "title": "Research-In-Progress",
-    "section": "Updates",
-    "text": "Updates\n\n\nAFL/FH:\n\nPedigrees/genetics completed (thanks to Ana, Shashank, Mike)\nOutline/draft to be re-written\n\n\n\nHRV/CV Mortality paper rejected, need to re-think strategy with senior authors\nK23 aims to include 1) EP lab as translational component, 2) arrhythmia risk prediction as computational component"
-  },
-  {
-    "objectID": "t32/aims.html#k23-overview",
-    "href": "t32/aims.html#k23-overview",
-    "title": "Research Aims",
-    "section": "K23 Overview",
-    "text": "K23 Overview\nObjective: Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms\n\n\nVagolysis and Triggered Arrhythmias\n\nEvaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)\n[Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}\n\n\nArrhythmia Phenotypes\n\nUsing computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation\n[Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}"
-  },
-  {
-    "objectID": "t32/aims.html#murine-model-of-vagolysis",
-    "href": "t32/aims.html#murine-model-of-vagolysis",
-    "title": "Research Aims",
-    "section": "Murine Model of Vagolysis",
-    "text": "Murine Model of Vagolysis\n\nAtria are heavily innervated by ANS ganglia\n\nSympathovagal balance locally mediated through adrenergic lysis of cholinergic activity\nNeuropeptide Y (NPY) causes cholinergic inhibition through Y2R\n\nPro-arrhythmic murine model (compared to healthy controls)\n\nEx-vivo vagal-sparing Langendorf preparation\nCatecholamine infusion and NPY Y2R antagonists to modulate arrhythmic state\n\nMeasure atrial conductive properties as outcome\n\nBaseline, with catecholamine infusion, VNS stimulation, and Y2R antagonism"
-  },
-  {
-    "objectID": "t32/aims.html#mentorship-committee",
-    "href": "t32/aims.html#mentorship-committee",
-    "title": "Research Aims",
-    "section": "Mentorship Committee",
-    "text": "Mentorship Committee\n\n\n\n\n\n\n\nMentor\nAttributes\n\n\n\n\nAmit J. Shah, MD, MS (Cardiologist)\nstress epidemiology, autonomic dysfunction\n\n\nDawood Darbar, MBCHB, MD (Electrophysiologist)\natrial arrhythmias, genetics\n\n\nMark McCauley, MD, PHD (Electrophysiologist)\natrial arrhythmias, basic/translational science\n\n\nAlvaro Alonso, MD, PHD (Epidemiologist)\natrial fibrillation epidemiology, ARIC investigator\n\n\nViola Vaccarino, MD, PHD (Epidemiologist)\nstress epidemiology\n\n\nJalees Rehman, MD (Cardiologist)\ncomputational biology\n\n\nRachel Lampert, MD (Electrophysiologist)\nautonomic dysfunction, sudden cardiac death\n\n\nAndrew Boyd, MD (Clinical Bioinformatics)\nbiomedical informatics"
-  },
-  {
-    "objectID": "t32/aims.html#background",
-    "href": "t32/aims.html#background",
-    "title": "Research Aims",
-    "section": "Background",
-    "text": "Background\n\nIntracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties1,2\nSympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis"
-  },
-  {
-    "objectID": "t32/aims.html#objectives",
-    "href": "t32/aims.html#objectives",
-    "title": "Research Aims",
-    "section": "Objectives",
-    "text": "Objectives\nClinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms\n\n\nVagolysis and Triggered Arrhythmias\n\nEvaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)\nCreate murine/translational model for vagolysis and triggered arrhythmias\n\n\nArrhythmia Phenotypes\n\nUsing computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation\nClassification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)"
-  },
-  {
-    "objectID": "t32/aims.html#background-1",
-    "href": "t32/aims.html#background-1",
-    "title": "Research Aims",
-    "section": "Background",
-    "text": "Background\n\nIntracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties1,8\nSympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis"
-  },
-  {
-    "objectID": "t32/aims.html#background-2",
-    "href": "t32/aims.html#background-2",
-    "title": "Research Aims",
-    "section": "Background",
-    "text": "Background\n\nResearch work has started to evaluate clusters of AF phenotypes using small computational models\nTriggered forms of arrhythmias, such as pulmonary vein triggers of atrial fibrillation, have different physiological and epidemiological characteristics forming unique phenotypes.\nVagal AF is likely a triggered subtype"
-  },
-  {
-    "objectID": "t32/aims.html#section",
-    "href": "t32/aims.html#section",
-    "title": "Research Aims",
-    "section": "",
-    "text": "1. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n2. Shivkumar K, Ajijola OA, Anand I, Armour JA, Chen PS, Esler M, et al. Clinical neurocardiology defining the value of neuroscience-based cardiovascular therapeutics. Journal of Physiology 2016;594:3911–3954. doi:10.1113/JP271870.\n\n\n3. Porges SW. The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system. Cleveland Clinic Journal of Medicine 2009;76:S86. doi:10.3949/ccjm.76.s2.17.\n\n\n4. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n5. Herring N. Autonomic control of the heart: Going beyond the classical neurotransmitters. Experimental Physiology 2015;100:354–358. doi:10.1113/expphysiol.2014.080184.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n8. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n9. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n10. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519.\n\n\n11. Chang H-A, Fang W-H, Chang T-C, Huang S-Y, Chang C-C. Association of neuropeptide y promoter polymorphism (rs16147) with perceived stress and cardiac vagal outflow in humans. Scientific Reports 2016;6:31683. doi:10.1038/srep31683."
-  },
-  {
-    "objectID": "t32/aims.html#methods",
-    "href": "t32/aims.html#methods",
-    "title": "Research Aims",
-    "section": "Methods",
-    "text": "Methods\n\n\nElectrophysiology Study\n\nBaseline and post-procedural atrial conduction properties\nCoronary sinus + circulating blood samples (including DNA)\nSurface + intracardiac mapping and electrophysiological signal\nVagal nerve stimulation\n\n\nBig Data\n\nCohort generated from population-level data (UIC/CCTS, ARIC, MVP/VAMC)\nComputational model to classify AF based on clinical + cardiac imaging features\nWhole exome sequencing of DNA in pAF patients to identify autonomic variants\nExtraction of intracardiac features from EPS (volume, scar, voltage, etc…)\n\n\n\n\n\nUIC = University of Illinois at Chicago; CCTS = Center for Translational Research; ARIC = Atherosclerotic Risk in Communities;"
-  },
-  {
-    "objectID": "t32/aims.html#explore-the-role-of-vagolysis-in-triggered-arrhythmias.",
-    "href": "t32/aims.html#explore-the-role-of-vagolysis-in-triggered-arrhythmias.",
-    "title": "Research Aims",
-    "section": "Explore the role of vagolysis in triggered arrhythmias.",
-    "text": "Explore the role of vagolysis in triggered arrhythmias.\nIn a murine model of arrhythmia, we will measure myocardial conduction properties (phase slope changes, after-depolarizations, ectopy, velocity) with and without adrenergic stimulation, NPY infusion, VNS, and Y2R antagonism.\n\nIn the setting of catecholamine infusion, additional NPY infusion will cause a decrease in arrhythmia threshold\nIn the setting of catecholamine infusion, VNS will cause an increase in arrhythmia threshold"
-  },
-  {
-    "objectID": "t32/aims.html#section-1",
-    "href": "t32/aims.html#section-1",
-    "title": "Research Aims",
-    "section": "",
-    "text": "1. Shivkumar K, Ajijola OA, Anand I, Armour JA, Chen PS, Esler M, et al. Clinical neurocardiology defining the value of neuroscience-based cardiovascular therapeutics. Journal of Physiology 2016;594:3911–3954. doi:10.1113/JP271870.\n\n\n2. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n3. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n4. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n5. Chang H-A, Fang W-H, Chang T-C, Huang S-Y, Chang C-C. Association of neuropeptide y promoter polymorphism (rs16147) with perceived stress and cardiac vagal outflow in humans. Scientific Reports 2016;6:31683. doi:10.1038/srep31683.\n\n\n6. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n7. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n8. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n9. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
-  },
-  {
-    "objectID": "t32/aims.html#section-2",
-    "href": "t32/aims.html#section-2",
-    "title": "Research Aims",
-    "section": "",
-    "text": "1. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n2. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n3. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n4. Chang H-A, Fang W-H, Chang T-C, Huang S-Y, Chang C-C. Association of neuropeptide y promoter polymorphism (rs16147) with perceived stress and cardiac vagal outflow in humans. Scientific Reports 2016;6:31683. doi:10.1038/srep31683.\n\n\n5. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n6. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n7. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n8. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
-  },
-  {
-    "objectID": "t32/aims.html#methods-1",
-    "href": "t32/aims.html#methods-1",
-    "title": "Research Aims",
-    "section": "Methods",
-    "text": "Methods\n\nCollect blood during EPS for atrial arrhythmias (paroxysmal/triggered)\n\nDNA samples\nCatecholamine levels\nNPY levels\n\nWhole exome sequencing of DNA to identify SNP in NPY regions\nCorrelate arrhythmia phenotype with NPY variants"
-  },
-  {
-    "objectID": "t32/aims.html#section-3",
-    "href": "t32/aims.html#section-3",
-    "title": "Research Aims",
-    "section": "",
-    "text": "Identify phenotypes of triggered atrial arrhythmia.\nCurrent classification of atrial fibrillation subtypes is inadequate to determine association between symptom burden, clinical trajectory, and treatment response. We will use computational/machine-learning approaches in identifying and reclassifying triggered atrial arrhythmias.\n\nUsing clinical, ECG, and echocardiographic parameters, atrial fibrillation can be classified into reliable/stable clusters\nClusters will correlate with intracardiac features from EPS"
+    "text": "Douglas Zipes asked the question “Why did he die on Tuesday and not on Monday?” In the 50 years since the advent of the coronary care unit,Lown1968? we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.1,Hayashi2015?. The problem can be broken down into two components: 1) a substrate and 2) a trigger. My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. My computational approach parallels these topics by combining biostatistics and digital signal processing.\nThis serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Saturday, February 25, 2023. Please see here for weekly updates.\nGEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography\nTechnical research skills:"
   },
   {
     "objectID": "index.html#stress-and-cardiovascular-epidemiology",
@@ -348,489 +425,6 @@
     "title": "Research Efforts",
     "section": "Clinical Projects",
     "text": "Clinical Projects\nWork being done as a cardiology fellow at UIC/JBVA\n\nAtrial fibrillation and efficacy of cardioversion\nPulmonary embolism management with a coordinated response team (PERT)\nEndocarditis lesion characteristics in a gain-independent manner using pixel density changes\nArrhythmia and device management in setting of endocarditis"
-  },
-  {
-    "objectID": "grants/loi.html",
-    "href": "grants/loi.html",
-    "title": "Research",
-    "section": "",
-    "text": "December 2, 2022\nAmerican Heart Association\n2023 Innovative Project Award\nThe Division of Cardiology at the University of Illinois at Chicago (UIC) is seeking support for an innovative approach to identifying a causal, mechanistic step in atrial fibrillation.\nAtrial fibrillation (AF) remains the most common arrhythmia worldwide, afflicting over 1% of the population, but there is poor understanding of how the arrhythmia is triggered and maintained. Dilated atria are heavily coincident in AF not only in humans but across land mammals, such as the 2-3% burden seen in equine species. Growing evidence supports the role of the autonomic nervous system (ANS) in AF however, such as the sympathovagal imbalance prior to onset or protective effects of vagal tone in diving mammals. Establishing the important, pathological contribution of local vagolysis changes how we view the interplay of the sympathetic and parasympathetic nervous systems, and allows us to take a novel direction in the management of an incredibly burdensome disease.\nThe atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties. The key mechanism that we will explore is the intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons. Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY). NPY binds to cholinergic neurons through the Y2R receptor, inhibiting firing and leading to vagolytic effects on the myocardium.\nWe propose that triggered AF occurs due to vagolysis in the setting of increased sympathetic activity. We hypothesize that 1) vagal stimulation protects against AF in pro-arrhythmic murine models, and 2) blockade of vagolysis through Y2R antagonism under increased sympathetic activity protects from AF and creates improve myocardial conductive properties. We will utilize ex-vivo, whole heart explants in vagal-sparing Langendorf preparations in an established murine model of AF. Vagal nerve stimulation protocols and catecholamine infusion will mimick local autonomic activity. We will measure atrial conductive properties (phase slope changes, after depolarizations, ectopy) at baseline, with infusion of NPY, and with Y2R antagonists. If, as we hypothesize, vagolysis leads to triggered AF, and NPY blockade rescues the arrhythmia burden, we will have established an innovative, causal mechanism in the pathogenesis of AF.\nOur lab is uniquely suited to explore these questions, as a leading center of murine and induced pluripotent stem cell models of atrial arrhythmias. We have demonstrated competence in patch clamping and measurement of cardiac tissue conductive properties through Langendorf preparations, and are able to leverage our extensive electrophysiological expertise with both basic and clinical scientists. Not only does this proposal explore the novel contribution of vagolysis in arrhythmogenesis, it identifies a pharmacological target for potential interventions.\nWe are thankful for the opportunity to discuss our proposal with the Review Committee, and welcome the opportunity to share any additional information as requested.\nAnish S. Shah, MD, MS\nDivision of Cardiology\nUniversity of Illinois at Chicago"
-  },
-  {
-    "objectID": "t32/t32-updates.html",
-    "href": "t32/t32-updates.html",
-    "title": "Research-In-Progress",
-    "section": "",
-    "text": "Task\n      Deadline\n    \n  \n  \n    \n      Arrhythmia (16%)\n    \n    Atrial Flutter and Family History\nManuscript revision\n2022-12-16\n    Atrial Flutter and Family History\nPedigree data completion\nNA\n    Vagoloysis Leads to Arrhythmogenesis\nDevelopment of protocol\n2022-12-16\n    \n      Clinical (33%)\n    \n    Clinic\nHeart Failure Clinic\n2023-06-30\n    Clinic\nJBVA FIT Clinic\n2023-06-30\n    \n      Epidemiology (5.7%)\n    \n    Mental Stress and CV Mortality\nUnder review at with Circulation (re-submitted 11/10/22)\nNA\n    Emory Biobank\nObtain working dataset for current ECG patch data\n2022-12-16\n    \n      Computational (26%)\n    \n    Rhythm Analysis\nv0.1.0 = LS Pro data intake and visualization\n2022-12-09\n    Cardiovascular Biorepository\nIRB pending (under review)\nNA"
-  },
-  {
-    "objectID": "f32/progress/year_one/b_accomplishments.html",
-    "href": "f32/progress/year_one/b_accomplishments.html",
-    "title": "Research",
-    "section": "",
-    "text": "This project was an extension of my TL1 to understand and evaluate neurocardiac pathophysiology as a clinician-scientist. The major goals of the project were encapsulated within the specific aims:\n\nQuantify the relationship between depressive symptoms and autonomic dysfunction\nExamine the relationships of ischemic heart disease with autonomic dysfunction\n\nAdditionally, goals incorporated within the training plan included: expansion of biostatistical skills, signal processing techniques, and understanding of stress physiology.\nIn terms of future planning, the end of the F32 is to help bridge me towards a K23 or K08 to move towards independence.\n\n\n\nThese goals allowed me to expand upon academic training, clinical training, and impactful scientific discoveries.\n\nMaster of Science degree: Able to complete a Master’s Thesis and defend this using dedicated time from the F32 funding period.\nClinical training: Completion of time as a clinical cardiology fellow, and movement towards electrophysiology training\nTranslational skills: Observation and development of basic science skills to allow for translational opportunities using mice models and IPSC models.\nPublications: “Alterations in heart rate variability are associated with abnormal myocardial perfusion” (PMID: 32024598) and “Association of Psychosocial Factors With Short‐Term Resting Heart Rate Variability: The Atherosclerosis Risk in Communities Study” (PMID: 33631952) as first author publications. Additionally, a key middle author publication in JAMA “Association of Mental Stress-Induced Myocardial Ischemia with Cardiovascular Events in Patients with Coronary Heart Disease” (PMID: 34751708).\nSoftware development: During the learning of MATLAB, R, and other biostatistical techniques, I was able to generate and publish software on cosinor analyses, recurrent event analyses, and DAG-oriented modeling. These are actively maintained software packages that are furthering in development.\n\n\n\n\nComputational: The project has allowed me to develop an extensive technical skill base using programming techniques to learn biostatistics and signal processing. I have now become proficient in R and MATLAB, and routinely use this software on a daily basis.\nClinical: I have entered and finished a majority of clinical cardiology training, and will expand my knowledge base as a researcher prior to entering clinical electrophysiology. I have made broad connections with federally funded investigators and continue to expand my pool of mentors.\n\n\n\nI have published within both JAHA, IJC, and JAMA, along with sending publications in abstract form to local and national conferences.\n\n\n\nI plan to complete data collection on patients being enrolled at my research center (Emory), and develop a translational model in animals to evaluate this further with my other mentors."
-  },
-  {
-    "objectID": "t32/aims.html#section-4",
-    "href": "t32/aims.html#section-4",
-    "title": "Research Aims",
-    "section": "",
-    "text": "1. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Coote JH. Myths and realities of the cardiac vagus 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n4. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide Y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n5. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide Y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase C-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide Y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519.\n\n\n\n\nStress Epidemiology, Arrhythmia Mechanisms, Clinical, Computational Neurocardiology"
-  },
-  {
-    "objectID": "t32/t32-updates.html#aflfh",
-    "href": "t32/t32-updates.html#aflfh",
-    "title": "Research-In-Progress",
-    "section": "AFL/FH",
-    "text": "AFL/FH\n\nGenetic basis for FH may be more promising than association with FH broadly, but would require additional WES to be sent\nWould need to repeat VCF analysis for an arrhythmia panel (instead of cardiomyopathy panel)"
-  },
-  {
-    "objectID": "t32/t32-updates.html#aflgenetics",
-    "href": "t32/t32-updates.html#aflgenetics",
-    "title": "Research-In-Progress",
-    "section": "AFL/genetics",
-    "text": "AFL/genetics\n\n~87 individuals with +FH\n~81 individuals with WES\n~18 individuals with VUS in total\n1 individual with VUS + FH"
-  },
-  {
-    "objectID": "t32/t32-updates.html#updates-2",
-    "href": "t32/t32-updates.html#updates-2",
-    "title": "Research-In-Progress",
-    "section": "Updates",
-    "text": "Updates\n\n\nAFL/FH:\n\nPedigrees TBD\nDraft completed, pending feedback\nSupplemental tables needed?\n\n\nAF/Recurrence:\n\nScott added additional patients from UIC (September 2020 to now)\nData collection pending"
-  },
-  {
-    "objectID": "t32/aims.html#section-5",
-    "href": "t32/aims.html#section-5",
-    "title": "Research Aims",
-    "section": "",
-    "text": "1. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n4. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n5. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
-  },
-  {
-    "objectID": "t32/aims.html#overview",
-    "href": "t32/aims.html#overview",
-    "title": "Research Aims",
-    "section": "Overview",
-    "text": "Overview\n\nImpact/significance of proposal\nSupport\nAims\nApproach and relevant methodology"
-  },
-  {
-    "objectID": "t32/aims.html#impact",
-    "href": "t32/aims.html#impact",
-    "title": "Research Aims",
-    "section": "Impact",
-    "text": "Impact\n\nUnknown if autonomic phenotypes exist\nUnknown mechanism of triggered arrhythmia"
-  },
-  {
-    "objectID": "t32/aims.html#relevant-skills",
-    "href": "t32/aims.html#relevant-skills",
-    "title": "Research Aims",
-    "section": "Relevant skills",
-    "text": "Relevant skills\n\nepidemiology and biostatistics\nstudy design (IRB, informed consent, subject enrollment)\ndigital signal processing (HRV, ECG, EGM)\nprogramming in R, MATLAB\nharmonic regression\nadvanced survival models with recurrent events\ngenetics\n\n\n\nSkills that will be learned"
-  },
-  {
-    "objectID": "t32/aims.html#mentorship",
-    "href": "t32/aims.html#mentorship",
-    "title": "Research Aims",
-    "section": "Mentorship",
-    "text": "Mentorship\n\n\nTable 1: Potential committee members\n\n\n\n\n\n\nMentor\nFocus\n\n\n\n\nAmit J. Shah, MD, MS (CV)\nepidemiology, autonomic dysfunction\n\n\nDawood Darbar, MBCHB, MD (EP)\natrial arrhythmias, genetics\n\n\nMark McCauley, MD, PHD (EP)\natrial arrhythmias, basic/translational science\n\n\nAlvaro Alonso, MD, PHD (EPI)\natrial fibrillation epidemiology, ARIC investigator\n\n\nViola Vaccarino, MD, PHD (EPI)\nstress epidemiology\n\n\nJalees Rehman, MD (CV)\ncomputational biology\n\n\nRachel Lampert, MD (EP)\nautonomic dysfunction, sudden cardiac death\n\n\nAndrew Boyd, MD\nbiomedical informatics"
-  },
-  {
-    "objectID": "t32/aims.html#aims",
-    "href": "t32/aims.html#aims",
-    "title": "Research Aims",
-    "section": "Aims",
-    "text": "Aims\n\nMechanism of mental stress on the risk of triggered atrial arrhythmia\nPhenotypes of vagal-mediated atrial fibrillation\nGenetic and/or molecular markers of vagolysis"
-  },
-  {
-    "objectID": "t32/aims.html#important-skills",
-    "href": "t32/aims.html#important-skills",
-    "title": "Research Aims",
-    "section": "Important skills",
-    "text": "Important skills\n\n\n\nEpidemiology\nElectrophysiology\n\n\n\n\ngenetic analyses, e.g. GWAS/WES\ndigital signal processing\n\n\nbiostatistics\nprogramming in R, MATLAB, Julia, Python\n\n\nstudy design\nharmonic regression\n\n\nsurvival models with recurrent events\n\n\n\n\n\n\nGoal is to expand and learn more about each of these"
-  },
-  {
-    "objectID": "t32/aims.html#outline",
-    "href": "t32/aims.html#outline",
-    "title": "Research Aims",
-    "section": "Outline",
-    "text": "Outline\n\nImpact/significance of proposal\nSupport\nAims\nApproach and relevant methodology"
-  },
-  {
-    "objectID": "t32/aims.html#research-skills",
-    "href": "t32/aims.html#research-skills",
-    "title": "Research Aims",
-    "section": "Research skills",
-    "text": "Research skills\n\n\nTable 1: Research skills to be developed\n\n\n\n\n\n\nCategory\nDescription\n\n\n\n\nClinical\ncardiac electrophysiology, echocardiography, electrocardiography\n\n\nTranslational\ngenetic analysis, electrophysiology studies, molecular mechanisms\n\n\nEpidemiology\ncausal inference, biostatistics, survival analysis with recurrence, study design\n\n\nComputational\nprogramming (R, MATLAB, python, C++, Julia), digital signal processing, machine learning"
-  },
-  {
-    "objectID": "t32/aims.html#committee",
-    "href": "t32/aims.html#committee",
-    "title": "Research Aims",
-    "section": "Committee",
-    "text": "Committee\n\n\nTable 2: Potential committee members\n\n\n\n\n\n\n\nMentor\nField\nSpecialty\n\n\n\n\nAmit J. Shah MD/MS\nCV/EPI\nmental stress, autonomic dysfunction, digital biomarkers\n\n\nDawood Darbar MBCHB/MD\nCV/EPI\natrial arrhythmias, genetics\n\n\nMark McCauley MD/PHD\nCV/EP\natrial arrhythmias\n\n\nAlvaro Alonso MD/PHD\nEPI\natrial fibrillation, ARIC investigator\n\n\nRachel Lampert MD\nCV/EP\nmental stress, autonomic dysfunction\n\n\n\n\n\n\nGoal for next 1-2 years is to increase collaboration within committee in support of K23"
-  },
-  {
-    "objectID": "t32/aims.html#methods-2",
-    "href": "t32/aims.html#methods-2",
-    "title": "Research Aims",
-    "section": "Methods",
-    "text": "Methods"
-  },
-  {
-    "objectID": "t32/aims.html#aim-1",
-    "href": "t32/aims.html#aim-1",
-    "title": "Research Aims",
-    "section": "Aim #1",
-    "text": "Aim #1\n\nTo identify the effect of mental stress on triggered arrhythmias. Mental stress leads to decrease in arrhythmia threshold by acute vagolysis.\n\nMental stress challenge will lead to acute decrease in arrhythmia threshold from baseline.\nAdrenaline infusion during mental stress challenge will to a greater decrease in arrhythmia threshold.\nVNS during mental stress challenge will protect against decreases in arrhythmia threshold.\n\n\n\n\nEPS = electrophysiology study; VNS = vagal nerve stimulation;"
-  },
-  {
-    "objectID": "t32/aims.html#aim-2",
-    "href": "t32/aims.html#aim-2",
-    "title": "Research Aims",
-    "section": "Aim #2",
-    "text": "Aim #2\n\nTo classify phenotypes of triggered atrial arrhythmias. Clinical phenotypes of atrial arrhythmias exist that have differential responses to therapy.\n\nSurface/non-invasive clinical features will identify stable, novel clusters of arrhythmia phenotypes.\nIdentified clusters will correlate with arrhythmia phenotypes generated from intracardiac features obtained from EPS.\n\n\n\n\nAF = atrial fibrillation; EPS = electrophysiology study"
-  },
-  {
-    "objectID": "t32/aims.html#aim-3",
-    "href": "t32/aims.html#aim-3",
-    "title": "Research Aims",
-    "section": "Aim #3",
-    "text": "Aim #3"
-  },
-  {
-    "objectID": "t32/aims.html#specific-aims",
-    "href": "t32/aims.html#specific-aims",
-    "title": "Research Aims",
-    "section": "Specific Aims",
-    "text": "Specific Aims\n\nTo identify the effect of mental stress on triggered arrhythmias.\nTo identify genetic and molecular markers associated with inappropriate vagolysis.\nTo identify genetic and molecular markers associated with inappropriate vagolysis."
-  },
-  {
-    "objectID": "t32/aims.html#aim-1-electrophysiologycomputationaltranslational",
-    "href": "t32/aims.html#aim-1-electrophysiologycomputationaltranslational",
-    "title": "Research Aims",
-    "section": "Aim #1: Electrophysiology/Computational/Translational",
-    "text": "Aim #1: Electrophysiology/Computational/Translational\n\nTo identify the effect of mental stress on triggered arrhythmias. Mental stress leads to decrease in arrhythmia threshold by acute vagolysis.\n\nMental stress challenge will lead to acute decrease in arrhythmia threshold from baseline.\nCatecholamine infusion during mental stress challenge will to a greater decrease in arrhythmia threshold.\nVNS during mental stress challenge will protect against decreases in arrhythmia threshold.\n\n\n\n\nEPS = electrophysiology study; VNS = vagal nerve stimulation;"
-  },
-  {
-    "objectID": "t32/aims.html#aim-2-epidemiologycomputational",
-    "href": "t32/aims.html#aim-2-epidemiologycomputational",
-    "title": "Research Aims",
-    "section": "Aim #2: Epidemiology/Computational",
-    "text": "Aim #2: Epidemiology/Computational\n\nTo classify phenotypes of triggered atrial arrhythmias. Clinical phenotypes of atrial arrhythmias exist that have differential responses to therapy.\n\nSurface/non-invasive clinical features will identify stable, novel clusters of arrhythmia phenotypes.\nIdentified clusters will correlate with arrhythmia phenotypes generated from intracardiac features obtained from EPS.\n\n\n\n\nAF = atrial fibrillation; EPS = electrophysiology study"
-  },
-  {
-    "objectID": "t32/aims.html#aim-3-epidemiologygeneticsexploratory",
-    "href": "t32/aims.html#aim-3-epidemiologygeneticsexploratory",
-    "title": "Research Aims",
-    "section": "Aim #3: Epidemiology/Genetics/Exploratory",
-    "text": "Aim #3: Epidemiology/Genetics/Exploratory\n\nTo identify genetic and molecular markers associated with inappropriate vagolysis. Inappropriate vagolysis results from differential expression of autonomic hormones and receptors along the neurocardiac axis.\n\nThose with an increased arrhythmia burden will have higher levels of catecholamines and NPY levels after mental stress challenge.\nThose with an increased arrhythmia burden will have an increased burden of genetic polymorphisms in the NPY and its receptors.\n\n\n\n\nAim #3 is linked to Aim #1, and will be measured simultaneously in the lab setting. NPY = neuropeptide Y;"
-  },
-  {
-    "objectID": "t32/aims.html#aim-1-translationalcomputational",
-    "href": "t32/aims.html#aim-1-translationalcomputational",
-    "title": "Research Aims",
-    "section": "Aim #1: Translational/Computational",
-    "text": "Aim #1: Translational/Computational\n\nTo identify the effect of mental stress on triggered arrhythmias. Mental stress leads to decrease in arrhythmia threshold by acute vagolysis.\n\nMental stress challenge will lead to acute decrease in arrhythmia threshold from baseline.\nCatecholamine infusion during mental stress challenge will to a greater decrease in arrhythmia threshold.\nVNS during mental stress challenge will protect against decreases in arrhythmia threshold.\n\n\n\nMutations have been found in NPY receptor genes (rs16147) and associate with perceived stress11\n\n\n\nEPS = electrophysiology study; VNS = vagal nerve stimulation;"
-  },
-  {
-    "objectID": "t32/aims.html#aim-3-epidemiologygenetics",
-    "href": "t32/aims.html#aim-3-epidemiologygenetics",
-    "title": "Research Aims",
-    "section": "Aim #3: Epidemiology/Genetics",
-    "text": "Aim #3: Epidemiology/Genetics\n\nTo identify genetic and molecular markers associated with inappropriate vagolysis. Inappropriate vagolysis results from differential expression of autonomic hormones and receptors along the neurocardiac axis.\n\nThose with an increased arrhythmia burden will have higher levels of catecholamines and NPY levels after mental stress challenge.\nThose with an increased arrhythmia burden will have an increased burden of genetic polymorphisms in the NPY and its receptors.\n\n\n\n\nAim #3 is linked to Aim #1, and will be measured simultaneously in the lab setting. NPY = neuropeptide Y;"
-  },
-  {
-    "objectID": "f32/progress/year_one/2022_progress-updates.html",
-    "href": "f32/progress/year_one/2022_progress-updates.html",
-    "title": "Research",
-    "section": "",
-    "text": "5F32HL154707-03: The Association of Autonomic Dysfunction with the Relationship between Depression and Coronary Disease\nResearch Performance Progress Report\nOctober 3rd, 2022"
-  },
-  {
-    "objectID": "f32/progress/year_one/2022_progress-updates.html#b1.-what-are-the-major-goals-of-the-project",
-    "href": "f32/progress/year_one/2022_progress-updates.html#b1.-what-are-the-major-goals-of-the-project",
-    "title": "Research",
-    "section": "B1. What are the major goals of the project?",
-    "text": "B1. What are the major goals of the project?\nThis project was an extension of my TL1 to understand and evaluate neurocardiac pathophysiology as a clinician-scientist. The major goals of the project were encapsulated within the specific aims:\n\nQuantify the relationship between depressive symptoms and autonomic dysfunction\nExamine the relationships of ischemic heart disease with autonomic dysfunction\n\nAdditionally, goals incorporated within the training plan included: expansion of biostatistical skills, signal processing techniques, and understanding of stress physiology.\nIn terms of future planning, the end of the F32 is to help bridge me towards a K23 or K08 to move towards independence."
-  },
-  {
-    "objectID": "f32/progress/year_one/2022_progress-updates.html#b2.-what-was-accomplished-under-these-goals",
-    "href": "f32/progress/year_one/2022_progress-updates.html#b2.-what-was-accomplished-under-these-goals",
-    "title": "Research",
-    "section": "B2. What was accomplished under these goals?",
-    "text": "B2. What was accomplished under these goals?\nThese goals allowed me to expand upon academic training, clinical training, and impactful scientific discoveries.\n\nMaster of Science degree: Able to complete a Master’s Thesis and defend this using dedicated time from the F32 funding period.\nClinical training: Completion of time as a clinical cardiology fellow, and movement towards electrophysiology training\nTranslational skills: Observation and development of basic science skills to allow for translational opportunities using mice models and IPSC models.\nPublications: “Alterations in heart rate variability are associated with abnormal myocardial perfusion” (PMID: 32024598) and “Association of Psychosocial Factors With Short‐Term Resting Heart Rate Variability: The Atherosclerosis Risk in Communities Study” (PMID: 33631952) as first author publications. Additionally, a key middle author publication in JAMA “Association of Mental Stress-Induced Myocardial Ischemia with Cardiovascular Events in Patients with Coronary Heart Disease” (PMID: 34751708).\nSoftware development: During the learning of MATLAB, R, and other biostatistical techniques, I was able to generate and publish software on cosinor analyses, recurrent event analyses, and DAG-oriented modeling. These are actively maintained software packages that are furthering in development."
-  },
-  {
-    "objectID": "f32/progress/year_one/2022_progress-updates.html#b4.-what-opportunities-for-training-and-professional-development-has-the-project-provided",
-    "href": "f32/progress/year_one/2022_progress-updates.html#b4.-what-opportunities-for-training-and-professional-development-has-the-project-provided",
-    "title": "Research",
-    "section": "B4. What opportunities for training and professional development has the project provided?",
-    "text": "B4. What opportunities for training and professional development has the project provided?\nComputational: The project has allowed me to develop an extensive technical skill base using programming techniques to learn biostatistics and signal processing. I have now become proficient in R and MATLAB, and routinely use this software on a daily basis.\nClinical: I have entered and finished a majority of clinical cardiology training, and will expand my knowledge base as a researcher prior to entering clinical electrophysiology. I have made broad connections with federally funded investigators and continue to expand my pool of mentors."
-  },
-  {
-    "objectID": "f32/progress/year_one/2022_progress-updates.html#b5.-how-have-the-results-been-disseminated-to-communities-of-interest",
-    "href": "f32/progress/year_one/2022_progress-updates.html#b5.-how-have-the-results-been-disseminated-to-communities-of-interest",
-    "title": "Research",
-    "section": "B5. How have the results been disseminated to communities of interest?",
-    "text": "B5. How have the results been disseminated to communities of interest?\nI have published within both JAHA, IJC, and JAMA, along with sending publications in abstract form to local and national conferences."
-  },
-  {
-    "objectID": "f32/progress/year_one/2022_progress-updates.html#b6.-what-do-you-plan-to-do-during-the-next-reporting-period-to-accomplish-the-goals",
-    "href": "f32/progress/year_one/2022_progress-updates.html#b6.-what-do-you-plan-to-do-during-the-next-reporting-period-to-accomplish-the-goals",
-    "title": "Research",
-    "section": "B6. What do you plan to do during the next reporting period to accomplish the goals?",
-    "text": "B6. What do you plan to do during the next reporting period to accomplish the goals?\nI plan to complete data collection on patients being enrolled at my research center (Emory), and develop a translational model in animals to evaluate this further with my other mentors."
-  },
-  {
-    "objectID": "f32/progress/year_one/2022_progress-updates.html#c5.-other-products-and-resource-sharing",
-    "href": "f32/progress/year_one/2022_progress-updates.html#c5.-other-products-and-resource-sharing",
-    "title": "Research",
-    "section": "C5. Other products and resource sharing",
-    "text": "C5. Other products and resource sharing\nI have published software on a public/open-source, peer-reviewed platform for statistically analyses (CRAN)."
-  },
-  {
-    "objectID": "f32/progress/year_one/2022_progress-updates.html#f2.-acutal-or-anticpated-challenges-or-delays-and-actions-or-plans-to-resolve-them",
-    "href": "f32/progress/year_one/2022_progress-updates.html#f2.-acutal-or-anticpated-challenges-or-delays-and-actions-or-plans-to-resolve-them",
-    "title": "Research",
-    "section": "F2. Acutal or anticpated challenges or delays and actions or plans to resolve them",
-    "text": "F2. Acutal or anticpated challenges or delays and actions or plans to resolve them\nCOVID of course has made enrollment more challenging. In addition, the granularity of ECG-based data is difficult to ascertain based on context (e.g. time of day, activity level). I have planned to supplement this with data from device monitoring companies, and include a machine-learning approach to handle the large volume of data (e.g. using the MVP data at the VA systems)."
-  },
-  {
-    "objectID": "f32/progress/year_one/2022_progress-updates.html#g2.-responsible-conduct-of-research",
-    "href": "f32/progress/year_one/2022_progress-updates.html#g2.-responsible-conduct-of-research",
-    "title": "Research",
-    "section": "G2. Responsible Conduct of Research",
-    "text": "G2. Responsible Conduct of Research\nDuring the reporting period, I have completed a Master of Science that included responsible research curriculum. Subsequently, I have continued training at institutional level on responsible research conduct as well as attending local seminars at the 1-3 month interval."
-  },
-  {
-    "objectID": "f32/progress/year_one/revision-response.html",
-    "href": "f32/progress/year_one/revision-response.html",
-    "title": "Research Performance Progress Report: Response to Revision",
-    "section": "",
-    "text": "Kevin Purkiser and James Hennigan\nNational Institutes of Health\nNational Heart, Lung, and Blood Institute\nEpidemiology Branch\nDear Drs. Purkiser and Hennigan,\nThank you for your response to my progress report. I apologize for the areas requiring revisions, and I appreciate the opportunity to do so, as my first time going through the NIH grant process. Below is the initial revision request, quoted:\n\n1) It’s not clear what has been accomplished in the past year toward your specific aims. The aims indicated in the competing application are to quantify the relationship between depressive symptoms and ANS dysfunction, and examine the relationship of obstructive CAD with ANS dysfunction and its potential dose response relationship. You indicate you have completed your Master’s thesis, participated in electrophysiology and other clinical training, analyzed mice models and stem cell models, and developed software. These are all great accomplishments, however, please clarify what you have done pursuant to the project’s specific aims.\n2) You cite 3 publications, however, these were all published before the start of this project. Table C.1. should include only publications directly arising from this project. Please remove these publications from table C.1.\n3) Enrollment: we acknowledge the continuing pandemic would cause enrollment to be lower than anticipated, however we are a little surprised there has been no enrollment at all, and the project is heading into its final year. Please send us your current enrollment for this project in 3 months.\n4) Some sections have been duplicated in the report (i.e. accomplishments, products, etc). Please resend the report deleting these duplications.\n\nAnish S. Shah, MD, MS\nF32 Postdoctoral Fellow\nDivision of Cardiology\nUniversity of Illinois at Chicago\n(e) ashah282@uic.edu\n(c) 469-835-7606\n(p) 773-222-5619\n\n1. Accomplishments and Specific Aims\nIn summary, my aims were to evaluate the relationship of stress, autononomic dysfunction, and structural/ischemic heart disease. Due to the limitations of enrollment over the past several years, my mentors and I addressed this early on by delaying the start of the grant and diversifying the population we evaluated. We broadened the term depression to include other forms of psychological stress and evaluated additional cohorts. This was a natural extension of my work on neurocardiac pathophysiology that began under my previous TL1 grant. As quoted below:\n\nAim 1. Quantify the relationship between depressive symptoms and ANS dysfunction.\nAim 2. Examine the relationship of obstructive CAD with ANS dysfunction and its potential dose-response relationship.\n\nFor both of these aims, I needed additional background training in the measurement of autonomic physiology using electrocardiogram metrics and the evaluation of coronary artery disease through multiple imaging modalities. I used three cohorts: 1) Biobank Cohort (coronary angiography and heart rate variability via electrocardiogram patch), 2) Emory Twins Study (myocardial perfusion imaging and 24-hour Holter monitoring) and 3) Myocardial Ischemia and Mental Stress (mental stress challenge with both myocardial perfusion imaging and coronary angiography). This led to several accomplishments, both formal and informal, within my training plan.\nBiobank Cohort\n\nUtilizing the Master of Science in Clinical Research degree awarded from the TL-1 program, I successfully completed and the appropriate training needed to enroll patients for this project. I was able to consent and enroll over 50 individuals myself, and also trained part of our research team to enroll patients on my behalf.\nI learned how to organized and safely/confidentially store data using REDCap, creating an efficient standardized operating protocol for enrollment of patients. This is actively being used by our study staff to include more patients (usually several per week).\nI developed computational and signal processing skills to be able to interpret ECG data collected directly from enrolled patients. This ECG data serves as a surrogate for autonomic function by measuring heart rate variability, and allows an understanding of dynamic changes in sympathovagal balance.\n\nEmory Twins Study\n\nTo help evaluate changes in autonomic tone that may be circadian in nature, I wrote statistical software to analyze changes in heart rate variability by time of day through the cosinor method of harmonic regressions. This is a work in progress but the first software package was released this year online.\nI’ve initially analyzed this data and related it to the burden of depressive symptoms. This is a work-in-progress to become a manuscript hopefully in the next year.\n\nMyocardial Ischemia and Mental Stress\n\nI analyzed data involving acute psychological stress responses of heart rate and correlated this with cardiovascular mortality. This has subsequently turned into a first-author manuscript that is under revision with Circulation.\nThis same cohort analysis (which showed a strong relationship between vagolysis and psychological stress), was accepted as an abstract at ACC 2023 of this year.\n\nIn summary, my findings pursuant to the specific aims are 1) association of depression and psychological stress with autonomic dysfunction and 2) association of autonomic dysfunction with cardiovascular mortality. These findings have led to software development, manuscript authorship, biostatistical analytical skills, and further learning in signal processing, which are all directly related to my overall training plan and specific aims.\n\n\n2. Publications and Products\nThe F32 was activated in December 2021. Since this time, there have been no manuscripts published, however I have drafted and submitted a manuscript that directly relates autonomic dysfunction under acute psychological stress with cardiovascular mortality, which is currently under revision in Circulation. This manuscript was also accepted in the form of an abstract to the American College of Cardiology 2023 Conference.\nDuring this time, I have continued to work on patient enrollment to achieve adequate power (Biobank Cohort) to evaluate the dose-relationship between autonomic dysfunction and coronary artery disease.\n\n\n3. Enrollment\nThe enrollment documentation was submitted incorrectly. During the last year, we have seen an increase in the number of enrollments into the primary Biobank Cohort study.\nThe enrollment involves patients with suspected coronary artery disease that are undergoing routine/clinically-indicated coronary angiography. Continuous electrocardiogram data is being collected via ECG patch, that is subsequently being analyzed by myself. During their enrollment, the patients are being assessed for depressive symptom burden.\nEnrollment Table:\n\n\n\nEthnicity\nFemale\nMale\nTotal\n\n\n\n\nAmerican Indian\n0\n0\n0\n\n\nAsian\n1\n11\n12\n\n\nBlack\n9\n14\n23\n\n\nWhite\n20\n27\n47\n\n\nUnknown/Mixed\n4\n2\n6\n\n\nTotal\n34\n54\n88"
-  },
-  {
-    "objectID": "t32/aims.html",
-    "href": "t32/aims.html",
-    "title": "Research Aims",
-    "section": "",
-    "text": "── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ ggplot2 3.4.0      ✔ purrr   0.3.5 \n✔ tibble  3.1.8      ✔ dplyr   1.0.10\n✔ tidyr   1.2.1      ✔ stringr 1.5.0 \n✔ readr   2.1.3      ✔ forcats 0.5.2 \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n\nAttaching package: 'scales'\n\n\nThe following object is masked from 'package:purrr':\n\n    discard\n\n\nThe following object is masked from 'package:readr':\n\n    col_factor\n\n\n\nAttaching package: 'ggdag'\n\n\nThe following object is masked from 'package:stats':\n\n    filter"
-  },
-  {
-    "objectID": "t32/aims.html#aims-overview",
-    "href": "t32/aims.html#aims-overview",
-    "title": "Research Aims",
-    "section": "Aims Overview",
-    "text": "Aims Overview\n\n\nAutonomic signature in cardiac physiology\n\nTranslating from animal-models to humans\nPhysician-conducted electrophysiology studies\nGenetic and molecular pathway component\nTargets for pharmacological interventions\n\n\nPhenotypes of atrial arrhythmias\n\nIntracardiac electroanatomical mapping data and signal processing\nSurface-based electrocardiography signal processing\nEpidemiology-based clustering/classification of patients"
-  },
-  {
-    "objectID": "t32/aims.html#aim-2-epidemiologygenetics",
-    "href": "t32/aims.html#aim-2-epidemiologygenetics",
-    "title": "Research Aims",
-    "section": "Aim #2: Epidemiology/Genetics",
-    "text": "Aim #2: Epidemiology/Genetics\n\nTo identify genetic and molecular markers associated with inappropriate vagolysis. Inappropriate vagolysis results from differential expression of autonomic hormones and receptors along the neurocardiac axis.\n\nThose with an increased arrhythmia burden will have higher levels of catecholamines and NPY levels after mental stress challenge.\nThose with an increased arrhythmia burden will have an increased burden of genetic polymorphisms in the NPY and its receptors.\n\n\n\n\nNPY = neuropeptide Y;"
-  },
-  {
-    "objectID": "t32/aims.html#more",
-    "href": "t32/aims.html#more",
-    "title": "Research Aims",
-    "section": "More",
-    "text": "More\n\nArrhythmia thresholds affected by sympathetic and vagal activity\nSympathetic neurons released both NE and NPY which inhibits anticholinergic activity\nAdrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY)4\nNPY binds to cholinergic neurons through the Y2 receptor, inhibiting firing and leading to vagolytic effects on the myocardium5,6\nNPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)\nMutations have been found in rs16147 and perceived stress7\n\n\n\nANS = autonomic nervous system; NE = nor epinephrine; NPY = neuropeptide Y"
-  },
-  {
-    "objectID": "t32/aims.html#autonomic-control-of-the-heart",
-    "href": "t32/aims.html#autonomic-control-of-the-heart",
-    "title": "Research Aims",
-    "section": "Autonomic control of the heart",
-    "text": "Autonomic control of the heart\n\nNeurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels1\n\nCortex ↔︎ brainstem\nSpinal cord ↔︎ extracardiac ganglia (e.g. stellate)\nIntrinsic cardiac nervous system (ICNS) ↔︎ heart\n\nAutonomic regulation is critical in the development of most CV disease\n\nDisregulated catecholamines in heart failure\nPost myocardial infarct VF\nTriggered arrhythmias such as VT\n\n\n\n\nSNS = sympathetic nervous system; PNS = parasympathetic nervous system;"
-  },
-  {
-    "objectID": "t32/aims.html#neurovisceral-integration",
-    "href": "t32/aims.html#neurovisceral-integration",
-    "title": "Research Aims",
-    "section": "Neurovisceral integration",
-    "text": "Neurovisceral integration\n\nLower levels of networked structures (ICNS, hypothalamus) integrate afferent information about metabolic demands\nHigher levels of networked structures (amydala, cortex) integrate lower networks and generate conscious/uncscious CV state representations\nAllows for environmental/psychological factors to interplay with cardiac physiology, e.g. mental stress causing arrhythmia"
-  },
-  {
-    "objectID": "t32/aims.html#critical-role-of-the-vagus",
-    "href": "t32/aims.html#critical-role-of-the-vagus",
-    "title": "Research Aims",
-    "section": "Critical role of the vagus",
-    "text": "Critical role of the vagus\n\nEmbryologically, vagus nerve sprouts from medulla and extends to distant organs (thus long pre-ganglionic axons) e.g. heart, lung, intestines\nParasympathetic control is evolutionarily more primitive in vertebrates, preceeding sympathetic control\n\nSharks exhihibt phasic HRV without sympathetic innervationTaylor2022?\nMammalian vagal control is more complex, with multiple nuclei, e.g. polyvagal3\n\nMammalian vagal outflow is particularly coupled with cardiorespiratory control\n\nLeads to respiratory sinus arrhythmia\nRespiratory changes occur at a high-frequency, can be measured by HRV\n\n\n\n\nStephen Porges proposed the Polyvagal Theory during his tenure at UIC. HRV = heart rate variability;"
-  },
-  {
-    "objectID": "t32/aims.html#vagal-therapeutic-interventions",
-    "href": "t32/aims.html#vagal-therapeutic-interventions",
-    "title": "Research Aims",
-    "section": "Vagal therapeutic interventions",
-    "text": "Vagal therapeutic interventions\n\nChronic VNS reduces drop in ejection fraction in different animal models of cardiomyopathy, including MI, but studies have mixed results in humans\n\nNECTAR-HF ~ VNS or sham, no difference at 6 months in LV size/function, n = 96\nINOVATE-HF ~ right VNS + GDMT vs. GDMT, no difference in mortality, n = 700\nANTHEM-HF ~ non-randomized VNS, improved LV function, pilot study (required titrated VNS to cause decrease in HR)\n\nVNS may be anti-arrhythmic in animal models, with decreased VT/VF, but minimal human studies\n\nGANGLIA-AF, paroxysmal AF randomized to PVI or atrial GP ablation, decreased AAD dosages in GP group, n = 102\n\n\n\n\nVNS = vagal nerve stimulation; MI = myocardial infarction; LV = left ventricle; GP = ganglionated plexi; AAD = anti-arrhythmic drugs"
-  },
-  {
-    "objectID": "t32/aims.html#sympathovagal-crosstalk",
-    "href": "t32/aims.html#sympathovagal-crosstalk",
-    "title": "Research Aims",
-    "section": "Sympathovagal crosstalk",
-    "text": "Sympathovagal crosstalk\n\nArrhythmia thresholds affected by sympathetic and vagal activity\nIntracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties1,4\nSympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis"
-  },
-  {
-    "objectID": "t32/aims.html#molecular-mechanisms",
-    "href": "t32/aims.html#molecular-mechanisms",
-    "title": "Research Aims",
-    "section": "Molecular mechanisms",
-    "text": "Molecular mechanisms\n\nSympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium\nNPY and galanin is also released, which both inhibit cholinergic activity5,6\nBoth inhibit firing and leading to vagolytic effects on the myocardium7,8\n\nGalanin released as a adrenergic co-transmitter, binding to GalR1 receptors\nNPY binds to cholinergic neurons through the Y2 receptor\nBoth directly/indirectly involve protein kinase C\n\nNPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)9\n\n\n\nNE = nor epinephrine; NPY = neuropeptide Y"
-  },
-  {
-    "objectID": "t32/aims.html#aim-1-translational",
-    "href": "t32/aims.html#aim-1-translational",
-    "title": "Research Aims",
-    "section": "Aim #1: Translational",
-    "text": "Aim #1: Translational\n\nTo evaluate the expression of cardiac neuropeptides in paroxysmal AF. The burden and phenotype of AF will correlate with the expression of differential structural and autonomic biomarkers.\n\nBaseline levels of autonomic hormones (NE, NPY, galanin) and structural hormones (ANP, BNP, S100B) will correlate with the burden and chronicity of AF as a result of both electrical and mechanical remodeling.\nIncreased adrenergic/physiological stress through catecholamine infusion (and/or mental stress) will lead to ↓NE, ↓NPY, ↓Gal expression.\nDecrease vagal afferent activity through modification of ICNS with GP ablation during PVI, documented by release of S100B,12 will lead to ↑NE, ↑NPY, ↑Gal expression.\nAtrial arrhythmia thresholds will be acutely decreased after GP ablation based on decreases in electrical dispersion, triggered after-depolarizations, and HRV.\n\n\n\n\nANP/BNP = atrial/brain natriuretic peptide; PVI = pulmonary vein isolation"
-  },
-  {
-    "objectID": "t32/aims.html#references",
-    "href": "t32/aims.html#references",
-    "title": "Research Aims",
-    "section": "References",
-    "text": "References\n\n\n1. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n2. Shivkumar K, Ajijola OA, Anand I, Armour JA, Chen PS, Esler M, et al. Clinical neurocardiology defining the value of neuroscience-based cardiovascular therapeutics. Journal of Physiology 2016;594:3911–3954. doi:10.1113/JP271870.\n\n\n3. Porges SW. The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system. Cleveland Clinic Journal of Medicine 2009;76:S86. doi:10.3949/ccjm.76.s2.17.\n\n\n4. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n5. Herring N. Autonomic control of the heart: Going beyond the classical neurotransmitters. Experimental Physiology 2015;100:354–358. doi:10.1113/expphysiol.2014.080184.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n8. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n9. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n10. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
-  },
-  {
-    "objectID": "t32/aims.html#aim-2-clinical",
-    "href": "t32/aims.html#aim-2-clinical",
-    "title": "Research Aims",
-    "section": "Aim #2: Clinical",
-    "text": "Aim #2: Clinical\n\nTo identify clinical phenotypes of vagal-mediated paroxysmal AF. Clusters of clinical features will identify AF that will correlate with differential responses to treatment strategies.\n\nClinical history, disease progression, and surface/non-invasive cardiac imaging will identify stable, novel clusters of AF phenotypes in population-level datasets\nIntracardiac findings during EPS will identify novel clusters of subtypes of AF using a combination of electroanatomical mapping and signal processing.\nIncreased arrhythmia burden and ↑NE, ↑NPY, ↑Gal will be associated with an increased risk of genetic polymorphisms in candidate genes known to be expressed by cholinergic neurons (e.g. rs1614713)\n\n\n\n\nVariant rs6147 expressed in promoter region of NPY and associated with increased perception of environmental stress.13 EPS = electrophysiology study"
-  },
-  {
-    "objectID": "t32/aims.html#outcomes",
-    "href": "t32/aims.html#outcomes",
-    "title": "Research Aims",
-    "section": "Outcomes",
-    "text": "Outcomes\n\nMechanisms explored could identify candidate subjects for NPY2R/Gal1R receptor blockade or VNS therapy\nEfficacy of VNS therapy could be quantified through serum testing\nGenetic variants that affect autonomic function along the neurocardiac axis may interplay with known inherited arrhythmis, such as the vagal-mediated triggers of SCD in LQTS patients\n\n\n\nSCD = sudden cardiac death; LQTS = Long QT syndrome"
-  },
-  {
-    "objectID": "t32/aims.html#significance",
-    "href": "t32/aims.html#significance",
-    "title": "Research Aims",
-    "section": "Significance",
-    "text": "Significance\n\nKnowledge gaps:\n\nbiomarkers of response to neuromodulation therapy, including ablation\nunderstanding of regional variation in innervation affects arrhythmogenesis\ntranslation from single-cell studies to human models\n\nResearch priorities:\n\nrole of ANS signaling in emergence and maintenance of cardiac arrhythmias\ntarget modulation of ANS to attenuate electrical remodeling\npredict underlying biomarkers\nunderstand time course of ANS remodeling and neuropeptide expression\nsex/race differences in cardiac arrhythmogenesis\n\n\n\n\nNIH and NHLBI released 2022 Research Report on ANS in CV disease, with a focus on AF and VT/VF. ANS = autonomic nervous system; CV = cardiovascular; AF = atrial fibrillation; VT/VF = ventricular tachycardia/fibrillation;"
-  },
-  {
-    "objectID": "t32/aims.html#aim-1-clinical",
-    "href": "t32/aims.html#aim-1-clinical",
-    "title": "Research Aims",
-    "section": "Aim #1: Clinical",
-    "text": "Aim #1: Clinical\n\nIdentify clinical phenotypes of vagally-triggered AF. Clinical, intracardiac, and genetic factors will contribute to clinically-relevant phenotypes of AF.\n\nWe will develop a pragmatic, population-level dataset to abstract clinical risk factors, ECG, and echocardiography features and therapy responses. Using unsupervised learning models, AF will be classified into seperate clusters.\nThe clinical relevance of AF phenotypes will be assessed through relevant outcomes (adverse events, disease burden/progression). AF clusters identified in 1a will have distinct hazard distributions estimated through survival analysis.\nWe will perform whole exome sequencing on a subset of patients from each cluster defined in 1a. Selected \\(\\alpha\\) and \\(\\beta\\) adrenergic receptors and cholinergic receptor polymorphisms will be associated with individual AF clusters and clinical outcomes.\n\n\n\n\nECG = electrocardiography;"
-  },
-  {
-    "objectID": "t32/aims.html#aim-2-translational",
-    "href": "t32/aims.html#aim-2-translational",
-    "title": "Research Aims",
-    "section": "Aim #2: Translational",
-    "text": "Aim #2: Translational\n\nDetermine the intracardiac characteristics of vagally-triggered AF. Structural and electrical features assessed through EPS will identify separate clinically-relevant phenotypes of AF.\n\nWe will collect electroanatomical mapping data and electrogram recordings during PVI of paroxysmal AF. Using signal processing and feature reduction, we will identify clusters of structural and electrical AF that correlate with those identified in 1a.\nWe will apply physiological stress and psychological stress through catecholamine infusion and mental stress challenge, respectively. Catecholamine infusion will lead to ↑NE, ↑NPY, ↑Gal expression while mental stress will lead to ↑NE, ↑NPY, ↑Gal expression\nIn those with suspected vagally-triggered AF, there will be an increased risk of Y2R and Gal1R receptor polymorphisms.\n\n\n\n\nICNS = intracardiac nervous system; EPS = electrophysiology study; PVI = pulmonary vein isolation; HRV = heart rate variability;"
-  },
-  {
-    "objectID": "t32/aims.html#aim-3-basic",
-    "href": "t32/aims.html#aim-3-basic",
-    "title": "Research Aims",
-    "section": "Aim #3: Basic",
-    "text": "Aim #3: Basic\n\nTo assess the electrophysiological effects of autonomic hormones on in vitro cardiac tissue. The increase in EAD seen in atrial cardiomyocytes due to vagolysis will be blunted by antagonism of NPY and Gal.\n\n\n\nEAD = early after-depolarizations;"
-  },
-  {
-    "objectID": "k23/aims.html#significance",
-    "href": "k23/aims.html#significance",
-    "title": "Research Aims",
-    "section": "Significance",
-    "text": "Significance\n\nKnowledge gaps:\n\nbiomarkers of response to neuromodulation therapy, including ablation\nunderstanding of regional variation in innervation affects arrhythmogenesis\ntranslation from single-cell studies to human models\n\nResearch priorities:\n\nrole of ANS signaling in emergence and maintenance of cardiac arrhythmias\ntarget modulation of ANS to attenuate electrical remodeling\npredict underlying biomarkers\nunderstand time course of ANS remodeling and neuropeptide expression\nsex/race differences in cardiac arrhythmogenesis\n\n\n\n\nNIH and NHLBI released 2022 Research Report on ANS in CV disease, with a focus on AF and VT/VF. ANS = autonomic nervous system; CV = cardiovascular; AF = atrial fibrillation; VT/VF = ventricular tachycardia/fibrillation;"
-  },
-  {
-    "objectID": "k23/aims.html#research-skills",
-    "href": "k23/aims.html#research-skills",
-    "title": "Research Aims",
-    "section": "Research skills",
-    "text": "Research skills\n\n\nTable 1: Research skills to be developed\n\n\n\n\n\n\nCategory\nDescription\n\n\n\n\nClinical\ncardiac electrophysiology, echocardiography, electrocardiography\n\n\nTranslational\ngenetic analysis, electrophysiology studies, molecular mechanisms\n\n\nEpidemiology\ncausal inference, biostatistics, survival analysis with recurrence, study design\n\n\nComputational\nprogramming (R, MATLAB, python, C++, Julia), digital signal processing, machine learning"
-  },
-  {
-    "objectID": "k23/aims.html#committee",
-    "href": "k23/aims.html#committee",
-    "title": "Research Aims",
-    "section": "Committee",
-    "text": "Committee\n\n\nTable 2: Potential committee members\n\n\n\n\n\n\n\nMentor\nField\nSpecialty\n\n\n\n\nAmit J. Shah MD/MS\nCV/EPI\nmental stress, autonomic dysfunction, digital biomarkers\n\n\nDawood Darbar MBCHB/MD\nCV/EPI\natrial arrhythmias, genetics\n\n\nMark McCauley MD/PHD\nCV/EP\natrial arrhythmias\n\n\nAlvaro Alonso MD/PHD\nEPI\natrial fibrillation, ARIC investigator\n\n\nRachel Lampert MD\nCV/EP\nmental stress, autonomic dysfunction\n\n\n\n\n\n\nGoal for next 1-2 years is to increase collaboration within committee in support of K23"
-  },
-  {
-    "objectID": "k23/aims.html#autonomic-control-of-the-heart",
-    "href": "k23/aims.html#autonomic-control-of-the-heart",
-    "title": "Research Aims",
-    "section": "Autonomic control of the heart",
-    "text": "Autonomic control of the heart\n\nNeurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels1\n\nCortex ↔︎ brainstem\nSpinal cord ↔︎ extracardiac ganglia (e.g. stellate)\nIntrinsic cardiac nervous system (ICNS) ↔︎ heart\n\nAutonomic regulation is critical in the development of most CV disease\n\nDisregulated catecholamines in heart failure\nPost myocardial infarct VF\nTriggered arrhythmias such as VT\n\n\n\n\nSNS = sympathetic nervous system; PNS = parasympathetic nervous system;"
-  },
-  {
-    "objectID": "k23/aims.html#neurovisceral-integration",
-    "href": "k23/aims.html#neurovisceral-integration",
-    "title": "Research Aims",
-    "section": "Neurovisceral integration",
-    "text": "Neurovisceral integration\n\nLower levels of networked structures (ICNS, hypothalamus) integrate afferent information about metabolic demands\nHigher levels of networked structures (amydala, cortex) integrate lower networks and generate conscious/uncscious CV state representations\nAllows for environmental/psychological factors to interplay with cardiac physiology, e.g. mental stress causing arrhythmia"
-  },
-  {
-    "objectID": "k23/aims.html#critical-role-of-the-vagus",
-    "href": "k23/aims.html#critical-role-of-the-vagus",
-    "title": "Research Aims",
-    "section": "Critical role of the vagus",
-    "text": "Critical role of the vagus\n\nEmbryologically, vagus nerve sprouts from medulla and extends to distant organs (thus long pre-ganglionic axons) e.g. heart, lung, intestines\nParasympathetic control is evolutionarily more primitive in vertebrates, preceeding sympathetic control\n\nSharks exhihibt phasic HRV without sympathetic innervationTaylor2022?\nMammalian vagal control is more complex, with multiple nuclei, e.g. polyvagal3\n\nMammalian vagal outflow is particularly coupled with cardiorespiratory control\n\nLeads to respiratory sinus arrhythmia\nRespiratory changes occur at a high-frequency, can be measured by HRV\n\n\n\n\nStephen Porges proposed the Polyvagal Theory during his tenure at UIC. HRV = heart rate variability;"
-  },
-  {
-    "objectID": "k23/aims.html#vagal-therapeutic-interventions",
-    "href": "k23/aims.html#vagal-therapeutic-interventions",
-    "title": "Research Aims",
-    "section": "Vagal therapeutic interventions",
-    "text": "Vagal therapeutic interventions\n\nChronic VNS reduces drop in ejection fraction in different animal models of cardiomyopathy, including MI, but studies have mixed results in humans\n\nNECTAR-HF ~ VNS or sham, no difference at 6 months in LV size/function, n = 96\nINOVATE-HF ~ right VNS + GDMT vs. GDMT, no difference in mortality, n = 700\nANTHEM-HF ~ non-randomized VNS, improved LV function, pilot study (required titrated VNS to cause decrease in HR)\n\nVNS may be anti-arrhythmic in animal models, with decreased VT/VF, but minimal human studies\n\nGANGLIA-AF, paroxysmal AF randomized to PVI or atrial GP ablation, decreased AAD dosages in GP group, n = 102\n\n\n\n\nVNS = vagal nerve stimulation; MI = myocardial infarction; LV = left ventricle; GP = ganglionated plexi; AAD = anti-arrhythmic drugs"
-  },
-  {
-    "objectID": "k23/aims.html#sympathovagal-crosstalk",
-    "href": "k23/aims.html#sympathovagal-crosstalk",
-    "title": "Research Aims",
-    "section": "Sympathovagal crosstalk",
-    "text": "Sympathovagal crosstalk\n\nArrhythmia thresholds affected by sympathetic and vagal activity\nIntracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties1,4\nSympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis"
-  },
-  {
-    "objectID": "k23/aims.html#molecular-mechanisms",
-    "href": "k23/aims.html#molecular-mechanisms",
-    "title": "Research Aims",
-    "section": "Molecular mechanisms",
-    "text": "Molecular mechanisms\n\nSympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium\nNPY and galanin is also released, which both inhibit cholinergic activity5,6\nBoth inhibit firing and leading to vagolytic effects on the myocardium7,8\n\nGalanin released as a adrenergic co-transmitter, binding to GalR1 receptors\nNPY binds to cholinergic neurons through the Y2 receptor\nBoth directly/indirectly involve protein kinase C\n\nNPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)9\n\n\n\nNE = nor epinephrine; NPY = neuropeptide Y"
-  },
-  {
-    "objectID": "k23/aims.html#aim-1-clinical",
-    "href": "k23/aims.html#aim-1-clinical",
-    "title": "Research Aims",
-    "section": "Aim #1: Clinical",
-    "text": "Aim #1: Clinical\n\nIdentify clinical phenotypes of vagally-triggered AF. Clinical, intracardiac, and genetic factors will contribute to clinically-relevant phenotypes of AF.\n\nWe will develop a pragmatic, population-level dataset to abstract clinical risk factors, ECG, and echocardiography features and therapy responses. Using unsupervised learning models, AF will be classified into seperate clusters.\nThe clinical relevance of AF phenotypes will be assessed through relevant outcomes (adverse events, disease burden/progression). AF clusters identified in 1a will have distinct hazard distributions estimated through survival analysis.\nWe will perform whole exome sequencing on a subset of patients from each cluster defined in 1a. Selected \\(\\alpha\\) and \\(\\beta\\) adrenergic receptors and cholinergic receptor polymorphisms will be associated with individual AF clusters and clinical outcomes.\n\n\n\n\nECG = electrocardiography;"
-  },
-  {
-    "objectID": "k23/aims.html#aim-2-translational",
-    "href": "k23/aims.html#aim-2-translational",
-    "title": "Research Aims",
-    "section": "Aim #2: Translational",
-    "text": "Aim #2: Translational\n\nDetermine the intracardiac characteristics of vagally-triggered AF. Structural and electrical features assessed through EPS will identify separate clinically-relevant phenotypes of AF.\n\nWe will collect electroanatomical mapping data and electrogram recordings during PVI of paroxysmal AF. Using signal processing and feature reduction, we will identify clusters of structural and electrical AF that correlate with those identified in 1a.\nWe will apply physiological stress and psychological stress through catecholamine infusion and mental stress challenge, respectively. Catecholamine infusion will lead to ↑NE, ↑NPY, ↑Gal expression while mental stress will lead to ↑NE, ↑NPY, ↑Gal expression\nIn those with suspected vagally-triggered AF, there will be an increased risk of Y2R and Gal1R receptor polymorphisms.\n\n\n\n\nICNS = intracardiac nervous system; EPS = electrophysiology study; PVI = pulmonary vein isolation; HRV = heart rate variability;"
-  },
-  {
-    "objectID": "k23/aims.html#methods",
-    "href": "k23/aims.html#methods",
-    "title": "Research Aims",
-    "section": "Methods",
-    "text": "Methods\n\n\nElectrophysiology Study\n\nBaseline and post-procedural atrial conduction properties\nCoronary sinus + circulating blood samples (including DNA)\nSurface + intracardiac mapping and electrophysiological signal\nVagal nerve stimulation\n\n\nBig Data\n\nCohort generated from population-level data (UIC/CCTS, ARIC, MVP/VAMC)\nComputational model to classify AF based on clinical + cardiac imaging features\nWhole exome sequencing of DNA in pAF patients to identify autonomic variants\nExtraction of intracardiac features from EPS (volume, scar, voltage, etc…)\n\n\n\n\n\nUIC = University of Illinois at Chicago; CCTS = Center for Translational Research; ARIC = Atherosclerotic Risk in Communities;"
-  },
-  {
-    "objectID": "k23/aims.html#outcomes",
-    "href": "k23/aims.html#outcomes",
-    "title": "Research Aims",
-    "section": "Outcomes",
-    "text": "Outcomes\n\nMechanisms explored could identify candidate subjects for NPY2R/Gal1R receptor blockade or VNS therapy\nEfficacy of VNS therapy could be quantified through serum testing\nGenetic variants that affect autonomic function along the neurocardiac axis may interplay with known inherited arrhythmis, such as the vagal-mediated triggers of SCD in LQTS patients\n\n\n\nSCD = sudden cardiac death; LQTS = Long QT syndrome"
-  },
-  {
-    "objectID": "k23/aims.html#references",
-    "href": "k23/aims.html#references",
-    "title": "Research Aims",
-    "section": "References",
-    "text": "References\n\n\n1. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n2. Shivkumar K, Ajijola OA, Anand I, Armour JA, Chen PS, Esler M, et al. Clinical neurocardiology defining the value of neuroscience-based cardiovascular therapeutics. Journal of Physiology 2016;594:3911–3954. doi:10.1113/JP271870.\n\n\n3. Porges SW. The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system. Cleveland Clinic Journal of Medicine 2009;76:S86. doi:10.3949/ccjm.76.s2.17.\n\n\n4. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n5. Herring N. Autonomic control of the heart: Going beyond the classical neurotransmitters. Experimental Physiology 2015;100:354–358. doi:10.1113/expphysiol.2014.080184.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n8. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n9. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n10. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
   },
   {
     "objectID": "k23/overview.html#significance",
@@ -872,7 +466,7 @@
     "href": "k23/overview.html#critical-role-of-the-vagus",
     "title": "Research Aims",
     "section": "Critical role of the vagus",
-    "text": "Critical role of the vagus\n\nEmbryologically, vagus nerve sprouts from medulla and extends to distant organs (thus long pre-ganglionic axons) e.g. heart, lung, intestines\nParasympathetic control is evolutionarily more primitive in vertebrates, preceeding sympathetic control\n\nSharks exhihibt phasic HRV without sympathetic innervationTaylor2022?\nMammalian vagal control is more complex, with multiple nuclei, e.g. polyvagal3\n\nMammalian vagal outflow is particularly coupled with cardiorespiratory control\n\nLeads to respiratory sinus arrhythmia\nRespiratory changes occur at a high-frequency, can be measured by HRV\n\n\n\n\nStephen Porges proposed the Polyvagal Theory during his tenure at UIC. HRV = heart rate variability;"
+    "text": "Critical role of the vagus\n\nEmbryologically, vagus nerve sprouts from medulla and extends to distant organs (thus long pre-ganglionic axons) e.g. heart, lung, intestines\nParasympathetic control is evolutionarily more primitive in vertebrates, preceeding sympathetic control\n\nSharks exhihibt phasic HRV without sympathetic innervation3\nMammalian vagal control is more complex, with multiple nuclei, e.g. polyvagal4\n\nMammalian vagal outflow is particularly coupled with cardiorespiratory control\n\nLeads to respiratory sinus arrhythmia\nRespiratory changes occur at a high-frequency, can be measured by HRV\n\n\n\n\nStephen Porges proposed the Polyvagal Theory during his tenure at UIC. HRV = heart rate variability;"
   },
   {
     "objectID": "k23/overview.html#vagal-therapeutic-interventions",
@@ -886,14 +480,14 @@
     "href": "k23/overview.html#sympathovagal-crosstalk",
     "title": "Research Aims",
     "section": "Sympathovagal crosstalk",
-    "text": "Sympathovagal crosstalk\n\nArrhythmia thresholds affected by sympathetic and vagal activity\nIntracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties1,4\nSympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis"
+    "text": "Sympathovagal crosstalk\n\nArrhythmia thresholds affected by sympathetic and vagal activity\nIntracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties1,5\nSympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis"
   },
   {
     "objectID": "k23/overview.html#molecular-mechanisms",
     "href": "k23/overview.html#molecular-mechanisms",
     "title": "Research Aims",
     "section": "Molecular mechanisms",
-    "text": "Molecular mechanisms\n\nSympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium\nNPY and galanin is also released, which both inhibit cholinergic activity5,6\nBoth inhibit firing and leading to vagolytic effects on the myocardium7,8\n\nGalanin released as a adrenergic co-transmitter, binding to GalR1 receptors\nNPY binds to cholinergic neurons through the Y2 receptor\nBoth directly/indirectly involve protein kinase C\n\nNPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)9\n\n\n\nNE = nor epinephrine; NPY = neuropeptide Y"
+    "text": "Molecular mechanisms\n\nSympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium\nNPY and galanin is also released, which both inhibit cholinergic activity6,7\nBoth inhibit firing and leading to vagolytic effects on the myocardium8,9\n\nGalanin released as a adrenergic co-transmitter, binding to GalR1 receptors\nNPY binds to cholinergic neurons through the Y2 receptor\nBoth directly/indirectly involve protein kinase C\n\nNPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)10\n\n\n\nNE = nor epinephrine; NPY = neuropeptide Y"
   },
   {
     "objectID": "k23/overview.html#aim-1-clinical",
@@ -928,517 +522,6 @@
     "href": "k23/overview.html#references",
     "title": "Research Aims",
     "section": "References",
-    "text": "References\n\n\n1. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n2. Shivkumar K, Ajijola OA, Anand I, Armour JA, Chen PS, Esler M, et al. Clinical neurocardiology defining the value of neuroscience-based cardiovascular therapeutics. Journal of Physiology 2016;594:3911–3954. doi:10.1113/JP271870.\n\n\n3. Porges SW. The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system. Cleveland Clinic Journal of Medicine 2009;76:S86. doi:10.3949/ccjm.76.s2.17.\n\n\n4. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n5. Herring N. Autonomic control of the heart: Going beyond the classical neurotransmitters. Experimental Physiology 2015;100:354–358. doi:10.1113/expphysiol.2014.080184.\n\n\n6. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n7. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n8. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n9. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n10. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
-  },
-  {
-    "objectID": "t32/t32-updates.html#updates-3",
-    "href": "t32/t32-updates.html#updates-3",
-    "title": "Research-In-Progress",
-    "section": "Updates",
-    "text": "Updates\n\nAHA IPA: Completed draft, pending revisions\nAFL Paper: Draft to be done by Wednesday\nAF Ablation + Biorepository: Pending IRB\nStress and CVD Mortality: Submitted to Circulation, revisions Pending"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#significance",
-    "href": "t32/rip-seminar-2023.html#significance",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Significance",
-    "text": "Significance\n\nKnowledge gaps:\n\nbiomarkers of response to neuromodulation therapy, including ablation\nunderstanding of regional variation in innervation affects arrhythmogenesis\ntranslation from single-cell studies to human models\n\nResearch priorities:\n\nrole of ANS signaling in emergence and maintenance of cardiac arrhythmias\ntarget modulation of ANS to attenuate electrical remodeling\npredict underlying biomarkers\nunderstand time course of ANS remodeling and neuropeptide expression\nsex/race differences in cardiac arrhythmogenesis\n\n\n\n\nNIH and NHLBI released 2022 Research Report on ANS in CV disease, with a focus on AF and VT/VF. ANS = autonomic nervous system; CV = cardiovascular; AF = atrial fibrillation; VT/VF = ventricular tachycardia/fibrillation;"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#research-skills",
-    "href": "t32/rip-seminar-2023.html#research-skills",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Research skills",
-    "text": "Research skills\n\n\nTable 1: Research skills to be developed\n\n\n\n\n\n\nCategory\nDescription\n\n\n\n\nClinical\ncardiac electrophysiology, echocardiography, electrocardiography\n\n\nTranslational\ngenetic analysis, electrophysiology studies, molecular mechanisms\n\n\nEpidemiology\ncausal inference, biostatistics, survival analysis with recurrence, study design\n\n\nComputational\nprogramming (R, MATLAB, python, C++, Julia), digital signal processing, machine learning"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#committee",
-    "href": "t32/rip-seminar-2023.html#committee",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Committee",
-    "text": "Committee\n\n\nTable 2: Potential committee members\n\n\n\n\n\n\n\nMentor\nField\nSpecialty\n\n\n\n\nAmit J. Shah MD/MS\nCV/EPI\nmental stress, autonomic dysfunction, digital biomarkers\n\n\nDawood Darbar MBCHB/MD\nCV/EPI\natrial arrhythmias, genetics\n\n\nMark McCauley MD/PHD\nCV/EP\natrial arrhythmias\n\n\nAlvaro Alonso MD/PHD\nEPI\natrial fibrillation, ARIC investigator\n\n\nRachel Lampert MD\nCV/EP\nmental stress, autonomic dysfunction\n\n\n\n\n\n\nGoal for next 1-2 years is to increase collaboration within committee in support of K23"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#autonomic-control-of-the-heart",
-    "href": "t32/rip-seminar-2023.html#autonomic-control-of-the-heart",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Autonomic control of the heart",
-    "text": "Autonomic control of the heart\n\nNeurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels1\n\nCortex ↔︎ brainstem\nSpinal cord ↔︎ extracardiac ganglia (e.g. stellate)\nIntrinsic cardiac nervous system (ICNS) ↔︎ heart\n\nAutonomic regulation is critical in the development of most CV disease\n\nDisregulated catecholamines in heart failure\nPost myocardial infarct VF\nTriggered arrhythmias such as VT\n\n\n\n\nSNS = sympathetic nervous system; PNS = parasympathetic nervous system;"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#neurovisceral-integration",
-    "href": "t32/rip-seminar-2023.html#neurovisceral-integration",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Neurovisceral integration",
-    "text": "Neurovisceral integration\n\nLower levels of networked structures (ICNS, hypothalamus) integrate afferent information about metabolic demands\nHigher levels of networked structures (amydala, cortex) integrate lower networks and generate conscious/uncscious CV state representations\nAllows for environmental/psychological factors to interplay with cardiac physiology, e.g. mental stress causing arrhythmia"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#critical-role-of-the-vagus",
-    "href": "t32/rip-seminar-2023.html#critical-role-of-the-vagus",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Critical role of the vagus",
-    "text": "Critical role of the vagus\n\nEmbryologically, vagus nerve sprouts from medulla and extends to distant organs (thus long pre-ganglionic axons) e.g. heart, lung, intestines\nParasympathetic control is evolutionarily more primitive in vertebrates, preceeding sympathetic control\n\nSharks exhihibt phasic HRV without sympathetic innervation3\nMammalian vagal control is more complex, with multiple nuclei, e.g. polyvagal4\n\nMammalian vagal outflow is particularly coupled with cardiorespiratory control\n\nLeads to respiratory sinus arrhythmia\nRespiratory changes occur at a high-frequency, can be measured by HRV\n\n\n\n\nStephen Porges proposed the Polyvagal Theory during his tenure at UIC. HRV = heart rate variability;"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#vagal-therapeutic-interventions",
-    "href": "t32/rip-seminar-2023.html#vagal-therapeutic-interventions",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Vagal therapeutic interventions",
-    "text": "Vagal therapeutic interventions\n\nChronic VNS reduces drop in ejection fraction in different animal models of cardiomyopathy, including MI, but studies have mixed results in humans\n\nNECTAR-HF ~ VNS or sham, no difference at 6 months in LV size/function, n = 96\nINOVATE-HF ~ right VNS + GDMT vs. GDMT, no difference in mortality, n = 700\nANTHEM-HF ~ non-randomized VNS, improved LV function, pilot study (required titrated VNS to cause decrease in HR)\n\nVNS may be anti-arrhythmic in animal models, with decreased VT/VF, but minimal human studies\n\nGANGLIA-AF, paroxysmal AF randomized to PVI or atrial GP ablation, decreased AAD dosages in GP group, n = 102\n\n\n\n\nVNS = vagal nerve stimulation; MI = myocardial infarction; LV = left ventricle; GP = ganglionated plexi; AAD = anti-arrhythmic drugs"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#sympathovagal-crosstalk",
-    "href": "t32/rip-seminar-2023.html#sympathovagal-crosstalk",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Sympathovagal crosstalk",
-    "text": "Sympathovagal crosstalk\n\nArrhythmia thresholds affected by sympathetic and vagal activity\nIntracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties1,5\nSympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#molecular-mechanisms",
-    "href": "t32/rip-seminar-2023.html#molecular-mechanisms",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Molecular mechanisms",
-    "text": "Molecular mechanisms\n\nSympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium\nNPY and galanin is also released, which both inhibit cholinergic activity6,7\nBoth inhibit firing and leading to vagolytic effects on the myocardium8,9\n\nGalanin released as a adrenergic co-transmitter, binding to GalR1 receptors\nNPY binds to cholinergic neurons through the Y2 receptor\nBoth directly/indirectly involve protein kinase C\n\nNPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)10\n\n\n\nNE = nor epinephrine; NPY = neuropeptide Y"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#aim-1-clinical",
-    "href": "t32/rip-seminar-2023.html#aim-1-clinical",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Aim #1: Clinical",
-    "text": "Aim #1: Clinical\n\nIdentify clinical phenotypes of vagally-triggered AF. Clinical, intracardiac, and genetic factors will contribute to clinically-relevant phenotypes of AF.\n\nWe will develop a pragmatic, population-level dataset to abstract clinical risk factors, ECG, and echocardiography features and therapy responses. Using unsupervised learning models, AF will be classified into seperate clusters.\nThe clinical relevance of AF phenotypes will be assessed through relevant outcomes (adverse events, disease burden/progression). AF clusters identified in 1a will have distinct hazard distributions estimated through survival analysis.\nWe will perform whole exome sequencing on a subset of patients from each cluster defined in 1a. Selected \\(\\alpha\\) and \\(\\beta\\) adrenergic receptors and cholinergic receptor polymorphisms will be associated with individual AF clusters and clinical outcomes.\n\n\n\n\nECG = electrocardiography;"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#aim-2-translational",
-    "href": "t32/rip-seminar-2023.html#aim-2-translational",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Aim #2: Translational",
-    "text": "Aim #2: Translational\n\nDetermine the intracardiac characteristics of vagally-triggered AF. Structural and electrical features assessed through EPS will identify separate clinically-relevant phenotypes of AF.\n\nWe will collect electroanatomical mapping data and electrogram recordings during PVI of paroxysmal AF. Using signal processing and feature reduction, we will identify clusters of structural and electrical AF that correlate with those identified in 1a.\nWe will apply physiological stress and psychological stress through catecholamine infusion and mental stress challenge, respectively. Catecholamine infusion will lead to ↑NE, ↑NPY, ↑Gal expression while mental stress will lead to ↑NE, ↑NPY, ↑Gal expression\nIn those with suspected vagally-triggered AF, there will be an increased risk of Y2R and Gal1R receptor polymorphisms.\n\n\n\n\nICNS = intracardiac nervous system; EPS = electrophysiology study; PVI = pulmonary vein isolation; HRV = heart rate variability;"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#methods",
-    "href": "t32/rip-seminar-2023.html#methods",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Methods",
-    "text": "Methods\n\n\nElectrophysiology Study\n\nBaseline and post-procedural atrial conduction properties\nCoronary sinus + circulating blood samples (including DNA)\nSurface + intracardiac mapping and electrophysiological signal\nVagal nerve stimulation\n\n\nBig Data\n\nCohort generated from population-level data (UIC/CCTS, ARIC, MVP/VAMC)\nComputational model to classify AF based on clinical + cardiac imaging features\nWhole exome sequencing of DNA in pAF patients to identify autonomic variants\nExtraction of intracardiac features from EPS (volume, scar, voltage, etc…)\n\n\n\n\n\nUIC = University of Illinois at Chicago; CCTS = Center for Translational Research; ARIC = Atherosclerotic Risk in Communities;"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#outcomes",
-    "href": "t32/rip-seminar-2023.html#outcomes",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Outcomes",
-    "text": "Outcomes\n\nMechanisms explored could identify candidate subjects for NPY2R/Gal1R receptor blockade or VNS therapy\nEfficacy of VNS therapy could be quantified through serum testing\nGenetic variants that affect autonomic function along the neurocardiac axis may interplay with known inherited arrhythmis, such as the vagal-mediated triggers of SCD in LQTS patients\n\n\n\nSCD = sudden cardiac death; LQTS = Long QT syndrome"
-  },
-  {
-    "objectID": "t32/rip-seminar-2023.html#references",
-    "href": "t32/rip-seminar-2023.html#references",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "References",
     "text": "References\n\n\n1. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n2. Shivkumar K, Ajijola OA, Anand I, Armour JA, Chen PS, Esler M, et al. Clinical neurocardiology defining the value of neuroscience-based cardiovascular therapeutics. Journal of Physiology 2016;594:3911–3954. doi:10.1113/JP271870.\n\n\n3. Taylor EW, Wang T, Leite CAC. An overview of the phylogeny of cardiorespiratory control in vertebrates with some reflections on the “polyvagal theory.” Biological Psychology 2022;172. doi:10.1016/j.biopsycho.2022.108382.\n\n\n4. Porges SW. The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system. Cleveland Clinic Journal of Medicine 2009;76:S86. doi:10.3949/ccjm.76.s2.17.\n\n\n5. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n6. Herring N. Autonomic control of the heart: Going beyond the classical neurotransmitters. Experimental Physiology 2015;100:354–358. doi:10.1113/expphysiol.2014.080184.\n\n\n7. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n8. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n9. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n10. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n11. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#references",
-    "href": "t32/tpipcvm-rip-seminar.html#references",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "References",
-    "text": "References\n\n\n1. Mehra R, Tjurmina OA, Ajijola OA, Arora R, Bolser DC, Chapleau MW, et al. Research opportunities in autonomic neural mechanisms of cardiopulmonary regulation: A report from the national heart, lung, and blood institute and the national institutes of health office of the director workshop. JACC: Basic to Translational Science 2022;7:265–293. doi:10.1016/j.jacbts.2021.11.003.\n\n\n2. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n3. Shivkumar K, Ajijola OA, Anand I, Armour JA, Chen PS, Esler M, et al. Clinical neurocardiology defining the value of neuroscience-based cardiovascular therapeutics. Journal of Physiology 2016;594:3911–3954. doi:10.1113/JP271870.\n\n\n4. S. A, D. G, A. U, D. S, C. B, R. C. Power spectrum analysis of heart rate fluctuation: A quantitative probe of beat-to-beat cardiovascular control. vol. 213. 1981.\n\n\n5. Vest AN, Poian GD, Li Q, Liu C, Nemati S, Shah AJ, et al. An open source benchmarked toolbox for cardiovascular waveform and interval analysis. Physiological Measurement 2018;39:105004. doi:10.1088/1361-6579/aae021.\n\n\n6. Shah AS, Shah AJ, Lampert R, Goldberg J, Bremner JD, Li L, et al. Alterations in heart rate variability are associated with abnormal myocardial perfusion. International Journal of Cardiology 2020;305:99–105. doi:10.1016/j.ijcard.2020.01.069.\n\n\n7. Portaluppi F, Tiseo R, Smolensky MH, Hermida RC, Ayala DE, Fabbian F. Circadian rhythms and cardiovascular health. Sleep Medicine Reviews 2012;16:151–166. doi:10.1016/j.smrv.2011.04.003.\n\n\n8. Buono MGD, Montone RA, Camilli M, Carbone S, Narula J, Lavie CJ, et al. Coronary microvascular dysfunction across the spectrum of cardiovascular diseases: JACC state-of-the-art review. Journal of the American College of Cardiology 2021;78:1352–1371. doi:10.1016/j.jacc.2021.07.042.\n\n\n9. Hammadah M, Sullivan S, Pearce B, Mheid IA, Wilmot K, Ramadan R, et al. Inflammatory response to mental stress and mental stress induced myocardial ischemia. Brain, Behavior, and Immunity 2018;68:90–97. doi:10.1016/j.bbi.2017.10.004.\n\n\n10. Pollitt RA, Kaufman JS, Rose KM, Diez-Roux AV, Zeng D, Heiss G. Cumulative life course and adult socioeconomic status and markers of inflammation in adulthood. Journal of Epidemiology and Community Health 2008;62:484–491. doi:10.1136/jech.2006.054106.\n\n\n11. Carney RM, Freedland KE, Veith RC. Depression, the autonomic nervous system, and coronary heart disease. Psychosomatic Medicine 2005;67:S29–S33. doi:10.1097/01.psy.0000162254.61556.d5.\n\n\n12. Huang M, Shah A, Su S, Goldberg J, Lampert RJ, Levantsevych OM, et al. Association of depressive symptoms and heart rate variability in vietnam war–era twins. JAMA Psychiatry 2018;75:705. doi:10.1001/jamapsychiatry.2018.0747.\n\n\n13. Penninx BWJH. Depression and cardiovascular disease: Epidemiological evidence on their linking mechanisms. Neuroscience and Biobehavioral Reviews 2017;74:277–286. doi:10.1016/j.neubiorev.2016.07.003.\n\n\n14. Smolderen KG, Buchanan DM, Gosch K, Whooley M, Chan PS, Vaccarino V, et al. Depression treatment and 1-year mortality after acute myocardial infarction: Insights from the TRIUMPH registry (translational research investigating underlying disparities in acute myocardial infarction patients’ health status). Circulation 2017;135:1681–1689. doi:10.1161/CIRCULATIONAHA.116.025140.\n\n\n15. Strike PC, Steptoe A. Systematic review of mental stress-induced myocardial ischaemia. European Heart Journal 2003;24:690–703. doi:10.1016/S0195-668X(02)00615-2.\n\n\n16. Kim JH, Almuwaqqat Z, Hammadah M, Liu C, Ko YA, Lima B, et al. Peripheral vasoconstriction during mental stress and adverse cardiovascular outcomes in patients with coronary artery disease. Circulation Research 2019;125:874–883. doi:10.1161/CIRCRESAHA.119.315005.\n\n\n17. Lima BB, Hammadah M, Kim JH, Uphoff I, Shah A, Levantsevych O, et al. Association of transient endothelial dysfunction induced by mental stress with major adverse cardiovascular events in men and women with coronary artery disease. JAMA Cardiology 2019;4:988–996. doi:10.1001/jamacardio.2019.3252.\n\n\n18. Hammadah M, Kim JH, Mheid IA, Tahhan AS, Wilmot K, Ramadan R, et al. Coronary and peripheral vasomotor responses to mental stress. Journal of the American Heart Association 2018;7. doi:10.1161/JAHA.118.008532.\n\n\n19. Vaccarino V, Almuwaqqat Z, Kim JH, Hammadah M, Shah AJA, Ko YA, et al. Association of mental stress-induced myocardial ischemia with cardiovascular events in patients with coronary heart disease. JAMA - Journal of the American Medical Association 2021;326:1818–1828. doi:10.1001/jama.2021.17649.\n\n\n20. Taggart P, Boyett MR, Logantha SJRJ, Lambiase PD. Anger, emotion, and arrhythmias: From brain to heart. Frontiers in Physiology 2011;2 OCT. doi:10.3389/fphys.2011.00067.\n\n\n21. Shah AS, Alonso A, Whitsel EA, Soliman EZ, Vaccarino V, Shah AJ. Association of psychosocial factors with short‐term resting heart rate variability: The atherosclerosis risk in communities study. Journal of the American Heart Association 2021;10:e017172. doi:10.1161/JAHA.120.017172.\n\n\n22. Rovere MTL, Bigger JT, Marcus FI, Mortara A, Schwartz PJ. Baroreflex sensitivity and heart-rate variability in prediction of total cardiac mortality after myocardial infarction. Lancet 1998;351:478–484. doi:10.1016/S0140-6736(97)11144-8.\n\n\n23. Taylor EW, Wang T, Leite CAC. An overview of the phylogeny of cardiorespiratory control in vertebrates with some reflections on the “polyvagal theory.” Biological Psychology 2022;172. doi:10.1016/j.biopsycho.2022.108382.\n\n\n24. Porges SW. The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system. Cleveland Clinic Journal of Medicine 2009;76:S86. doi:10.3949/ccjm.76.s2.17.\n\n\n25. Porges SW. The polyvagal perspective. Biological Psychology 2007;74:116–143. doi:10.1016/j.biopsycho.2006.06.009.\n\n\n26. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n27. Herring N. Autonomic control of the heart: Going beyond the classical neurotransmitters. Experimental Physiology 2015;100:354–358. doi:10.1113/expphysiol.2014.080184.\n\n\n28. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n29. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n30. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n31. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n32. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#objectives",
-    "href": "t32/tpipcvm-rip-seminar.html#objectives",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Objectives",
-    "text": "Objectives\n\n\nUnderstand importance of neural regulation of cardiac physiology\nUnderstand the role of cardiovagal activity in arrhythmogenesis\nIdentify gaps in current diagnostic and treatment options\nReview a research proposal in autonomic and electrical heart disease"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#abbreviations",
-    "href": "t32/tpipcvm-rip-seminar.html#abbreviations",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Abbreviations",
-    "text": "Abbreviations\n\n\n\n\n\n\n\nVTA\nvagally-triggered arrhythmia\n\n\n(p)AF\n(paroxysmal) atrial fibrillation\n\n\nAAD\nanti-arrhythmic drugs\n\n\nANS/SNS/PNS\nautonomic/sympathetic/parasympathetic nervous sytem\n\n\nGP\nganglionated plexi\n\n\nNPY, Gal\nneuropeptide Y, galanin\n\n\nHF & LF HRV\nhigh and low frequency heart rate variability\n\n\nEPS, EAM\nelectrophysiology study, electro-anatomical mapping\n\n\nLA, RA, LV, RV\nleft/right atrium/ventricle\n\n\nCV, CAD, and MI\ncardiovascular, coronary artery disease, and myocardial infarction\n\n\nVNS\nvagal nerve stimulation"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#vagally-triggered-af",
-    "href": "t32/tpipcvm-rip-seminar.html#vagally-triggered-af",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Vagally-triggered AF",
-    "text": "Vagally-triggered AF"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#summary-of-research-aims",
-    "href": "t32/tpipcvm-rip-seminar.html#summary-of-research-aims",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Summary of research aims",
-    "text": "Summary of research aims"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#neurocardiac-axis",
-    "href": "t32/tpipcvm-rip-seminar.html#neurocardiac-axis",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Neurocardiac axis",
-    "text": "Neurocardiac axis\n\nNeurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels2\n\nCortex ↔︎ brainstem\nSpinal cord ↔︎ extracardiac ganglia (e.g. stellate)\nIntrinsic cardiac nervous system (ICNS) ↔︎ heart\n\nAutonomic regulation is critical in the development of most CV disease\n\nDisregulated catecholamines in heart failure\nPost myocardial infarct VF\nTriggered arrhythmias such as VT"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#assessing-the-autonomic-nervous-system",
-    "href": "t32/tpipcvm-rip-seminar.html#assessing-the-autonomic-nervous-system",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Assessing the autonomic nervous system",
-    "text": "Assessing the autonomic nervous system"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#affect-of-stress-on-cardiac-physiology",
-    "href": "t32/tpipcvm-rip-seminar.html#affect-of-stress-on-cardiac-physiology",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Affect of stress on cardiac physiology",
-    "text": "Affect of stress on cardiac physiology\nTODO"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#relationship-of-autonomic-activity-and-atrial-arrhythmias",
-    "href": "t32/tpipcvm-rip-seminar.html#relationship-of-autonomic-activity-and-atrial-arrhythmias",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Relationship of autonomic activity and atrial arrhythmias",
-    "text": "Relationship of autonomic activity and atrial arrhythmias\nTODO"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#summary-of-aims",
-    "href": "t32/tpipcvm-rip-seminar.html#summary-of-aims",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Summary of aims",
-    "text": "Summary of aims\n\nWhy did he die on Tuesday and not on Monday?\n\nDouglas Zipes"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#schematic-approach",
-    "href": "t32/tpipcvm-rip-seminar.html#schematic-approach",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Schematic approach",
-    "text": "Schematic approach\n\nFigure 2: Graphical representation of specific aims"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#need-for-clinical-training",
-    "href": "t32/tpipcvm-rip-seminar.html#need-for-clinical-training",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Need for clinical training",
-    "text": "Need for clinical training\nTODO"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#importance-of-phenotypes-of-af",
-    "href": "t32/tpipcvm-rip-seminar.html#importance-of-phenotypes-of-af",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Importance of phenotypes of AF",
-    "text": "Importance of phenotypes of AF\nTODO"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#data-collection",
-    "href": "t32/tpipcvm-rip-seminar.html#data-collection",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Data collection",
-    "text": "Data collection\nTODO"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#computational-approach",
-    "href": "t32/tpipcvm-rip-seminar.html#computational-approach",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Computational approach",
-    "text": "Computational approach\nTODO"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#role-of-genetics",
-    "href": "t32/tpipcvm-rip-seminar.html#role-of-genetics",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Role of genetics",
-    "text": "Role of genetics\nTODO"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#molecular-pathways",
-    "href": "t32/tpipcvm-rip-seminar.html#molecular-pathways",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Molecular pathways",
-    "text": "Molecular pathways"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#neurohormonal-regulation",
-    "href": "t32/tpipcvm-rip-seminar.html#neurohormonal-regulation",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Neurohormonal regulation",
-    "text": "Neurohormonal regulation\nTODO"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#electrophysiology",
-    "href": "t32/tpipcvm-rip-seminar.html#electrophysiology",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Electrophysiology",
-    "text": "Electrophysiology\nTODO"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#signal-processing",
-    "href": "t32/tpipcvm-rip-seminar.html#signal-processing",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Signal processing",
-    "text": "Signal processing\nTODO"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#pharmacological-therapies",
-    "href": "t32/tpipcvm-rip-seminar.html#pharmacological-therapies",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Pharmacological therapies",
-    "text": "Pharmacological therapies"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#ablative-therapies",
-    "href": "t32/tpipcvm-rip-seminar.html#ablative-therapies",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Ablative therapies",
-    "text": "Ablative therapies"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#vagal-nerve-stimulation",
-    "href": "t32/tpipcvm-rip-seminar.html#vagal-nerve-stimulation",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Vagal nerve stimulation",
-    "text": "Vagal nerve stimulation"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#section",
-    "href": "t32/tpipcvm-rip-seminar.html#section",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "",
-    "text": "Hypothesis: In humans with paroxysmal atrial fibrillation, during episodes of increased sympathetic outflow, inappropriate or disproportionate vagal withdrawal (vagolysis) leads to arrhythmogenesis.\n\n\n\nChanges in electrical activity precede the onset of arrhythmias\nArrhythmia onset requires both a structurally-susceptible heart and a trigger\nTriggers effect the electrical microcosm of the heart through autonomic outflows/imbalance\n\n\n\n\nThe concept of vagolysis and arrhythmogenesis will be referred to as vagal-triggered arrhythmias (VTA) hereafter."
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#color-coding",
-    "href": "t32/tpipcvm-rip-seminar.html#color-coding",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Color-coding",
-    "text": "Color-coding\nTo help follow along in the complexity of this multi-system project, there is a consistent color pattern used to relate a research area with a concept:\n\nComputational & digital signal processing methods will be noted in green\nClinical data that would require a physician or cardiologist to obtain are noted in red\nArrhythmias and electrical focused work is noted in orange\nEpidemiological or genetic based methods are noted in blue"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#ans-control-of-the-heart",
-    "href": "t32/tpipcvm-rip-seminar.html#ans-control-of-the-heart",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "ANS control of the heart",
-    "text": "ANS control of the heart\n\n\nNeurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels2\n\nCortex ↔︎ brainstem\nSpinal cord ↔︎ extracardiac ganglia (e.g. stellate)\nIntrinsic cardiac nervous system (ICNS) ↔︎ heart\n\nAutonomic regulation is critical in the development of most CV disease\n\nDisregulated catecholamines in heart failure\nPost myocardial infarct VF\nTriggered arrhythmias such as VT"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#neurovisceral-integration",
-    "href": "t32/tpipcvm-rip-seminar.html#neurovisceral-integration",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Neurovisceral integration",
-    "text": "Neurovisceral integration\n\nLower levels of networked structures (ICNS, hypothalamus) integrate afferent information about metabolic demands\nHigher levels of networked structures (amydala, cortex) integrate lower networks and generate conscious/uncscious CV state representations\nAllows for environmental/psychological factors to interplay with cardiac physiology, e.g. mental stress causing arrhythmia"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#outline",
-    "href": "t32/tpipcvm-rip-seminar.html#outline",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Outline",
-    "text": "Outline\n\n\nOverview\nStep 1: Establish relationship between ANS and cardiac physiology\nStep 2: Evaluate effect of stress on CV mortality\nStep 3: Determine clinical impact of vagal withdrawal\nStep 4: Identify a representative disease model = pAF\nResearch proposal"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#recurrent-concepts",
-    "href": "t32/tpipcvm-rip-seminar.html#recurrent-concepts",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Recurrent concepts",
-    "text": "Recurrent concepts\nThis research is focused on electrophysiological changes that lead to arrhythmais due to neurocardiac dysregulation, at a individual and population level.\nTo help follow along with the complexity of the topic, there is a consistent color scheme noted throughout.\n\n\n\nComputational & digital signal processing methods will be noted in green\nClinical data that requires a physician or cardiologist to obtain are noted in red\nArrhythmia and electrical focused work is noted in orange\nEpidemiological or genetic based methods are noted in blue"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#postulates",
-    "href": "t32/tpipcvm-rip-seminar.html#postulates",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Postulates",
-    "text": "Postulates\nHypothesis: In humans with paroxysmal atrial fibrillation, during episodes of increased sympathetic outflow, inappropriate or disproportionate vagal withdrawal (vagolysis) leads to arrhythmogenesis.\n\nChanges in electrical activity precede the onset of arrhythmias\nArrhythmia onset requires both a structurally-susceptible heart and a trigger\nTriggers effect the electrical microcosm of the heart through autonomic outflows/imbalance\n\n\nThe concept of vagolysis and arrhythmogenesis will be referred to as vagal-triggered arrhythmias (VTA) hereafter."
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#aim-1-clinical",
-    "href": "t32/tpipcvm-rip-seminar.html#aim-1-clinical",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Aim #1: Clinical",
-    "text": "Aim #1: Clinical\n\nIdentify clinical phenotypes of vagally-triggered AF. Clinical, intracardiac, and genetic factors will contribute to clinically-relevant phenotypes of AF.\n\nWe will develop a pragmatic, population-level dataset to abstract clinical risk factors, ECG, and echocardiography features and therapy responses. Using unsupervised learning models, AF will be classified into seperate clusters.\nThe clinical relevance of AF phenotypes will be assessed through relevant outcomes (adverse events, disease burden/progression). AF clusters identified in 1a will have distinct hazard distributions estimated through survival analysis."
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#aim-2-translational",
-    "href": "t32/tpipcvm-rip-seminar.html#aim-2-translational",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Aim #2: Translational",
-    "text": "Aim #2: Translational\n\nDetermine the intracardiac characteristics of vagally-triggered AF. Structural and electrical features assessed through EPS will identify separate clinically-relevant phenotypes of AF.\n\nWe will collect electroanatomical mapping data and electrogram recordings during PVI of paroxysmal AF. Using signal processing and feature reduction, we will identify clusters of structural and electrical AF that correlate with those identified in 1a.\nWe will apply physiological stress through catecholamine infusion, respectively. Catecholamine infusion will lead to ↑NE, ↑NPY, ↑Gal expression while mental stress will lead to ↑NE, ↑NPY, ↑Gal expression\nIn those with suspected vagally-triggered AF, there will be an increased risk of Y2R and Gal1R receptor polymorphisms.\nWe will perform whole exome sequencing on a subset of patients from each cluster defined in 1a. Selected \\(\\alpha\\) and \\(\\beta\\) adrenergic receptors and cholinergic receptor polymorphisms will be associated with individual AF clusters and clinical outcomes."
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#molecular-mechanisms",
-    "href": "t32/tpipcvm-rip-seminar.html#molecular-mechanisms",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Molecular mechanisms",
-    "text": "Molecular mechanisms\n\nSympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium\nNPY and galanin is also released, which both inhibit cholinergic activity27,28\nBoth inhibit firing and leading to vagolytic effects on the myocardium29,30\n\nGalanin released as a adrenergic co-transmitter, binding to GalR1 receptors\nNPY binds to cholinergic neurons through the Y2 receptor\nBoth directly/indirectly involve protein kinase C\n\nNPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)31"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#potential-questions",
-    "href": "t32/tpipcvm-rip-seminar.html#potential-questions",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Potential questions",
-    "text": "Potential questions\n\nHow do we measure the electrical activity of the heart, or moreover the autonomic system itself?\nIs the autonomic nervous system critical in the development of arrhythmias?\nWhat role does cardiovagal outflow play, as compared to sympathetic activity?\nAs the neural regulation of the heart is indelibly complex, what approach can mitigate the inherent reductionist approach in disease modeling?\nHow do we identify which individuals are susceptible to VTA? Are there interventions for this?"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#research-goals",
-    "href": "t32/tpipcvm-rip-seminar.html#research-goals",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Research goals",
-    "text": "Research goals\n\nIdentify within pAF if there exist VTA sub-phenotypes using population-level data:\n\nClinical comorbidities\nArrhythmia burden\nPsychosocial stressors\nIschemic and structural heart disease\nCardiomyopathy (atrial and ventricular)\n\nIdentify undergoing ablative therapy for pAF if there exist patterns that support a VTA endo-phenotype using intracardiac data:\n\nElectrophysiology properties of AF (dominant frequencies, pulmonary vein triggers, scar burden, atrial volume)\nIntracardiac biomarkers of vagolysis (both electrical and neurohormonal)\nGenetic variants that may be susceptible to abnormal cardiovagal outflow"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#future-directions",
-    "href": "t32/tpipcvm-rip-seminar.html#future-directions",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Future Directions",
-    "text": "Future Directions\nPharmacological therapies\nAblative therapies\nVagal nerve stimulation"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#section-1",
-    "href": "t32/tpipcvm-rip-seminar.html#section-1",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "",
-    "text": "Abbreviations\nDefinitions\n\n\n\n\nVTA\nvagally-triggered arrhythmia\n\n\n(p)AF\n(paroxysmal) atrial fibrillation\n\n\nAAD\nanti-arrhythmic drugs\n\n\nANS/SNS/PNS\nautonomic/sympathetic/parasympathetic nervous sytem\n\n\nGP\nganglionated plexi\n\n\nNPY, Gal\nneuropeptide Y, galanin\n\n\nHF, LF HRV\nhigh & low frequency heart rate variability\n\n\nEPS, EAM\nelectrophysiology study, electro-anatomical mapping\n\n\nLA, RA, LV, RV\nleft/right atrium/ventricle\n\n\nCAD, MI\ncoronary artery disease, myocardial ischemia/infarction\n\n\nVNS\nvagal nerve stimulation"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#assessment-of-the-ans",
-    "href": "t32/tpipcvm-rip-seminar.html#assessment-of-the-ans",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Assessment of the ANS",
-    "text": "Assessment of the ANS\n\nSympathogal balance integrate at the heart, as seen in Figure 1\nHRV serves a surrogate for autonomic function\nVariability occurs due to sympathovagal balance at level of sinoatrial node\nSympathetic outflow and vagal outflow occur at difference speeds allowing some level of differentiation"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#autonomic-function-and-coronary-physiology",
-    "href": "t32/tpipcvm-rip-seminar.html#autonomic-function-and-coronary-physiology",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Autonomic function and coronary physiology",
-    "text": "Autonomic function and coronary physiology\nA study in veteran twins:\n\nEvaluated 24-hour HRV in controlled setting/scheduled\nEvaluated quantitative myocardial perfusion imaging\nCompared circadian patterns of HRV with coronary flow reserves\n\n\n\nHRV can be processed through open-source software5"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#critical-role-of-the-vagus",
-    "href": "t32/tpipcvm-rip-seminar.html#critical-role-of-the-vagus",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Critical role of the vagus",
-    "text": "Critical role of the vagus\n\nEmbryologically, vagus nerve sprouts from medulla and extends to distant organs (thus long pre-ganglionic axons) e.g. heart, lung, intestines\nParasympathetic control is evolutionarily more primitive in vertebrates, pre-dating sympathetic control\n\nSharks exhibit phasic HRV without sympathetic innervation23\nMammalian vagal control is more complex, with multiple nuclei, e.g. polyvagal24\n\nMammalian vagal outflow is particularly coupled with cardiorespiratory control\n\nLeads to respiratory sinus arrhythmia\nRespiratory changes occur at a high-frequency, can be measured by HRV"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#af",
-    "href": "t32/tpipcvm-rip-seminar.html#af",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "AF",
-    "text": "AF\nTODO"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#section-2",
-    "href": "t32/tpipcvm-rip-seminar.html#section-2",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "",
-    "text": "Figure 10: Graphical representation of specific aims"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#stress-responses",
-    "href": "t32/tpipcvm-rip-seminar.html#stress-responses",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Stress responses",
-    "text": "Stress responses\nHow do we perturb the ANS?\nChronic mental stress:\n\nDepression & exhaustion relate to CVD\nInflammatory mechanismsHammadah2018a?,Pollitt2008?\nAutonomic mechanisms8–11\n\nAcute mental stress:\n\nAssociated with many changes to cardiac physiologyStrike2003?\nPeripheral vasoconstriction,Kim2019?,Lima2019?\nCoronary vasomotionHammadah2018b?"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#how-do-we-perturb-the-ans",
-    "href": "t32/tpipcvm-rip-seminar.html#how-do-we-perturb-the-ans",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "How do we perturb the ANS?",
-    "text": "How do we perturb the ANS?\n\n\nChronic mental stress\n\nDepression & anxiety disorders relate to CVD\nInflammatory mechanisms9,10\nAutonomic mechanisms11–14\n\n\nAcute mental stress\n\nAssociated with many changes to cardiac physiology15\nPeripheral vasoconstriction,16,17\nCoronary vasomotion18\nMental stress-induced myocardial ischemia19, as seen in Figure 7"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#vagal-therapeutic-interventions",
-    "href": "t32/tpipcvm-rip-seminar.html#vagal-therapeutic-interventions",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Vagal therapeutic interventions",
-    "text": "Vagal therapeutic interventions\n\nChronic VNS reduces drop in ejection fraction in different animal models of cardiomyopathy, including MI, but studies have mixed results in humans\n\nNECTAR-HF ~ VNS or sham, no difference at 6 months in LV size/function, n = 96\nINOVATE-HF ~ right VNS + GDMT vs. GDMT, no difference in mortality, n = 700\nANTHEM-HF ~ non-randomized VNS, improved LV function, pilot study (required titrated VNS to cause decrease in HR)\n\nVNS may be anti-arrhythmic in animal models, with decreased VT/VF, but minimal human studies\n\nGANGLIA-AF, paroxysmal AF randomized to PVI or atrial GP ablation, decreased AAD dosages in GP group, n = 102"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#jacksonian-dissolution",
-    "href": "t32/tpipcvm-rip-seminar.html#jacksonian-dissolution",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Jacksonian dissolution",
-    "text": "Jacksonian dissolution\nJacksonian dissolution is the concept that older, more primitive systems will take over when more evolved systems break down. Polyvagal theory (theorized by Porges)25 posits there are two branches of the vagus nerve\n\nReptilian vagus: primitive, unmyelinated, controlled by the dorssal motor nucleus\nMammalian vagus: evolved, myelinated, controlled by teh nucleus ambiguus\n\nThis may explain the additive effect of reduced resting HF HRV and reduced HF HRV reactivity"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#significance",
-    "href": "t32/tpipcvm-rip-seminar.html#significance",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Significance",
-    "text": "Significance\n\nKnowledge gaps:\n\nbiomarkers of response to neuromodulation therapy, including ablation\nunderstanding of regional variation in innervation affects arrhythmogenesis\ntranslation from single-cell studies to human models\n\nResearch priorities:\n\nrole of ANS signaling in emergence and maintenance of cardiac arrhythmias\ntarget modulation of ANS to attenuate electrical remodeling\npredict underlying biomarkers\nunderstand time course of ANS remodeling and neuropeptide expression\nsex/race differences in cardiac arrhythmogenesis\n\n\n\n\n1 has identified these gaps and priorities in a NHLBI-supported expert-led workshop"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#sympathovagal-crosstalk",
-    "href": "t32/tpipcvm-rip-seminar.html#sympathovagal-crosstalk",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Sympathovagal crosstalk",
-    "text": "Sympathovagal crosstalk\n\nArrhythmia thresholds affected by sympathetic and vagal activity\nIntracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties2,26\nSympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#genetic-variants",
-    "href": "t32/tpipcvm-rip-seminar.html#genetic-variants",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Genetic variants",
-    "text": "Genetic variants\n\n\n\nVariant\nDescription\n\n\n\n\nrs16147\nNPY promoter region\n\n\nrs10842383\nLINC00477, HF HRV\n\n\nrs236349\nPPIL1, RMSSD\n\n\nrs4262\nGNG11, SDNN\n\n\nrs7980799\nSYT10, respiratory sinus arrhythmia\n\n\nrs12974991\nNDUFA11, HF HRV"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#inadequate-classification",
-    "href": "t32/tpipcvm-rip-seminar.html#inadequate-classification",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Inadequate classification",
-    "text": "Inadequate classification\n\npAF has been separated into coarse, non-physiological groups (paroxysmal, persistent, permanent)\nDiagnostic and treatment strategies are overally-generalized, and do not identify or target sub-phenotypes or endo-phenotypes that may exist\n\ne.g. vagally-mediated AF responds well to disopyramide\n\nAttempts to re-classify/cluster AF have been performed,[Watanabe2021?; Vitolo2021;Pastori2020?] and generally suggest 4 broad categories:\n\nYoung, low risk\nHigh CV risk factors\nHigh comorbid CV disease\nHigh comorbid non-CV disease\n\n\nHowever, these categories are skewed, with the younger, low-risk group being >50% of the samples."
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#paf-as-a-model-for-vta",
-    "href": "t32/tpipcvm-rip-seminar.html#paf-as-a-model-for-vta",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "pAF as a model for VTA",
-    "text": "pAF as a model for VTA\n\npAF is both ubiquitous and poorly-classified\nMechanism-driven therapies may exist for sub-phenotypes and endo-phenotypes\nAutonomic triggers associated with atrial arrhythmias\nFunctional/anatomical relationship between atria and GP exist\nElectrophysiology studies are readily avaiable, with rich electrical signal data, for analysis in humans\nGenetic variants lead to cardiomyocyte changes that predispose to AF, but there are also variants that affect cardiovagal outflow"
-  },
-  {
-    "objectID": "t32/tpipcvm-rip-seminar.html#research-approach",
-    "href": "t32/tpipcvm-rip-seminar.html#research-approach",
-    "title": "Vagolysis and Arrhythmogenesis",
-    "section": "Research approach",
-    "text": "Research approach\n\nIdentify within pAF if there exist VTA sub-phenotypes using population-level data:\n\nClinical comorbidities\nArrhythmia burden\nPsychosocial stressors\nIschemic and structural heart disease\nCardiomyopathy (atrial and ventricular)\n\nIdentify in individuals undergoing ablative therapy for pAF if there exist patterns that support a VTA endo-phenotype using intracardiac data:\n\nElectrophysiology properties of AF (dominant frequencies, pulmonary vein triggers, scar burden, atrial volume)\nIntracardiac biomarkers of vagolysis (both electrical and neurohormonal)\nGenetic variants that may be susceptible to abnormal cardiovagal outflow"
-  },
-  {
-    "objectID": "t32/t32-updates.html#cbcd",
-    "href": "t32/t32-updates.html#cbcd",
-    "title": "Research-In-Progress",
-    "section": "CBCD",
-    "text": "CBCD\nComputational biorepository for cardiovascular disease\n\nWill need a large computational biorepository\n\nClaims data from both CPT/ICD codes\nClinical documentation (raw text from clinical notes)\nMedication history\nStudy data e.g. XML of ECG, echo reports, coronary angiograms, device interrogations, etc\n\nCCTS to pull data, DRA to be submitted today\n\n\n\nAlso working on VA research database access, CART-CL reporting data, MVP, ARIC, and UK Biobank as additional large-scale data"
-  },
-  {
-    "objectID": "t32/t32-updates.html#hrvcvd",
-    "href": "t32/t32-updates.html#hrvcvd",
-    "title": "Research-In-Progress",
-    "section": "HRV/CVD",
-    "text": "HRV/CVD\n\n\n\nFigure 1: Increase of ~10 fold in CV mortality in 1/4 patients identified by abnormal resting and reactive vagal tone. Robust classifier of resilience.\n\n\n\n\nNon-linear relationship established by spline analysis against CV death."
-  },
-  {
-    "objectID": "t32/t32-updates.html#specific-aims",
-    "href": "t32/t32-updates.html#specific-aims",
-    "title": "Research-In-Progress",
-    "section": "Specific aims",
-    "text": "Specific aims"
-  },
-  {
-    "objectID": "t32/t32-updates.html#section",
-    "href": "t32/t32-updates.html#section",
-    "title": "Research-In-Progress",
-    "section": "",
-    "text": "Identify clinical phenotypes of vagally-triggered AF.:\n\nWe will use a computational approach to develop a pragmatic, population-level datasets to identify phenotypes of pAF using clinical covariates, including ECG, TTE, cardiac monitoring devices, and markers of psychosocial stress. Hypothesis: Low-burden groups will exist that have differences in clinical characteristics that can be used to reliably classify individuals.\nWe will assess recurrent clinical outcomes, including arrhythmia burden, conduction disease, atrial and ventricular cardiomyopathy, along with types of therapies (pharmacological/interventional). Hypothesis: The hazard distribution will vary amongst the identified clinical phenotypes. The rate of escalation of intervention will also vary based on phenotypes."
-  },
-  {
-    "objectID": "t32/t32-updates.html#section-1",
-    "href": "t32/t32-updates.html#section-1",
-    "title": "Research-In-Progress",
-    "section": "",
-    "text": "Determine the intracardiac characteristics of vagally-triggered AF.:\n\nStructural and electrical features will be obtained through EPS. The EAM and EGM data collected will be used to identify intra-procedural AF phenotypes. Hypothesis: Electrical and anatomical phenotypes will allow differentiation of re-entrant and triggered pAF.\nElectrical phenotypes of pAF will be compared with phenotypes identified in 1a. Hypothesis: The clinical phenotypes will correlate with the unique electrical phenotypes obtained during EPS.\nPhysiological stress, through catecholamine infusion, and neuropsychological stress, through mental stress challenge will be applied during EPS to measure changes in electrical properties. Simultaneous measurement of critical vagolytic neurohormones (NPY, Gal) will be measured at time of stressor. Hypothesis: Catecholamine-infusion will lead to ↓NPY and ↓Gal, while mental stress will lead to ↑NPY and ↑Gal.\nVagally-triggered AF will be identified by interview prior to EPS. Hypothesis: In those with suspected VT-pAF, triggered firing of pulmonary veins will be seen, and AF will be reliably induced by vagolysis."
-  },
-  {
-    "objectID": "t32/t32-updates.html#section-2",
-    "href": "t32/t32-updates.html#section-2",
-    "title": "Research-In-Progress",
-    "section": "",
-    "text": "Evaluate role of common genetic variants in VTA.:\n\nWe will use a candidate-gene approach to assess association of common genetic variants with the clinical and electrical phenotypes identified in 1a and 2a in individuals undergoing EPS. Hypothesis: Variants in genes associated with the cardiovagal outflow (e.g. Y2R and Gal1R), will be more common in those with VT-pAF\nWe will identify individuals that are classified as having resting and stress-inducded vagal dysfunction (as standardized against CV death). Genetic data through next-generation sequencing will be obtained. Hypothesis: We will identify novel variants that are associated with dysfunction in cardiovagal activity."
   }
 ]

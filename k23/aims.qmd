@@ -1,5 +1,55 @@
 ---
-title: Vagolysis and Arrhythmias
-author: Anish S. Shah, MD|MS
 format: docx
 ---
+
+# AIM 1
+
+__The goal is to find patients that have had "triggered pAF" as their phenotype__
+
+1. I will get patients from the CCTS from UIC and obtain clinical data before diagnosis and after
+1. Evaluate time-based markers (weight change, burden of AF, echo parameters)
+1. Filter out those with highly co-morbid pAF, leaving those that are somewhat younger/less-comorbid as target population.
+1. Of those, will identify patients that have had pAF ablation (retrospectively)
+1. Will look at EGM/EAM data on those retrospective patients and evaluate if there are intracardiac patterns (triggered/un-triggered, voltage, scar burden, atrial geometry)
+1. Will compare those population-level patients with the subset of EPS patients to see if there is a pattern against a "gold-standard" 
+
+__Aim 1: Identify triggered-variants of pAF using clinical and electrical sub-phenotypes.__ 
+a. *[Hypothesis]{.underline}: Intracardiac and extracardiac electrical features classify pAF into triggered versus re-entrant variants.* 
+a. Our clinical sub-phenotype will be generated using population-level data that incorporates ECG, imaging, burden, and recurrence.   
+a. Our electrical sub-phenotype will be generated during EPS for pAF ablation, using intracardiac markers (EGM, voltage, scar) and will be used to validate our findings.  
+
+# AIM 2
+
+__The goal is to identify if there is a VTA-pAF phenotype from intracardiac lab data.__
+
+1. Will enroll patients undergoing EPS/PVI for pAF
+1. Before enrollment, evaluate if they classify/fall into a phenotype category from aim 1
+1. Will interview these patients to get neuropsychological patterns prior to PVI
+1. During the case, before PVI, will get baseline EPS. EPS will include SA node properties. HRV/GEH before and after PVI. 
+1. During the case will also get systemic/IVC levels of NE, EPI, CRP, ESR, hsTn, ANP, nt-BNP. 
+1. Will get CS-levels of NPY, Gal, S100B before and after ablation. Also get systemic levels at baseline.
+1. During case, if feasible, will use epi/iso to evaluate vagal effects and re-measure NPY/Gal.
+1. During case, if feasible, will use VNS and re-measure NPY/Gal levels (and NE). 
+1. After ablation, will measure S100B (GP glial cells)
+1. Use these components to classify patients as "autonomic" or not in terms of their AF
+1. Compare them to patients in Aim 1 as a "gold standard"
+
+__Aim 2: Investigate the autonomic determinants of triggered-variants of pAF.__ 
+a. Levels of serum and coronary sinus neurohormonal biomarkers can be measured during EPS. *[Hypothesis]{.underline}: Levels of NPY and Gal will be greater in those with triggered vs. re-entrant pAF.*  
+a. Physiological stress can be induced through catecholamine infusion, and can affect arrhythmogenesis. *[Hypothesis]{.underline}: The electrical threshold for arrythmogenesis will be decreased in those with triggered pAF as compared to baseline.*  
+a. Neuropsychological stress can be measured through clinical interview and using mental stress challenge. *[Hypothesis]{.underline}: Levels of NPY and Gal will be higher at baseline in those with increased burden of psychological stress.*  
+
+# AIM 3
+
+__The goal is to see if there are high-risk genes that lead to vagal-withdrawal (Emory). If there are, those variants likely increase risk of pAF as well and we can see it (UIC).__
+
+1. Will evaluate patients identify as high-risk of vagal withdrawal to stress (MSI-VTA). This is rest + stress reactivity vagal withdrawal.
+1. Evaluate common genetic variants in this population in those that did GWAS. 
+1. Use WES/next-gen sequencing to look for novel variants
+1. Identify these variants and look at them in the AF population at UIC.
+1. See if these variants or polymorphisms are related to the VTA-pAF phenotype, AF burden, recurrence after ablation.
+
+__Aim 3: Evaluate the role of ANS receptor polymorphisms with vagally-triggered arrhythmias.__
+a. We will identify individuals that are classified as having resting and stress-induced vagal withdrawal with their risk of CV mortality. We will obtain next-generation sequencing on those individuals. *[Hypothesis]{.underline}: Novel variants exist that may explain the risk of vagally-triggered arrhythmias.*  
+a. A candidate gene-approach can be used to identify common variants in cardiovagal outflow receptors (Y2R and Gal1R). *[Hypothesis]{.underline}: In triggered pAF, those classified in __1c__, will have an increased rate of receptor polymorphisms.*  
+
