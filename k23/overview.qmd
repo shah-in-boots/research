@@ -258,32 +258,27 @@ NPY = neuropeptide Y
 
 # Aims
 
-## Aim #1: Clinical {.smaller}
+---
 
-1. __Identify clinical phenotypes of vagally-triggered AF.__
-_Clinical, intracardiac, and genetic factors will contribute to clinically-relevant phenotypes of AF_.
-	a. We will [develop a pragmatic, population-level dataset]{.blue} to abstract clinical risk factors, ECG, and echocardiography features and therapy responses. [Using unsupervised learning models]{.green}, AF will be classified into seperate clusters.
-	a. The [clinical relevance of AF phenotypes]{.red} will be assessed through relevant outcomes (adverse events, disease burden/progression). AF clusters identified in __1a__ will have distinct hazard distributions [estimated through survival analysis]{.green}.
-	a. We will perform [whole exome sequencing]{.orange} on a subset of patients from each cluster defined in __1a__. Selected $\alpha$ and $\beta$ adrenergic receptors and cholinergic receptor polymorphisms will be associated with individual AF clusters and clinical outcomes.
-	
-::: aside
-ECG = electrocardiography;
-:::
+__Aim 1: Identify triggered variants of pAF.__ 
+*Intracardiac and extracardiac electrical features will [classify pAF into triggered versus re-entrant variants]{.underline}.* 
+Population level data will be leveraged to identify clinical subphenotypes of pAF, incorporating ECG and echocardiography markers, arrhythmia burden, recurrence, and time-varying components of potential risk-factors.
+These subphenotypes will be compared against intracardiac findings, including EGM and EAM data, to validate triggered arrhythmia.
 
-## Aim #2: Translational {.smaller}
+---
 
-2. __Determine the intracardiac characteristics of vagally-triggered AF.__
-_Structural and electrical features assessed through EPS will identify separate clinically-relevant phenotypes of AF._
-	a. We will collect electroanatomical mapping data and electrogram recordings [during PVI]{.red} of paroxysmal AF. Using [signal processing and feature reduction]{.green}, we will identify clusters of structural and electrical AF that correlate with those identified in __1a__. 
-	a. We will apply physiological stress and psychological stress [through catecholamine infusion and mental stress challenge]{.red}, respectively. Catecholamine infusion will lead to [&uarr;NE, &uarr;NPY, &uarr;Gal expression]{.orange} while mental stress will lead to [&uarr;NE, &uarr;NPY, &uarr;Gal expression]{.orange} 
-	a. In those with suspected vagally-triggered AF, there will be an increased risk of [Y2R and Gal1R receptor polymorphisms]{.orange}.
+__Aim 2: Determine the role of autonomic mechanisms in triggered pAF.__ 
+*Triggered pAF will be associated with [increased electrical and neurohormonal biomarkers of vagolysis]{.underline}.*  
+Neuropsychological markers of stress will be obtained through clinical interview prior to PVI, and will be clinically phenotyped (__Aim 1__).
+Coronary sinus levels of NPY, Gal, S100B and arrhythmia thresholds will be obtained before and after PVI, and at the time of any additional physiological testing (catecholamine infusion, vagal nerve stimulation).
 
-::: aside
-ICNS = intracardiac nervous system;
-EPS = electrophysiology study;
-PVI = pulmonary vein isolation;
-HRV = heart rate variability;
-:::
+---
+
+__Aim 3: Evaluate the role of cardiovagal receptor genotypes in the risk of vagally-triggered arrhythmias.__
+*We hypothesize that [novel variants exist]{.underline} that may explain the risk of vagally-triggered arrhythmias.*
+A subset of patients identified with both decreased rest and reactivity cardiovagal outflow and increased CV mortality have been identified. 
+Genetic analysis will be performed to discover novel mechanisms and biomarkers of arrhythmia risk.
+Identified variants will be validated in a separate cohort to evaluate the arrhythmia risk and electrical phenotypes identified in __Aim 1__ and __2__.
 
 ## Methods {.smaller}
 

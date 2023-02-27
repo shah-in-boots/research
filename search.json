@@ -21,6 +21,34 @@
     "text": "Proposal\n\nMurine model of pro-atrial arrhythmia\nWhole heart + vagus nerve in Langendorf preparation\nVagal stimulation protocol for conduction property modulation\nCatecholamine infusion + NPY infusion that removes protection\nNPY Y2R blockade returns vagal protective effect"
   },
   {
+    "objectID": "t32/t32-updates.html#updates",
+    "href": "t32/t32-updates.html#updates",
+    "title": "Research-In-Progress",
+    "section": "Updates",
+    "text": "Updates\n\nAFL/FH: will need age of diagnosis of event of family history prior to final analyses\nCAR: analysis pending by Konda, however unclear if we can strongly accept null-hypothesis"
+  },
+  {
+    "objectID": "t32/t32-updates.html#non-linearity-in-ans-dysfunction",
+    "href": "t32/t32-updates.html#non-linearity-in-ans-dysfunction",
+    "title": "Research-In-Progress",
+    "section": "Non-linearity in ANS dysfunction",
+    "text": "Non-linearity in ANS dysfunction\n\nProportional hazard assumptions\n\nDefined using time-variance, time-interaction, Martingale residuals\nSatisfied PH assumptions\n\nNon-linearity of HRV and CV mortality\n\nSpline analysis with up to 5 knots\nParametric threshold analysis (survival modeling)\nNon-parametric (binary outcome) threshold analysis\nIdentified non-linearity of response\n\nRe-analyzed data using cut-point (as shown in Figure 1)\n\nAlmost 100% accuracy in classifier of low-risk cohort\nAlmost 10-fold hazard in identify high-risk cohort"
+  },
+  {
+    "objectID": "t32/t32-updates.html#genetic-analysis",
+    "href": "t32/t32-updates.html#genetic-analysis",
+    "title": "Research-In-Progress",
+    "section": "Genetic analysis",
+    "text": "Genetic analysis\n\nWES-generated VCF files on n=28 patients from EO-AFL + FH subgroup\nDue to size limitations (no access to HPC) converted VCF data …\n\nVCF to Apache Arrow\nArrow conversion to feather and to parquet for header, annotation, and columnar genotype data\nAnalyze as in-memory array\nRe-vert to ASCII-based format for GZip formated VCF\n\nFiltering of data\n\nLimited to coding regions\nFiltered for read depth > 20\nCompared to dbSNP builds using SIFT and PolyPhen\nPending further annotations based on arrhythmia-panels"
+  },
+  {
+    "objectID": "t32/t32-updates.html#specific-aims",
+    "href": "t32/t32-updates.html#specific-aims",
+    "title": "Research-In-Progress",
+    "section": "Specific aims",
+    "text": "Specific aims\nHave revised aims, and have drafted the x1 page specific aims to be shared with mentors.\nMentors: D Darbar, AJ Shah, A Alonso, M McCauley, A Boyd"
+  },
+  {
     "objectID": "t32/t32-updates.html#aflfh",
     "href": "t32/t32-updates.html#aflfh",
     "title": "Research-In-Progress",
@@ -35,50 +63,15 @@
     "text": "CBCD\nComputational biorepository for cardiovascular disease\n\nWill need a large computational biorepository\n\nClaims data from both CPT/ICD codes\nClinical documentation (raw text from clinical notes)\nMedication history\nStudy data e.g. XML of ECG, echo reports, coronary angiograms, device interrogations, etc\n\nCCTS to pull data, DRA to be submitted today\n\n\n\nAlso working on VA research database access, CART-CL reporting data, MVP, ARIC, and UK Biobank as additional large-scale data"
   },
   {
-    "objectID": "t32/t32-updates.html#hrvcvd",
-    "href": "t32/t32-updates.html#hrvcvd",
-    "title": "Research-In-Progress",
-    "section": "HRV/CVD",
-    "text": "HRV/CVD\n\n\n\nFigure 1: Increase of ~10 fold in CV mortality in 1/4 patients identified by abnormal resting and reactive vagal tone. Robust classifier of resilience.\n\n\n\n\nNon-linear relationship established by spline analysis against CV death."
-  },
-  {
-    "objectID": "t32/t32-updates.html#specific-aims",
-    "href": "t32/t32-updates.html#specific-aims",
-    "title": "Research-In-Progress",
-    "section": "Specific aims",
-    "text": "Specific aims"
-  },
-  {
-    "objectID": "t32/t32-updates.html#section",
-    "href": "t32/t32-updates.html#section",
-    "title": "Research-In-Progress",
-    "section": "",
-    "text": "Identify clinical phenotypes of vagally-triggered AF.:\n\nWe will use a computational approach to develop a pragmatic, population-level datasets to identify phenotypes of pAF using clinical covariates, including ECG, TTE, cardiac monitoring devices, and markers of psychosocial stress. Hypothesis: Low-burden groups will exist that have differences in clinical characteristics that can be used to reliably classify individuals.\nWe will assess recurrent clinical outcomes, including arrhythmia burden, conduction disease, atrial and ventricular cardiomyopathy, along with types of therapies (pharmacological/interventional). Hypothesis: The hazard distribution will vary amongst the identified clinical phenotypes. The rate of escalation of intervention will also vary based on phenotypes."
-  },
-  {
-    "objectID": "t32/t32-updates.html#section-1",
-    "href": "t32/t32-updates.html#section-1",
-    "title": "Research-In-Progress",
-    "section": "",
-    "text": "Determine the intracardiac characteristics of vagally-triggered AF.:\n\nStructural and electrical features will be obtained through EPS. The EAM and EGM data collected will be used to identify intra-procedural AF phenotypes. Hypothesis: Electrical and anatomical phenotypes will allow differentiation of re-entrant and triggered pAF.\nElectrical phenotypes of pAF will be compared with phenotypes identified in 1a. Hypothesis: The clinical phenotypes will correlate with the unique electrical phenotypes obtained during EPS.\nPhysiological stress, through catecholamine infusion, and neuropsychological stress, through mental stress challenge will be applied during EPS to measure changes in electrical properties. Simultaneous measurement of critical vagolytic neurohormones (NPY, Gal) will be measured at time of stressor. Hypothesis: Catecholamine-infusion will lead to ↓NPY and ↓Gal, while mental stress will lead to ↑NPY and ↑Gal.\nVagally-triggered AF will be identified by interview prior to EPS. Hypothesis: In those with suspected VT-pAF, triggered firing of pulmonary veins will be seen, and AF will be reliably induced by vagolysis."
-  },
-  {
-    "objectID": "t32/t32-updates.html#section-2",
-    "href": "t32/t32-updates.html#section-2",
-    "title": "Research-In-Progress",
-    "section": "",
-    "text": "Evaluate role of common genetic variants in VTA.:\n\nWe will use a candidate-gene approach to assess association of common genetic variants with the clinical and electrical phenotypes identified in 1a and 2a in individuals undergoing EPS. Hypothesis: Variants in genes associated with the cardiovagal outflow (e.g. Y2R and Gal1R), will be more common in those with VT-pAF\nWe will identify individuals that are classified as having resting and stress-inducded vagal dysfunction (as standardized against CV death). Genetic data through next-generation sequencing will be obtained. Hypothesis: We will identify novel variants that are associated with dysfunction in cardiovagal activity."
-  },
-  {
-    "objectID": "t32/t32-updates.html#updates",
-    "href": "t32/t32-updates.html#updates",
+    "objectID": "t32/t32-updates.html#updates-1",
+    "href": "t32/t32-updates.html#updates-1",
     "title": "Research-In-Progress",
     "section": "Updates",
     "text": "Updates\n\nAFL/FH: WES needed prior to completing revisions\nARIC: potential option to pursue genetic profiling in ARIC per Alvaro, need formal proposal\nK23: drafting specific aims in 1-pager format\nVCF: data able to be analyzed/cleaned, however requires more CPU to perform\n\n\n\nCurrently on inpatient service with limited time"
   },
   {
-    "objectID": "t32/t32-updates.html#updates-1",
-    "href": "t32/t32-updates.html#updates-1",
+    "objectID": "t32/t32-updates.html#updates-2",
+    "href": "t32/t32-updates.html#updates-2",
     "title": "Research-In-Progress",
     "section": "Updates",
     "text": "Updates\n\n\nAFL/FH:\n\nPedigrees/genetics completed (thanks to Ana, Shashank, Mike)\nOutline/draft to be re-written\n\n\n\nHRV/CV Mortality paper rejected, need to re-think strategy with senior authors\nK23 aims to include 1) EP lab as translational component, 2) arrhythmia risk prediction as computational component"
@@ -91,8 +84,8 @@
     "text": "AFL/genetics\n\n~87 individuals with +FH\n~81 individuals with WES\n~18 individuals with VUS in total\n1 individual with VUS + FH"
   },
   {
-    "objectID": "t32/t32-updates.html#updates-2",
-    "href": "t32/t32-updates.html#updates-2",
+    "objectID": "t32/t32-updates.html#updates-3",
+    "href": "t32/t32-updates.html#updates-3",
     "title": "Research-In-Progress",
     "section": "Updates",
     "text": "Updates\n\n\nAFL/FH:\n\nPedigrees TBD\nDraft completed, pending feedback\nSupplemental tables needed?\n\n\nAF/Recurrence:\n\nScott added additional patients from UIC (September 2020 to now)\nData collection pending"
@@ -140,8 +133,8 @@
     "text": "ECG/EGM analysis"
   },
   {
-    "objectID": "t32/t32-updates.html#updates-3",
-    "href": "t32/t32-updates.html#updates-3",
+    "objectID": "t32/t32-updates.html#updates-4",
+    "href": "t32/t32-updates.html#updates-4",
     "title": "Research-In-Progress",
     "section": "Updates",
     "text": "Updates\n\nAHA IPA: Completed draft, pending revisions\nAFL Paper: Draft to be done by Wednesday\nAF Ablation + Biorepository: Pending IRB\nStress and CVD Mortality: Submitted to Circulation, revisions Pending"
@@ -396,7 +389,7 @@
     "href": "index.html",
     "title": "Research Efforts",
     "section": "",
-    "text": "Douglas Zipes asked the question “Why did he die on Tuesday and not on Monday?” In the 50 years since the advent of the coronary care unit,Lown1968? we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.1,Hayashi2015?. The problem can be broken down into two components: 1) a substrate and 2) a trigger. My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. My computational approach parallels these topics by combining biostatistics and digital signal processing.\nThis serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Saturday, February 25, 2023. Please see here for weekly updates.\nGEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography\nTechnical research skills:"
+    "text": "Douglas Zipes asked the question “Why did he die on Tuesday and not on Monday?” In the 50 years since the advent of the coronary care unit,Lown1968? we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.1,Hayashi2015?. The problem can be broken down into two components: 1) a substrate and 2) a trigger. My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. My computational approach parallels these topics by combining biostatistics and digital signal processing.\nThis serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). The most recent update to this page was as of Sunday, February 26, 2023. Please see here for weekly updates.\nGEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography\nTechnical research skills:"
   },
   {
     "objectID": "index.html#stress-and-cardiovascular-epidemiology",
@@ -488,20 +481,6 @@
     "title": "Research Aims",
     "section": "Molecular mechanisms",
     "text": "Molecular mechanisms\n\nSympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium\nNPY and galanin is also released, which both inhibit cholinergic activity6,7\nBoth inhibit firing and leading to vagolytic effects on the myocardium8,9\n\nGalanin released as a adrenergic co-transmitter, binding to GalR1 receptors\nNPY binds to cholinergic neurons through the Y2 receptor\nBoth directly/indirectly involve protein kinase C\n\nNPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)10\n\n\n\nNE = nor epinephrine; NPY = neuropeptide Y"
-  },
-  {
-    "objectID": "k23/overview.html#aim-1-clinical",
-    "href": "k23/overview.html#aim-1-clinical",
-    "title": "Research Aims",
-    "section": "Aim #1: Clinical",
-    "text": "Aim #1: Clinical\n\nIdentify clinical phenotypes of vagally-triggered AF. Clinical, intracardiac, and genetic factors will contribute to clinically-relevant phenotypes of AF.\n\nWe will develop a pragmatic, population-level dataset to abstract clinical risk factors, ECG, and echocardiography features and therapy responses. Using unsupervised learning models, AF will be classified into seperate clusters.\nThe clinical relevance of AF phenotypes will be assessed through relevant outcomes (adverse events, disease burden/progression). AF clusters identified in 1a will have distinct hazard distributions estimated through survival analysis.\nWe will perform whole exome sequencing on a subset of patients from each cluster defined in 1a. Selected \\(\\alpha\\) and \\(\\beta\\) adrenergic receptors and cholinergic receptor polymorphisms will be associated with individual AF clusters and clinical outcomes.\n\n\n\n\nECG = electrocardiography;"
-  },
-  {
-    "objectID": "k23/overview.html#aim-2-translational",
-    "href": "k23/overview.html#aim-2-translational",
-    "title": "Research Aims",
-    "section": "Aim #2: Translational",
-    "text": "Aim #2: Translational\n\nDetermine the intracardiac characteristics of vagally-triggered AF. Structural and electrical features assessed through EPS will identify separate clinically-relevant phenotypes of AF.\n\nWe will collect electroanatomical mapping data and electrogram recordings during PVI of paroxysmal AF. Using signal processing and feature reduction, we will identify clusters of structural and electrical AF that correlate with those identified in 1a.\nWe will apply physiological stress and psychological stress through catecholamine infusion and mental stress challenge, respectively. Catecholamine infusion will lead to ↑NE, ↑NPY, ↑Gal expression while mental stress will lead to ↑NE, ↑NPY, ↑Gal expression\nIn those with suspected vagally-triggered AF, there will be an increased risk of Y2R and Gal1R receptor polymorphisms.\n\n\n\n\nICNS = intracardiac nervous system; EPS = electrophysiology study; PVI = pulmonary vein isolation; HRV = heart rate variability;"
   },
   {
     "objectID": "k23/overview.html#methods",
