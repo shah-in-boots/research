@@ -2,6 +2,8 @@
 format: docx
 ---
 
+
+
 __Aim 1: Identify triggered variants of pAF.__ 
 *Intracardiac and extracardiac electrical features will [classify pAF into triggered versus re-entrant variants]{.underline}.* 
 Population level data will be leveraged to identify clinical subphenotypes of pAF, incorporating ECG and echocardiography markers, arrhythmia burden, recurrence, and time-varying components of potential risk-factors.
