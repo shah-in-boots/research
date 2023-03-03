@@ -502,5 +502,222 @@
     "title": "Research Aims",
     "section": "References",
     "text": "References\n\n\n1. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n2. Shivkumar K, Ajijola OA, Anand I, Armour JA, Chen PS, Esler M, et al. Clinical neurocardiology defining the value of neuroscience-based cardiovascular therapeutics. Journal of Physiology 2016;594:3911–3954. doi:10.1113/JP271870.\n\n\n3. Taylor EW, Wang T, Leite CAC. An overview of the phylogeny of cardiorespiratory control in vertebrates with some reflections on the “polyvagal theory.” Biological Psychology 2022;172. doi:10.1016/j.biopsycho.2022.108382.\n\n\n4. Porges SW. The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system. Cleveland Clinic Journal of Medicine 2009;76:S86. doi:10.3949/ccjm.76.s2.17.\n\n\n5. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n6. Herring N. Autonomic control of the heart: Going beyond the classical neurotransmitters. Experimental Physiology 2015;100:354–358. doi:10.1113/expphysiol.2014.080184.\n\n\n7. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n8. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n9. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n10. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n11. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
+  },
+  {
+    "objectID": "t32/strategy.html#research",
+    "href": "t32/strategy.html#research",
+    "title": "Projects & Strategy",
+    "section": "Research",
+    "text": "Research\n\n\nHRV/CVD:\n\nNon-linearity evaluated, analyses being repeated\nIdentify appropriate level journal (EHJ)\nPresenting to Amit MS-EP group\n\nAFL/FH:\n\nPaper draft has been drafted\nGenetic analyses\nIdentify all authors\nSend in JAMA Cardiology format\n\n\nCAR:\n\nAdjudicated ECG and designed data collection pattern\nRole and next steps\nREDCap inconsistencies noted → responsibility?"
+  },
+  {
+    "objectID": "t32/strategy.html#strategy",
+    "href": "t32/strategy.html#strategy",
+    "title": "Projects & Strategy",
+    "section": "Strategy",
+    "text": "Strategy\n\n\nK23:\n\nDraft of aims shaorange\nFeedback on aims\nWhich areas require prelim data?\n\nMentorship:\n\nIdentified majority of mentorship committee = Darbar, Shah, Alonso, McCauley, Boyd, Lampert\nMeeting with McCauley (3/3)\nMeeting with Boyd (3/16)\nGenetics mentor, local or at another institution?\n\n\nTraining:\n\nComputational training in signal processing\nComputational training in genetics\n\nCareer:\n\nDelineate timeline and strategy for EP fellowship"
+  },
+  {
+    "objectID": "t32/strategy.html#projects",
+    "href": "t32/strategy.html#projects",
+    "title": "Projects & Strategy",
+    "section": "Projects",
+    "text": "Projects\n\n\nHRV/CVD:\n\nNon-linearity evaluated, analyses being repeated\nIdentify appropriate level journal (EHJ)\nPresenting to Amit MS-EP group\n\nAFL/FH:\n\nPaper draft has been drafted\nGenetic analyses\nIdentify all authors\nSend in JAMA Cardiology format\n\n\nCAR:\n\nAdjudicated ECG and designed data collection pattern\nRole and next steps\nREDCap inconsistencies noted → responsibility?"
+  },
+  {
+    "objectID": "t32/rip.html#updates",
+    "href": "t32/rip.html#updates",
+    "title": "Research-In-Progress",
+    "section": "Updates",
+    "text": "Updates\n\nAFL/FH: will need age of diagnosis of event of family history prior to final analyses\nCAR: analysis pending by Konda, however unclear if we can strongly accept null-hypothesis"
+  },
+  {
+    "objectID": "t32/rip.html#non-linearity-in-ans-dysfunction",
+    "href": "t32/rip.html#non-linearity-in-ans-dysfunction",
+    "title": "Research-In-Progress",
+    "section": "Non-linearity in ANS dysfunction",
+    "text": "Non-linearity in ANS dysfunction\n\nProportional hazard assumptions\n\nDefined using time-variance, time-interaction, Martingale residuals\nSatisfied PH assumptions\n\nNon-linearity of HRV and CV mortality\n\nSpline analysis with up to 5 knots\nParametric threshold analysis (survival modeling)\nNon-parametric (binary outcome) threshold analysis\nIdentified non-linearity of response\n\nRe-analyzed data using cut-point (as shown in Figure 1)\n\nAlmost 100% accuracy in classifier of low-risk cohort\nAlmost 10-fold hazard in identify high-risk cohort"
+  },
+  {
+    "objectID": "t32/rip.html#genetic-analysis",
+    "href": "t32/rip.html#genetic-analysis",
+    "title": "Research-In-Progress",
+    "section": "Genetic analysis",
+    "text": "Genetic analysis\n\nWES-generated VCF files on n=28 patients from EO-AFL + FH subgroup\nDue to size limitations (no access to HPC) converted VCF data …\n\nVCF to Apache Arrow\nArrow conversion to feather and to parquet for header, annotation, and columnar genotype data\nAnalyze as in-memory array\nRe-vert to ASCII-based format for GZip formated VCF\n\nFiltering of data\n\nLimited to coding regions\nFiltered for read depth > 20\nCompared to dbSNP builds using SIFT and PolyPhen\nPending further annotations based on arrhythmia-panels"
+  },
+  {
+    "objectID": "t32/rip.html#specific-aims",
+    "href": "t32/rip.html#specific-aims",
+    "title": "Research-In-Progress",
+    "section": "Specific aims",
+    "text": "Specific aims\nHave revised aims, and have drafted the x1 page specific aims to be shared with mentors.\nMentors: D Darbar, AJ Shah, A Alonso, M McCauley, A Boyd"
+  },
+  {
+    "objectID": "t32/rip.html#aflfh",
+    "href": "t32/rip.html#aflfh",
+    "title": "Research-In-Progress",
+    "section": "AFL/FH",
+    "text": "AFL/FH\n\nGenetic basis for FH may be more promising than association with FH broadly, but would require additional WES to be sent\nWould need to repeat VCF analysis for an arrhythmia panel (instead of cardiomyopathy panel)"
+  },
+  {
+    "objectID": "t32/rip.html#cbcd",
+    "href": "t32/rip.html#cbcd",
+    "title": "Research-In-Progress",
+    "section": "CBCD",
+    "text": "CBCD\nComputational biorepository for cardiovascular disease\n\nWill need a large computational biorepository\n\nClaims data from both CPT/ICD codes\nClinical documentation (raw text from clinical notes)\nMedication history\nStudy data e.g. XML of ECG, echo reports, coronary angiograms, device interrogations, etc\n\nCCTS to pull data, DRA to be submitted today\n\n\n\nAlso working on VA research database access, CART-CL reporting data, MVP, ARIC, and UK Biobank as additional large-scale data"
+  },
+  {
+    "objectID": "t32/rip.html#updates-1",
+    "href": "t32/rip.html#updates-1",
+    "title": "Research-In-Progress",
+    "section": "Updates",
+    "text": "Updates\n\nAFL/FH: WES needed prior to completing revisions\nARIC: potential option to pursue genetic profiling in ARIC per Alvaro, need formal proposal\nK23: drafting specific aims in 1-pager format\nVCF: data able to be analyzed/cleaned, however requires more CPU to perform\n\n\n\nCurrently on inpatient service with limited time"
+  },
+  {
+    "objectID": "t32/rip.html#updates-2",
+    "href": "t32/rip.html#updates-2",
+    "title": "Research-In-Progress",
+    "section": "Updates",
+    "text": "Updates\n\n\nAFL/FH:\n\nPedigrees/genetics completed (thanks to Ana, Shashank, Mike)\nOutline/draft to be re-written\n\n\n\nHRV/CV Mortality paper rejected, need to re-think strategy with senior authors\nK23 aims to include 1) EP lab as translational component, 2) arrhythmia risk prediction as computational component"
+  },
+  {
+    "objectID": "t32/rip.html#aflgenetics",
+    "href": "t32/rip.html#aflgenetics",
+    "title": "Research-In-Progress",
+    "section": "AFL/genetics",
+    "text": "AFL/genetics\n\n~87 individuals with +FH\n~81 individuals with WES\n~18 individuals with VUS in total\n1 individual with VUS + FH"
+  },
+  {
+    "objectID": "t32/rip.html#updates-3",
+    "href": "t32/rip.html#updates-3",
+    "title": "Research-In-Progress",
+    "section": "Updates",
+    "text": "Updates\n\n\nAFL/FH:\n\nPedigrees TBD\nDraft completed, pending feedback\nSupplemental tables needed?\n\n\nAF/Recurrence:\n\nScott added additional patients from UIC (September 2020 to now)\nData collection pending"
+  },
+  {
+    "objectID": "t32/rip.html#k23-aims",
+    "href": "t32/rip.html#k23-aims",
+    "title": "Research-In-Progress",
+    "section": "K23 Aims",
+    "text": "K23 Aims\nObjective: Clinical EP researcher using computational neurocardiology techniques to study arrhythmia mechanisms\n\nEvaluating vagolysis and its effect on triggered arrhythmia mechanisms, both ventricular (e.g. SCD) and atrial (triggered AF)\nUsing computational approach to phenotype triggered onset arrhythmias, e.g. atrial fibrillation\n\nMentorship Team: Amit J. Shah, Dawood Darbar, Rachel Lampert, Viola Vaccarino, Mark McCauley, Andrew Boyd, Alvaro Alonso"
+  },
+  {
+    "objectID": "t32/rip.html#k23-approach",
+    "href": "t32/rip.html#k23-approach",
+    "title": "Research-In-Progress",
+    "section": "K23 Approach",
+    "text": "K23 Approach\nVagal tone and triggered arrhythmias\n\nManuscript on stress-induced vagolysis and CV mortality under review\nANS dysfunction during/with ischemia work-in-progress\n[Create murine/translational model for vagolysis and triggered arrhythmias]{.arrhythmia[2]}\n\nArrhythmia phenotyping\n\nAFL/FH manuscript work-in-progress\nAF/race project work-in-progress\n[Classification of arrhythmia phenotypes using large data set (MVP/VA research data, UIC, ARIC)]{.computational[3]}"
+  },
+  {
+    "objectID": "t32/rip.html#murine-model-of-vagolysis",
+    "href": "t32/rip.html#murine-model-of-vagolysis",
+    "title": "Research-In-Progress",
+    "section": "Murine Model of Vagolysis",
+    "text": "Murine Model of Vagolysis\n\nAtria are heavily innervated by ANS ganglia\n\nSympathovagal balance locally mediated through adrenergic lysis of cholinergic activity\nNeuropeptide Y (NPY) causes cholinergic inhibition through Y2R\n\nPro-arrhythmic murine model (compared to healthy controls)\n\nEx-vivo vagal-sparing Langendorf preparation\nCatecholamine infusion and NPY Y2R antagonists to modulate arrhythmic state\n\nMeasure atrial conductive properties as outcome\n\nBaseline, with catecholamine infusion, VNS stimulation, and Y2R antagonism"
+  },
+  {
+    "objectID": "t32/rip.html#af-catheter-ablation-and-recurrence",
+    "href": "t32/rip.html#af-catheter-ablation-and-recurrence",
+    "title": "Research-In-Progress",
+    "section": "AF Catheter Ablation and Recurrence",
+    "text": "AF Catheter Ablation and Recurrence\nData/power increase:\n\nInclusion of VA data\nAdditional data pull from EPIC by Scott Uphouse (pending)\nInclusion of UIC billing code data?"
+  },
+  {
+    "objectID": "t32/rip.html#atrial-flutter-and-family-history",
+    "href": "t32/rip.html#atrial-flutter-and-family-history",
+    "title": "Research-In-Progress",
+    "section": "Atrial Flutter and Family History",
+    "text": "Atrial Flutter and Family History\n\n\nPedigrees:\n\nHow should these be incorporated into the manuscript?\n\n\nGenetics:\n\n305 patients that have undergone whole exome sequencing, but unclear how to match these to the AFL data\nShould we genotype the rest of the EO-AFL patients?"
+  },
+  {
+    "objectID": "t32/rip.html#ecgegm-analysis",
+    "href": "t32/rip.html#ecgegm-analysis",
+    "title": "Research-In-Progress",
+    "section": "ECG/EGM analysis",
+    "text": "ECG/EGM analysis"
+  },
+  {
+    "objectID": "t32/rip.html#updates-4",
+    "href": "t32/rip.html#updates-4",
+    "title": "Research-In-Progress",
+    "section": "Updates",
+    "text": "Updates\n\nAHA IPA: Completed draft, pending revisions\nAFL Paper: Draft to be done by Wednesday\nAF Ablation + Biorepository: Pending IRB\nStress and CVD Mortality: Submitted to Circulation, revisions Pending"
+  },
+  {
+    "objectID": "t32/rip.html#early-onset-atrial-flutter",
+    "href": "t32/rip.html#early-onset-atrial-flutter",
+    "title": "Research-In-Progress",
+    "section": "Early Onset Atrial Flutter",
+    "text": "Early Onset Atrial Flutter\n\nDraft of paper expanded to include results\nProminent findings of family history and association with arrhythmia\nKey tables and figures established"
+  },
+  {
+    "objectID": "t32/rip.html#af-registry",
+    "href": "t32/rip.html#af-registry",
+    "title": "Research-In-Progress",
+    "section": "AF Registry",
+    "text": "AF Registry\n\n\nAnalysis\n\nGenetic analysis in PLINK complete\nModels are set up for analysis once data intake is done\n\n\nStatus\n\nHave n = 238 currently\nReviewed 95 charts thus far (CAR team)\nOf n = 108, 75 have had recurrence, 33 without (rate of about 70% of anyarrhythmia)\nOf ECG based confirmation, 43 AF recurrence events (53%)"
+  },
+  {
+    "objectID": "t32/rip.html#af-registry-1",
+    "href": "t32/rip.html#af-registry-1",
+    "title": "Research-In-Progress",
+    "section": "AF Registry",
+    "text": "AF Registry\nREDCap data dictionary is finalized. Next steps are:\n\nData entry for outcomes\nFinalization of new patients to add from AF ablation registry"
+  },
+  {
+    "objectID": "t32/rip.html#genetics",
+    "href": "t32/rip.html#genetics",
+    "title": "Research-In-Progress",
+    "section": "Genetics",
+    "text": "Genetics\nCurrently able to:\n\nFormat large SNP data sets into appropriate tables\nUtilize PLINK and MERLIN to process Chen’s genetics data\nRun from R to help analyze findings\n\nNext steps:\n\nConfirm ancestry (for practice) percent likelihood\nThen, once outcome data is complete, analyze differences by race\n\nAnalytical methods:\n\nTime to binary outcome of recurrence\nRecurrent event analysis for AF recurrence\nCan revise with Bayesian modeling in STAN as well"
+  },
+  {
+    "objectID": "t32/rip.html#af-registry-2",
+    "href": "t32/rip.html#af-registry-2",
+    "title": "Research-In-Progress",
+    "section": "AF Registry",
+    "text": "AF Registry\n\n\nStatus\n\nREDCap is in progress\nHave an additional list of registry patients that may/may not have had ablation\n\n\nNext Steps\n\nComplete 100 REDCap patients\nIdentify 300 patients that have potentially had ablation"
+  },
+  {
+    "objectID": "t32/rip.html#carto-maps",
+    "href": "t32/rip.html#carto-maps",
+    "title": "Research-In-Progress",
+    "section": "CARTO Maps",
+    "text": "CARTO Maps\n\nAblation quantification\nActivation mapping\nEGM annotation\nVoltage mapping\nConduction velocity\nEarliest/latest activation\nGeometry data"
+  },
+  {
+    "objectID": "t32/rip.html#af-registry-3",
+    "href": "t32/rip.html#af-registry-3",
+    "title": "Research-In-Progress",
+    "section": "AF Registry",
+    "text": "AF Registry\nConsider additional variables:\n\nRecurrent events and adjudication (HF, cardiac admission, MACE)\nHolter/ECG data and repeat collection (P-wave morphology, Wilson’s vector gradient, amplitude of AF waves “coarseness”)\n\nWill check with the MESA and ARIC data base on how repeat events were defined."
+  },
+  {
+    "objectID": "t32/rip.html#murine-ep-studies",
+    "href": "t32/rip.html#murine-ep-studies",
+    "title": "Research-In-Progress",
+    "section": "Murine EP Studies",
+    "text": "Murine EP Studies"
+  },
+  {
+    "objectID": "t32/rip.html#human-ep-studies",
+    "href": "t32/rip.html#human-ep-studies",
+    "title": "Research-In-Progress",
+    "section": "Human EP Studies",
+    "text": "Human EP Studies"
+  },
+  {
+    "objectID": "t32/rip.html#forest-plots",
+    "href": "t32/rip.html#forest-plots",
+    "title": "Research-In-Progress",
+    "section": "Forest Plots",
+    "text": "Forest Plots\n\n\n\n# Forest Plots\nlibrary(volundr)\nm <- rx(\n    Petal.Length ~ X(Sepal.Length) + Petal.Width + S(Species),\n    label = list(\n        Petal.Length ~ \"Length of Petals\", \n        Species ~ \"Genus of the Flower\"\n    ),\n    pattern = \"direct\"\n    ) |>\n    fmls(order = 2) |>\n    fit(.fit = lm,\n            data = iris,\n            archetype = TRUE) |>\n    mdls()\n\n\n\ntbl <- tbl_forest( #<<\n    object = m,\n    formula = Petal.Length ~ Sepal.Length,\n    vars = \"Species\",\n    columns = list(\n        beta ~ \"Estimate\",\n        conf ~ \"95% Confidence Interval\",\n        n ~ \"Number of Samples\"\n    ),\n    axis = list(\n        lim ~ c(0, 3),\n        breaks ~ c(0, 1, 2),\n        lab ~ \"ß (95% CI)\",\n        title ~ \"Petal Length by Sepal Length\"\n    )\n)\n\n\n\nA simple way to make sub-group analysis Forest plots, working on improving customization."
+  },
+  {
+    "objectID": "t32/rip.html#af-registry-4",
+    "href": "t32/rip.html#af-registry-4",
+    "title": "Research-In-Progress",
+    "section": "AF Registry",
+    "text": "AF Registry\nThe AF registry is described here. Current issues:\n\nData quality - consistency between reviewers\nMissingness - decisions on acceptable thresholds\nVariable selection - echo findings, EP studies, medications, labs, symptoms\nManagement - REDCap, shared excel sheet\nAdjudication/review - outcomes, clinical follow-up length\n\n\n\nEpidemiology, Arrhythmia, Clinical, Computational"
   }
 ]

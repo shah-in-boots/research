@@ -10,8 +10,9 @@ My area of focus on this problem is that of the trigger, combining stress epidem
 My computational approach parallels these topics by combining biostatistics and digital signal processing.
 
 This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming). 
-The most recent update to this page was as of `r format(Sys.Date(), "%A, %B %d, %Y")`. 
-Please see here for weekly [updates](https://asshah4.github.io/research/t32/t32-updates.html).
+- The most recent update to this page was as of `r format(Sys.Date(), "%A, %B %d, %Y")`. 
+- Please see here for weekly [research-in-progress updates](https://asshah4.github.io/research/t32/rip.html)
+- [Mentored meeting outlines](https://asshah4.github.io/research/t32/strategy.html) are available to document strategy and obstacles on a weekly and biweekly basis
 
 
 

@@ -1,0 +1,76 @@
+---
+title: Projects & Strategy
+subtitle: Mentorship meetings
+author: Anish S. Shah, MD, MS
+institute:
+- University of Illinois at Chicago
+- Emory University
+format: 
+  revealjs:
+    scrollable: true
+execute:
+  cache: true
+tbl-cap-location: bottom
+fig-cap-location: bottom
+---
+
+# March 3, 2023 | Darbar
+
+## Projects {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+HRV/CVD:
+
+- [x] Non-linearity evaluated, analyses being repeated
+- [x] Identify appropriate level journal (EHJ)
+- [ ] Presenting to Amit MS-EP group
+
+AFL/FH:
+
+- [x] Paper draft has been drafted
+- [ ] [Genetic analyses]{.orange}
+- [ ] [Identify all authors]{.orange}
+- [ ] Send in JAMA Cardiology format
+
+:::
+::: {.column width="50%"}
+CAR:
+
+- [x] Adjudicated ECG and designed data collection pattern
+- [ ] [Role and next steps]{.orange}
+- [ ] REDCap inconsistencies noted &rarr; responsibility?
+
+:::
+::::
+
+## Strategy {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+K23:
+
+- [x] Draft of aims shaorange
+- [ ] [Feedback on aims]{.orange}
+- [ ] Which areas require prelim data?
+
+Mentorship:
+
+- [x] Identified majority of mentorship committee = Darbar, Shah, Alonso, _McCauley_, _Boyd_, _Lampert_
+- [ ] Meeting with McCauley (3/3)
+- [ ] Meeting with Boyd (3/16)
+- [ ] [Genetics mentor, local or at another institution?]{.orange}
+
+:::
+::: {.column width="50%"}
+Training:
+
+- [ ] Computational training in signal processing
+- [ ] [Computational training in genetics]{.orange}
+
+Career:
+
+- [ ] [Delineate timeline and strategy for EP fellowship]{.orange}
+
+:::
+::::
