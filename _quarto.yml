@@ -25,11 +25,8 @@ website:
 
 bibliography:
   - ../bibliography/publications.bib
-  - ../bibliography/research-autonomics.bib
-  - ../bibliography/research-circadian.bib
-  - ../bibliography/research-measurement.bib
-  - ../bibliography/research-psych.bib
-  - ../bibliography/research-stress.bib
+  - ../bibliography/research.bib
+  - ../bibliography/cardiology.bib
 csl: ../bibliography/circulation.csl
 
 format:

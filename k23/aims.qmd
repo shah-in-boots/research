@@ -2,27 +2,19 @@
 format: docx
 ---
 
-# Hook, Known Info, Gap, Critical Need
+Atrial fibrillation (AF) is hte most common arrhythmia worldwide, witht a prevalence of over 50 million cases currently and &ge; 25% lifetime risk across races.[@Kornej2020]
+Surprisingly, the disease is only classified by its time course -- divided by broad strokes into paroxysmal, persistent, and permanent. 
+The management parallels this lack of granularity with homogenous rate and rhythm strategies that have not noticeably changed over the past 20 years.[@England2002; @Kirchhof2020]
+A paradigm shift is needed.
+Clinical phenotypes of AF would allow for individualized management and ttargeted therapy strategies that expand past antiarrhythmi drugs and catheter ablation.
 
-- AF is #1 common arrhythmia disorder worldwide
-- pAF prevalence of > 50 million, with >25% lifetime risk in white and blacks
-- dz is classified in broad strokes (paroxysmal, persistent, permanent)
-- Mgmt is homogenous in terms of rhythm/rate strategies
-- we need to have better classification of AF so we can treat it individually
-- therapies may not need to be only targeted using ablation and/or antiarrhythmic mgmt
+The long-term goal as an electrophysiologist, clinician, and scientist is to personalize the management of paroxysmal AF using earlyy identification and pathophysiologyy driven strategies.
+AF is often considered to be a consequence instead of precursor of other cardiovascular conditions,[@Andrade2014] however the plurality of paroxysmal AF in the other, rare, classification studies are younger individuals with a low burden of other comorbidities.[@Pastori2020]
+This large subgroup have AF that is brought on by triggered activity, which is ultimately driven by autonomic activity.[@Zipes2006; @Taggart2011]
 
-# Long-term Goal, Proposal, Rational, Hypothesis
-
-- personalized mgmt of pAF, including early identification and risk stratification
-- after identification, could personalize treatment
-- propose that in pAF, as >50% of dx are of "low comorbid" phenotype, could better classify this
-- SUspect that there are triggered v. re-entrant subphenotypes, driven by ANS triggers
-- vagolytic triggers could be assessed from population level in terms of AF phenotypes
-- Would compare that with EPS/EAM findings to identify triggered subtypes
-- Would then look at pts c- increased vagolysis risk and hard outcomes to evaluate/find novel variants
-- Use AF cohort to compare these variants
-
-# Aims, Strategy, Outcome
+We propose that the acute, inappropriate vagolysis at times of increased adrenergic tone drives these triggered events in individuals with a susceptible cardiac substrate.[@Mehra2022]
+To test this, we would leverage two pre-existing, well-established cohorts and develop a third smaller and deeply phenotyped cohort with physiological testing: (A) an atrial arrhythmia registry enriched for paroxysaml AF with genetic sequencing,[@Chalazan2021] (B) a mental stress cohort with a significant burden of inappropriate vagolysis and genetic sequencing,[@Vaccarino2021a] and (C) a cohort of paroxysmal AF who will undergo intracardiac electrophysiology studies with neurocardiac biomarker samples and electroanatomical mapping data.
+[Our overarching hypothesis]{.underline} is that there exists a common, vagally-triggered endophenotype of paroxysmal AF that can be defined by its triggered activity and abnormalities in neurocardiac signal and neurohormone receptors.
 
 __Aim 1: Identify triggered subphenotypes of pAF.__ 
 *Intracardiac and extracardiac electrical features will [classify pAF into triggered versus re-entrant subphenotypes]{.underline}.* 
@@ -30,7 +22,7 @@ Population level data will be leveraged to identify clinical subphenotypes of pA
 These subphenotypes will be compared against intracardiac findings, including EGM and EAM data, to validate triggered arrhythmia.
 
 __Aim 2: Determine the role of autonomic mechanisms in triggered pAF.__ 
-*Triggered pAF will be associated with [increased electrical and neurohormonal biomarkers of vagolysis]{.underline}.*  
+*Triggered pAF will be associated with [increased electrical and neurohormonal biomarkers of vagolysis]{.underline}.*
 Neuropsychological markers of stress will be obtained through clinical interview prior to PVI, and will be clinically phenotyped (__Aim 1__).
 Coronary sinus levels of NPY, Gal, S100B and arrhythmia thresholds will be obtained before and after PVI, and at the time of any additional physiological testing (catecholamine infusion, vagal nerve stimulation).
 
@@ -40,8 +32,10 @@ A subset of patients identified with both decreased rest and reactivity cardiova
 Genetic analysis will be performed to discover novel mechanisms and biomarkers of arrhythmia risk.
 Identified variants will be validated in a separate cohort to evaluate the arrhythmia risk and electrical phenotypes identified in __Aim 1__ and __2__.
 
-# Innovation, Outcomes, Impact
+The current paradigm in the management of AF focuses on antiarrhythmic modulation of cardiac ion channels and ablative strategies targeting atrial endocardium, which however is only directed at the literal surface of the problem.
+Identifying upstream mechanistic, autonomic pathways could lead to targeted therapies that not only decrease the risk of AF, but may also provide benefit in a number of other triggered atrial arrhythmias.[@Shivkumar2017]
 
-- Could potentially identify vagal triggered pathway 
-- Would allow for intervention at Y2R and Gal1R blockade
-- Novel approach to decreasing arrhythmia risk
+{{< pagebreak >}}
+
+::: {#refs}
+:::
