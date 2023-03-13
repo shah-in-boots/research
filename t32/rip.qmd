@@ -155,6 +155,11 @@ tbl_status_updates <- function(progress, effort) {
 			locations = cells_body(columns = Task,
 														 rows = Status == "complete")
 		) |>
+		tab_style(
+			style = cell_text(weight = "bold"),
+			locations = cells_body(columns = Task,
+														 rows = Status == "waiting")
+		) |>
 		# Columns
 		cols_hide(columns = c(Priority, num, Status)) |>
 		fmt_date(columns = "Deadline", date_style = "iso") |>
@@ -182,7 +187,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 2, day = 27) |>
+	date_build(year = 2023, month = 3, day = 13) |>
 	add_days(-14)
 
 effort <-
@@ -197,6 +202,17 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# March 3, 2023
+
+## Updates {.smaller}
+
+- AFL/FH: manuscript was sent for initial revisions (03/03/23), __pending feedback__
+- [Aim 1]{.green}: "Big data" approach using claims-based data, IRB/CCTS approval obtained
+	1. NLP/ML area of focus will be initially on AF (only performed x 1)
+	1. Approach for recurrent events, Weibull distribution expected
+- [HRV/CVD]{.blue} : priority for this week, with HF/LF HRV values showing >10 fold HR for bottom versus top quartile (with almost >95% sensitivity)
+- VCF analysis: ACER will share AWS for us + a few thousand compute hours for start up to help estimate costs
 
 # February 27, 2023
 
