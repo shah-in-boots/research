@@ -529,7 +529,7 @@
     "href": "t32/rip.html#updates",
     "title": "Research-In-Progress",
     "section": "Updates",
-    "text": "Updates\n\nAFL/FH: manuscript was sent for initial revisions (03/03/23), pending feedback\nAim 1: “Big data” approach using claims-based data, IRB/CCTS approval obtained\n\nNLP/ML area of focus will be initially on AF (only performed x 1)\nApproach for recurrent events, Weibull distribution expected\n\nHRV/CVD : priority for this week, with HF/LF HRV values showing >10 fold HR for bottom versus top quartile (with almost >95% sensitivity)\nVCF analysis: ACER will share AWS for us + a few thousand compute hours for start up to help estimate costs"
+    "text": "Updates\n\nAFL/FH: manuscript was sent for initial revisions (03/03/23), pending feedback\nAim 1: “Big data” approach using claims-based data, IRB/CCTS approval obtained\n\nNLP/ML area of focus will be initially on AF (only performed x 1)\nApproach for recurrent events, Weibull distribution expected\n\nHRV/CVD :\n\npriority for this week\nHF/LF HRV values showing >10 fold HR for bottom versus top quartile (with almost >95% sensitivity)\n\nGenetic analysis:\n\nACER will start AWS workspace this week"
   },
   {
     "objectID": "t32/rip.html#non-linearity-in-ans-dysfunction",
