@@ -529,7 +529,7 @@
     "href": "t32/rip.html#updates",
     "title": "Research-In-Progress",
     "section": "Updates",
-    "text": "Updates\n\nAFL/FH: manuscript was sent for initial revisions (03/03/23), pending feedback\nAim 1: “Big data” approach using claims-based data, IRB/CCTS approval obtained\n\nNLP/ML area of focus will be initially on AF (only performed x 1)\nApproach for recurrent events, Weibull distribution expected\n\nHRV/CVD :\n\npriority for this week\nHF/LF HRV values showing >10 fold HR for bottom versus top quartile (with almost >95% sensitivity)\n\nGenetic analysis:\n\nACER will start AWS workspace this week"
+    "text": "Updates\n\nAFL/FH:\n\nmanuscript was sent for initial revisions (03/03/23)\nfeedback received on 03/17/23 from Jordan\nsecond draft to be returned on 3/20/23\n\nAim 1: “Big data” approach using claims-based data, IRB/CCTS approval obtained\n\nNLP/ML area of focus will be initially on AF (only performed x 1)\nApproach for recurrent events, Weibull distribution expected\n\nHRV/CVD :\n\npriority for this week\nHF/LF HRV values showing >10 fold HR for bottom versus top quartile (with almost >95% sensitivity)\n\nGenetic analysis:\n\nACER will start AWS workspace this week"
   },
   {
     "objectID": "t32/rip.html#non-linearity-in-ans-dysfunction",
@@ -726,5 +726,12 @@
     "title": "Research-In-Progress",
     "section": "Updates",
     "text": "Updates\n\nAHA IPA: Completed draft, pending revisions\nAFL Paper: Draft to be done by Wednesday\nAF Ablation + Biorepository: Pending IRB\nStress and CVD Mortality: Submitted to Circulation, revisions Pending"
+  },
+  {
+    "objectID": "t32/rip.html#help-wanted",
+    "href": "t32/rip.html#help-wanted",
+    "title": "Research-In-Progress",
+    "section": "Help Wanted",
+    "text": "Help Wanted\n\nAblation database: working with Wissner to revise ablation database\n\nmanual data reconciliation\nOCR/OMR-based PDF conversion approach\nablation outcomes x genetics\n\nAF phenotyping: key part of Aim 1\n\nComputational Biorepository for Cardiovascular Disease: CCTS data pull active, all clinical notes, data points, etc since 2010 on CVD\nAF ontology needed using a NLP/LLM (e.g. BERT)\n\nNLP/ML for EHR data:\n\nCBCD: overlap of DCM/AF registries, CCTS data pull of all clinical notes since 2010 on CVD\nKey part of Aim 1 is to identify AF phenotypes in those with paroxysmal AF\nAF Ontology: working with Andrew Boyd on AF-NLP framework (SciB)"
   }
 ]

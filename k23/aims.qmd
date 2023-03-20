@@ -2,7 +2,7 @@
 format: docx
 ---
 
-Atrial fibrillation (AF) is hte most common arrhythmia worldwide, witht a prevalence of over 50 million cases currently and &ge; 25% lifetime risk across races.[@Kornej2020]
+Atrial fibrillation (AF) is the most common arrhythmia worldwide, witht a prevalence of over 50 million cases currently and &ge; 25% lifetime risk across races.[@Kornej2020]
 Surprisingly, the disease is only classified by its time course -- divided by broad strokes into paroxysmal, persistent, and permanent. 
 The management parallels this lack of granularity with homogenous rate and rhythm strategies that have not noticeably changed over the past 20 years.[@England2002; @Kirchhof2020]
 A paradigm shift is needed.

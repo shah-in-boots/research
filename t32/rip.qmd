@@ -50,24 +50,6 @@ clinical <- pal_material("pink", reverse = TRUE)(9)
 computational <- pal_material("teal", reverse = TRUE)(9)
 text <- pal_material("blue-grey", reverse = TRUE)(9)
 
-# Google data
-log <- 
-	drive_get("research_log") |>
-	read_sheet(sheet = "calendar_sheet") |>
-	mutate(
-		Start = date_start(Start, "minute"),
-		End = date_end(End, "minute")
-	) |>
-	mutate(Duration = difftime(End, Start, units = "hours")) |>
-	filter(str_detect(Calendar, "Clinical|Research|Academics|Administrative")) |>
-	filter(Duration < 24) |>
-	mutate(Type = gsub("Research/", "", gsub("/Service", "", gsub("/Extracurricular", "", Calendar)))) |>
-	select(-c(Calendar, Description))
-
-progress <-
-	drive_get("research_log") |>
-	read_sheet(sheet = "progress_sheet")
-
 
 tbl_status_updates <- function(progress, effort) {
 	
@@ -193,11 +175,27 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 3, day = 14) |>
-	add_days(-14)
+	date_build(year = 2023, month = 3, day = 20) |>
+	add_days(-30)
+
+
+progress <-
+	drive_get("research_log") |>
+	read_sheet(sheet = "progress_sheet") |>
+	filter(Deadline >= dt)
 
 effort <-
-	log |>
+	drive_get("research_log") |>
+	read_sheet(sheet = "calendar_sheet") |>
+	mutate(
+		Start = date_start(Start, "minute"),
+		End = date_end(End, "minute")
+	) |>
+	mutate(Duration = difftime(End, Start, units = "hours")) |>
+	filter(str_detect(Calendar, "Clinical|Research|Academics|Administrative")) |>
+	filter(Duration < 24) |>
+	mutate(Type = gsub("Research/", "", gsub("/Service", "", gsub("/Extracurricular", "", Calendar)))) |>
+	select(-c(Calendar, Description)) |>
 	filter(Start >= dt) |>
 	filter(Start > dt & End < add_days(dt, 7)) |>
 	select(Type, Title, Duration) |>
@@ -209,11 +207,14 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
-# March 3, 2023
+# March 20, 2023
 
 ## Updates {.smaller}
 
-- AFL/FH: manuscript was sent for initial revisions (03/03/23), __pending feedback__
+- AFL/FH:
+	- manuscript was sent for initial revisions (03/03/23)
+	- feedback received on 03/17/23 from _Jordan_
+	- second draft to be returned on 3/20/23
 - [Aim 1]{.green}: "Big data" approach using claims-based data, IRB/CCTS approval obtained
 	1. NLP/ML area of focus will be initially on AF (only performed x 1)
 	1. Approach for recurrent events, Weibull distribution expected
@@ -222,7 +223,20 @@ tbl_status_updates(progress, effort)
 	- HF/LF HRV values showing >10 fold HR for bottom versus top quartile (with almost >95% sensitivity)
 - Genetic analysis:
 	- ACER will start AWS workspace this week
-	- 
+	
+## Help Wanted {.smaller}
+
+- Ablation database: working with Wissner to revise ablation database
+	- manual data reconciliation
+	- OCR/OMR-based PDF conversion approach
+	- ablation outcomes x genetics
+- AF phenotyping: key part of [Aim 1]{.green}
+	- Computational Biorepository for Cardiovascular Disease: CCTS data pull active, all clinical notes, data points, etc since 2010 on CVD
+	- AF ontology needed using a NLP/LLM (e.g. BERT)
+- NLP/ML for EHR data:
+	- CBCD: overlap of DCM/AF registries, CCTS data pull of all clinical notes since 2010 on CVD
+	- Key part of __Aim 1__ is to identify AF phenotypes in those with paroxysmal AF
+	- AF Ontology: working with Andrew Boyd on AF-NLP framework (SciB)
 
 # February 27, 2023
 
