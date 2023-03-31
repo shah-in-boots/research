@@ -175,7 +175,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 3, day = 20) |>
+	date_build(year = 2023, month = 3, day = 31) |>
 	add_days(-30)
 
 
@@ -206,6 +206,46 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# March 31, 2023
+
+## AF Phenotyping
+
+NLP combined with DSP can help in identifying sub-phenotypes of AF...
+
+1. Polygenic risk score assessment based on phenotypes and sub-phenotypes
+1. Current phenotype approaches limited to structured text 
+1. Unstructured data can be extracted from clinical notes using NLP tools: BERT, Sci/RoBERTa, meta mapper, etc
+
+[AWS HPC + CCTS data + AF registry + EP lab + biomarkers]{.green}
+
+---
+
+![Complexity of phenotyping is based on how structured or unstructured the data may be](../figures/emerge-example-creating-phenotypes.png){#fig-emerge-example}
+
+---
+
+![Identifying a true phenotype is complex and most often incorrect unless corroborated through other mechanisms](../figures/emerge-venn-diagram-true-cases.png){#fig-emerge-true-cases}
+
+---
+
+![Phenotypke KB current standard for diagnoses of AF](../figures/phenotype-kb-afib.png){#fig-phenotype-kb-afib}
+
+## EPS signal processing
+
+Utilize combination of surface ECG and intracardiac EGM to...
+
+1. Identify intracardiac features, e.g. multichannel morphologies
+1. Evaluate atrial abnormalities, such as conduction left &rarr; right activation 
+1. Feed features into LSTM or convolutional neural network to understand different AF phenotypes
+
+---
+
+![Annotated ECG to identify P wave, QRS, and T wave fiducial points](../figures/shiva-annotated-ecg-green.png){#fig-shiva-ecg}
+
+- Summation of P wave force vectors across surface ECG (signal-averaged)
+- Identify terminal P wave force abnormalities
+- Evaluate changes in P wave morphology over time
 
 # March 20, 2023
 
