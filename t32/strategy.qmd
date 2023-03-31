@@ -14,33 +14,24 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
-# March 3, 2023 | Darbar
+# April 4 | AJS
 
 ## Projects {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
-HRV/CVD:
+HRV/CVD: 
 
-- [x] Non-linearity evaluated, analyses being repeated
-- [x] Identify appropriate level journal (EHJ)
-- [ ] Presenting to Amit MS-EP group
+- [x] Presenting to Amit MS-EP group
+- [ ] Re-analysis based on interaction terms
+- [ ] Need to consider implications of robust variance methods
 
-AFL/FH:
+AFL/FH: Manuscript sent to co-authors, pending JAMA cardiology
 
-- [x] Paper draft has been drafted
-- [ ] [Genetic analyses]{.orange}
-- [ ] [Identify all authors]{.orange}
-- [ ] Send in JAMA Cardiology format
-
+CAR: Adjudicated ECGs, designed data collection, pending analyses
 :::
+
 ::: {.column width="50%"}
-CAR:
-
-- [x] Adjudicated ECG and designed data collection pattern
-- [ ] [Role and next steps]{.orange}
-- [ ] REDCap inconsistencies noted &rarr; responsibility?
-
 :::
 ::::
 
@@ -50,7 +41,7 @@ CAR:
 ::: {.column width="50%"}
 K23:
 
-- [x] Draft of aims shaorange
+- [x] [Draft of aims]{.orange}
 - [ ] [Feedback on aims]{.orange}
 - [ ] Which areas require prelim data?
 
@@ -72,5 +63,121 @@ Career:
 
 - [ ] [Delineate timeline and strategy for EP fellowship]{.orange}
 
+:::
+::::
+
+# March 31, 2023 | DD
+
+## Projects {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+HRV/CVD: Finalizing paper draft, to submit EHJ
+
+CAR: Adjudicated ECGs, designed data collection, [pending analyses]{.orange}
+
+AFL/FH:
+
+- [x] Paper draft, second round
+- [ ] [Identify all authors]{.orange}
+- [ ] Finalize JAMA cardiology submission
+:::
+
+::: {.column width="50%"}
+Phenotyping AF:
+
+- [ ] eMERGE PRS and PhenotypeKB
+- [x] AWS HPC access 
+- [x] CCTS DRA for data pull
+- [ ] Ablation database 
+:::
+::::
+
+## Strategy {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+K23:
+
+- [x] Draft of aims
+- [ ] [Feedback on aims]{.orange}
+- [ ] Prelim data on AF phenotypes
+- [ ] Prelim data in the EP lab
+
+Mentorship:
+
+- [x] Identified majority of mentorship committee = Darbar, Shah, Alonso, _Boyd_ (advisor), _Lampert_ 
+- [x] Meeting with McCauley (3/3)
+- [x] Meeting with Boyd (3/16)
+- [ ] [Genetics mentor, local or at another institution?]{.orange} &rarr; _will need more genetics training_
+:::
+::: {.column width="50%"}
+Training:
+
+- [x] DSP training &rarr; coursework
+- [ ] [NLP training &rarr; coursework]{.orange}
+- [ ] [Computational training in genetics]{.orange}
+
+Career:
+
+- [ ] [Delineate timeline and strategy for EP fellowship]{.orange}
+- [ ] Identify potential institutions and letters of support/introduction
+:::
+::::
+
+# March 3, 2023 | Darbar
+
+## Projects {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+HRV/CVD:
+
+- [x] Non-linearity evaluated, analyses being repeated
+- [x] Identify appropriate level journal (EHJ)
+- [ ] Presenting to Amit MS-EP group
+
+AFL/FH:
+
+- [x] Paper draft has been drafted
+- [ ] [Genetic analyses]{.orange}
+- [ ] [Identify all authors]{.orange}
+- [ ] Send in JAMA Cardiology format
+:::
+::: {.column width="50%"}
+CAR:
+
+- [x] Adjudicated ECG and designed data collection pattern
+- [ ] [Role and next steps]{.orange}
+- [ ] REDCap inconsistencies noted &rarr; responsibility?
+:::
+::::
+
+## Strategy {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+K23:
+
+- [x] [Draft of aims]{.orange}
+- [ ] [Feedback on aims]{.orange}
+- [ ] Which areas require prelim data?
+
+Mentorship:
+
+- [x] Identified majority of mentorship committee = Darbar, Shah, Alonso, _McCauley_, _Boyd_, _Lampert_
+- [ ] Meeting with McCauley (3/3)
+- [ ] Meeting with Boyd (3/16)
+- [ ] [Genetics mentor, local or at another institution?]{.orange}
+:::
+::: {.column width="50%"}
+Training:
+
+- [ ] Computational training in signal processing
+- [ ] [Computational training in genetics]{.orange}
+
+Career:
+
+- [ ] [Delineate timeline and strategy for EP fellowship]{.orange}
 :::
 ::::
