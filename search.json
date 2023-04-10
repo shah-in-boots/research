@@ -536,7 +536,7 @@
     "href": "t32/rip.html#non-linearity-in-ans-dysfunction",
     "title": "Research-In-Progress",
     "section": "Non-linearity in ANS dysfunction",
-    "text": "Non-linearity in ANS dysfunction\n\nProportional hazard assumptions\n\nDefined using time-variance, time-interaction, Martingale residuals\nSatisfied PH assumptions\n\nNon-linearity of HRV and CV mortality\n\nSpline analysis with up to 5 knots\nParametric threshold analysis (survival modeling)\nNon-parametric (binary outcome) threshold analysis\nIdentified non-linearity of response\n\nRe-analyzed data using cut-point (as shown in Figure 5)\n\nAlmost 100% accuracy in classifier of low-risk cohort\nAlmost 10-fold hazard in identify high-risk cohort"
+    "text": "Non-linearity in ANS dysfunction\n\nProportional hazard assumptions\n\nDefined using time-variance, time-interaction, Martingale residuals\nSatisfied PH assumptions\n\nNon-linearity of HRV and CV mortality\n\nSpline analysis with up to 5 knots\nParametric threshold analysis (survival modeling)\nNon-parametric (binary outcome) threshold analysis\nIdentified non-linearity of response\n\nRe-analyzed data using cut-point (as shown in Figure 8)\n\nAlmost 100% accuracy in classifier of low-risk cohort\nAlmost 10-fold hazard in identify high-risk cohort"
   },
   {
     "objectID": "t32/rip.html#genetic-analysis",
@@ -775,5 +775,19 @@
     "title": "Research-In-Progress",
     "section": "EPS signal processing",
     "text": "EPS signal processing\nUtilize combination of surface ECG and intracardiac EGM to…\n\nIdentify intracardiac features, e.g. multichannel morphologies\nEvaluate atrial abnormalities, such as conduction left → right activation\nFeed features into LSTM or convolutional neural network to understand different AF phenotypes"
+  },
+  {
+    "objectID": "t32/rip.html#phenotype-based-wes-cohort",
+    "href": "t32/rip.html#phenotype-based-wes-cohort",
+    "title": "Research-In-Progress",
+    "section": "Phenotype-based WES cohort",
+    "text": "Phenotype-based WES cohort\n\n\n\n\n\nAge\nComorbidities\nProportion\n\n\n\n\n-\nnone\n10-15%\n\n\n≤ 55\n*\n20%\n\n\n≤ 65\n≤ 1\n20%\n\n\n≤ 65\n≤ 2\n10%\n\n\n≤ 65\n≤ 3\n10%\n\n\n≥ 65\n≤ 1\n10-15%\n\n\n\n\nAlternatively can aim for two major groups within paroxysmal cohort definition:\n\n≤ 65y + structural heart disease (70%)\n≤ 65y - structural heart disease (30%)\n\nAim for 20-30% to have had PVI to be able to integrate intracardiac findings."
+  },
+  {
+    "objectID": "t32/rip.html#af-ontology",
+    "href": "t32/rip.html#af-ontology",
+    "title": "Research-In-Progress",
+    "section": "AF Ontology",
+    "text": "AF Ontology\nGeneration of key features that are related to arrhythmias:\n\nClinical history and trajectory\nEchocardiographic findings\nECG-based features\nFamily and social history\nPotential genetic markers"
   }
 ]

@@ -22,8 +22,6 @@ library(arcana)
 library(durandal)
 library(volundr)
 library(coraline)
-library(aion)
-library(card)
 library(googledrive)
 library(googlesheets4)
 library(clock)
@@ -206,6 +204,61 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# April 10, 2023
+
+## AF Ontology {.smaller}
+
+Generation of key features that are related to arrhythmias:
+
+1. Clinical history and trajectory
+1. Echocardiographic findings
+1. ECG-based features
+1. Family and social history
+1. Potential genetic markers
+
+---
+
+![Example from HF evaluation and progression](../figures/nagamine-2022-patient-timeline.png){#fig-feature-extraction}
+
+---
+
+![Utilizing patient features to create a matrix-based cluster](../figures/nagamine-2022-feature-generation.png){#fig-feature-gen}
+
+---
+
+![Support-vector based clustering, multidimensional K-clustering in feature-space](../figures/nagamine-2022-heart-failure-clusters.png){#fig-adhf-cluster}
+
+## Phenotype-based WES cohort {.smaller}
+
+:::: {.columns}
+::: {.column width="60%"}
+| Age | Comorbidities | Proportion |
+| - | --- | - |
+| - | none | 10-15% |
+| &le; 55 | * | 20% |
+| &le; 65 | &le; 1 | 20% |
+| &le; 65 | &le; 2 | 10% |
+| &le; 65 | &le; 3 | 10% |
+| &ge; 65 | &le; 1 | 10-15% |
+:::
+::: {.column width="40%"}
+Alternatively can aim for two major groups within paroxysmal cohort definition:
+
+1. &le; 65y + structural heart disease (70%)
+1. &le; 65y - structural heart disease (30%)
+
+_Aim for 20-30% to have had PVI to be able to integrate intracardiac findings_.
+:::
+::::
+
+---
+
+![Autonomic inflexibility and CV mortality in HF and LF bands](../figures/tbl-hrv-groups-cvd.png){#tbl-hrv-grps-cvd}
+
+---
+
+![Improved model concordance with addition of autonomic inflexiblity](../figures/tbl-hrv-concordance.png){#tbl-hrv-concordance}
 
 # March 31, 2023
 
