@@ -2,11 +2,11 @@
 format: docx
 ---
 
-Atrial fibrillation (AF) is the most common arrhythmia worldwide, witht a prevalence of over 50 million cases currently and &ge; 25% lifetime risk across races.[@Kornej2020]
+Atrial fibrillation (AF) is the most common arrhythmia worldwide, with a prevalence of over 50 million cases currently and &ge; 25% lifetime risk across races.[@Kornej2020]
 Surprisingly, the disease is only classified by its time course -- divided by broad strokes into paroxysmal, persistent, and permanent. 
 The management parallels this lack of granularity with homogenous rate and rhythm strategies that have not noticeably changed over the past 20 years.[@England2002; @Kirchhof2020]
 A paradigm shift is needed.
-Clinical phenotypes of AF would allow for individualized management and ttargeted therapy strategies that expand past antiarrhythmi drugs and catheter ablation.
+Clinical phenotypes of AF would allow for individualized management and targeted therapy strategies that expand past antiarrhythmi drugs and catheter ablation.
 
 The long-term goal as an electrophysiologist, clinician, and scientist is to personalize the management of paroxysmal AF using earlyy identification and pathophysiologyy driven strategies.
 AF is often considered to be a consequence instead of precursor of other cardiovascular conditions,[@Andrade2014] however the plurality of paroxysmal AF in the other, rare, classification studies are younger individuals with a low burden of other comorbidities.[@Pastori2020]
