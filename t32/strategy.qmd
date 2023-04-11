@@ -14,55 +14,21 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
-# April 4 | AJS
-
-## Projects {.smaller}
+## April 11 | AJS {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
-HRV/CVD: 
-
-- [x] Presenting to Amit MS-EP group
-- [ ] Re-analysis based on interaction terms
-- [ ] Need to consider implications of robust variance methods
-
-AFL/FH: Manuscript sent to co-authors, pending JAMA cardiology
-
-CAR: Adjudicated ECGs, designed data collection, pending analyses
-:::
-
-::: {.column width="50%"}
-:::
-::::
-
-## Strategy {.smaller}
-
-:::: {.columns}
-::: {.column width="50%"}
-K23:
-
-- [x] [Draft of aims]{.orange}
-- [ ] [Feedback on aims]{.orange}
-- [ ] Which areas require prelim data?
-
-Mentorship:
-
-- [x] Identified majority of mentorship committee = Darbar, Shah, Alonso, _McCauley_, _Boyd_, _Lampert_
-- [ ] Meeting with McCauley (3/3)
-- [ ] Meeting with Boyd (3/16)
-- [ ] [Genetics mentor, local or at another institution?]{.orange}
-
+- Submitting paper to JAMA cardiology on AFL/FH 
+- Completed revised concordance and AUC on HRV/CVD paper
+- WFDB for EGM, initialized I/O
+- NLP/ontology planning started
 :::
 ::: {.column width="50%"}
-Training:
-
-- [ ] Computational training in signal processing
-- [ ] [Computational training in genetics]{.orange}
-
-Career:
-
-- [ ] [Delineate timeline and strategy for EP fellowship]{.orange}
-
+- [ ] Analyses for non-first author paper on AF/ablation outcomes
+- [ ] [HRV/CVD paper thoughts on concordance and NRI]{.orange}
+- [ ] [Specific aims review]{.orange}
+- [ ] Final committee decisions: Darbar, Shah, Alvaro, Boyd, Lampert?
+- [ ]	Ontology of "stress"?
 :::
 ::::
 

@@ -515,14 +515,14 @@
     "href": "t32/strategy.html#strategy",
     "title": "Projects & Strategy",
     "section": "Strategy",
-    "text": "Strategy\n\n\nK23:\n\nDraft of aims\nFeedback on aims\nWhich areas require prelim data?\n\nMentorship:\n\nIdentified majority of mentorship committee = Darbar, Shah, Alonso, McCauley, Boyd, Lampert\nMeeting with McCauley (3/3)\nMeeting with Boyd (3/16)\nGenetics mentor, local or at another institution?\n\n\nTraining:\n\nComputational training in signal processing\nComputational training in genetics\n\nCareer:\n\nDelineate timeline and strategy for EP fellowship"
+    "text": "Strategy\n\n\nK23:\n\nDraft of aims\nFeedback on aims\nPrelim data on AF phenotypes\nPrelim data in the EP lab\n\nMentorship:\n\nIdentified majority of mentorship committee = Darbar, Shah, Alonso, Boyd (advisor), Lampert\nMeeting with McCauley (3/3)\nMeeting with Boyd (3/16)\nGenetics mentor, local or at another institution? → will need more genetics training\n\n\nTraining:\n\nDSP training → coursework\nNLP training → coursework\nComputational training in genetics\n\nCareer:\n\nDelineate timeline and strategy for EP fellowship\nIdentify potential institutions and letters of support/introduction"
   },
   {
     "objectID": "t32/strategy.html#projects",
     "href": "t32/strategy.html#projects",
     "title": "Projects & Strategy",
     "section": "Projects",
-    "text": "Projects\n\n\nHRV/CVD:\n\nPresenting to Amit MS-EP group\nRe-analysis based on interaction terms\nNeed to consider implications of robust variance methods\n\nAFL/FH: Manuscript sent to co-authors, pending JAMA cardiology\nCAR: Adjudicated ECGs, designed data collection, pending analyses"
+    "text": "Projects\n\n\nHRV/CVD: Finalizing paper draft, to submit EHJ\nCAR: Adjudicated ECGs, designed data collection, pending analyses\nAFL/FH:\n\nPaper draft, second round\nIdentify all authors\nFinalize JAMA cardiology submission\n\n\nPhenotyping AF:\n\neMERGE PRS and PhenotypeKB\nAWS HPC access\nCCTS DRA for data pull\nAblation database"
   },
   {
     "objectID": "t32/rip.html#updates",
@@ -739,14 +739,14 @@
     "href": "t32/strategy.html#projects-1",
     "title": "Projects & Strategy",
     "section": "Projects",
-    "text": "Projects\n\n\nHRV/CVD: Finalizing paper draft, to submit EHJ\nCAR: Adjudicated ECGs, designed data collection, pending analyses\nAFL/FH:\n\nPaper draft, second round\nIdentify all authors\nFinalize JAMA cardiology submission\n\n\nPhenotyping AF:\n\neMERGE PRS and PhenotypeKB\nAWS HPC access\nCCTS DRA for data pull\nAblation database"
+    "text": "Projects\n\n\nHRV/CVD:\n\nNon-linearity evaluated, analyses being repeated\nIdentify appropriate level journal (EHJ)\nPresenting to Amit MS-EP group\n\nAFL/FH:\n\nPaper draft has been drafted\nGenetic analyses\nIdentify all authors\nSend in JAMA Cardiology format\n\n\nCAR:\n\nAdjudicated ECG and designed data collection pattern\nRole and next steps\nREDCap inconsistencies noted → responsibility?"
   },
   {
     "objectID": "t32/strategy.html#strategy-1",
     "href": "t32/strategy.html#strategy-1",
     "title": "Projects & Strategy",
     "section": "Strategy",
-    "text": "Strategy\n\n\nK23:\n\nDraft of aims\nFeedback on aims\nPrelim data on AF phenotypes\nPrelim data in the EP lab\n\nMentorship:\n\nIdentified majority of mentorship committee = Darbar, Shah, Alonso, Boyd (advisor), Lampert\nMeeting with McCauley (3/3)\nMeeting with Boyd (3/16)\nGenetics mentor, local or at another institution? → will need more genetics training\n\n\nTraining:\n\nDSP training → coursework\nNLP training → coursework\nComputational training in genetics\n\nCareer:\n\nDelineate timeline and strategy for EP fellowship\nIdentify potential institutions and letters of support/introduction"
+    "text": "Strategy\n\n\nK23:\n\nDraft of aims\nFeedback on aims\nWhich areas require prelim data?\n\nMentorship:\n\nIdentified majority of mentorship committee = Darbar, Shah, Alonso, McCauley, Boyd, Lampert\nMeeting with McCauley (3/3)\nMeeting with Boyd (3/16)\nGenetics mentor, local or at another institution?\n\n\nTraining:\n\nComputational training in signal processing\nComputational training in genetics\n\nCareer:\n\nDelineate timeline and strategy for EP fellowship"
   },
   {
     "objectID": "t32/strategy.html#projects-2",
@@ -775,5 +775,12 @@
     "title": "Research-In-Progress",
     "section": "EPS signal processing",
     "text": "EPS signal processing\nUtilize combination of surface ECG and intracardiac EGM to…\n\nIdentify intracardiac features, e.g. multichannel morphologies\nEvaluate atrial abnormalities, such as conduction left → right activation\nFeed features into LSTM or convolutional neural network to understand different AF phenotypes"
+  },
+  {
+    "objectID": "t32/strategy.html#april-11-ajs",
+    "href": "t32/strategy.html#april-11-ajs",
+    "title": "Projects & Strategy",
+    "section": "April 11 | AJS",
+    "text": "April 11 | AJS\n\n\n\nSubmitting paper to JAMA cardiology on AFL/FH\nCompleted revised concordance and AUC on HRV/CVD paper\nWFDB for EGM, initialized I/O\nNLP/ontology planning started\n\n\n\nAnalyses for non-first author paper on AF/ablation outcomes\nHRV/CVD paper thoughts on concordance and NRI\nSpecific aims review\nFinal committee decisions: Darbar, Shah, Alvaro, Boyd, Lampert?\nOntology of “stress”?"
   }
 ]
