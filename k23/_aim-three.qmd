@@ -1,0 +1,5 @@
+__Aim 3: Evaluate the role of cardiovagal receptor genotypes in the risk of vagally-triggered arrhythmias.__
+*We hypothesize that [novel variants exist]{.underline} that may explain the risk of vagally-triggered arrhythmias.*
+A subset of patients identified with both decreased rest and reactivity cardiovagal outflow and increased CV mortality have been identified. 
+Genetic analysis will be performed to discover novel mechanisms and biomarkers of arrhythmia risk.
+Identified variants will be validated in a separate cohort to evaluate the arrhythmia risk and electrical phenotypes identified in __Aim 1__ and __2__.

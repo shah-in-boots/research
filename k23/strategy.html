@@ -340,6 +340,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -504,7 +507,43 @@ Anish S. Shah, MD|MS
 <section class="slide level2">
 
 
-<img data-src="overview_files/figure-revealjs/fig-dag-1.png" class="img-fluid r-stretch quarto-figure-center" width="960"><p class="caption">Figure&nbsp;3: Graphical representation of specific aims</p></section></section>
+<img data-src="strategy_files/figure-revealjs/fig-dag-1.png" class="img-fluid r-stretch quarto-figure-center" width="960"><p class="caption">Figure&nbsp;3: Graphical representation of specific aims</p></section>
+<section id="methods" class="slide level2 smaller">
+<h2>Methods</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Electrophysiology Study</strong></p>
+<ul>
+<li>Baseline and post-procedural atrial conduction properties</li>
+<li>Coronary sinus + circulating blood samples (including DNA)</li>
+<li>Surface + intracardiac mapping and electrophysiological signal</li>
+<li>Vagal nerve stimulation</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Big Data</strong></p>
+<ul>
+<li>Cohort generated from population-level data (UIC/CCTS, ARIC, MVP/VAMC)</li>
+<li>Computational model to classify AF based on clinical + cardiac imaging features</li>
+<li>Whole exome sequencing of DNA in pAF patients to identify autonomic variants</li>
+<li>Extraction of intracardiac features from EPS (volume, scar, voltage, etc…)</li>
+</ul>
+</div>
+</div>
+
+<aside><div>
+<p>UIC = University of Illinois at Chicago; CCTS = Center for Translational Research; ARIC = Atherosclerotic Risk in Communities;</p>
+</div></aside></section>
+<section id="outcomes" class="slide level2">
+<h2>Outcomes</h2>
+<ul>
+<li>Mechanisms explored could identify candidate subjects for NPY2R/Gal1R receptor blockade or VNS therapy</li>
+<li>Efficacy of VNS therapy could be quantified through serum testing</li>
+<li>Genetic variants that affect autonomic function along the neurocardiac axis may interplay with known inherited arrhythmis, such as the vagal-mediated triggers of SCD in LQTS patients</li>
+</ul>
+
+<aside><div>
+<p>SCD = sudden cardiac death; LQTS = Long QT syndrome</p>
+</div></aside></section></section>
 <section>
 <section id="background" class="title-slide slide level1 center">
 <h1>Background</h1>
@@ -618,54 +657,65 @@ Anish S. Shah, MD|MS
 <h1>Aim #1</h1>
 
 </section>
-<section class="slide level2">
-
-<p><strong>Aim 1: Identify triggered subphenotypes of pAF.</strong> <em>Intracardiac and extracardiac electrical features will <u>classify pAF into triggered versus re-entrant subphenotypes</u>.</em> Population level data will be leveraged to identify clinical subphenotypes of pAF, incorporating ECG and echocardiography markers, arrhythmia burden, recurrence, and time-varying components of potential risk-factors. These subphenotypes will be compared against intracardiac findings, including EGM and EAM data, to validate triggered arrhythmia.</p>
+<section id="section" class="slide level2">
+<h2></h2>
+<p><strong>Aim 1: Identify triggered subphenotypes of pAF.</strong> <em>Intracardiac and extracardiac electrical features will <u>classify pAF into triggered versus re-entrant subphenotypes</u>.</em> Population level data will be leveraged to identify clinical subphenotypes of pAF, incorporating ECG and echocardiography markers, arrhythmia burden, recurrence, and time-varying components of potential risk-factors. These subphenotypes will be compared against intracardiac findings to validate triggered arrhythmia phenotypes.</p>
+</section>
+<section id="premises" class="slide level2 smaller">
+<h2>Premises</h2>
+<ol type="1">
+<li><strong>Paroxysmal</strong> AF requires both a trigger and a substrate to progenerate</li>
+<li>Triggered mechanisms occurs primarily from pulmonary veins and occur due to:
+<ul>
+<li>Enhanced automaticity</li>
+<li>Myocardial micro-reentry</li>
+<li>Triggered activity</li>
+</ul></li>
+<li>Electrical abnormalities preceed ± cause mechanical changes (fibrosis, myocardial disarray,</li>
+</ol>
 </section>
 <section class="slide level2">
 
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+    t1[Enhanced automaticity]
+    t2[Micro-reentry]
+    t3[Triggered activity]
+    epaf[Early paroxysmal AF]
+    ppaf[Progressing paroxysmal AF]
+    lpaf[Late paroxysmal/persistent AF]
+    
+    epaf --&gt; ppaf --&gt; lpaf
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="aim-2" class="title-slide slide level1 center">
+<h1>Aim #2</h1>
+
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
 <p><strong>Aim 2: Determine the role of autonomic mechanisms in triggered pAF.</strong> <em>Triggered pAF will be associated with <u>increased electrical and neurohormonal biomarkers of vagolysis</u>.</em> Neuropsychological markers of stress will be obtained through clinical interview prior to PVI, and will be clinically phenotyped (<strong>Aim 1</strong>). Coronary sinus levels of NPY, Gal, S100B and arrhythmia thresholds will be obtained before and after PVI, and at the time of any additional physiological testing (catecholamine infusion, vagal nerve stimulation).</p>
-</section>
-<section class="slide level2">
+</section></section>
+<section>
+<section id="aim-3" class="title-slide slide level1 center">
+<h1>Aim #3</h1>
 
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
 <p><strong>Aim 3: Evaluate the role of cardiovagal receptor genotypes in the risk of vagally-triggered arrhythmias.</strong> <em>We hypothesize that <u>novel variants exist</u> that may explain the risk of vagally-triggered arrhythmias.</em> A subset of patients identified with both decreased rest and reactivity cardiovagal outflow and increased CV mortality have been identified. Genetic analysis will be performed to discover novel mechanisms and biomarkers of arrhythmia risk. Identified variants will be validated in a separate cohort to evaluate the arrhythmia risk and electrical phenotypes identified in <strong>Aim 1</strong> and <strong>2</strong>.</p>
-</section>
-<section id="methods" class="slide level2 smaller">
-<h2>Methods</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Electrophysiology Study</strong></p>
-<ul>
-<li>Baseline and post-procedural atrial conduction properties</li>
-<li>Coronary sinus + circulating blood samples (including DNA)</li>
-<li>Surface + intracardiac mapping and electrophysiological signal</li>
-<li>Vagal nerve stimulation</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Big Data</strong></p>
-<ul>
-<li>Cohort generated from population-level data (UIC/CCTS, ARIC, MVP/VAMC)</li>
-<li>Computational model to classify AF based on clinical + cardiac imaging features</li>
-<li>Whole exome sequencing of DNA in pAF patients to identify autonomic variants</li>
-<li>Extraction of intracardiac features from EPS (volume, scar, voltage, etc…)</li>
-</ul>
-</div>
-</div>
-
-<aside><div>
-<p>UIC = University of Illinois at Chicago; CCTS = Center for Translational Research; ARIC = Atherosclerotic Risk in Communities;</p>
-</div></aside></section>
-<section id="outcomes" class="slide level2">
-<h2>Outcomes</h2>
-<ul>
-<li>Mechanisms explored could identify candidate subjects for NPY2R/Gal1R receptor blockade or VNS therapy</li>
-<li>Efficacy of VNS therapy could be quantified through serum testing</li>
-<li>Genetic variants that affect autonomic function along the neurocardiac axis may interplay with known inherited arrhythmis, such as the vagal-mediated triggers of SCD in LQTS patients</li>
-</ul>
-
-<aside><div>
-<p>SCD = sudden cardiac death; LQTS = Long QT syndrome</p>
-</div></aside></section></section>
+</section></section>
 <section>
 <section id="end" class="title-slide slide level1 center">
 <h1>End</h1>
@@ -808,7 +858,7 @@ Anish S. Shah, MD|MS
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
+        navigationMode: 'default',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,
