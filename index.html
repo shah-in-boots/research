@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.319">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,14 +17,15 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
-.hanging div.csl-entry {
+.hanging-indent div.csl-entry {
   margin-left:2em;
   text-indent:-2em;
 }
@@ -38,8 +39,7 @@ div.csl-right-inline {
 }
 div.csl-indent {
   margin-left: 2em;
-}
-</style>
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -93,44 +93,46 @@ div.csl-indent {
     <span class="navbar-title">Research</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://asshah4.github.io"><i class="bi bi-house-door" role="img">
+    <a class="nav-link" href="https://asshah4.github.io" rel="" target=""><i class="bi bi-house-door" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
  <span class="menu-text">Overview</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:ashah282@uic.edu"><i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:ashah282@uic.edu" rel="" target=""><i class="bi bi-envelope" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="http://github.com/asshah4"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="http://github.com/asshah4" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/shah_in_boots"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/shah_in_boots" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/anish-shah-326991177/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/anish-shah-326991177/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -177,7 +179,7 @@ div.csl-indent {
 <p>Douglas Zipes asked the question “Why did he die on Tuesday and not on Monday?” In the 50 years since the advent of the coronary care unit,<span class="citation" data-cites="Lown1968"><sup><a href="#ref-Lown1968" role="doc-biblioref">1</a></sup></span> we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.<span class="citation" data-cites="Hayashi2015 Lown1977"><sup><a href="#ref-Hayashi2015" role="doc-biblioref">2</a>,<a href="#ref-Lown1977" role="doc-biblioref">3</a></sup></span>. The problem can be broken down into two components: 1) a substrate and 2) a trigger. My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. My computational approach parallels these topics by combining biostatistics and digital signal processing.</p>
 <p>This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming):</p>
 <ul>
-<li>The most recent update to this page was as of Sunday, March 12, 2023</li>
+<li>The most recent update to this page was as of <code>r format(Sys.Date(), "%A, %B %d, %Y")</code></li>
 <li>Please see here for weekly <a href="https://asshah4.github.io/research/t32/rip.html">research-in-progress updates</a></li>
 <li><a href="https://asshah4.github.io/research/t32/strategy.html">Mentored meeting outlines</a> are available to document strategy and obstacles on a weekly and biweekly basis</li>
 </ul>
@@ -215,7 +217,7 @@ div.csl-indent {
 </tr>
 <tr class="odd">
 <td>Vagolysis and Arrhythmogenesis</td>
-<td>Measurement of vagolysis in arrhythmogenesis in the electrophysiology lab and using clinical and epidemiological data. Currently working on the development/progress <a href="https://asshah4.github.io/research/t32/aims.html">towards a K08/K23 award</a>, including pilot data collection.</td>
+<td>Measurement of vagolysis in arrhythmogenesis in the electrophysiology lab and using clinical and epidemiological data. Currently working on the development/progress <a href="https://asshah4.github.io/research/k23/planning.html">towards a K08/K23 award</a>, including pilot data collection.</td>
 <td>2022-now</td>
 </tr>
 </tbody>
@@ -273,14 +275,14 @@ div.csl-indent {
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-Lown1968" class="csl-entry" role="doc-biblioentry">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-Lown1968" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Lown B, Selzer A. The coronary care unit. The American Journal of Cardiology 1968;22:597–602. doi:<a href="https://doi.org/10.1016/0002-9149(68)90167-7">10.1016/0002-9149(68)90167-7</a>.</div>
 </div>
-<div id="ref-Hayashi2015" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Hayashi2015" class="csl-entry" role="listitem">
 <div class="csl-left-margin">2. </div><div class="csl-right-inline">Hayashi M, Shimizu W, Albert CM. The spectrum of epidemiology underlying sudden cardiac death. Circulation Research 2015;116:1887–1906. doi:<a href="https://doi.org/10.1161/CIRCRESAHA.116.304521">10.1161/CIRCRESAHA.116.304521</a>.</div>
 </div>
-<div id="ref-Lown1977" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Lown1977" class="csl-entry" role="listitem">
 <div class="csl-left-margin">3. </div><div class="csl-right-inline">Lown B, Verrier RL, Rabinowitz SH. Neural and psychologic mechanisms and the problem of sudden cardiac death. The American Journal of Cardiology 1977;39:890–902. doi:<a href="https://doi.org/10.1016/S0002-9149(77)80044-1">10.1016/S0002-9149(77)80044-1</a>.</div>
 </div>
 </div></section></div></main> <!-- /main -->
@@ -311,9 +313,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -378,6 +394,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -420,7 +522,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center">Copyright (c) 2022, Anish. S. Shah, MD, MS</div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">Copyright (c) 2022, Anish. S. Shah, MD, MS</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
   </div>
 </footer>
 

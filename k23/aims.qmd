@@ -16,11 +16,11 @@ We propose that the acute, inappropriate vagolysis at times of increased adrener
 To test this, we would leverage two pre-existing, well-established cohorts and develop a third smaller and deeply phenotyped cohort with physiological testing: (A) an atrial arrhythmia registry enriched for paroxysaml AF with genetic sequencing,[@Chalazan2021] (B) a mental stress cohort with a significant burden of inappropriate vagolysis and genetic sequencing,[@Vaccarino2021a] and (C) a cohort of paroxysmal AF who will undergo intracardiac electrophysiology studies with neurocardiac biomarker samples and electroanatomical mapping data.
 [Our overarching hypothesis]{.underline} is that there exists a common, vagally-triggered endophenotype of paroxysmal AF that can be defined by its triggered activity and abnormalities in neurocardiac signal and neurohormone receptors.
 
-{{< include _aim-phenotypes.qmd >}}
+{{< include _aim-one.qmd >}}
 
-{{< include _aim-electrophysiology.qmd >}}
+{{< include _aim-two.qmd >}}
 
-{{< include _aim-genetics.qmd >}}
+{{< include _aim-three.qmd >}}
 
 The current paradigm in the management of AF focuses on antiarrhythmic modulation of cardiac ion channels and ablative strategies targeting atrial endocardium, which however is only directed at the literal surface of the problem.
 Identifying upstream mechanistic, autonomic pathways could lead to targeted therapies that not only decrease the risk of AF, but may also provide benefit in a number of other triggered atrial arrhythmias.[@Shivkumar2017]
