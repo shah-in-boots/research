@@ -129,8 +129,11 @@ tbl_status_updates <- function(progress, effort) {
 		) |>
 		tab_style(
 			style = cell_borders(sides = "bottom", color = text[5]),
-			locations = list(cells_body(columns = everything()), cells_stub(rows = everything()))
-		)  |>
+			locations = list(
+				cells_body(columns = everything()),
+				cells_stub(rows = everything())
+			)
+		) |> 
 		tab_style(
 			style = cell_text(color = "grey"),
 			locations = cells_body(columns = Task,
@@ -173,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 3, day = 31) |>
+	date_build(year = 2023, month = 4, day = 16) |>
 	add_days(-30)
 
 
@@ -204,6 +207,27 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# April 17, 2023 
+
+## Goals {.smaller}
+
+:::: {.columns} 
+::: {.column width="50%"}
+1. Phenotyping of AF, as current grouping is inadequate. Focus on risk category changing from paroxysmal to persistent
+1. ECG- and EGM-based analysis of AF as additive components
+1. CARTO/Rhythmia/EnSite cardiac mapping software to determine LA scar burden 
+:::
+::: {.column width="50%"}
+- [x] AFL/FH manuscript submission
+- [x] HRV/CVD manuscript revisions
+- [ ] Identify next paper to start preparing
+- [ ] eMERGE/AF IRB
+- [ ] EPS study IRB
+- [ ] NLP coursework, cluster set-up preparation
+- [ ] HRX abstract preparation on EGM and [Physionet/WFDB](https://physionet.org/content/wfdb/10.7.0/)
+:::
+::::
 
 # April 10, 2023
 
