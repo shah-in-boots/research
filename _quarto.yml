@@ -27,6 +27,9 @@ bibliography:
   - ../bibliography/publications.bib
   - ../bibliography/research.bib
   - ../bibliography/cardiology.bib
+  - ../bibliography/arrhythmia.bib
+  - ../bibliography/computational.bib
+  - ../bibliography/epidemiology.bib
 csl: ../bibliography/circulation.csl
 
 format:

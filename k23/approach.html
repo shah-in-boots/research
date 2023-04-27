@@ -366,7 +366,7 @@ Anish S. Shah, MD|MS
 <div class="columns">
 <div class="column" style="width:30%;">
 <ol type="1">
-<li class="fragment">Planning</li>
+<li class="fragment">Overview</li>
 <li class="fragment">Background</li>
 <li class="fragment">Aims</li>
 </ol>
@@ -374,7 +374,7 @@ Anish S. Shah, MD|MS
 <dl>
 <dt class="fragment">Why did he die on Tuesday and not on Monday?</dt>
 <dd class="fragment">
-<em>Douglas Zipes</em>
+<p><em>Douglas Zipes</em></p>
 </dd>
 </dl>
 </div>
@@ -424,8 +424,8 @@ Anish S. Shah, MD|MS
 <table>
 <caption>Table&nbsp;1: Research skills to be developed</caption>
 <colgroup>
-<col style="width: 25%">
-<col style="width: 75%">
+<col style="width: 26%">
+<col style="width: 73%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -507,7 +507,11 @@ Anish S. Shah, MD|MS
 <section class="slide level2">
 
 
+<<<<<<<< HEAD:k23/approach.html
 <img data-src="approach_files/figure-revealjs/fig-dag-1.png" class="img-fluid r-stretch quarto-figure-center" width="960"><p class="caption">Figure&nbsp;3: Graphical representation of specific aims</p></section>
+========
+<img data-src="planning_files/figure-revealjs/fig-dag-1.png" class="img-fluid r-stretch quarto-figure-center" width="960"><p class="caption">Figure&nbsp;3: Graphical representation of specific aims</p></section>
+>>>>>>>> 4d7889a200edb1c526375dad92f463ef90354efe:k23/planning.html
 <section id="methods" class="slide level2 smaller">
 <h2>Methods</h2>
 <div class="columns">
@@ -665,13 +669,15 @@ Anish S. Shah, MD|MS
 <h2>Premises</h2>
 <ol type="1">
 <li><strong>Paroxysmal</strong> AF requires both a trigger and a substrate to progenerate</li>
-<li>Triggered mechanisms occurs primarily from pulmonary veins and occur due to:
+<li>Paroxysmal, early AF rallies primarily through triggered activity</li>
+<li>Firing mechanisms occurs primarily from pulmonary veins due to:
 <ul>
 <li>Enhanced automaticity</li>
 <li>Myocardial micro-reentry</li>
 <li>Triggered activity</li>
 </ul></li>
-<li>Electrical abnormalities preceed ± cause mechanical changes (fibrosis, myocardial disarray,</li>
+<li>Electrical abnormalities preceed ± cause mechanical changes (fibrosis, myocardial disarray, leading to increased pre-disposed substrate</li>
+<li>Long-standing, chronic/persistent AF sustains primarily through substrate</li>
 </ol>
 </section>
 <section id="modeling-progression-of-af" class="slide level2">
@@ -681,6 +687,7 @@ Anish S. Shah, MD|MS
 <div>
 <p>
 </p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+<<<<<<<< HEAD:k23/approach.html
     t1[Enhanced automaticity]
     t2[Micro-reentry]
     t3[Delayed after-depolarization]
@@ -688,6 +695,31 @@ Anish S. Shah, MD|MS
     epaf[Early paroxysmal AF]
     ppaf[Progressing paroxysmal AF]
     lpaf[Late paroxysmal/persistent AF]
+========
+    t1[Automaticity]
+    t2[Reentry]
+    t3[DAD]
+    trig[Triggers]
+    
+    s1[LA size]
+    s2[Diastology]
+    s3[Fibrosis]
+    
+    epaf[Early AF]
+    ppaf[Progressing AF]
+    lpaf[Late AF]
+    
+    subgraph focus [Phenotyping]
+    t1 --&gt; trig
+    t2 --&gt; trig
+    t3 --&gt; trig
+    trig --&gt; epaf
+    end
+    
+    s1 --&gt; ppaf
+    s2 --&gt; ppaf
+    s3 --&gt; ppaf
+>>>>>>>> 4d7889a200edb1c526375dad92f463ef90354efe:k23/planning.html
     
     epaf --&gt; ppaf --&gt; lpaf
 </pre>
@@ -698,6 +730,83 @@ Anish S. Shah, MD|MS
 </div>
 </div>
 </div>
+</section>
+<section id="phenotyping" class="slide level2 smaller">
+<h2>Phenotyping</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><strong>Identify patients with early (in terms of natural history) paroxysmal AF that have higher trigger burden (compared to fibrosis burden)</strong></p>
+</div><div class="column" style="width:60%;">
+<p>Currently, phenotyping is limited. PhenoKB uses binary diagnosis of AF (2012), while recent studies showed 4 potential clusters may exist.<span class="citation" data-cites="Pastori2020 Vitolo2021"><sup><a href="#/references" role="doc-biblioref" onclick="">12</a>,<a href="#/references" role="doc-biblioref" onclick="">13</a></sup></span></p>
+<ol type="1">
+<li>Younger, lower comorbidities</li>
+<li>High CV risk factors</li>
+<li>High CV comorbidities</li>
+<li>High rates of non-CV comorbidities (e.g.&nbsp;cancer)</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="emr-based-data" class="slide level2">
+<h2>EMR-based data</h2>
+<p>NLP ontologies already exist for major cardiovascular diseases, with basic models using UMLS-derivations such as cTakes, MetaMapper, MetaThesaurus.</p>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-2">flowchart TB
+    icd[ICD codes]
+    nlp[UMLS]
+    notes[Unstructured text]
+    lstm[Long-short term memory]
+    bert[BERT encoders]
+    dl[Deep Learning]
+    
+    subgraph a [Increasing complexity]
+    icd --&gt; nlp --&gt; notes --&gt; lstm --&gt; bert --&gt; dl
+    end
+</pre>
+<div id="mermaid-tooltip-2" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+
+<aside><div>
+<p>UMLS = Unified Medical Language System</p>
+</div></aside></section>
+<section id="cardiology-data-points" class="slide level2 smaller">
+<h2>Cardiology data points</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><strong>ECG markers</strong>:</p>
+<ul>
+<li>HF HRV</li>
+<li>“Coarse” AF based on F-wave amplitude</li>
+<li>P-wave morphology (dispersion, variability, terminal forces, summation)</li>
+<li>Electrical heterogeneity</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><strong>TTE markers</strong>:</p>
+<ul>
+<li>LA size</li>
+<li>Diastology</li>
+<li>LVEF</li>
+<li>LVIDD</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="steps" class="slide level2">
+<h2>Steps</h2>
+<ul class="task-list">
+<li><input type="checkbox" disabled="">Correctly identify paroxysmal AF (versus persistent, etc)</li>
+<li><input type="checkbox" disabled="">Utilize pre-existing cluster approach to identify “low comorbidities” pAF patients</li>
+<li><input type="checkbox" disabled="">Analyze ECG-based biomarkers</li>
+<li><input type="checkbox" disabled="">Add echocardiographic markers</li>
+</ul>
 </section></section>
 <section>
 <section id="aim-2" class="title-slide slide level1 center">
@@ -757,6 +866,12 @@ Anish S. Shah, MD|MS
 </div>
 <div id="ref-Hoang2020" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">11. </div><div class="csl-right-inline">Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:<a href="https://doi.org/10.1172/JCI.INSIGHT.135519">10.1172/JCI.INSIGHT.135519</a>.</div>
+</div>
+<div id="ref-Pastori2020" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Pastori D, Antonucci E, Milanese A, Violi F, Pignatelli P, Palareti G, et al. Clinical phenotypes of atrial fibrillation and risk of mortality: A cluster analysis. European Heart Journal 2020;41. doi:<a href="https://doi.org/10.1093/ehjci/ehaa946.2893">10.1093/ehjci/ehaa946.2893</a>.</div>
+</div>
+<div id="ref-Vitolo2021" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Vitolo M, Proietti M, Shantsila A, Boriani G, Lip GYH. Clinical phenotype classification of atrial fibrillation patients using cluster analysis and associations with trial-adjudicated outcomes. Biomedicines 2021;9:843. doi:<a href="https://doi.org/10.3390/biomedicines9070843">10.3390/biomedicines9070843</a>.</div>
 </div>
 </div>
 

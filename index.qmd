@@ -16,8 +16,6 @@ This serves as a summary of current research progress, updates, and projects (cl
 - [Mentored meeting outlines](https://asshah4.github.io/research/t32/mentors.html) are available to document strategy and obstacles on a weekly and biweekly basis
 - Current active goal is to move [towards a K08/K23 award](https://asshah4.github.io/research/k32/approach.html)
 
-
-
 | | | |
 | --- | --- | --- |
 | MSIMI and CV Mortality | A large prospective cohort study measuring myocardial ischemia in response to mental stress, with extensive follow-up. Analytical skills included the development of recurrent event models (AG, PWP, MSM, marginal, conditional). Recurrent event software in R was developed. Middle-author Publication in JAMA | 2019-2020 |
@@ -26,7 +24,11 @@ This serves as a summary of current research progress, updates, and projects (cl
 | HRV and Psychosocial Factors | Evaluated changes in HRV from baseline to several years later in the ARIC Study. Found that psychosomatic stress (in the form of vital exhaustion) led to a persistent decrease in high frequency HRV, a surrogate of vagal tone. First-author Publication in JAHA | 2016-2020 |
 | AFL and Family History | Statistical analysis of relationship between early onset AFL and family history, which notably yields different phenotypes in Whites and Blacks. [WIP](https://asshah4.github.io/aflubber) | 2022 |
 | Disturbances of Neurocardiac Axis | TL1 and F32 grant focused on evaluating of myocardial ischemia and changes in autonomic function using HRV. Pilot study with completed recruitment. Publication of Thesis and WIP | 2019-now | 
+<<<<<<< HEAD
 | Vagolysis and Arrhythmogenesis | Measurement of vagolysis in arrhythmogenesis in the electrophysiology lab and using clinical and epidemiological data. Currently working on the development/progress [towards a K08/K23 award](https://asshah4.github.io/research/k32/aims.html), including pilot data collection. | 2022-now |
+=======
+| Vagolysis and Arrhythmogenesis | Measurement of vagolysis in arrhythmogenesis in the electrophysiology lab and using clinical and epidemiological data. Currently working on the development/progress [towards a K08/K23 award](https://asshah4.github.io/research/k23/planning.html), including pilot data collection. | 2022-now |
+>>>>>>> 4d7889a200edb1c526375dad92f463ef90354efe
 
 *GEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography*
 
