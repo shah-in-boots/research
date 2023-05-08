@@ -630,6 +630,223 @@
     "text": "Aim 3: Evaluate the role of cardiovagal receptor genotypes in the risk of vagally-triggered arrhythmias. We hypothesize that novel variants exist that may explain the risk of vagally-triggered arrhythmias. A subset of patients identified with both decreased rest and reactivity cardiovagal outflow and increased CV mortality have been identified. Genetic analysis will be performed to discover novel mechanisms and biomarkers of arrhythmia risk. Identified variants will be validated in a separate cohort to evaluate the arrhythmia risk and electrical phenotypes identified in Aim 1 and 2."
   },
   {
+<<<<<<< HEAD
+    "objectID": "k23/approach.html#significance",
+    "href": "k23/approach.html#significance",
+    "title": "Research Aims",
+    "section": "Significance",
+    "text": "Significance\n\nKnowledge gaps:\n\nbiomarkers of response to neuromodulation therapy, including ablation\nunderstanding of regional variation in innervation affects arrhythmogenesis\ntranslation from single-cell studies to human models\n\nResearch priorities:\n\nrole of ANS signaling in emergence and maintenance of cardiac arrhythmias\ntarget modulation of ANS to attenuate electrical remodeling\npredict underlying biomarkers\nunderstand time course of ANS remodeling and neuropeptide expression\nsex/race differences in cardiac arrhythmogenesis\n\n\n\n\nNIH and NHLBI released 2022 Research Report on ANS in CV disease, with a focus on AF and VT/VF. ANS = autonomic nervous system; CV = cardiovascular; AF = atrial fibrillation; VT/VF = ventricular tachycardia/fibrillation;"
+  },
+  {
+    "objectID": "k23/approach.html#research-skills",
+    "href": "k23/approach.html#research-skills",
+    "title": "Research Aims",
+    "section": "Research skills",
+    "text": "Research skills\n\n\nTable 1: Research skills to be developed\n\n\n\n\n\n\nCategory\nDescription\n\n\n\n\nClinical\ncardiac electrophysiology, echocardiography, electrocardiography\n\n\nTranslational\ngenetic analysis, electrophysiology studies, molecular mechanisms\n\n\nEpidemiology\ncausal inference, biostatistics, survival analysis with recurrence, study design\n\n\nComputational\nprogramming (R, MATLAB, python, C++, Julia), digital signal processing, machine learning"
+  },
+  {
+    "objectID": "k23/approach.html#committee",
+    "href": "k23/approach.html#committee",
+    "title": "Research Aims",
+    "section": "Committee",
+    "text": "Committee\n\n\nTable 2: Potential committee members\n\n\n\n\n\n\n\nMentor\nField\nSpecialty\n\n\n\n\nAmit J. Shah MD/MS\nCV/EPI\nmental stress, autonomic dysfunction, digital biomarkers\n\n\nDawood Darbar MBCHB/MD\nCV/EPI\natrial arrhythmias, genetics\n\n\nMark McCauley MD/PHD\nCV/EP\natrial arrhythmias\n\n\nAlvaro Alonso MD/PHD\nEPI\natrial fibrillation, ARIC investigator\n\n\nRachel Lampert MD\nCV/EP\nmental stress, autonomic dysfunction\n\n\n\n\n\n\nGoal for next 1-2 years is to increase collaboration within committee in support of K23"
+  },
+  {
+    "objectID": "k23/approach.html#methods",
+    "href": "k23/approach.html#methods",
+    "title": "Research Aims",
+    "section": "Methods",
+    "text": "Methods\n\n\nElectrophysiology Study\n\nBaseline and post-procedural atrial conduction properties\nCoronary sinus + circulating blood samples (including DNA)\nSurface + intracardiac mapping and electrophysiological signal\nVagal nerve stimulation\n\n\nBig Data\n\nCohort generated from population-level data (UIC/CCTS, ARIC, MVP/VAMC)\nComputational model to classify AF based on clinical + cardiac imaging features\nWhole exome sequencing of DNA in pAF patients to identify autonomic variants\nExtraction of intracardiac features from EPS (volume, scar, voltage, etc…)\n\n\n\n\n\nUIC = University of Illinois at Chicago; CCTS = Center for Translational Research; ARIC = Atherosclerotic Risk in Communities;"
+  },
+  {
+    "objectID": "k23/approach.html#outcomes",
+    "href": "k23/approach.html#outcomes",
+    "title": "Research Aims",
+    "section": "Outcomes",
+    "text": "Outcomes\n\nMechanisms explored could identify candidate subjects for NPY2R/Gal1R receptor blockade or VNS therapy\nEfficacy of VNS therapy could be quantified through serum testing\nGenetic variants that affect autonomic function along the neurocardiac axis may interplay with known inherited arrhythmis, such as the vagal-mediated triggers of SCD in LQTS patients\n\n\n\nSCD = sudden cardiac death; LQTS = Long QT syndrome"
+  },
+  {
+    "objectID": "k23/approach.html#autonomic-control-of-the-heart",
+    "href": "k23/approach.html#autonomic-control-of-the-heart",
+    "title": "Research Aims",
+    "section": "Autonomic control of the heart",
+    "text": "Autonomic control of the heart\n\nNeurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels1\n\nCortex ↔︎ brainstem\nSpinal cord ↔︎ extracardiac ganglia (e.g. stellate)\nIntrinsic cardiac nervous system (ICNS) ↔︎ heart\n\nAutonomic regulation is critical in the development of most CV disease\n\nDisregulated catecholamines in heart failure\nPost myocardial infarct VF\nTriggered arrhythmias such as VT\n\n\n\n\nSNS = sympathetic nervous system; PNS = parasympathetic nervous system;"
+  },
+  {
+    "objectID": "k23/approach.html#neurovisceral-integration",
+    "href": "k23/approach.html#neurovisceral-integration",
+    "title": "Research Aims",
+    "section": "Neurovisceral integration",
+    "text": "Neurovisceral integration\n\nLower levels of networked structures (ICNS, hypothalamus) integrate afferent information about metabolic demands\nHigher levels of networked structures (amydala, cortex) integrate lower networks and generate conscious/uncscious CV state representations\nAllows for environmental/psychological factors to interplay with cardiac physiology, e.g. mental stress causing arrhythmia"
+  },
+  {
+    "objectID": "k23/approach.html#critical-role-of-the-vagus",
+    "href": "k23/approach.html#critical-role-of-the-vagus",
+    "title": "Research Aims",
+    "section": "Critical role of the vagus",
+    "text": "Critical role of the vagus\n\nEmbryologically, vagus nerve sprouts from medulla and extends to distant organs (thus long pre-ganglionic axons) e.g. heart, lung, intestines\nParasympathetic control is evolutionarily more primitive in vertebrates, preceeding sympathetic control\n\nSharks exhihibt phasic HRV without sympathetic innervation3\nMammalian vagal control is more complex, with multiple nuclei, e.g. polyvagal4\n\nMammalian vagal outflow is particularly coupled with cardiorespiratory control\n\nLeads to respiratory sinus arrhythmia\nRespiratory changes occur at a high-frequency, can be measured by HRV\n\n\n\n\nStephen Porges proposed the Polyvagal Theory during his tenure at UIC. HRV = heart rate variability;"
+  },
+  {
+    "objectID": "k23/approach.html#vagal-therapeutic-interventions",
+    "href": "k23/approach.html#vagal-therapeutic-interventions",
+    "title": "Research Aims",
+    "section": "Vagal therapeutic interventions",
+    "text": "Vagal therapeutic interventions\n\nChronic VNS reduces drop in ejection fraction in different animal models of cardiomyopathy, including MI, but studies have mixed results in humans\n\nNECTAR-HF ~ VNS or sham, no difference at 6 months in LV size/function, n = 96\nINOVATE-HF ~ right VNS + GDMT vs. GDMT, no difference in mortality, n = 700\nANTHEM-HF ~ non-randomized VNS, improved LV function, pilot study (required titrated VNS to cause decrease in HR)\n\nVNS may be anti-arrhythmic in animal models, with decreased VT/VF, but minimal human studies\n\nGANGLIA-AF, paroxysmal AF randomized to PVI or atrial GP ablation, decreased AAD dosages in GP group, n = 102\n\n\n\n\nVNS = vagal nerve stimulation; MI = myocardial infarction; LV = left ventricle; GP = ganglionated plexi; AAD = anti-arrhythmic drugs"
+  },
+  {
+    "objectID": "k23/approach.html#sympathovagal-crosstalk",
+    "href": "k23/approach.html#sympathovagal-crosstalk",
+    "title": "Research Aims",
+    "section": "Sympathovagal crosstalk",
+    "text": "Sympathovagal crosstalk\n\nArrhythmia thresholds affected by sympathetic and vagal activity\nIntracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress\nAtria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties1,5\nSympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis"
+  },
+  {
+    "objectID": "k23/approach.html#molecular-mechanisms",
+    "href": "k23/approach.html#molecular-mechanisms",
+    "title": "Research Aims",
+    "section": "Molecular mechanisms",
+    "text": "Molecular mechanisms\n\nSympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium\nNPY and galanin is also released, which both inhibit cholinergic activity6,7\nBoth inhibit firing and leading to vagolytic effects on the myocardium8,9\n\nGalanin released as a adrenergic co-transmitter, binding to GalR1 receptors\nNPY binds to cholinergic neurons through the Y2 receptor\nBoth directly/indirectly involve protein kinase C\n\nNPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)10\n\n\n\nNE = nor epinephrine; NPY = neuropeptide Y"
+  },
+  {
+    "objectID": "k23/approach.html#section",
+    "href": "k23/approach.html#section",
+    "title": "Research Aims",
+    "section": "",
+    "text": "Aim 1: Identify triggered subphenotypes of pAF. Intracardiac and extracardiac electrical features will classify pAF into triggered versus re-entrant subphenotypes. Population level data will be leveraged to identify clinical subphenotypes of pAF, incorporating ECG and echocardiography markers, arrhythmia burden, recurrence, and time-varying components of potential risk-factors. These subphenotypes will be compared against intracardiac findings to validate triggered arrhythmia phenotypes."
+  },
+  {
+    "objectID": "k23/approach.html#premises",
+    "href": "k23/approach.html#premises",
+    "title": "Research Aims",
+    "section": "Premises",
+    "text": "Premises\n\nParoxysmal AF requires both a trigger and a substrate to progenerate\nTriggered mechanisms occurs primarily from pulmonary veins and occur due to:\n\nEnhanced automaticity\nMyocardial micro-reentry\nTriggered activity\n\nElectrical abnormalities preceed ± cause mechanical changes (fibrosis, myocardial disarray,"
+  },
+  {
+    "objectID": "k23/approach.html#modeling-progression-of-af",
+    "href": "k23/approach.html#modeling-progression-of-af",
+    "title": "Research Aims",
+    "section": "Modeling progression of AF",
+    "text": "Modeling progression of AF\n\n\n\n\nflowchart LR\n    t1[Enhanced automaticity]\n    t2[Micro-reentry]\n    t3[Delayed after-depolarization]\n    trig[Triggered ]\n    epaf[Early paroxysmal AF]\n    ppaf[Progressing paroxysmal AF]\n    lpaf[Late paroxysmal/persistent AF]\n    \n    epaf --> ppaf --> lpaf"
+  },
+  {
+    "objectID": "k23/approach.html#section-1",
+    "href": "k23/approach.html#section-1",
+    "title": "Research Aims",
+    "section": "",
+    "text": "Aim 2: Determine the role of autonomic mechanisms in triggered pAF. Triggered pAF will be associated with increased electrical and neurohormonal biomarkers of vagolysis. Neuropsychological markers of stress will be obtained through clinical interview prior to PVI, and will be clinically phenotyped (Aim 1). Coronary sinus levels of NPY, Gal, S100B and arrhythmia thresholds will be obtained before and after PVI, and at the time of any additional physiological testing (catecholamine infusion, vagal nerve stimulation)."
+  },
+  {
+    "objectID": "k23/approach.html#section-2",
+    "href": "k23/approach.html#section-2",
+    "title": "Research Aims",
+    "section": "",
+    "text": "Aim 3: Evaluate the role of cardiovagal receptor genotypes in the risk of vagally-triggered arrhythmias. We hypothesize that novel variants exist that may explain the risk of vagally-triggered arrhythmias. A subset of patients identified with both decreased rest and reactivity cardiovagal outflow and increased CV mortality have been identified. Genetic analysis will be performed to discover novel mechanisms and biomarkers of arrhythmia risk. Identified variants will be validated in a separate cohort to evaluate the arrhythmia risk and electrical phenotypes identified in Aim 1 and 2."
+  },
+  {
+    "objectID": "k23/approach.html#references",
+    "href": "k23/approach.html#references",
+    "title": "Research Aims",
+    "section": "References",
+    "text": "References\n\n\n1. Armour JA, Murphy DA, Yuan BX, Macdonald S, Hopkins DA. Gross and microscopic anatomy of the human intrinsic cardiac nervous system. Anatomical Record 1997;247:289–298. doi:10.1002/(SICI)1097-0185(199702)247:2<289::AID-AR15>3.0.CO;2-L.\n\n\n2. Shivkumar K, Ajijola OA, Anand I, Armour JA, Chen PS, Esler M, et al. Clinical neurocardiology defining the value of neuroscience-based cardiovascular therapeutics. Journal of Physiology 2016;594:3911–3954. doi:10.1113/JP271870.\n\n\n3. Taylor EW, Wang T, Leite CAC. An overview of the phylogeny of cardiorespiratory control in vertebrates with some reflections on the “polyvagal theory.” Biological Psychology 2022;172. doi:10.1016/j.biopsycho.2022.108382.\n\n\n4. Porges SW. The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system. Cleveland Clinic Journal of Medicine 2009;76:S86. doi:10.3949/ccjm.76.s2.17.\n\n\n5. Hoover DB, Isaacs ER, Jacques F, Hoard JL, Pagé P, Armour JA. Localization of multiple neurotransmitters in surgically derived specimens of human atrial ganglia. Neuroscience 2009;164:1170–1179. doi:10.1016/j.neuroscience.2009.09.001.\n\n\n6. Herring N. Autonomic control of the heart: Going beyond the classical neurotransmitters. Experimental Physiology 2015;100:354–358. doi:10.1113/expphysiol.2014.080184.\n\n\n7. Herring N, Cranley J, Lokale MN, Li D, Shanks J, Alston EN, et al. The cardiac sympathetic co-transmitter galanin reduces acetylcholine release and vagal bradycardia: Implications for neural control of cardiac excitability. Journal of Molecular and Cellular Cardiology 2012;52:667–676. doi:10.1016/j.yjmcc.2011.11.016.\n\n\n8. Kalla M, Hao G, Tapoulal N, Tomek J, Liu K, Woodward L, et al. The cardiac sympathetic co-transmitter neuropeptide y is pro-arrhythmic following ST-elevation myocardial infarction despite beta-blockade. European Heart Journal 2020;41:2168–2179. doi:10.1093/eurheartj/ehz852.\n\n\n9. Herring N, Lokale MN, Danson EJ, Heaton DA, Paterson DJ. Neuropeptide y reduces acetylcholine release and vagal bradycardia via a Y2 receptor-mediated, protein kinase c-dependent pathway. Journal of Molecular and Cellular Cardiology 2008;44:477–485. doi:10.1016/j.yjmcc.2007.10.001.\n\n\n10. Coote JH. Myths and realities of the cardiac vagus. Journal of Physiology 2013;591:4073–4085. doi:10.1113/jphysiol.2013.257758.\n\n\n11. Hoang JD, Salavatian S, Yamaguchi N, Swid MA, Vaseghi M. Cardiac sympathetic activation circumvents high-dose beta blocker therapy in part through release of neuropeptide y. JCI Insight 2020;5. doi:10.1172/JCI.INSIGHT.135519."
+  },
+  {
+    "objectID": "t32/strategy.html#april-28-dd",
+    "href": "t32/strategy.html#april-28-dd",
+    "title": "Projects & Strategy",
+    "section": "April 28 | DD",
+    "text": "April 28 | DD\n\n\n\nSubmitting paper to JAMA cardiology on AFL/FH\nCompleted revised concordance and AUC on HRV/CVD paper\nWFDB for EGM, initialized I/O\nNLP/ontology planning started\n\n\n\nAnalyses for non-first author paper on AF/ablation outcomes\nHRV/CVD paper thoughts on concordance and NRI\nSpecific aims review\nFinal committee decisions: Darbar, Shah, Alvaro, Boyd, Lampert?\nOntology of “stress”?"
+  },
+  {
+    "objectID": "t32/strategy.html#april-11-ajs",
+    "href": "t32/strategy.html#april-11-ajs",
+    "title": "Projects & Strategy",
+    "section": "April 11 | AJS",
+    "text": "April 11 | AJS\n\n\n\nSubmitting paper to JAMA cardiology on AFL/FH\nCompleted revised concordance and AUC on HRV/CVD paper\nWFDB for EGM, initialized I/O\nNLP/ontology planning started\n\n\n\nAnalyses for non-first author paper on AF/ablation outcomes\nHRV/CVD paper thoughts on concordance and NRI\nSpecific aims review\nFinal committee decisions: Darbar, Shah, Alvaro, Boyd, Lampert?\nOntology of “stress”?"
+  },
+  {
+    "objectID": "t32/strategy.html#projects",
+    "href": "t32/strategy.html#projects",
+    "title": "Projects & Strategy",
+    "section": "Projects",
+    "text": "Projects\n\n\nHRV/CVD: Finalizing paper draft, to submit EHJ\nCAR: Adjudicated ECGs, designed data collection, pending analyses\nAFL/FH:\n\nPaper draft, second round\nIdentify all authors\nFinalize JAMA cardiology submission\n\n\nPhenotyping AF:\n\neMERGE PRS and PhenotypeKB\nAWS HPC access\nCCTS DRA for data pull\nAblation database"
+  },
+  {
+    "objectID": "t32/strategy.html#strategy",
+    "href": "t32/strategy.html#strategy",
+    "title": "Projects & Strategy",
+    "section": "Strategy",
+    "text": "Strategy\n\n\nK23:\n\nDraft of aims\nFeedback on aims\nPrelim data on AF phenotypes\nPrelim data in the EP lab\n\nMentorship:\n\nIdentified majority of mentorship committee = Darbar, Shah, Alonso, Boyd (advisor), Lampert\nMeeting with McCauley (3/3)\nMeeting with Boyd (3/16)\nGenetics mentor, local or at another institution? → will need more genetics training\n\n\nTraining:\n\nDSP training → coursework\nNLP training → coursework\nComputational training in genetics\n\nCareer:\n\nDelineate timeline and strategy for EP fellowship\nIdentify potential institutions and letters of support/introduction"
+  },
+  {
+    "objectID": "t32/strategy.html#projects-1",
+    "href": "t32/strategy.html#projects-1",
+    "title": "Projects & Strategy",
+    "section": "Projects",
+    "text": "Projects\n\n\nHRV/CVD:\n\nNon-linearity evaluated, analyses being repeated\nIdentify appropriate level journal (EHJ)\nPresenting to Amit MS-EP group\n\nAFL/FH:\n\nPaper draft has been drafted\nGenetic analyses\nIdentify all authors\nSend in JAMA Cardiology format\n\n\nCAR:\n\nAdjudicated ECG and designed data collection pattern\nRole and next steps\nREDCap inconsistencies noted → responsibility?"
+  },
+  {
+    "objectID": "t32/strategy.html#strategy-1",
+    "href": "t32/strategy.html#strategy-1",
+    "title": "Projects & Strategy",
+    "section": "Strategy",
+    "text": "Strategy\n\n\nK23:\n\nDraft of aims\nFeedback on aims\nWhich areas require prelim data?\n\nMentorship:\n\nIdentified majority of mentorship committee = Darbar, Shah, Alonso, McCauley, Boyd, Lampert\nMeeting with McCauley (3/3)\nMeeting with Boyd (3/16)\nGenetics mentor, local or at another institution?\n\n\nTraining:\n\nComputational training in signal processing\nComputational training in genetics\n\nCareer:\n\nDelineate timeline and strategy for EP fellowship"
+  },
+  {
+    "objectID": "t32/mentors.html#april-28-dd",
+    "href": "t32/mentors.html#april-28-dd",
+    "title": "Mentorship Meetings",
+    "section": "April 28 | DD",
+    "text": "April 28 | DD\n\n\n\nPreliminary data for AIMS\n\nNLP/phenotyping needs coursework and mentorship with Boyd\nML/DSP needs significant engineering/programming time\n\nAF phenotyping to identify those with heavier percentage of “triggers” versus those with higher burden of “substrate”\nEGM assessment of AF, evaluating scar-burden, conduction velocity, with underlying theory of “wavelet re-entry” as a boundary problem\n\n\n\nAFL/FH manuscript to JAMA Cardiology\nHRV/CVD manuscript to co-authors\nHRV/CVD manuscript to European Heart Journal\nAF/CA outcomes statistical review\nAnalysis of CCTS data pull\nMUSE ECG data in XML format\nIRB for EP lab research"
+  },
+  {
+    "objectID": "t32/mentors.html#april-11-ajs",
+    "href": "t32/mentors.html#april-11-ajs",
+    "title": "Mentorship Meetings",
+    "section": "April 11 | AJS",
+    "text": "April 11 | AJS\n\n\n\nSubmitting paper to JAMA cardiology on AFL/FH\nCompleted revised concordance and AUC on HRV/CVD paper\nWFDB for EGM, initialized I/O\nNLP/ontology planning started\n\n\n\nAnalyses for non-first author paper on AF/ablation outcomes\nHRV/CVD paper thoughts on concordance and NRI\nSpecific aims review\nFinal committee decisions: Darbar, Shah, Alvaro, Boyd, Lampert?\nOntology of “stress”?"
+  },
+  {
+    "objectID": "t32/mentors.html#projects",
+    "href": "t32/mentors.html#projects",
+    "title": "Projects & Strategy",
+    "section": "Projects",
+    "text": "Projects\n\n\nHRV/CVD: Finalizing paper draft, to submit EHJ\nCAR: Adjudicated ECGs, designed data collection, pending analyses\nAFL/FH:\n\nPaper draft, second round\nIdentify all authors\nFinalize JAMA cardiology submission\n\n\nPhenotyping AF:\n\neMERGE PRS and PhenotypeKB\nAWS HPC access\nCCTS DRA for data pull\nAblation database"
+  },
+  {
+    "objectID": "t32/mentors.html#strategy",
+    "href": "t32/mentors.html#strategy",
+    "title": "Projects & Strategy",
+    "section": "Strategy",
+    "text": "Strategy\n\n\nK23:\n\nDraft of aims\nFeedback on aims\nPrelim data on AF phenotypes\nPrelim data in the EP lab\n\nMentorship:\n\nIdentified majority of mentorship committee = Darbar, Shah, Alonso, Boyd (advisor), Lampert\nMeeting with McCauley (3/3)\nMeeting with Boyd (3/16)\nGenetics mentor, local or at another institution? → will need more genetics training\n\n\nTraining:\n\nDSP training → coursework\nNLP training → coursework\nComputational training in genetics\n\nCareer:\n\nDelineate timeline and strategy for EP fellowship\nIdentify potential institutions and letters of support/introduction"
+  },
+  {
+    "objectID": "t32/mentors.html#projects-1",
+    "href": "t32/mentors.html#projects-1",
+    "title": "Projects & Strategy",
+    "section": "Projects",
+    "text": "Projects\n\n\nHRV/CVD:\n\nNon-linearity evaluated, analyses being repeated\nIdentify appropriate level journal (EHJ)\nPresenting to Amit MS-EP group\n\nAFL/FH:\n\nPaper draft has been drafted\nGenetic analyses\nIdentify all authors\nSend in JAMA Cardiology format\n\n\nCAR:\n\nAdjudicated ECG and designed data collection pattern\nRole and next steps\nREDCap inconsistencies noted → responsibility?"
+  },
+  {
+    "objectID": "t32/mentors.html#strategy-1",
+    "href": "t32/mentors.html#strategy-1",
+    "title": "Projects & Strategy",
+    "section": "Strategy",
+    "text": "Strategy\n\n\nK23:\n\nDraft of aims\nFeedback on aims\nWhich areas require prelim data?\n\nMentorship:\n\nIdentified majority of mentorship committee = Darbar, Shah, Alonso, McCauley, Boyd, Lampert\nMeeting with McCauley (3/3)\nMeeting with Boyd (3/16)\nGenetics mentor, local or at another institution?\n\n\nTraining:\n\nComputational training in signal processing\nComputational training in genetics\n\nCareer:\n\nDelineate timeline and strategy for EP fellowship"
+  },
+  {
+    "objectID": "t32/mentors.html#march-31-2023-dd",
+    "href": "t32/mentors.html#march-31-2023-dd",
+    "title": "Mentorship Meetings",
+    "section": "March 31, 2023 | DD",
+    "text": "March 31, 2023 | DD\n\n\nHRV/CVD: Finalizing paper draft, to submit EHJ\nCAR: Adjudicated ECGs, designed data collection, pending analyses\nAFL/FH:\n\nPaper draft, second round\nIdentify all authors\nFinalize JAMA cardiology submission\n\n\nPhenotyping AF:\n\neMERGE PRS and PhenotypeKB\nAWS HPC access\nCCTS DRA for data pull\nAblation database"
+  },
+  {
+    "objectID": "t32/mentors.html#march-3-2023-dd",
+    "href": "t32/mentors.html#march-3-2023-dd",
+    "title": "Mentorship Meetings",
+    "section": "March 3, 2023 | DD",
+    "text": "March 3, 2023 | DD\n\n\nHRV/CVD:\n\nNon-linearity evaluated, analyses being repeated\nIdentify appropriate level journal (EHJ)\nPresenting to Amit MS-EP group\n\nAFL/FH:\n\nPaper draft has been drafted\nGenetic analyses\nIdentify all authors\nSend in JAMA Cardiology format\n\n\nCAR:\n\nAdjudicated ECG and designed data collection pattern\nRole and next steps\nREDCap inconsistencies noted → responsibility?"
+=======
     "objectID": "k23/planning.html#references",
     "href": "k23/planning.html#references",
     "title": "Research Aims",
@@ -656,5 +873,6 @@
     "title": "Research-In-Progress",
     "section": "Goals",
     "text": "Goals\n\n\n\nPhenotyping of AF, as current grouping is inadequate. Focus on risk category changing from paroxysmal to persistent\nECG- and EGM-based analysis of AF as additive components\nCARTO/Rhythmia/EnSite cardiac mapping software to determine LA scar burden\n\n\n\nAFL/FH manuscript submission\nHRV/CVD manuscript revisions\nIdentify next paper to start preparing\neMERGE/AF IRB\nEPS study IRB\nNLP coursework, cluster set-up preparation\nHRX abstract preparation on EGM and Physionet/WFDB"
+>>>>>>> 4d7889a200edb1c526375dad92f463ef90354efe
   }
 ]

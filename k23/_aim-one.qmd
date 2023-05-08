@@ -1,4 +1,4 @@
 __Aim 1: Identify triggered subphenotypes of pAF.__ 
-*Intracardiac and extracardiac electrical features will [classify pAF into triggered versus re-entrant subphenotypes]{.underline}.* 
+*Intracardiac and extracardiac features will [classify pAF into triggered versus re-entrant subphenotypes]{.underline}.* 
 Population level data will be leveraged to identify clinical subphenotypes of pAF, incorporating ECG and echocardiography markers, arrhythmia burden, recurrence, and time-varying components of potential risk-factors.
 These subphenotypes will be compared against intracardiac findings to validate triggered arrhythmia phenotypes.

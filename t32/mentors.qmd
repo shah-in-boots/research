@@ -1,6 +1,5 @@
 ---
-title: Projects & Strategy
-subtitle: Mentorship meetings
+title: Mentorship Meetings
 author: Anish S. Shah, MD, MS
 institute:
 - University of Illinois at Chicago
@@ -13,6 +12,28 @@ execute:
 tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
+
+## April 28 | DD {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+- Preliminary data for AIMS
+	- NLP/phenotyping needs coursework and mentorship with Boyd
+	- ML/DSP needs significant engineering/programming time
+- AF phenotyping to identify those with heavier percentage of "triggers" versus those with higher burden of "substrate"
+- EGM assessment of AF, evaluating scar-burden, conduction velocity, with underlying theory of "wavelet re-entry" as a boundary problem
+
+:::
+::: {.column width="50%"}
+- [x] AFL/FH manuscript to JAMA Cardiology
+- [x] HRV/CVD manuscript to co-authors
+- [ ] HRV/CVD manuscript to European Heart Journal
+- [ ] AF/CA outcomes statistical review
+- [ ] Analysis of CCTS data pull
+- [ ] [MUSE ECG data in XML format]{.orange}
+- [ ] IRB for EP lab research
+:::
+::::
 
 ## April 11 | AJS {.smaller}
 
@@ -32,9 +53,7 @@ fig-cap-location: bottom
 :::
 ::::
 
-# March 31, 2023 | DD
-
-## Projects {.smaller}
+## March 31, 2023 | DD {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -59,7 +78,7 @@ Phenotyping AF:
 :::
 ::::
 
-## Strategy {.smaller}
+---
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -91,9 +110,7 @@ Career:
 :::
 ::::
 
-# March 3, 2023 | Darbar
-
-## Projects {.smaller}
+## March 3, 2023 | DD {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -119,7 +136,7 @@ CAR:
 :::
 ::::
 
-## Strategy {.smaller}
+---
 
 :::: {.columns}
 ::: {.column width="50%"}
