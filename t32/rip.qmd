@@ -176,9 +176,8 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 4, day = 16) |>
+	date_build(year = 2023, month = 5, day = 8) |>
 	add_days(-30)
-
 
 progress <-
 	drive_get("research_log") |>
@@ -207,6 +206,29 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# May 8, 2023
+
+## Goals
+
+:::: {.columns} 
+::: {.column width="50%"}
+1. Phenotyping of AF, as current grouping is inadequate. Focus on risk category changing from paroxysmal to persistent (baseline concept of multi-wavelet reentry)
+1. ECG- and EGM-based analysis of AF as additive components
+1. CARTO/Rhythmia/EnSite cardiac mapping software to determine LA scar burden 
+:::
+::: {.column width="50%"}
+- [x] NLP coursework, cluster set-up preparation
+- [x] HRX abstract preparation on EGM and [Physionet/WFDB](https://physionet.org/content/wfdb/10.7.0/)
+- [ ] Identify next paper to start preparing
+- [ ] eMERGE/AF IRB _waiting on approval from eMERGE_
+- [ ] EPS study IRB _in progress_
+:::
+::::
+
+## HRx abstract
+
+![Automated EGM annotation of single lead, with high-fidelity signal resolution. 75% file size reduction and 500% read/write speed-up.](../figures/shiva-avnrt-egm.png){#fig-his-bundle-potentials}
 
 # April 17, 2023 
 

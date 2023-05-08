@@ -88,7 +88,7 @@
     "href": "t32/rip.html#updates",
     "title": "Research-In-Progress",
     "section": "Updates",
-    "text": "Updates\n\nAFL/FH:\n\nmanuscript was sent for initial revisions (03/03/23)\nfeedback received on 03/17/23 from Jordan\nsecond draft to be returned on 3/20/23\n\nAim 1: “Big data” approach using claims-based data, IRB/CCTS approval obtained\n\nNLP/ML area of focus will be initially on AF (only performed x 1)\nApproach for recurrent events, Weibull distribution expected\n\nHRV/CVD :\n\npriority for this week\nHF/LF HRV values showing >10 fold HR for bottom versus top quartile (with almost >95% sensitivity)\n\nGenetic analysis:\n\nACER will start AWS workspace this week"
+    "text": "Updates\n\nAFL/FH:\n\nmanuscript was sent for initial revisions (03/03/23)\nfeedback received on 03/17/23 from Jordan\nsecond draft to be returned on 3/20/23\n\nAim 1: “Big data” approach using claims-based data, IRB/CCTS approval obtained\n\nNLP/ML area of focus will be initially on AF (only performed x 1)\nApproach for recurrent events, Weibull distribution expected\n\nHRV/CVD :\n\npriority for this week\nHF/LF HRV values showing &gt;10 fold HR for bottom versus top quartile (with almost &gt;95% sensitivity)\n\nGenetic analysis:\n\nACER will start AWS workspace this week"
   },
   {
     "objectID": "t32/rip.html#help-wanted",
@@ -109,14 +109,14 @@
     "href": "t32/rip.html#non-linearity-in-ans-dysfunction",
     "title": "Research-In-Progress",
     "section": "Non-linearity in ANS dysfunction",
-    "text": "Non-linearity in ANS dysfunction\n\nProportional hazard assumptions\n\nDefined using time-variance, time-interaction, Martingale residuals\nSatisfied PH assumptions\n\nNon-linearity of HRV and CV mortality\n\nSpline analysis with up to 5 knots\nParametric threshold analysis (survival modeling)\nNon-parametric (binary outcome) threshold analysis\nIdentified non-linearity of response\n\nRe-analyzed data using cut-point (as shown in Figure 8)\n\nAlmost 100% accuracy in classifier of low-risk cohort\nAlmost 10-fold hazard in identify high-risk cohort"
+    "text": "Non-linearity in ANS dysfunction\n\nProportional hazard assumptions\n\nDefined using time-variance, time-interaction, Martingale residuals\nSatisfied PH assumptions\n\nNon-linearity of HRV and CV mortality\n\nSpline analysis with up to 5 knots\nParametric threshold analysis (survival modeling)\nNon-parametric (binary outcome) threshold analysis\nIdentified non-linearity of response\n\nRe-analyzed data using cut-point (as shown in Figure 9)\n\nAlmost 100% accuracy in classifier of low-risk cohort\nAlmost 10-fold hazard in identify high-risk cohort"
   },
   {
     "objectID": "t32/rip.html#genetic-analysis",
     "href": "t32/rip.html#genetic-analysis",
     "title": "Research-In-Progress",
     "section": "Genetic analysis",
-    "text": "Genetic analysis\n\nWES-generated VCF files on n=28 patients from EO-AFL + FH subgroup\nDue to size limitations (no access to HPC) converted VCF data …\n\nVCF to Apache Arrow\nArrow conversion to feather and to parquet for header, annotation, and columnar genotype data\nAnalyze as in-memory array\nRe-vert to ASCII-based format for GZip formated VCF\n\nFiltering of data\n\nLimited to coding regions\nFiltered for read depth > 20\nCompared to dbSNP builds using SIFT and PolyPhen\nPending further annotations based on arrhythmia-panels"
+    "text": "Genetic analysis\n\nWES-generated VCF files on n=28 patients from EO-AFL + FH subgroup\nDue to size limitations (no access to HPC) converted VCF data …\n\nVCF to Apache Arrow\nArrow conversion to feather and to parquet for header, annotation, and columnar genotype data\nAnalyze as in-memory array\nRe-vert to ASCII-based format for GZip formated VCF\n\nFiltering of data\n\nLimited to coding regions\nFiltered for read depth &gt; 20\nCompared to dbSNP builds using SIFT and PolyPhen\nPending further annotations based on arrhythmia-panels"
   },
   {
     "objectID": "t32/rip.html#specific-aims",
@@ -284,7 +284,7 @@
     "href": "t32/rip.html#forest-plots",
     "title": "Research-In-Progress",
     "section": "Forest Plots",
-    "text": "Forest Plots\n\n\n\n# Forest Plots\nlibrary(volundr)\nm <- rx(\n    Petal.Length ~ X(Sepal.Length) + Petal.Width + S(Species),\n    label = list(\n        Petal.Length ~ \"Length of Petals\", \n        Species ~ \"Genus of the Flower\"\n    ),\n    pattern = \"direct\"\n    ) |>\n    fmls(order = 2) |>\n    fit(.fit = lm,\n            data = iris,\n            archetype = TRUE) |>\n    mdls()\n\n\n\ntbl <- tbl_forest( #<<\n    object = m,\n    formula = Petal.Length ~ Sepal.Length,\n    vars = \"Species\",\n    columns = list(\n        beta ~ \"Estimate\",\n        conf ~ \"95% Confidence Interval\",\n        n ~ \"Number of Samples\"\n    ),\n    axis = list(\n        lim ~ c(0, 3),\n        breaks ~ c(0, 1, 2),\n        lab ~ \"ß (95% CI)\",\n        title ~ \"Petal Length by Sepal Length\"\n    )\n)\n\n\n\nA simple way to make sub-group analysis Forest plots, working on improving customization."
+    "text": "Forest Plots\n\n\n\n# Forest Plots\nlibrary(volundr)\nm &lt;- rx(\n    Petal.Length ~ X(Sepal.Length) + Petal.Width + S(Species),\n    label = list(\n        Petal.Length ~ \"Length of Petals\", \n        Species ~ \"Genus of the Flower\"\n    ),\n    pattern = \"direct\"\n    ) |&gt;\n    fmls(order = 2) |&gt;\n    fit(.fit = lm,\n            data = iris,\n            archetype = TRUE) |&gt;\n    mdls()\n\n\n\ntbl &lt;- tbl_forest( #&lt;&lt;\n    object = m,\n    formula = Petal.Length ~ Sepal.Length,\n    vars = \"Species\",\n    columns = list(\n        beta ~ \"Estimate\",\n        conf ~ \"95% Confidence Interval\",\n        n ~ \"Number of Samples\"\n    ),\n    axis = list(\n        lim ~ c(0, 3),\n        breaks ~ c(0, 1, 2),\n        lab ~ \"ß (95% CI)\",\n        title ~ \"Petal Length by Sepal Length\"\n    )\n)\n\n\n\nA simple way to make sub-group analysis Forest plots, working on improving customization."
   },
   {
     "objectID": "t32/rip.html#af-registry-4",
@@ -639,6 +639,20 @@
   {
     "objectID": "t32/rip.html#goals",
     "href": "t32/rip.html#goals",
+    "title": "Research-In-Progress",
+    "section": "Goals",
+    "text": "Goals\n\n\n\nPhenotyping of AF, as current grouping is inadequate. Focus on risk category changing from paroxysmal to persistent (baseline concept of multi-wavelet reentry)\nECG- and EGM-based analysis of AF as additive components\nCARTO/Rhythmia/EnSite cardiac mapping software to determine LA scar burden\n\n\n\nNLP coursework, cluster set-up preparation\nHRX abstract preparation on EGM and Physionet/WFDB\nIdentify next paper to start preparing\neMERGE/AF IRB waiting on approval from eMERGE\nEPS study IRB in progress"
+  },
+  {
+    "objectID": "t32/rip.html#hrx-abstract",
+    "href": "t32/rip.html#hrx-abstract",
+    "title": "Research-In-Progress",
+    "section": "HRx abstract",
+    "text": "HRx abstract\n\nFigure 1: Automated EGM annotation of single lead, with high-fidelity signal resolution. 75% file size reduction and 500% read/write speed-up."
+  },
+  {
+    "objectID": "t32/rip.html#goals-1",
+    "href": "t32/rip.html#goals-1",
     "title": "Research-In-Progress",
     "section": "Goals",
     "text": "Goals\n\n\n\nPhenotyping of AF, as current grouping is inadequate. Focus on risk category changing from paroxysmal to persistent\nECG- and EGM-based analysis of AF as additive components\nCARTO/Rhythmia/EnSite cardiac mapping software to determine LA scar burden\n\n\n\nAFL/FH manuscript submission\nHRV/CVD manuscript revisions\nIdentify next paper to start preparing\neMERGE/AF IRB\nEPS study IRB\nNLP coursework, cluster set-up preparation\nHRX abstract preparation on EGM and Physionet/WFDB"
