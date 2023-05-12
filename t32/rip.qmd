@@ -207,6 +207,23 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
+
+# May 12, 2023
+
+## Updates {.smaller}
+
+:::: {.columns} 
+::: {.column width="50%"}
+1. ECG data is being pulled from MUSE in XML format
+2. CCTS data pull to be completed today
+3. EGM signal processing - work in progress with goal of automated beat generation of multi-channel leads (R/C++ package)
+:::
+::: {.column width="50%"}
+- [ ] Need storage space for ECG data (raw and processed), cluster allows only 50Gb for read/write storage (batch processing): >100k ECG
+- [ ] CCTS data will need raw storage space: 10 years of patient charts + notes
+:::
+::::
+
 # May 8, 2023
 
 ## Goals
