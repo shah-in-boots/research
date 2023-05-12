@@ -1,4 +1,4 @@
-__Aim 1: Identify triggered subphenotypes of pAF.__ 
-*Intracardiac and extracardiac features will [classify pAF into triggered versus re-entrant subphenotypes]{.underline}.* 
-Population level data will be leveraged to identify clinical subphenotypes of pAF, incorporating ECG and echocardiography markers, arrhythmia burden, recurrence, and time-varying components of potential risk-factors.
-These subphenotypes will be compared against intracardiac findings to validate triggered arrhythmia phenotypes.
+__Aim 1: Investigate the clinical and electrophysiological determinants that identify trigger-predominant subphenotypes of pAF.__ 
+*Trigger-predominant pAF [will have shorter, symptomatic episodes of AF with decreased atrial scar burden]{.underline}.*
+Population level data will be leveraged to identify critical features of arrhythmia burden and recurrence, atrial pathology, and time-varying components of potential risk-factors obtained through clinical, ECG, and echocardiography markers.
+These features will be validated against findings during EPS of conduction disease and atrial scarring.

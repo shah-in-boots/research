@@ -2,19 +2,29 @@
 format: docx
 ---
 
-Atrial fibrillation (AF) is the most common arrhythmia worldwide, with a prevalence of over 50 million cases currently and &ge; 25% lifetime risk across races.[@Kornej2020]
-Surprisingly, the disease is only classified by its time course -- divided by broad strokes into paroxysmal, persistent, and permanent. 
-The management parallels this lack of granularity with homogenous rate and rhythm strategies that have not noticeably changed over the past 20 years.[@England2002; @Kirchhof2020]
-A paradigm shift is needed.
-Clinical phenotypes of AF would allow for individualized management and targeted therapy strategies that expand past antiarrhythmi drugs and catheter ablation.
+Atrial fibrillation (AF) is the most common sustained cardiac arrhythmia, with a prevalence of over 50 million cases currently and &ge; 25% lifetime risk across races.[@Kornej2020]
+Surprisingly, the disease is only classified by broad strokes into paroxysmal, persistent, and permanent, which parallels the lack of granularity in antiarrhythmic drugs and catheter ablation strategies, which have not noticeably changed over the past 20 years [@England2002; @Kirchhof2020].
+Our overly simplistic model disallows us to understand the disease or match interventions to the specific stage of progression.
+Current attempts at reclassifying AF have been limited to cross-sectional, comorbidities-based heuristics, which consider AF to be a consequence instead of a precursor of other conditions [@Andrade2014; @Pastori2020].
+A paradigm shift is needed -- differentiation of the underlying spectrum of paroxysmal AF would allow us to identify those at risk for progression, and tailor therapies that target the underlying pathophysiology.
 
-The long-term goal as an electrophysiologist, clinician, and scientist is to personalize the management of paroxysmal AF using earlyy identification and pathophysiologyy driven strategies.
-AF is often considered to be a consequence instead of precursor of other cardiovascular conditions,[@Andrade2014] however the plurality of paroxysmal AF in the other, rare, classification studies are younger individuals with a low burden of other comorbidities.[@Pastori2020]
-This large subgroup have AF that is brought on by triggered activity, which is ultimately driven by autonomic activity.[@Zipes2006; @Taggart2011]
-
-We propose that the acute, inappropriate vagolysis at times of increased adrenergic tone drives these triggered events in individuals with a susceptible cardiac substrate.[@Mehra2022]
-To test this, we would leverage two pre-existing, well-established cohorts and develop a third smaller and deeply phenotyped cohort with physiological testing: (A) an atrial arrhythmia registry enriched for paroxysaml AF with genetic sequencing,[@Chalazan2021] (B) a mental stress cohort with a significant burden of inappropriate vagolysis and genetic sequencing,[@Vaccarino2021a] and (C) a cohort of paroxysmal AF who will undergo intracardiac electrophysiology studies with neurocardiac biomarker samples and electroanatomical mapping data.
+To overcome the lack of specificity in the diagnosis of paroxysmal AF, we intend to focus on the [earlier, trigger-predominant stages of AF]{.underline} using both population-level and individual-level methods. 
+Triggered electrical activity, such as ectopic beats, are the underlying *first-mover* in the onset of AF, and ultimately are driven by maladaptive activity of the autonomic nervous system (ANS) [@Zipes2006; @Taggart2011].
+We propose that the [acute, inappropriate vagolysis at times of increased adrenergic tone drives triggered events]{.underline} that lead to episodes of AF [@Mehra2022].
+To test this, we will leverage two pre-existing, well-established cohorts: (A) an atrial arrhythmia registry enriched for paroxysmal AF [@Chalazan2021], and (B) a mental stress cohort with a significant burden of inappropriate vagolysis [@Vaccarino2021a].
+Both cohorts have extensive follow-up data, genetic sequencing, and are led by members of the mentorship committee.
 [Our overarching hypothesis]{.underline} is that there exists a common, vagally-triggered endophenotype of paroxysmal AF that can be defined by its triggered activity and abnormalities in neurocardiac signal and neurohormone receptors.
+
+During his TL1, T32, and F32 scholarship, the applicant has worked extensively to collect clinical data in both ongoing NIH-sponsored investigations involving his mentorship and advisory team [@Chalazan2021; @Vaccarino2021a].
+The applicant has extracted meaningful electrocardiographic-based (ECG) features, which will allow for further analysis of atrial abnormalities using signal-averaged P wave morphology and ANS dysfunction using heart rate variability (HRV). 
+Using these features, along with analysis of large-scale, longitudinal electronic medical record data, the applicant can identify the multitude of trajectories of AF progression.
+He will integrate existing data from the parent atrial arrhythmia registry (A) to validate these subphenotypes.
+As a fellow in clinical cardiac electrophysiology, the applicant is positioned to also obtain highly-granular data from electrophysiology studies (EPS) performed during AF, including cardiac blood sampling, intracardiac electrograms, and electroanatomical mapping, allowing him to identify physiological patterns within these subphenotypes.
+As a secondary component to the this investigation, the applicant has identified subsets of individuals with inappropriate vagolysis and increased rates of CV mortality (B).
+The applicant will assess for genetic variants on the neurocardiac axis that are associated with this vagolysis 
+Using a two-sample Mendelian randomization approach, the applicant will identify genetic variants in (B) associated with inappropriate vagolysis, and compare these instruments with the trigger-predominant subphenotype of AF in (A).
+The applicant will extend his previous experience in signal processing to other computational approaches through additional rigorous training in natural language processing and genetic analyses.
+To this end, the applicant has the following aims:
 
 {{< include _aim-one.qmd >}}
 

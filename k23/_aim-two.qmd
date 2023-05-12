@@ -1,4 +1,3 @@
-__Aim 2: Determine the role of autonomic mechanisms in triggered pAF.__ 
-*Triggered pAF will be associated with [increased electrical and neurohormonal biomarkers of vagolysis]{.underline}.*
-Neuropsychological markers of stress will be obtained through clinical interview prior to PVI, and will be clinically phenotyped (__Aim 1__).
-Coronary sinus levels of NPY, Gal, S100B and arrhythmia thresholds will be obtained before and after PVI, and at the time of any additional physiological testing (catecholamine infusion, vagal nerve stimulation).
+__Aim 2: Determine the role of autonomic mechanisms in subphenotypes of pAF.__ 
+*Trigger-predominant pAF will be associated with [increased electrical and neurohormonal biomarkers of vagolysis]{.underline}* 
+The subphenotype of pAF will be supported by findings from __Aim 1__. Our measure of vagolysis will include increased levels of NPY and Gal (coronary sinus blood), decreased arrhythmia thresholds (intracardiac electrograms), and decreased high frequency HRV (ECG), measured during EPS. 

@@ -1,5 +1,2 @@
-__Aim 3: Evaluate the role of cardiovagal receptor genotypes in the risk of vagally-triggered arrhythmias.__
-*We hypothesize that [novel variants exist]{.underline} that may explain the risk of vagally-triggered arrhythmias.*
-A subset of patients identified with both decreased rest and reactivity cardiovagal outflow and increased CV mortality have been identified. 
-Genetic analysis will be performed to discover novel mechanisms and biomarkers of arrhythmia risk.
-Identified variants will be validated in a separate cohort to evaluate the arrhythmia risk and electrical phenotypes identified in __Aim 1__ and __2__.
+__Aim 3: Evaluate the role of genetic variants in cardiovagal receptors for the risk of trigger-predominant pAF through Mendelian randomization.__
+Using a two-sample Mendelian randomization study, we will identify patients with genetic variants in a phenotyped cohort with maladaptive autonomic responses. *The identified variants [will associate with increased arrhythmia burden]{.underline} of pAF,* as assessed in __Aim 1__ and __2__.
