@@ -1,4 +1,5 @@
-__Aim 1: Investigate the clinical and electrophysiological determinants that identify trigger-predominant subphenotypes of pAF.__ 
-*Trigger-predominant pAF [will have shorter, symptomatic episodes of AF with decreased atrial scar burden]{.underline}.*
-Population level data will be leveraged to identify critical features of arrhythmia burden and recurrence, atrial pathology, and time-varying components of potential risk-factors obtained through clinical, ECG, and echocardiography markers.
-These features will be validated against findings during EPS of conduction disease and atrial scarring.
+__Aim 1: Identify triggered phenotypes of paroxysmal AF.__ 
+
+a. Using clinical records and ECG parameters in the UIC Atrial Arrhythmia Registry, *we will identify features associated with triggered AF*. Triggered AF will have [shorter, symptomatic episodes of AF without structural changes to the atria]{.underline}.
+a. Using intracardiac signals from electrophysiological studies in a subgroup undergoing ablation in the UIC Atrial Arrhythmia Registry, *we will validate cases of triggered AF*. Triggered AF will have [minimal conduction disease and atrial scarring]{.underline}.
+

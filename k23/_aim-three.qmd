@@ -1,2 +1,6 @@
-__Aim 3: Evaluate the role of genetic variants in cardiovagal receptors for the risk of trigger-predominant pAF through Mendelian randomization.__
-Using a two-sample Mendelian randomization study, we will identify patients with genetic variants in a phenotyped cohort with maladaptive autonomic responses. *The identified variants [will associate with increased arrhythmia burden]{.underline} of pAF,* as assessed in __Aim 1__ and __2__.
+__Aim 3: Explore the role of vagolysis in triggered AF.__
+In a prospective subgroup in the UIC Atrial Arrhythmia Registry with triggered AF, we will measure biomarkers of vagolysis during electrophysiology studies (ablation).
+We will collect *cardiac-specific (coronary sinus) blood samples*. 
+In triggered AF, there will be [increased levels of NPY and Gal]{.underline}.
+After ablation, there will be [blunted heart rate variability]{.underline}.
+
