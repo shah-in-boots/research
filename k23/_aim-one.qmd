@@ -1,5 +1,6 @@
 __Aim 1: Identify triggered phenotypes of paroxysmal AF.__ 
 
-a. Using clinical records and ECG parameters in the UIC Atrial Arrhythmia Registry, *we will identify features associated with triggered AF*. Triggered AF will have [shorter, symptomatic episodes of AF without structural changes to the atria]{.underline}.
-a. Using intracardiac signals from electrophysiological studies in a subgroup undergoing ablation in the UIC Atrial Arrhythmia Registry, *we will validate cases of triggered AF*. Triggered AF will have [minimal conduction disease and atrial scarring]{.underline}.
+a. Using clinical records and ECG parameters in the AF Registry, *we will identify features associated with triggered AF*. Triggered AF will have [shorter, symptomatic episodes of AF without structural changes to the atria]{.underline}.
+a. Using intracardiac signals from EP studies in a subgroup of the AF Registry undergoing ablation, *we will validate cases of triggered AF and assess ANS function using ECG and EP study parameters*. Triggered AF will have [minimal conduction disease and atrial scarring]{.underline} and [maladaptive ANS responses]{.underline}.
+
 

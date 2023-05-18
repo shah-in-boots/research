@@ -1,4 +1,4 @@
 __Aim 2: Determine the role of genetic variants of cardiovagal receptors in triggered arrhythmias.__
 
-a. In the Emory Mental Stress Cohort, a subgroup of participants had a robust association between vagolysis and cardiovascular mortality.  In those with *inappropriate vagolysis*, we will [identify genetic variants in cardiovagal receptors]{.underline}.
+a. In the MIMS cohort, a subgroup of participants had a robust association between vagolysis and cardiovascular mortality.  In those with *inappropriate vagolysis*, we will [identify genetic variants in cardiovagal receptors]{.underline}.
 a. The *genetic variants* identified in **2a** will be evaluated in the UIC Atrial Arrhythmia Registry. The identified variants will [associate most strongly with triggered AF]{.underline}.
