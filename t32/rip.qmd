@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 5, day = 8) |>
+	date_build(year = 2023, month = 5, day = 22) |>
 	add_days(-30)
 
 progress <-
@@ -207,6 +207,20 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
+# May 22, 2023
+
+## ECG analysis {.smaller}
+
+__K23 AIM #1__ is to identify paroxysmal AF into low-scar burden (and high vagolytic triggers) in AF registry.
+
+- [x] Have imported _superset_ of ECGs from MUSE (~500k ECGs) in XML/binary format (including raw signal, diagnoses, timing, etc), approximately ~1 TB
+- [x] Convert XML format into digital signal... software developed (same as for _HRX_ abstract), approximately ~250 GB
+- [ ] Analysis of ECG markers: high frequency HRV, P wave dispersion, P wave terminal forces, and GEH (Wilson's vector gradient), and if possible to identify "coarseness" of AF
+- [ ] Split data into PRE/POST AF diagnosis, and identify control group from other ECGs in superset
+
+::: aside
+For EGM and ECG, working with Bhaumik to identify morphology of signals in machine learning project
+:::
 
 # May 12, 2023
 
