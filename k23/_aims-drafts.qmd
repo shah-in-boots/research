@@ -1,0 +1,18 @@
+
+# May 11, 2023
+
+__Aim 1: Identify vagolytic-triggered phenotypes of paroxysmal AF.__ 
+
+a. Using clinical records and ECG parameters in the AF Registry, *we will identify features associated with triggered AF*. Triggered AF will have [shorter, symptomatic episodes of AF without structural changes to the atria]{.underline}.
+a. Using intracardiac signals from EP studies in a subgroup of the AF Registry undergoing ablation, *we will validate cases of triggered AF and assess ANS function using ECG and EP study parameters*. Triggered AF will have [minimal conduction disease and atrial scarring]{.underline} and [maladaptive ANS responses]{.underline}.
+
+__Aim 2: Determine the role of genetic variants of cardiovagal receptors in triggered arrhythmias.__
+
+a. In the MIMS cohort, a subgroup of participants had a robust association between vagolysis and cardiovascular mortality.  In those with *inappropriate vagolysis*, we will [identify genetic variants in cardiovagal receptors]{.underline}.
+a. The *genetic variants* identified in **2a** will be evaluated in the UIC Atrial Arrhythmia Registry. The identified variants will [associate most strongly with triggered AF]{.underline}.
+
+__Aim 3: Explore the role of vagolysis in triggered AF.__
+In a prospective subgroup in the UIC Atrial Arrhythmia Registry with triggered AF, we will measure biomarkers of vagolysis during electrophysiology studies (ablation).
+We will collect *cardiac-specific (coronary sinus) blood samples*. 
+In triggered AF, there will be [increased levels of NPY and Gal]{.underline}.
+After ablation, there will be [blunted heart rate variability]{.underline}.

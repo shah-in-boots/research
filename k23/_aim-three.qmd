@@ -1,6 +1,4 @@
-__Aim 3: Explore the role of vagolysis in triggered AF.__
-In a prospective subgroup in the UIC Atrial Arrhythmia Registry with triggered AF, we will measure biomarkers of vagolysis during electrophysiology studies (ablation).
-We will collect *cardiac-specific (coronary sinus) blood samples*. 
-In triggered AF, there will be [increased levels of NPY and Gal]{.underline}.
-After ablation, there will be [blunted heart rate variability]{.underline}.
-
+__Aim 3: Determine the role of genetic variants in cardiovagal receptors in vagolysis.__
+In the MIMS cohort, stress-induced vagolysis was measured through ECG parameters,
+We will identify if *common genetic variants in the cardiovagal receptors, including GAL1R and NPY2R*, are associated with vagolysis in the MIMS cohort.
+We hypothesize that [variants associated with vagolysis will be associated with increased risk of paroxysmal AF in structurally normal atria]{.underline} in the AF Registry.

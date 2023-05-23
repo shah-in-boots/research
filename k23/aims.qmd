@@ -1,40 +1,41 @@
 ---
 format: 
   docx:
-    reference-doc: template.docx
+    reference-doc: ../template.docx
 ---
 
 Atrial fibrillation (AF) is the most common sustained cardiac arrhythmia, with a prevalence of over 50 million cases currently and &ge; 25% lifetime risk across races.[@Kornej2020]
 Surprisingly, the disease is only classified by broad strokes into paroxysmal, persistent, or permanent. 
-Treatment strategies, which are limited to antiarrhythmic drugs or catheter ablation, are applied with a similar lack of granularity to the stage of the disease [@England2002; @Kirchhof2020].
+Treatment strategies, which are limited to antiarrhythmic drugs or catheter ablation, are applied with a similar lack of granularity to the stage of the disease [@England2002; @Kirchhof2020], regardless of mechanism [@Mehra2022].
 Our overly simplistic clinical approach to AF disallows us from understanding the disease and matching interventions with the specific stage of progression, even though there is growing evidence that early intervention is critical [@Kirchhof2020].
 Moreover, current attempts at reclassifying AF have been limited to cross-sectional, comorbidity-based heuristics, which considered AF to be a consequence instead of a precursor of other conditions [@Andrade2014; @Pastori2020].
-A paradigm shift is needed -- differentiation of the underlying spectrum of paroxysmal AF would allow us to identify those at risk for progression, and tailor therapies that target the underlying pathophysiology.
+A paradigm shift is needed -- differentiation of the underlying spectrum of paroxysmal AF will allow us to tailor therapies that target the underlying pathophysiology and identify those at risk for progression.
 
 To overcome this lack of specificity in the diagnosis of paroxysmal AF, we need to [identify specific mechanisms in AF pathognesis]{.underline}, before prescribing therapies.
 For example, vagal nerve stimulation and cardioneural ablations have shown promise in AF, but are underutilized and not individually tailored [@Shivkumar2017; @Mehra2022].
 In the earlier stages of AF, triggered activity from atrial tissue, such as ectopic beats, are the underlying *first-mover* in the onset of an episode of AF.
-Longer sustained episodes of AF are accompanied by increased atrial scarring and fibrosis, as part of the disease progression.
-This suggests that the earlier phases of paroxysmal AF are driven by triggers, which is ultimately mediated by maladaptive activity of the autonomic nervous system (ANS) [@Zipes2006; @Taggart2011].
-Our overarching hypothesis is that [maladaptive autonomic responses drive triggered activity and lead to episodes of AF]{.underline} 
-To test this, we will leverage two pre-existing, well-established cohorts: (A) the UIC Multi-Ethnic Atrial Fibrillation Registry (AF Registry) [@Chalazan2021], which is enriched for paroxysmal AF, and (B) the Myocardial Infarction and Mental Stress Study (MIMS), which has a significant burden of maladaptive autonomic responses to stress [@Vaccarino2021a].
+Longer, sustained episodes of AF are accompanied by increased atrial scarring and fibrosis, as part of the disease progression.
+This supports the understanding that earlier phases of paroxysmal AF are driven by electrical triggers, which is ultimately mediated by a maladaptive response of the autonomic nervous system (ANS), such as the parasympathetic withdrawal during inappropriate vagolysis [@Zipes2006; @Taggart2011].
+[Our overarching hypothesis is that vagolysis drives triggered atrial activity that leads to and sustains episodes of AF]{.underline} 
 
+To test this, we will leverage two pre-existing, well-established cohorts: (A) the UIC Multi-Ethnic Atrial Fibrillation Registry (AF Registry) [@Chalazan2021], which is enriched for paroxysmal AF, and (B) the Myocardial Infarction and Mental Stress Study (MIMS), which has a significant burden of stress-induced vagolysis [@Vaccarino2021a].
 During my TL1, T32, and F32 scholarship, I have worked extensively to collect clinical data in both ongoing NIH-sponsored investigations involving my mentorship and advisory team [@Chalazan2021; @Vaccarino2021a], developing critical skills in signal processing and biostatistics.
 Both cohorts have extensive follow-up data, genetic sequencing, and are led by members of the mentorship committee.
-I found that maladaptive autonomic responses can lead to abnormal cardiac perfusion and increased cardiovascular mortality.[@Shah2020; @Shah2021; @Shah2023!]
-These abnormalities are identified through electrocardiography-based (ECG) markers, such as heart rate variability (HRV), and are associated with ANS activity and cardiac physiology [@Shah2021b].
-As a fellow in clinical cardiac electrophysiology (EP), I am positioned to also obtain highly-granular data from EP studies performed during AF ablation, including cardiac blood sampling, intracardiac electrograms, and electroanatomical mapping, allowing assessment of ANS activity, triggers of AF, and atrial anatomy and morphology. 
-I will integrate these features into existing data from the AF Registry 
-to identify characteristics that determine the trajectory of AF progression and potential underlying mechanisms.
-I will explore potential genetics variants in specific cardiovagal receptors (*NPY2R* and *Gal1a*) that may lead to a maladaptive autonomic responses, utilizing the AF Registry to identify variants and MIMS for validation.
-I will extend my previous experience in signal processing to other computational approaches through additional rigorous training in machine learning and computational genomics.
-To this end, we have the following aims:
+I found that vagolysis lead to abnormal cardiac perfusion and increased cardiovascular mortality.[@Shah2020; @Shah2021a; @Shah2021c; @Shah2023_conf]
+These abnormalities were identified through electrocardiography-based (ECG) markers, including heart rate variability (HRV), and associated with ANS function and cardiac physiology [@Shah2021b]. 
+As a fellow in clinical cardiac electrophysiology (EP), I am positioned to also obtain highly-granular data from EP studies performed during AF ablation, including cardiac-specific blood samples, intracardiac electrograms, and electroanatomical mapping.
+I will integrate these features into clinical data from the AF Registry to identify phenotypes of paroxysmal AF with structurally normal hearts, which are likely driven by atrial triggered activity.
+I will evaluate the molecular mechanisms underlying vagolysis by direct measurement of cardiovagal neurohormones, such as neuropeptide Y (NPY) and galanin (GAL), and indirect measurement of receptor function through assessment of common genetic variants in NPY2R and GALR1 [@Nolte2017a; @Treutlein2017; @Juhasz2014].
+This mentored research with the appropriate, rigorous training will extend my background in signal processing and biostatistics to computational approaches in epidemiology and genmoics.
+To this end, I have the following aims:
 
 {{< include _aim-one.qmd >}}
 
 {{< include _aim-two.qmd >}}
 
-The current paradigm in the management of AF focuses on antiarrhythmic modulation of cardiac ion channels and ablative strategies targeting atrial endocardium, which however is only directed at the literal surface of the problem.
+{{< include _aim-three.qmd >}}
+
+The current paradigm in the management of AF is superficial, focusing on therapies that are aimed at pharmacological and ablative modification of cardiac ion channels, instead of specific mechanisms, such as the underlying maladaptive autonomic response. 
 Identifying upstream mechanistic, autonomic pathways could lead to targeted therapies that not only decrease the risk of AF, but may also provide benefit in a number of other triggered atrial arrhythmias.[@Shivkumar2017]
 
 {{< pagebreak >}}

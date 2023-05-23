@@ -1,6 +1,4 @@
-__Aim 1: Identify triggered phenotypes of paroxysmal AF.__ 
-
-a. Using clinical records and ECG parameters in the AF Registry, *we will identify features associated with triggered AF*. Triggered AF will have [shorter, symptomatic episodes of AF without structural changes to the atria]{.underline}.
-a. Using intracardiac signals from EP studies in a subgroup of the AF Registry undergoing ablation, *we will validate cases of triggered AF and assess ANS function using ECG and EP study parameters*. Triggered AF will have [minimal conduction disease and atrial scarring]{.underline} and [maladaptive ANS responses]{.underline}.
-
-
+__Aim 1: Identify phenotypes of paroxysmal AF with structurally normal hearts.__
+Clinical records, ECG parameters, and cardiac imaging will be leveraged within the AF Registry to *identify features associated with paroxysmal AF in structurally normal hearts*. 
+We will evaluate the *difference in progression of AF from paroxysmal to persistent* using these features. 
+We hypothesize that during EP studies, [features associated with structurally normal hearts will be associated with lower burden of scar.]{.underline}
