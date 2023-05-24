@@ -1,4 +1,5 @@
-__Aim 1: Identify phenotypes of paroxysmal AF with structurally normal hearts.__
-Clinical records, ECG parameters, and cardiac imaging will be leveraged within the AF Registry to *identify features associated with paroxysmal AF in structurally normal hearts*. 
-We will evaluate the *difference in progression of AF from paroxysmal to persistent* using these features. 
-We hypothesize that during EP studies, [features associated with structurally normal hearts will be associated with lower burden of scar.]{.underline}
+__Aim 1: Identify electrocardiographic phenotypes of paroxysmal AF with structurally normal atria.__
+We will generate electrocardiographic parameters in sinus rhythm (atrial and ventricular activation and repolarization indices) and in atrial fibrillation (amplitude of fibrillatory waves, atrial frequency). 
+We will assess the relationship of these parameters to groups of paroxysmal AF with normal left atrial size and structure. 
+*Hypothesis*: [Increased amplitude of fibrillatory waves during atrial fibrillation and increased variability in P wave indices will identify paroxysmal AF with structurally normal atria]{.underline}.
+

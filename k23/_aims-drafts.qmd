@@ -1,3 +1,18 @@
+# May 23, 2023
+
+__Aim 1: Identify phenotypes of paroxysmal AF with structurally normal hearts.__
+Clinical records, ECG parameters, and cardiac imaging will be leveraged within the AF Registry to *identify features associated with paroxysmal AF in structurally normal hearts*. 
+We will evaluate the *difference in progression of AF from paroxysmal to persistent* using these features. 
+We hypothesize that during EP studies, [features associated with structurally normal hearts will be associated with lower burden of scar.]{.underline}
+
+__Aim 2: Evaluate the role of vagolysis in paroxysmal AF.__
+In a prospective subgroup in the AF Registry with paroxysmal AF, we will *measure biomarkers of vagolysis during electrophysiology study including intracardiac conduction parameters and cardiac-specific levels of NPY and Gal.* 
+We hypothesize that A) [increased vagolysis will be associated with structurally normal atria]{.underline}, and B) [increased vagolysis will be associated with increased risk of AF recurrence]{.underline}.
+
+__Aim 3: Determine the role of genetic variants in cardiovagal receptors in vagolysis.__
+In the MIMS cohort, stress-induced vagolysis was measured through ECG parameters,
+We will identify if *common genetic variants in the cardiovagal receptors, including GAL1R and NPY2R*, are associated with vagolysis in the MIMS cohort.
+We hypothesize that [variants associated with vagolysis will be associated with increased risk of paroxysmal AF in structurally normal atria]{.underline} in the AF Registry.
 
 # May 11, 2023
 

@@ -1,4 +1,6 @@
-__Aim 3: Determine the role of genetic variants in cardiovagal receptors in vagolysis.__
+__Aim 3: Evaluate the role of genetic variants in cardiovagal receptors in sympathetically-driven paroxysmal AF.__
+
+
 In the MIMS cohort, stress-induced vagolysis was measured through ECG parameters,
 We will identify if *common genetic variants in the cardiovagal receptors, including GAL1R and NPY2R*, are associated with vagolysis in the MIMS cohort.
 We hypothesize that [variants associated with vagolysis will be associated with increased risk of paroxysmal AF in structurally normal atria]{.underline} in the AF Registry.
