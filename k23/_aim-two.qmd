@@ -1,6 +1,3 @@
-__Aim 2: Determine the electrophysiological characteristics of sympathetically-driven paroxysmal AF.__
-
-
-
-In a prospective subgroup in the AF Registry with paroxysmal AF, we will *measure biomarkers of vagolysis during electrophysiology study including intracardiac conduction parameters and cardiac-specific levels of NPY and Gal.* 
-We hypothesize that A) [increased vagolysis will be associated with structurally normal atria]{.underline}, and B) [increased vagolysis will be associated with increased risk of AF recurrence]{.underline}.
+__Aim 2: Determine the electrophysiological characteristics of sympathetically-mediated paroxysmal AF.__
+In a prospective subgroup in the AF Registry with paroxysmal AF, we will measure biomarkers of increased sympathetic activity during electrophysiology study including cardiac-specific levels of NPY and Gal.
+*Hypothesis*: [Elevated levels of NPY and Gal will be associated with increased risk of AF recurrence]{.underline}.
