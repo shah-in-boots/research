@@ -209,13 +209,15 @@ tbl_status_updates(progress, effort)
 
 # June 5, 2023
 
-## Aims Updates {.smaller}
+## Aims Progress {.smaller}
 
-1. Pending mentorship meeting (dates requested for Alvaro, Amit, Dawood)
-1. Met with Lampert - be much more specific in ANS factors in pAF
+Goal: **Identify characteristics that define sympathetically-mediated paroxysmal AF (as compared to scar-mediated pAF) in trajectory of paroxysmal &rarr; persistent**
+
+- Pending mentorship meeting (dates requested for Alvaro, Amit, Dawood)
+- Met with Lampert - be much more specific in ANS factors in pAF
 	a. Evaluate ECG during AF: coarse AF v. fine AF &rarr; triggering event (ADHF, surgery, etc...)
 	a. Evaluate ECG during sinus: P wave morphology/area/dispersion and AF burden
-	a. **Evaluate candidate genes (ANS neurohormonal pathways) in Emory Cohort (which has high vagolysis burden) as initial study; validate these genes in AF registry with burden/rate of AF progression**
+	a. *Evaluate candidate genes (ANS neurohormonal pathways) in Emory Cohort (which has high vagolysis burden) as initial study; validate these genes in AF registry with burden/rate of AF progression*
 
 ## AF Phenotyping
 
