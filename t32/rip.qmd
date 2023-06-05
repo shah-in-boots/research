@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 5, day = 22) |>
+	date_build(year = 2023, month = 6, day = 5) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,25 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# June 5, 2023
+
+## Aims Updates {.smaller}
+
+1. Pending mentorship meeting (dates requested for Alvaro, Amit, Dawood)
+1. Met with Lampert - be much more specific in ANS factors in pAF
+	a. Evaluate ECG during AF: coarse AF v. fine AF &rarr; triggering event (ADHF, surgery, etc...)
+	a. Evaluate ECG during sinus: P wave morphology/area/dispersion and AF burden
+	a. **Evaluate candidate genes (ANS neurohormonal pathways) in Emory Cohort (which has high vagolysis burden) as initial study; validate these genes in AF registry with burden/rate of AF progression**
+
+## AF Phenotyping
+
+- Pending CCTS to upload data (hundreds of GB in size)
+- Complete setting up cluster computational pipeline for NLP of unstructured text
+- Specific goal is to identify timepoints: onset of AF, transition to persistent AF
+- Initiate analysis of ECG data
+	1. Convert to annotation format (WFDB)
+	1. Identify median P waves per ECG
 
 # May 22, 2023
 
