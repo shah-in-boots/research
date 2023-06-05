@@ -26,7 +26,7 @@ These abnormalities were identified through electrocardiography-based (ECG) mark
 As a fellow in clinical cardiac electrophysiology (EP), I am positioned to also obtain highly-granular data from EP studies performed during AF ablation, including cardiac-specific blood samples, intracardiac electrograms, and electroanatomical mapping.
 I will integrate these features into clinical data from the AF Registry to identify phenotypes of paroxysmal AF with structurally normal hearts, which are likely driven by atrial triggered activity.
 I will evaluate the molecular mechanisms underlying sympathetically-mediated AF by direct measurement of cardiovagal neurohormones, such as neuropeptide Y (NPY) and galanin (GAL), and indirect measurement of receptor function through assessment of common genetic variants in NPY2R and GALR1 [@Nolte2017a; @Treutlein2017; @Juhasz2014].
-This mentored research with the appropriate, rigorous training will extend my background in signal processing and biostatistics to computational approaches in epidemiology and genmoics.
+This mentored research with the appropriate, rigorous training will extend my background in signal processing and biostatistics to computational approaches in epidemiology and genomics.
 To this end, I have the following aims:
 
 {{< include _aim-one.qmd >}}
