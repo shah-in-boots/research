@@ -84,9 +84,9 @@ Project to evaluate ECG-correlates of genetic variants with paroxysmal AF direct
 
 [Exposure]{.underline}: common and rare genetic variants
 
-[Outcome]{.underline}: 
+[Outcome]{.underline}:
 
-1. ECG parameters (particularly in P-wave indices) during sinus
+1. ECG parameters during sinus (300 individuals x 4-10 ECGs x avg 10 beats = 20k to 35k ECG volume)
 2. dominant frequency and coarseness of F waves during AF
 
 [Hypothesis]{.underline}: *Genetic variants in genes associated with paroxysmal AF, including novel variants, will have significant association with P wave abnormalities*
