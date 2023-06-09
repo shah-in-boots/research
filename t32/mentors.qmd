@@ -99,15 +99,27 @@ Genetic variants =
 - cardiovagal genes (NPY2R, GALR1)
 :::
 
+## Completed milestones {.smaller}
+
+- [x] Routine/weekly 1:1 mentorship meetings with Darbar/Amit
+- [x] Clinical rotation obligations (Echo, consults, etc)
+- [x] Twice weekly clinic
+- [x] Educational coursework in DSP and NLP
+- [x] K23 specific aims draft (1-2 years ahead of schedule)
+- [x] Identified core research committee (Darbar, Shah, Alvaro) and advisors (Boyd, Lampert)
+- [x] Data collection of ECG, CV-procedures, EP study data for patients in AF registry (superset)
+- [x] Introduction to genetic analysis software (PLINK, BioConductor, Samtools, BCFTools)
+- [x] First-author manuscript submission x2
+
 ## Upcoming milestones {.smaller}
 
-1. Committee meeting = June 2023 (confirm milestones with Darbar/Amit/Auseon)
-1. Echocardiography boards = July 2023
-1. AFGEN application = July 2023
-1. Attend 3 conferences this year (ACC, HRS, and R::conf), with associated abstract submissions = 2023 to 2024
-1. Complete ECG analyses by August 2023, genetic analyses by September 2023, and submit manuscript on ECG/genetic in AF by October 2023
-1. General cardiology boards = October 2023
-1. Match into (top-tier) EP fellowship = December 2023
+- [ ] Committee meeting = June 2023 (confirm milestones with Darbar/Amit/Auseon)
+- [ ] Echocardiography boards = July 2023
+- [ ] AFGEN application = July 2023
+- [ ] Attend 3 conferences this year (ACC, HRS, and R::conf), with associated abstract submissions = 2023 to 2024
+- [ ] Complete ECG analyses by August 2023, genetic analyses by September 2023, and submit manuscript on ECG/genetic in AF by October 2023
+- [ ] General cardiology boards = October 2023
+- [ ] Match into (top-tier) EP fellowship = December 2023
 
 # April 28 | DD 
 
