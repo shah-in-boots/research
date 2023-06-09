@@ -14,7 +14,7 @@ This serves as a summary of current research progress, updates, and projects (cl
 - The most recent update to this page was as of `r format(Sys.Date(), "%A, %B %d, %Y")` 
 - Please see here for weekly [research-in-progress updates](https://asshah4.github.io/research/t32/rip.html)
 - [Mentored meeting outlines](https://asshah4.github.io/research/t32/mentors.html) are available to document strategy and obstacles on a weekly and biweekly basis
-- Current active goal is to move [towards a K08/K23 award](https://asshah4.github.io/research/k32/approach.html)
+- Current active goal is to move [towards a K23 award](https://asshah4.github.io/research/k32/planning.html)
 
 | | | |
 | --- | --- | --- |

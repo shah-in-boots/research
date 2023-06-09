@@ -770,7 +770,7 @@ afl_tbls$earlyByFamily |>
 
 ```{r}
 #| echo: false
-afl_tbls$earlyAdjusted |>
+afl_tbls$earlyMaxAdjusted |>
 	as_raw_html()
 ```
 
