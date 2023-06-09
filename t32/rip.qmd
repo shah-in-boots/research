@@ -207,6 +207,22 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
+# June 12, 2023
+
+---
+
+![Manhattan plot @Verweij2020](../figures/verweij-2020-manhattan.png){#fig-ecg-genetic-manhattan}
+
+---
+
+![Cluster of genetic variants by ECG component @Verweij2020](../figures/verweij-2020-clusters.png){#fig-ecg-genetic-clusters}
+
+---
+
+![Individual variants with ECG components @Verweij2020](../figures/verweij-2020-ecg-and-variants.png){#fig-ecg-variants-and-components}
+
+---
+
 # June 5, 2023
 
 ## Aims Progress {.smaller}

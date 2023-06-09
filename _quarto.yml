@@ -30,7 +30,6 @@ bibliography:
   - ../bibliography/arrhythmia.bib
   - ../bibliography/computational.bib
   - ../bibliography/epidemiology.bib
-csl: ../bibliography/circulation.csl
 
 format:
   html:

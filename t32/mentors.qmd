@@ -13,7 +13,105 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
-## April 28 | DD {.smaller}
+# June 9 | DD {.smaller}
+
+## End-of-year meeting
+
+1. Research training and productivity
+1. Career planning (EP fellowship)
+1. Upcoming milestones and research plans
+1. Formative feedback
+
+## Research training
+
+:::: {.columns}
+::: {.column width="50%"}
+[Completed training]{.underline}:
+
+- Signal processing coursework through *MIT OpenCourseWare* in Aug 2022 to Dec 2022
+- NLP coursework through *Stanford Online* in Feb 2023 to May 2023
+:::
+::: {.column width="50%"}
+[In process]{.underline}:
+
+- Computational Genomics series through *Harvard Bioinformatics* May 2023 to present
+:::
+::::
+
+## Research products {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+[First Author]{.underline}:
+
+- AF/AFL Manuscript = ~~JAMA Cardiology~~ *JACC EP*
+- HRV/CVD Manuscript = ~~Circulation~~ *EHJ*
+- LSPro/WFDB Abstract = *HRx 2023*
+- HRV/CVD Abstract = *ACC 2023*
+- LSPro/WFDB Software = *CRAN* [^1] 
+
+:::
+::: {.column width="50%"}
+[Middle Author]{.underline}:
+
+- Abstracts: ACC 2023 x 3, HRS 2023 x 1, AHA 2023 x 2
+- Manuscripts:
+	- HRV & Incident Heart Failure *WIP*
+	- AF Recurrence & Race *WIP*
+
+[Article Reviewer]{.underline}:
+
+- IJC x 1, AHJ x 1, Heart x 1
+:::
+::::
+
+[^1]: Peer-reviewed software repository
+
+## Career planning
+
+[Applying to EP fellowship]{.underline}:
+
+a. LOR: (1) Darbar/Amit (combined letter), (2) Yeshwant (clinical), (3) Avitall (clinical), (4) Auseon (program director)
+a. Locations: NW, UIC, UofC, Loyola, UPenn, Vermont (Spektor), UCLA (Shivkumar), VCU (Ellenbogen), JHU
+
+::: aside
+Fellowship location will likely determine long-term K23 application
+:::
+
+## Paper proposal {.smaller}
+
+Project to evaluate ECG-correlates of genetic variants with paroxysmal AF directly, similar to @Verweij2020 approach. Basis of **AFGEN fellowship** application.
+
+[Exposure]{.underline}: common and rare genetic variants
+
+[Outcome]{.underline}: 
+
+1. ECG parameters (particularly in P-wave indices) during sinus
+2. dominant frequency and coarseness of F waves during AF
+
+[Hypothesis]{.underline}: *Genetic variants in genes associated with paroxysmal AF, including novel variants, will have significant association with P wave abnormalities*
+
+::: aside
+Genetic variants = 
+
+- cardiomyopathy genes (TTN, NPPA, TBX5, MYL4, TTN, LMNA)
+- arrhythmia genes (KCNQ1, SCN5A, SCN10A, EXT1)
+- cardiovagal genes (NPY2R, GALR1)
+:::
+
+## Upcoming milestones {.smaller}
+
+1. Committee meeting = June 2023 (confirm milestones with Darbar/Amit/Auseon)
+1. Echocardiography boards = July 2023
+1. AFGEN application = July 2023
+1. Attend 3 conferences this year (ACC, HRS, and R::conf), with associated abstract submissions = 2023 to 2024
+1. Complete ECG analyses by August 2023, genetic analyses by September 2023, and submit manuscript on ECG/genetic in AF by October 2023
+1. General cardiology boards = October 2023
+1. Match into (top-tier) EP fellowship = December 2023
+
+# April 28 | DD 
+
+## {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -35,7 +133,9 @@ fig-cap-location: bottom
 :::
 ::::
 
-## April 11 | AJS {.smaller}
+# April 11 | AJS 
+
+## {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -53,7 +153,9 @@ fig-cap-location: bottom
 :::
 ::::
 
-## March 31, 2023 | DD {.smaller}
+# March 31, 2023 | DD 
+
+## {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -78,7 +180,7 @@ Phenotyping AF:
 :::
 ::::
 
----
+## {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -110,7 +212,9 @@ Career:
 :::
 ::::
 
-## March 3, 2023 | DD {.smaller}
+# March 3, 2023 | DD 
+
+## {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -136,7 +240,7 @@ CAR:
 :::
 ::::
 
----
+## {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -164,3 +268,7 @@ Career:
 - [ ] [Delineate timeline and strategy for EP fellowship]{.orange}
 :::
 ::::
+
+# References
+
+::: {#refs}

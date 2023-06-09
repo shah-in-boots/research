@@ -2,26 +2,25 @@
 format: 
   docx:
     reference-doc: ../template.docx
+    
+csl: ../../bibliography/circulation.csl
+	
 ---
 
 Atrial fibrillation (AF) is the most common sustained cardiac arrhythmia, with a prevalence of over 50 million cases currently and &ge; 25% lifetime risk across races.[@Kornej2020]
-Surprisingly, the disease is only classified by broad strokes into paroxysmal, persistent, or permanent. 
-Treatment strategies, which are limited to antiarrhythmic drugs or catheter ablation, are applied with a similar lack of granularity to the stage of the disease [@England2002; @Kirchhof2020], regardless of mechanism [@Mehra2022].
-Our overly simplistic clinical approach to AF disallows us from understanding the disease and matching interventions with the specific stage of progression, even though there is growing evidence that early intervention is critical [@Kirchhof2020].
-Moreover, current attempts at reclassifying AF have been limited to cross-sectional, comorbidity-based heuristics, which considered AF to be a consequence instead of a precursor of other conditions [@Andrade2014; @Pastori2020].
-A paradigm shift is needed -- differentiation of the underlying spectrum of paroxysmal AF will allow us to tailor therapies that target the underlying pathophysiology and identify those at risk for progression.
-
-To overcome this lack of specificity in the diagnosis of paroxysmal AF, we need to [identify specific mechanisms in AF pathognesis]{.underline}, before prescribing therapies.
+Although atrial fibrillation (AF) is the most common sustained cardiac arrhythmia, with a 25% lifetime risk across races [@Kornej2020], the disease is only classified by by broad strokes into paroxysmal, persistent, or permanent. 
+Treatment strategies are limited to antiarrhythmic drugs or catheter ablation and are applied without regard to the stage of the disease or the underlying mechanism [@Mehra2022; @England2002; @Kirchhof2020].
 For example, vagal nerve stimulation and cardioneural ablations have shown promise in AF, but are underutilized and not individually tailored [@Shivkumar2017; @Mehra2022].
+Moreover, current attempts at reclassifying AF have been limited to cross-sectional, comorbidity-based heuristics, which considered AF to be a consequence instead of a precursor of other conditions [@Andrade2014; @Pastori2020]. To overcome this lack of specificity in the diagnosis of paroxysmal AF, we need to [identify specific mechanisms in AF pathognesis]{.underline}, before prescribing therapies.
 In the earlier stages of AF, triggered activity from atrial tissue, such as ectopic beats, are the underlying *first-mover* in the onset of an episode of AF.
 Longer, sustained episodes of AF are accompanied by increased atrial scarring and fibrosis, as part of the disease progression.
 This supports the understanding that earlier phases of paroxysmal AF are driven by electrical triggers, which is ultimately mediated by a maladaptive response of the autonomic nervous system (ANS), such as increased sympathetic activity and acute parasympathetic withdrawal [@Zipes2006; @Taggart2011].
 [Our overarching hypothesis is that sympathetic activity drives triggered atrial activity that leads to and sustains episodes of AF in those with structurally normal atria]{.underline} 
 
 To test this, we will leverage a pre-existing, well-established cohort: the UIC Multi-Ethnic Atrial Fibrillation Registry (AF Registry) [@Chalazan2021], which is enriched for paroxysmal AF.
-This cohort have extensive follow-up data, genetic sequencing, EP signals, and are led by members of the mentorship committee.
-During my TL1, T32, and F32 scholarship, I have worked extensively to collect clinical data in multiple ongoing NIH-sponsored investigations involving my mentorship and advisory team [@Chalazan2021; @Vaccarino2021a], developing critical skills in signal processing and biostatistics.
-I found supporting evidence that vagolysis lead to abnormal cardiac perfusion and increased cardiovascular mortality.[@Shah2020; @Shah2021a; @Shah2021c; @Shah2023_conf]
+This cohort has extensive follow-up data, genetic sequencing, EP signals, and are led by members of the mentorship committee.
+During my TL1, T32, and F32 scholarship, I worked extensively to collect clinical and electrical signal data in multiple ongoing NIH-sponsored investigations involving my mentorship and advisory team [@Chalazan2021; @Vaccarino2021a], developing critical skills in signal processing and biostatistics.
+In support of current literature [@Mehra2022], I found supporting evidence that vagolysis lead to abnormal cardiac perfusion and increased cardiovascular mortality.[@Shah2020; @Shah2021a; @Shah2021c; @Shah2023_conf]
 These abnormalities were identified through electrocardiography-based (ECG) markers, including heart rate variability (HRV), and associated with ANS function and cardiac physiology [@Shah2021b]. 
 As a fellow in clinical cardiac electrophysiology (EP), I am positioned to also obtain highly-granular data from EP studies performed during AF ablation, including cardiac-specific blood samples, intracardiac electrograms, and electroanatomical mapping.
 I will integrate these features into clinical data from the AF Registry to identify phenotypes of paroxysmal AF with structurally normal hearts, which are likely driven by atrial triggered activity.
