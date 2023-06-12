@@ -209,6 +209,15 @@ tbl_status_updates(progress, effort)
 
 # June 12, 2023
 
+## Backbone for aims {.smaller}
+
+1. Sympathetically-mediated AF occurs predominantly earlier in paroxysmal AF, in hearts with minimal scar burden. 
+1. To cause episodes of AF would require abnormalities in conduction from both intracardiac and extracardiac causes
+1. Abnormalities from both intracardiac and extracardiac causes are either acquired or genetic
+1. These factors may also lead to different rates of progression of AF
+
+[Question]{.underline}: Do certain genetic variants contribute to the progression of paroxysmal AF to persistent AF? 
+
 ## Trajectory of pAF {.smaller}
 
 - @Kerr2005 from a Canadian Registry followed `n = 757` for ~8 years, 5 year recurrence was >60%
@@ -218,12 +227,26 @@ tbl_status_updates(progress, effort)
 	- Predictors = LAVI and patient age
 - @Holmqvist2015 noted progression based on age + increased heart rate in sinus (CHA2DS2VASc had minimal discriminatory power)
 - @Andrade2023 evaluated 3 year follow in ablation versus AAD, found `HR = 0.51`
-- Acutely, post-cardiac surgery AF can be predicted by decreased HRV (@Vesela2023)
+- *Acutely, post-cardiac surgery AF can be predicted by decreased HRV (@Vesela2023)*
 	
-## ECG-based predictors of pAF progression
+## Predictors of pAF progression {.smaller}
 
-[Question]{.underline}: Do certain genetic variants contribute to the electrocardiography-based progression of paroxysmal AF to persistent AF? 
+**CUrrently progression is poorly defined...**
 
+- Clinical: need for rhythm control intervention (ECV, PVI), hospitalization for symptoms or heart failure, % burden increase by an inflection point 
+- ECG: Decrease HF-HRV, increased P wave duration/dispersion, decreased P wave amplitude (during AF, decreased F-wave amplitude)
+
+**Persistent** = `n` continous ECG in AF, diagnosis by cardiology, >7 day duration of episodes (or less)
+
+::: aside
+How should we define progression, rate of progression, and persistence?
+:::
+
+## Approach for evaluation
+
+1. Establish clinical progression of disease with multiple *versions* of the definition
+1. Obtain ECG data (segmentation to evaluate sinus beats)
+1. Assess genetic variants &harr; ECG characteristics to compare with outcomes
 
 ---
 
@@ -237,7 +260,13 @@ tbl_status_updates(progress, effort)
 
 ![Individual variants with ECG components @Verweij2020](../figures/verweij-2020-ecg-and-variants.png){#fig-ecg-variants-and-components}
 
----
+## Next steps
+
+- [ ] Obtain ECG data (currently have from 2010 to 2017)
+- [ ] Segmentation approach for sinus beats
+- [ ] F-wave identification for AF beats
+- [x] Contact Broad Institute about SNP-array data from previous GWAS
+- [ ] NLP approach to assessing paroxysmal versus persistent
 
 # June 5, 2023
 
