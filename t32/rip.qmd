@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 6, day = 5) |>
+	date_build(year = 2023, month = 6, day = 12) |>
 	add_days(-30)
 
 progress <-
@@ -208,6 +208,22 @@ tbl_status_updates(progress, effort)
 ```
 
 # June 12, 2023
+
+## Trajectory of pAF {.smaller}
+
+- @Kerr2005 from a Canadian Registry followed `n = 757` for ~8 years, 5 year recurrence was >60%
+	- Positive predictors = age, +AS, +MR, LAE, reduced LVEF
+	- Negative predictor = rapid heart rate during AF 
+- Post catheter ablation, 5 years recurrence was 60% (1st ablation), and 20% after (>2 ablations) (@Takigawa2014)
+	- Predictors = LAVI and patient age
+- @Holmqvist2015 noted progression based on age + increased heart rate in sinus (CHA2DS2VASc had minimal discriminatory power)
+- @Andrade2023 evaluated 3 year follow in ablation versus AAD, found `HR = 0.51`
+- Acutely, post-cardiac surgery AF can be predicted by decreased HRV (@Vesela2023)
+	
+## ECG-based predictors of pAF progression
+
+[Question]{.underline}: Do certain genetic variants contribute to the electrocardiography-based progression of paroxysmal AF to persistent AF? 
+
 
 ---
 
@@ -726,64 +742,6 @@ ggm(x, channels = c("I", "CS", "HIS M", "HIS D", "RV")) |>
 1. Draft of paper expanded to include results 
 1. Prominent findings of family history and association with arrhythmia 
 1. Key tables and figures established  
-
-```{r} 
-#| cache: true 
-store <- file.path(find_project_folder(), "aflubber", "_targets") 
-afl_tbls <- targets::tar_read(flutter_tables, store = store)  
-```
-
----  
-
-### Table: Cohort Descriptions  
-
-```{r}
-#| echo: false
-afl_tbls$byOnset |>
-	as_raw_html()
-```
-
----
-
-### Table: Unadjusted Risk
-
-```{r}
-#| eval: false
-#| echo: false
-afl_tbls$earlyPredictors
-	as_raw_html()
-```
-
----
-
-### Table: Risk by Family History
-
-```{r}
-#| echo: false
-afl_tbls$earlyByFamily |>
-	as_raw_html()
-```
-
----
-
-### Table: Fully Adjusted Model
-
-```{r}
-#| echo: false
-afl_tbls$earlyMaxAdjusted |>
-	as_raw_html()
-```
-
----
-
-### Table: Grouped Forest Plots
-
-```{r}
-#| echo: false
-afl_tbls$forest 
-```
-
----
 
 Next steps:
 
