@@ -13,6 +13,29 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# June 13 | AJS {.smaller}
+
+## Wrap up of HRV/CVD paper
+
+- [x] Vaccarino feedback
+- [ ] Quyyumi feedback
+- [ ] Lampert feedback
+
+## Zombie projects
+
+- Circadian profile of depression, PTSD, anxiety
+- Relationship of DYX with CAD burden (F32)
+- CARRS ECG parameters and diabetes
+- ECG-based age prediction and telomere length
+
+## Aims-focused project 
+
+1. &uarr; sympathetic activity + &darr; cardiovagal activity is malignant/maladaptive
+1. Etiology of **vagolysis-prone** individuals is likely both *polygenic* + *acquired*
+1. Phenotypes may show: abnormal variants in HRV-associated and cardiovagal-associated genes, abnormal ECG-markers or patterns (e.g. GEH), clinical covariates
+
+[Question]{.underline}: Are there common/rare variants associated with these patients with higher risk (or is this a truly acquired disease)?
+
 # June 9 | DD {.smaller}
 
 ## End-of-year meeting
