@@ -364,6 +364,59 @@ Anish S. Shah, MD, MS
 
 </section>
 <section>
+<section id="june-16-2023-ab" class="title-slide slide level1 center">
+<h1>June 16, 2023 | AB</h1>
+
+</section>
+<section id="premises" class="slide level2 smaller">
+<h2>Premises</h2>
+<ol type="1">
+<li>Atrial fibrillation is a macro-reentry rhythm predominantly initiated by triggered electrical activity</li>
+<li>Triggered activity can come from maladaptive autonomic tone ± focal scar ± tissue heterogeneity</li>
+<li>Each triggered activation may not lead to a sustained or measurable episode of AF</li>
+<li>Duration of AF is mediated by amount of fibrosis or <em>scar</em> available to sustain arrhythmia</li>
+</ol>
+<p><u>Hypothesis</u>: Sympathetic activity <strong>drives triggered atrial activity</strong> that <strong>leads to</strong> and <strong>sustains</strong> episodes of AF in those with <strong>structurally normal atria</strong></p>
+</section>
+<section id="available-data" class="slide level2">
+<h2>Available Data</h2>
+<ul>
+<li>~145k patients with CVD diagnoses (overly sensitive)</li>
+<li>~500k digital ECGs from 2010 to 2023</li>
+<li>Clinical notes from providers + support staff</li>
+<li>Procedure reports for cardiac studies (catheterization, ablation, device interrogation, echocardiography, cardioversion)</li>
+</ul>
+<p><u>Goals</u>: Identify patients at <strong>onset</strong> of paroxysmal AF, and identify time point when burden of AF increases or transitions to <strong>persistent</strong> AF</p>
+
+<aside><div>
+<p><strong>Persistent AF</strong> is poorly defined as &gt;7 days of AF duration</p>
+</div></aside></section>
+<section id="approach" class="slide level2 smaller">
+<h2>Approach</h2>
+<ol type="1">
+<li>Identify diagnosis of atrial fibrillation: ICD codes, ECG diagnoses</li>
+<li>Confirm diagnoses: EP notes, interventions, hospitalizations, procedures</li>
+<li>Quantify burden: documentation in notes, interventions, duration of episodes, change on repeat ECGs</li>
+<li>Cross-sectional parameters:
+<ol type="a">
+<li>Clinical = weight, comorbidites</li>
+<li>Electrical = F-wave voltage, P-wave morphology, scar-burden on EPS</li>
+<li>Echocardiography = LA size/volume, LV size, LV function, diastology</li>
+<li>Treatment = PVI, ECV, antiarrhythmic drugs, BB</li>
+</ol></li>
+<li>Evaluate trajectory: characteristics that associate with rapidity of diagnosis change</li>
+</ol>
+</section>
+<section id="nlp-approach" class="slide level2">
+<h2>NLP approach</h2>
+<ul class="task-list">
+<li><input type="checkbox">Filter clinical documentation to provider-only information</li>
+<li><input type="checkbox">NLP approach is to use bidirectional transformer approach (BERT)</li>
+<li><input type="checkbox">Add fine-tuning layer with named entities for AF (symptoms/burden/recurrence)</li>
+<li><input type="checkbox">Compare with AF Registry as <strong>training data</strong>, and EMR as <strong>test data</strong></li>
+</ul>
+</section></section>
+<section>
 <section id="june-13-ajs" class="title-slide slide level1 smaller center">
 <h1>June 13 | AJS</h1>
 
