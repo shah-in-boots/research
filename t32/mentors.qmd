@@ -13,6 +13,14 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# June 20, 2023 | AJS
+
+## HRV/CVD revisions
+
+- Better define baseline ANS dysfunction and stress-induced ANS inflexibility
+- Consider moving HF HRV from supplement to main tables as they are similar in significance
+- Methods confusion about sensitivity analyses
+
 # June 16, 2023 | AB
 
 ## Premises {.smaller}
@@ -24,7 +32,7 @@ fig-cap-location: bottom
 
 [Hypothesis]{.underline}: Sympathetic activity **drives triggered atrial activity** that **leads to** and **sustains** episodes of AF in those with **structurally normal atria**
 
-## Available Data 
+## Available Data {.smaller}
 
 - ~145k patients with CVD diagnoses (overly sensitive)
 - ~500k digital ECGs from 2010 to 2023
