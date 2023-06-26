@@ -39,9 +39,17 @@ For K23 application, will combine signal processing, genetics, and epidemiology 
 1. **ECG/MSNA** = Correlation between SNA and ECG parameters (PRD, GEH, P-wave morphology) *strengthens DSP and clinical relevance*
 1. **REVIEW** = Review of trigger-mediated versus scar-mediated pAF
 
+## Parallel clinical training
+
+1. Studying for general cardiology boards
+1. 50% conference attendance (supplemented by research meetings)
+1. 1/2 clinic per week
+1. 1/2 day of EP lab per week
+1. 2-3 weeks of clinical service in spring prior to fellowship
+
 ## Timeline {.smaller}
 
-| Timepoint | Milestone |
+| Month | Task |
 | - | ---- |
 | 07/2023 | Echo boards; Digitize ECGs; EP application; GWAS/ANS proposal |
 | 08/2023 | AF trajectory; GWAS/ANS analysis |
@@ -55,6 +63,14 @@ For K23 application, will combine signal processing, genetics, and epidemiology 
 | 04/2024 | Preliminary tables/figures for K23 |
 | 05/2024 | IRB submissions for fellowship |
 | 06/2024 | Prepare for EP fellowship |
+
+## Milestone feedback
+
+- [ ] Establish milestones that are appropriate for next 12 months of dedicated research
+- [ ] Frequency and purpose of mentorship meetings
+- [ ] Role of clinical training in this research year (e.g. EP lab, consults) 
+- [ ] Importance of research skill development
+- [ ] Mininum number of publications 
 
 # 06/20/23 | AJS
 
