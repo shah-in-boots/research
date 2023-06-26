@@ -13,7 +13,50 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
-# June 20, 2023 | AJS
+# 06/26/23 | AJS, DD, AA 
+
+## Specific Aims
+
+For K23 application, will combine signal processing, genetics, and epidemiology methods. Although these aims will fluctuate somewhat, preliminary data, papers, and submissions will need to be prioritized.
+
+1. Identify ECG-based phenotypes of pAF
+1. Determine cardiovagal biomarker patterns of sympathetically-mediated pAF during EPS
+1. Evaluate role of genetic variants in pAF progression
+
+## Research areas 
+
+- Epidemiology of pAF: trajectory, progression, natural history, phenotypes and subphenotypes/endophenotypes
+- Electrocardiograms: beat segmentation, morphology, machine learning approaches 
+- Electrophysiology studies: **novel** approaches to electrogram classification, 3D mapping analysis (conduction velocity, scar mapping)
+- Genetic variants & autonomic-mediated AF: GWAS for symptom, burden, speed of progression, focus on cardiovagal access
+
+## Paper proposals {.smaller}
+
+1. **ECG/PAF** = ECG classification of progression/trajectory of pAF (terminal P wave forces in NSR, coarseness of F waves in AF) *builds on DSP and EPI skills*
+1. **GWAS/PAF** = GWAS with ECG markers of pAF trajectory in AF Registry, validate in ARIC (?)  to *develop skills in computational genetics*
+1. **GWAS/ANS** = Exploratory association of genetic variants with "maladaptive ANS response" from Emory MIMS/MIPS dataset as *fundamental for ANS-mediated arrhythmias*
+1. **COSINOR** = Circadian rhythm (multiphase) of HRV/ECG markers with neuropsychological stress (e.g. depression/anxiety) *builds on previous software publications*
+1. **ECG/MSNA** = Correlation between SNA and ECG parameters (PRD, GEH, P-wave morphology) *strengthens DSP and clinical relevance*
+1. **REVIEW** = Review of trigger-mediated versus scar-mediated pAF
+
+## Timeline {.smaller}
+
+| Timepoint | Milestone |
+| - | ---- |
+| 07/2023 | Echo boards; Digitize ECGs; EP application; GWAS/ANS proposal |
+| 08/2023 | AF trajectory; GWAS/ANS analysis |
+| 09/2023 | EPS scar-burden; ECG/PAF draft; GWAS/PAF analysis |
+| 10/2023 | General boards; GWAS/ANS draft |
+| 11/2023 | ECG/PAF submission; EP match; ECG/AF software |
+| 12/2023 | GWAS/ANS submission; COSINOR analysis |
+| 01/2024 | Committee review |
+| 02/2024 | GWAS/PAF submission; REVIEW draft |
+| 03/2024 | COSINOR draft/submission |
+| 04/2024 | Preliminary tables/figures for K23 |
+| 05/2024 | IRB submissions for fellowship |
+| 06/2024 | Prepare for EP fellowship |
+
+# 06/20/23 | AJS
 
 ## HRV/CVD revisions
 
@@ -21,7 +64,7 @@ fig-cap-location: bottom
 - Consider moving HF HRV from supplement to main tables as they are similar in significance
 - Methods confusion about sensitivity analyses
 
-# June 16, 2023 | AB
+# 06/16/23 | AB
 
 ## Premises {.smaller}
 
@@ -64,7 +107,7 @@ fig-cap-location: bottom
 - [ ] Add fine-tuning layer with named entities for AF (symptoms/burden/recurrence)
 - [ ] Compare with AF Registry as **training data**, and EMR as **test data**
 
-# June 13 | AJS {.smaller}
+# 06/13/23 | AJS {.smaller}
 
 ## Wrap up of HRV/CVD paper
 
@@ -87,7 +130,7 @@ fig-cap-location: bottom
 
 [Question]{.underline}: Are there common/rare variants associated with these patients with higher risk (or is this a truly acquired disease)?
 
-# June 9 | DD {.smaller}
+# 06/09/23 | DD {.smaller}
 
 ## End-of-year meeting
 
@@ -187,7 +230,7 @@ Genetic variants =
 
 ## Upcoming milestones {.smaller}
 
-- [ ] Committee meeting = June 2023 (confirm milestones with Darbar/Amit/Auseon)
+- [ ] Committee meeting = 06/2023 (confirm milestones with Darbar/Amit/Auseon)
 - [ ] Echocardiography boards = July 2023
 - [ ] AFGEN application = July 2023
 - [ ] Attend 3 conferences this year (ACC, HRS, and R::conf), with associated abstract submissions = 2023 to 2024
@@ -195,7 +238,7 @@ Genetic variants =
 - [ ] General cardiology boards = October 2023
 - [ ] Match into (top-tier) EP fellowship = December 2023
 
-# April 28 | DD 
+# 04/28/23 | DD 
 
 ## {.smaller}
 
@@ -219,7 +262,7 @@ Genetic variants =
 :::
 ::::
 
-# April 11 | AJS 
+# 04/11/23 | AJS 
 
 ## {.smaller}
 
@@ -239,7 +282,7 @@ Genetic variants =
 :::
 ::::
 
-# March 31, 2023 | DD 
+# 03/31/23 | DD 
 
 ## {.smaller}
 
@@ -298,7 +341,7 @@ Career:
 :::
 ::::
 
-# March 3, 2023 | DD 
+# 03/03/23 | DD 
 
 ## {.smaller}
 
