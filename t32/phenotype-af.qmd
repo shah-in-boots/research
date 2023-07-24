@@ -1,0 +1,66 @@
+---
+title: Phenotyping AF
+subtitle: Project Page
+author: Anish S. Shah, MD|MS
+format: html
+tbl-cap-location: bottom
+fig-cap-location: bottom
+---
+
+# Background
+
+Paroxysmal AF contains a broad spectrum of disease, regardless of burden, frequency, hemodynamic or vascular complications, or etiology.
+Several attempts have been made at pursuing more salient models, however they combine both paroxysmal and persistent AF into a binary diagnosis.
+Two recent studies have documented 4 potential clusters may exist [@Pastori2020; @Vitolo2021]:
+
+1.  Younger, lower comorbidities
+1.  High CV risk factors
+1.  High CV comorbidities
+1.  High rates of non-CV comorbidities (e.g. cancer)
+
+@Wineinger2019 showed that in terms of duration and episodes of AF, there may be a *staccato* (short, frequent episodes) versus *legato* (long, infrequent) patterns to AF, however unknown about underlying clinical relevance.
+
+In this proposal, I aim to phenotype paroxysmal AF into clinically-relevant subtypes. This serves as the basis for future work for evaluating differences in prognosis (including endocardial mapping patterns to recurrence).
+
+# Approach
+
+[Hypothesis]{.underline}: *Diagnoses of paroxysmal AF will segregate into clusters based on electrical, clinical, and structural cardiac properties.*
+
+The overall approach will be to use high-dimensionality reduction techniques to create finite clusters that alllow for segregation based on mutliple vector-spaces. 
+This approach also allows for future *multi-state modeling* and *survival* techniques based on "events" &rarr; ablation, cardioversion, medication intensification, changes in burden, cardiomyopathy, etc.
+
+## Data
+
+The data that is currently available to answer this is derived from three sources:
+
+a. UIC Multi-Ethnic AF Registry: ~1800 patients with various classes of AF that have contributed blood sampling for genetic analysis
+b. Clinical Data Warehouse: collected by the CCTS, houses Cerner and EPIC charts from 2010 onwards, including clinical notes, procedure notes, diagnoses, vitals, medications
+c. MUSE: ECGs from ~2000s to today with full digital/raw signal (10 seconds x 8 leads)
+
+## Key variables
+
+The key variables that will be used are a combination of clinical, electrical, imaging that will allow for creation of multiple dimensionality. 
+
+
+
+
+# Timeline
+
+```{mermaid}
+%%| fig-responsive: true
+gantt
+	dateFormat MM-YYYY
+	axisFormat %b-%Y
+	section Atrial Fibrillation
+		AFGEN application						:milestone, 07-2023, 0d
+		AFL/FH manuscript						:milestone, 08-2023, 0d
+		Chart review for AF 				:08-2023, 11-2023
+		NLP for AF burden						:09-2023, 01-2024
+		Clinical trajectories				:10-2023, 04-2024
+		Phenotype AF manuscript 		:milestone, 05-2024, 0d
+	section Computational
+		Digitization of ECG					:06-2023, 08-2023
+		ECG parameters generation		:07-2023, 10-2023
+		EPS scar-burden							:09-2023, 11-2023
+		ECG/AF manuscript						:milestone, 11-2023, 0d
+```
