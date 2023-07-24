@@ -13,24 +13,55 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
-# 06/26/23 | AJS, DD, AA 
+# 07/19/23 | AJS, DD, AA 
 
-## Specific Aims
+## Outline
 
-For K23 application, will combine signal processing, genetics, and epidemiology methods. Although these aims will fluctuate somewhat, preliminary data, papers, and submissions will need to be prioritized.
+1. Long-term timeline
+1. Research foci
+1. Manuscript/project proposals
+1. Parallel clinical training
+1. 2023-2024 timeline
 
-1. Identify ECG-based phenotypes of pAF
-1. Determine cardiovagal biomarker patterns of sympathetically-mediated pAF during EPS
-1. Evaluate role of genetic variants in pAF progression
+---
 
-## Research areas 
+```{mermaid}
+gantt
+	title Timeline
+	dateFormat MM-YYYY
+	section Clinical
+		General CV fellowship		:07-2020, 06-2024
+		EP fellowship						:07-2024, 06-2026
+		Junior faculty					:07-2026, 06-2028
+	section Academics
+		TL1 fellowship					:07-2019, 06-2020
+		T32/F32 fellowship			:07-2022, 06-2024
+		K23 application					:03-2026, 09-2026
+```
 
-- Epidemiology of pAF: trajectory, progression, natural history, phenotypes and subphenotypes/endophenotypes
-- Electrocardiograms: beat segmentation, morphology, machine learning approaches 
-- Electrophysiology studies: **novel** approaches to electrogram classification, 3D mapping analysis (conduction velocity, scar mapping)
-- Genetic variants & autonomic-mediated AF: GWAS for symptom, burden, speed of progression, focus on cardiovagal access
+K23 application in ~2.5 years, with following variables:
 
-## Paper proposals {.smaller}
+1. EP fellowship + faculty position institution
+1. Department and divisional support
+1. Changes / discoveries in research field/space
+
+## Areas of interest {.smaller}
+
+- Stress: arrhythmic component in abnormal stress reactions (autonomic-mediated)
+- pAF: trajectory, phenotypes and subphenotypes
+- ECG: beat segmentation, morphology, machine learning approaches 
+- EPS: *novel* approaches to electrogram classification, 3D mapping analysis (conduction velocity, scar mapping)
+- Genetic variants: GWAS for burden/progression, ECG-markers, cardiovagal receptors
+
+## Research questions {.smaller}
+
+Do certain phenotypes (EMR, ECG, TTE, VUS) that have different rate of progression of AF? 
+
+Are there genetic variants in cardiovagal receptors that increase the risk of autonomic dysfunction to stress? 
+
+Are markers of abnormal stress reactivity predictive of future arrhythmic events?
+
+## Specific proposals {.smaller}
 
 1. **ECG/PAF** = ECG classification of progression/trajectory of pAF (terminal P wave forces in NSR, coarseness of F waves in AF) *builds on DSP and EPI skills*
 1. **GWAS/PAF** = GWAS with ECG markers of pAF trajectory in AF Registry, validate in ARIC (?)  to *develop skills in computational genetics*
@@ -38,6 +69,14 @@ For K23 application, will combine signal processing, genetics, and epidemiology 
 1. **COSINOR** = Circadian rhythm (multiphase) of HRV/ECG markers with neuropsychological stress (e.g. depression/anxiety) *builds on previous software publications*
 1. **ECG/MSNA** = Correlation between SNA and ECG parameters (PRD, GEH, P-wave morphology) *strengthens DSP and clinical relevance*
 1. **REVIEW** = Review of trigger-mediated versus scar-mediated pAF
+
+## Specific Aims
+
+The following aims will be supported by preliminary and published data generated from this research year, combining DSP, epidemiology, and genetic approaches. Expect some fluctuation as the research evolves.
+
+1. Identify ECG-based phenotypes of pAF
+1. Determine cardiovagal biomarker patterns of sympathetically-mediated pAF during EPS
+1. Evaluate role of genetic variants in pAF progression
 
 ## Parallel clinical training
 
@@ -47,22 +86,39 @@ For K23 application, will combine signal processing, genetics, and epidemiology 
 1. 1/2 day of EP lab per week
 1. 2-3 weeks of clinical service in spring prior to fellowship
 
-## Timeline {.smaller}
+## Timetable
 
-| Month | Task |
-| - | ---- |
-| 07/2023 | Echo boards; Digitize ECGs; EP application; GWAS/ANS proposal |
-| 08/2023 | AF trajectory; GWAS/ANS analysis |
-| 09/2023 | EPS scar-burden; ECG/PAF draft; GWAS/PAF analysis |
-| 10/2023 | General boards; GWAS/ANS draft |
-| 11/2023 | ECG/PAF submission; EP match; ECG/AF software |
-| 12/2023 | GWAS/ANS submission; COSINOR analysis |
-| 01/2024 | Committee review |
-| 02/2024 | GWAS/PAF submission; REVIEW draft |
-| 03/2024 | COSINOR draft/submission |
-| 04/2024 | Preliminary tables/figures for K23 |
-| 05/2024 | IRB submissions for fellowship |
-| 06/2024 | Prepare for EP fellowship |
+```{mermaid}
+gantt
+	dateFormat MM-YYYY
+	axisFormat %b-%Y
+	section Clinical
+		Echo boards									:milestone, 07-2023, 0d
+		General boards							:milestone, 10-2023, 0d
+		EP fellowship match					:milestone, 11-2023, 0d	
+		EP fellowship starts				:milestone, 07-2024, 0d
+	section Atrial Fibrillation
+		AFGEN application						:milestone, 07-2023, 0d
+		AFL/FH manuscript						:milestone, 08-2023, 0d
+		Chart review for AF 				:08-2023, 11-2023
+		NLP for AF burden						:09-2023, 01-2024
+		Clinical trajectories				:10-2023, 04-2024
+		Phenotype AF manuscript 		:milestone, 05-2024, 0d
+	section Stress Reactivity
+		Stress/AF preliminary 			:07-2023, 09-2023 
+		Stress/AF drafting					:09-2023, 11-2023
+		Stress/AF manuscript				:milestone, 01-2024, 0d
+		GWAS/ANS proposal						:08-2023, 09-2023
+		GWAS/ANS data 							:09-2023, 01-2024
+		GWAS/ANS drafting						:12-2024, 03-2023
+		GWAS/ANS manuscript					:milestone, 03-2024, 0d
+	section Computational
+		Digitization of ECG					:06-2023, 08-2023
+		ECG parameters generation		:07-2023, 10-2023
+		EPS scar-burden							:09-2023, 11-2023
+		ECG/AF manuscript						:milestone, 11-2023, 0d
+		
+```
 
 ## Milestone feedback
 

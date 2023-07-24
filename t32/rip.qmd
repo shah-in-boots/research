@@ -19,9 +19,8 @@ fig-cap-location: bottom
 # Libraries
 library(tidyverse)
 library(arcana)
-library(durandal)
 library(volundr)
-library(coraline)
+library(hrd)
 library(googledrive)
 library(googlesheets4)
 library(clock)
@@ -176,7 +175,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 6, day = 12) |>
+	date_build(year = 2023, month = 7, day = 17) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +205,12 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# July 17, 2023
+
+## Active projects
+
+1. AFL/FH: Revisions to be addressed in next draft. Will identify additional journals to target.
 
 # June 12, 2023
 
@@ -591,43 +596,6 @@ AFL/FH:
 :::
 ::::
 
-
-```{r} 
-#| cache: true 
-store <- file.path(find_project_folder(), "aflubber", "_targets") 
-afl_tbls <- targets::tar_read(flutter_tables, store = store)  
-```
-
----
-
-::: {.panel-tabset}
-
-## Onset
-
-```{r}
-afl_tbls$early
-```
-
-## Adjusted Models
-
-```{r}
-afl_tbls$adjusted
-```
-
-## Individual Risk
-
-```{r}
-afl_tbls$individual
-```
-
-## Risk by +/- FH
-
-```{r}
-afl_tbls$individual_by_family
-```
-
-:::
-
 ## [AFL/genetics]{.blue}
 
 - ~87 individuals with +FH
@@ -635,32 +603,12 @@ afl_tbls$individual_by_family
 - ~18 individuals with VUS in total
 - **1 individual** with VUS + FH
 
----
-
-::: {.panel-tabset}
-
 ## Multiple Pedigrees
 
 ![AFL/surrogate disease burden](../figures/multiple_pedigree_plot.png)
-
-## Cohort with Variants
-
-```{r}
-afl_tbls$variant_cohort
-```
-
 ## TTN Mutant
 
 ![AFL/mutant](../figures/pedigree_uic0530.png)
-
-## Variant Overview
-
-```{r}
-afl_tbls$variant_table
-```
-
-:::
-
 # December 19, 2022
 
 ## Updates
