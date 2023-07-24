@@ -39,28 +39,87 @@ c. MUSE: ECGs from ~2000s to today with full digital/raw signal (10 seconds x 8 
 
 ## Key variables
 
-The key variables that will be used are a combination of clinical, electrical, imaging that will allow for creation of multiple dimensionality. 
+The key variables that will be used are a combination of clinical, electrical, imaging that will allow for creation of multiple dimensions for analysis.
 
+:::: {.columns}
+::: {.column width="34%"}
 
+**Electrocardiography**
 
+[Sinus]{.underline}
+
+- P-wave indices: voltage, AUC, duration, dispersion, terminal forces
+- Global parameters: PR interval, P/R amplitude ratio
+- Rate: high-frequency HRV, HR
+ 
+[AF]{.underline}
+
+- Conduction properties: ventricular response, shortest/longest RR intervals 
+- Atrial parameters: dominant frequency (Fourier multi-transform), F-wave relative voltage + ∆ voltage over time
+
+:::
+::: {.column width="33%"}
+
+**Clinical**
+
+- Age, Sex, Race
+- Weight + ∆ weight over time
+- Comorbidities (HTN, DM, HLD, CHF, CAD)
+- CHADS2VAS2C score
+- ADHF and h/o CHF
+- Anti-arrhythmic intensification (AAD, BB uptitration, cardioversion, ablation)
+- Atrial arrhythmias + recurrence + burden of AF over time
+- Blood pressure + ∆ over time
+- HR and responsiveness of HR over time
+
+:::
+::: {.column width="33%"}
+
+**Echocardiography**
+
+- Volumes: LA, RA, LV, LVIDD
+- Pressures: RVSP, PA pressures
+- Diastology: E/e' ratio, A wave duration/velocity, A wave reversal
+- Function: LVEF, RVEF, LA strain
+
+:::
+::::
+
+The three phases of this project involve data intake and wrangling/tidying, initial analyses, and finally, abstract/manuscript production. 
+This is to be done in sequence for ECG data followed by clinical data, and finally imaging/procedure data. 
+
+We will perform both supervised and unsupervised cluster analysis on the ECG parameters first in attempt to identify if patterns segregate. 
+Subsequently will identify if clinical characteristics vary between groups.
 
 # Timeline
 
 ```{mermaid}
 %%| fig-responsive: true
 gantt
-	dateFormat MM-YYYY
+	dateFormat MM/YYYY
 	axisFormat %b-%Y
-	section Atrial Fibrillation
-		AFGEN application						:milestone, 07-2023, 0d
-		AFL/FH manuscript						:milestone, 08-2023, 0d
-		Chart review for AF 				:08-2023, 11-2023
-		NLP for AF burden						:09-2023, 01-2024
-		Clinical trajectories				:10-2023, 04-2024
-		Phenotype AF manuscript 		:milestone, 05-2024, 0d
-	section Computational
-		Digitization of ECG					:06-2023, 08-2023
-		ECG parameters generation		:07-2023, 10-2023
-		EPS scar-burden							:09-2023, 11-2023
-		ECG/AF manuscript						:milestone, 11-2023, 0d
+	excludes weekends
+	section Intake
+		MUSE ECG to XML									:done, muse, 05/2023, 07/2023
+		XML ECG to WFDB 								:done, wfdb, 04/2023, 90d
+		Cluster hosting of data					:done, acer, 06/2023, 60d
+		Import CCTS data								:ccts, 05/2023, 90d
+	section Data tidying
+		Sinus rhythm parameters 				:nsr, 07/2023, 30d
+		AF rhythm parameters 		 				:paf, 07/2023, 60d
+		Clinical visits and diagnoses		:visits, 07/2023, 120d
+		Labs and lab changes						:labs, after visits, 30d
+		Clinical medication changes			:meds, after labs, 30d
+		Rhythm/control strategies				:rhythm, after meds, 60d
+		EPS data extraction							:eps, 01/2024, 90d
+		NLP for notes										:nlp, after visits, 180d
+	section Analysis
+		Cross-sectional ECG							:clusters, after nsr, 30d
+		ECG trajectories								:delta, after paf, 30d
+		Cross-sectional clincal					:cross, after rhythm, 30d
+		Clinical trajectories						:after tidy, 60d
+	section Production
+		CCTS/CBCD IRB										:done, irb, 04/2023, 30d
+		ECG/AF Clusters 								:milestone, ecg, after delta, 7d
+		Phenotype AF										:milestone, phenotype, after rhythm, 7d
 ```

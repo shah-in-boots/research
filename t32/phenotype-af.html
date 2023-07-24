@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.427">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -215,7 +215,46 @@ div.csl-indent {
 </section>
 <section id="key-variables" class="level2">
 <h2 class="anchored" data-anchor-id="key-variables">Key variables</h2>
-<p>The key variables that will be used are a combination of clinical, electrical, imaging that will allow for creation of multiple dimensionality.</p>
+<p>The key variables that will be used are a combination of clinical, electrical, imaging that will allow for creation of multiple dimensions for analysis.</p>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><strong>Electrocardiography</strong></p>
+<p><u>Sinus</u></p>
+<ul>
+<li>P-wave indices: voltage, AUC, duration, dispersion, terminal forces</li>
+<li>Global parameters: PR interval, P/R amplitude ratio</li>
+<li>Rate: high-frequency HRV, HR</li>
+</ul>
+<p><u>AF</u></p>
+<ul>
+<li>Conduction properties: ventricular response, shortest/longest RR intervals</li>
+<li>Atrial parameters: dominant frequency (Fourier multi-transform), F-wave relative voltage + ∆ voltage over time</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<p><strong>Clinical</strong></p>
+<ul>
+<li>Age, Sex, Race</li>
+<li>Weight + ∆ weight over time</li>
+<li>Comorbidities (HTN, DM, HLD, CHF, CAD)</li>
+<li>CHADS2VAS2C score</li>
+<li>ADHF and h/o CHF</li>
+<li>Anti-arrhythmic intensification (AAD, BB uptitration, cardioversion, ablation)</li>
+<li>Atrial arrhythmias + recurrence + burden of AF over time</li>
+<li>Blood pressure + ∆ over time</li>
+<li>HR and responsiveness of HR over time</li>
+</ul>
+</div><div class="column" style="width:33%;">
+<p><strong>Echocardiography</strong></p>
+<ul>
+<li>Volumes: LA, RA, LV, LVIDD</li>
+<li>Pressures: RVSP, PA pressures</li>
+<li>Diastology: E/e’ ratio, A wave duration/velocity, A wave reversal</li>
+<li>Function: LVEF, RVEF, LA strain</li>
+</ul>
+</div>
+</div>
+<p>The three phases of this project involve data intake and wrangling/tidying, initial analyses, and finally, abstract/manuscript production. This is to be done in sequence for ECG data followed by clinical data, and finally imaging/procedure data.</p>
+<p>We will perform both supervised and unsupervised cluster analysis on the ECG parameters first in attempt to identify if patterns segregate. Subsequently will identify if clinical characteristics vary between groups.</p>
 </section>
 </section>
 <section id="timeline" class="level1">
@@ -225,20 +264,32 @@ div.csl-indent {
 <div>
 <div>
 <pre class="mermaid mermaid-js">gantt
-    dateFormat MM-YYYY
+    dateFormat MM/YYYY
     axisFormat %b-%Y
-    section Atrial Fibrillation
-        AFGEN application                       :milestone, 07-2023, 0d
-        AFL/FH manuscript                       :milestone, 08-2023, 0d
-        Chart review for AF                 :08-2023, 11-2023
-        NLP for AF burden                       :09-2023, 01-2024
-        Clinical trajectories               :10-2023, 04-2024
-        Phenotype AF manuscript         :milestone, 05-2024, 0d
-    section Computational
-        Digitization of ECG                 :06-2023, 08-2023
-        ECG parameters generation       :07-2023, 10-2023
-        EPS scar-burden                         :09-2023, 11-2023
-        ECG/AF manuscript                       :milestone, 11-2023, 0d
+    excludes weekends
+    section Intake
+        MUSE ECG to XML                                 :done, muse, 05/2023, 07/2023
+        XML ECG to WFDB                                 :done, wfdb, 04/2023, 90d
+        Cluster hosting of data                 :done, acer, 06/2023, 60d
+        Import CCTS data                                :ccts, 05/2023, 90d
+    section Data tidying
+        Sinus rhythm parameters                 :nsr, 07/2023, 30d
+        AF rhythm parameters                        :paf, 07/2023, 60d
+        Clinical visits and diagnoses       :visits, 07/2023, 120d
+        Labs and lab changes                        :labs, after visits, 30d
+        Clinical medication changes         :meds, after labs, 30d
+        Rhythm/control strategies               :rhythm, after meds, 60d
+        EPS data extraction                         :eps, 01/2024, 90d
+        NLP for notes                                       :nlp, after visits, 180d
+    section Analysis
+        Cross-sectional ECG                         :clusters, after nsr, 30d
+        ECG trajectories                                :delta, after paf, 30d
+        Cross-sectional clincal                 :cross, after rhythm, 30d
+        Clinical trajectories                       :after tidy, 60d
+    section Production
+        CCTS/CBCD IRB                                       :done, irb, 04/2023, 30d
+        ECG/AF Clusters                                 :milestone, ecg, after delta, 7d
+        Phenotype AF                                        :milestone, phenotype, after rhythm, 7d
 </pre>
 </div>
 </div>
