@@ -28,6 +28,7 @@ library(gt)
 library(glue)
 library(ggsci)
 library(scales)
+library(vroom)
 
 # Location
 find_project_folder <- function() {
@@ -175,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 7, day = 17) |>
+	date_build(year = 2023, month = 7, day = 24) |>
 	add_days(-30)
 
 progress <-
@@ -206,11 +207,72 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
-# July 17, 2023
+# July 24, 2023
 
 ## Active projects
 
 1. AFL/FH: Revisions to be addressed in next draft. Will identify additional journals to target.
+1. HRV/CVD: EHJ 
+1. ECG/PAF: Active project involving computational approach at identifying sub-phenotypes of paroxysmal AF based on ECG-driven parameters *with subsequent work on clinical patterns and trajectory*
+
+## Phenotyping AF
+
+Project is a "big data" project using over clinical data from 2010 to 2023, supplementing the AF Registry with *data mining* and *machine learning* approaches.
+
+Composed of three elements:
+
+1. ECG data in form 12-leads of 10 second signals, sampled at 500 Hz from 2010 to now
+1. Clinical structured documentation including vitals, medications, labs, echo/study reports from 2010 to now
+1. Clinical unstructured data from MD documentation
+
+## Data overview 
+
+ECG data: 
+
+- 500k ECGs collected from 2010 to 2013
+- 70 Gb of raw XML data (converts to ~50 Gb of WFDB)
+
+Raw clinical data: 
+
+- 43 Gb raw data (70% is from clinical notes alone)
+- 145k unique patients with CVD diagnoses (cardiomyopathy, arrhythmia, vascular dz, etc)
+
+## AF-specific data
+
+ECG data:
+
+- 33k ECG with a diagnosis of an atrial arrhythmia
+- 6k unique patients with a diagnosis of AF confirmed by ECG
+- Of those 6k patients, 95k ECG taken in total (both sinus + AF)
+
+Clinical data:
+
+- Of the 6k patients c- AF on ECG, 3.9k have clinical data available from CCTS
+- Aggregate file size for this 3.9k is < 1 Gb in total
+- 600k ICD diagnoses, 4.5 million lab results, 500k visits, 1.5 million vital sign measurements, 2.9 million medications
+
+## ECG overview
+
+```{r}
+af <- 
+	vroom::vroom("~/projects/cbcd/output/ECG-AFibDiagnosis.tsv") |>
+	mutate(DATETIME = as.POSIXct(paste(DATE, TIME), format = "%m/%d/%Y %H:%M:%S")) |>
+	ggplot(data = _, aes(x = DATETIME)) + geom_histogram()
+
+ecg <- 
+	vroom::vroom("~/projects/cbcd/output/ECG-PatientList.tsv") |>
+	mutate(DATETIME = as.POSIXct(paste(DATE, TIME), format = "%m/%d/%Y %H:%M:%S")) |>
+	ggplot(data = _, aes(x = DATETIME)) + geom_histogram()
+
+ecg +
+	theme_classic()
+```
+
+## Project status
+
+Currently have working pipeline for extracting relevant diagnoses, medications, labs, etc, for additional projects. Can email ashah282@uic.edu for questions or project proposals.
+
+Can see current proposal [here](https://asshah4.github.io/research/t32/phenotype-af.html)
 
 # June 12, 2023
 
