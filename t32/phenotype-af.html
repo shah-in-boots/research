@@ -151,12 +151,16 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a>
   <ul class="collapse">
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#hypothesis" id="toc-hypothesis" class="nav-link" data-scroll-target="#hypothesis">Hypothesis</a></li>
+  </ul></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
+  <ul class="collapse">
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data sources</a></li>
   <li><a href="#key-variables" id="toc-key-variables" class="nav-link" data-scroll-target="#key-variables">Key variables</a></li>
   </ul></li>
+  <li><a href="#methods-and-approach" id="toc-methods-and-approach" class="nav-link" data-scroll-target="#methods-and-approach">Methods and approach</a></li>
   <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
   </ul>
 </nav>
@@ -199,13 +203,16 @@ div.csl-indent {
 </ol>
 <p><span class="citation" data-cites="Wineinger2019">(<a href="#ref-Wineinger2019" role="doc-biblioref"><strong>Wineinger2019?</strong></a>)</span> showed that in terms of duration and episodes of AF, there may be a <em>staccato</em> (short, frequent episodes) versus <em>legato</em> (long, infrequent) patterns to AF, however unknown about underlying clinical relevance.</p>
 <p>In this proposal, I aim to phenotype paroxysmal AF into clinically-relevant subtypes. This serves as the basis for future work for evaluating differences in prognosis (including endocardial mapping patterns to recurrence).</p>
-</section>
-<section id="approach" class="level1">
-<h1>Approach</h1>
+<section id="hypothesis" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis">Hypothesis</h2>
 <p><u>Hypothesis</u>: <em>Diagnoses of paroxysmal AF will segregate into clusters based on electrical, clinical, and structural cardiac properties.</em></p>
 <p>The overall approach will be to use high-dimensionality reduction techniques to create finite clusters that alllow for segregation based on mutliple vector-spaces. This approach also allows for future <em>multi-state modeling</em> and <em>survival</em> techniques based on “events” → ablation, cardioversion, medication intensification, changes in burden, cardiomyopathy, etc.</p>
-<section id="data" class="level2">
-<h2 class="anchored" data-anchor-id="data">Data</h2>
+</section>
+</section>
+<section id="data" class="level1">
+<h1>Data</h1>
+<section id="data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources">Data sources</h2>
 <p>The data that is currently available to answer this is derived from three sources:</p>
 <ol type="a">
 <li>UIC Multi-Ethnic AF Registry: ~1800 patients with various classes of AF that have contributed blood sampling for genetic analysis</li>
@@ -253,9 +260,18 @@ div.csl-indent {
 </ul>
 </div>
 </div>
-<p>The three phases of this project involve data intake and wrangling/tidying, initial analyses, and finally, abstract/manuscript production. This is to be done in sequence for ECG data followed by clinical data, and finally imaging/procedure data.</p>
-<p>We will perform both supervised and unsupervised cluster analysis on the ECG parameters first in attempt to identify if patterns segregate. Subsequently will identify if clinical characteristics vary between groups.</p>
 </section>
+</section>
+<section id="methods-and-approach" class="level1">
+<h1>Methods and approach</h1>
+<p>There are four components of this work that will eventually come-together for analysis.</p>
+<ol type="a">
+<li>Electrocardiography-based rhythm and morphology evaluation: capitalizes on arrhythmia-focused research while utilizing signal processing and ML-based clustering approaches</li>
+<li>Echocardiography and structural imaging assessments of cardiac function: low-level NLP in structured data parsing</li>
+<li>Clinical context including co-morbidities, vitals, medications, procedures: epidemiology-focused contextualization of patient attributes/trajectories</li>
+<li>Changes in parameters with time: survival analyses and recurrent event analyses (multi-state models)</li>
+</ol>
+<p>The initial focus will be on ECG-based signal processing approaches. This will involve downloading/extracting MUSE data in an XML format, converting the binary data into digital, and finally converting to the WFDB format (Waveform Database Software Package). Then, the WFDB binary files can be annotated for QRS location, beat segmentation, P-wave evaluation, etc. Using ML approaches, can subsequently convert and derive intervals, identify/confirm rhythm, and generate related parameters such as vector gradients. This will be used to generate features both in AF and in sinus rhythm. Using cluster-based approaches, can then identify if patterns emerge in ECG subtypes of paroxysmal AF.</p>
 </section>
 <section id="timeline" class="level1">
 <h1>Timeline</h1>

@@ -2,7 +2,11 @@
 title: Phenotyping AF
 subtitle: Project Page
 author: Anish S. Shah, MD|MS
-format: html
+format: 
+  pdf:
+    geometry:
+      - left=0.5in
+      - right=0.5in
 tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
@@ -22,14 +26,16 @@ Two recent studies have documented 4 potential clusters may exist [@Pastori2020;
 
 In this proposal, I aim to phenotype paroxysmal AF into clinically-relevant subtypes. This serves as the basis for future work for evaluating differences in prognosis (including endocardial mapping patterns to recurrence).
 
-# Approach
+## Hypothesis
 
 [Hypothesis]{.underline}: *Diagnoses of paroxysmal AF will segregate into clusters based on electrical, clinical, and structural cardiac properties.*
 
 The overall approach will be to use high-dimensionality reduction techniques to create finite clusters that alllow for segregation based on mutliple vector-spaces. 
 This approach also allows for future *multi-state modeling* and *survival* techniques based on "events" &rarr; ablation, cardioversion, medication intensification, changes in burden, cardiomyopathy, etc.
 
-## Data
+# Data
+
+## Data sources
 
 The data that is currently available to answer this is derived from three sources:
 
@@ -85,16 +91,23 @@ The key variables that will be used are a combination of clinical, electrical, i
 :::
 ::::
 
-The three phases of this project involve data intake and wrangling/tidying, initial analyses, and finally, abstract/manuscript production. 
-This is to be done in sequence for ECG data followed by clinical data, and finally imaging/procedure data. 
+# Methods and approach
 
-We will perform both supervised and unsupervised cluster analysis on the ECG parameters first in attempt to identify if patterns segregate. 
-Subsequently will identify if clinical characteristics vary between groups.
+There are four components of this work that will eventually come-together for analysis.
+
+a. Electrocardiography-based rhythm and morphology evaluation: capitalizes on arrhythmia-focused research while utilizing signal processing and ML-based clustering approaches
+a. Echocardiography and structural imaging assessments of cardiac function: low-level NLP in structured data parsing
+a. Clinical context including co-morbidities, vitals, medications, procedures: epidemiology-focused contextualization of patient attributes/trajectories
+a. Changes in parameters with time: survival analyses and recurrent event analyses (multi-state models)
+
+The initial focus will be on ECG-based signal processing approaches. This will involve downloading/extracting MUSE data in an XML format, converting the binary data into digital, and finally converting to the WFDB format (Waveform Database Software Package). Then, the WFDB binary files can be annotated for QRS location, beat segmentation, P-wave evaluation, etc. Using ML approaches, can subsequently convert and derive intervals, identify/confirm rhythm, and generate related parameters such as vector gradients. This will be used to generate features both in AF and in sinus rhythm. Using cluster-based approaches, can then identify if patterns emerge in ECG subtypes of paroxysmal AF.
 
 # Timeline
 
 ```{mermaid}
 %%| fig-responsive: true
+%%| fig-width: 6
+%%| fig-height:	6 
 gantt
 	dateFormat MM/YYYY
 	axisFormat %b-%Y
@@ -123,3 +136,4 @@ gantt
 		ECG/AF Clusters 								:milestone, ecg, after delta, 7d
 		Phenotype AF										:milestone, phenotype, after rhythm, 7d
 ```
+
