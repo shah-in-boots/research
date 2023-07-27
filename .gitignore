@@ -1,6 +1,8 @@
 # Local storage files
 .DS_Store
 f32/.DS_Store
+t32/.DS_Store
+k23/.DS_Store
 
 # History files
 .Rhistory
