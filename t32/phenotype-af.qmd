@@ -8,7 +8,6 @@ format:
     documentclass: article
     fig-pos: H
     number-sections: true
-    fontfamily: libertinus
 tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
@@ -17,19 +16,32 @@ fig-cap-location: bottom
 
 This proposal describes a year-long research prospecta covering the academic 2023-2024 year. 
 The proposal builds on previous skills and background for a focused project that should serve as both preliminary data and support for a future K23 award.
+The focus of the proposal is on phenotyping of paroxysmal AF alone, however additional data will likely be generated to support the K23 application via preliminary data. 
 
-The focus of the proposal is on phenotyping of paroxysmal AF alone, however additional data will likely be generated to support the K23 additional aims. 
-The K23 aims are loosely the following:
+::: {.column-margin}
 
-1. Identify phenotypes of paroxysmal AF that are predominantly trigger-driven versus scar-mediated
-1. Determine the autonomic signature and electrophysiological properties of autonomically-mediated paroxysmal AF
-1. Evaluate the increased risk of paroxysmal AF due to common and rare genetic variants in cardiovagal receptors in cases of autonomically-mediated paroxysmal AF
+__Aim 1: Identify electrocardiographic phenotypes of paroxysmal AF with structurally normal atria.__
 
-This proposal aims to identify clinical phenotypes of **paroxysmal AF** that have a higher or increased risk of progression to a more *persistent* or *treatment-resistant* class based on burden of disease, electrical and structural remodeling, and the development of both atrial and ventricular cardiomyopathy. 
+:::
 
-[Question]{.underline}: Can we identify which patients will progress more rapidly to persistent AF, or develop complications of AF? Are there electrocardiographic or clinical parameters that predict electrical and structural remodeling?
+This proposal specifies an approach to identify clinical phenotypes of **paroxysmal AF** that have a higher or increased risk of progression to a more *persistent* or *treatment-resistant* class based on burden of disease, electrical and structural remodeling, and the development of both atrial and ventricular cardiomyopathy. 
 
-[Hypothesis]{.underline}: The longitudinal trajectory of pAF can be predicted by subphenotypes of paroxysmal AF based on electrical, clinical, and structural cardiac properties. 
+[Question]{.underline}: 
+
+1. Can we identify which patients will progress more rapidly to persistent AF, or develop complications of AF? 
+1. Are there electrocardiographic or clinical parameters that predict electrical and structural remodeling?
+1. Can the duration or chronicity of AF be predicted based off of ECG parameters?
+
+[Hypothesis]{.underline}: 
+
+**The longitudinal trajectory of pAF can be predicted by subphenotypes of paroxysmal AF based on electrical, clinical, and structural cardiac properties.**
+
+[Proposal]{.underline}: 
+
+1. Identify clusters of paroxysmal AF based on cross-sectional electrical properties in both sinus rhythm and in atrial fibrillation.
+1. Assess the trajectory of AF based on progression of the disease, including burden, severity, and complications (from CVA to both atrial and ventricular cardiomyopathy).
+1. Generate a polygenic risk score for (A) the separate phenotypes of paroxysmal AF and (B) the risk of rapidity of progression of paroxysmal AF
+1. Evaluate disease-specific ECG features for specific pathogenic/likely pathogenic mutants (e.g. TTN variants) within the AF population.
 
 \newpage
 
@@ -124,16 +136,19 @@ The key variables that will be used are a combination of clinical, electrical, i
 
 \newpage
 
-# Methods 
+# Methods
+
+## General methods
 
 The overall approach is inspired by the work of @Nagamine2020 and @Nagamine2022 to phenotype *worsening heart failure*. 
 This is similar to how we will proceed with paroxysmal AF by identifying worsening or *progression* of the disease.
-There are four components of this work that will eventually come-together for analysis.
+There are major components of this work that will eventually come-together for analysis.
 
 a. Electrocardiography-based rhythm and morphology evaluation: capitalizes on arrhythmia-focused research while utilizing signal processing and ML-based clustering approaches
 a. Echocardiography and structural imaging assessments of cardiac function: low-level NLP in structured data parsing
 a. Clinical context including co-morbidities, vitals, medications, procedures: epidemiology-focused contextualization of patient attributes/trajectories
 a. Changes in parameters with time: survival analyses and recurrent event analyses (multi-state models)
+a. Common and rare genetic variants: provides an approach to learn and expand on computational genomics to generate a polygenic risk score 
 
 This project will have two major phases: 1) create clusters or phenotypes of paroxysmal AF based on both ECG and clinical features, 2) evaluate trajectory of disease and rapidity of increase in burden. 
 The outcome is the **trajectory of paroxysmal AF**, which will be defined by the following concepts:
@@ -148,23 +163,62 @@ The outcome is the **trajectory of paroxysmal AF**, which will be defined by the
 
 \newpage
 
-# Detailed Approach
+## Detailed approach
+
+\newpage
+
+### Electrocardiogram processing
 
 1. Intake of all clinical data through CCTS as a superset of information on the patients within the AF Registry. This includes 10+ years of notes, procedures, medications, vitals, etc. Intake of all imaging data, including cardiac MRI and echocardiograms.
 1. Intake of all ECG data, through the MUSE export to XML option, and converting the data into a WFDB-compatible format with data and header files.
 1. Annotation and pre-processing of ECG data, including selection, removing baseline wander, high and low band-pass filtering, interpolation, removal of artifact/noise, and scaling/centering data.
 1. Machine learning approach to segment morphology components and determine rhythm features (e.g. P-wave indices, F-wave dominant frequencies), as seen in @fig-ecg-ai
-1. Generation of clinical features are both cross-sectional and longitudinal, and will be generated from both structured and unstructured text, as in @fig-patient-timeline
-1. Initially, clustering will be performed similar to @fig-clusters, however this will primarily be focused on cross-sectional data and ECG-data. Future analyses will include the unstructured text data. 
-1. After general clusters are determined, can assess trajectory of AF. The trajectories can then *feedback* to generate phenotypical categories. Deep-learning approach will be used to identifying features associated with higher-risk phenotypes of paroxysmal AF, similar to @fig-ecg-dz.
 
 ![@Siontis2021 demonstrates a pipeline for how ECG can be processed from computational perspective. This pipeline has been refined and is somewhat ubiquitous, and more importantly, has high accuracy for beat segmentation and arrhythmia diagnosis.](../figures/siontis-2021-ecg-ai-diagram.png){#fig-ecg-ai}
 
+\newpage
+
+### Clinical data processing
+
+1. Generation of cross-sectional data using visit data, including ICD-9 and ICD-10 codes for diagnoses, encounters/discharges, CPT codes for procedures, and active medications, vital signs, and laboratory values.
+1. Supplementation of cross-sectional data using study results, including echocardiography, device interrogations, procedure text (including ablations and cardioversions).
+1. Creation of longitudinal data using changes in parameters over time, including heart rate & blood pressure, medication intensification, echocardiography parameters, recurrence of arrhythmias, changes in disease burden. 
+1. Evaluation of unstructured text, as in @fig-patient-timeline, using a natural language processing (NLP) approach
+
 ![Clinical features can be generated using both unstructured text, as well as structured imaging data (both electrocardiography and echocardiography based), as done by @Nagamine2020](../figures/nagamine-2022-patient-timeline.png){#fig-patient-timeline}
+
+\newpage
+
+### Clustering analysis
+
+1. Initially, clustering will be performed similar to @fig-clusters, however this will primarily be focused on cross-sectional data and ECG-data. Future analyses will include the unstructured text data. 
+1. After general clusters are determined, can assess trajectory of AF. The trajectories can then *feedback* to generate phenotypical categories. Deep-learning approach will be used to identifying features associated with higher-risk phenotypes of paroxysmal AF.
 
 ![Example of clustering approach to a disease phenotype by @Nagamine2020. Although related to heart failure, can likely be applied to paroxysmal AF and its progressive nature.](../figures/nagamine-2022-heart-failure-clusters.png){#fig-clusters}
 
-![After creating median beats, components of the ECG can be compared between disease and non-disease states. This can be used to help classify risk for disease based on ECG-based features as seen by @vandeLeur2021](../figures/van-de-Leur-2021-ecg-disease-specific-ml.png){#fig-ecg-dz}
+\newpage
+
+### Genetic variant analysis
+
+1. Genetic variant data will be incorporated by using evaluation of common common variants through polygenic risk score. 
+1. Monogenic analysis will be performed as described by @vandeLeur2021 using a combination of case/control for specific cardiomyopathy/arrhythmia genes and the corresponding ECG data. The number of samples can be surprisingly low, as seen in @fig-ecg-dz-methods, to be adequately powered to differentiate phenotypes (@fig-ecg-dz-ml).
+
+::: {layout-ncol=2}
+
+![As per @vandeLeur2021, the power needed for evaluating a single gene is 20-50 individuals, with a 1:4 up to 1:20 case-control pattern.](../figures/van-de-Leur-2021-ecg-dnn-methods.png){#fig-ecg-dz-methods}
+
+![After creating median beats, components of the ECG can be compared between disease and non-disease states. This can be used to help classify risk for disease based on ECG-based](../figures/van-de-Leur-2021-ecg-disease-specific-ml.png){#fig-ecg-dz-ml}
+
+:::
+
+\newpage
+
+# Results
+
+1. Clusters of ECG and clinical parameters that help identify phenotypes of paroxysmal AF, similar to @Nagamine2022 (@fig-clusters).
+1. Hazard/risk between clusters for worsening/progression of paroxysmal AF 
+1. Polygenic risk score to predict progression of paroxysmal AL
+1. ECG features that correlate with pathogenic/likely pathogenic variants in cardiomyopathy/arrhythmia genes (e.g. TTN, 4q25)
 
 \newpage
 

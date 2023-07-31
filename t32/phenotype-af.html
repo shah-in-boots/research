@@ -162,15 +162,25 @@ div.csl-indent {
   <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data sources</a></li>
   <li><a href="#key-variables" id="toc-key-variables" class="nav-link" data-scroll-target="#key-variables">Key variables</a></li>
   </ul></li>
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
-  <li><a href="#detailed-approach" id="toc-detailed-approach" class="nav-link" data-scroll-target="#detailed-approach">Detailed Approach</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#general-methods" id="toc-general-methods" class="nav-link" data-scroll-target="#general-methods">General methods</a></li>
+  <li><a href="#detailed-approach" id="toc-detailed-approach" class="nav-link" data-scroll-target="#detailed-approach">Detailed approach</a>
+  <ul class="collapse">
+  <li><a href="#electrocardiogram-processing" id="toc-electrocardiogram-processing" class="nav-link" data-scroll-target="#electrocardiogram-processing">Electrocardiogram processing</a></li>
+  <li><a href="#clinical-data-processing" id="toc-clinical-data-processing" class="nav-link" data-scroll-target="#clinical-data-processing">Clinical data processing</a></li>
+  <li><a href="#clustering-analysis" id="toc-clustering-analysis" class="nav-link" data-scroll-target="#clustering-analysis">Clustering analysis</a></li>
+  <li><a href="#genetic-variant-analysis" id="toc-genetic-variant-analysis" class="nav-link" data-scroll-target="#genetic-variant-analysis">Genetic variant analysis</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
   <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="phenotype-af.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -196,18 +206,28 @@ div.csl-indent {
 
 </header>
 
-<section id="proposal" class="level1">
+<section id="proposal" class="level1 page-columns page-full">
 <h1>Proposal</h1>
-<p>This proposal describes a year-long research prospecta covering the academic 2023-2024 year. The proposal builds on previous skills and background for a focused project that should serve as both preliminary data and support for a future K23 award.</p>
-<p>The focus of the proposal is on phenotyping of paroxysmal AF alone, however additional data will likely be generated to support the K23 additional aims. The K23 aims are loosely the following:</p>
+<p>This proposal describes a year-long research prospecta covering the academic 2023-2024 year. The proposal builds on previous skills and background for a focused project that should serve as both preliminary data and support for a future K23 award. The focus of the proposal is on phenotyping of paroxysmal AF alone, however additional data will likely be generated to support the K23 application via preliminary data.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Aim 1: Identify electrocardiographic phenotypes of paroxysmal AF with structurally normal atria.</strong></p>
+</div></div><p>This proposal specifies an approach to identify clinical phenotypes of <strong>paroxysmal AF</strong> that have a higher or increased risk of progression to a more <em>persistent</em> or <em>treatment-resistant</em> class based on burden of disease, electrical and structural remodeling, and the development of both atrial and ventricular cardiomyopathy.</p>
+<p><u>Question</u>:</p>
 <ol type="1">
-<li>Identify phenotypes of paroxysmal AF that are predominantly trigger-driven versus scar-mediated</li>
-<li>Determine the autonomic signature and electrophysiological properties of autonomically-mediated paroxysmal AF</li>
-<li>Evaluate the increased risk of paroxysmal AF due to common and rare genetic variants in cardiovagal receptors in cases of autonomically-mediated paroxysmal AF</li>
+<li>Can we identify which patients will progress more rapidly to persistent AF, or develop complications of AF?</li>
+<li>Are there electrocardiographic or clinical parameters that predict electrical and structural remodeling?</li>
+<li>Can the duration or chronicity of AF be predicted based off of ECG parameters?</li>
 </ol>
-<p>This proposal aims to identify clinical phenotypes of <strong>paroxysmal AF</strong> that have a higher or increased risk of progression to a more <em>persistent</em> or <em>treatment-resistant</em> class based on burden of disease, electrical and structural remodeling, and the development of both atrial and ventricular cardiomyopathy.</p>
-<p><u>Question</u>: Can we identify which patients will progress more rapidly to persistent AF, or develop complications of AF? Are there electrocardiographic or clinical parameters that predict electrical and structural remodeling?</p>
-<p><u>Hypothesis</u>: The longitudinal trajectory of pAF can be predicted by subphenotypes of paroxysmal AF based on electrical, clinical, and structural cardiac properties.</p>
+<p><u>Hypothesis</u>:</p>
+<p><strong>The longitudinal trajectory of pAF can be predicted by subphenotypes of paroxysmal AF based on electrical, clinical, and structural cardiac properties.</strong></p>
+<p><u>Proposal</u>:</p>
+<ol type="1">
+<li>Identify clusters of paroxysmal AF based on cross-sectional electrical properties in both sinus rhythm and in atrial fibrillation.</li>
+<li>Assess the trajectory of AF based on progression of the disease, including burden, severity, and complications (from CVA to both atrial and ventricular cardiomyopathy).</li>
+<li>Generate a polygenic risk score for (A) the separate phenotypes of paroxysmal AF and (B) the risk of rapidity of progression of paroxysmal AF</li>
+<li>Evaluate disease-specific ECG features for specific pathogenic/likely pathogenic mutants (e.g.&nbsp;TTN variants) within the AF population.</li>
+</ol>
 </section>
 <section id="background" class="level1">
 <h1>Background</h1>
@@ -289,12 +309,15 @@ div.csl-indent {
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
-<p>The overall approach is inspired by the work of <span class="citation" data-cites="Nagamine2020">Nagamine et al. (<a href="#ref-Nagamine2020" role="doc-biblioref">2020</a>)</span> and <span class="citation" data-cites="Nagamine2022">Nagamine et al. (<a href="#ref-Nagamine2022" role="doc-biblioref">2022</a>)</span> to phenotype <em>worsening heart failure</em>. This is similar to how we will proceed with paroxysmal AF by identifying worsening or <em>progression</em> of the disease. There are four components of this work that will eventually come-together for analysis.</p>
+<section id="general-methods" class="level2">
+<h2 class="anchored" data-anchor-id="general-methods">General methods</h2>
+<p>The overall approach is inspired by the work of <span class="citation" data-cites="Nagamine2020">Nagamine et al. (<a href="#ref-Nagamine2020" role="doc-biblioref">2020</a>)</span> and <span class="citation" data-cites="Nagamine2022">Nagamine et al. (<a href="#ref-Nagamine2022" role="doc-biblioref">2022</a>)</span> to phenotype <em>worsening heart failure</em>. This is similar to how we will proceed with paroxysmal AF by identifying worsening or <em>progression</em> of the disease. There are major components of this work that will eventually come-together for analysis.</p>
 <ol type="a">
 <li>Electrocardiography-based rhythm and morphology evaluation: capitalizes on arrhythmia-focused research while utilizing signal processing and ML-based clustering approaches</li>
 <li>Echocardiography and structural imaging assessments of cardiac function: low-level NLP in structured data parsing</li>
 <li>Clinical context including co-morbidities, vitals, medications, procedures: epidemiology-focused contextualization of patient attributes/trajectories</li>
 <li>Changes in parameters with time: survival analyses and recurrent event analyses (multi-state models)</li>
+<li>Common and rare genetic variants: provides an approach to learn and expand on computational genomics to generate a polygenic risk score</li>
 </ol>
 <p>This project will have two major phases: 1) create clusters or phenotypes of paroxysmal AF based on both ECG and clinical features, 2) evaluate trajectory of disease and rapidity of increase in burden. The outcome is the <strong>trajectory of paroxysmal AF</strong>, which will be defined by the following concepts:</p>
 <ul>
@@ -307,16 +330,15 @@ div.csl-indent {
 <li>Increase in LA volumes</li>
 </ul>
 </section>
-<section id="detailed-approach" class="level1">
-<h1>Detailed Approach</h1>
+<section id="detailed-approach" class="level2">
+<h2 class="anchored" data-anchor-id="detailed-approach">Detailed approach</h2>
+<section id="electrocardiogram-processing" class="level3">
+<h3 class="anchored" data-anchor-id="electrocardiogram-processing">Electrocardiogram processing</h3>
 <ol type="1">
 <li>Intake of all clinical data through CCTS as a superset of information on the patients within the AF Registry. This includes 10+ years of notes, procedures, medications, vitals, etc. Intake of all imaging data, including cardiac MRI and echocardiograms.</li>
 <li>Intake of all ECG data, through the MUSE export to XML option, and converting the data into a WFDB-compatible format with data and header files.</li>
 <li>Annotation and pre-processing of ECG data, including selection, removing baseline wander, high and low band-pass filtering, interpolation, removal of artifact/noise, and scaling/centering data.</li>
 <li>Machine learning approach to segment morphology components and determine rhythm features (e.g.&nbsp;P-wave indices, F-wave dominant frequencies), as seen in <a href="#fig-ecg-ai">Figure&nbsp;2</a></li>
-<li>Generation of clinical features are both cross-sectional and longitudinal, and will be generated from both structured and unstructured text, as in <a href="#fig-patient-timeline">Figure&nbsp;3</a></li>
-<li>Initially, clustering will be performed similar to <a href="#fig-clusters">Figure&nbsp;4</a>, however this will primarily be focused on cross-sectional data and ECG-data. Future analyses will include the unstructured text data.</li>
-<li>After general clusters are determined, can assess trajectory of AF. The trajectories can then <em>feedback</em> to generate phenotypical categories. Deep-learning approach will be used to identifying features associated with higher-risk phenotypes of paroxysmal AF, similar to <a href="#fig-ecg-dz">Figure&nbsp;5</a>.</li>
 </ol>
 <div id="fig-ecg-ai" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -324,24 +346,72 @@ div.csl-indent {
 <figcaption class="figure-caption">Figure&nbsp;2: <span class="citation" data-cites="Siontis2021">Siontis et al. (<a href="#ref-Siontis2021" role="doc-biblioref">2021</a>)</span> demonstrates a pipeline for how ECG can be processed from computational perspective. This pipeline has been refined and is somewhat ubiquitous, and more importantly, has high accuracy for beat segmentation and arrhythmia diagnosis.</figcaption>
 </figure>
 </div>
+</section>
+<section id="clinical-data-processing" class="level3">
+<h3 class="anchored" data-anchor-id="clinical-data-processing">Clinical data processing</h3>
+<ol type="1">
+<li>Generation of cross-sectional data using visit data, including ICD-9 and ICD-10 codes for diagnoses, encounters/discharges, CPT codes for procedures, and active medications, vital signs, and laboratory values.</li>
+<li>Supplementation of cross-sectional data using study results, including echocardiography, device interrogations, procedure text (including ablations and cardioversions).</li>
+<li>Creation of longitudinal data using changes in parameters over time, including heart rate &amp; blood pressure, medication intensification, echocardiography parameters, recurrence of arrhythmias, changes in disease burden.</li>
+<li>Evaluation of unstructured text, as in <a href="#fig-patient-timeline">Figure&nbsp;3</a>, using a natural language processing (NLP) approach</li>
+</ol>
 <div id="fig-patient-timeline" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="../figures/nagamine-2022-patient-timeline.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Figure&nbsp;3: Clinical features can be generated using both unstructured text, as well as structured imaging data (both electrocardiography and echocardiography based), as done by <span class="citation" data-cites="Nagamine2020">Nagamine et al. (<a href="#ref-Nagamine2020" role="doc-biblioref">2020</a>)</span></figcaption>
 </figure>
 </div>
+</section>
+<section id="clustering-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="clustering-analysis">Clustering analysis</h3>
+<ol type="1">
+<li>Initially, clustering will be performed similar to <a href="#fig-clusters">Figure&nbsp;4</a>, however this will primarily be focused on cross-sectional data and ECG-data. Future analyses will include the unstructured text data.</li>
+<li>After general clusters are determined, can assess trajectory of AF. The trajectories can then <em>feedback</em> to generate phenotypical categories. Deep-learning approach will be used to identifying features associated with higher-risk phenotypes of paroxysmal AF.</li>
+</ol>
 <div id="fig-clusters" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="../figures/nagamine-2022-heart-failure-clusters.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Figure&nbsp;4: Example of clustering approach to a disease phenotype by <span class="citation" data-cites="Nagamine2020">Nagamine et al. (<a href="#ref-Nagamine2020" role="doc-biblioref">2020</a>)</span>. Although related to heart failure, can likely be applied to paroxysmal AF and its progressive nature.</figcaption>
 </figure>
 </div>
-<div id="fig-ecg-dz" class="quarto-figure quarto-figure-center anchored">
+</section>
+<section id="genetic-variant-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="genetic-variant-analysis">Genetic variant analysis</h3>
+<ol type="1">
+<li>Genetic variant data will be incorporated by using evaluation of common common variants through polygenic risk score.</li>
+<li>Monogenic analysis will be performed as described by <span class="citation" data-cites="vandeLeur2021">van de Leur et al. (<a href="#ref-vandeLeur2021" role="doc-biblioref">2021</a>)</span> using a combination of case/control for specific cardiomyopathy/arrhythmia genes and the corresponding ECG data. The number of samples can be surprisingly low, as seen in <a href="#fig-ecg-dz-methods">Figure&nbsp;5</a>, to be adequately powered to differentiate phenotypes (<a href="#fig-ecg-dz-ml">Figure&nbsp;6</a>).</li>
+</ol>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-ecg-dz-methods" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="../figures/van-de-Leur-2021-ecg-disease-specific-ml.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;5: After creating median beats, components of the ECG can be compared between disease and non-disease states. This can be used to help classify risk for disease based on ECG-based features as seen by <span class="citation" data-cites="vandeLeur2021">van de Leur et al. (<a href="#ref-vandeLeur2021" role="doc-biblioref">2021</a>)</span></figcaption>
+<p><img src="../figures/van-de-Leur-2021-ecg-dnn-methods.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;5: As per <span class="citation" data-cites="vandeLeur2021">van de Leur et al. (<a href="#ref-vandeLeur2021" role="doc-biblioref">2021</a>)</span>, the power needed for evaluating a single gene is 20-50 individuals, with a 1:4 up to 1:20 case-control pattern.</figcaption>
 </figure>
 </div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-ecg-dz-ml" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="../figures/van-de-Leur-2021-ecg-disease-specific-ml.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;6: After creating median beats, components of the ECG can be compared between disease and non-disease states. This can be used to help classify risk for disease based on ECG-based</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<ol type="1">
+<li>Clusters of ECG and clinical parameters that help identify phenotypes of paroxysmal AF, similar to <span class="citation" data-cites="Nagamine2022">Nagamine et al. (<a href="#ref-Nagamine2022" role="doc-biblioref">2022</a>)</span> (<a href="#fig-clusters">Figure&nbsp;4</a>).</li>
+<li>Hazard/risk between clusters for worsening/progression of paroxysmal AF</li>
+<li>Polygenic risk score to predict progression of paroxysmal AL</li>
+<li>ECG features that correlate with pathogenic/likely pathogenic variants in cardiomyopathy/arrhythmia genes (e.g.&nbsp;TTN, 4q25)</li>
+</ol>
 </section>
 <section id="timeline" class="level1">
 <h1>Timeline</h1>
