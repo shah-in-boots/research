@@ -207,6 +207,20 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
+# July 31, 2023
+
+## AFL/FH Reviewer Concerns {.smaller}
+
+1. How many FDR were directly contacted?
+1. What constitutes an "atrial arrhythmia" in family members? Often asymptomatic. Needs clear definition
+1. Why LOAFL versus EOAFL, instead of EOAFL versus controls?
+1. Why is FH/Race significant only in a single racial group?
+1. Overstatement of importance of FH over *4q25* papers in isolated AFL
+1. How are CVA events labeled as cardioembolic?
+1. Why include CHF as part of arrhythmia risk factors in FDR?
+1. Define excess ETOH usage
+1. Pedigree needs to be labeled more specifically/informatively
+
 # July 24, 2023
 
 ## Active projects
