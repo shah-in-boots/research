@@ -13,6 +13,48 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 08/03/23 | DD
+
+## Outline
+
+1. EP fellowship and timeline
+1. Prioritizing projects
+1. SDOH and arrhythmia outcomes
+1. Phenotyping AF
+
+## EP fellowship {.smaller}
+
+Which locations should I prioritize for in terms of ideal training? When should I ask for personal recommendations?
+
+- Vanderbilt
+- Northwestern
+- UPenn
+- Stanford
+- UCLA
+
+## Prioritizing projects {.smaller}
+
+1. AFL/FH revisions: plan for being done by the weekend
+1. Phenotyping AF: complex project, currently working on ECG analysis with TTN genotypes
+1. Mentees: currently have requests from x2 medical students, x2 residents, and am currently working with x1 student on SDOH/language barriers in AF
+1. Committee: Currently everyone is reviewing my phenotyping proposal - most excitement is for ECG identification of genetic variants
+1. eMERGE: need help with original and revised proposal - okay to ask VUMC staff about supporting/example documents?
+
+## SDOH/Arrhythmia
+
+- Urban Health Disparities grant to evaluate language barriers as mediator of AF care intensification (e.g. medications, cardioversion, referrals)
+- Plans are to expand for ALL arrhythmias and EP referrals
+- Mediation analysis for neighborhood 
+- Roughly `n=3500` English speakers (*control*) and `n=500` Spanish speakers (*exposure*)
+
+## Phenotyping AF
+
+- *Exploration* of identifying ECG features with TTN mutations. Key mutations to include... *TTN*, *FLNC*, *MYBPC3*, *SCN5A*, *LMNA*
+- Of these WES (`n=305`), there are (`n=56`) with TTN variants (different mutations however)
+- Over 1k ECGs associated with this cohort
+- **Approach**: using ECG-based tensors, will trial multiple neural networks and see efficacy, but will require larger validation cohort
+- Requires cluster computing &rarr; likely more cost-effective than purchasing our own hardware
+
 # 07/19/23 | AJS, DD, AA 
 
 ## Outline
@@ -202,7 +244,7 @@ gantt
 
 [Question]{.underline}: Are there common/rare variants associated with these patients with higher risk (or is this a truly acquired disease)?
 
-# 06/09/23 | DD {.smaller}
+# 06/09/23 | DD 
 
 ## End-of-year meeting
 

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="../site_libs/tone/tone.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -30,7 +29,26 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -348,11 +366,65 @@ Anish S. Shah, MD, MS
 
 </section>
 <section>
+<section id="dd" class="title-slide slide level1 center">
+<h1>08/03/23 | DD</h1>
+
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<ol type="1">
+<li>EP fellowship and timeline</li>
+<li>Prioritizing projects</li>
+<li>SDOH and arrhythmia outcomes</li>
+<li>Phenotyping AF</li>
+</ol>
+</section>
+<section id="ep-fellowship" class="slide level2 smaller">
+<h2>EP fellowship</h2>
+<p>Which locations should I prioritize for in terms of ideal training? When should I ask for personal recommendations?</p>
+<ul>
+<li>Vanderbilt</li>
+<li>Northwestern</li>
+<li>UPenn</li>
+<li>Stanford</li>
+<li>UCLA</li>
+</ul>
+</section>
+<section id="prioritizing-projects" class="slide level2 smaller">
+<h2>Prioritizing projects</h2>
+<ol type="1">
+<li>AFL/FH revisions: plan for being done by the weekend</li>
+<li>Phenotyping AF: complex project, currently working on ECG analysis with TTN genotypes</li>
+<li>Mentees: currently have requests from x2 medical students, x2 residents, and am currently working with x1 student on SDOH/language barriers in AF</li>
+<li>Committee: Currently everyone is reviewing my phenotyping proposal - most excitement is for ECG identification of genetic variants</li>
+<li>eMERGE: need help with original and revised proposal - okay to ask VUMC staff about supporting/example documents?</li>
+</ol>
+</section>
+<section id="sdoharrhythmia" class="slide level2">
+<h2>SDOH/Arrhythmia</h2>
+<ul>
+<li>Urban Health Disparities grant to evaluate language barriers as mediator of AF care intensification (e.g.&nbsp;medications, cardioversion, referrals)</li>
+<li>Plans are to expand for ALL arrhythmias and EP referrals</li>
+<li>Mediation analysis for neighborhood</li>
+<li>Roughly <code>n=3500</code> English speakers (<em>control</em>) and <code>n=500</code> Spanish speakers (<em>exposure</em>)</li>
+</ul>
+</section>
+<section id="phenotyping-af" class="slide level2">
+<h2>Phenotyping AF</h2>
+<ul>
+<li><em>Exploration</em> of identifying ECG features with TTN mutations. Key mutations to include… <em>TTN</em>, <em>FLNC</em>, <em>MYBPC3</em>, <em>SCN5A</em>, <em>LMNA</em></li>
+<li>Of these WES (<code>n=305</code>), there are (<code>n=56</code>) with TTN variants (different mutations however)</li>
+<li>Over 1k ECGs associated with this cohort</li>
+<li><strong>Approach</strong>: using ECG-based tensors, will trial multiple neural networks and see efficacy, but will require larger validation cohort</li>
+<li>Requires cluster computing → likely more cost-effective than purchasing our own hardware</li>
+</ul>
+</section></section>
+<section>
 <section id="ajs-dd-aa" class="title-slide slide level1 center">
 <h1>07/19/23 | AJS, DD, AA</h1>
 
 </section>
-<section id="outline" class="slide level2">
+<section id="outline-1" class="slide level2">
 <h2>Outline</h2>
 <ol type="1">
 <li>Long-term timeline</li>
@@ -586,7 +658,7 @@ Anish S. Shah, MD, MS
 <p><u>Question</u>: Are there common/rare variants associated with these patients with higher risk (or is this a truly acquired disease)?</p>
 </section></section>
 <section>
-<section id="dd" class="title-slide slide level1 smaller center">
+<section id="dd-1" class="title-slide slide level1 center">
 <h1>06/09/23 | DD</h1>
 
 </section>
@@ -658,7 +730,7 @@ Anish S. Shah, MD, MS
 </div></aside></section>
 <section id="paper-proposal" class="slide level2 smaller">
 <h2>Paper proposal</h2>
-<p>Project to evaluate ECG-correlates of genetic variants with paroxysmal AF directly, similar to <span class="citation" data-cites="Verweij2020">(<a href="" role="doc-biblioref" onclick="return false;"><strong>Verweij2020?</strong></a>)</span> approach. Basis of <strong>AFGEN fellowship</strong> application.</p>
+<p>Project to evaluate ECG-correlates of genetic variants with paroxysmal AF directly, similar to <span class="citation" data-cites="Verweij2020">Verweij et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span> approach. Basis of <strong>AFGEN fellowship</strong> application.</p>
 <p><u>Exposure</u>: common and rare genetic variants</p>
 <p><u>Outcome</u>:</p>
 <ol type="1">
@@ -702,7 +774,7 @@ Anish S. Shah, MD, MS
 </ul>
 </section></section>
 <section>
-<section id="dd-1" class="title-slide slide level1 center">
+<section id="dd-2" class="title-slide slide level1 center">
 <h1>04/28/23 | DD</h1>
 
 </section>
@@ -759,7 +831,7 @@ Anish S. Shah, MD, MS
 </div>
 </section></section>
 <section>
-<section id="dd-2" class="title-slide slide level1 center">
+<section id="dd-3" class="title-slide slide level1 center">
 <h1>03/31/23 | DD</h1>
 
 </section>
@@ -820,7 +892,7 @@ Anish S. Shah, MD, MS
 </div>
 </section></section>
 <section>
-<section id="dd-3" class="title-slide slide level1 center">
+<section id="dd-4" class="title-slide slide level1 center">
 <h1>03/03/23 | DD</h1>
 
 </section>
@@ -881,12 +953,17 @@ Anish S. Shah, MD, MS
 </div>
 </div>
 </section></section>
-<section id="references" class="title-slide slide level1 center">
+<section id="references" class="title-slide slide level1 smaller scrollable">
 <h1>References</h1>
 <p>::: {#refs}</p>
 
 <div class="footer footer-default">
 
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Verweij2020" class="csl-entry" role="listitem">
+Verweij, Niek, Jan-Walter Benjamins, Michael P. Morley, Yordi J. Van De Vegte, Alexander Teumer, Teresa Trenkwalder, Wibke Reinhard, Thomas P. Cappola, and Pim Van Der Harst. 2020. <span>“The <span>Genetic Makeup</span> of the <span>Electrocardiogram</span>.”</span> <em>Cell Systems</em> 11 (3): 229–238.e5. <a href="https://doi.org/10.1016/j.cels.2020.08.005">https://doi.org/10.1016/j.cels.2020.08.005</a>.
+</div>
 </div>
 </section>
 
@@ -901,7 +978,6 @@ Anish S. Shah, MD, MS
   <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="../site_libs/revealjs/plugin/quarto-tone/tone.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -1094,7 +1170,7 @@ Anish S. Shah, MD, MS
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoTone, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,
