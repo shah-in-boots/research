@@ -26,9 +26,10 @@ fig-cap-location: bottom
 
 Which locations should I prioritize for in terms of ideal training? When should I ask for personal recommendations?
 
-- Vanderbilt
 - Northwestern
+- Vanderbilt
 - UPenn
+- Johns Hopkins
 - Stanford
 - UCLA
 
