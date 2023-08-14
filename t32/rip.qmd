@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 7, day = 24) |>
+	date_build(year = 2023, month = 8, day = 14) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,34 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# August 14, 2023
+
+## AFL/FH {.smaller}
+
+Completed revisions to paper with tentative plans for re-submission.
+
+1. Called `n=31` families to confirm AFL/AF diagnoses and clarify CHF and CVA histories
+1. Re-analyzed pedigrees with multiple definitions of +FH in FDRs as a *sensitivity analysis*
+1. Major findings remain same (and **robust** to adjustment):
+	- +FH doubles risk for "premature" or earlier onset of AFL
+	- EOAFL as corrolary increases likelihood of AF and AFL in FDRs
+	- Black race a/w EOAFL, partially mediated through OSA/ETOH (most prominent in this subgroup)
+1. Resubmission to... **JAHA**, **AHJ**, **IJC**, **BMJ Heart**
+
+## AF/SDOH {.smaller}
+
+- `n=4537` patients (still missing updated CCTS pull of about 2k)
+- 92% have NDI via census tract
+- 52% have social histories completed
+- 81% are English speaking, 10% Spanish
+- Medications/Labs/Vitals/Visits/Comorbidities being evaluated currently
+
+## AF Phenotyping {.smaller}
+
+![P wave detection](../figures/saclova-2022-p-wave-detection.png){#fig-pwave-detection}
+
+Working on ECG beat segmentation and annotation using machine learning approach across multiple leads. Will be applicable across ECG-based projects. Necessary step prior to creating median beats.
 
 # July 31, 2023
 
