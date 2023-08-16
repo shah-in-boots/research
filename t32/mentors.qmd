@@ -48,10 +48,10 @@ knitr::include_graphics(c(ex1, ex2))
 ## Additional projects & training {.smaller}
 
 - [PhysioNet]{.underline}: AF labeling/detection for ML algorithms
-- [SDOH]{.underline}: Involving Alvaro & Amit from epidemiology perspective, evaluating multiple SDOH for AF progression/intensification. Current areas of focus include neighborhood-based resources, insurance, and health literacy
+- [SDOH]{.underline}: Involving Alvaro & Amit from epidemiology perspective, evaluating multiple aspects for AF progression/intensification. Current areas of focus include neighborhood-based resources, insurance, and health literacy
 - [Language/AF]{.underline}: Expanding work from grant-student on this
-- [Computational genetics]{.underline}: finished coursework on this in July, learning how to filter/annotate VCF
-- [EP fellowship]: 4-5 interviews at mid-range programs, pending "reach" programs (e.g. Vanderbilt, Northwestern, JHU)
+- [Computational genetics]{.underline}: Finished coursework on this in July, learning how to filter/annotate VCF
+- [EP fellowship]{.underline}: 4-5 interviews at mid-range programs, pending "reach" programs (e.g. Vanderbilt, Northwestern, JHU)
 
 ---
 
