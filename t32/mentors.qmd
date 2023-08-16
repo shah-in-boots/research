@@ -13,6 +13,48 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 08/16/23 | DD
+
+## AFL/FH
+
+- [ ] Decision on journal submission
+	- Circulation EP or Journal of American Heart Association
+	- American Heart Journal
+	- International Journal of Cardiology
+	- British Medical Journal Heart
+- [x] Revisions to discussions and analyses
+
+---
+
+```{r}
+#| label: fig-flutter-pedigrees
+#| fig-cap: Examples of pedigrees in high prevalence families.
+#| fig-subcap: true
+#| layout-ncol: 2
+ex1 <- fs::path(here::here(), 'figures', 'flutter-ped-ex-1.png')
+ex2 <- fs::path(here::here(), 'figures', 'flutter-ped-ex-2.png')
+knitr::include_graphics(c(ex1, ex2))
+```
+
+## Phenotype AF {.smaller}
+
+- [Progress]{.underline}: on schedule, with support from committee, with goal is to complete ECG-based features by end of August
+- [Machine learning]{.underline}: Generating diagnoses/beat-segmentation through PhysioNet and applying to our local data
+- [Phenotype data]{.underline}: Starting to collect clinical variables to assess status and burden
+- [eMERGE]{.underline}: pending power calculation with Chen, no additional proposal needed with eMERGE, but will need to put together manuscript concept sheet
+
+*Can we phenotype a patient with AF based on ECG alone?*
+
+## Additional projects & training {.smaller}
+
+- [PhysioNet]{.underline}: AF labeling/detection for ML algorithms
+- [SDOH]{.underline}: Involving Alvaro & Amit from epidemiology perspective, evaluating multiple SDOH for AF progression/intensification. Current areas of focus include neighborhood-based resources, insurance, and health literacy
+- [Language/AF]{.underline}: Expanding work from grant-student on this
+- [Computational genetics]{.underline}: finished coursework on this in July, learning how to filter/annotate VCF
+- [EP fellowship]: 4-5 interviews at mid-range programs, pending "reach" programs (e.g. Vanderbilt, Northwestern, JHU)
+
+---
+
 # 08/03/23 | DD
 
 ## Outline
