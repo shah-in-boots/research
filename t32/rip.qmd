@@ -18,7 +18,6 @@ fig-cap-location: bottom
 
 # Libraries
 library(tidyverse)
-library(arcana)
 library(volundr)
 library(hrd)
 library(googledrive)
@@ -176,7 +175,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 8, day = 14) |>
+	date_build(year = 2023, month = 8, day = 21) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +205,37 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# August 21, 2023
+
+## Phenotyping AF {.smaller}
+
+*Identifying phenotypes of AF that are at risk of progression (e.g. developing higher burden, persistent AF, TICM, etc)*
+
+1. Extracted clinical covariates for ~6k patients, stratified by time/onset (this is ~7 million diagnoses)
+1. Extracted medications by time/duration of prescription
+	a. Filtered down to all cardiovascular medications
+	a. Classified medications that are relevant to AF (AC/AP, AAD)
+	a. 2.5 million prescriptions were analyzed
+1. Evaluated ECG related to this population and initiated segmentation/feature extraction
+1. **Goals**: Pull procedure reports to assess burden, and process text-based echocardiography data
+
+## ECG and Genetic Variants {.smaller}
+
+1. Completed the software needed to annotate ECGs on single leads
+1. Will have to evaluate efficacy amongst 12-lead systems (e.g. 5000 x 12 array)
+1. Using [semantic segmentation]{.green} approach to classify waveforms
+1. Have started [cluster-based]{.green} pipeline development for re-calling VCF to identify variants based on...
+	a. Multiple different population panels (different allele frequencies)
+	a. Filter on read depth and quality
+	a. *Will need to learn about other filtering approaches*
+	
+## SDOH/AF/HSR {.smaller}
+
+- Current knowledge gap is interaction between race/ethnicity and socioeconomic status in management of AF [@Essien2021]
+- Similar to AF Registry + Cluster, can use the definition of **treatment intensification** as part of health care differences
+- Parent project to AF/language 
+- Unlike other cohorts (e.g. ARIC had `n=3200` but only `n=500` were Black), have more diverse population pool
 
 # August 14, 2023
 
@@ -802,8 +832,7 @@ Genetics:
 library(shiva)
 x <- read_lspro(file = file.path(find_project_folder(), "research", "t32", "sample-egm.txt"))
 
-ggm(x, channels = c("I", "CS", "HIS M", "HIS D", "RV")) |>
-	add_intervals(channel = "I")
+ggm(x, channels = c("I", "CS", "HIS M", "HIS D", "RV")) 
 ```
 
 
