@@ -19,6 +19,7 @@ fig-cap-location: bottom
 # Libraries
 library(tidyverse)
 library(volundr)
+library(shiva)
 library(hrd)
 library(googledrive)
 library(googlesheets4)
@@ -175,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 8, day = 21) |>
+	date_build(year = 2023, month = 9, day = 8) |>
 	add_days(-30)
 
 progress <-
@@ -205,6 +206,39 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# August 21, 2023
+
+## AF/Genetics {.smaller}
+
+Completed [computational genetics coursework]{.grey} on variant analysis. Although some work has already been done on this, going through the basics will allow us to have in-house [variant annotation pipeline]{.green}
+
+1. Uploaded our ~2G of patients to cluster 
+1. Generated functions to [split VCF]{.green} by individual case 
+1. Identified variant locations 
+
+[Next]{.underline}: Evaluate variants using **PolyPhen** and **SIFT** databases
+
+## ECG/pAF {.smaller}
+
+Recently was asked to review/adjudicate ECG for the PhysioNet challenge on AF prediction algorithms. In line with my interest at phenotying AF based on ECG markers. 
+
+1. Segmentation of individual beats has been automated 
+1. Augmenting the data to individual beats (similar to @vandeLeur2021)
+
+[Next]{.underline}: Training on labeled [AF patients with TTN variants]{.orange}
+
+---
+
+![Annotation of individual beats](../figures/shiva-ecg-annotated.png){#fig-annotated-ecg}
+
+## AF/SDOH
+
+- eMERGE network meeting this week
+- Processing UIC/CCTS data 
+- Uploaded January to June ECG data from MUSE
+- Will still need updates from CCTS for 2023 remaining clinical data
+- Have to solidify definitions for [therapy intensification]{.red} and [AF outcomes]{.red}
 
 # August 21, 2023
 
@@ -322,23 +356,6 @@ Clinical data:
 - Of the 6k patients c- AF on ECG, 3.9k have clinical data available from CCTS
 - Aggregate file size for this 3.9k is < 1 Gb in total
 - 600k ICD diagnoses, 4.5 million lab results, 500k visits, 1.5 million vital sign measurements, 2.9 million medications
-
-## ECG overview
-
-```{r}
-af <- 
-	vroom::vroom("~/projects/cbcd/output/ECG-AFibDiagnosis.tsv") |>
-	mutate(DATETIME = as.POSIXct(paste(DATE, TIME), format = "%m/%d/%Y %H:%M:%S")) |>
-	ggplot(data = _, aes(x = DATETIME)) + geom_histogram()
-
-ecg <- 
-	vroom::vroom("~/projects/cbcd/output/ECG-PatientList.tsv") |>
-	mutate(DATETIME = as.POSIXct(paste(DATE, TIME), format = "%m/%d/%Y %H:%M:%S")) |>
-	ggplot(data = _, aes(x = DATETIME)) + geom_histogram()
-
-ecg +
-	theme_classic()
-```
 
 ## Project status
 
