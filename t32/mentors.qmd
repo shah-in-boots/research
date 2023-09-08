@@ -13,6 +13,36 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 09/08/23 | DD
+
+## EP Interviews (notable figures) {.smaller}
+
+- U. Wisconsin (Eckhardt)
+- UPMC
+- U. Chicago
+- NW (Arora, Passman)
+- U. Arizona (Tung)
+- Boston (Emilia Benjamin)
+- Case Western
+- UC San Diego
+- University of Utah (Freedman)
+- U. Mich
+
+## EP Potential Programs 
+
+- Vanderbilt (Stevenson, PD = Arvindh Kanagasundram)
+- UCLA (Shivkumar, PD = Noel Boyle)
+- UCSF (Marcus, PD = Joshua Moss)
+- Mayo (PD = Sam Asirvatham)
+- JHU (PD = Ronald Berger)
+
+## Research Priorities
+
+1. Genetic variant annotation
+1. ECG & machine learning approaches
+1. EP lab (research & clinical)
+1. AF clinical phenotyping + SDOH
+
 # 08/16/23 | DD
 
 ## AFL/FH
