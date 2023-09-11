@@ -207,7 +207,32 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
-# August 21, 2023
+# September 11, 2023
+
+## AFEQT {.smaller}
+
+Current manuscript has `n=453` individuals split amongst races, with some strength of assocation b/w SES/SDOH and ∆AFEQT. 
+
+- Have `n=760` baseline AFEQT data points, but need roughly `n=600` additional follow-up AFEQT scores
+- Have `n=1506` currently in AF Registry, thus `743` more patients that can be added
+- Would allow us to be powered for mediation analysis, and stratified analyses
+- Able to incorporate [intensification]{.orange} and [recurrence]{.orange} rates now, as well as census tract (vs. zip) and language barriers now
+
+---
+
+[Next]{.underline}: 
+
+1. Complete the additional `600` AFEQT follow-ups
+2. Extract data from CCTS to "flush out" registry data
+3. More specific/appropriate analyses for SDOH including [mediation]{.blue}
+
+## PRS for AF/eMERGE
+
+1. We are meeting with NW and the eMERGE group to validate PRS in AA/HL population here at UIC this week.
+1. Met with Hua Yua Chen to go over PRS power calculations 
+1. Generating multiple sample size/power calculations based on C-statistics seen in other AF/PRS papers &rarr; however may not apply equivalently in AA/HL population as primarily derived from Caucasian populations
+
+# September 8, 2023
 
 ## AF/Genetics {.smaller}
 
