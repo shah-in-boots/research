@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 9, day = 8) |>
+	date_build(year = 2023, month = 9, day = 14) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,25 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# September 14, 2023
+
+## AFEQT
+
+- Spoke with Jerry/Muriel about re-organizing the AFEQT data for manuscript
+- Will need to complete roughly `n=600` follow-up AFEQT
+- Timeline TBD (expect ~ 4-6 weeks)
+- Subsequently will need to extract patient outcomes (intensification, burden) from CCTS pull
+
+## AF/Genetics
+
+Met with AFGen group (Patrick Elinor, Emilia Benjamin), encouraged computational approach in genetics. 
+Currently working to filter and annotate our WES dataset, but expanding to novel gene regions (e.g. neurocardiac receptors) that are not included in general cardiomyopathy/arrhythmia panels.
+
+1. Variant evaluation/assessment of different reference genomes
+1. Variant filtering based on SIFT/PolyPhen
+1. Annotation based on multiple sources (USCS, NCBI, etc)
+1. Inclusion of broader, related genes (e.g. **ADRB2** not included in recent evaluation)
 
 # September 11, 2023
 
