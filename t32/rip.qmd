@@ -207,14 +207,26 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
-# September 14, 2023
+# September 18, 2023
 
-## AFEQT
+## EMR Data
+
+This has been somewhat streamlined to [extract data]{.green} from the CCTS data pull, with full cohort results returned from CCTS.
+
+1. Need to extract AF registry patients and add SDOH, medication intensification, and procedure reports.
+1. Working with Tofovic/Nischal to extract echocardiogram data
+1. Extracted roughly 8k ECG, digitized, and segmented to individual beats, which provides roughly 40k samples for testing amongst the ~300 WES patients
+1. Working with Chen to complete power calculations based on our population and current literature
+
+## AFEQT/SDOH
 
 - Spoke with Jerry/Muriel about re-organizing the AFEQT data for manuscript
 - Will need to complete roughly `n=600` follow-up AFEQT
+- Power calculation suggest would need `n=200` Hispanic/Latinx
 - Timeline TBD (expect ~ 4-6 weeks)
 - Subsequently will need to extract patient outcomes (intensification, burden) from CCTS pull
+- Adding Angela Hussain to data collection as student researcher
+- Check in with Annette to help with Spanish-speaking requirements
 
 ## AF/Genetics
 
