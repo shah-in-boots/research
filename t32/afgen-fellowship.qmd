@@ -1,0 +1,35 @@
+---
+title: Atrial Fibrillation Genetics Fellowship
+author: Anish S. Shah, MD, MS
+institute:
+- University of Illinois at Chicago
+- Emory University
+format: 
+  revealjs:
+    scrollable: true
+    theme: serif
+execute:
+  cache: true
+tbl-cap-location: bottom
+fig-cap-location: bottom
+---
+
+## About Me {.smaller}
+
+[Position]{.underline}: Cardiology/research track fellow in final year of T32/F32, pursuing clinical EP training
+
+[Goal]{.underline}: Become academic EP, focusing on [phenotyping of paroxysmal AF]{.red} and underlying autonomic mechanisms, with plans for K23 in next 1-3 years
+
+[Research skills]{.underline}: Extensive programming background (primarily in `R`, `Python`, and `MATLAB`), [signal processing]{.green} (surface lead/telemetry, intracardiac electrograms), epidemiology/biostatistics (MS @ RSPH), and interest in [computational genetics]{.green} (`PLINK`, `Merlin`, `BioConductor`)
+
+## Project Overview {.smaller}
+
+[Background]{.underline}: Mutations in DCM genes may lead to abnormalities in atrial myocytes, which may manifest as AF due to combination of arrhythmia mechanisms 
+
+[Hypothesis]{.underline}: Subclinical ECG features can distinguish between [pathogenic variants]{.red} in the cardiomyopathy genes (compared to benign and controlled) using DNN approaches.
+
+[Proposal]{.underline}: 
+
+1. Using [computational genetics]{.green} and [signal processing]{.green} approaches, identify *TTN* variants in `n = 300` WES samples. 
+1. Compare single-beat ECG parameters, `n = 40,000`, in sinus to classify case/control status using deep-learning approach. 
+1. Validate model in external data through __AFGen__ collaborations.

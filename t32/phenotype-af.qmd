@@ -237,10 +237,10 @@ gantt
 		MUSE ECG to XML									:done, muse, 05/2023, 07/2023
 		XML ECG to WFDB 								:done, wfdb, 04/2023, 90d
 		Cluster hosting of data					:done, acer, 06/2023, 60d
-		Import CCTS data								:ccts, 05/2023, 90d
+		Import CCTS data								:done, 05/2023, 90d
 	section Data tidying
-		Sinus rhythm parameters 				:nsr, 07/2023, 30d
-		AF rhythm parameters 		 				:paf, 07/2023, 60d
+		Sinus rhythm parameters 				:done, nsr, 07/2023, 30d
+		AF rhythm parameters 		 				:paf, 07/2023, 180d
 		Clinical visits and diagnoses		:visits, 07/2023, 120d
 		Labs and lab changes						:labs, after visits, 30d
 		Clinical medication changes			:meds, after labs, 30d
