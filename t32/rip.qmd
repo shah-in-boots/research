@@ -1206,7 +1206,6 @@ tbl |>
 
 # July 18, 2022
 
-
 ## AF Registry
 
 The AF registry is described [here](https://asshah4.github.io/aflubber). Current issues:

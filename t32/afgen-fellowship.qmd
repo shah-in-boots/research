@@ -16,20 +16,28 @@ fig-cap-location: bottom
 
 ## About Me {.smaller}
 
-[Position]{.underline}: Cardiology/research track fellow in final year of T32/F32, pursuing clinical EP training
+I am a 4th year general CV fellow on the research track (T32/F32) at UIC (2 + 2), pursuing additional fellowship in clinical EP, with a near-term goal of applying for K23 award. My overall interest is in [phenotying paroxysmal AF]{.underline} to better understand [underlying autonomic contributions]{.underline}.
 
-[Goal]{.underline}: Become academic EP, focusing on [phenotyping of paroxysmal AF]{.red} and underlying autonomic mechanisms, with plans for K23 in next 1-3 years
-
-[Research skills]{.underline}: Extensive programming background (primarily in `R`, `Python`, and `MATLAB`), [signal processing]{.green} (surface lead/telemetry, intracardiac electrograms), epidemiology/biostatistics (MS @ RSPH), and interest in [computational genetics]{.green} (`PLINK`, `Merlin`, `BioConductor`)
+- Extensive programming background (primarily in `R`, `Python`, and `MATLAB`), DSP for surface and intracrdiac electrograms, epidemiology/biostatistics (trained @ RSPH)
+- Interest in computational genetics (`PLINK`, `Merlin`, `BioConductor`) for novel rare variant identification
+- Plan to join academic EP position, with long-term goal of better understanding how to individualize and target AF therapies (e.g. cardioneural ablation, trigger-focused, dispersion-based mapping, pharmacological)
 
 ## Project Overview {.smaller}
 
-[Background]{.underline}: Mutations in DCM genes may lead to abnormalities in atrial myocytes, which may manifest as AF due to combination of arrhythmia mechanisms 
+[[Deleterious mutations in sarcomeric proteins]{.underline}, such as *TTN*, have an association with atrial fibrillation [@Yoneda2021], but there are a broad number of VUS that have unknown impact. Genetic variants also [manifest at the level of surface ECG]{.underline}, but have not been studied in VUS [@Verweij2020].]{.tiny}
 
-[Hypothesis]{.underline}: Subclinical ECG features can distinguish between [pathogenic variants]{.red} in the cardiomyopathy genes (compared to benign and controlled) using DNN approaches.
+[__Hypothesis__: Using the *TTN* gene as a case study, ECG features can be extracted that classify and [identify samples with deleterious variants]{.underline}, based on *in silico predictors* (PolyPhen, SIFT, REVEL), in a population with AF.]{.tiny}
 
-[Proposal]{.underline}: 
+__Proposal__:
 
-1. Using [computational genetics]{.green} and [signal processing]{.green} approaches, identify *TTN* variants in `n = 300` WES samples. 
-1. Compare single-beat ECG parameters, `n = 40,000`, in sinus to classify case/control status using deep-learning approach. 
+::: {.tinier}
+1. Use computational genetics approach to quantify potential deleterious *TTN* variants in a training sample of `n = 300` WES samples with AF.
+1. Use single-beat, sinus ECG features (approximately `beats = 40,000`) to train a classification model using a deep neural network approach.
+1. Test model in an additional, prospectively enrolled cohort of `n = 240` with WES over upcoming 3 months.
 1. Validate model in external data through __AFGen__ collaborations.
+:::
+
+## References {.smaller}
+
+::: {#refs}
+:::
