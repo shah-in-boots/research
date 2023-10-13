@@ -1,10 +1,19 @@
 Projects
 	Arrhythmia
 		Atrial fibrillation
+			Social determinants and AFEQT
+			Phenotypes of paroxysmal AF
+		Genetics
+			TTN variants classification by ECG
 	Epidemiology
 		Stress mechanisms
-		R/volundr
+			HRV and CVD mortality
+		Population genetics
+			Polygenic risk scores and AF
 	Computational
-		R/shiva
-		R/orobrs
+		Signal processing
+			R/shiva
+			R/orobrs
+		Biostatistics
+			R/volundr
 
