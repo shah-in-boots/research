@@ -1,11 +1,12 @@
 Ideas
-	Electrophysiology mechanisms
-		Ganglionated plexus evaluation
 	Arrhythmogenesis
-	Stress and autonomic reactivity
-	Atrial fibrillation
 		Genetics
-		Phenotying AF
+		Atrial fibrillation
 	Computational
-		Intracardiac electrogram evaluation
+		Intracardiac electrograms
+			Annotation of coronary sinus EGMs using WFDB system?
+			Can ECG signal predict contents of ablation maps?
+			Can ECG signal before and after AF ablation predict success of ablations?
+		Surface electrocardiography
+	Epidemiology
 
