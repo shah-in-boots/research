@@ -5,8 +5,12 @@ Ideas
 	Computational
 		Intracardiac electrograms
 			Annotation of coronary sinus EGMs using WFDB system?
-			Can ECG signal predict contents of ablation maps?
-			Can ECG signal before and after AF ablation predict success of ablations?
+			Machine learning approach for ECG and EGM annotation
+				P waves could be annotated to corresponding coronary sinus EGM
+				Similarly, could utilize CS to confirm ventricular activation as reflected by QRS complex
+				Trainable in "real time" during EP study to some degree
 		Surface electrocardiography
+			Can ECG signal before and after AF ablation predict success of ablations?
+			Can ECG signal predict contents of ablation maps?
 	Epidemiology
 
