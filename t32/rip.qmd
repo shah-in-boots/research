@@ -207,6 +207,18 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
+# October 22, 2023
+
+## Updates {.smaller}
+
+AFEQT/SDOH: Current focus is on obtaining updated AFEQT, led by *JS*, with goal to complete AFEQT in next several weeks. In parallel, using EMR-based records to evaluate clinical outcomes. It will take roughly 30 hours of statistical work to incorporate the clinical and AFEQT data (roughly 1-2 weeks), once the AFEQTs are done.
+
+AFL/FH: Our good news was that JAHA is willing to review our paper again with revisions. A majority of these will likely be completed within the next 4-5 days (deadline = 10/31) but have to decide on if new/additional FH data collection is needed. The most challenging critique was the potential bias in FH reporting during initial screening. To overcome this, the most thorough option would be to obtain FH data from every patient to avoid systemic errors/bias. However, a limited approach of verifying FH in just the EOAFL may be reasonable. Would like everyone's thoughts here.
+
+Phenotype AF: Two students have joined this effort, *SS* and *SD*, who will be working on initially on the DSP and ML aspects. Current priority is to finish training the models using the TTN data. Unfortunately, this has been delayed with Boards and interviews, but hope to speed this back up in the next 1-2 weeks.
+
+AF/PRS: For our evaluation of the PRS in AF in ethnic cohorts, we are meeting with the eMERGE group (NW). We will need to understand if the PRS can be validated in our UIC cohort, and if there is an existing mechanism to integrate a GIRA with our own EHR.
+
 # September 18, 2023
 
 ## EMR Data
