@@ -25,7 +25,6 @@ website:
 
 bibliography:
   - ../bibliography/publications.bib
-  - ../bibliography/research.bib
   - ../bibliography/cardiology.bib
   - ../bibliography/arrhythmia.bib
   - ../bibliography/computational.bib

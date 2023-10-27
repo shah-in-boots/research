@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 9, day = 14) |>
+	date_build(year = 2023, month = 10, day = 26) |>
 	add_days(-30)
 
 progress <-
@@ -207,7 +207,29 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
-# October 22, 2023
+# October 26, 2023 
+
+## AFL/FH Simple Revisions {.smaller}
+
+- Conform with AHA guidelines on reporting health differences by races
+- Including __Clinical Perspective__ section
+- More detailed methods on patient selection and recruitment
+- Directionality when discussing associations (e.g. weight versus *increased weight*)
+- Add definitions for social drinking
+- Clarify anti-hypertensive agents and selection
+- Clarify results and statistical methods to match discussion
+- Requesting how and why we defined EOAFL as age < 65
+
+## AFL/FH Complex Revisions {.tiny}
+
+1. Concern is the definition of family history to include AF, HF, and CVA, as is __inconsistent__ with the idea of EOAFL as a separate entity. *Unsure how to respond*
+1. Can occult AF be analyzed as a comparative group? *Unsure about an additional dataset. However would strengthen the paper if we had a matched cohort as sensitivity analysis.*
+1. In those without stated FH, the FDR were not contacted - reviewers are concerned that frequently patients are unaware of FH, and recommended contacting every study participant.  *Two paths: 1) Ignore this and state we had a rigorous approach to FH questionnaires; 2) Pursue the ~300 patients with EOAFL and contact FDR to limit confounding.*
+1. Provide a hypothesis and reasoning for the choice of variables. Particularly that of race. *Would refer to genetics and poor representation in other studies.*
+1. Concern for why we emphasized difference between Black race and White/Latinx race. *Would compare Black to non-Black instead*
+1. Hypothesis on inverse relationsihp between HTN/BB/CCB and EOAFL risk 
+
+# October 23, 2023 
 
 ## Updates {.smaller}
 
