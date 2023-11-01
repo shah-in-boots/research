@@ -15,16 +15,70 @@ fig-cap-location: bottom
 
 # 11/01/23 | DD
 
-## Agenda
+## Agenda {.smaller}
 
 1. Dr. Darbar's current priorities & thoughts for Anish
+1. Current limitations/challenges
+	- September/October general cardiology boards
+	- Interview burden
 1. Active projects:
 	- AFL/FH revisions
+	- AFEQT data collection + phenotyping AF
 	- ECG/TTN data cleaning
 1. EP fellowship interview updates
 	- Key locations
 	- Ranking advice
 1. Next steps
+
+## AFL/FH Remaining Questions
+
+- [ ] Can a comparison group with isolated AF be analyzed as part of a sensitivity analysis? 
+- [ ] Why do we think AA population had higher risk of AFL?
+- [ ] Why is there an inverse relationship between AFL and BB/CCB usage?
+- [ ] Why did we combine White with Latinx? 
+
+## AFEQT/SDOH/Phenotying AF {.smaller}
+
+**Quantified** approaches to measure AF, progression, treatment:
+
+- AFEQT on multiple visits *consider including this in EPIC in all AF consult/clinic notes*
+- SDOH will include...
+	- Sociodemographics, including education/income for some participants
+	- Neighborhood deprivation indices
+	- Payment method / insurance types
+- Progression composed of repeat ECG in sinus or AF (including heart rate), medication intensification (now have dosages as well at each visit from CCTS), and intervention (DCCV, PVI)
+
+*My next 3-4 weeks will be focused on cleaning and processing this data from CCTS*
+
+## ECG/TTN 
+
+- Shashank and Darren have joined on this project, will teach them DSP and ML approaches (taking them to the EP lab)
+- Need to train an algorithm to identify chambers (P/QRS/T waves) with improved accuracy over current mechanisms
+- Have to generate training and test data sets
+
+*Next week will be dedicated to ML/signal processing efforts*
+
+## PRS/AF {.smaller}
+
+- Contacted NW about the SNP data
+	- There are 165 SNPs that they utilized
+	- Effect sizes for each SNP were also given (from their cohort)
+- Actively completing power calculations now 
+	- Have to decide how to use our VCF data from WES and from GWAS data
+	- [ ] Can we leverage both the dense array data and WES to match the 165 SNPs?
+- Will meet with Chen to discuss further
+
+## EP Fellowships {.smaller}
+
+- Case Western
+- Houston Methodist (Valderrábano)
+- Northwestern
+- NYU
+- UCSD
+- U. Chicago
+- U. Michigan
+- UPMC (Pittsburgh)
+- U. Wisconsin
 
 # 09/08/23 | DD
 
