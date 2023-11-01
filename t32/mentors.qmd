@@ -13,6 +13,19 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 11/01/23 | DD
+
+## Agenda
+
+1. Dr. Darbar's current priorities & thoughts for Anish
+1. Active projects:
+	- AFL/FH revisions
+	- ECG/TTN data cleaning
+1. EP fellowship interview updates
+	- Key locations
+	- Ranking advice
+1. Next steps
+
 # 09/08/23 | DD
 
 ## EP Interviews (notable figures) {.smaller}
