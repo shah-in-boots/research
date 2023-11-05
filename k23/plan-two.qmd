@@ -1,0 +1,21 @@
+---
+title: Approach to Aim Two
+subtitle: T32/F32 and EP Fellowship to K23 Transition 
+author: Anish S. Shah, MD|MS
+format: 
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    mermaid:
+      theme: neutral
+revealjs-plugins:
+  - attribution
+tbl-cap-location: bottom
+fig-cap-location: bottom
+---
+
+{{< include _aim-two.qmd >}}
+
+## Expansion of aims
+
+- Include mental stress testing

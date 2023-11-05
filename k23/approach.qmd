@@ -325,9 +325,6 @@ flowchart LR
 	epaf --> ppaf --> lpaf
 ```
 
-
-
-
 # Aim #2
 
 ##
