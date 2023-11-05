@@ -1,22 +1,19 @@
 Ideas
-	Arrhythmogenesis
-		Genetics
-		Atrial fibrillation
-		Autonomic nervous system
-			Measuring ANS activity during EPS
-				Measure directly from bilateral stellate ganglia
-				Measure extracardiac activity from recordings from Vein of Marshall
-	Computational
-		Intracardiac electrograms
-			Annotation of coronary sinus EGMs using WFDB system?
-			Machine learning approach for ECG and EGM annotation
-				P waves could be annotated to corresponding coronary sinus EGM
-				Similarly, could utilize CS to confirm ventricular activation as reflected by QRS complex
-				Trainable in "real time" during EP study to some degree
-		Surface electrocardiography
-			Can ECG signal before and after AF ablation predict success of ablations?
-			Can ECG signal predict contents of ablation maps?
-	Epidemiology
-		Stress reactivity
-			ECG markers of stress reactivity
+	ECG signals as they related to EPS and ablation maps
+		Can ECG signal predict contents of ablation maps?
+		Can ECG signal before and after AF ablation predict success of ablations?
+	Machine learning approach for ECG and EGM annotation
+		Annotation of coronary sinus EGMs using WFDB system?
+			Trainable in "real time" during EP study to some degree
+			Similarly, could utilize CS to confirm ventricular activation as reflected by QRS complex
+			P waves could be annotated to corresponding coronary sinus EGM
+	Measuring ANS activity during EPS
+		Where can we measure ANS activity during an EPS?
+			Measure extracardiac activity from recordings from Vein of Marshall
+			Measure directly from bilateral stellate ganglia
+	Mental stress testing
+		Are there effects of mental stress that can be measured during EPS? Do they predict future arrhythmia?
+	Pacing effects on cardiac function
+		Does conduction system pacing improve diastology over RV pacing or biventricular pacing?
+		Does demand pacing effect heart rate variability?
 
