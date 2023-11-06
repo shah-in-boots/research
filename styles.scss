@@ -1,9 +1,23 @@
 /*-- scss:defaults --*/
+
+/* Old theme
 $theme-blue: #2096F2;
 $theme-orange: #F8A725;
 $theme-red: #E91E63;
 $theme-green: #00796B;
+*/
+
 $theme-grey: #455964;
+$theme-blue: #2096F2;
+$theme-red: #B35673;
+
+$theme-orange: #EF6024;
+$theme-yellow: #F0941F;
+$theme-light: #90A19D;
+$theme-green: #196774;
+$theme-dark: #363432;
+
+
 
 
 /*-- scss:rules --*/
@@ -15,6 +29,21 @@ $theme-grey: #455964;
 
 .orange {
 	color: $theme-orange;
+	font-weight: bold;
+}
+
+.yellow {
+	color: $theme-yellow;
+	font-weight: bold;
+}
+
+.dark {
+	color: $theme-dark;
+	font-weight: bold;
+}
+
+.light {
+	color: $theme-light;
 	font-weight: bold;
 }
 
