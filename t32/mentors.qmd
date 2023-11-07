@@ -13,6 +13,26 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 11/07/23 | MM
+
+## Potential Locations {.tiny}
+
+| Program | Comments |
+| - | --- |
+| Case Western | Arruda, Waldo (no NIH-EP)|
+| Houston Methodist | Valderrabano, out-of-match |
+| MCW | supportive faculty, no NIH-EP |
+| Northwestern | Arora leaving, Passman |
+| NYU | Park, recent R01 |
+| UC San Diego | No NIH-EP, Narayan left |
+| UChicago | Arora, Yeshwant |
+| UIC | Darbar, McCauley |
+| UMich | Ghanbari |
+| UPMC | Saba |
+| UTHouston | offered 3-year protected |
+| U Utah | Ranjan, Steinberg |
+| UWisconsin | Eckhardt |
+
 # 11/07/23 | AJS
 
 ## Agenda {.smaller}
