@@ -13,6 +13,18 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 11/07/23 | AJS
+
+## Agenda {.smaller}
+
+1. Opinions on fellowship and future career
+1. Updates after meeting with RL
+1. Revisions to HRV/CVD mortality paper
+	a. Context of MW paper
+	a. Context of JO paper
+1. Consideration of adding AA on to the AFL/FH manuscript
+1. Next steps
+
 # 11/01/23 | DD
 
 ## Agenda {.smaller}
