@@ -19,7 +19,7 @@ fig-cap-location: bottom
 
 ## K23 hypothesis
 
-Sympathetically-mediated paroxysmal AF is a [distinct phenotype of AF]{.underline} that has unique [clinical]{.red} and [electrophysiological characteristics]{.red} that associate with more frequent, *staccato* episodes of AF.
+Sympathetically-mediated paroxysmal AF is a [distinct mechanistic phenotype of AF]{.underline} that has unique [clinical]{.red} and [electrophysiological characteristics]{.red} that associate with more frequent, *staccato* episodes of AF, occurring more commonly in structurally normal atria.
 
 [*This is in comparison to [scar-mediated phenotypes of AF]{.underline}.*]{.grey}
 
