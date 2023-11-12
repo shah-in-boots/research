@@ -7,6 +7,9 @@ Ideas
 			Trainable in "real time" during EP study to some degree
 			Similarly, could utilize CS to confirm ventricular activation as reflected by QRS complex
 			P waves could be annotated to corresponding coronary sinus EGM
+		Annotation system for EGM using a Shiny application?
+			Could import several seconds of a clip and annotate (or adjust annotations)
+			Would need to be able to save the annotations subsequently
 	Measuring ANS activity during EPS
 		Where can we measure ANS activity during an EPS?
 			Measure extracardiac activity from recordings from Vein of Marshall
