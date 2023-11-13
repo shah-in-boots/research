@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 10, day = 26) |>
+	date_build(year = 2023, month = 11, day = 13) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,16 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# November 13, 2023
+
+## Updates {.smaller}
+
+- [ ] AFL/FH paper revisions before resubmission (**deadline 12/05**), would like feedback in next 3-4 days, then *circulate to co-authors*
+- [ ] Clean CCTS/AF Registry data over next 2 weeks, with anticipation of AFEQT being complete in that time-frame
+- [ ] Submit rank list for EP fellowship on Wednesday 11/15
+- [ ] Meetings with Emilia Benjamin and Seung H. Choi in next 2-3 weeks to discuss AF phenotyping project
+- [ ] PRS calculations with SNPs from NW
 
 # October 26, 2023 
 
