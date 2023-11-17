@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 11, day = 13) |>
+	date_build(year = 2023, month = 11, day = 20) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,27 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# November 20, 2023
+
+## AFL/FH updates 
+
+- [ ] Feedback?
+- [ ] If feedback not received by Thanksgiving, should we request extension?
+
+## AF Registry and CCTS Data
+
+1. Have all EMR data from 2010 to 2023 now, which increased file sizes by 30% (now over 70 Gb)
+1. Have all ECG for same patient population (approximately 40 Gb in XML format)
+1. Created `parquet` format to utilize Apache Arrow for I/O
+
+- [ ] Development of filtering pipeline for MRNs, diagnoses, medications, procedures, etc.
+
+## AFEQT/SDOH
+
+Which key variables should be included for evaluation?
+
+
 
 # November 13, 2023
 
