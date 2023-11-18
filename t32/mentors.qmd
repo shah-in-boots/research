@@ -13,6 +13,27 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 11/13/23 | AJS
+
+## Agenda
+
+- High level updates
+	- EP fellowship
+	- Lab meetings / collaborations (Louis Li?)
+- HRV/CVD paper
+- ECG/TTN variants
+- Next projects?
+	- DM/GEH papaer
+	- Twins/cosinor and $\psi$
+	- Stress-decrease and PRS
+	- Stress-decrease and atrial arrhythmias
+
+## HRV/CVD {.tiny}
+
+1. What elements of the results should we make sure to include? As MI, competing risk, etc are taken out, our points made in discussion about cause-specific nature are limited?
+1. By taking out competing risks paragraph, the results section now is < 1 page (too *few* results was previously a concern)
+1. Major findings in discussion should be both high risk and low risk groups? Dichotomous and categorical groups?
+
 # 11/07/23 | MM
 
 ## Potential Locations {.tiny}
