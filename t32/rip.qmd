@@ -211,7 +211,7 @@ tbl_status_updates(progress, effort)
 
 ## AFL/FH updates 
 
-- [ ] Feedback?
+- [ ] Feedback? Should we request for an extension?
 - [ ] If feedback not received by Thanksgiving, should we request extension?
 
 ## AF Registry and CCTS Data
@@ -226,7 +226,14 @@ tbl_status_updates(progress, effort)
 
 Which key variables should be included for evaluation?
 
+## ECG/TTN
 
+Timeline for abstract submission to HRS (12/15):
+
+- Complete initial model training on pathogenic TTN cases
+- Exclude other TTN variants from analysis to have *cleaner* controls
+- Identify appropriate metrics (e.g. AUC, net classification, etc)
+- Identify if segments of ECG are more highly weighted (variance importance)
 
 # November 13, 2023
 
