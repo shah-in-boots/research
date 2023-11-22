@@ -18,7 +18,7 @@ fig-cap-location: bottom
 
 # Libraries
 library(tidyverse)
-library(volundr)
+library(vlndr)
 library(shiva)
 library(hrd)
 library(googledrive)
@@ -212,19 +212,27 @@ tbl_status_updates(progress, effort)
 ## AFL/FH updates 
 
 - [ ] Feedback? Should we request for an extension?
-- [ ] If feedback not received by Thanksgiving, should we request extension?
+- [ ] Circulate amongst co-authors
+
+*Why do we believe that Black v. Non-Black individuals had higher rates of AFL despite balanced risk factors?*
 
 ## AF Registry and CCTS Data
 
-1. Have all EMR data from 2010 to 2023 now, which increased file sizes by 30% (now over 70 Gb)
+1. Have all EMR data from 2010 to 2023 now, which increased file sizes by 30% (now over 70 Gb), and increased `n = 140k` to `n = 210k`
 1. Have all ECG for same patient population (approximately 40 Gb in XML format)
 1. Created `parquet` format to utilize Apache Arrow for I/O
 
 - [ ] Development of filtering pipeline for MRNs, diagnoses, medications, procedures, etc.
 
-## AFEQT/SDOH
+## AFEQT/SDOH {.smaller}
 
-Which key variables should be included for evaluation?
+Which key variables should be included for evaluation? Some of these have been studied, but not in context of AFEQT/symptom burden
+
+- ECG factors at baseline compared to at time of repeat evaluation (heart rate, rhythm)
+- Maintenance of sinus rhythm (percent burden of AF, frequency of ECG in sinus rhythm)
+- Medication changes or intensification (addition of anti-arrhythmic)
+- Referral to cardioversion or ablation
+- Administration of anticoagulation therapy
 
 ## ECG/TTN
 
@@ -1217,7 +1225,7 @@ knitr::include_graphics("../figures/openep-ablation.png")
 #| echo: true
 #| eval: false
 # Forest Plots
-library(volundr)
+library(vlndr)
 m <- rx(
 	Petal.Length ~ X(Sepal.Length) + Petal.Width + S(Species),
 	label = list(
