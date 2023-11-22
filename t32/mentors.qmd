@@ -13,6 +13,37 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 11/21/23 | DD
+
+## Agenda {.smaller}
+
+- High level updates
+	- EP fellowship ranklist
+	- Lab meeting structure
+	- AFL/FH paper: reviewer comments, discussion thoughts
+- AFEQT/SDOH
+	- Missing data issues
+	- Defining outcomes
+- ECG/TTN variants
+	- Tentative plan and timeline
+
+## AFEQT/SDOH
+
+- `n = 51` patients had missing encounter dates but had provided baseline AFEQT scores
+- `n = 248` unique patients from UIC currently with AFEQT at baseline and follow-up (not including JBVA data)
+
+Questions:
+
+- [ ] How should we handle missingness?
+- [ ] Should we call to obtain "baseline" data for recent patients? (approximately 150 additional patients from 2020 to now are available)
+
+## ECG/TTN
+
+1. Working on ECG findings with TTN variants currently
+1. Abstract focus is on trainability of ECG-based model to help differentiate ECG in pathogenic variants of TTN versus controls in patients with atrial myopathy
+1. Expect to have initial analyses complete in first week of December
+1. HRS abstract deadline is December 15th
+
 # 11/13/23 | AJS
 
 ## Agenda
