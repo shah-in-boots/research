@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 11, day = 20) |>
+	date_build(year = 2023, month = 11, day = 27) |>
 	add_days(-30)
 
 progress <-
