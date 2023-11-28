@@ -1,32 +1,30 @@
 ---
-title: "AHA Innovative Project Grant"
-author: "Anish Sanjay Shah, MD/MS<br><span style = 'font-size: 70%;'>Cardiology Fellow<br>University of Illinois at Chicago</span>"
-format: 
-  revealjs:
-    theme: simple
-    scrollable: true
+format: docx
 ---
 
-## Overview
+December 1, 2023
+American Heart Association  
+2023 Innovative Project Award  
 
-- Deadline for LOI: _12/3_, 1 page
-- Deadline for invited proposals: _03/10_, 5 pages
-- No preliminary data accepted
+Our research group, composed of translational cardiologists and cardiac electrophysiologists, propose an innovative approach to a causal, mechanistic step in the development of atrial fibrillation, and seek support for this high-risk, high-reward proposal. 
 
-# Atrial Arrhythmia Modulation Using NPY Y2R Blockade
+Atrial fibrillation (AF) remains the most common arrhythmia worldwide, afflicting over 1% of the population, but there is poor understanding of how the arrhythmia is triggered and maintained. 
+Although left atrial dilatation and fibrosis are heavily coincident in later stages of AF in humans, triggered episodes of AF earlier in its course are poorly defined.
+There is a strong association with the onset of AF episodes with negative emotions, with growing evidence supporting the role of the autonomic nervous system (ANS) in AF, such as sympathovagal imbalance occurring prior to the onset of an episode.
+However, the electrophysiological manifestation of psychological stress remains mostly theoretical, with very few studies (if any) evaluating the sympathetic and vagal contributions to the onset of AF.
 
-## Background
+The atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties. 
+The key mechanism that we will explore is the intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons.
+Adrenergic neurons release catecholamines that directly affect the myocardium, but indirectly as well through neuropeptide Y (NPY). 
+NPY binds to cholinergic neurons through the Y2R receptor, inhibiting firing and leading to vagolytic effects on the myocardium.
 
-- High levels of SNS stimulation are pro-arrhythmic for triggered activity
-- Cross-talk between SNS/PNS at intracardiac level is critical in arrhythmia generation
-- SNS releases both catecholamines + __NPY__
-- __NPY__: causes vagolysis at level of cholinergic neurons through Y2R 
+We propose that in individuals with AF and structurally normal atria, episodes of AF will occur in the setting of vagolysis, and be blunted when vagal stimulation is provided. 
+We hypothesize that 1) vagal stimulation protects against triggered episodes of AF in patients with structurally normal atria, and 2) blockade of vagolysis through vagal nerve stimulation with concomittant increased sympathetic activity protects from AF and improves myocardial conductive properties. 
 
-## Proposal
+We will recruit patients with structurally normal atria and paroxysmal AF who are undergoing electrophysiology study as part of indicated ablative therapy.
+We will perform in-lab mental stress testing to assess changes in action potential duration (APD) using a monophasic action potential catheter. 
+We will then assess the effect of both vagal nervous stimulation and atropine on APD modulation during mental stress provocation.
 
-1. Murine model of pro-atrial arrhythmia
-1. Whole heart + vagus nerve in Langendorf preparation
-1. Vagal stimulation protocol for conduction property modulation
-1. Catecholamine infusion + NPY infusion that removes protection 
-1. NPY Y2R blockade returns vagal protective effect
+If, as we hypothesize, mental stress-induced changes in APD are reversed with vagal nerve stimulation, we will have not only established an innovative, causal mechanism in stress-induced arrhythmias, but identified a potential therapeutic pathway that changes the paradigm of the role of the ANS on AF.
 
+We are thankful for the opportunity to discuss our proposal with the Review Committee, and welcome the opportunity to share any additional information as requested. 
