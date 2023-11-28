@@ -27,10 +27,10 @@ fig-cap-location: bottom
 - ECG/TTN variants
 	- Tentative plan and timeline
 
-## AFEQT/SDOH
+## AFEQT/SDOH {.smaller}
 
 - `n = 51` patients had missing encounter dates but had provided baseline AFEQT scores
-- `n = 248` unique patients from UIC currently with AFEQT at baseline and follow-up (not including JBVA data)
+- `n = 388` unique patients from UIC currently with AFEQT at baseline and follow-up (not including JBVA data), however missing or inappropriate baseline dates (e.g. before AF registry *started*), approximately ~150 additional patients
 
 Questions:
 
