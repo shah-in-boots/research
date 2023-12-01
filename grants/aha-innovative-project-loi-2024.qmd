@@ -1,0 +1,34 @@
+---
+format: 
+  docx: default
+  html: default
+---
+
+December 1, 2023   
+American Heart Association  
+2024 Innovative Project Award  
+
+The applicant, as part of a research team composed of translational cardiologists and cardiac electrophysiologists, proposes an innovative approach to identify the causal mechanisms in the onset of atrial fibrillation, and seek support for this exploratory proposal. The applicant and team have expertise in cardiac imaging, signal processing, and clinical cardiac electrophysiology.
+
+Atrial fibrillation (AF) remains the most common arrhythmia worldwide, afflicting over 1% of the population, but there is poor understanding of how the arrhythmia is triggered and maintained. 
+Left atrial (LA) dilatation and fibrosis heavily coincide with the later stages of AF in humans, but how the onset of an episode of AF begins is not well understood. 
+Previous studies have shown there is a correlation with the onset of paroxysmal AF episodes with negative emotions, with growing evidence supporting the role of the autonomic nervous system (ANS) in AF.
+However, the electrophysiological manifestation of neuropsychological stress remains mostly theoretical, with very few studies (if any) evaluating the sympathetic and vagal contributions to the onset of AF across the spectrum of LA pathology.
+
+The atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties. 
+This includes cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons using multiple neurohormonal signaling pathways. 
+The sympathovagal effect on cardiac tissue however is likely heterogenous within the atria, both due to differential innervation and intra-atrial fibrosis and scar. 
+How [sympathovagal imbalance and conduction through abnormal myocardial tissue]{.underline} come together to create a "perfect storm" to initiate and sustain AF is a critical step in this causal pathway that needs to be better understood.
+
+This applicant proposes to [study approximately 100 individuals with paroxysmal, early-onset AF]{.underline} to obtain structural and functional electrophysiological data to answer this question.  
+The applicant will utilize LA-focused __cardiac magnetic resonance imaging__ to evaluate for areas of atrial fibrosis prior to intracardiac electrophysiological study for comparative conduction mapping.
+Using a research-focused __monophasic action potential mapping catheter__, the applicant will evaluate the changes in __action potential duration (APD)__ in a series of conditions designed to modulate the ANS in *both healthy and scarred regions of atrial myocardium*.
+Changes in APD are thought to precede the onset of a number of triggered arrhythmias.
+__Vagal modulation__ will be performed with: 1) vagal nerve stimulation, 2) vagolysis induced through intravenous of atropine (intracardiac), and 3) simultaneous atropine and vagal nerve stimulation. 
+__Sympathetic modulation__ will be performed with: 1) stellate ganglia stimulation, 2) sympatholysis with intravenous esmolol (systemic), 3) simultaneous stellate ganglia stimulation with sympatholysis.
+Each individual step has been shown to be clinically safe and appropriate in various phases of standard electrophysiological testing, however this will be the first study to evaluate their mechanistic role in arrhythmogenesis.
+The applicant hypothesizes that the [APD will vary between healthy and scar tissue, and that both increased sympathetic activity and vagolysis will exaggerate the differences in APD]{.underline}, suggesting a potential region that may support the onset of AF. 
+
+This exploratory study allows a deep insight into how the onset of AF may occur, how it is sustained, and how potential pathways in this pathway can be modulated through both ablative and non-ablative approaches. 
+These findings will help to *shift the paradigm behind AF arrhythmogenesis*, and will start to bridge the gap of the multifactorial confounders that are associated with AF. 
+The applicant appreciates the opportunity to discuss this proposal with the Review Committee and welcomes the opportunity to share any additional information as requested. 
