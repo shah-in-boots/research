@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 11, day = 27) |>
+	date_build(year = 2023, month = 12, day = 3) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,14 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# December 4, 2023
+
+## HRS abstract proposals {.tiny}
+
+- [TTN variant prediction]{.red}: Would like to submit abstract, currently training an ECG-based model to classify variants (pathogenic vs. controls). Training data of approximately 50-60k sinus beats, with 500-700 "pathogenic TTN cases". *Data augmented by breaking ECGs into individual beats*
+- [AFL & Family History]{.red}: Abstract to be submitted, with equivalent co-authors as manuscript submission
+- [TTN variants and EP outcomes]{.red}: Gursuk/James and others wanted to pursue EP-based outcomes. Have ~9 cases of PVI performed on TTN variants that are non-benign (e.g. VUS or LP/P). 
 
 # November 20, 2023
 
