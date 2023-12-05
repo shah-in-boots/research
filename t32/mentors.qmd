@@ -13,6 +13,14 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 12/05/23 | AJS
+
+## Agenda 
+
+- Review publication & project priorities
+- If time is available, walk through CARRS repository
+- Review of ECG/TTN variant project
+
 # 11/21/23 | DD
 
 ## Agenda {.smaller}
