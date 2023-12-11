@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 12, day = 3) |>
+	date_build(year = 2023, month = 12, day = 10) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,53 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+## December 10, 2023
+
+## ECG & TTN Variant Project {.smaller}
+
+[Background]{.underline}: VUS/LP/P TTN variants are associated with increased incidence of EOAF. The mechanism is not fully understood. 
+
+[Aims]{.underline}: Identify if VUS/LP/P TTN variants may cause structural atrial changes (an atrial myopathy) that is identifiable or ECG, or other related conduction changes. We [aim to identify if VUS/LP/P TTN variants can be classified on ECG using signal processing techniques]{.red}
+
+[Approach]{.underline}: Utilize sinus rhythm ECGs from patients with WES/CGS with paroxysmal AF. Develop beat-by-beat algorithm to identify features that may be associated with VUS/LP/P TTN variants.
+
+## ECG data {.smaller}
+
+- `n = 298` patients were available and had ECG in sinus rhythm at some point from 2010 to 2023
+- This amounted to `n = 7953` unique ECG that were thought to be in sinus rhythm
+- Using a wavelet-decomposition approach, identified morphology of P wave, QRS complex, and T wave and created single-beat structures
+- Using these `n = 51493` beats, there were `n = 6202` [cases]{.red} (which represents `n = 36` individuals with potential pathogenic TTN variants (based on SIFT/PolyPhen scores)
+
+## Model {.smaller}
+
+- Sequential convoluted neural network approach
+- Masking layers to control for `0` values (representing non-depolarized intervals and padded sequences)
+- Use combination of `relu` (rectified linear activation) and increasing `dense` layers (with signal drop out)
+- Categorize using a `softmax` approach for classification between case/control
+- Initial training/testing to __first-beat-only__ approach to avoid sample bias
+- Trained for 10 `epochs` based on model accuracy and minimizing `loss` on each repetition
+
+## Results
+
+[Training]{.red}
+
+- Training accuracy was `88%` with only `2%` loss after total of 10 steps
+
+[Testing]{.red}
+
+- Testing accuracy was `85%` with `13%` loss
+- Example: single beat (control) may have a confidence of `75%` in being a control
+
+---
+
+![First 10 epochs of training](../figures/keras-accuracy-121023.png)
+
+## Next steps
+
+1. Confirm the TTN variant cases, trialing different definitions of pathological beats
+1. Extend analysis to full data-set
+1. Modify approaches in terms of machine learning "layers"
 
 # December 4, 2023
 
