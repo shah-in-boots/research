@@ -230,7 +230,7 @@ The outcome is the **trajectory of paroxysmal AF**, which will be defined by the
 %%| fig-height:	6 
 %%| fig-label: fig-timeline
 gantt
-	dateFormat MM/YYYY
+	dateFormat M/YY
 	axisFormat %b-%Y
 	excludes weekends
 	section Intake

@@ -13,6 +13,31 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 12/13/23 | DD
+
+## Agenda
+
+1. AFGen fellowship updates
+1. K23 mentorship committee expansion
+1. Decision on abstract submissions
+	a. AFL/FH should be submitted
+	a. ECG/TTN should be held until manuscript is complete
+1. AFEQT manuscript strategy
+	a. Co-authors for expanded feedback
+	a. Increasing impact of paper, higher level journal
+1. [Timelines](asshah4.github.io/research)
+
+# 12/12/23 | AJS
+
+## Agenda
+
+1. Review of big-picture items
+1. Current project update on ECG/TTN variants
+	a. https://asshah4.github.io/research/t32/rip.html#/december-10-2023
+1. CARRS project
+	a. Repository
+	a. Paper plan
+
 # 12/05/23 | AJS
 
 ## Agenda 

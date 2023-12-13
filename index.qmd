@@ -3,19 +3,51 @@ title: "Research Efforts"
 format: html
 ---
 
-Douglas Zipes asked the question "Why did he die on Tuesday and not on Monday?"
-In the 50 years since the advent of the coronary care unit,[@Lown1968] we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.[@Hayashi2015; @Lown1977]. 
-The problem can be broken down into two components: 1) a substrate and 2) a trigger. 
-My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. 
-My computational approach parallels these topics by combining biostatistics and digital signal processing.
+The long-term area of focus is in the relationship between stress and arrhythmogenesis, which boils down to the relationship between *substrate*, *trigger*, and *event*. 
 
-This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming):
+> "Why did he die on a Tuesday and not on a Monday?"
+> ~ Douglas Zipes
 
-- The most recent update to this page was as of `r format(Sys.Date(), "%A, %B %d, %Y")` 
-- Please see here for weekly [research-in-progress updates](https://asshah4.github.io/research/t32/rip.html)
-- [Mentored meeting outlines](https://asshah4.github.io/research/t32/mentors.html) are available to document strategy and obstacles on a weekly and biweekly basis
-- Current active goal is to move [towards a K23 award](https://asshah4.github.io/research/k32/planning.html)
-- Current active project is in [phenotyping of AF](https://asshah4.github.io/research/t32/phenotype-af.html)
+In the 50 years since the advent of the coronary care unit [@Lown1968], our ability to prevent arrhythmogenesis has not made a significant difference in clinical outcomes (with a stable 1 out of 5 deaths being secondary to arrhythmia [@Hayashi2015; @Lown1977].
+This topic fascinates me, and has led me to continue to explore this path, with a mixed focus between atrial and ventricular arrhythmias.
+
+# Current projects
+
+This serves as a summary of current/active research projects.
+Weekly, [research-in-progress updates](https://asshah4.github.io/research/t32/rip.html) and general agendas from [mentorship meetings](https://asshah4.github.io/research/t32/mentors.html) are available at these links.
+
+```{mermaid}
+%%| fig-responsive: true
+%%| fig-label: fig-timeline
+gantt
+	dateFormat M/YY
+	axisFormat %b-%Y
+	section ECG/TTN 
+		MUSE ECG to XML 								:done, muse, 05/2023, 07/2023
+		XML ECG to WFDB									:done, wfdb, 04/2023, 90d
+		Sinus rhythm parameters 				:done, nsr, 07/2023, 30d
+		TTN variant selection						:active, vus, 10/2023, 180d
+		Initial ML model training 			:done, ttn1, 11/2023, 60d
+		Model revisions									:active, ttn2, 12/2023, 90d
+		Model explainability 						:ttn3, 01/2023, 120d
+		Manuscript drafting							:after ttn2, 90d
+		Manuscript draft								:milestone, ttn4, after ttn3, 7d 
+	section AFEQT/SDOH
+		Complete AFEQT scoring					:done, scores, 10/2023, 60d
+		Compile dataset from CCTS				:active, afeqt1, 11/2023, 30d
+		Create matching data from JBVA	:after afeqt1, afeqt2, 30d
+		Initial results									:milestone, afeqt1, 01/15/23, 7d
+		Co-author feedback 							:after afeqt2, 14d
+		Manuscript											:milestone, afeqt3, 02/2023, 7d
+	section Phenotype 
+		CCTS/CBCD IRB										:done, 04/2023, 30d
+		Import CCTS data								:done, 05/2023, 60d
+		Cluster hosting of data					:done, 06/2023, 60d
+		Cleaning CCTS data							:active, ccts, 09/2023, 90d
+	section AF/PRS
+	section MSNA/ECG
+	section CARRS/GEH
+```
 
 | | | |
 | --- | --- | --- |
@@ -29,6 +61,8 @@ This serves as a summary of current research progress, updates, and projects (cl
 
 *GEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography*
 
+# Research skills
+
 Technical research skills:
 
 - epidemiology and biostatistics
@@ -38,7 +72,7 @@ Technical research skills:
 - harmonic regression
 - advanced survival models with recurrent events
 
-# Research Foci
+# Previous work
 
 ## Stress and Cardiovascular Epidemiology
 

@@ -19,4 +19,7 @@ Ideas
 	Pacing effects on cardiac function
 		Does conduction system pacing improve diastology over RV pacing or biventricular pacing?
 		Does demand pacing effect heart rate variability?
+		Predict volume overload using a impedance change assessment in heart failure
+			Rate of change of impedance with case/control based on time to first hospitalization
+				Unclear however if this has already been done, and if there is a way to correlate this in a CareLink fashion (e.g. Medtronic)
 

@@ -78,9 +78,11 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -147,7 +149,9 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#research-foci" id="toc-research-foci" class="nav-link active" data-scroll-target="#research-foci">Research Foci</a>
+  <li><a href="#current-projects" id="toc-current-projects" class="nav-link active" data-scroll-target="#current-projects">Current projects</a></li>
+  <li><a href="#research-skills" id="toc-research-skills" class="nav-link" data-scroll-target="#research-skills">Research skills</a></li>
+  <li><a href="#previous-work" id="toc-previous-work" class="nav-link" data-scroll-target="#previous-work">Previous work</a>
   <ul class="collapse">
   <li><a href="#stress-and-cardiovascular-epidemiology" id="toc-stress-and-cardiovascular-epidemiology" class="nav-link" data-scroll-target="#stress-and-cardiovascular-epidemiology">Stress and Cardiovascular Epidemiology</a></li>
   <li><a href="#stress-and-arrhythmognesis" id="toc-stress-and-arrhythmognesis" class="nav-link" data-scroll-target="#stress-and-arrhythmognesis">Stress and Arrhythmognesis</a></li>
@@ -177,15 +181,55 @@ div.csl-indent {
 
 </header>
 
-<p>Douglas Zipes asked the question “Why did he die on Tuesday and not on Monday?” In the 50 years since the advent of the coronary care unit,<span class="citation" data-cites="Lown1968">(<a href="#ref-Lown1968" role="doc-biblioref">Lown and Selzer 1968</a>)</span> we have extensively studied sudden cardiac death but it remains a looming challenge - roughly 1/5 deaths are arrhythmogenic in nature.<span class="citation" data-cites="Hayashi2015 Lown1977">(<a href="#ref-Hayashi2015" role="doc-biblioref">Hayashi, Shimizu, and Albert 2015</a>; <a href="#ref-Lown1977" role="doc-biblioref">Lown, Verrier, and Rabinowitz 1977</a>)</span>. The problem can be broken down into two components: 1) a substrate and 2) a trigger. My area of focus on this problem is that of the trigger, combining stress epidemiology and triggered arrhythmias as the two major aims of my work in neurocardiology. My computational approach parallels these topics by combining biostatistics and digital signal processing.</p>
-<p>This serves as a summary of current research progress, updates, and projects (clinical, translational, and programming):</p>
-<ul>
-<li>The most recent update to this page was as of <code>r format(Sys.Date(), "%A, %B %d, %Y")</code></li>
-<li>Please see here for weekly <a href="https://asshah4.github.io/research/t32/rip.html">research-in-progress updates</a></li>
-<li><a href="https://asshah4.github.io/research/t32/mentors.html">Mentored meeting outlines</a> are available to document strategy and obstacles on a weekly and biweekly basis</li>
-<li>Current active goal is to move <a href="https://asshah4.github.io/research/k32/planning.html">towards a K23 award</a></li>
-<li>Current active project is in <a href="https://asshah4.github.io/research/t32/phenotype-af.html">phenotyping of AF</a></li>
-</ul>
+<p>The long-term area of focus is in the relationship between stress and arrhythmogenesis, which boils down to the relationship between <em>substrate</em>, <em>trigger</em>, and <em>event</em>.</p>
+<blockquote class="blockquote">
+<dl>
+<dt>“Why did he die on a Tuesday and not on a Monday?”</dt>
+<dd>
+Douglas Zipes
+</dd>
+</dl>
+</blockquote>
+<p>In the 50 years since the advent of the coronary care unit <span class="citation" data-cites="Lown1968">(<a href="#ref-Lown1968" role="doc-biblioref">Lown and Selzer 1968</a>)</span>, our ability to prevent arrhythmogenesis has not made a significant difference in clinical outcomes (with a stable 1 out of 5 deaths being secondary to arrhythmia <span class="citation" data-cites="Hayashi2015 Lown1977">(<a href="#ref-Hayashi2015" role="doc-biblioref">Hayashi, Shimizu, and Albert 2015</a>; <a href="#ref-Lown1977" role="doc-biblioref">Lown, Verrier, and Rabinowitz 1977</a>)</span>. This topic fascinates me, and has led me to continue to explore this path, with a mixed focus between atrial and ventricular arrhythmias.</p>
+<section id="current-projects" class="level1">
+<h1>Current projects</h1>
+<p>This serves as a summary of current/active research projects. Weekly, <a href="https://asshah4.github.io/research/t32/rip.html">research-in-progress updates</a> and general agendas from <a href="https://asshah4.github.io/research/t32/mentors.html">mentorship meetings</a> are available at these links.</p>
+<div class="cell" data-fig-responsive="true" data-fig-label="fig-timeline">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">gantt
+    dateFormat M/YY
+    axisFormat %b-%Y
+    section ECG/TTN 
+        MUSE ECG to XML                                 :done, muse, 05/2023, 07/2023
+        XML ECG to WFDB                                 :done, wfdb, 04/2023, 90d
+        Sinus rhythm parameters                 :done, nsr, 07/2023, 30d
+        TTN variant selection                       :active, vus, 10/2023, 180d
+        Initial ML model training           :done, ttn1, 11/2023, 60d
+        Model revisions                                 :active, ttn2, 12/2023, 90d
+        Model explainability                        :ttn3, 01/2023, 120d
+        Manuscript drafting                         :after ttn2, 90d
+        Manuscript draft                                :milestone, ttn4, after ttn3, 7d 
+    section AFEQT/SDOH
+        Complete AFEQT scoring                  :done, scores, 10/2023, 60d
+        Compile dataset from CCTS               :active, afeqt1, 11/2023, 30d
+        Create matching data from JBVA  :after afeqt1, afeqt2, 30d
+        Initial results                                 :milestone, afeqt1, 01/15/23, 7d
+        Co-author feedback                          :after afeqt2, 14d
+    section Phenotype 
+        CCTS/CBCD IRB                                       :done, 04/2023, 30d
+        Import CCTS data                                :done, 05/2023, 90d
+        Cluster hosting of data                 :done, 06/2023, 60d
+        Cleaning CCTS data                          :active, ccts, 09/2023, 90d
+    section AF/PRS
+    section MSNA/ECG
+    section CARRS/GEH
+</pre>
+</div>
+</div>
+</div>
+</div>
 <table class="table">
 <tbody>
 <tr class="odd">
@@ -226,6 +270,9 @@ div.csl-indent {
 </tbody>
 </table>
 <p><em>GEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography</em></p>
+</section>
+<section id="research-skills" class="level1">
+<h1>Research skills</h1>
 <p>Technical research skills:</p>
 <ul>
 <li>epidemiology and biostatistics</li>
@@ -235,8 +282,9 @@ div.csl-indent {
 <li>harmonic regression</li>
 <li>advanced survival models with recurrent events</li>
 </ul>
-<section id="research-foci" class="level1">
-<h1>Research Foci</h1>
+</section>
+<section id="previous-work" class="level1">
+<h1>Previous work</h1>
 <section id="stress-and-cardiovascular-epidemiology" class="level2">
 <h2 class="anchored" data-anchor-id="stress-and-cardiovascular-epidemiology">Stress and Cardiovascular Epidemiology</h2>
 <p><em>Physiological and psychological stress and cardiovascular mortality, from a neurocardiac perspective</em></p>
