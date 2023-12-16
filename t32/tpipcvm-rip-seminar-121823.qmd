@@ -1,0 +1,171 @@
+---
+title: Autonomic and Structural Mechanisms in Atrial Fibrillation
+subtitle: T32/TPIPCVM Seminar
+date: December 18, 2023
+date-format: full
+author: Anish S. Shah, MD | MS
+institute: 
+- Division of Cardiology, University of Illinois Chicago 
+- Rollins School of Public Health, Emory University
+format: 
+  revealjs:
+    scrollable: true
+    slide-level: 2
+revealjs-plugins:
+  - attribution
+tbl-cap-location: bottom
+fig-cap-location: bottom
+---
+
+```{r}
+#| label: setup
+#| echo: false
+library(tidyverse)
+library(gt)
+library(ggsci)
+library(scales)
+library(ggdag)
+library(shiva)
+library(hrd)
+```
+
+# Introduction
+
+## Objectives
+
+1. Know the general clinical mechanisms in arrhythmogenesis
+1. Differentiate between substrate and trigger contributions 
+1. Understand methods to evaluate structural changes 
+1. Recognize autonomic influences 
+1. Future directions
+
+## {.tiny}
+
+| Abbreviations | Definitions |
+| - | --- |
+| (p)AF | (paroxysmal) atrial fibrillation |
+| AAD | anti-arrhythmic drugs |
+| ANS/SNS/PNS | autonomic/sympathetic/parasympathetic nervous sytem |
+| CAD, MI | coronary artery disease, myocardial ischemia/infarction |
+| EPS, EAM | electrophysiology study, electro-anatomical mapping |
+| GP | ganglionated plexi |
+| HF, LF HRV | high & low frequency heart rate variability |
+| LA, RA, LV, RV | left/right atrium/ventricle |
+| NPY, Gal | neuropeptide Y, galanin |
+| VNS | vagal nerve stimulation |
+
+---
+
+_A consistent color scheme is provided throughout._
+
+. . .
+
+- [Computational]{.green} & [digital signal processing]{.green} methods will be noted in [green]{.green}
+- [Clinical data]{.red} that requires a physician or cardiologist to obtain are noted in [red]{.red}
+- [Arrhythmia]{.yellow} and [electrical]{.yellow} focused work is noted in [yellow]{.yellow}
+- [Epidemiological]{.blue} or [genetic]{.blue} based methods are noted in [blue]{.blue}
+
+# Mechanism Classification
+
+## Limitations in classification
+
+## Basic arrhythmia mechanisms
+
+- Triggered afterdepolarizations
+- Enhaned automaticity
+- Reentrant activity
+
+## Coumel's triangle
+
+```{r}
+#| label: fig-coumel-simple
+#| fig-cap: "Simplified Coumel's triangle"
+dag <- 
+	dagify(
+	ans ~~ substrate,
+	trigger ~~ ans,
+	substrate ~~ trigger,
+	exposure = 'ans',
+	outcome = 'substrate',
+	labels = list(
+		ans = 'Autonomic Factors',
+		trigger = 'Pulmonary and Extrapulmonary Triggers',
+		substrate = 'Atrial Substrate'
+	)
+) |>
+	tidy_dagitty(layout = 'kk') |>
+	node_status()
+
+ggplot(dag, aes(x = x, y = y, xend = xend, yend = yend, color = status)) +
+	geom_dag_edges(
+		#arrow_directed = grid::arrow(length = grid::unit(10, "pt"), type = "closed"),
+		#arrow_bidirected = grid::arrow(length = grid::unit(10, "pt"), type = "open", ends = "both"),
+		edge_alpha = 0.8,
+		curvature = 0.0
+	) +
+	geom_dag_point(size = 20) +
+	geom_dag_label_repel(
+		aes(label = label),
+		force = 1,
+		nudge_y = 0.5,
+		alpha = 0.9,
+		size = 5
+	) +
+	scale_color_manual(values = c("outcome" = "#f0941f", "exposure" = "#196774"), na.value = "#363432") +
+	theme_dag(legend.position = "none")
+```
+
+---
+
+![Coumel's triangle for AF from @Cheniti2018](../figures/cheniti-2018-coumel-triangle.jpg){#fig-coumel-complex}
+
+## Differential contributions
+
+- Spectrum between trigger-predominant and substrate-predominant
+- Length of episodes of pAF (staccato v. legato)
+
+# Substrate-Based Approaches
+
+## Atrial myopathy
+
+- Cardiac MRI
+- TTE & TEE
+- EPS data
+- Utah Criteria
+
+## Atrial size
+
+- Boundaries
+- Rotors
+
+## Genetic influences on substrate
+
+## [TTN variants]{.blue}
+
+- TTN protein in the heart
+- Relationship with AF
+- Does it cause a myopathy?
+
+## [Electrocardiography evaluation]{.green}
+
+- Software for P wave detection
+- Machine learning model
+
+# [Autonomic Influences]{.yellow}
+
+## Review of stress
+
+- Stress and triggers of AF
+- Neurocardiac pathways
+
+## Non-PVI ablative strategies
+
+## Neurocardiac axis
+
+## Stress and arrhythmias
+
+# Future Directions
+
+## Novel approaches
+
+## K23 aims

@@ -32,9 +32,9 @@ bibliography:
 
 format:
   html:
-    theme: 
-      - flatly  
-      - theme.scss  
+    theme:
+      - flatly
+      - theme.scss
     highlight: solarized-light
     toc: true
     toc_float: true
@@ -42,9 +42,9 @@ format:
     reference-doc: template.docx
     notes-after-punctuation: true
   revealjs:
-    theme: 
-      - simple  
-      - theme.scss  
+    theme:
+      - simple
+      - theme.scss
     slide-tone: false
     fig-cap-location: bottom
     fig-align: center
