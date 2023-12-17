@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
@@ -370,16 +435,6 @@ Anish S. Shah, MD | MS
 <h1>Introduction</h1>
 
 </section>
-<section id="objectives" class="slide level2">
-<h2>Objectives</h2>
-<ol type="1">
-<li>Know the general clinical mechanisms in arrhythmogenesis</li>
-<li>Differentiate between substrate and trigger contributions</li>
-<li>Understand methods to evaluate structural changes</li>
-<li>Recognize autonomic influences</li>
-<li>Future directions</li>
-</ol>
-</section>
 <section id="section" class="slide level2 tiny">
 <h2></h2>
 <table>
@@ -444,93 +499,340 @@ Anish S. Shah, MD | MS
 <li><span class="blue">Epidemiological</span> or <span class="blue">genetic</span> based methods are noted in <span class="blue">blue</span></li>
 </ul>
 </div>
+</section>
+<section id="objectives" class="slide level2">
+<h2>Objectives</h2>
+<ol type="a">
+<li>Know the general clinical mechanisms in arrhythmogenesis</li>
+<li>Differentiate between substrate and trigger contributions</li>
+<li>Understand methods to evaluate structural changes</li>
+<li>Recognize autonomic influences on arrhythmogenesis</li>
+</ol>
+</section>
+<section id="outline" class="slide level2 tiny">
+<h2>Outline</h2>
+<ol type="1">
+<li>Historical context of atrial fibrillation</li>
+<li>Importance of both autonomic, structural, and triggered factors
+<ol type="a">
+<li>Coumel’s triangle of arrhythmology</li>
+<li>Comparative anatomy and physiology</li>
+</ol></li>
+<li><span class="green">Substrate considerations in arrhythmic risk</span>
+<ol type="a">
+<li>Phenotyping substrates</li>
+<li>Genetic variants in atrial myopathy</li>
+</ol></li>
+<li><span class="yellow">Autonomic influences in arrhythmic risk</span>
+<ol type="a">
+<li>Neurocardiac axis and stress pathways</li>
+<li>Role of genetics</li>
+</ol></li>
+<li><span class="red">Future directions</span></li>
+</ol>
 </section></section>
 <section>
-<section id="mechanism-classification" class="title-slide slide level1 center">
-<h1>Mechanism Classification</h1>
+<section id="historical-context" class="title-slide slide level1 center">
+<h1>Historical Context</h1>
 
 </section>
-<section id="limitations-in-classification" class="slide level2">
-<h2>Limitations in classification</h2>
-</section>
-<section id="basic-arrhythmia-mechanisms" class="slide level2">
-<h2>Basic arrhythmia mechanisms</h2>
+<section id="atrial-fibrillation-overview" class="slide level2">
+<h2>Atrial fibrillation overview</h2>
+<p><em>A supraventricular tachyarrhythmia characterized by uncoordinated atrial activation with subsequent deterioration of atrial mechanical function</em></p>
 <ul>
-<li>Triggered afterdepolarizations</li>
-<li>Enhaned automaticity</li>
-<li>Reentrant activity</li>
+<li>Most common sustained arrhythmia in adults</li>
+<li>~40% develop AF after age of 55 years</li>
+<li>Risk factors include: age, CAD, male sex, European ancestry, hypertension, obesity, smoking, sleep apnea, family history of AF in relatives</li>
+<li>20% of new diagnoses are secondary to acute precipitant (e.g.&nbsp;surgery, pneumonia)</li>
 </ul>
 </section>
-<section id="coumels-triangle" class="slide level2">
-<h2>Coumel’s triangle</h2>
-
-<img data-src="tpipcvm-rip-seminar-121823_files/figure-revealjs/fig-coumel-simple-1.png" class="img-fluid r-stretch quarto-figure-center" width="960"><p class="caption">Figure&nbsp;1: Simplified Coumel’s triangle</p></section>
 <section class="slide level2">
 
 
-<img data-src="../figures/cheniti-2018-coumel-triangle.jpg" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;2: Coumel’s triangle for AF from <span class="citation" data-cites="Cheniti2018">Cheniti et al. (<a href="#/k23-aims" role="doc-biblioref" onclick="">2018</a>)</span></p></section>
-<section id="differential-contributions" class="slide level2">
+<img data-src="../figures/rivner-2020-af-begets-af.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;1: The progression after developing AF can be cyclical, such that <strong>AF begets AF</strong>, adapted from <span class="citation" data-cites="Rivner2020">Rivner (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span></p></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/packer-2020-atrial-myopathy.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;2: <span class="citation" data-cites="Packer2020">Packer (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span> describes how AF can be preceded by atrial myopathy, predominantly seen with enlarged left atria due to atrial mechanical dysfunction.</p></section>
+<section id="comparative-physiology" class="slide level2">
+<h2>Comparative physiology</h2>
+<ul>
+<li>Larger atria are seen in larger mammals, such as elephants and whales</li>
+<li>Prevalence of AF is not consistently associated with atrial size</li>
+<li>Atrial fibrillation is the most common cardiac abnormality in horses <span class="citation" data-cites="Decloedt2020">(<a href="#/references" role="doc-biblioref" onclick="">Decloedt et al. 2020</a>)</span>, but rare in underwater mammals</li>
+<li>Atrial arrhythmias in aquatic mammals are related to diving (baroreceptor and diving reflexes) <span class="citation" data-cites="Williams2015">(<a href="#/references" role="doc-biblioref" onclick="">Williams et al. 2015</a>)</span></li>
+</ul>
+<p><em>Is there more to atrial fibrillation than atrial size?</em></p>
+</section>
+<section class="slide level2">
+
+
+<img data-src="../figures/meijler-1985-comparative-av-conduction.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;3: Atrioventricular conduction is a consequence of overall mass (and cardiac mass), due to allometric scaling, <span class="citation" data-cites="Meijler1985">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Meijler1985?</strong></a>)</span></p></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/meijler-1992-whale-ecg-strip.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;4: An example strip of a humpback whale, with visible P waves, obtained by <span class="citation" data-cites="Meijler1992">Meijler et al. (<a href="#/references" role="doc-biblioref" onclick="">1992</a>)</span></p></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/meijler-1992-whale-signal-averaged-ecg.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;5: Signal-averaged ECG showing a PR interval of 400 ms, a QRS duration of 200 ms, and a QT interval of 700 ms, generated by <span class="citation" data-cites="Meijler1992">Meijler et al. (<a href="#/references" role="doc-biblioref" onclick="">1992</a>)</span></p></section>
+<section id="arrhythmia-mechanisms" class="slide level2">
+<h2>Arrhythmia mechanisms</h2>
+<p><em>Multiple mechanisms are at play in AF simultaneously in AF, and may manifest in a similar fashion.</em></p>
+<p><span class="citation" data-cites="Antzelevitch2012">(<a href="#/references" role="doc-biblioref" onclick=""><strong>Antzelevitch2012?</strong></a>)</span>:</p>
+<ul>
+<li>Re-entry <em>functionally</em> or around scar/fibrosis</li>
+<li>Local firing due to increased/enhanced automaticity</li>
+<li>Triggered activity due to early or delayed afterdepolarizations</li>
+</ul>
+</section>
+<section class="slide level2">
+
+
+<img data-src="../figures/michaud-2021-af-types.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;6: Types and triggers of AF, adapted from <span class="citation" data-cites="Michaud2021">Michaud and Stevenson (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></p></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/grune-2021-arrhythmia-mechanisms.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;7: Basic mechanisms of arrhythmia adapted from <span class="citation" data-cites="Grune2021">Grune, Yamazoe, and Nahrendorf (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></p></section>
+<section id="coumels-triangle" class="slide level2">
+<h2>Coumel’s triangle</h2>
+
+<img data-src="tpipcvm-rip-seminar-121823_files/figure-revealjs/fig-coumel-simple-1.png" class="img-fluid r-stretch quarto-figure-center" width="960"><p class="caption">Figure&nbsp;8: Simplified Coumel’s triangle</p></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/cheniti-2018-coumel-triangle.jpg" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;9: Coumel’s triangle for AF from <span class="citation" data-cites="Cheniti2018">Cheniti et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span></p></section>
+<section id="differential-contributions" class="slide level2 smaller">
 <h2>Differential contributions</h2>
 <ul>
 <li>Spectrum between trigger-predominant and substrate-predominant</li>
-<li>Length of episodes of pAF (staccato v. legato)</li>
+<li>Length of episodes of AF are related to both triggers and substrate
+<ul>
+<li><em>Staccato</em> subtypes are short and frequent, but predominantly in lower-burden patients</li>
+<li><em>Legato</em> subtypes are long and infrequent, but predominantly in higher-burden patients</li>
+</ul></li>
+<li>Underlying mechanism of arrhythmia likely vary between these types in terms of <strong>onset</strong> and <strong>maintenance</strong> of arrhythmia</li>
 </ul>
-</section></section>
+</section>
+<section class="slide level2">
+
+
+<img data-src="../figures/wineinger-2019-paf-duration-subtypes.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;10: Atrial fibrillation burden and episode duration are distinct, and subtypes exist. <em>Legato</em> is in upper left, and <em>staccato</em> is in lower right. Adapted from <span class="citation" data-cites="Wineinger2019">Wineinger et al. (<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span></p></section></section>
 <section>
-<section id="substrate-based-approaches" class="title-slide slide level1 center">
-<h1>Substrate-Based Approaches</h1>
+<section id="substrate-considerations" class="title-slide slide level1 center">
+<h1>Substrate Considerations</h1>
 
 </section>
-<section id="atrial-myopathy" class="slide level2">
-<h2>Atrial myopathy</h2>
+<section id="fibrosis-and-scar" class="slide level2">
+<h2>Fibrosis and scar</h2>
 <ul>
-<li>Cardiac MRI</li>
-<li>TTE &amp; TEE</li>
-<li>EPS data</li>
-<li>Utah Criteria</li>
+<li>AF is sustained predominantly through <span class="yellow">re-entry mechanisms</span></li>
+<li>Scar and low-voltage areas become regions for functional re-entry</li>
+<li>Therapeutic strategies have targeted limiting the available area for re-entry to occur <span class="citation" data-cites="Calkins2017">(<a href="#/references" role="doc-biblioref" onclick="">Calkins et al. 2017</a>)</span>
+<ul>
+<li>Catheter ablation, with 60-90% 1-year AF-free survival</li>
+<li>Surgical maze procedure, with 80% success</li>
+</ul></li>
 </ul>
 </section>
-<section id="genetic-influences-on-substrate" class="slide level2">
+<section class="slide level2">
+
+
+<img data-src="../figures/goldberger-2015-atrial-imaging.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;11: Multimodal imaging approaches are available to visualize fibrosis and scar in the atria, <span class="citation" data-cites="Goldberger2015">Goldberger et al. (<a href="#/references" role="doc-biblioref" onclick="">2015</a>)</span></p></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/goldberger-2015-la-voltage-map.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Clinically, low-voltage areas, potential surrogates for scar and fibrosis, can be visualized during electrophysiology studies.</p></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/mahnkopf-2010-utah-criteria.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;12: Low voltage areas can be quantified via MRI, such as by the Utah Criteria (<span class="citation" data-cites="Mahnkopf2010">Mahnkopf et al. (<a href="#/references" role="doc-biblioref" onclick="">2010</a>)</span>)</p></section>
+<section id="genetic-influences-on-substrate" class="slide level2 tiny">
 <h2>Genetic influences on substrate</h2>
-</section>
-<section id="ttn-variants" class="slide level2">
-<h2><span class="blue">TTN variants</span></h2>
 <ul>
-<li>TTN protein in the heart</li>
-<li>Relationship with AF</li>
-<li>Does it cause a myopathy?</li>
+<li>A modifier of cardiac substrate are genetic variants</li>
+<li><span class="citation" data-cites="Choi2018">Choi et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span> identified TTN loss-of-function variants and early-onset AF (most commonly associated genetic variation with AF)</li>
+<li>Manifestation of atrial fibrillation occurs through <span class="red">atrial myopathy</span>, which may be identified through different imaging modalities including <span class="green">ECG</span> <span class="citation" data-cites="Verweij2020">(<a href="#/references" role="doc-biblioref" onclick="">Verweij et al. 2020</a>)</span></li>
+</ul>
+<p><u><strong>Project</strong></u>: Using the <em>TTN</em> gene as a case study, ECG features can be extracted that classify and <u>identify samples with deleterious variants</u>, based on <em>in silico predictors</em> (PolyPhen, SIFT, REVEL), in a population with AF.]</p>
+</section>
+<section id="ecg-prediction-of-pathogenic-ttn-variants" class="slide level2 smaller">
+<h2>ECG prediction of pathogenic TTN variants</h2>
+<p><u>Background</u>: VUS/LP/P TTN variants are associated with increased incidence of EOAF. The mechanism is not fully understood.</p>
+<p><u>Aims</u>: Identify if VUS/LP/P TTN variants may cause structural atrial changes (an atrial myopathy) that is identifiable or ECG, or other related conduction changes. We <span class="red">aim to identify if VUS/LP/P TTN variants can be classified on ECG using signal processing techniques</span></p>
+<p><u>Approach</u>: Utilize sinus rhythm ECGs from patients with WES/CGS with paroxysmal AF. Develop beat-by-beat algorithm to identify features that may be associated with VUS/LP/P TTN variants.</p>
+</section>
+<section id="ecg-data" class="slide level2 smaller">
+<h2>ECG data</h2>
+<ul>
+<li><code>n = 298</code> patients were available and had ECG in sinus rhythm at some point from 2010 to 2023</li>
+<li>This amounted to <code>n = 7953</code> unique ECG that were thought to be in sinus rhythm</li>
+<li>Using a wavelet-decomposition approach, identified morphology of P wave, QRS complex, and T wave and created single-beat structures</li>
+<li>Using these <code>n = 51493</code> beats, there were <code>n = 6202</code> <span class="red">cases</span> (which represents <code>n = 36</code> individuals with potential pathogenic TTN variants (based on SIFT/PolyPhen scores)</li>
+<li>Convoluted neural network approach to classify cases/controls</li>
 </ul>
 </section>
-<section id="electrocardiography-evaluation-of-the-p-wave" class="slide level2">
-<h2><span class="green">Electrocardiography evaluation of the P-wave</span></h2>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="|1|2|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>fp <span class="ot">&lt;-</span> <span class="fu">system.file</span>(<span class="st">'extdata'</span>, <span class="at">package =</span> <span class="st">'shiva'</span>)</span>
+<span id="cb1-2"><a href="#cb1-2"></a>nsr <span class="ot">&lt;-</span> shiva<span class="sc">::</span><span class="fu">read_wfdb</span>(<span class="st">'muse-sinus'</span>, <span class="at">record_dir =</span> fp, <span class="at">annotator =</span> <span class="st">'ecgpuwave'</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a>nsr</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment">
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;Electrical Signal&gt;
+-------------------
+Recording Duration:  10 seconds
+Recording frequency  500  hz
+Number of channels:  12 
+Channel Names:  I II III AVF AVL AVR V1 V2 V3 V4 V5 V6 
+Annotation:  ecgpuwave</code></pre>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="|1|2|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>fp <span class="ot">&lt;-</span> <span class="fu">system.file</span>(<span class="st">'extdata'</span>, <span class="at">package =</span> <span class="st">'shiva'</span>)</span>
+<span id="cb3-2"><a href="#cb3-2"></a>nsr <span class="ot">&lt;-</span> <span class="fu">read_wfdb</span>(<span class="st">'muse-sinus'</span>, <span class="at">record_dir =</span> fp, <span class="at">annotator =</span> <span class="st">'ecgpuwave'</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="fu">ggm</span>(nsr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment">
+<div class="cell-output-display">
+<p><img data-src="tpipcvm-rip-seminar-121823_files/figure-revealjs/sinus rhythm visualization-1.png" class="img-fluid" width="960"></p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4" data-code-line-numbers="|1|2|3|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>fp <span class="ot">&lt;-</span> <span class="fu">system.file</span>(<span class="st">'extdata'</span>, <span class="at">package =</span> <span class="st">'shiva'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2"></a>nsr <span class="ot">&lt;-</span> <span class="fu">read_wfdb</span>(<span class="st">'muse-sinus'</span>, <span class="at">record_dir =</span> fp, <span class="at">annotator =</span> <span class="st">'ecgpuwave'</span>)</span>
+<span id="cb4-3"><a href="#cb4-3"></a>beats <span class="ot">&lt;-</span> <span class="fu">segmentation</span>(nsr, <span class="at">by =</span> <span class="st">'sinus'</span>)</span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="fu">ggm</span>(beats[[<span class="dv">1</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment">
+<div class="cell-output-display">
+<p><img data-src="tpipcvm-rip-seminar-121823_files/figure-revealjs/single beat-1.png" class="img-fluid" width="960"></p>
+</div>
+</div>
+</section>
+<section id="initial-results" class="slide level2">
+<h2>Initial results</h2>
+<p><span class="green">Training</span></p>
 <ul>
-<li>Software for P wave detection</li>
-<li>Machine learning model</li>
+<li>Training accuracy was <code>88%</code> with only <code>2%</code> loss after total of 10 steps</li>
 </ul>
-</section></section>
+<p><span class="green">Testing</span></p>
+<ul>
+<li>Testing accuracy was <code>85%</code> with <code>13%</code> loss</li>
+<li>Example: single beat (control) may have a confidence of <code>75%</code> in being a control</li>
+</ul>
+</section>
+<section class="slide level2">
+
+
+<img data-src="../figures/keras-accuracy-121023.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">First 10 epochs of training</p></section>
+<section id="next-steps" class="slide level2">
+<h2>Next steps</h2>
+<ol type="1">
+<li>Evaluate model-explainability (e.g.&nbsp;how heavily P-wave morphology influences confidence)</li>
+<li>Expand to additional genes associated with AF</li>
+<li>Validate in a larger cohort</li>
+<li>Correlate with intracardiac EGM findings</li>
+</ol>
+</section>
+<section class="slide level2">
+
+
+<img data-src="../figures/open-ep-voltage-map.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;13: Developed an open-source pipeline to evaluate intracardiac findings from electrophysiology studies</p></section></section>
+<section>
 <section id="autonomic-influences" class="title-slide slide level1 center">
 <h1><span class="yellow">Autonomic Influences</span></h1>
 
 </section>
-
+<section id="review-of-stress" class="slide level2">
+<h2>Review of stress</h2>
+<ul>
+<li>Stress and triggers of AF</li>
+<li>Neurocardiac pathways</li>
+</ul>
+</section>
+<section id="non-pvi-ablative-strategies" class="slide level2">
+<h2>Non-PVI ablative strategies</h2>
+</section>
+<section id="neurocardiac-axis" class="slide level2">
+<h2>Neurocardiac axis</h2>
+</section>
+<section id="stress-and-arrhythmias" class="slide level2">
+<h2>Stress and arrhythmias</h2>
+</section></section>
 <section>
 <section id="future-directions" class="title-slide slide level1 center">
-<h1>Future Directions</h1>
+<h1><span class="red">Future Directions</span></h1>
 
 </section>
 <section id="novel-approaches" class="slide level2">
 <h2>Novel approaches</h2>
 </section>
-<section id="k23-aims" class="slide level2 smaller scrollable">
+<section id="k23-aims" class="slide level2">
 <h2>K23 aims</h2>
+</section></section>
+<section>
+<section id="questions" class="title-slide slide level1 center">
+<h1>Questions?</h1>
 
-<div class="footer footer-default">
-
-</div>
+</section>
+<section id="references" class="slide level2 tiniest smaller scrollable">
+<h2>References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Calkins2017" class="csl-entry" role="listitem">
+Calkins, Hugh, Gerhard Hindricks, Riccardo Cappato, Young-Hoon Kim, Eduardo B. Saad, Luis Aguinaga, Joseph G. Akar, et al. 2017. <span>“2017 <span>HRS</span>/<span>EHRA</span>/<span>ECAS</span>/<span>APHRS</span>/<span>SOLAECE</span> Expert Consensus Statement on Catheter and Surgical Ablation of Atrial Fibrillation.”</span> <em>Heart Rhythm</em> 14 (10): e275–444. <a href="https://doi.org/10.1016/j.hrthm.2017.05.012">https://doi.org/10.1016/j.hrthm.2017.05.012</a>.
+</div>
 <div id="ref-Cheniti2018" class="csl-entry" role="listitem">
 Cheniti, Ghassen, Konstantinos Vlachos, Thomas Pambrun, Darren Hooks, Antonio Frontera, Masateru Takigawa, Felix Bourier, et al. 2018. <span>“Atrial <span>Fibrillation Mechanisms</span> and <span>Implications</span> for <span>Catheter Ablation</span>.”</span> <em>Frontiers in Physiology</em> 9. <a href="https://www.frontiersin.org/articles/10.3389/fphys.2018.01458">https://www.frontiersin.org/articles/10.3389/fphys.2018.01458</a>.
 </div>
+<div id="ref-Choi2018" class="csl-entry" role="listitem">
+Choi, Seung Hoan, Lu-Chen Weng, Carolina Roselli, Honghuang Lin, Christopher M. Haggerty, M. Benjamin Shoemaker, John Barnard, et al. 2018. <span>“Association <span class="nocase">Between Titin Loss-of-Function Variants</span> and <span>Early-Onset Atrial Fibrillation</span>.”</span> <em>JAMA</em> 320 (22): 2354–64. <a href="https://doi.org/10.1001/jama.2018.18179">https://doi.org/10.1001/jama.2018.18179</a>.
+</div>
+<div id="ref-Decloedt2020" class="csl-entry" role="listitem">
+Decloedt, Annelies, Glenn Van Steenkiste, Lisse Vera, Rikke Buhl, and Gunther van Loon. 2020. <span>“Atrial Fibrillation in Horses Part 1: <span>Pathophysiology</span>.”</span> <em>Veterinary Journal</em> 263: 1–8. <a href="https://doi.org/10.1016/j.tvjl.2020.105521">https://doi.org/10.1016/j.tvjl.2020.105521</a>.
+</div>
+<div id="ref-Goldberger2015" class="csl-entry" role="listitem">
+Goldberger, Jeffrey J., Rishi Arora, David Green, Philip Greenland, Daniel C. Lee, Donald M. Lloyd-Jones, Michael Markl, Jason Ng, and Sanjiv J. Shah. 2015. <span>“Evaluating the <span>Atrial Myopathy Underlying Atrial Fibrillation</span>.”</span> <em>Circulation</em> 132 (4): 278–91. <a href="https://doi.org/10.1161/CIRCULATIONAHA.115.016795">https://doi.org/10.1161/CIRCULATIONAHA.115.016795</a>.
+</div>
+<div id="ref-Grune2021" class="csl-entry" role="listitem">
+Grune, Jana, Masahiro Yamazoe, and Matthias Nahrendorf. 2021. <span>“Electroimmunology and Cardiac Arrhythmia.”</span> <em>Nature Reviews Cardiology</em> 18 (8, 8): 547–64. <a href="https://doi.org/10.1038/s41569-021-00520-9">https://doi.org/10.1038/s41569-021-00520-9</a>.
+</div>
+<div id="ref-Mahnkopf2010" class="csl-entry" role="listitem">
+Mahnkopf, Christian, Troy J. Badger, Nathan S. Burgon, Marcos Daccarett, Thomas S. Haslam, Christopher T. Badger, Christopher J. McGann, et al. 2010. <span>“Evaluation of the Left Atrial Substrate in Patients with Lone Atrial Fibrillation Using Delayed-Enhanced <span>MRI</span>: <span>Implications</span> for Disease Progression and Response to Catheter Ablation.”</span> <em>Heart Rhythm</em> 7 (10): 1475–81. <a href="https://doi.org/10.1016/j.hrthm.2010.06.030">https://doi.org/10.1016/j.hrthm.2010.06.030</a>.
+</div>
+<div id="ref-Meijler1992" class="csl-entry" role="listitem">
+Meijler, Frits L., Fred H. M. Wittkampf, Kenneth R. Brennen, Verne Baker, Claes Wassenaar, and Earl E. Bakken. 1992. <span>“Electrocardiogram of the Humpback Whale (<span>Megaptera</span> Noaeangliae) with Specific Reference to Atrioventricular Transmission and Ventricular Excitation.”</span> <em>Journal of the American College of Cardiology</em> 20 (2): 475–79. <a href="https://doi.org/10.1016/0735-1097(92)90120-C">https://doi.org/10.1016/0735-1097(92)90120-C</a>.
+</div>
+<div id="ref-Michaud2021" class="csl-entry" role="listitem">
+Michaud, Gregory F., and William G. Stevenson. 2021. <span>“Atrial <span>Fibrillation</span>.”</span> <em>New England Journal of Medicine</em> 384 (4): 353–61. <a href="https://doi.org/10.1056/NEJMcp2023658">https://doi.org/10.1056/NEJMcp2023658</a>.
+</div>
+<div id="ref-Packer2020" class="csl-entry" role="listitem">
+Packer, Milton. 2020. <span>“Characterization, <span>Pathogenesis</span>, and <span>Clinical Implications</span> of <span>Inflammation</span>‐<span>Related Atrial Myopathy</span> as an <span>Important Cause</span> of <span>Atrial Fibrillation</span>.”</span> <em>Journal of the American Heart Association</em> 9 (7): e015343. <a href="https://doi.org/10.1161/JAHA.119.015343">https://doi.org/10.1161/JAHA.119.015343</a>.
+</div>
+<div id="ref-Rivner2020" class="csl-entry" role="listitem">
+Rivner, Harold. 2020. <span>“Atrial <span>Myopathy Underlying Atrial Fibrillation</span>,”</span> May. <a href="https://www.aerjournal.com/articles/atrial-myopathy-underlying-atrial-fibrillation">https://www.aerjournal.com/articles/atrial-myopathy-underlying-atrial-fibrillation</a>.
+</div>
+<div id="ref-Verweij2020" class="csl-entry" role="listitem">
+Verweij, Niek, Jan-Walter Benjamins, Michael P. Morley, Yordi J. Van De Vegte, Alexander Teumer, Teresa Trenkwalder, Wibke Reinhard, Thomas P. Cappola, and Pim Van Der Harst. 2020. <span>“The <span>Genetic Makeup</span> of the <span>Electrocardiogram</span>.”</span> <em>Cell Systems</em> 11 (3): 229–238.e5. <a href="https://doi.org/10.1016/j.cels.2020.08.005">https://doi.org/10.1016/j.cels.2020.08.005</a>.
+</div>
+<div id="ref-Williams2015" class="csl-entry" role="listitem">
+Williams, Terrie M., Lee A. Fuiman, Traci Kendall, Patrick Berry, Beau Richter, Shawn R. Noren, Nicole Thometz, et al. 2015. <span>“Exercise at Depth Alters Bradycardia and Incidence of Cardiac Anomalies in Deep-Diving Marine Mammals.”</span> <em>Nature Communications</em> 6 (1, 1): 6055. <a href="https://doi.org/10.1038/ncomms7055">https://doi.org/10.1038/ncomms7055</a>.
+</div>
+<div id="ref-Wineinger2019" class="csl-entry" role="listitem">
+Wineinger, Nathan E., Paddy M. Barrett, Yunyue Zhang, Ikram Irfanullah, Evan D. Muse, Steven R. Steinhubl, and Eric J. Topol. 2019. <span>“Identification of Paroxysmal Atrial Fibrillation Subtypes in over 13,000 Individuals.”</span> <em>Heart Rhythm</em> 16 (1): 26–30. <a href="https://doi.org/10.1016/j.hrthm.2018.08.012">https://doi.org/10.1016/j.hrthm.2018.08.012</a>.
+</div>
+</div>
+
+<div class="footer footer-default">
+
 </div>
 </section></section>
     </div>
@@ -586,7 +888,7 @@ Cheniti, Ghassen, Konstantinos Vlachos, Thomas Pambrun, Darren Hooks, Antonio Fr
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
