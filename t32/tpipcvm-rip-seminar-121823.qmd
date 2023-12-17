@@ -109,7 +109,7 @@ a. Recognize autonomic influences on arrhythmogenesis
 
 ---
 
-![Atrioventricular conduction is a consequence of overall mass (and cardiac mass), due to allometric scaling, @Meijler1985](../figures/meijler-1985-comparative-av-conduction.png){#fig-comparative-av-conduction}
+![Atrioventricular conduction is a consequence of overall mass (and cardiac mass), due to allometric scaling, @Meijler1985a](../figures/meijler-1985-comparative-av-conduction.png){#fig-comparative-av-conduction}
 
 ---
 
@@ -123,7 +123,7 @@ a. Recognize autonomic influences on arrhythmogenesis
 
 *Multiple mechanisms are at play in AF simultaneously in AF, and may manifest in a similar fashion.*
 
-@Antzelevitch2012:
+@Antzelevitch2011:
 
 - Re-entry *functionally* or around scar/fibrosis
 - Local firing due to increased/enhanced automaticity
@@ -299,27 +299,122 @@ ggm(beats[[1]])
 
 ---
 
-![Developed an open-source pipeline to evaluate intracardiac findings from electrophysiology studies](../figures/open-ep-voltage-map.png){#fig-open-ep-voltage-map}
+![Using an open-source software in MATLAB, we have developed a pipeline to evaluate intracardiac findings from electrophysiology studies](../figures/open-ep-voltage-map.png){#fig-open-ep-voltage-map}
 
 # [Autonomic Influences]{.yellow}
 
-## Review of stress
+## Evolution of treatment {.smaller}
 
-- Stress and triggers of AF
-- Neurocardiac pathways
+- @Haissaguerre1998 identified pulmonary vein triggers for AF (associated with AF approximately 50% of the time)
+- @Pappone2004 identified ganglionic plexi as targets for AF ablation (34% of patients in the study had complete denervation, and had less AF recurrence)
+- @Narayan2012 identified rotors as targets for AF ablation (rotors were identified in 98% of patients, and 86% of patients had AF termination)
+- @Baez-Escudero2014 found parasympathetic denervation using alcohol infusion into the Vein of Marshall led to decreased AF burden
+- GANGLIA-AF, paroxysmal AF randomized to PVI or atrial GP ablation, decreased AAD dosages in GP group, n = 102 [@Kim2022]
 
-## Non-PVI ablative strategies
+*Pulmonary vein isolation is a component to the treatment of AF, but additional pathways exist that have still need to be explored.*
 
-## Neurocardiac axis
+## Neurocardiac axis {.smaller}
 
-## Stress and arrhythmias
+- Neurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels [@Armour1997]
+	- Cortex &harr; brainstem
+	- Spinal cord &harr; extracardiac ganglia (e.g. stellate)
+	- Intrinsic cardiac nervous system (ICNS) &harr; heart
+- Autonomic regulation is critical in the development of most CV disease
+	- Disregulated catecholamines in heart failure
+	- Post myocardial infarct VF
+	- Triggered arrhythmias such as VT
+	
+---
 
+![Cardiac neurotransmission @Shivkumar2016a](../figures/shivkumar-2022_neurocardiac-axis.png){#fig-neurocardiac-axis}
+
+---
+
+- **Lower levels** of networked structures (ICNS, hypothalamus) integrate afferent information about metabolic demands
+- **Higher levels** of networked structures (amydala, cortex) integrate lower networks and generate conscious/unconscious CV state representations
+- Allows for environmental/psychological factors to interplay with cardiac physiology, e.g. [mental stress]{.red} causing [arrhythmia]{.orange}
+
+## Perturbations to the ANS {.smaller}
+
+__Chronic mental stress__:
+
+- Inflammatory mechanisms [@Hammadah2018a; @Pollitt2008]
+- Autonomic mechanisms [@Carney2005; @Huang2018; @Penninx2017; @Smolderen2017]
+- Associated with many changes to cardiac physiology [@Strike2003]
+
+__Acute mental stress__:
+
+- Peripheral vasoconstriction [@Kim2019; @Lima2019]
+- Coronary vasomotion [@Hammadah2018b]
+- Mental stress-induced myocardial ischemia [@Vaccarino2021a], as seen in @fig-msimi-km-curves
+
+---
+
+![Neuropsychological effects on cardiac physiology @Taggart2011](../figures/taggart-2011-brain-heart-overview.png)
+
+---
+
+![@Vaccarino2021a published in JAMA the relationship between mental-stress induced myocardial ischemia and CVD mortality](../figures/vaccarino-2021-msimi-survival-curves.png){#fig-msimi-km-curves}
+
+---
+
+![We found more so that ANS dysfunction due to mental stress increased the risk of CVD mortality from *arrhythmic etiology* by 5-fold (under review).](../figures/shah-2023-ehj-structured-abstract.png)
+
+## Sympathovagal crosstalk {.smaller}
+
+- Arrhythmia thresholds affected by sympathetic and vagal activity 
+- Intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress
+- Atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties [@Hoover2009; @Armour1997] 
+
+## Molecular mechanisms {.smaller}
+
+- Sympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium
+- NPY and galanin is also released, which both inhibit cholinergic activity [@Herring2015a; @Herring2012]
+- Both inhibit firing and leading to vagolytic effects on the myocardium[@Kalla2020; @Herring2008]
+	- Galanin released as a adrenergic co-transmitter, binding to GalR1 receptors
+	- NPY binds to cholinergic neurons through the Y2 receptor
+	- Both directly/indirectly involve protein kinase C
+- NPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)[@Coote2013]
+
+---
+
+![Cardiac sympatho-vagal crosstalk @Herring2012](../figures/herring-2012-cellular-sympathovagal-crosstalk.png){#fig-ans-crosstalk}
+	
+---
+
+![Increased sympathetic activity and NPY @Hoang2020](../figures/hoang-2020-npy-blockade.png){#fig-npy-blockade}
+
+## Adrenergic activity and AF
+
+- effect on APD and duration of AF events
+
+## Vagal activity and AF
+
+- effect on APD and duration of AF events
+- immunology/inflammation pathways
+	
 # [Future Directions]{.red}
-
+	
 ## Novel approaches
 
-## K23 aims
+- Combine arrhythmia probability based on substrate with features derived from autonomic testing
+- Increase likelihood of identify AF phenotypes that are personalized
+- Targeted therapies to focus on underlying predominant mechanism of arrhythmia
+- Identify genetic underpinnings focused not on substrate but on autonomic regulation
 
+## Mental stress and AF {.smaller}
+
+__EPS__:
+
+- [We propose to evaluate mental stress directly during EPS to determine *adrenergic* and *vagal* contributions to AF initiation]{.red}
+	- @Narayan2011 found that action potential duration (APD) alternans preceding the onset of AF during EP studies
+	- Mental stress is associated with AF [@Lampert2014; @Lampert2019]
+
+__Genetics__:
+
+- Genetic variants associated with AF that are presented in candidate genes that effect autonomic regulation
+- Polygenic risk score and/or mendelian randomization approach to identify those with mental stress-induced autonomic dysfunction
+	
 # Questions?
 
 ## References {.tiniest}
