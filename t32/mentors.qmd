@@ -13,6 +13,18 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 01/02/23 | AJS
+
+## Agenda
+
+1. Update on HRV/CVD JAMA Cardiology revisions
+1. CARRS project updates
+	a. Define timeline
+	a. Assign roles
+1. Other projects
+	a. AFEQT/SDOH
+	a. ECG/TTN
+
 # 12/13/23 | DD
 
 ## Agenda
