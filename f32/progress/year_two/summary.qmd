@@ -1,0 +1,12 @@
+During the final year of this two year fellowship, we were able to make significant strides towards the underlying, original specific aims. We originally hypothesized the relationship between psychological distress (such as depression) mediated the increased cardiovascular mortality seen in patients with coronary artery disease. 
+
+The research cohort that we used (in lieu of limitations from COVID on enrollment)  underwent psychological profiling, mental stress provocation, electrocardiographic (ECG) monitoring, and cardiovascular stress testing. This cohort was analyzed in a similar fashion to the original dataset, however we looked at the change in ECG markers with CVD mortality, and found that there was a significant relationship particularly during mental stress provocation. We found that in those with abnormal ECG responses to stress had an almost 3-fold increase in CVD mortality that was not explained by traditional cardiovascular risk factors. We have submitted this as a first-author manuscript to JAMA Cardiology and are currently in the review process. This finding will be the cornerstone of a future K23 award. Additionally, four other co-author manuscript with the research team were produced (two published, two under review). DOI for publications are listed below.
+
+During this time, I was able to expand both my clinical and research knowledge using supplementary coursework as described in the original F32 proposal. I was able to complete digital signal processing courses, biostatistics/machine learning courses, and a computational genetics course (to help expand my research areas). 
+
+DOI:
+
+10.1001/jamanetworkopen.2023.38060.
+10.1001/jama.2021.17649
+10.1016/s0735-1097(23)01590-5
+10.1016/s0735-1097(23)00913-0
