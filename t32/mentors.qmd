@@ -13,6 +13,32 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 01/10/23 | DD
+
+## Agenda {.tiny}
+
+1. Mentorship updates: 
+	a. EP fellowship - need to reach out to Ranjan
+	a. AFGen Fellowship - RIP meeting in March, Benjamin = K23 remote mentor, Choi = assistance with statistical genetics
+	a. Sean/Shashank - ML/ECG pipeline, James Scholar and T35 application 
+1. ECG/TTN:
+	a. Training models on TTN LP/P variants 
+	a. Categorizing variants based on location
+1. Phenotyping pAF:
+	a. Assessing differential *trajectories* of AF based on quantified ECG/TTE
+	a. TTN variants and *trajectory* of impact on AF ECG/TTE trajectory (compared to controls)
+1. Stress reactivity & genetics - considering GWAS approach
+
+# 01/09/23 | AJS
+
+1. Questions on HRV/CVD mortality paper
+1. CARRS data analysis pipeline
+	a. CARRS 1 dataset
+	a. CARRS 2 dataset needs XML data re-analysis
+1. Future projects - stress reactivity and genetics?
+	a. GWAS approach
+	a. PRS approach
+
 # 01/02/23 | AJS
 
 ## Agenda
