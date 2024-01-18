@@ -207,6 +207,44 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
+# January 19, 2024
+
+## AFL/FH Revisions {.smaller}
+
+- Reviewer #1: No comments as had no initial comments or suggestions on initial submission
+- Reviewer #2: Complimentary of revisions and thought the concerns had been *satisfactorily addressed*
+- Reviewer #3: Thankful for *thoughtful and detailed responses* to questions
+- EDI Reviewer: Thought comments had been *appropriately addressed*
+
+::: {.callout-important}
+*A statistical reviewer has entered the fray*
+:::
+
+## Statistical Review {.tiniest}
+
+- "The study is described in the abstract as a prospective, observational cohort but it seems to be a cross-sectional analysis. Can the authors please clarify the design."
+- "The abstract also notes that the primary independent variable is family history of atrial fibrillation in first degree relatives, and that secondary independent variables include self-reported race-ethnicity and sex. The statistical analysis section indicates that the secondary exposure includes race-ethnicity, sex, and potential modifiable risk factors. The title suggests that interest lies in the association between family history and early onset atrial flutter and that race/ethnicity might be a potential confounder as the title suggests exploring the association in racial/ethnic subgroups. Nothing is mentioned about sex. The focus of the paper needs to be made very clear throughout."
+- "The statistical analysis section is confusing."
+- "The section indicates that multivariate (should be multivariable) logistic regression analysis was used with sequential adjustment for sex, race, smoking, etc. Sex and race should not be listed as potential confounders (per point above – please clarify the role of these variables in the analysis)."
+- "The analysis in Tables 2 are unadjusted but very problematic given the 10-year age difference in individuals with early- versus late-onset atrial flutter.  These should be, at a minimum, adjusted for age."
+- "The statistical analysis section indicates the use of multivariable logistic regression, mixed effects models and interaction models – but the analysis presented are almost all unadjusted."
+- "Table 3 stratifies by family history. Why stratify by the primary independent variable? The sample size is also too small in the family history group."
+- "The statistical analysis approach needs to be better organized to address the key questions."
+- "In the abstract, please clarify that the odds ratios that are reported are all unadjusted, if this is the case."
+- "Throughout, the authors refer to effect size when they mean effect – it might even be clearer to refer to odds ratios rather than effects here."
+- "The language in the clinical implications section needs to be toned down as it infers causality – e.g., individuals with a family history and individuals who self-identify as Black had higher odds."
+- "Lastly, I am not sure the Figure is needed."
+
+## Statistical Response {.tiny}
+
+- [ ] Study design: Although patients were enrolled in a prospective, observational manner, the analysis is cross-sectional (no *semiparametric* elements)
+- [ ] Variable roles: Independent exposure is family history, while race/ethnicity is a potential confounder in a highly diverse cohort. Sex + other risk factors are secondary exposures.
+- [ ] Statistical analysis section: Word-choice and revision are clarified. Specific models are labeled explicitly in results and tables.
+- [ ] Table 3: Concern about analyzing by family history strata. Table 1 can instead by changed to strata by exposure (instead of outcome). Can include subgroup analysis as alternative table for all variables. 
+- [ ] Odds Ratios: Language changed to reflect intent (e.g. **effect** and **OR** instead of **effect size**).
+- [ ] Clinical Implications: Language toned down to reflect observational nature of study.
+- [ ] Figure: Justification on why family history and pedigrees are relevant even though this is observational study. Consideration for supplement.
+
 # January 8, 2024
 
 ## AFEQT/SDOH background
