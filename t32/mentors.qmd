@@ -13,7 +13,46 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
-# 01/10/23 | DD
+# 01/19/24 | SHC
+
+## Agenda
+
+1. Project overview
+1. Computational methods
+1. Proposal 
+1. Statistical concerns
+
+## Project overview
+
+*Can we predict the effect of TTN variants on atrial myopathy (and subsequent atrial fibrillation) using machine learning algorithms trained on ECG data?*
+
+- Cohort of "early" (age < 65 onset) of AF with mix of WES and high-density candidate gene sequencing 
+- `n=298` individuals overall and `n=36` individuals with **LP/P** variants in TTN (using SIFT/PolyPhen scores)
+- `n=7953` unique ECGs that were thought to be in sinus rhythm from 2010 to 2023
+
+## Computational methods
+
+- Digital signal processing to extract ECG data (P wave, R wave, T wave) while in sinus
+- Deep learning approach for feature extraction and classification 
+- Novelty is in part using 12-lead approach and recurrent data (e.g. multiple ECG over time)
+- End-to-end classification layer to combine pre-processing, filtering, clean-up
+
+## Proposal
+
+- Assumes multi-hit hypothesis on effect of TTN variants on atrial myopathy (e.g. effect on strain, fibrosis, etc)
+- Assumes fibrosis/increase duration of AF episodes (unlikely to lead to initiation but contributes to maintenance)
+- Identification of TTN-VUS in AF patients that *may* play a role in atrial remodeling
+- Using VEP to evaluate 1) location of variants in bands of sarcomere, 2) focus on missense proteins (?) in addition to truncating and/or LOF variants
+- Assess impact of variants on ECG
+
+## Statistical concerns {.tiny}
+
+- Power is limited based on number of individuals with TTN variants
+- Multiple machine learning approaches needed that are "explainable" in terms of effect on ECG signal
+- Validation of dataset
+- Correct "ground truth" of pathology of TTN variants is difficult to confirm
+
+# 01/10/24 | DD
 
 ## Agenda {.tiny}
 
@@ -29,7 +68,7 @@ fig-cap-location: bottom
 	a. TTN variants and *trajectory* of impact on AF ECG/TTE trajectory (compared to controls)
 1. Stress reactivity & genetics - considering GWAS approach
 
-# 01/09/23 | AJS
+# 01/09/24 | AJS
 
 1. Questions on HRV/CVD mortality paper
 1. CARRS data analysis pipeline
@@ -39,7 +78,7 @@ fig-cap-location: bottom
 	a. GWAS approach
 	a. PRS approach
 
-# 01/02/23 | AJS
+# 01/02/24 | AJS
 
 ## Agenda
 
