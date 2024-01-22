@@ -207,6 +207,20 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
+# January 21, 2024
+
+## ECG/**TTN** Project
+
+- Variant annotation pipeline drafted, with classification based on series of annotation tools used in parallel
+- AFGen fellowship: suggested minimum threshold of >80% of the ~30 annotation system to be in agreement for tentative "ground truth" for the "severe" or LOF variants
+- Algorithm for mis-sense variants being developed
+
+## **ECG**/TTN Project
+
+- Have developed an **alpha** version of end-to-end pipeline for sinus beat analysis
+- Utilizing time varying machine learning layers to add power for *repeat* samples and *time-to* samples
+- UK Biobank may be a fair option for validation if race/ethnicity factors isn't a major concern
+
 # January 19, 2024
 
 ## AFL/FH Revisions {.smaller}
