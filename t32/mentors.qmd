@@ -13,6 +13,23 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 01/23/24 | AJS
+
+## Agenda {.smaller}
+
+1. HRV/CVD paper
+	a. Submission to JAMA Cardiology
+	a. Co-authors revisions needed?
+1. CARRS project = GEH/DM
+	a. ECG data ~ `n ~= 5000` overall
+	a. CARRS1 ~ `n ~= 1500` with ECG data (out of `n ~= 16,000`)
+	a. Results preview under `R/results.html` (*pending*)
+1. ECG/TTN project
+1. Next projects
+	a. MS/AF
+	a. Harmonic/autoregressive predictors of stress reactivity
+	a. GWAS for HRV
+
 # 01/19/24 | SHC
 
 ## Agenda
