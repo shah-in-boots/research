@@ -13,6 +13,18 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 01/24/24 | DD
+
+## Agenda {.smaller}
+
+1. AFL/FH revisions
+	a. Reviewer response by Friday
+	a. Draft of paper with revisions by next Monday
+1. AFEQT/SDOH
+	a. JBVA data
+	a. $Worsening AFEQT ~ Black Race + Divorced + High Deprivation (NDI) + AAD3$
+1. Genetics and ANS dz (arrhythmia surrogates)
+
 # 01/23/24 | AJS
 
 ## Agenda {.smaller}
