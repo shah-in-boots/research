@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2023, month = 1, day = 8) |>
+	date_build(year = 2024, month = 1, day = 29) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,14 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# January 29, 2024
+
+## Updates
+
+- AFEQT/SDOH: CDW data pull pending, may be able to get all ICD codes $\pm$ medicaions
+- AFL/FH: Completing revisions to paper, sharing in next 2-3 days
+- ECG/TTN: focusing on variant pipeline currently
 
 # January 21, 2024
 
