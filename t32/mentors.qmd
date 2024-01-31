@@ -13,6 +13,21 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 01/29/24 | AJS
+
+## Agenda {.smaller}
+
+1. HRV/CVD paper submission
+1. CARRS models
+	a. Decision on CARRS2?
+1. AFEQT/SDOH paper
+1. ECG/TTN paper
+	a. Variant annotation pipeline
+	a. ECG/ML layer learning
+1. Next steps
+	a. GWAS/reactivity
+	a. DSP/reactivity
+
 # 01/24/24 | DD
 
 ## Agenda {.smaller}
