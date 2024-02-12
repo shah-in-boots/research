@@ -2,7 +2,8 @@
 title: Mentorship Meetings
 author: Anish S. Shah, MD, MS
 institute:
-- University of Illinois at Chicago
+- University of Utah
+- University of Illinois Chicago
 - Emory University
 format: 
   revealjs:
@@ -12,6 +13,72 @@ execute:
 tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
+
+# 02/12/24 | RR
+
+## Agenda {.smaller}
+
+1. Personal research status
+	a. "Big picture" goal - functional prediction of arrhythmia onset
+	a. Current research projects
+	a. Mentorship network
+1. Research overview at Utah 
+	a. Research groups with overlapping interest
+	a. Strategic mentorship for K23 award
+	a. Timeline and expectations
+	
+## Big picture {.smaller}
+
+::: {.callout-important}
+Why do large, underwater mammals, with respectively __larger atria__ have low burden of atrial fibrillation? Why do arrhythmias only occur on __ascent phase of dive__?
+:::
+
+1. Plan to be with translational cardiac electrophysiologist, focusing on signal processing, molecular/genetic mechanisms, and the autonomic nervous system
+1. Underlying question is how [stress can lead to arrhythmogenesis]{.underline}
+1. Study how arrhythmia events are mediated by potential [inappropriate vagolytic mechanisms in atrial fibrillation]{.underline}.
+1. Long-term goal is to [phenotype AF]{.underline} and develop targeted, individualized therapies (e.g. functional mapping, alternative boundary predictions in EP)
+
+## Current projects {.smaller}
+
+- ECG-based prediction of severity of TTN variants using deep learning (computational/genetics)
+- Machine learning for annotations of EGM (computational)
+- Phenotyping paroxysmal AF based on ECG and TTE criteria (epidemiology)
+- Mental *stress reactivity* and CVD mortality (epidemiology)
+- AFEQT and social determinants of health in minority population (epidemiology)
+- "Isolated" or "premature" AFL with family history (genetics)
+- Cosinor/harmonic regression software (computational)
+- GWAS of abnormal *stress reactivity*
+
+## Non-specific aims
+
+1. Epidemiology / ECG-based aim: risk prediction, machine learning (i.e. ECG-informed arrhythmia risk scores)
+1. EP-lab based aim: repolarization mapping, intra-EPS stress testing
+1. Genetics-focused aim: TTN impact on AF, genetics of stress physiology (e.g. HRV)
+
+## Research network {.smaller}
+
+- Amit J. Shah, MD, MSCR (Emory) = cardiologist $\rightarrow$ __Rob MacLeod, PhD__
+- Alvaro Alonso, MD, PhD (Emory) = epidemiologist, ARIC, atrial fibrillation
+- Viola Vaccarino, MD, PhD (Emory) = epidemiologist, mental stress
+- Arshed Quyyumi, MD (Emory) = cardiologist, coronary disease
+- Rachel Lampert, MD (Yale) = electrophysiologist, mental stress
+- Dawood Darbar, MD (UIC) = electrophysiologist, genetics, atrial fibrillation $\rightarrow$ __Martin Tristani-Firouzi, MD__
+- Emelia Benjamin, MD, ScM (BU) = cardiologist, epidemiologist, atrial fibrillation, genetics (AFGen Consortium)
+
+## Research at Utah {.smaller}
+
+- MacLeod = signal processing for ECG/EGM data
+- Ranjan = MRI and structural evaluation of atria (in AF)
+- Bunch = AF and cognitive decline (area of interest of __Alvaro Alonso__ as well)
+- Tristani-Firouzi = genetics of arrhythmias, Utah Population Database
+- Palatinus = molecular mechanisms of current trafficking
+- Guo = genetics/VUS and CVD mechanisms
+- Dosdall = EGM/arrhythmia mapping, activation patterns
+
+## Wrap-up
+
+- Opinions and thoughts
+- Questions/concerns
 
 # 01/29/24 | AJS
 
@@ -89,7 +156,7 @@ fig-cap-location: bottom
 - Using VEP to evaluate 1) location of variants in bands of sarcomere, 2) focus on missense proteins (?) in addition to truncating and/or LOF variants
 - Assess impact of variants on ECG
 
-## Statistical concerns {.tiny}
+## Statistical concerns {.smaller}
 
 - Power is limited based on number of individuals with TTN variants
 - Multiple machine learning approaches needed that are "explainable" in terms of effect on ECG signal
@@ -98,7 +165,7 @@ fig-cap-location: bottom
 
 # 01/10/24 | DD
 
-## Agenda {.tiny}
+## Agenda {.smaller}
 
 1. Mentorship updates: 
 	a. EP fellowship - need to reach out to Ranjan
@@ -213,7 +280,7 @@ Questions:
 	- Stress-decrease and PRS
 	- Stress-decrease and atrial arrhythmias
 
-## HRV/CVD {.tiny}
+## HRV/CVD {.smaller}
 
 1. What elements of the results should we make sure to include? As MI, competing risk, etc are taken out, our points made in discussion about cause-specific nature are limited?
 1. By taking out competing risks paragraph, the results section now is < 1 page (too *few* results was previously a concern)
@@ -221,7 +288,7 @@ Questions:
 
 # 11/07/23 | MM
 
-## Potential Locations {.tiny}
+## Potential Locations {.smaller}
 
 | Program | Comments |
 | - | --- |

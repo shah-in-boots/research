@@ -209,7 +209,7 @@ tbl_status_updates(progress, effort)
 
 # February 12, 2024
 
-## Whole Exome Sequencing {.tiny}
+## Whole Exome Sequencing {.smaller}
 
 In light of project-focus on deleterious TTN variants and a/w ECG features, needed a statistically appropriate method for variant selection.
 
@@ -264,7 +264,7 @@ Variant pipeline requires combination of cluster + local software, and is stable
 *A statistical reviewer has entered the fray*
 :::
 
-## Statistical Review {.tiniest}
+## Statistical Review {.smallest}
 
 - "The study is described in the abstract as a prospective, observational cohort but it seems to be a cross-sectional analysis. Can the authors please clarify the design."
 - "The abstract also notes that the primary independent variable is family history of atrial fibrillation in first degree relatives, and that secondary independent variables include self-reported race-ethnicity and sex. The statistical analysis section indicates that the secondary exposure includes race-ethnicity, sex, and potential modifiable risk factors. The title suggests that interest lies in the association between family history and early onset atrial flutter and that race/ethnicity might be a potential confounder as the title suggests exploring the association in racial/ethnic subgroups. Nothing is mentioned about sex. The focus of the paper needs to be made very clear throughout."
@@ -279,7 +279,7 @@ Variant pipeline requires combination of cluster + local software, and is stable
 - "The language in the clinical implications section needs to be toned down as it infers causality – e.g., individuals with a family history and individuals who self-identify as Black had higher odds."
 - "Lastly, I am not sure the Figure is needed."
 
-## Statistical Response {.tiny}
+## Statistical Response {.smaller}
 
 - [ ] Study design: Although patients were enrolled in a prospective, observational manner, the analysis is cross-sectional (no *semiparametric* elements)
 - [ ] Variable roles: Independent exposure is family history, while race/ethnicity is a potential confounder in a highly diverse cohort. Sex + other risk factors are secondary exposures.
@@ -390,7 +390,7 @@ afeqt_tbls$followup
 
 # December 4, 2023
 
-## HRS abstract proposals {.tiny}
+## HRS abstract proposals {.smaller}
 
 - [TTN variant prediction]{.red}: Would like to submit abstract, currently training an ECG-based model to classify variants (pathogenic vs. controls). Training data of approximately 50-60k sinus beats, with 500-700 "pathogenic TTN cases". *Data augmented by breaking ECGs into individual beats*
 - [AFL & Family History]{.red}: Abstract to be submitted, with equivalent co-authors as manuscript submission
@@ -455,7 +455,7 @@ Timeline for abstract submission to HRS (12/15):
 - Clarify results and statistical methods to match discussion
 - Requesting how and why we defined EOAFL as age < 65
 
-## AFL/FH Complex Revisions {.tiny}
+## AFL/FH Complex Revisions {.smaller}
 
 1. Concern is the definition of family history to include AF, HF, and CVA, as is __inconsistent__ with the idea of EOAFL as a separate entity. *Unsure how to respond*
 1. Can occult AF be analyzed as a comparative group? *Unsure about an additional dataset. However would strengthen the paper if we had a matched cohort as sensitivity analysis.*
