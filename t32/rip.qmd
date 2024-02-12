@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2024, month = 1, day = 29) |>
+	date_build(year = 2024, month = 2, day = 12) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,28 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# February 12, 2024
+
+## Whole Exome Sequencing {.tiny}
+
+In light of project-focus on deleterious TTN variants and a/w ECG features, needed a statistically appropriate method for variant selection.
+
+- Using *variant effect prediction* software, including loss-of-function predction, Polyphen, SIFT, and phenotypic data, __created software pipeline to analysis WES__
+- Each WES VCF, roughly 50-100 Mb in size, can be annotated to 500-800 Mb of annotations based on dozens of classifier models (called __consequences__)
+- These __consequence__ additions are part of Choi's recommendation for having agreement in >80% of predictions to serve as deleterious variant "ground truth"
+- Need to manually adjudicate the TTN variants, thus far is 1) reproducible with different prediction cut-offs, 2) identifies some *miRNA* sequenes that may be consequential, 3) has high degree of confidence in the LOF and INDEL variants
+
+::: {.callout-tip}
+Variant pipeline requires combination of cluster + local software, and is stable for running new variants PRN. 
+:::
+
+## AFEQT/SDOH
+
+1. VA data cleaning, expected 10-12 hours of cleaning
+1. Results and tables to be created throughout this week, pending VA data
+1. Need to decide on key figures and tables for the paper
+1. Expect manuscript draft (dependent on results) *week of 2/23*
 
 # January 29, 2024
 
