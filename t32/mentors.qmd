@@ -14,6 +14,14 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 02/13/24 | AJS
+
+## Agenda {.smaller}
+
+1. CARRS1 analysis
+1. ECG/TTN variant analysis
+1. K23 application
+
 # 02/12/24 | RR
 
 ## Agenda {.smaller}
