@@ -1,0 +1,4 @@
+__Aim 2: Determine the electrophysiological characteristics of sympathetically-triggered paroxysmal AF.__
+In prospectively enrolled individuals with new-onset paroxysmal AF, we will perform electrophysiology studies to measure atrial parameters, including scar burden, conduction abnormalities, and changes in repolarization.
+We will assess the effect of autonomic modulation on atrial tissue with normal and abnormal structural properties, confirming autonomic effects through assessment of cardiac-specific neurohormones.
+*Hypothesis*: [During increased sympathetic activity and decreased vagal activity, action potential duration alternans will occur predominantly at borders of scar tissue as compared to scar or healthy tissue]{.underline}.

@@ -1,4 +1,4 @@
-__Aim 1: Identify electrocardiographic phenotypes of paroxysmal AF with structurally normal atria.__
+__Aim 1: Identify electrocardiographic phenotypes of paroxysmal AF.__
 We will generate electrocardiographic parameters in sinus rhythm (atrial and ventricular activation and repolarization indices) and in atrial fibrillation (amplitude of fibrillatory waves, atrial frequency). 
 We will assess the relationship of these parameters to groups of paroxysmal AF with normal left atrial volume.
 *Hypothesis*: [Increased amplitude of fibrillatory waves during atrial fibrillation and increased variability in P wave indices will identify paroxysmal AF with structurally normal atria]{.underline}.

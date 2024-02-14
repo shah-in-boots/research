@@ -30,7 +30,7 @@ I am a 4th year general CV fellow on the research track (T32/F32) at UIC (2 + 2)
 
 __Proposal__:
 
-::: {.tinier}
+::: {.smallest}
 1. Use computational genetics approach to quantify potential deleterious *TTN* variants in a training sample of `n = 300` WES samples with AF.
 1. Use single-beat, sinus ECG features (approximately `beats = 40,000`) to train a classification model using a deep neural network approach.
 1. Test model in an additional, prospectively enrolled cohort of `n = 240` with WES over upcoming 3 months.

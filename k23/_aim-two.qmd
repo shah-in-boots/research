@@ -1,3 +1,0 @@
-__Aim 2: Determine the electrophysiological characteristics of sympathetically-mediated paroxysmal AF.__
-In a prospective subgroup in the AF Registry with paroxysmal AF, we will measure biomarkers of acute, increased sympathetic activation and vagal withdrawal during electrophysiology studies, including cardiac-specific levels of NPY and Gal.
-*Hypothesis*: [Elevated levels of NPY and Gal will be associated inversely with the level of scar.]{.underline}.

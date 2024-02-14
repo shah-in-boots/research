@@ -15,26 +15,23 @@ Moreover, current attempts at reclassifying AF have been limited to cross-sectio
 In the earlier stages of AF, triggered activity from atrial tissue, such as ectopic beats, are the underlying *first-mover* in the onset of an episode of AF.
 Longer, sustained episodes of AF are accompanied by increased atrial scarring and fibrosis, as part of the disease progression.
 This supports the understanding that earlier phases of paroxysmal AF are driven by electrical triggers, which is ultimately mediated by a maladaptive response of the autonomic nervous system (ANS), such as increased sympathetic activity and acute parasympathetic withdrawal [@Zipes2006; @Taggart2011].
-[Our overarching hypothesis is that sympathetic activity drives triggered atrial activity that leads to and sustains episodes of AF in those with structurally normal atria]{.underline} 
+[Our overarching hypothesis is that sympathetically-triggered atrial activity leads to differential effects on structurally normal and abnormal atria]{.underline}.
 
-To test this, we will leverage a pre-existing, well-established cohort: the UIC Multi-Ethnic Atrial Fibrillation Registry (AF Registry) [@Chalazan2021], which is enriched for paroxysmal AF.
-This cohort has extensive follow-up data, genetic sequencing, EP signals, and are led by members of the mentorship committee.
-During my TL1, T32, and F32 scholarship, I worked extensively to collect clinical and electrical signal data in multiple ongoing NIH-sponsored investigations involving my mentorship and advisory team [@Chalazan2021; @Vaccarino2021a], developing critical skills in signal processing and biostatistics.
+To test this, we will leverage several pre-existing, well-established cohorts that has extensive follow-up data, genetic sequencing, EP signal data, and are led by members of the mentorship committee. 
+During my TL1, T32, and F32 scholarship, I worked extensively to collect clinical and electrical signal data in multiple ongoing NIH-sponsored investigations involving my mentorship and advisory team [@Chalazan2021; @Vaccarino2021a], developing critical skills in signal processing, biostatistics, and computational genetics.
 In support of current literature [@Mehra2022], I found supporting evidence that vagolysis lead to abnormal cardiac perfusion and increased cardiovascular mortality.[@Shah2020; @Shah2021a; @Shah2021c; @Shah2023_conf]
 These abnormalities were identified through electrocardiography-based (ECG) markers, including heart rate variability (HRV), and associated with ANS function and cardiac physiology [@Shah2021b]. 
 As a fellow in clinical cardiac electrophysiology (EP), I am positioned to also obtain highly-granular data from EP studies performed during AF ablation, including cardiac-specific blood samples, intracardiac electrograms, and electroanatomical mapping.
-I will integrate these features into clinical data from the AF Registry to identify phenotypes of paroxysmal AF with structurally normal hearts, which are likely driven by atrial triggered activity.
-I will evaluate the molecular mechanisms underlying sympathetically-mediated AF by direct measurement of cardiovagal neurohormones, such as neuropeptide Y (NPY) and galanin (GAL), and indirect measurement of receptor function through assessment of common genetic variants in NPY2R and GALR1 [@Nolte2017a; @Treutlein2017; @Juhasz2014].
 This mentored research with the appropriate, rigorous training will extend my background in signal processing and biostatistics to computational approaches in epidemiology and genomics.
 To this end, I have the following aims:
 
-{{< include _aim-one.qmd >}}
+{{< include _aim-1.qmd >}}
 
-{{< include _aim-two.qmd >}}
+{{< include _aim-2.qmd >}}
 
-{{< include _aim-three.qmd >}}
+{{< include _aim-3.qmd >}}
 
-The current paradigm in the management of AF is superficial, focusing on therapies that are aimed at pharmacological and ablative modification of cardiac ion channels, instead of specific mechanisms, such as the underlying maladaptive autonomic response. 
+The current paradigm in the management of AF is superficial, focusing on therapies that are aimed at pharmacological and ablative modification of cardiac conductive tissue, instead of specific mechanisms, such as the underlying maladaptive autonomic response and interaction between scar and health atrial tissue under stress. 
 Identifying upstream mechanistic, autonomic pathways could lead to targeted therapies that not only decrease the risk of AF, but may also provide benefit in a number of other triggered atrial arrhythmias.[@Shivkumar2017]
 
 {{< pagebreak >}}

@@ -1,3 +1,0 @@
-__Aim 3: Evaluate the role of genetic variants in cardiovagal receptors in sympathetically-mediated paroxysmal AF.__
-We will identify if common genetic variants in the cardiovagal receptors, including GAL1R and NPY2R, are associated with abnormalities in ECG markers.
-*Hypothesis*: [Genetic variants will be associated with increased risk of paroxysmal AF in structurally normal atria]{.underline}.
