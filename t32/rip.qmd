@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2024, month = 2, day = 12) |>
+	date_build(year = 2024, month = 2, day = 16) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,29 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# February 26, 2024
+
+## Updates {.smaller}
+
+- AFEQT/SDOH
+	- data cleaning started on JBVA data, largest hurdle is getting NDI data from addresses
+	- have rough draft of analysis plan, with plans to get early feedback from Alvaro (standing meeting next week)
+- ECG/TTN
+	- Filtering pipeline effective for TTN variant, will review with Choi (have 8-10 P/LP variants that are potentially LOF)
+	- Presentation on 3/27 with AFGen group
+- K23
+	- Feedback from Benjamin: after refining genetics aim, can consider implementation in UK Biobank 
+	- Feedback from Ranjan: need to consider the sponsorship/mentorship committee at Utah (e.g. Martin Tristani-Firouzi, Rob McLeod, Jared Bunch, etc)
+
+## AFEQT/SDOH paper proposal {.smaller}
+
+1. Table = cohort description by baseline AFEQT scores, with sections on clinical covariates, social determinants, etc
+1. Table = Cohort description with statistical testing by AFEQT score changes
+1. Figure = AFEQT score breakdown in the population, with subscales (bar graph), showing score changes
+1. Table = regression model for SDOH factors and AFEQT change
+1. Table = mediation analysis for SDOH factors, treatment strategies, and AFEQT scores
+1. Figure = forest plot of interaction of the __highest yield__ SDOH marker and AFEQT score changes
 
 # February 12, 2024
 
