@@ -14,19 +14,33 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 02/21/24 | AA
+
+## Agenda {.smaller}
+
+1. General professional updates
+	a. AFGen & working with EJB
+	a. EP at Utah
+1. AFEQT and SDOH work
+	a. Table 1
+	a. General findings
+1. AFGen proposal
+1. ARIC proposal
+	a. Rate/rhythm by genotype
+
 # 02/20/24 | AJS
 
 ## Agenda {.smaller}
 
 1. CARRS data
-	 a. Table 3 = <10% data loss in modeling
-	 a. Table 2a/2b = LSM is $\propto$ factorial AOV
+	a. Table 3 = <10% data loss in modeling
+	a. Table 2a/2b = LSM is $\propto$ factorial AOV
 2. K23 update
-	 a. Specific aims
-	 a. Preliminary data
+	a. Specific aims
+	a. Preliminary data
 3. ECG/TTN update
-	 a. Variant annotation
-	 a. ECG/ML neural network learning
+	a. Variant annotation
+	a. ECG/ML neural network learning
 
 # 02/13/24 | AJS
 
