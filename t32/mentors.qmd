@@ -14,6 +14,26 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 03/13/24 | DD
+
+## Agenda {.smallest}
+
+1. First-author products
+	a. AFL/FH paper submission (R3) to JAHA
+	a. AFEQT/SDOH paper (drafting), track to JACC EP
+	a. HRV/CVD paper re-submission (R1) to JAMA Cardiology
+	a. GEH/DM (CARRS) paper (drafting), deciding on submission location
+	a. ECG/TTN presentation (3/27 to AFGen fellows)
+	a. MUSE/LSPro annotation software (pending publication)
+1. Co-author products
+	a. Hemodynamic Reactivity (JAMA Open)
+	a. HRV and MSIMI (JAHA)
+	a. HRV and CHF (JACC HF)
+	a. VUS/P/LP and AF/DCM (draft by Hill)
+1. Research network
+	a. AHA Epidemiology (March 2024) - meeting with Jared Magnani and Alvaro Alonso
+	a. AFGen consortium (presenting 3/27), likely submit AHA abstract (+/- young investigator) for ECG/TTN
+
 # 02/21/24 | AA
 
 ## Agenda {.smaller}
