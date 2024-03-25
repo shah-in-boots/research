@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2024, month = 2, day = 16) |>
+	date_build(year = 2024, month = 3, day = 25) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,20 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# March 25, 2024
+
+## Updates {.smaller}
+
+- ECG/TTN
+	- Draft analysis complete, presenting to AFGen fellows on 3/27
+	- Brainstorm scope of paper
+- AFEQT/SDOH
+	- Positive feedback from co-author on results draft
+	- Potential expansion of "baseline" cohort (AFEQT)
+	- Paper writing (new draft in progress), expect 2 weeks for first draft $\pm$ new analyses
+~ AFL/FMHX
+	- Revisions in progress, responses likely Thursday/Friday
 
 # February 26, 2024
 
@@ -321,39 +335,6 @@ Variant pipeline requires combination of cluster + local software, and is stable
 - Neither race, ethnicity, or socioeconomic differences have significant research progress in AF diagnosis or management [Norby2021]
 
 *We have a rare opportunity to evaluate how __symptom burden__ is affected by SDOH factors in a multi-ethnic population.*
-
----
-
-```{r}
-#| label: tbl-afeqt-desc
-#| tbl-cap: AFEQT/SDOH sample population
-afeqt_tbls <- targets::tar_read(afeqt_tbls, store = '~/OneDrive - University of Illinois Chicago/targets/aflubber')
-afeqt_tbls$desc 
-```
-
----
-
-```{r}
-#| label: tbl-afeqt-scores
-#| tbl-cap: AFEQT/SDOH scores
-afeqt_tbls$afeqt
-```
-
----
-
-```{r}
-#| label: tbl-afeqt-baseline
-#| tbl-cap: AFEQT/SDOH baseline characteristics
-afeqt_tbls$baseline
-```
-
----
-
-```{r}
-#| label: tbl-afeqt-followup
-#| tbl-cap: AFEQT/SDOH follow-up characteristics
-afeqt_tbls$followup
-```
 
 # December 18, 2023
 
