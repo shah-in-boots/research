@@ -176,12 +176,12 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2024, month = 3, day = 25) |>
+	date_build(year = 2024, month = 3, day = 29) |>
 	add_days(-30)
 
 progress <-
 	drive_get("research_log") |>
-	read_sheet(sheet = "progress_sheet") |>
+	read_sheet(sheet = "project_sheet") |>
 	filter(Deadline >= dt)
 
 effort <-
@@ -206,6 +206,29 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# March 29, 2024
+
+## Update {.smaller}
+
+- AFL/FH:
+	- Revisions complete, pending table placement considerations
+- ECG/TTN:
+	- Results presented to AFGen fellows
+	- Revised project proposal in conjunction with AFGen (for UK Biobank)
+	- Potential K23 aim
+- AFEQT/SDOH:
+	- Additional analysis on cross-sectional cohort
+	- Conditional/clustered analyses for predictive means
+	
+## ECG/TTN {.smaller}
+
+Can ECG discriminate between [wild-type AF and mutant-type]{.underline} with known, causal/associated genes?
+
+- Increase scope to include additional monogenic genes
+- Train to target individual cases based on genetic variant
+- Train to classify those with *no* genetic mutations
+- Validate in UK Biobank
 
 # March 25, 2024
 
