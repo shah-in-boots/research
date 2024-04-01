@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2024, month = 3, day = 29) |>
+	date_build(year = 2024, month = 4, day = 1) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,30 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# April 1, 2024
+
+## Updates {.smaller}
+
+- AFEQT/SDOH
+	- Additional analysis on cross-sectional cohort
+	- Conditional/clustered analyses for predictive means
+- Atrial Fibrillation Composite Treatment Response Score (AF-CTRS)
+	- AF-CTRS to be used to predict efficacy of treatment (regardless of burden % or AFEQT score)
+	- Output is algorithm that ties "response parameters" to a dose-responsive score $\rightarrow$ validate in AF Registry
+	- Algorithm: ECG findings, AFEQT score, clinical parameters, MCT/ILR (require complex MI)
+	
+## ECG Prediction of Structural and Ion Channel Mutants in AF {.smaller}
+
+This is an expansion of the __ECG/TTN__ project, which found [ECG could feasibly provide above-chance accuracy in identify TTN LOF variants]{.underline}.
+Now, expand to additional *wild-types* and *mutants*...
+
+- Sarcomeric/structural variants (e.g. TTN, PITX2, LMNA, NUP155, GJA1/5)
+- Ionic channel variants (e.g. KCNE1-5, KCNQ1, SCN5A)
+- No known genetic contributors (excluding any patient with non-benign VUS in any above genes $\pm$ SNPs associated with polygenic risk for AF)
+
+Models, trained on ECG in sinus rhythm in those with known AF, [will need validation]{.underline}. 
+However, should publication happen [before or after]{.underline} validation (e.g. with TOPMed/UK Biobank)
 
 # March 29, 2024
 
