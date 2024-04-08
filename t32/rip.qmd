@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2024, month = 4, day = 1) |>
+	date_build(year = 2024, month = 4, day = 8) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,25 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# April 5, 2024
+
+## Updates {.smallest}
+
+- ECG/Genetic Variants
+	- Re-analyze/label sarcomeric/ion channel/"wild-type" AF WES dataset
+	- AHA submission for abstract
+	- Pending validation cohort
+- AFEQT/SDOH
+	- Table 1: Baseline characteristics of full cohort (longitudinal $\rightarrow$ supplement)
+	- Table 2: AFEQT change by SDOH (NDI and ethnicity)
+	- Table 3: AFEQT change predictors (SDOH)
+	- Table 4: Rhythm/rate control strategy predictors
+	- Figure 1: Study flow-chart
+	- Figure 2: AFEQT predictive means over time (by cluster)
+	- Pending data collection
+- AF-CTRS Score
+	- Meeting with MB and JS
 
 # April 1, 2024
 
