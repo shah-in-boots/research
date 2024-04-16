@@ -4,7 +4,6 @@ format:
     reference-doc: ../template.docx
     
 csl: ../../bibliography/circulation.csl
-	
 ---
 
 Atrial fibrillation (AF) is the most common sustained cardiac arrhythmia, with a prevalence of over 50 million cases currently and &ge; 25% lifetime risk across races.[@Kornej2020]
@@ -33,8 +32,3 @@ To this end, I have the following aims:
 
 The current paradigm in the management of AF is superficial, focusing on therapies that are aimed at pharmacological and ablative modification of cardiac conductive tissue, instead of specific mechanisms, such as the underlying maladaptive autonomic response and interaction between scar and health atrial tissue under stress. 
 Identifying upstream mechanistic, autonomic pathways could lead to targeted therapies that not only decrease the risk of AF, but may also provide benefit in a number of other triggered atrial arrhythmias.[@Shivkumar2017]
-
-{{< pagebreak >}}
-
-::: {#refs}
-:::
