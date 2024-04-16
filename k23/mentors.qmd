@@ -18,6 +18,39 @@ fig-cap-location: bottom
 
 # 04/16/24 | SHC
 
+## Agenda {.smaller}
+
+1. Review slides from AFGen *RIP* presentation
+1. Extension of project
+	a. Extension/continuation of project
+	a. Timeline
+	a. Validation
+	
+## Project extension {.smaller}
+
+- Consider as part of K23 application focused on ECG-based phenotyping
+- Phenotyping but focusing on *structural/sarcomeric* and *ion channel* variants
+- Initial training data to be analyzed by mid-May, with intent for AHA submission
+- Similar to...
+	- @Wang2023
+	- @Choi2021
+	- @Weng2020
+	- @Ntalla2020
+- Validation?
+	- All of Us
+	- TOPMed
+	- UK Biobank
+
+## ECG Prediction of Structural and Ion Channel Mutants in AF {.smaller}
+
+This is an expansion of the __ECG/TTN__ project, which found [ECG could feasibly provide above-chance accuracy in identify TTN LOF variants]{.underline}.
+Now, expand to additional *wild-types* and *mutants*...
+
+- Sarcomeric/structural variants (e.g. TTN, PITX2, LMNA, NUP155, GJA1/5)
+- Ionic channel variants (e.g. KCNE1-5, KCNQ1, SCN5A)
+- No known genetic contributors (excluding any patient with non-benign VUS in any above genes $\pm$ SNPs associated with polygenic risk for AF)
+	
+
 # 02/14/24 | EJB
 
 ## Agenda {.smaller}
