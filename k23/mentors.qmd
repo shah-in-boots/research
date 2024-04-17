@@ -43,15 +43,20 @@ fig-cap-location: bottom
 
 ---
 
-{{< include _aim-1.qmd >}}
+__Aim 1: Identify ECG-based phenotypes of paroxysmal AF.__
+We will evaluate the ECG manifestation of (A) patterns of scar based on cardiac MRI/EPS, and (B) contributions of genetic variants in sarcomeric/structural proteins and ion channelopathies that are associated with AF. 
+Our [working hypothesis]{.underline} is that scar-based atrial myopathy can be identified by ECG, and can distinguish between re-entry versus focal triggers for AF.
 
 ---
 
-{{< include _aim-2.qmd >}}
+__Aim 2: Determine the differences in APD heterogeneity of scar tissue in the context of modulated autonomic activity.__
+Our [working hypothesis]{.underline} is that the interaction between APD heterogeneity and autonomic modulation will predict differential risk for future AF, particularly in cases of abnormal baseline autonomic activity such as PTSD.
 
 ---
 
-{{< include _aim-3.qmd >}}
+__Aim 3: Identify the role of novel, rare variants for future AF risk in stress-related conditions.__
+Our [working hypothesis]{.underline} is that rare variants identified in a population with abnormal stress responses will be associated wiht increased future risk of AF in a large cohort study.
+
 
 # 04/16/24 | SHC
 
