@@ -1,5 +1,3 @@
-__Aim 3: Evaluate the role of genetic variants in neural and cardiac tissue in the incidence and progression of AF.__
-We will identify novel and known variants in whole exome sequencing data that may be related to AF risk, including genes present in the neurocardiac axis. 
-Using a Mendelian randomization approach, we will assess the relationship of rare and novel variants with paroxysmal AF. 
-*Hypothesis*: [Variants in genes that regulate the neurocardiac axis will be associated with increased risk of paroxysmal AF in structurally normal atria]{.underline}.
+__Aim 3: Identify the role of novel, rare variants for future AF risk in stress-related conditions.__
+Our [working hypothesis]{.underline} is that rare variants identified in a population with abnormal stress responses will be associated wiht increased future risk of AF in a large cohort study.
 

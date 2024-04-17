@@ -16,6 +16,43 @@ fig-cap-location: bottom
 
 # 04/17/24 | RR
 
+## Agenda {.smaller}
+
+1. Current/updates on research areas
+	a. AFGen collaboration
+	a. UIC/Emory mentors
+1. K23/KL2/CDA application
+	a. Mentorship network at Utah
+	a. Collaborative overlap
+	a. Specific aims overview
+
+## Updates
+
+- Expect $\ge$ 5 *first-author* publications prior to EP fellowship start (2 published, 2 in review, 1 being drafted)
+- Two software publications (harmonic regression statistical package, causality-based modeing package)
+- Current project on phenotyping AF based on ECG and neural networks to predict genetic variants (AFGen collaboration) $\leftarrow$ manuscript (after validation)
+- Evaluating stress-associated genetic variants in WES/GWAS for future AF risk, with plans for validation via UK Biobank (Emory collaboration)
+
+## Utah-based research
+
+- MacLeod: work on ECG-I for arrhythmia prediction and atrial tissue characterization
+- Ranjan/Dosdall: work on MRI-based prediction of arrhythmia pathways
+- Tristani-Firouzi: genetics of arrhythmias, Utah Population Database
+
+## Draft of Aims {.center}
+
+---
+
+{{< include _aim-1.qmd >}}
+
+---
+
+{{< include _aim-2.qmd >}}
+
+---
+
+{{< include _aim-3.qmd >}}
+
 # 04/16/24 | SHC
 
 ## Agenda {.smaller}

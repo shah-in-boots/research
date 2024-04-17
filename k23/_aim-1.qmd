@@ -1,9 +1,3 @@
-__Aim 1: Identify electrocardiographic phenotypes and clinical trajectories of paroyxsmal AF.__
-We will utilize 12-lead electrocardiographic parameters of sinus rhythm and atrial fibrillation to classify phenotypes of AF based on genetic variants assoicated with AF.
-*Hypothesis*: [Sarcomere/structural, ion-channel, and wild-type patterns of ECG will ]{.underline}
-
-
-__Aim 1: Identify electrocardiographic phenotypes of paroxysmal AF.__
-We will generate electrocardiographic parameters in sinus rhythm (atrial and ventricular activation and repolarization indices) and in atrial fibrillation (amplitude of fibrillatory waves, atrial frequency). 
-We will assess the relationship of these parameters to groups of paroxysmal AF with normal left atrial volume.
-*Hypothesis*: [Increased amplitude of fibrillatory waves during atrial fibrillation and increased variability in P wave indices will identify paroxysmal AF with structurally normal atria]{.underline}.
+__Aim 1: Identify ECG-based phenotypes of paroxysmal AF.__
+We will evaluate the ECG manifestation of (A) patterns of scar based on cardiac MRI/EPS, and (B) contributions of genetic variants in sarcomeric/structural proteins and ion channelopathies that are associated with AF. 
+Our [working hypothesis]{.underline} is that scar-based atrial myopathy can be identified by ECG, and can distinguish between re-entry versus focal triggers for AF.
