@@ -34,7 +34,7 @@ format:
   html:
     theme:
       - flatly
-      - theme.scss
+      - colors.scss
     highlight: solarized-light
     toc: true
     toc_float: true
@@ -44,7 +44,7 @@ format:
   revealjs:
     theme:
       - simple
-      - theme.scss
+      - colors.scss
     slide-tone: false
     fig-cap-location: bottom
     fig-align: center
