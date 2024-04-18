@@ -13,8 +13,10 @@ This topic fascinates me, and has led me to continue to explore this path, with 
 
 # Current projects
 
-This serves as a summary of current/active research projects.
-Weekly, [research-in-progress updates](https://asshah4.github.io/research/t32/rip.html) and general agendas from [mentorship meetings](https://asshah4.github.io/research/t32/mentors.html) are available at these links.
+This serves as a summary of current/active research projects and relevant updates on progress.
+
+1. Weekly [T32/F32 research-in-progress](https://asshah4.github.io/research/t32/rip.html) updates along with [T32/F32 mentorship meetings](https://asshah4.github.io/research/t32/mentors.html) agends
+1. Weekly [K23 research-in-progress](https://asshah4.github.io/research/k23/rip.html) updates along with [K23 mentorship meetings](https://asshah4.github.io/research/k23/mentors.html) agends
 
 ```{mermaid}
 %%| fig-responsive: true
