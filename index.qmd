@@ -16,39 +16,6 @@ This topic fascinates me, and has led me to continue to explore this path, with 
 This serves as a summary of current/active research projects.
 Weekly, [research-in-progress updates](https://asshah4.github.io/research/t32/rip.html) and general agendas from [mentorship meetings](https://asshah4.github.io/research/t32/mentors.html) are available at these links.
 
-```{mermaid}
-%%| fig-responsive: true
-%%| fig-label: fig-timeline
-gantt
-	dateFormat M/YY
-	axisFormat %b-%Y
-	section ECG/TTN 
-		MUSE ECG to XML 								:done, muse, 05/2023, 07/2023
-		XML ECG to WFDB									:done, wfdb, 04/2023, 90d
-		Sinus rhythm parameters 				:done, nsr, 07/2023, 30d
-		TTN variant selection						:active, vus, 10/2023, 180d
-		Initial ML model training 			:done, ttn1, 11/2023, 60d
-		Model revisions									:active, ttn2, 12/2023, 90d
-		Model explainability 						:ttn3, 01/2023, 120d
-		Manuscript drafting							:after ttn2, 90d
-		Manuscript draft								:milestone, ttn4, after ttn3, 7d 
-	section AFEQT/SDOH
-		Complete AFEQT scoring					:done, scores, 10/2023, 60d
-		Compile dataset from CCTS				:active, afeqt1, 11/2023, 30d
-		Create matching data from JBVA	:after afeqt1, afeqt2, 30d
-		Initial results									:milestone, afeqt1, 01/15/23, 7d
-		Co-author feedback 							:after afeqt2, 14d
-		Manuscript											:milestone, afeqt3, 02/2023, 7d
-	section Phenotype 
-		CCTS/CBCD IRB										:done, 04/2023, 30d
-		Import CCTS data								:done, 05/2023, 60d
-		Cluster hosting of data					:done, 06/2023, 60d
-		Cleaning CCTS data							:active, ccts, 09/2023, 90d
-	section AF/PRS
-	section MSNA/ECG
-	section CARRS/GEH
-```
-
 | | | |
 | --- | --- | --- |
 | MSIMI and CV Mortality | A large prospective cohort study measuring myocardial ischemia in response to mental stress, with extensive follow-up. Analytical skills included the development of recurrent event models (AG, PWP, MSM, marginal, conditional). Recurrent event software in R was developed. Middle-author Publication in JAMA | 2019-2020 |
