@@ -259,6 +259,7 @@ A "true" model would need to impute missing data, but this would require multipl
 - [ ] Account for missing data in a rough model (make assumptions about AF burden)
 - [ ] Adjust strength and weight of *rough* parameters
 - [ ] Account for intervention (pacemaker, PVI, etc)
+- [ ] Help in implementing this in AF Registry
 
 	
 # April 8, 2024
