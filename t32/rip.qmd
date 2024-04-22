@@ -1,9 +1,8 @@
 ---
 title: "Research-In-Progress"
-author: "Anish Sanjay Shah, MD/MS<br><span style = 'font-size: 70%;'>Cardiology Fellow<br>University of Illinois at Chicago</span>"
+author: "Anish Sanjay Shah, MD/MS<br><span style = 'font-size: 70%;'>Cardiology Fellow<br>University of Illinois Chicago</span>"
 format: 
   revealjs:
-    footer: "[Epidemiology]{style='color:#1E87E5FF'}, [Arrhythmia ]{style='color:#F8A725FF'}, [Clinical]{style='color:#C1185AFF'}, [Computational ]{style='color:#00887AFF'}"
     scrollable: true
 execute:
   cache: true
@@ -42,11 +41,12 @@ find_project_folder <- function() {
 
 
 # Used in YAML above as well - lower is darker, higher is lighter
-stress <- pal_material("blue", reverse = TRUE)(9)
-arrhythmia <- pal_material("yellow", reverse = TRUE)(9)
-clinical <- pal_material("pink", reverse = TRUE)(9)
-computational <- pal_material("teal", reverse = TRUE)(9)
-text <- pal_material("blue-grey", reverse = TRUE)(9)
+base::readRenviron("_environment")
+col_arrhythmia <- Sys.getenv("primary")
+col_clinical <- Sys.getenv("danger")
+col_computational <- Sys.getenv("warning")
+col_epidemiology <- Sys.getenv("secondary")
+col_text <- Sys.getenv("dark")
 
 
 tbl_status_updates <- function(progress, effort) {
@@ -83,33 +83,33 @@ tbl_status_updates <- function(progress, effort) {
 			locations = cells_stub(rows = num != 1)
 		) |>
 		tab_style(
-			style = list(cell_fill(color = stress[5]),
+			style = list(cell_fill(color = col_epidemiology),
 									 cell_text(color = "white"),
-									 cell_borders(sides = "all", color = stress[5])),
+									 cell_borders(sides = "all", color = col_epidemiology)),
 			locations = cells_row_groups(groups = contains("Epidemiology"))
 		) |>
 		tab_style(
-			style = list(cell_fill(color = arrhythmia[2]),
+			style = list(cell_fill(color = col_arrhythmia),
 									 cell_text(color = "white"),
-									 cell_borders(sides = "all", color = arrhythmia[2])),
+									 cell_borders(sides = "all", color = col_arrhythmia)),
 			locations = cells_row_groups(groups = contains("Arrhythmia"))
 		) |>
 		tab_style(
-			style = list(cell_fill(color = clinical[5]),
+			style = list(cell_fill(color = col_clinical),
 									 cell_text(color = "white"),
-									 cell_borders(sides = "all", color = clinical[5])),
+									 cell_borders(sides = "all", color = col_clinical)),
 			locations = cells_row_groups(groups = contains("Clinical"))
 		) |>
 		tab_style(
-			style = list(cell_fill(color = computational[3]),
+			style = list(cell_fill(color = col_computational),
 									 cell_text(color = "white"),
-									 cell_borders(sides = "all", color = computational[3])),
+									 cell_borders(sides = "all", color = col_computational)),
 			locations = cells_row_groups(groups = contains("Computational"))
 		) |>
 		tab_style(
-			style = list(cell_fill(color = text[3]),
+			style = list(cell_fill(color = col_text),
 									 cell_text(color = "white"),
-									 cell_borders(sides = "all", color = text[3])),
+									 cell_borders(sides = "all", color = col_text)),
 			locations = cells_row_groups(groups = contains("Academic"))
 		) |>
 		# General formatting
@@ -128,7 +128,7 @@ tbl_status_updates <- function(progress, effort) {
 			locations = list(cells_stub(), cells_column_labels())
 		) |>
 		tab_style(
-			style = cell_borders(sides = "bottom", color = text[5]),
+			style = cell_borders(sides = "bottom", color = col_text),
 			locations = list(
 				cells_body(columns = everything()),
 				cells_stub(rows = everything())
@@ -166,7 +166,6 @@ tbl_status_updates <- function(progress, effort) {
 			#Description ~ pct(35),
 			Deadline ~ pct(15)
 		) 
-		
 }
 ```
 
@@ -176,7 +175,7 @@ tbl_status_updates <- function(progress, effort) {
 #| tbl-cap: Progress updates
 #| echo: false
 dt <- 
-	date_build(year = 2024, month = 4, day = 8) |>
+	date_build(year = 2024, month = 4, day = 21) |>
 	add_days(-30)
 
 progress <-
@@ -207,7 +206,62 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
-# April 5, 2024
+# April 22, 2024
+
+## Tasks
+
+- [ ] Completion of AFEQT/SDOH paper week
+	- [x] Dataset for JBVA cohort
+- [x] Cardiovascular computational biorepository pipeline
+	- [ ] Consider data-sharing for LLM project with Dr. Philip Yu (PI)
+- [x] AFL/FH accepted and submitted, pending publication
+- [ ] ECG and genetic variants prediction training
+	- [ ] UK Biobank ECG/genetics proposal
+	
+## AF-CTRS
+
+```{mermaid}
+flowchart LR
+	score[AF Composite Treatment Response]
+	burden[Frequency/duration of AF]
+	sx[Symptoms]
+	ecg[ECG]
+	mct[Continuous telemetry]
+	afeqt[AFEQT score]
+	fc[Functional class]
+	
+	sx --> score
+	burden --> score
+	
+	fc --> sx
+	afeqt --> sx
+	
+	ecg --> burden
+	mct --> burden
+```
+
+## AF-CTRS draft
+
+- $ECG = ECG_{sinus} \times n_{sequential}$
+- $ECG = \frac{ECG_{sinus} - ECG_{AF}}{ECG_{total}}$
+- $MCT = Burden_{sinus} \times days$
+- $AFEQT = AFEQT_{total} / 10$
+- $FC = 5 - NYHA$
+
+::: aside
+E.g. if x3 ECG in sinus in a row, and no MCT data, likely has __low burden__ of AF
+:::
+
+---
+
+A "true" model would need to impute missing data, but this would require multiple datasets for training/testing/validation
+
+- [ ] Account for missing data in a rough model (make assumptions about AF burden)
+- [ ] Adjust strength and weight of *rough* parameters
+- [ ] Account for intervention (pacemaker, PVI, etc)
+
+	
+# April 8, 2024
 
 ## Updates {.smallest}
 
