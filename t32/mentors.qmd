@@ -8,15 +8,90 @@ institute:
 format: 
   revealjs:
     scrollable: true
+    height: 1080
+    width: 1920
 execute:
   cache: true
 tbl-cap-location: bottom
 fig-cap-location: bottom
+
 ---
 
 # 04/24/24 | DD
 
-## Agenda {.smallest}
+## Agenda {.smaller}
+
+1. Active projects
+	a. AFL/FH paper accepted to JAHA
+	a. AFEQT/SDOH manuscript, tracking to Annals
+	a. ECG/genetics project, UK BioBank proposal
+	a. AF-CTRS, piloting
+1. K23 plans and intergration 
+1. Mentorship timeline
+	a. Current/future mentees
+	a. Research mentership
+		
+## Active projects {.smaller}
+
+[AFEQT/SDOH manuscript]{.blue}
+
+- [ ] Draft to co-authors by end of April
+- [ ] Submission to Annals end of May
+- [ ] Abstract/manuscript for AHA Scientific Sessions + Early Career Award application
+
+[ECG/genetics]{.orange}
+
+- [ ] UK BioBank proposal being written (Emelia and Seung Hoan to review to help with sponsorship)
+
+Should this project be dropped?
+
+[AF-CTRS]{.green}
+
+Priority? Timeline?
+
+## K23
+
+1. [Identify scar patterns and their evolution in AF phenotypes]{.blue}
+	- ECG-based phenotypes (UIC Multi-Ethnic AF Registry and MRI data in Utah registry)
+	- Genetic variant influence on atrial myopathy patterns, incorporate the *inverse problem* for ECGi
+	- Validation in larger cohorts (ARIC, MESA, UK BioBank)
+1. [Measure and quantify the electrical properties of different scar-based phenotypes EPS-modulation of dromotropic properties]{.orange}
+	- EP-lab based
+	- Obtain parameters that affect dromotropic properties (e.g. autonomic modulation)
+1. [Model the effect of scar on atrial arrhythmia prediction (AT, AF, AFL)]{.green}
+	- Computational aim with Ravi
+
+## Mentorship timeline {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+[Shashank Sadhu]{.green}
+
+- [x] James Scholar award on ECG/genetics
+- [ ] Incorporation into ECG/genetic project
+
+[Darren Seaney]{.green}
+
+- [x] T35 award on AF/diabetes
+- [ ] Summer project
+- [ ] Incorporation into ECG/genetic project
+
+[Future lab resources]{.green}
+
+- [ ] VCF pipeline for annotations
+- [ ] Pipeline for CCTS/ECG dataset creations
+
+:::
+::: {.column width="50%"}
+
+- Consider continued mentorship with both during EP fellowship?
+- 1:1 meetings q2wk with mentees?
+- UIC account sponsorship (EPIC? CCTS? Research account?)
+- Cluster for data storage + research?
+
+:::
+::::
+
 
 # 04/23/24 | AJS
 
