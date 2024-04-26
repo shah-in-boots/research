@@ -17,7 +17,7 @@ fig-cap-location: bottom
 
 # Libraries
 library(tidyverse)
-library(vlndr)
+library(rmdl)
 library(shiva)
 library(hrd)
 library(googledrive)
@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| echo: false
 #| cache: false
 dt <- 
-	date_build(year = 2024, month = 4, day = 21) |>
+	date_build(year = 2024, month = 4, day = 26) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,23 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# April 26, 2024 
+
+## Updates {.smaller}
+
+AFEQT paper:
+
+- [x] Introduction
+- [x] Methods
+- [x] Results
+- [ ] Discussion
+
+ECG/genetics:
+
+- [ ] UK Biobank Proposal
+- [ ] PGS on local GWAS
+- [x] VCF annotation pipeline
 
 # April 22, 2024
 
