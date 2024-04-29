@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| echo: false
 #| cache: false
 dt <- 
-	date_build(year = 2024, month = 4, day = 26) |>
+	date_build(year = 2024, month = 4, day = 29) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,18 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# April 29, 2024
+
+## Updates {.smaller}
+
+1. AFEQT paper to be disseminated to co-authors by Wednesday 5/1
+1. ECG/genetics: UK Biobank Proposal to be shared to mentors by 5/3
+1. K23 aims: draft to share with key mentors on 5/6
+1. AF-CTRS: writing out different weighting options currently
+1. LLM: upcoming meetings on 5/3
+1. AF phenotyping/trajectories: pending application/integration of DS and SS coding projects into our CCTS dataset
+1. Cluster access for data - need to discuss lab-wide access / data maintenance (low priority for now)
 
 # April 26, 2024 
 
