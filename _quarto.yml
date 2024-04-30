@@ -8,14 +8,14 @@ website:
     background: primary
     left:
       - icon: house-door
-        href: https://asshah4.github.io
+        href: https://shah-in-boots.github.io
       - text: Overview
         href: index.qmd
     right:
       - icon: envelope
         href: mailto:ashah282@uic.edu
       - icon: github
-        href: http://github.com/asshah4
+        href: http://github.com/shah-in-boots
       - icon: twitter
         href: https://twitter.com/shah_in_boots
       - icon: linkedin

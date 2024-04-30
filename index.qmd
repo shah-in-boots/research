@@ -15,8 +15,8 @@ This topic fascinates me, and has led me to continue to explore this path, with 
 
 This serves as a summary of current/active research projects and relevant updates on progress.
 
-1. Weekly [T32/F32 research-in-progress](https://asshah4.github.io/research/t32/rip.html) updates along with [T32/F32 mentorship meetings](https://asshah4.github.io/research/t32/mentors.html) agends
-1. Weekly [K23 research-in-progress](https://asshah4.github.io/research/k23/rip.html) updates along with [K23 mentorship meetings](https://asshah4.github.io/research/k23/mentors.html) agends
+1. Weekly [T32/F32 research-in-progress](https://shah-in-boots.github.io/research/t32/rip.html) updates along with [T32/F32 mentorship meetings](https://shah-in-boots.github.io/research/t32/mentors.html) agends
+1. Weekly [K23 research-in-progress](https://shah-in-boots.github.io/research/k23/rip.html) updates along with [K23 mentorship meetings](https://shah-in-boots.github.io/research/k23/mentors.html) agends
 
 | | | |
 | --- | --- | --- |
@@ -24,9 +24,9 @@ This serves as a summary of current/active research projects and relevant update
 | HRV and Myocardial Perfusion | Evaluated circadian patterns in autonomic function using 24-hour Holter data, generating HRV with a focus on spectral density analyses. Compared these patterns with CFR on quantitate PET, finding a relationship with CFR and early morning low HRV. First-author publication in IJC | 2017-2020 |
 | GEH and Diabetes | Using the CARRS cohort, evaluated ECG-based patterns of GEH and diabetes, finding a strong relationship with cardiac fibrosis and widening of specific GEH parameters. WIP | 2018-2019 |
 | HRV and Psychosocial Factors | Evaluated changes in HRV from baseline to several years later in the ARIC Study. Found that psychosomatic stress (in the form of vital exhaustion) led to a persistent decrease in high frequency HRV, a surrogate of vagal tone. First-author Publication in JAHA | 2016-2020 |
-| AFL and Family History | Statistical analysis of relationship between early onset AFL and family history, which notably yields different phenotypes in Whites and Blacks. [WIP](https://asshah4.github.io/aflubber) | 2022 |
+| AFL and Family History | Statistical analysis of relationship between early onset AFL and family history, which notably yields different phenotypes in Whites and Blacks. [WIP](https://shah-in-boots.github.io/aflubber) | 2022 |
 | Disturbances of Neurocardiac Axis | TL1 and F32 grant focused on evaluating of myocardial ischemia and changes in autonomic function using HRV. Pilot study with completed recruitment. Publication of Thesis and WIP | 2019-now | 
-| Vagolysis and Arrhythmogenesis | Measurement of vagolysis in arrhythmogenesis in the electrophysiology lab and using clinical and epidemiological data. Currently working on the development/progress [towards a K23 award](https://asshah4.github.io/research/k23/planning.html), including pilot data collection. | 2022-now |
+| Vagolysis and Arrhythmogenesis | Measurement of vagolysis in arrhythmogenesis in the electrophysiology lab and using clinical and epidemiological data. Currently working on the development/progress [towards a K23 award](https://shah-in-boots.github.io/research/k23/planning.html), including pilot data collection. | 2022-now |
 
 *GEH = global electrical heterogeneity; HRV = heart rate variability; CV = cardiovascular; SCD = sudden cardiac death; AFL = family history; MSIMI = mental stress induced myocardial ischemia; PET = positron emission tomography*
 
@@ -51,20 +51,20 @@ _Physiological and psychological stress and cardiovascular mortality, from a neu
 - Depression and dysregulation of the autonomic nervous system, published in [JAHA](https://doi.org/10.1161/JAHA.120.017172)
 - Circadian variability in autonomic function and microvascular coronary disease, published in [IJC](https://doi.org/10.1016/j.ijcard.2020.01.069)
 - Atrial fibrillation recurrence after catheter ablation
-- Family history and genetic basis of [atrial flutter](https://asshah4.github.io/aflubber)
+- Family history and genetic basis of [atrial flutter](https://shah-in-boots.github.io/aflubber)
 - Cardiovascular biorepository for computational assessment of trajectories/history
 
 ## Stress and Arrhythmognesis
 
 _Mechanisms behind stress and arrhythmia generation (or degeneration) in a pre-clinical and clinical electrophysiology context_
 
-- Murine models of vagolysis leading to triggered arrhythmias, which was initially proposed as an [AHA IPA](https://asshah4.github.io/research/grants/aha_innovative_project_2022.html), but then withdrawn
+- Murine models of vagolysis leading to triggered arrhythmias, which was initially proposed as an [AHA IPA](https://shah-in-boots.github.io/research/grants/aha_innovative_project_2022.html), but then withdrawn
 
 ## Computational Neurocardiology and Biostatistics
 
 _Programming-based approaches in signal processing and biostatistics_
 
-- Measuring circadian patterns and disturbances using a [cosinor regression method](https://asshah4.github.io/card)
+- Measuring circadian patterns and disturbances using a [cosinor regression method](https://shah-in-boots.github.io/card)
 
 ## Clinical Projects
 
