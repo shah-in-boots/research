@@ -1,366 +1,393 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Anish S. Shah, MD | MS">
-<meta name="dcterms.date" content="2023-02-13">
-
-<title>Research - Vagolysis and Arrhythmogenesis</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
-
-
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<html lang="en"><head>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.4.553">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
+  <meta name="author" content="Anish S. Shah, MD | MS">
+  <meta name="dcterms.date" content="2023-02-13">
+  <title>Research - Vagolysis and Arrhythmogenesis</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
     }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-attribution/attribution.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
   }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
 </head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
 
-<body class="nav-fixed">
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Vagolysis and Arrhythmogenesis</h1>
+  <p class="subtitle">T32/TPIPCVM Seminar</p>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Research</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://asshah4.github.io"> <i class="bi bi-house-door" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Overview</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="mailto:ashah282@uic.edu"> <i class="bi bi-envelope" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="http://github.com/asshah4"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/shah_in_boots"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/anish-shah-326991177/"> <i class="bi bi-linkedin" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Anish S. Shah, MD | MS 
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
-  <ul class="collapse">
-  <li><a href="#outline" id="toc-outline" class="nav-link" data-scroll-target="#outline">Outline</a></li>
-  <li><a href="#significance" id="toc-significance" class="nav-link" data-scroll-target="#significance">Significance</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
-  </ul></li>
-  <li><a href="#relationship-between-ans-and-cardiac-physiology" id="toc-relationship-between-ans-and-cardiac-physiology" class="nav-link" data-scroll-target="#relationship-between-ans-and-cardiac-physiology">Relationship between ANS and cardiac physiology</a>
-  <ul class="collapse">
-  <li><a href="#neurocardiac-axis" id="toc-neurocardiac-axis" class="nav-link" data-scroll-target="#neurocardiac-axis">Neurocardiac axis</a></li>
-  <li><a href="#assessment-of-the-ans" id="toc-assessment-of-the-ans" class="nav-link" data-scroll-target="#assessment-of-the-ans">Assessment of the ANS</a></li>
-  <li><a href="#autonomic-function-and-coronary-physiology" id="toc-autonomic-function-and-coronary-physiology" class="nav-link" data-scroll-target="#autonomic-function-and-coronary-physiology">Autonomic function and coronary physiology</a></li>
-  </ul></li>
-  <li><a href="#evaluate-effect-of-stress-on-cv-mortality" id="toc-evaluate-effect-of-stress-on-cv-mortality" class="nav-link" data-scroll-target="#evaluate-effect-of-stress-on-cv-mortality">Evaluate effect of stress on CV mortality</a>
-  <ul class="collapse">
-  <li><a href="#how-do-we-perturb-the-ans" id="toc-how-do-we-perturb-the-ans" class="nav-link" data-scroll-target="#how-do-we-perturb-the-ans">How do we perturb the ANS?</a></li>
-  </ul></li>
-  <li><a href="#determine-clinical-impact-of-vagal-withdrawal" id="toc-determine-clinical-impact-of-vagal-withdrawal" class="nav-link" data-scroll-target="#determine-clinical-impact-of-vagal-withdrawal">Determine clinical impact of vagal withdrawal</a>
-  <ul class="collapse">
-  <li><a href="#critical-role-of-the-vagus" id="toc-critical-role-of-the-vagus" class="nav-link" data-scroll-target="#critical-role-of-the-vagus">Critical role of the vagus</a></li>
-  <li><a href="#vagal-therapeutic-interventions" id="toc-vagal-therapeutic-interventions" class="nav-link" data-scroll-target="#vagal-therapeutic-interventions">Vagal therapeutic interventions</a></li>
-  <li><a href="#jacksonian-dissolution" id="toc-jacksonian-dissolution" class="nav-link" data-scroll-target="#jacksonian-dissolution">Jacksonian dissolution</a></li>
-  </ul></li>
-  <li><a href="#identify-a-representative-disease-model-paroxysmal-af" id="toc-identify-a-representative-disease-model-paroxysmal-af" class="nav-link" data-scroll-target="#identify-a-representative-disease-model-paroxysmal-af">Identify a representative disease model = paroxysmal AF</a>
-  <ul class="collapse">
-  <li><a href="#sympathovagal-crosstalk" id="toc-sympathovagal-crosstalk" class="nav-link" data-scroll-target="#sympathovagal-crosstalk">Sympathovagal crosstalk</a></li>
-  <li><a href="#molecular-mechanisms" id="toc-molecular-mechanisms" class="nav-link" data-scroll-target="#molecular-mechanisms">Molecular mechanisms</a></li>
-  <li><a href="#genetic-variants" id="toc-genetic-variants" class="nav-link" data-scroll-target="#genetic-variants">Genetic variants</a></li>
-  <li><a href="#inadequate-classification" id="toc-inadequate-classification" class="nav-link" data-scroll-target="#inadequate-classification">Inadequate classification</a></li>
-  <li><a href="#paf-as-a-model-for-vta" id="toc-paf-as-a-model-for-vta" class="nav-link" data-scroll-target="#paf-as-a-model-for-vta">pAF as a model for VTA</a></li>
-  </ul></li>
-  <li><a href="#research-proposal" id="toc-research-proposal" class="nav-link" data-scroll-target="#research-proposal">Research proposal</a>
-  <ul class="collapse">
-  <li><a href="#research-approach" id="toc-research-approach" class="nav-link" data-scroll-target="#research-approach">Research approach</a></li>
-  <li><a href="#aim-1-clinical" id="toc-aim-1-clinical" class="nav-link" data-scroll-target="#aim-1-clinical">Aim #1: Clinical</a></li>
-  <li><a href="#aim-2-translational" id="toc-aim-2-translational" class="nav-link" data-scroll-target="#aim-2-translational">Aim #2: Translational</a></li>
-  </ul></li>
-  <li><a href="#end" id="toc-end" class="nav-link" data-scroll-target="#end">End</a>
-  <ul class="collapse">
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul></li>
-  </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="tpipcvm-rip-seminar-021223.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
-    </div>
-<!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Vagolysis and Arrhythmogenesis</h1>
-<p class="subtitle lead">T32/TPIPCVM Seminar</p>
-</div>
-
-
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Anish S. Shah, MD | MS </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
+        <p class="quarto-title-affiliation">
             Division of Cardiology, University of Illinois at Chicago
           </p>
-        <p class="affiliation">
+        <p class="quarto-title-affiliation">
             Rollins School of Public Health, Emory University
           </p>
-      </div>
-  </div>
-
-<div class="quarto-title-meta">
-
-      
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">February 13, 2023</p>
     </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.0     ✔ tibble    3.2.1
-✔ lubridate 1.9.3     ✔ tidyr     1.3.1
-✔ purrr     1.0.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
-
-Attaching package: 'scales'
-
-
-The following object is masked from 'package:purrr':
-
-    discard
-
-
-The following object is masked from 'package:readr':
-
-    col_factor
-
-
-
-Attaching package: 'ggdag'
-
-
-The following object is masked from 'package:stats':
-
-    filter</code></pre>
 </div>
-</div>
-<section id="introduction" class="level1 page-columns page-full">
+
+  <p class="date">2023-02-13</p>
+</section>
+<section>
+<section id="introduction" class="title-slide slide level1 center">
 <h1>Introduction</h1>
-<section id="outline" class="level2">
-<h2 class="anchored" data-anchor-id="outline">Outline</h2>
-<div class="incremental">
-<ol class="incremental" type="1">
-<li>Overview</li>
-<li>Step 1: Establish relationship between ANS and <strong>cardiac physiology</strong></li>
-<li>Step 2: Evaluate effect of <strong>stress</strong> on <strong>CV mortality</strong></li>
-<li>Step 3: Determine clinical impact of <strong>vagal withdrawal</strong></li>
-<li>Step 4: Identify a representative disease model = <strong>pAF</strong></li>
-<li>Research proposal</li>
+
+</section>
+<section id="outline" class="slide level2 scrollable">
+<h2>Outline</h2>
+<div>
+<ol type="1">
+<li class="fragment">Overview</li>
+<li class="fragment">Step 1: Establish relationship between ANS and <strong>cardiac physiology</strong></li>
+<li class="fragment">Step 2: Evaluate effect of <strong>stress</strong> on <strong>CV mortality</strong></li>
+<li class="fragment">Step 3: Determine clinical impact of <strong>vagal withdrawal</strong></li>
+<li class="fragment">Step 4: Identify a representative disease model = <strong>pAF</strong></li>
+<li class="fragment">Research proposal</li>
 </ol>
 </div>
 </section>
-<section id="significance" class="level2 smaller page-columns page-full">
-<h2 class="smaller anchored" data-anchor-id="significance">Significance</h2>
+<section id="significance" class="slide level2 smaller">
+<h2>Significance</h2>
 <ul>
 <li>Knowledge gaps:
 <ul>
@@ -378,49 +405,45 @@ The following object is masked from 'package:stats':
 </ul></li>
 </ul>
 
-<div class="no-row-height column-margin column-container"><div class="margin-aside">
-<p><span class="citation" data-cites="Mehra2022">Mehra et al. (<a href="#ref-Mehra2022" role="doc-biblioref">2022</a>)</span> has identified these gaps and priorities in a NHLBI-supported expert-led workshop</p>
-</div></div></section>
-<section id="objectives" class="level2">
-<h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
-<div class="incremental">
-<ol class="incremental" type="a">
-<li>Understand importance of neural regulation of cardiac physiology</li>
-<li>Understand the role of cardiovagal activity in arrhythmogenesis</li>
-<li>Identify gaps in current diagnostic and treatment options</li>
-<li>Review a research proposal in autonomic and electrical heart disease</li>
+<aside><div>
+<p><span class="citation" data-cites="Mehra2022">Mehra et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span> has identified these gaps and priorities in a NHLBI-supported expert-led workshop</p>
+</div></aside></section>
+<section id="objectives" class="slide level2 scrollable">
+<h2>Objectives</h2>
+<div>
+<ol type="a">
+<li class="fragment">Understand importance of neural regulation of cardiac physiology</li>
+<li class="fragment">Understand the role of cardiovagal activity in arrhythmogenesis</li>
+<li class="fragment">Identify gaps in current diagnostic and treatment options</li>
+<li class="fragment">Review a research proposal in autonomic and electrical heart disease</li>
 </ol>
 </div>
-<hr>
-<div id="fig-sns-pns-heart" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-sns-pns-heart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/sns-pns-heart-cartoon.jpg" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sns-pns-heart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</section>
+<section class="slide level2">
+
+
+<img data-src="../figures/sns-pns-heart-cartoon.jpg" class="img-fluid r-stretch quarto-figure-center"><p class="caption">
 Figure&nbsp;1: Sympathetic and parasympathetic cardiac inputs
-</figcaption>
-</figure>
-</div>
-<hr>
-</section>
-<section id="section" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="section"></h2>
+</p></section>
+<section id="section" class="slide level2 smaller scrollable">
+<h2></h2>
 <p><strong>Hypothesis</strong>: In humans with paroxysmal atrial fibrillation, during episodes of increased sympathetic outflow, <em>inappropriate or disproportionate vagal withdrawal (vagolysis) leads to arrhythmogenesis.</em></p>
-<p>. . .</p>
-<div class="incremental">
-<ol class="incremental" type="a">
-<li>Changes in electrical activity precede the onset of arrhythmias</li>
-<li>Arrhythmia onset requires both a structurally-susceptible heart and a trigger</li>
-<li>Triggers effect the electrical microcosm of the heart through autonomic outflows/imbalance</li>
+<div class="fragment">
+<div>
+<ol type="a">
+<li class="fragment">Changes in electrical activity precede the onset of arrhythmias</li>
+<li class="fragment">Arrhythmia onset requires both a structurally-susceptible heart and a trigger</li>
+<li class="fragment">Triggers effect the electrical microcosm of the heart through autonomic outflows/imbalance</li>
 </ol>
 </div>
-<p>. . .</p>
+</div>
+<div class="fragment">
 <p>The concept of vagolysis and arrhythmogenesis will be referred to as <strong>vagal-triggered arrhythmias (VTA)</strong> hereafter.</p>
+</div>
 </section>
-<section id="section-1" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="section-1"></h2>
-<table class="table">
+<section id="section-1" class="slide level2 smaller">
+<h2></h2>
+<table>
 <thead>
 <tr class="header">
 <th>Abbreviations</th>
@@ -474,24 +497,28 @@ Figure&nbsp;1: Sympathetic and parasympathetic cardiac inputs
 </tr>
 </tbody>
 </table>
-<hr>
+</section>
+<section class="slide level2">
+
 <p><em>To help follow along with the complexity of the topic, there is a consistent color scheme noted throughout.</em></p>
-<div class="incremental">
-<ul class="incremental">
-<li><span class="green">Computational</span> &amp; <span class="green">digital signal processing</span> methods will be noted in <span class="green">green</span></li>
-<li><span class="red">Clinical data</span> that requires a physician or cardiologist to obtain are noted in <span class="red">red</span></li>
-<li><span class="orange">Arrhythmia</span> and <span class="orange">electrical</span> focused work is noted in <span class="orange">orange</span></li>
-<li><span class="blue">Epidemiological</span> or <span class="blue">genetic</span> based methods are noted in <span class="blue">blue</span></li>
+<div>
+<ul>
+<li class="fragment"><span class="green">Computational</span> &amp; <span class="green">digital signal processing</span> methods will be noted in <span class="green">green</span></li>
+<li class="fragment"><span class="red">Clinical data</span> that requires a physician or cardiologist to obtain are noted in <span class="red">red</span></li>
+<li class="fragment"><span class="orange">Arrhythmia</span> and <span class="orange">electrical</span> focused work is noted in <span class="orange">orange</span></li>
+<li class="fragment"><span class="blue">Epidemiological</span> or <span class="blue">genetic</span> based methods are noted in <span class="blue">blue</span></li>
 </ul>
 </div>
-</section>
-</section>
-<section id="relationship-between-ans-and-cardiac-physiology" class="level1 page-columns page-full">
+</section></section>
+<section>
+<section id="relationship-between-ans-and-cardiac-physiology" class="title-slide slide level1 center">
 <h1>Relationship between ANS and cardiac physiology</h1>
-<section id="neurocardiac-axis" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="neurocardiac-axis">Neurocardiac axis</h2>
+
+</section>
+<section id="neurocardiac-axis" class="slide level2 smaller">
+<h2>Neurocardiac axis</h2>
 <ul>
-<li>Neurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels <span class="citation" data-cites="Armour1997">(<a href="#ref-Armour1997" role="doc-biblioref">Armour et al. 1997</a>)</span>
+<li>Neurocardiac axis is a hierarchical system of SNS and PNS afferent/efferent circuits that interact at multiple levels <span class="citation" data-cites="Armour1997">(<a href="#/references" role="doc-biblioref" onclick="">Armour et al. 1997</a>)</span>
 <ul>
 <li>Cortex ↔︎ brainstem</li>
 <li>Spinal cord ↔︎ extracardiac ganglia (e.g.&nbsp;stellate)</li>
@@ -504,46 +531,38 @@ Figure&nbsp;1: Sympathetic and parasympathetic cardiac inputs
 <li>Triggered arrhythmias such as VT</li>
 </ul></li>
 </ul>
-<hr>
-<div id="fig-neurocardiac-axis" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-neurocardiac-axis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/shivkumar-2022_neurocardiac-axis.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-neurocardiac-axis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Cardiac neurotransmission <span class="citation" data-cites="Shivkumar2016a">Shivkumar et al. (<a href="#ref-Shivkumar2016a" role="doc-biblioref">2016</a>)</span>
-</figcaption>
-</figure>
-</div>
-<hr>
+</section>
+<section class="slide level2">
+
+
+<img data-src="../figures/shivkumar-2022_neurocardiac-axis.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;2: Cardiac neurotransmission <span class="citation" data-cites="Shivkumar2016a">Shivkumar et al. (<a href="#/references" role="doc-biblioref" onclick="">2016</a>)</span>
+</p></section>
+<section class="slide level2">
+
 <ul>
 <li><strong>Lower levels</strong> of networked structures (ICNS, hypothalamus) integrate afferent information about metabolic demands</li>
 <li><strong>Higher levels</strong> of networked structures (amydala, cortex) integrate lower networks and generate conscious/unconscious CV state representations</li>
 <li>Allows for environmental/psychological factors to interplay with cardiac physiology, e.g.&nbsp;<span class="red">mental stress</span> causing <span class="orange">arrhythmia</span></li>
 </ul>
 </section>
-<section id="assessment-of-the-ans" class="level2">
-<h2 class="anchored" data-anchor-id="assessment-of-the-ans">Assessment of the ANS</h2>
+<section id="assessment-of-the-ans" class="slide level2">
+<h2>Assessment of the ANS</h2>
 <ul>
-<li>Sympathogal balance integrate at the heart, as seen in <a href="#fig-sns-pns-heart" class="quarto-xref">Figure&nbsp;1</a></li>
+<li>Sympathogal balance integrate at the heart, as seen in <a href="#/fig-sns-pns-heart" class="quarto-xref">Figure&nbsp;1</a></li>
 <li>HRV serves a surrogate for autonomic function</li>
 <li>Variability occurs due to sympathovagal balance at level of sinoatrial node</li>
 <li>Sympathetic outflow and vagal outflow occur at difference <em>speeds</em> allowing some level of differentiation</li>
 </ul>
-<hr>
-<div id="fig-hrv-frequency-domain" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-hrv-frequency-domain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/akselrod-1981-frequency-hrv.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hrv-frequency-domain-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Power-spectral analysis of HRV <span class="citation" data-cites="Akselrod1981">Akselrod S. et al. (<a href="#ref-Akselrod1981" role="doc-biblioref">1981</a>)</span>
-</figcaption>
-</figure>
-</div>
 </section>
-<section id="autonomic-function-and-coronary-physiology" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="autonomic-function-and-coronary-physiology">Autonomic function and coronary physiology</h2>
+<section class="slide level2">
+
+
+<img data-src="../figures/akselrod-1981-frequency-hrv.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;3: Power-spectral analysis of HRV <span class="citation" data-cites="Akselrod1981">Akselrod S. et al. (<a href="#/references" role="doc-biblioref" onclick="">1981</a>)</span>
+</p></section>
+<section id="autonomic-function-and-coronary-physiology" class="slide level2">
+<h2>Autonomic function and coronary physiology</h2>
 <p>A study in veteran twins:</p>
 <ul>
 <li>Evaluated 24-hour HRV in controlled setting/scheduled</li>
@@ -551,134 +570,114 @@ Figure&nbsp;3: Power-spectral analysis of HRV <span class="citation" data-cites=
 <li>Compared circadian patterns of HRV with coronary flow reserves</li>
 </ul>
 
-<div class="no-row-height column-margin column-container"><div class="margin-aside">
-<p>HRV can be <span class="green">processed</span> through open-source software<span class="citation" data-cites="Vest2018">(<a href="#ref-Vest2018" role="doc-biblioref">Vest et al. 2018</a>)</span></p>
-</div></div><hr>
-<div id="fig-poincare" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-poincare-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/shah-2020-poincare-example.jpg" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-poincare-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Differences in HRV in twins with normal and abnormal myocardial perfusion <span class="citation" data-cites="Shah2020">Anish S. Shah et al. (<a href="#ref-Shah2020" role="doc-biblioref">2020</a>)</span>
-</figcaption>
-</figure>
-</div>
-<hr>
-<div id="fig-twins-forest" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-twins-forest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/shah-2020-forest-plot.jpg" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-twins-forest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Risk of decreased myocardial perfusion <span class="citation" data-cites="Shah2020">Anish S. Shah et al. (<a href="#ref-Shah2020" role="doc-biblioref">2020</a>)</span>
-</figcaption>
-</figure>
-</div>
-<hr>
-<div id="fig-twins-circadian" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-twins-circadian-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/shah-2020-circadian-pattern.jpg" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-twins-circadian-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Circadian changes in HRV <span class="citation" data-cites="Shah2020">Anish S. Shah et al. (<a href="#ref-Shah2020" role="doc-biblioref">2020</a>)</span>
-</figcaption>
-</figure>
-</div>
-<hr>
+<aside><div>
+<p>HRV can be <span class="green">processed</span> through open-source software<span class="citation" data-cites="Vest2018">(<a href="#/references" role="doc-biblioref" onclick="">Vest et al. 2018</a>)</span></p>
+</div></aside></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/shah-2020-poincare-example.jpg" class="img-fluid r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;4: Differences in HRV in twins with normal and abnormal myocardial perfusion <span class="citation" data-cites="Shah2020">A. S. Shah et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>
+</p></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/shah-2020-forest-plot.jpg" class="img-fluid r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;5: Risk of decreased myocardial perfusion <span class="citation" data-cites="Shah2020">A. S. Shah et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>
+</p></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/shah-2020-circadian-pattern.jpg" class="img-fluid r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;6: Circadian changes in HRV <span class="citation" data-cites="Shah2020">A. S. Shah et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>
+</p></section>
+<section class="slide level2">
+
 <p><strong>Summary</strong>: HRV seems to correlate with clinically relevant ANS influences on the heart</p>
 <ul>
-<li>ANS function varies with circadian rhythm<span class="citation" data-cites="Portaluppi2012">(<a href="#ref-Portaluppi2012" role="doc-biblioref">Portaluppi et al. 2012</a>)</span></li>
+<li>ANS function varies with circadian rhythm<span class="citation" data-cites="Portaluppi2012">(<a href="#/references" role="doc-biblioref" onclick="">Portaluppi et al. 2012</a>)</span></li>
 <li>Decrease HRV responsiveness to the <em>morning surge</em> suggests dysfunction above the level of the heart</li>
-<li>Decreased ANS variability also correlates with myocardial ischemia (particularly coronary flow reserve), which is partially mediated through adrenergic tone<span class="citation" data-cites="DelBuono2021">(<a href="#ref-DelBuono2021" role="doc-biblioref">Del Buono et al. 2021</a>)</span></li>
+<li>Decreased ANS variability also correlates with myocardial ischemia (particularly coronary flow reserve), which is partially mediated through adrenergic tone<span class="citation" data-cites="DelBuono2021">(<a href="#/references" role="doc-biblioref" onclick="">Del Buono et al. 2021</a>)</span></li>
 </ul>
-</section>
-</section>
-<section id="evaluate-effect-of-stress-on-cv-mortality" class="level1 page-columns page-full">
+</section></section>
+<section>
+<section id="evaluate-effect-of-stress-on-cv-mortality" class="title-slide slide level1 center">
 <h1>Evaluate effect of stress on CV mortality</h1>
-<section id="how-do-we-perturb-the-ans" class="level2 smaller page-columns page-full">
-<h2 class="smaller anchored" data-anchor-id="how-do-we-perturb-the-ans">How do we perturb the ANS?</h2>
+
+</section>
+<section id="how-do-we-perturb-the-ans" class="slide level2 smaller">
+<h2>How do we perturb the ANS?</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<section id="chronic-mental-stress" class="level4">
-<h4 class="anchored" data-anchor-id="chronic-mental-stress">Chronic mental stress</h4>
+<h4 id="chronic-mental-stress">Chronic mental stress</h4>
 <ul>
 <li>Depression &amp; anxiety disorders relate to CVD</li>
-<li>Inflammatory mechanisms<span class="citation" data-cites="Hammadah2018a Pollitt2008">(<a href="#ref-Hammadah2018a" role="doc-biblioref">Hammadah, Sullivan, et al. 2018</a>; <a href="#ref-Pollitt2008" role="doc-biblioref">Pollitt et al. 2008</a>)</span></li>
-<li>Autonomic mechanisms<span class="citation" data-cites="Carney2005 Huang2018 Penninx2017 Smolderen2017">(<a href="#ref-Carney2005" role="doc-biblioref">Carney, Freedland, and Veith 2005</a>; <a href="#ref-Huang2018" role="doc-biblioref">Huang et al. 2018</a>; <a href="#ref-Penninx2017" role="doc-biblioref">Penninx 2017</a>; <a href="#ref-Smolderen2017" role="doc-biblioref">Smolderen et al. 2017</a>)</span></li>
+<li>Inflammatory mechanisms<span class="citation" data-cites="Hammadah2018a Pollitt2008">(<a href="#/references" role="doc-biblioref" onclick="">Hammadah, Sullivan, et al. 2018</a>; <a href="#/references" role="doc-biblioref" onclick="">Pollitt et al. 2008</a>)</span></li>
+<li>Autonomic mechanisms<span class="citation" data-cites="Carney2005 Huang2018 Penninx2017 Smolderen2017">(<a href="#/references" role="doc-biblioref" onclick="">Carney, Freedland, and Veith 2005</a>; <a href="#/references" role="doc-biblioref" onclick="">Huang et al. 2018</a>; <a href="#/references" role="doc-biblioref" onclick="">Penninx 2017</a>; <a href="#/references" role="doc-biblioref" onclick="">Smolderen et al. 2017</a>)</span></li>
 </ul>
-</section>
 </div><div class="column" style="width:50%;">
-<section id="acute-mental-stress" class="level4">
-<h4 class="anchored" data-anchor-id="acute-mental-stress">Acute mental stress</h4>
+<h4 id="acute-mental-stress">Acute mental stress</h4>
 <ul>
-<li>Associated with many changes to cardiac physiology<span class="citation" data-cites="Strike2003">(<a href="#ref-Strike2003" role="doc-biblioref">Strike and Steptoe 2003</a>)</span></li>
-<li>Peripheral vasoconstriction,<span class="citation" data-cites="Kim2019 Lima2019">(<a href="#ref-Kim2019" role="doc-biblioref">Kim et al. 2019</a>; <a href="#ref-Lima2019" role="doc-biblioref">Lima et al. 2019</a>)</span></li>
-<li>Coronary vasomotion<span class="citation" data-cites="Hammadah2018b">(<a href="#ref-Hammadah2018b" role="doc-biblioref">Hammadah, Kim, et al. 2018</a>)</span></li>
-<li>Mental stress-induced myocardial ischemia<span class="citation" data-cites="Vaccarino2021a">(<a href="#ref-Vaccarino2021a" role="doc-biblioref">Vaccarino et al. 2021</a>)</span>, as seen in <a href="#fig-msimi-km-curves" class="quarto-xref">Figure&nbsp;7</a></li>
+<li>Associated with many changes to cardiac physiology<span class="citation" data-cites="Strike2003">(<a href="#/references" role="doc-biblioref" onclick="">Strike and Steptoe 2003</a>)</span></li>
+<li>Peripheral vasoconstriction,<span class="citation" data-cites="Kim2019 Lima2019">(<a href="#/references" role="doc-biblioref" onclick="">Kim et al. 2019</a>; <a href="#/references" role="doc-biblioref" onclick="">Lima et al. 2019</a>)</span></li>
+<li>Coronary vasomotion<span class="citation" data-cites="Hammadah2018b">(<a href="#/references" role="doc-biblioref" onclick="">Hammadah, Kim, et al. 2018</a>)</span></li>
+<li>Mental stress-induced myocardial ischemia<span class="citation" data-cites="Vaccarino2021a">(<a href="#/references" role="doc-biblioref" onclick="">Vaccarino et al. 2021</a>)</span>, as seen in <a href="#/fig-msimi-km-curves" class="quarto-xref">Figure&nbsp;7</a></li>
 </ul>
+</div>
+</div>
 </section>
-</div>
-</div>
-<hr>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../figures/taggart-2011-brain-heart-overview.png" class="img-fluid figure-img"></p>
-<figcaption>Neuropsychological effects on cardiac physiology <span class="citation" data-cites="Taggart2011">Taggart et al. (<a href="#ref-Taggart2011" role="doc-biblioref">2011</a>)</span></figcaption>
-</figure>
-</div>
-<hr>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../figures/shah-2021-hrv-age-exhaustion.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Psychosomatic stress (vital exhaustion) leads to decreases in LF HRV <span class="citation" data-cites="Shah2021a">Anish S. Shah et al. (<a href="#ref-Shah2021a" role="doc-biblioref">2021</a>)</span></figcaption>
-</figure>
-</div>
-<hr>
-<div id="fig-msimi-km-curves" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
+<section class="slide level2">
+
+
+<img data-src="../figures/taggart-2011-brain-heart-overview.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Neuropsychological effects on cardiac physiology <span class="citation" data-cites="Taggart2011">Taggart et al. (<a href="#/references" role="doc-biblioref" onclick="">2011</a>)</span></p></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/shah-2021-hrv-age-exhaustion.jpeg" class="img-fluid r-stretch quarto-figure-center"><p class="caption">Psychosomatic stress (vital exhaustion) leads to decreases in LF HRV <span class="citation" data-cites="Shah2021a">A. J. Shah et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></p></section>
+<section class="slide level2">
+
+<div id="fig-msimi-km-curves" class="quarto-figure quarto-figure-center quarto-float">
+<figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-msimi-km-curves-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/vaccarino-2021-msimi-survival-curves.png" class="img-fluid figure-img">
+<img data-src="../figures/vaccarino-2021-msimi-survival-curves.png" class="img-fluid">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-msimi-km-curves-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: Mortality due to mental-stress induced myocardial ischemia <span class="citation" data-cites="Vaccarino2021a">Vaccarino et al. (<a href="#ref-Vaccarino2021a" role="doc-biblioref">2021</a>)</span>
+Figure&nbsp;7: Mortality due to mental-stress induced myocardial ischemia <span class="citation" data-cites="Vaccarino2021a">Vaccarino et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>
 </figcaption>
 </figure>
 </div>
 
-<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<aside><div>
 <p>This uses an more complex approach of <span class="blue">survival analysis for recurrent events</span></p>
-</div></div><hr>
-<div id="fig-lf-stress-curve.png" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-lf-stress-curve.png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/lf-stress-km-curves.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lf-stress-curve.png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+</div></aside></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/lf-stress-km-curves.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">
 Figure&nbsp;8: Reduced stress LF HRV increases risk of CV mortality
-</figcaption>
-</figure>
-</div>
-<hr>
+</p></section>
+<section class="slide level2">
+
 <p><strong>Summary</strong>: Stress seems to increase risk of CV mortality, through autonomic mechanisms (as compared to ischemic)</p>
 <ul>
-<li>Autonomic dysfunction correlates with future CV mortality<span class="citation" data-cites="LaRovere1998">(<a href="#ref-LaRovere1998" role="doc-biblioref">La Rovere et al. 1998</a>)</span></li>
+<li>Autonomic dysfunction correlates with future CV mortality<span class="citation" data-cites="LaRovere1998">(<a href="#/references" role="doc-biblioref" onclick="">La Rovere et al. 1998</a>)</span></li>
 <li>HRV seems to be associated with clinically features of CV mortality</li>
 <li>Acute stress seems to be of particular importance</li>
 </ul>
-</section>
-</section>
-<section id="determine-clinical-impact-of-vagal-withdrawal" class="level1">
+</section></section>
+<section>
+<section id="determine-clinical-impact-of-vagal-withdrawal" class="title-slide slide level1 center">
 <h1>Determine clinical impact of vagal withdrawal</h1>
-<section id="critical-role-of-the-vagus" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="critical-role-of-the-vagus">Critical role of the vagus</h2>
+
+</section>
+<section id="critical-role-of-the-vagus" class="slide level2 smaller">
+<h2>Critical role of the vagus</h2>
 <ul>
 <li>Embryologically, vagus nerve sprouts from medulla and extends to distant organs (thus long pre-ganglionic axons) e.g.&nbsp;heart, lung, intestines</li>
 <li>Parasympathetic control is evolutionarily more primitive in vertebrates, pre-dating sympathetic control
 <ul>
-<li>Sharks exhibit phasic HRV without sympathetic innervation <span class="citation" data-cites="Taylor2022">(<a href="#ref-Taylor2022" role="doc-biblioref">Taylor, Wang, and Leite 2022</a>)</span></li>
-<li>Mammalian vagal control is more complex, with multiple nuclei, e.g.&nbsp;polyvagal <span class="citation" data-cites="Porges2009">(<a href="#ref-Porges2009" role="doc-biblioref">Stephen W. Porges 2009</a>)</span></li>
+<li>Sharks exhibit phasic HRV without sympathetic innervation <span class="citation" data-cites="Taylor2022">(<a href="#/references" role="doc-biblioref" onclick="">Taylor, Wang, and Leite 2022</a>)</span></li>
+<li>Mammalian vagal control is more complex, with multiple nuclei, e.g.&nbsp;polyvagal <span class="citation" data-cites="Porges2009">(<a href="#/references" role="doc-biblioref" onclick="">Stephen W. Porges 2009</a>)</span></li>
 </ul></li>
 <li>Mammalian vagal outflow is particularly coupled with cardiorespiratory control
 <ul>
@@ -687,8 +686,8 @@ Figure&nbsp;8: Reduced stress LF HRV increases risk of CV mortality
 </ul></li>
 </ul>
 </section>
-<section id="vagal-therapeutic-interventions" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="vagal-therapeutic-interventions">Vagal therapeutic interventions</h2>
+<section id="vagal-therapeutic-interventions" class="slide level2 smaller">
+<h2>Vagal therapeutic interventions</h2>
 <ul>
 <li>Chronic VNS reduces drop in ejection fraction in different animal models of cardiomyopathy, including MI, but studies have mixed results in humans
 <ul>
@@ -701,78 +700,65 @@ Figure&nbsp;8: Reduced stress LF HRV increases risk of CV mortality
 <li>GANGLIA-AF, paroxysmal AF randomized to PVI or atrial GP ablation, decreased AAD dosages in GP group, n = 102</li>
 </ul></li>
 </ul>
-<hr>
-<div id="fig-hf-reactivity-curve.png" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-hf-reactivity-curve.png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/hf-hrv-reactivity-km-quartile-curves.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hf-reactivity-curve.png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;9: Resting HF and HF reactivity as additive markers of CV mortality
-</figcaption>
-</figure>
-</div>
 </section>
-<section id="jacksonian-dissolution" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="jacksonian-dissolution">Jacksonian dissolution</h2>
-<p>Jacksonian dissolution is the concept that older, more primitive systems will take over when more evolved systems break down. Polyvagal theory (theorized by Porges)<span class="citation" data-cites="Porges2007">(<a href="#ref-Porges2007" role="doc-biblioref">Stephen W. Porges 2007</a>)</span> posits there are two branches of the vagus nerve</p>
+<section class="slide level2">
+
+
+<img data-src="../figures/hf-hrv-reactivity-km-quartile-curves.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;9: Resting HF and HF reactivity as additive markers of CV mortality
+</p></section>
+<section id="jacksonian-dissolution" class="slide level2 smaller scrollable">
+<h2>Jacksonian dissolution</h2>
+<p>Jacksonian dissolution is the concept that older, more primitive systems will take over when more evolved systems break down. Polyvagal theory (theorized by Porges)<span class="citation" data-cites="Porges2007">(<a href="#/references" role="doc-biblioref" onclick="">Stephen W. Porges 2007</a>)</span> posits there are two branches of the vagus nerve</p>
 <ol type="1">
 <li><em>Reptilian vagus</em>: primitive, unmyelinated, controlled by the dorssal motor nucleus</li>
 <li><em>Mammalian vagus</em>: evolved, myelinated, controlled by teh nucleus ambiguus</li>
 </ol>
 <p>This may explain the additive effect of reduced resting HF HRV and reduced HF HRV reactivity</p>
-</section>
-</section>
-<section id="identify-a-representative-disease-model-paroxysmal-af" class="level1">
+</section></section>
+<section>
+<section id="identify-a-representative-disease-model-paroxysmal-af" class="title-slide slide level1 center">
 <h1>Identify a representative disease model = paroxysmal AF</h1>
-<section id="sympathovagal-crosstalk" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="sympathovagal-crosstalk">Sympathovagal crosstalk</h2>
+
+</section>
+<section id="sympathovagal-crosstalk" class="slide level2 smaller">
+<h2>Sympathovagal crosstalk</h2>
 <ul>
 <li>Arrhythmia thresholds affected by sympathetic and vagal activity</li>
 <li>Intracardiac cross-talk between adrenergic (sympathetic) and cholinergic (vagal) neurons in the hierarchy of neurocardiac axis is critical for arrhythmogenesis during mental stress</li>
-<li>Atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties<span class="citation" data-cites="Hoover2009 Armour1997">(<a href="#ref-Hoover2009" role="doc-biblioref">Hoover et al. 2009</a>; <a href="#ref-Armour1997" role="doc-biblioref">Armour et al. 1997</a>)</span></li>
+<li>Atria are heavily innervated by autonomic ganglionic plexi, leading to the complex activity that regulates cardiac conductive properties<span class="citation" data-cites="Hoover2009 Armour1997">(<a href="#/references" role="doc-biblioref" onclick="">Hoover et al. 2009</a>; <a href="#/references" role="doc-biblioref" onclick="">Armour et al. 1997</a>)</span></li>
 <li>Sympathetic nervous activity is slower onset, but vagolysis is rapid, thus being a more likely causal component of arrhythmogenesis</li>
 </ul>
 </section>
-<section id="molecular-mechanisms" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="molecular-mechanisms">Molecular mechanisms</h2>
+<section id="molecular-mechanisms" class="slide level2 smaller">
+<h2>Molecular mechanisms</h2>
 <ul>
 <li>Sympathetic/adreneric neurons release catecholamines (NE) that directly affect the myocardium</li>
-<li>NPY and galanin is also released, which both inhibit cholinergic activity <span class="citation" data-cites="Herring2015 Herring2012">(<a href="#ref-Herring2015" role="doc-biblioref"><strong>Herring2015?</strong></a>; <a href="#ref-Herring2012" role="doc-biblioref">Herring et al. 2012</a>)</span></li>
-<li>Both inhibit firing and leading to vagolytic effects on the myocardium<span class="citation" data-cites="Kalla2020 Herring2008">(<a href="#ref-Kalla2020" role="doc-biblioref">Kalla et al. 2020</a>; <a href="#ref-Herring2008" role="doc-biblioref">Herring et al. 2008</a>)</span>
+<li>NPY and galanin is also released, which both inhibit cholinergic activity <span class="citation" data-cites="Herring2015 Herring2012">(<a href="#/references" role="doc-biblioref" onclick="">Herring 2015</a>; <a href="#/references" role="doc-biblioref" onclick="">Herring et al. 2012</a>)</span></li>
+<li>Both inhibit firing and leading to vagolytic effects on the myocardium<span class="citation" data-cites="Kalla2020 Herring2008">(<a href="#/references" role="doc-biblioref" onclick="">Kalla et al. 2020</a>; <a href="#/references" role="doc-biblioref" onclick="">Herring et al. 2008</a>)</span>
 <ul>
 <li>Galanin released as a adrenergic co-transmitter, binding to GalR1 receptors</li>
 <li>NPY binds to cholinergic neurons through the Y2 receptor</li>
 <li>Both directly/indirectly involve protein kinase C</li>
 </ul></li>
-<li>NPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)<span class="citation" data-cites="Coote2013">(<a href="#ref-Coote2013" role="doc-biblioref">Coote 2013</a>)</span></li>
+<li>NPY receptors exist along the neurocardiac axis, including adrenal medulla (Y3) and cardiac tissue (Y2)<span class="citation" data-cites="Coote2013">(<a href="#/references" role="doc-biblioref" onclick="">Coote 2013</a>)</span></li>
 </ul>
-<hr>
-<div id="fig-ans-crosstalk" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-ans-crosstalk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/herring-2012-cellular-sympathovagal-crosstalk.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ans-crosstalk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10: Cardiac sympatho-vagal crosstalk <span class="citation" data-cites="Herring2012">Herring et al. (<a href="#ref-Herring2012" role="doc-biblioref">2012</a>)</span>
-</figcaption>
-</figure>
-</div>
-<hr>
-<div id="fig-npy-blockade" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-npy-blockade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../figures/hoang-2020-npy-blockade.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-npy-blockade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;11: Increased sympathetic activity and NPY <span class="citation" data-cites="Hoang2020">Hoang et al. (<a href="#ref-Hoang2020" role="doc-biblioref">2020</a>)</span>
-</figcaption>
-</figure>
-</div>
 </section>
-<section id="genetic-variants" class="level2">
-<h2 class="anchored" data-anchor-id="genetic-variants">Genetic variants</h2>
-<table class="table">
+<section class="slide level2">
+
+
+<img data-src="../figures/herring-2012-cellular-sympathovagal-crosstalk.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;10: Cardiac sympatho-vagal crosstalk <span class="citation" data-cites="Herring2012">Herring et al. (<a href="#/references" role="doc-biblioref" onclick="">2012</a>)</span>
+</p></section>
+<section class="slide level2">
+
+
+<img data-src="../figures/hoang-2020-npy-blockade.png" class="img-fluid r-stretch quarto-figure-center"><p class="caption">
+Figure&nbsp;11: Increased sympathetic activity and NPY <span class="citation" data-cites="Hoang2020">Hoang et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>
+</p></section>
+<section id="genetic-variants" class="slide level2">
+<h2>Genetic variants</h2>
+<table>
 <thead>
 <tr class="header">
 <th>Variant</th>
@@ -807,15 +793,15 @@ Figure&nbsp;11: Increased sympathetic activity and NPY <span class="citation" da
 </tbody>
 </table>
 </section>
-<section id="inadequate-classification" class="level2">
-<h2 class="anchored" data-anchor-id="inadequate-classification">Inadequate classification</h2>
+<section id="inadequate-classification" class="slide level2 scrollable">
+<h2>Inadequate classification</h2>
 <ul>
 <li>pAF has been separated into coarse, non-physiological groups (paroxysmal, persistent, permanent)</li>
 <li>Diagnostic and treatment strategies are overally-generalized, and do not identify or target sub-phenotypes or endo-phenotypes that may exist
 <ul>
 <li>e.g.&nbsp;vagally-mediated AF responds well to disopyramide</li>
 </ul></li>
-<li>Attempts to re-classify/cluster AF have been performed,[<span class="citation" data-cites="Watanabe2021">Watanabe et al. (<a href="#ref-Watanabe2021" role="doc-biblioref">2021</a>)</span>; Vitolo2021; <span class="citation" data-cites="Pastori2020">Pastori et al. (<a href="#ref-Pastori2020" role="doc-biblioref">2020</a>)</span>] and generally suggest 4 broad categories:
+<li>Attempts to re-classify/cluster AF have been performed,[<span class="citation" data-cites="Watanabe2021">Watanabe et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; Vitolo2021; <span class="citation" data-cites="Pastori2020">Pastori et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>] and generally suggest 4 broad categories:
 <ol type="1">
 <li>Young, low risk</li>
 <li>High CV risk factors</li>
@@ -825,8 +811,8 @@ Figure&nbsp;11: Increased sympathetic activity and NPY <span class="citation" da
 </ul>
 <p><em>However, these categories are skewed, with the younger, low-risk group being &gt;50% of the samples.</em></p>
 </section>
-<section id="paf-as-a-model-for-vta" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="paf-as-a-model-for-vta">pAF as a model for VTA</h2>
+<section id="paf-as-a-model-for-vta" class="slide level2 smaller scrollable">
+<h2>pAF as a model for VTA</h2>
 <ol type="1">
 <li>pAF is both ubiquitous and poorly-classified</li>
 <li>Mechanism-driven therapies may exist for <span class="blue">sub-phenotypes and endo-phenotypes</span></li>
@@ -835,12 +821,14 @@ Figure&nbsp;11: Increased sympathetic activity and NPY <span class="citation" da
 <li><span class="red">Electrophysiology studies</span> are readily avaiable, with rich <span class="green">electrical signal data</span>, for analysis in humans</li>
 <li><span class="blue">Genetic variants</span> lead to cardiomyocyte changes that predispose to AF, but there are also variants that affect cardiovagal outflow</li>
 </ol>
-</section>
-</section>
-<section id="research-proposal" class="level1">
+</section></section>
+<section>
+<section id="research-proposal" class="title-slide slide level1 center">
 <h1>Research proposal</h1>
-<section id="research-approach" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="research-approach">Research approach</h2>
+
+</section>
+<section id="research-approach" class="slide level2 smaller scrollable">
+<h2>Research approach</h2>
 <ol type="1">
 <li>Identify within <span class="orange">pAF</span> if there exist VTA <strong>sub-phenotypes</strong> using <span class="blue">population-level</span> data:
 <ul>
@@ -857,88 +845,15 @@ Figure&nbsp;11: Increased sympathetic activity and NPY <span class="citation" da
 <li>Genetic variants that may be susceptible to abnormal cardiovagal outflow</li>
 </ul></li>
 </ol>
-<hr>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dag <span class="ot">&lt;-</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">dagify</span>(</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        stress <span class="sc">~</span> eps,</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        egm <span class="sc">~</span> eps,</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        labs <span class="sc">~</span> stress <span class="sc">+</span> eps,</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        pheno <span class="sc">~</span> ecg <span class="sc">+</span> dna <span class="sc">+</span> egm <span class="sc">+</span> clin,</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        clin <span class="sc">~</span> epi,</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        ecg <span class="sc">~</span> epi,</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        dna <span class="sc">~</span> epi <span class="sc">+</span> labs,</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        snp <span class="sc">~</span> dna,</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        labs <span class="sc">~</span> snp,</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        stress <span class="sc">~</span> snp,</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        dna <span class="sc">~</span> eps,</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        ead <span class="sc">~</span> ipsc,</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        ipsc <span class="sc">~</span> labs <span class="sc">+</span> stress <span class="sc">+</span> snp,</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">exposure =</span> <span class="fu">c</span>(<span class="st">"eps"</span>, <span class="st">"epi"</span>, <span class="st">"ipsc"</span>),</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">outcome =</span> <span class="fu">c</span>(<span class="st">"labs"</span>, <span class="st">"pheno"</span>, <span class="st">"ead"</span>),</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">labels =</span> <span class="fu">list</span>(</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>            <span class="at">eps =</span> <span class="st">"Electrophysiology study"</span>,</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>            <span class="at">labs =</span> <span class="st">"Cardiac biomarkers"</span>,</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>            <span class="at">ead =</span> <span class="st">"Early After Depolarizations"</span>,</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>            <span class="at">stress =</span> <span class="st">"Physiologic stress"</span>,</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>            <span class="at">ecg =</span> <span class="st">"Surface electrocardiography"</span>,</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>            <span class="at">egm =</span> <span class="st">"Intracardiac signals"</span>,</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>            <span class="at">epi =</span> <span class="st">"Big data"</span>,</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>            <span class="at">ipsc =</span> <span class="st">"Cardiac Myocytes"</span>,</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>            <span class="at">pheno =</span> <span class="st">"Clinical phenotypes"</span>,</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>            <span class="at">clin =</span> <span class="st">"Clinical features"</span>,</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>            <span class="at">snp =</span> <span class="st">"Mutations/variants"</span>,</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>            <span class="at">dna =</span> <span class="st">"Genetic data"</span></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>        )</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tidy_dagitty</span>(<span class="at">layout =</span> <span class="st">"tree"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">node_status</span>() </span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dag, <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y, <span class="at">xend =</span> xend, <span class="at">yend =</span> yend, <span class="at">color =</span> status)) <span class="sc">+</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_dag_edges</span>(</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>        <span class="at">arrow_directed =</span> grid<span class="sc">::</span><span class="fu">arrow</span>(<span class="at">length =</span> grid<span class="sc">::</span><span class="fu">unit</span>(<span class="dv">10</span>, <span class="st">"pt"</span>), <span class="at">type =</span> <span class="st">"closed"</span>),</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>        <span class="at">arrow_bidirected =</span> grid<span class="sc">::</span><span class="fu">arrow</span>(<span class="at">length =</span> grid<span class="sc">::</span><span class="fu">unit</span>(<span class="dv">10</span>, <span class="st">"pt"</span>), <span class="at">type =</span> <span class="st">"open"</span>, <span class="at">ends =</span> <span class="st">"both"</span>),</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>        <span class="at">edge_alpha =</span> <span class="fl">0.8</span></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_dag_point</span>() <span class="sc">+</span></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_dag_label_repel</span>(</span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>        <span class="fu">aes</span>(<span class="at">label =</span> label),</span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>        <span class="at">force =</span> <span class="dv">1</span>,</span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>        <span class="at">nudge_y =</span> <span class="fl">0.5</span>,</span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>        <span class="at">alpha =</span> <span class="fl">0.9</span></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">xend =</span> <span class="fl">0.0</span>, <span class="at">y =</span> <span class="sc">-</span><span class="fl">0.5</span>, <span class="at">yend =</span> <span class="fl">3.5</span>, <span class="at">color =</span> grey[<span class="dv">1</span>]), <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span> </span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">xend =</span> <span class="dv">3</span>, <span class="at">y =</span> <span class="fl">1.5</span>, <span class="at">yend =</span> <span class="fl">1.5</span>, <span class="at">color =</span> grey[<span class="dv">1</span>]), <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">linewidth =</span> <span class="dv">1</span>) <span class="sc">+</span> </span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_rect</span>(<span class="fu">aes</span>(<span class="at">xmin =</span> <span class="dv">0</span>, <span class="at">xmax =</span> <span class="dv">3</span>, <span class="at">ymin =</span> <span class="sc">-</span><span class="fl">0.5</span>, <span class="at">ymax =</span> <span class="fl">1.5</span>, <span class="at">color =</span> grey[<span class="dv">1</span>]), <span class="at">alpha =</span> <span class="fl">0.01</span>) <span class="sc">+</span> </span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">label =</span> <span class="st">"Aim #1"</span>, <span class="at">x =</span> <span class="sc">-</span><span class="fl">1.5</span>, <span class="at">y =</span> <span class="fl">0.0</span>, <span class="at">size =</span> <span class="dv">7</span>) <span class="sc">+</span></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">label =</span> <span class="st">"Aim #2"</span>, <span class="at">x =</span> <span class="fl">2.5</span>, <span class="at">y =</span> <span class="fl">2.5</span>, <span class="at">size =</span> <span class="dv">7</span>) <span class="sc">+</span></span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">label =</span> <span class="st">"Exploratory/future"</span>, <span class="at">x =</span> <span class="fl">2.0</span>, <span class="at">y =</span> <span class="fl">0.6</span>, <span class="at">size =</span> <span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"exposure"</span> <span class="ot">=</span> green[<span class="dv">2</span>], <span class="st">"outcome"</span> <span class="ot">=</span> orange[<span class="dv">2</span>]), <span class="at">na.value =</span> grey[<span class="dv">5</span>]) <span class="sc">+</span></span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_dag</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in geom_segment(aes(x = 0, xend = 0, y = -0.5, yend = 3.5, color = grey[1]), : All aesthetics have length 1, but the data has 22 rows.
-ℹ Did you mean to use `annotate()`?</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning in geom_segment(aes(x = 0, xend = 3, y = 1.5, yend = 1.5, color = grey[1]), : All aesthetics have length 1, but the data has 22 rows.
-ℹ Did you mean to use `annotate()`?</code></pre>
-</div>
-<div class="cell-output-display">
-<div id="fig-dag" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-dag-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="tpipcvm-rip-seminar-021223_files/figure-html/fig-dag-1.png" class="img-fluid figure-img" width="672">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dag-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;12: Graphical representation of specific aims
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
 </section>
-<section id="aim-1-clinical" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="aim-1-clinical">Aim #1: Clinical</h2>
+<section class="slide level2">
+
+
+<img data-src="tpipcvm-rip-seminar-021223_files/figure-revealjs/fig-dag-1.png" class="img-fluid r-stretch quarto-figure-center" width="960"><p class="caption">
+Figure&nbsp;12: Graphical representation of specific aims
+</p></section>
+<section id="aim-1-clinical" class="slide level2 smaller scrollable">
+<h2>Aim #1: Clinical</h2>
 <ol type="1">
 <li><strong>Identify clinical phenotypes of vagally-triggered AF.</strong> <em>Clinical, intracardiac, and genetic factors will contribute to clinically-relevant phenotypes of AF</em>.
 <ol type="a">
@@ -947,8 +862,8 @@ Figure&nbsp;12: Graphical representation of specific aims
 </ol></li>
 </ol>
 </section>
-<section id="aim-2-translational" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="aim-2-translational">Aim #2: Translational</h2>
+<section id="aim-2-translational" class="slide level2 smaller scrollable">
+<h2>Aim #2: Translational</h2>
 <ol start="2" type="1">
 <li><strong>Determine the intracardiac characteristics of vagally-triggered AF.</strong> <em>Structural and electrical features assessed through EPS will identify separate clinically-relevant phenotypes of AF.</em>
 <ol type="a">
@@ -958,12 +873,14 @@ Figure&nbsp;12: Graphical representation of specific aims
 <li>We will perform <span class="orange">whole exome sequencing</span> on a subset of patients from each cluster defined in <strong>1a</strong>. Selected <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> adrenergic receptors and cholinergic receptor polymorphisms will be associated with individual AF clusters and clinical outcomes.</li>
 </ol></li>
 </ol>
-</section>
-</section>
-<section id="end" class="level1">
+</section></section>
+<section>
+<section id="end" class="title-slide slide level1 center">
 <h1>End</h1>
-<section id="references" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="references">References</h2>
+
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-Akselrod1981" class="csl-entry" role="listitem">
 Akselrod S., Gordon D., Ubel A., Shannon D., Barger C., and Cohen R. 1981. <span>“Power <span>Spectrum Analysis</span> of <span>Heart Rate Fluctuation</span>: <span>A Quantitative Probe</span> of <span>Beat-To-Beat Cardiovascular Control</span>.”</span> 4504. <em>Science</em>. Vol. 213.
@@ -985,6 +902,9 @@ Hammadah, Muhammad, Jeong Hwan Kim, Ibhar Al Mheid, Ayman Samman Tahhan, Kobina 
 </div>
 <div id="ref-Hammadah2018a" class="csl-entry" role="listitem">
 Hammadah, Muhammad, Samaah Sullivan, Brad Pearce, Ibhar Al Mheid, Kobina Wilmot, Ronnie Ramadan, Ayman Samman Tahhan, et al. 2018. <span>“Inflammatory Response to Mental Stress and Mental Stress Induced Myocardial Ischemia.”</span> <em>Brain, Behavior, and Immunity</em> 68 (February): 90–97. <a href="https://doi.org/10.1016/j.bbi.2017.10.004">https://doi.org/10.1016/j.bbi.2017.10.004</a>.
+</div>
+<div id="ref-Herring2015" class="csl-entry" role="listitem">
+Herring, Neil. 2015. <span>“Autonomic Control of the Heart: <span>Going</span> Beyond the Classical Neurotransmitters.”</span> <em>Experimental Physiology</em> 100 (4): 354–58. <a href="https://doi.org/10.1113/expphysiol.2014.080184">https://doi.org/10.1113/expphysiol.2014.080184</a>.
 </div>
 <div id="ref-Herring2012" class="csl-entry" role="listitem">
 Herring, Neil, James Cranley, Michael N Lokale, Dan Li, Julia Shanks, Eric N Alston, Beatrice M Girard, et al. 2012. <span>“The Cardiac Sympathetic Co-Transmitter Galanin Reduces Acetylcholine Release and Vagal Bradycardia: <span>Implications</span> for Neural Control of Cardiac Excitability.”</span> <em>Journal of Molecular and Cellular Cardiology</em> 52 (3): 667–76. <a href="https://doi.org/10.1016/j.yjmcc.2011.11.016">https://doi.org/10.1016/j.yjmcc.2011.11.016</a>.
@@ -1035,7 +955,7 @@ Porges, Stephen W. 2009. <span>“The Polyvagal Theory: <span>New</span> Insight
 Portaluppi, Francesco, Ruana Tiseo, Michael H Smolensky, Ramón C Hermida, Diana E Ayala, and Fabio Fabbian. 2012. <span>“Circadian Rhythms and Cardiovascular Health.”</span> <em>Sleep Medicine Reviews</em> 16 (2): 151–66. <a href="https://doi.org/10.1016/j.smrv.2011.04.003">https://doi.org/10.1016/j.smrv.2011.04.003</a>.
 </div>
 <div id="ref-Shah2021a" class="csl-entry" role="listitem">
-Shah, Anish S., Alvaro Alonso, Eric A Whitsel, Elsayed Z. Soliman, Viola Vaccarino, and Amit J Shah. 2021. <span>“Association of <span>Psychosocial Factors With Short</span>‐<span>Term Resting Heart Rate Variability</span>: <span>The Atherosclerosis Risk</span> in <span>Communities Study</span>.”</span> <em>Journal of the American Heart Association</em> 10 (5): e017172. <a href="https://doi.org/10.1161/JAHA.120.017172">https://doi.org/10.1161/JAHA.120.017172</a>.
+Shah, Amit J., Matthew T. Wittbrodt, J. Douglas Bremner, and Viola Vaccarino. 2021. <span>“Cardiovascular <span>Pathophysiology</span> from the <span>Cardioneural Perspective</span> and Its <span>Clinical Applications</span>.”</span> <em>Trends in Cardiovascular Medicine</em>, March. <a href="https://doi.org/10.1016/j.tcm.2021.03.001">https://doi.org/10.1016/j.tcm.2021.03.001</a>.
 </div>
 <div id="ref-Shah2020" class="csl-entry" role="listitem">
 Shah, Anish S, Amit J Shah, Rachel Lampert, Jack Goldberg, J. Douglas Bremner, Lian Li, Marc D. Thames, Viola Vaccarino, and Anish S. Amit J. Shah. 2020. <span>“Alterations in Heart Rate Variability Are Associated with Abnormal Myocardial Perfusion.”</span> <em>International Journal of Cardiology</em> 305 (April): 99–105. <a href="https://doi.org/10.1016/j.ijcard.2020.01.069">https://doi.org/10.1016/j.ijcard.2020.01.069</a>.
@@ -1066,436 +986,437 @@ Watanabe, Eiichi, Hiroshi Inoue, Hirotsugu Atarashi, Ken Okumura, Takeshi Yamash
 </div>
 </div>
 
+<div class="quarto-auto-generated-content">
+<div class="footer footer-default">
 
-</section>
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
-      });
-    }
-  }
-});
-</script>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-<p>Copyright (c) 2023, Anish. S. Shah, MD, MS</p>
 </div>
-    <div class="nav-footer-right">
-      &nbsp;
+</div>
+</section></section>
     </div>
   </div>
-</footer>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-attribution/attribution.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
 
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealAttribution, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
 
 </body></html>
