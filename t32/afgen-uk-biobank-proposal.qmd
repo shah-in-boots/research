@@ -13,7 +13,10 @@ csl: ../../bibliography/circulation.csl
 - Mine is the first to look at evaluating risk by category of variants
 - Have evaluated in WES dataset of 300 patients
 - ECG to predict the following parameters
-	1. Structural changes to atria
-	2. Ion channel remodeling
-	3. Global polygenic affects
+	- Structural changes to atria
+	- Ion channel remodeling
+	- Global polygenic affects
 - tentative title: __Electrocardiographic Signatures of Genetic Risk for Atrial Fibrillation__
+- Potential data sources
+
+- Current literature on ECG and genetic risk for AF
