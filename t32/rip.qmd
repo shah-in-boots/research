@@ -18,7 +18,7 @@ fig-cap-location: bottom
 # Libraries
 library(tidyverse)
 library(rmdl)
-library(shiva)
+library(egm)
 library(hrd)
 library(googledrive)
 library(googlesheets4)
@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| echo: false
 #| cache: false
 dt <- 
-	date_build(year = 2024, month = 4, day = 29) |>
+	date_build(year = 2024, month = 5, day = 06) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,15 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# May 6, 2024
+
+## Updates {.smaller}
+
+1. AFEQT/SDOH: manuscript, pending initial co-author review. Meeting with Alvaro Alonso on 5/17 to discuss informally. Then likely send to additional senior authors.
+1. ECG/genetics: validation cohort proposal completed
+1. AF-CTRS: Have drafted initial scoring algorithm. Need to trial basic weights on a dataset.
+1. CV research data: Meeting with ACER to help host a safe cloud environment for future data pulls.
 
 # April 29, 2024
 

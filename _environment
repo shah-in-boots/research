@@ -1,15 +1,15 @@
-primary="#ee7733"
+light = "#fcffc9"
 
-secondary="#0077bb"
+info = "#efdd91"
 
-success="#ee3378"
+secondary = "#dc8c1b"
 
-info="#33bbee"
+primary = "#9c3e40"
 
-warning="#009988"
+success = "#e6b759"
 
-danger="#cc3311"
+warning = "#c6622a"
 
-light="#ffffff"
+danger = "#6a1f39"
 
-dark="#bbbbbb"
+dark = "#1d0b14"
