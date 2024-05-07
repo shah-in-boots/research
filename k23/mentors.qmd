@@ -8,11 +8,44 @@ institute:
 format: 
   revealjs:
     scrollable: true
+    chalkboard: true
 execute:
   cache: true
 tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
+
+# 05/07/24 | AJS
+
+## Agenda
+
+## AF DAG
+
+```{mermaid}
+flowchart LR
+	ecg["ECG"]
+	scar["Scar"]
+	comp["Computational Modeling"]
+	arr["Arrhythmia Prediction"]
+	eps["EPS"] 
+	mri["MRI"]
+	phen["Phenotypes"]
+	ptsd["PTSD"] 
+	ans["Autonomic Modulation"]
+	geno["Genotypes"] 
+	ans --> eps
+	ptsd --> geno
+	ecg --> geno
+	scar --> ecg
+	mri --> ecg
+	ecg --> phen
+	ecg --> geno
+	geno <--> phen
+	eps --> comp
+	scar --> comp
+	comp --> arr
+	
+```
 
 # 04/17/24 | RR
 
