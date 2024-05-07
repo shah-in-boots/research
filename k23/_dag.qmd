@@ -1,46 +1,21 @@
 ```{r}
 #| label: fig-k23-dag
-#| fig.cap: DAG for the K23 example
 library(DiagrammeR)
 
-# Base graph
-g <- create_graph()
-
-# Nodes
-nodes <- tibble::tribble(
-	~type, ~label,
-	"DSP", "ECG",
-	"DSP", "Scar",
-	"DSP", "MRI",
-	"ANS", "Stress",
-	"ANS", "PTSD",
-	"EPS", "EPS",
-	"EPI", "Phenotype",
-	"EPI", "Genotype",
-	"DSP", "Arrhythmia Prediction",
-	"EPI", "Trajectory",
-	"DSP", "Computational Modeling"
-)
-
-node_df <-
-	create_node_df(n = nrow(nodes), type = nodes$type, label = nodes$label)
-
-# Edges
-edges <- tibble::tribble(
-	~from, ~to, 
-	"ECG", "Scar", 
-	"MRI", "ECG",
-	"EPS", "Computational Modeling",
-	"MRI", "Computational Modeling",
-	"EPS", "Scar"
-)
-
-edge_df <-
-	create_edge_df(
-		from = edges$from,
-		to = edges$to
-	)
-
+# Specific Aims = Electrical and Structural Predictors of AF Phenotypes
 create_graph() |>
+	# Aim = AF Phenotype ~ MRI + ECG
+	# Aim = Arrhythmia Prediction ~ (EPS + Computational Modeling) / Stress
+	# Aim = AF Risk ~ Stress Variants x Mendelian Randomization
+	add_node(label = "ECG") |>
+	add_node(label = "Scar") |>
+	add_node(label = "MRI") |>
+	add_node(type = "outcome", label = "Arrhythmia_Prediction") |>
+	add_edges_w_string(
+		edges = "
+		ECG->Scar
+		",
+		use_labels = TRUE
+	) |>
 	render_graph()
 ```
