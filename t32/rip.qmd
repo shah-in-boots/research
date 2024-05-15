@@ -207,6 +207,40 @@ effort <-
 tbl_status_updates(progress, effort)
 ```
 
+# May 15, 2024
+
+## Updates {.smallest}
+
+AFEQT/SDOH:
+
+- [ ] Meeting with Alvaro on 5/15
+- [ ] Race/ethnicity: $NHB$ and $HL$ populations had significant decrease particularly in AFEQT treatment domain over that of NDI quartile
+- [ ] Interaction testing: generally, there are no binomial interactions in the dataset for SDOH factors, however there is three way interaction for $NDI_{Q4} \times NHB \times Male$
+- [ ] Re-draft manuscript to send to full co-author list
+- [ ] Application for AHA Early Career Award (Epi), requires *unsubmitted* manuscript + abstract for consideration
+
+SDOH research:
+
+- [ ] DT/JA requested retrieval of SDOH variables for the sub-population of chemotherapy patients 
+- [ ] Resident x1 and Student x1 proposed SDOH research projects &rarr; present to lab for feedback
+
+ECG/Genetics:
+
+- [x] Annotate all arrhythmia genes (PolyPhen, SIFT, REVEL, LOF/indel) in WES cohort
+- [ ] Generate PGS on all 300 WES patients $\pm$ additional 600 GWAS patients
+- [ ] Train models for structural, ion channel, and PGS in interim
+
+## Logistics {.smaller}
+
+1. Meet with ACER initially to set-up shared workspaces for the lab, and to provide cost estimates for compute time.
+1. Discuss need for PHI-safe data storage on cluster/remote server for combination of [all clinical data and ECG data]{.red}
+1. UIC/UIH access...
+	a. Complete ECG-based phenotype/genotype preliminary data for K23/CDA
+	a. Manage ECG-dataset (`n = 800,000`)
+	a. Update both CCTS/MUSE datasets
+	a. Pipeline for data pull requests (MRN, code, diagnosis, etc)
+1. Timeline for research updates for SS and DS
+
 # May 6, 2024
 
 ## Updates {.smaller}
