@@ -212,8 +212,9 @@ tbl_status_updates(progress, effort)
 ## Updates {.smallest}
 
 - [ ] Re-draft manuscript to send to full co-author list
-- [x] Application for AHA Early Career Award (Epi), requires *unsubmitted* manuscript + abstract for consideration
+- [ ] Application for AHA Early Career Award (Epi), requires *unsubmitted* manuscript + abstract for consideration
 - [ ] ACER to set-up cluster space for our data-pull pipeline
+- [ ] AF-CTRS software test on cross-over study dataset (Ashwini, Jerry, and Miles)
 
 # May 15, 2024
 
