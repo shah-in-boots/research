@@ -215,6 +215,7 @@ tbl_status_updates(progress, effort)
 - [ ] Application for AHA Early Career Award (Epi), requires *unsubmitted* manuscript + abstract for consideration
 - [ ] ACER to set-up cluster space for our data-pull pipeline
 - [ ] AF-CTRS software test on cross-over study dataset (Ashwini, Jerry, and Miles)
+- [ ] UK Biobank proposal to AFGen group 
 
 # May 15, 2024
 
