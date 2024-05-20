@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| echo: false
 #| cache: false
 dt <- 
-	date_build(year = 2024, month = 5, day = 06) |>
+	date_build(year = 2024, month = 5, day = 20) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,14 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# May 20, 2024
+
+## Updates {.smallest}
+
+- [ ] Re-draft manuscript to send to full co-author list
+- [x] Application for AHA Early Career Award (Epi), requires *unsubmitted* manuscript + abstract for consideration
+- [ ] ACER to set-up cluster space for our data-pull pipeline
 
 # May 15, 2024
 
