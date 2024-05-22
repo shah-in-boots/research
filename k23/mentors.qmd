@@ -15,9 +15,23 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
-# 05/07/24 | AJS
+# 05/22/24 | AJS
 
-## Agenda
+## Agenda {.smallest}
+
+- HRV/CVD Mortality in JAMA Network Open
+- CARRS paper 
+- UK Biobank / MR for AF genetics (validation cohort)
+- K23 approach
+  1. EP-lab and pharmacological "mental stress cocktail" in PTSD
+  1. Computational prediction of arrhythmias incorporating neurocardiac axis in PTSD 
+  1. Genetic variants in stress response and arrhythmia risk in PTSD
+- Software updates (modeling package published, EGM package + paper pending)
+- AHA early career investigator award (Epi? Clinical Cardiology?)
+  - AFEQT/SDOH? &rarr; manuscript drafted but pending
+  - HRV/CVD paper? $rarr; however abstract already published
+
+# 05/07/24 | AJS
 
 ## AF DAG
 
