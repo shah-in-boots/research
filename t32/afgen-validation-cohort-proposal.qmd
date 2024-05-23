@@ -35,12 +35,6 @@ I utilized participants from the UIC Multi-Ethnic AF Registry as the primary stu
 I propose to utilize a large, external cohort, such the UK Biobank (`n=68,091` with complete data), as well as additional populations such as the ARIC cohorts, the US-CHARGE participating studies, and/or the Cardiac Heart Study. The All of Us study is limited to only 30% of the population with ECG tracings. I propose testing (and/or additional training) on these large cohorts to validate the model for monogenic and polygenic ECG-phenotypes of AF. My approach is the next logical step in better understanding the relationship between genetic variants and AF risk over time, and helps to create an *ECG-informed risk assessment* for the phenotypes of AF. 
 
 
-
-
-
-
-
-
 {{< pagebreak >}}
 
 ::: #refs

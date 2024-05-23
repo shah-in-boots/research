@@ -29,7 +29,7 @@ fig-cap-location: bottom
 - Software updates (modeling package published, EGM package + paper pending)
 - AHA early career investigator award (Epi? Clinical Cardiology?)
   - AFEQT/SDOH? &rarr; manuscript drafted but pending
-  - HRV/CVD paper? $rarr; however abstract already published
+  - HRV/CVD paper? &rarr; however abstract already published
 
 # 05/07/24 | AJS
 
