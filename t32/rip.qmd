@@ -18,7 +18,7 @@ fig-cap-location: bottom
 # Libraries
 library(tidyverse)
 library(rmdl)
-library(egm)
+library(EGM)
 library(hrd)
 library(googledrive)
 library(googlesheets4)
@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| echo: false
 #| cache: false
 dt <- 
-	date_build(year = 2024, month = 5, day = 20) |>
+	date_build(year = 2024, month = 6, day = 3) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,16 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# June 3, 2024
+
+## Updates {.smallest}
+
+1. AFEQT/SDOH draft pending feedback from Alvaro/Emelia
+1. Cluster access has been set-up for the lab
+1. AHA application for Early Career Award 
+1. AF-CTRS weights on Crossover Study dataset + AFEQT dataset
+1. Future meetings will likely be virtual
 
 # May 20, 2024
 
