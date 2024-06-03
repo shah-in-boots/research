@@ -215,10 +215,14 @@ tbl_status_updates(progress, effort)
 1. Cluster access has been set-up for the lab
 1. AHA application for Early Career Award 
 1. AF-CTRS weights on Crossover Study dataset + AFEQT dataset
-1. UK Biobank proposal/access tentatively approved (still waiting for feedback from AFGen Consortium)
+1. UK Biobank proposal/access tentatively approved (still waiting for feedback from AFGen Consortium) 
+	- Structural/sarcomeric genes
+	- Ion channel genes
+	- Metabolism genes
+	- Immune/inflammation-related genes
 1. Future meetings will likely be virtual
 
-## LMNA/ECG
+## LMNA/ECG {.smallest}
 
 Premises: 
 
@@ -230,6 +234,10 @@ Cases/controls:
 - sinus beat in LMNA patient after AF development
 - sinus beats in AF patients *wild-type*, age-matched
 - sinus beats in *wild-type* patients without AF, age-matched
+
+Power:
+
+- **Likely** between 30-60 patients, with another 10-15 for validation *although can likely get adequate power with lower number*
 
 # May 20, 2024
 
