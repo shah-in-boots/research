@@ -217,6 +217,19 @@ tbl_status_updates(progress, effort)
 1. AF-CTRS weights on Crossover Study dataset + AFEQT dataset
 1. Future meetings will likely be virtual
 
+## LMNA/ECG
+
+Premises: 
+
+- *All* LMNA patients will develop AF, but contribution of genetics to how AF develops is unknown (prior to or after cardiomyopathy)
+
+Cases/controls:
+
+- sinus beat in LMNA patient prior to AF development
+- sinus beat in LMNA patient after AF development
+- sinus beats in AF patients *wild-type*, age-matched
+- sinus beats in *wild-type* patients without AF, age-matched
+
 # May 20, 2024
 
 ## Updates {.smallest}
