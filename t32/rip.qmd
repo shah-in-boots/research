@@ -215,6 +215,7 @@ tbl_status_updates(progress, effort)
 1. Cluster access has been set-up for the lab
 1. AHA application for Early Career Award 
 1. AF-CTRS weights on Crossover Study dataset + AFEQT dataset
+1. UK Biobank proposal/access tentatively approved (still waiting for feedback from AFGen Consortium)
 1. Future meetings will likely be virtual
 
 ## LMNA/ECG
