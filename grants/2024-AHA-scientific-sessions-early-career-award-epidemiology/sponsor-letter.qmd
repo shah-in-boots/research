@@ -1,0 +1,62 @@
+---
+format: 
+  docx: default
+---
+
+June 10, 2024  
+AHA Scientific Sessions Early Career Awards  
+Sponsor Letter  
+
+Dear Selection Committee and the Council on Epidemiology and Prevention:
+
+I am writing to support Dr. Anish S. Shah, MD, MS, for the Elizabeth Barrett-Connor Research Award in Epidemiology and Prevention.
+
+Dr. Shah’s research on the impact of social determinants of health on atrial fibrillation (AF) symptom burden demonstrates his multidisciplinary skills and highlights his potential as an independent and successful investigator.
+
+As the Chief of the Division of Cardiology at the University of Illinois Chicago (UIC), I oversee several NIH and VA-funded research projects. 
+As a cardiologist with specialty training in electrophysiology and a research focus on cardiac arrhythmias and health disparities, my work closely aligns with Dr. Shah’s interests and current project. 
+My background includes a strong history of clinical and research mentorship, with over 30 trainees, including eight K08/K23 awardees, four of whom have transitioned to their first R01s. 
+I am the principal investigator (PI) for the institutional T32 (TPIPCVM: Training Program in Personalized Cardiovascular Medicine) and have mentored Dr. 
+Shah through his F32 award and his ongoing K23 application.
+
+Dr. Shah’s manuscript, central to this award application, investigates the effect of social determinants on AF symptom burden through a prospective, observational cohort study. 
+The study enrolled 873 participants at baseline and followed 515 participants longitudinally. 
+Key findings include a 5-8 point relative decrease in AFEQT scores for participants from higher neighborhood deprivation levels and minority race-ethnicity groups, primarily Non-Hispanic Black participants. 
+These results underscore the influence of social factors on AF outcomes, highlighting the importance of considering these variables in clinical management.
+
+The team science approach required in this project cannot be understated; however, Dr. Shah's role in this study was instrumental and his contributions essential to its success. 
+Not only is he the first author on the manuscript, but I have also asked him to be co-corresponding author on this submission, a critical role for a young academic. 
+Specifically, Dr. Shah's contributions to the study were comprehensive:
+
+- __Study Design__: Conceptualized the study framework, utilizing repeated patient-reported outcomes to evaluate the importance and longitudinal impact of social determinants.
+- __Data Collection__: Led a team of research coordinators to capture patient-reported outcomes and developed a system to collect clinical and social factors, such as geocodes to determine census tracts.
+- __Data Analysis__: Conducted complex statistical analyses, generating models, tables, and figures to best explain the findings.
+- __Writing__: Drafted the original manuscript, which was well-written with clear and concise language, and incorporated feedback promptly.
+
+There are additional aspects of the evolution of this project that merit comment. 
+Our lab is primarily a translational lab, focusing on genetic and molecular mechanisms coupled with specific clinical phenotypes. 
+Dr. Shah, with his background in epidemiology and biostatistics, has leveraged these skills to complement our lab's strengths, conceiving and carrying out projects successfully. 
+In many aspects, from writing to analysis, he functioned essentially as an independent investigator, with me serving as a mentor and guide.
+
+Dr. Shah chose to pursue this project due to his insightful understanding of the importance of symptom elicitation in a disease primarily managed through clinical symptom adjudication. 
+I fully agree with his perspective, as understanding the full impact of a disease on a patient is crucial for effective intervention planning.
+
+Furthermore, Dr. Shah's contributions were not limited to his own work. 
+He took the initiative to mentor junior colleagues in the lab, helping them understand statistical concepts and assisting with manuscript writing. 
+His relative independence and willingness to guide others demonstrate that he has entered the next phase of his career, transitioning from a trainee to a mentor and leader.
+
+Beyond this manuscript, Dr. Shah has shown consistent scholarly productivity during his cardiology training and F32 fellowship, with multiple first-author publications, presentations at national conferences, and publication of several open-source software packages. 
+His research on autonomic reactivity to stress and the genetic components of atrial flutter, both published works, further exemplify his dedication and expertise at the intersection of epidemiology and electrophysiology.
+
+In summary, Dr. Anish Shah’s objective, data-driven research on social determinants and AF symptom burden, combined with his technical skills and consistent productivity, make him an excellent candidate for the Elizabeth Barrett-Connor Research Award. 
+I fully support his application and believe he will continue to advance our understanding of cardiovascular epidemiology. For further questions, please contact me at darbar@uic.edu or 615-887-9032.
+
+Sincerely,
+
+Dawood Darbar, MBChB, MD  
+Chief, Division of Cardiology  
+Director, Center for Cardiovascular Research  
+Associate Director, Medical Scientist Training Program  
+Professor of Medicine and Pharmacology  
+University of Illinois Chicago  
+

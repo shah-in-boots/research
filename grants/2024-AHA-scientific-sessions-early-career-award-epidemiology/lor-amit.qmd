@@ -1,0 +1,50 @@
+---
+format: 
+  docx: default
+---
+
+June 10, 2024  
+AHA Scientific Sessions Early Career Awards  
+Letter of Reference  
+
+To the Selection Committee and the Council on Epidemiology and Prevention:
+
+It is with great pleasure that I write to you in strong support of Dr. Anish S. Shah, MD, MS, for the Elizabeth Barrett-Connor Research Award in Epidemiology and Prevention.
+
+As an Associate Professor in the Department of Epidemiology at the Rollins School of Public Health, Emory University, I have extensive experience in cardiovascular disease epidemiology, psychosocial factors, and health disparities. 
+My research is funded by NIH, and I currently hold two active R01 awards. 
+Over the past decade, I have mentored numerous early career investigators, many of whom have secured prestigious grants and academic positions. 
+I have known Anish since 2016, from when he began his internal medicine residency to now, as he is completing his cardiology fellowship and beginning his training in electrophysiology. 
+Throughout this time, I have served as his mentor for various stages of his career, including his NIH-TL1 and NIH-F32 fellowships. Our collaborative relationship has been marked by numerous research projects and publications, reflecting his dedication and growth as a researcher. Notably, I will continue to support him as a mentor for his upcoming NIH-K23 application.
+These experiences make me well-suited to assess and support Anish's candidacy for this award.
+
+Anish's research interest in computational neurocardiology and autonomic mechanisms of arrhythmogenesis has been consistent and focused. 
+He has developed skills in biostatistics, signal processing, and advanced programming, which he further refined during his Master’s degree and research with the EPICORE group at Emory University. 
+His unique skill set positions him at the intersection of epidemiology and electrophysiology-oriented digital signal processing.
+
+During his postdoctoral research fellowship and clinical training, Anish has published three first-author papers, including his Master’s dissertation. 
+These publications have focused on electrocardiographic markers of autonomic dysfunction, demonstrating his keen understanding of heart rate variability and ECG-based morphology parameters. 
+Anish's background in biostatistics also led to his significant contribution to a middle-authorship paper published in JAMA in 2021, for which he performed core recurrent event analyses.
+
+Under my mentorship, Anish has become technically proficient in programming languages such as R, MATLAB, and Python, and has utilized the PhysioNet software suite for his research. 
+He has written and published software for multiphase cosinor/harmonic regressions, showcasing his innovative approach and technical expertise. 
+His productivity during his T32 and F32 fellowships has been impressive, with two novel first-author papers recently submitted on autonomic reactivity to stress and genetic components of atrial flutter.
+
+Anish's current project aims to identify psychosocial and contextual factors that may impact patient reported outcomes. 
+He is leveraging his training in epidemiology to best understand how social determinants may influence AF burden, through both mechanism-based pathways to the systematic and implicity biases that may occur in physician-patient interactions.
+This project forms the core of his K23 application and highlights his ability to integrate large-scale data analysis with clinical research. 
+His approach to combining ECG-based feature extraction, genetic analyses, and epidemiology-informed mechanisms demonstrates his forward-thinking and innovative research mindset.
+
+In summary, I wholeheartedly support Dr. Anish Shah’s application for the Elizabeth Barrett-Connor Research Award. 
+He is a bright, passionate researcher with great potential for a successful career in academic medicine. 
+His unique combination of skills in epidemiology, biostatistics, and programming, along with his dedication to addressing health disparities, make him an outstanding candidate for this award. 
+Please do not hesitate to reach out to me at ajshah3@emory.edu or 215-840-3960 should you have any further questions regarding his qualifications.
+
+Sincerely,
+
+Amit J. Shah, MD, MSCR  
+Associate Professor, Department of Epidemiology, Emory University  
+Associate Professor, Department of Medicine (Cardiology), Emory University  
+Director of Cardiac Rehabilitation, Atlanta VA Healthcare System  
+1518 Clifton Road NE, Room 4045  
+Atlanta, GA 30322  

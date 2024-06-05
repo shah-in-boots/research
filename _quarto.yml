@@ -12,14 +12,9 @@ website:
       - text: Overview
         href: index.qmd
     right:
-      - icon: envelope
-        href: mailto:ashah282@uic.edu
-      - icon: github
-        href: http://github.com/shah-in-boots
-      - icon: twitter
-        href: https://twitter.com/shah_in_boots
-      - icon: linkedin
-        href: https://www.linkedin.com/in/anish-shah-326991177/
+      - text: github
+        icon: github
+        href: https://github.com/shah-in-boots/research
   page-navigation: true
   page-footer: "Copyright (c) 2024, Anish. S. Shah, MD, MS"
 
