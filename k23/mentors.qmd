@@ -15,6 +15,29 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 06/05/23 | AJS
+
+## Agenda {.smallest}
+
+1. AFEQT/SDOH
+	- Manuscript
+	- AHA Early Career Award (LOR)
+1. CARRS paper
+1. K23 application (aims following)
+1. Emory IRB as external collaborator
+	- UK Biobank
+	- GWAS from PPG data
+1. Zombie projects
+	- Cosinor analysis
+  
+## K23 aims {.smallest}
+
+{{< include _aim-1.qmd >}}
+
+{{< include _aim-2.qmd >}}
+
+{{< include _aim-3.qmd >}}
+
 # 05/22/24 | AJS
 
 ## Agenda {.smallest}

@@ -1,3 +1,2 @@
-__Aim 3: Identify the role of novel, rare variants for future AF risk in stress-related conditions.__
-Our [working hypothesis]{.underline} is that rare variants identified in a population with abnormal stress responses will be associated wiht increased future risk of AF in a large cohort study.
-
+__Aim 3: Evaluate the association of polygenic risk scores for chronic stress disorders with risk of atrial arrhythmias.__
+We [hypothesize that]{.underline} SNPs associated with stress disorders have differential susceptibility (or resilience) to future arrhythmias. We will validate our findings in the UK Biobank using a two-sample Mendelian randomization study design.
