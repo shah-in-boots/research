@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| echo: false
 #| cache: false
 dt <- 
-	date_build(year = 2024, month = 6, day = 3) |>
+	date_build(year = 2024, month = 6, day = 10) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,34 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# June 10, 2024
+
+## Updates {.smallest}
+
+1. AFEQT/SDOH draft manuscript revisions
+	- Potential journals: Annals of Internal Medicine, JAMA IM, Circulation: Quality/Outcomes, JACC EP
+1. Cluster access requested!
+	- [ ] Email for training/intro session as account creation completed
+1. AHA abstract + Early Career Award application (both extended to June 10 and June 13 respectively)
+1. AF-CTRS
+	- [ ] Meet with AF-CTRS team to review 
+	- Aim to have generic weights in ~2 weeks
+1. Future collaborations/projects
+	- [x] SS and DS - will continue to provide mentoring support remotely
+	- [ ] Continue to work on AF-CTRS + AF phenotying work
+	- [ ] ECG/genetics related 
+	- [ ] ACER-based CCTS data pulls
+	
+## Research products
+
+- 4 manuscripts (1 published, 1 in preparation, 2 under review)
+- 4 co-authored manuscripts (published)
+- 3 software packages published, peer-reviewed
+- Completion of an NIH-F32 award
+- K23 aims with 50-60% preliminary data collected
+- AFGen fellowship
+- ECG/genetics with UIC AF Registry + UK Biobank project/proposal
 
 # June 3, 2024
 
