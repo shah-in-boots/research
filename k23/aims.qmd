@@ -6,23 +6,25 @@ format:
 csl: ../../bibliography/circulation.csl
 ---
 
-Atrial fibrillation (AF) is the most common sustained cardiac arrhythmia, with a prevalence of over 50 million cases currently and &ge; 25% lifetime risk across races.[@Kornej2020]
-Although atrial fibrillation (AF) is the most common sustained cardiac arrhythmia, with a 25% lifetime risk across races [@Kornej2020], the disease is only classified by by broad strokes into paroxysmal, persistent, or permanent. 
-Treatment strategies are limited to antiarrhythmic drugs or catheter ablation and are applied without regard to the stage of the disease or the underlying mechanism [@Mehra2022; @England2002; @Kirchhof2020].
-For example, vagal nerve stimulation and cardioneural ablations have shown promise in AF, but are underutilized and not individually tailored [@Shivkumar2017; @Mehra2022].
-Moreover, current attempts at reclassifying AF have been limited to cross-sectional, comorbidity-based heuristics, which considered AF to be a consequence instead of a precursor of other conditions [@Andrade2014; @Pastori2020]. To overcome this lack of specificity in the diagnosis of paroxysmal AF, we need to [identify specific mechanisms in AF pathognesis]{.underline}, before prescribing therapies.
-In the earlier stages of AF, triggered activity from atrial tissue, such as ectopic beats, are the underlying *first-mover* in the onset of an episode of AF.
-Longer, sustained episodes of AF are accompanied by increased atrial scarring and fibrosis, as part of the disease progression.
-This supports the understanding that earlier phases of paroxysmal AF are driven by electrical triggers, which is ultimately mediated by a maladaptive response of the autonomic nervous system (ANS), such as increased sympathetic activity and acute parasympathetic withdrawal [@Zipes2006; @Taggart2011].
-[Our overarching hypothesis is that sympathetically-triggered atrial activity leads to differential effects on structurally normal and abnormal atria]{.underline}.
+Atrial fibrillation (**AF**) is the most common sustained cardiac arrhythmia, with a prevalence of over 50 million cases currently and &ge; 33% lifetime risk across races [@Kornej2020].
+Although there is emphasis on re-classifying the stages of AF [@Joglar2024], the current phenotypes are time-course based and described broadly as paroxysmal (self-terminating), persistent (requiring intervention to terminate), or permanent (sustained, without further rhythm-focused interventions) [@Kirchhof2020].
+Catheter ablation, along with antiarrhythmic drugs (**AAD**), are the mainstay of treatment for AF, with increasing emphasis on rhythm-control strategies [@Joglar2024].
+However, even ablation has an efficacy between 50-80% for AF recurrence within 12 months after initial procedure, which has not significantly changed over recent years [@Mehra2022; @Joglar2024].
+Ther treatment approaches do not necessarily consider the underlying mechanism of AF in individuals, which remains a crucial gap in our understanding of the disease [@Mehra2022].
 
-To test this, we will leverage several pre-existing, well-established cohorts that has extensive follow-up data, genetic sequencing, EP signal data, and are led by members of the mentorship committee. 
-During my TL1, T32, and F32 scholarship, I worked extensively to collect clinical and electrical signal data in multiple ongoing NIH-sponsored investigations involving my mentorship and advisory team [@Chalazan2021; @Vaccarino2021a], developing critical skills in signal processing, biostatistics, and computational genetics.
-In support of current literature [@Mehra2022], I found supporting evidence that vagolysis lead to abnormal cardiac perfusion and increased cardiovascular mortality.[@Shah2020; @Shah2021a; @Shah2021c; @Shah2023_conf]
-These abnormalities were identified through electrocardiography-based (ECG) markers, including heart rate variability (HRV), and associated with ANS function and cardiac physiology [@Shah2021b]. 
-As a fellow in clinical cardiac electrophysiology (EP), I am positioned to also obtain highly-granular data from EP studies performed during AF ablation, including cardiac-specific blood samples, intracardiac electrograms, and electroanatomical mapping.
-This mentored research with the appropriate, rigorous training will extend my background in signal processing and biostatistics to computational approaches in epidemiology and genomics.
-To this end, I have the following aims:
+Alternative attempts at classifying AF have been based on clinical comorbidities [@Andrade2014; @Pastori2020], which consider AF as the downstream sequelae of other conditions but do not account for atrial-specific factors, although we know that up to 20% of AF cases have an underlying genetic basis [@Khera2018].
+We need to [identify specific mechanisms in AF pathogenesis]{.underline} to help tailor interventions.
+An important mechanistic step in AF pathogenesis may be the role of the autonomic nervous system (**ANS**) in the initiation and maintenance of AF [@Zipes2006; @Taggart2011; @Shivkumar2017].
+ANS interaction with atrial tissue can lead to an increase in afterdepolarizations and ectopic beats, as well as facilitate re-entrant rhythms by shortening action potential durations (**APD**), which are two of the most common pathways in AF pathogenesis [@Coumel1994].
+For example, vagal nerve stimulation and cardioneural ablations have shown promise in AF, but are not standard of practice nor individually tailored [@Shivkumar2017; @Mehra2022].
+[Our overarching hypothesis is that by understanding the ANS contributions to atrial arrhythmias, we can identify earlier stages and phenotypes of AF pathogenesis to prevent, individualize, and optimize treatment strategies]{.underline}.
+
+To test our hypothesis, we will leverage the strength of pre-existing, well-established cohorts and analytical pipelines, including electrophysiology (**EP**) signals, genetic sequencing, and cardiac imaging data.
+During both clinical training (internal medicine, cardiology, and electrophysiology) and research fellowships (TL1, T32, F32), I worked extensively to collect electrical, clinical, and genetic data in multiple ongoing NIH-sponsored investigations involving my mentorship and advisory team [@Chalazan2021; @Vaccarino2021], developing critical skills in signal processing, biostatistics, and computational genetics.
+The mentored training allowed for better understanding in the role of the ANS and stress psychophysiology in cardiovascular disease, from abnormal cardiac perfusion, increased cardiovascular mortality, to arrhythmia susceptibility [@Shah2020; @Shah2021a; @Shah2021c; @Osei2024a; @Moazzami2023; @Huang2024].
+It also allowed for the opportunity to extend my background in signal processing and biostatistics by developing computational approaches with open-source software [@rmdl-package; @card-package; @EGM-package].
+As an EP fellow, I am positioned to obtain highly-granular data from EP studies performed during AF ablation, and with the expertise of the mentoring committee, I can expand my training in computational modeling of arrhythmias and genetics, allowing for a multifaceted understanding of the ANS in AF pathogenesis.
+Our main objective is to [elucidate the contribution of the ANS on atrial arrhythmogenesis to determine the **autonomic phenotype** of AF]{.underline}, which we will accomplish through the following aims:
 
 {{< include _aim-1.qmd >}}
 
@@ -30,5 +32,4 @@ To this end, I have the following aims:
 
 {{< include _aim-3.qmd >}}
 
-The current paradigm in the management of AF is superficial, focusing on therapies that are aimed at pharmacological and ablative modification of cardiac conductive tissue, instead of specific mechanisms, such as the underlying maladaptive autonomic response and interaction between scar and health atrial tissue under stress. 
-Identifying upstream mechanistic, autonomic pathways could lead to targeted therapies that not only decrease the risk of AF, but may also provide benefit in a number of other triggered atrial arrhythmias.[@Shivkumar2017]
+Our work will allow us to customize therapies, including AAD choice and ablation strategies, to target the underlying mechanism of behind AF, and will lead to future trials that can target the prevention and progression of AF at earlier stages.

@@ -15,6 +15,22 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# O6/24/24 | RR
+
+## Agenda {.smallest}
+
+1. Introduction in person 
+1. General timeline for progress over first 3-6
+months (caveat being appropriate clinical progress)
+1. Lab integration and co-authorship/contribution to ongoing projects
+1. Specific aims for K23
+1. Logistics: IRB, cluster access, compute/statistical support, clinical data registry access
+1. Additional research thoughts/projects:
+        a. Epidemiology & biostatistics background -- communicated with Ben Steinberg about the research resources available
+        a. Co-authorship with yourself, Jared Bunch, Rob MacLeod
+        a. Software development for EGM analysis (ML approach)
+        a. Atrial myopathy phenotyping by genetic variants (ML approach)
+
 # 06/05/23 | AJS
 
 ## Agenda {.smallest}

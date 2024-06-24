@@ -1,2 +1,5 @@
-__Aim 2: Determine the effect of autonomic changes in computational models of arrhythmia to predict differential risk for atrial arrhythmias.__
-Our [working hypothesis]{.underline} is that by modifying dromotropic and lusitropic properties of computational models of atria, clinically-relevant arrhythmias can be elicited over that of fibrosis-based models alone.
+**Aim 2: Compare the efficacy of computational scar-based models of atrial arrhythmias with predictive models accounting for ANS.** 
+We have designed predictive models of atrial arrhythmias based off of scar patterns identified by clinical imaging.
+This aim will augment the models by incorporating ANS parameters.
+[Hypothesis]{.underline}: Atrial-specific ANS parameters will improve prediction of clinically-relevant arrhythmias. 
+[Secondary hypothesis]{.underline}: ANS parameters obtained from **Aim 1** will validate parameters utilized in computational models. 

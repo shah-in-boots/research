@@ -1,2 +1,4 @@
-__Aim 1: Determine the differences in APD heterogeneity of scar tissue in the context of modulated autonomic activity.__
-Our [working hypothesis]{.underline} is that the interaction between APD heterogeneity and autonomic modulation will predict differential risk for future AF, particularly in cases of abnormal baseline autonomic activity such as PTSD.
+**Aim 1: Measure the differential electrophysiologic effects of the ANS on the atrial substrate and risk for atrial arrhythmias.**
+*[Hypothesis]{.underline}: EP characteristics with ANS modulation will show regional differences across the atria.* 
+*[Secondary hypothesis]{.underline}: Scar tissue will have increased heterogeneity of refractoriness in response to ANS modulation, with an exaggerated shortening of APD, relative to baseline.*
+During clinically-indicated EP studies for atrial arrhythmias, we will measure EP characteristics under ANS modulation through both pacing (e.g. vagal stimulation) and pharmacological maneuvers (e.g. isoproterenol infusion). 

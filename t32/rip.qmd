@@ -176,7 +176,7 @@ tbl_status_updates <- function(progress, effort) {
 #| echo: false
 #| cache: false
 dt <- 
-	date_build(year = 2024, month = 6, day = 10) |>
+	date_build(year = 2024, month = 6, day = 24) |>
 	add_days(-30)
 
 progress <-
@@ -206,6 +206,19 @@ effort <-
 
 tbl_status_updates(progress, effort)
 ```
+
+# June 24, 2024
+
+## Updates {.smallest}
+
+1. AFEQT/SDOH draft manuscript has been revised, pending tentative feedback from EJB
+1. Cluster access
+	a. Time this Thursday/Friday for cluster introduction (pending everyone getting access)
+1. UK Biobank proposal (to be shared later this week) overlaps with Michael Reese Foundation award for Aim #2, will share proposal if in agreement about aims
+	a. Aim 1 = WES expansion
+	b. Aim 2 = ECG-based genetic phenotyping
+	c. Aim 3 = ECG &larr; EP correlation
+1. AF-CTRS updates (later this week)
 
 # June 10, 2024
 
