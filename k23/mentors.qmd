@@ -15,6 +15,22 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 06/28/24 | DD
+
+## Agenda {.smaller}
+
+1. Review findings from ECG/TTN project
+1. Update on AFEQT/SDOH manuscript 
+1. Timeline/priority for active projects
+	1. ECG endo-phenotyping of AF genetic variants
+	1. AF-CTRS
+	1. Lab projects (data pulls, F-wave + BMP, future variant/data annotation)
+1. K23 timeline + publications
+
+---
+
+![ECG association with TTN variants, with gradients highlighting heavily weighted features](../figures/shah-2024-ttn-ecg-association.png)
+
 # O6/24/24 | RR
 
 ## Agenda {.smallest}

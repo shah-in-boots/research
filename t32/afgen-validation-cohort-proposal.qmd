@@ -4,38 +4,59 @@ subtitle: "Proposal for Validation Cohort"
 format: 
   docx:
     reference-doc: ../template.docx
-    
-csl: ../../bibliography/circulation.csl
 ---
-
 
 AF is a multifactorial disease that is both highly prevalent and burdensome, with a lifetime incidence of 1 out of 3-4 individuals.
 Although We have a limited understanding of the clinical factors that lead to atrial fibrillation (__AF__) pathogenesis, there is growing evidence of the genetic underpinnings of AF [@Weng2020; @Choi2020].
 It is clear that AF maintenance and pro-generation are a property of the atrial substrate, which can likely be further phenotyped based on how the atria are remodeled.
 The relationship of the atrial substrate to underlying genetic factors has somewhat been seen in studies evaluating electrocardiogram (ECG) associations with genetic variants [@Verweij2020; @Weng2020; @Holmqvist2015; @Husser2009; @Choi2021].
-In this proposal, I plan to correlate the genetic manifestations of AF with the electrical properties of the atria through electrocardiographic (__ECG__) evaluation of P-wave morphology using a deep neural network (__DNN__).
+In this proposal, I plan to correlate the genetic manifestations of AF with the electrical properties of through electrocardiographic (__ECG__) evaluation of atrial and ventricular depolarization and repolarization using a deep neural network (__DNN__).
 
-Previously, as a feasibility study, I trained a DNN to predict the likelihood of the presence of a *TTN<sub>LOF</sub>* (loss-of-function) based off of 12-lead ECG tracings, with balanced accuracy of 82%. 
+Relevant work previously is primarily by @Verweij2020 and @vandeLeur2021, who have evaluated ECG relationships with genetic variants. 
+@Verweij2020 noted that specific temporal features of the ECG could be associated with genetic abnormalities (@fig-ecg-variants).
+@vandeLeur2021 expanded on this to understand the electrical phenotype of a specific disease, in this case, phosphalamban cardiomyopathy, and demonstrated that a neural network could help identify morphological features of the ECG that were associated with the disease, best seen in @fig-ecg-dnn.
+Our proposal varies from the previous work as the goal is instead to evaluate the potential mechanisms of AF, instead of novel diagnosis of specific genetic variants.
+By comparing ECG of individuals with known AF into specific endotypes based on genetic variants associated with their AF, we can understand how variants may lead to AF through electrophyioslogical manifestations.
+As such, I have characterized genes putatively associated with cardiovascular disease into 4 categories:
+
+1. Structural genes (e.g. TTN, PITX2, LMNA, NUP155, GJA1/5)
+1. Ion channel genes (e.g. KCNE1-5, KCNQ1, SCN5A), subdivided by current
+1. Metabolic genes
+1. Inflammatory genes
+
+These categories, from a causal perspective, share mechanistic similarities in how they may lead to AF. 
+To identify if electrophysiological manifestations exist, in a sample with documented paroxysmal AF, individuals that carry a loss-of-function (**LOF**) in one of the above gene categories, or they may be *wild-type* (no known deleterious AF-associated genes).
+
+We have completed a feasibility study using the *TTN* gene as a proof-of-concept, seen in @fig-shah-ttn, using a convolutional neural network with bidirectional memory. 
 The model was trained on a cohort of `n=200` individuals with known paroxysmal AF, with `n=100` being reserved as a testing data set. 
 Of those, using the strictest variant effect prediction definition for LOF, `n=4` individuals were considered as cases (roughly 2% of the cohort).
 Each individual contributed 1 to 10 ECG, with each ECG being segmented into individual sinus beats, and each sinus beat used as a training (or test) data array. 
-The findings were most prominent within the P-wave and PR interval.
-This model may have potential to be used to help screen for underlying genetic mutations that are related to AF, creating an *ECG-informed risk assessment*.
+We had a sensitivity and specificity of 98% and 95%, with a balanced accuracy of 96% and detection prevalence of 95%. 
 
-After confirming feasibility, I developed an expanded definition of cases and controls to extend the utility of the model.
-I separated known AF-related genes into two categories based on their putative protein: 1) ion channel proteins and 2) sarcomeric/structural proteins.
-I then compared these groups iteratively to a *wild-type* group, defined as individuals with no known deleterious AF-related genetic variants.
-Using this preliminary data, I aim to validate the model in a larger cohort of individuals with known AF and whole exome/genome sequencing (__WES/WGS__) data.
+I aim to expand this project to better understand the electrocardiographyic phenotype of AF, to better understand mechanisms behind AF pathogenesis, and identify individuals at different degrees of risk for AF. My aims are as follow:
 
-1. __Monogenic Aim__: Validate a DNN model to identify deleterious gene variants associated with AF in individuals with known AF, with cases defined as those with: a) sarcomeric or structural proteins, and b) ion channel-related proteins. The DNN would compare cases as those with gene variants, and use individuals with no known associated variants as controls. The proposed architecture would be similar to that of @vandeLeur2021, which validates a similar DNN model on a monogenic arrhythmia/cardiomyopathy gene (phospholambdan).
-1. __Polygenic Aim__: Train a DNN model to assess the polygenic risk (PGS) of AF in individuals with known AF and dense SNP genotyping data, based on recent, validated AF-GWAS polygenic risk scores [@Khera2018; @Marston2023]. The model would be trained to predict the percent PGS of AF, similar to a linear regression, however the input is a 12-lead ECG.
+1. __Monogenic Aim__: Validate a DNN model to identify deleterious gene variants associated with AF in individuals with known AF, with cases defined as those with: a) sarcomeric or structural proteins, b) ion channel-related proteins, c) metabolic proteins, and d) inflammatory proteins that have a known association with cardiovascular disease. 
+1. __Polygenic Aim__: Train a DNN model to assess the polygenic risk (PGS) of AF in individuals with known AF and dense SNP genotyping data, based on recent, validated AF-GWAS polygenic risk scores [@Khera2018; @Marston2023]. The model would be trained to predict the percent PGS of AF, however the input is a 12-lead ECG.
 
 I utilized participants from the UIC Multi-Ethnic AF Registry as the primary study population, who have a combination of WES and dense SNP genotyping data. This allowed me to generate a small DNN model for both monogenic and polygenic patterns. However, the sample size was small, reducing generalizability.
-
 I propose to utilize a large, external cohort, such the UK Biobank (`n=68,091` with complete data), as well as additional populations such as the ARIC cohorts, the US-CHARGE participating studies, and/or the Cardiac Heart Study. The All of Us study is limited to only 30% of the population with ECG tracings. I propose testing (and/or additional training) on these large cohorts to validate the model for monogenic and polygenic ECG-phenotypes of AF. My approach is the next logical step in better understanding the relationship between genetic variants and AF risk over time, and helps to create an *ECG-informed risk assessment* for the phenotypes of AF. 
-
 
 {{< pagebreak >}}
 
+![@Verweij2020](../figures/verweij-2020-ecg-and-variants.png){#fig-ecg-variants}
+
+{{< pagebreak >}}
+
+![@vandeLeur2021](../figures/van-de-leur-ecg-findings.png){#fig-ecg-dnn}
+
+{{< pagebreak >}}
+
+![*Shah 2024 (in progress)*](../figures/shah-2024-ttn-ecg-association.png){#fig-shah-ttn}
+
+{{< pagebreak >}}
+
+# References
+
 ::: #refs
 :::
+
