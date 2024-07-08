@@ -1,0 +1,93 @@
+---
+format: docx
+---
+
+# COVER PAGE 
+
+Title: Impact of Social Determinants on Atrial Fibrillation Symptom Burden and Management: A Longitudinal Analysis
+
+{{< pagebreak >}}
+
+# LAY ABSTRACT (1/2 page)
+
+Atrial fibrillation (AF) is a common heart rhythm problem that affects millions of Americans. 
+It can significantly impact a person's quality of life and increase their risk of stroke and heart failure. 
+Doctors typically manage AF based on how much it bothers patients, but we don't fully understand how a person's social and economic circumstances affect their symptoms and treatment.
+Our research aims to fill this gap by studying how factors like where people live, their race or ethnicity, and their economic status influence their AF symptoms and the care they receive. 
+We'll also use a web-based questionnaire to regularly check how AF is affecting participants' quality of life.
+We expect to find that people living in more disadvantaged neighborhoods may not see as much improvement in their symptoms over time. 
+We also think that patients from minority groups or with lower incomes might be less likely to receive certain advanced treatments, even when their symptoms are just as severe as other patients.
+By understanding these patterns, we can develop better ways to care for all AF patients, regardless of their background. 
+Our findings could lead to new policies and treatment approaches that ensure everyone with AF receives fair and effective care. 
+Ultimately, this research could help reduce health disparities and improve the lives of many people living with this common heart condition.
+
+{{< pagebreak >}}
+
+# SPECIFIC AIMS (1/2 page)
+
+Atrial fibrillation (AF) is the most common cardiac arrhythmia, affecting millions of Americans and causing significant morbidity and mortality. 
+Management of AF is primarily driven by patient-reported symptom burden, yet there are critical gaps in our understanding of how social determinants of health (SDoH) influence these symptoms and subsequent treatment decisions. 
+Our preliminary work has demonstrated that SDoH, particularly neighborhood deprivation and race-ethnicity, significantly impact quality of life in AF patients over time. 
+This project aims to extend these findings by examining how SDoH affect the progression of AF symptom burden and mediate clinical decision-making, with the ultimate goal of developing targeted interventions to reduce health disparities in AF care.
+Our overall object is [to elucidate the complex relationships between SDoH, AF symptom progression, and clinical management strategies to inform equitable, patient-centered care approaches.]{.underline}
+
+__1. Determine the impact of social determinants on the progression of AF symptom burden over time.__
+*[Hypothesis]{.underline}: Participants from areas with higher neighborhood deprivation will experience less benefits from intervention on their quality of life, as measured by the Atrial Fibrillation Effect on Quality-of-Life (AFEQT) score.*
+[Approach]{.underline}: We will conduct a prospective, longitudinal study of 300 participants with AF patients, measuring quality of life every 1 month from enrollment. 
+We will utilize an EMR-based system to collect SDoH factors, and a web-based application to collect the AFEQT score.
+Mixed-effects models will be used to analyze trajectories of symptom progression, adjusting for clinical covariates.
+
+__2. Evaluate the mediating effects of social determinants on AF management decisions in response to symptom burden.__
+*[Hypothesis]{.underline}: Participants with lower socioeconomic status will be less likely to receive rhythm control strategies, despite similar symptom burden.*
+[Approach]{.underline}: We will use causal mediation analysis to examine how SDoH influence the relationship between AFEQT scores and subsequent management decisions (rate vs. rhythm control, ablation, etc.). We will also explore potential mechanisms, including patient-provider communication and health literacy.
+
+Our research will provide crucial insights into the role of SDoH in AF symptom progression and management, addressing a significant gap in cardiovascular health disparities research. 
+Our findings will inform the development of targeted interventions and policy recommendations to improve equity in AF care. 
+
+{{< pagebreak >}}
+
+# DETAILED PROPOSAL (4 pages)
+
+## Significance
+
+## Innovation
+
+## Approach
+
+## Timeline
+
+## Deliverables
+
+## Research Environment
+
+## Data Sharing Plan
+
+{{< pagebreak >}}
+
+# EXTRAMURAL FUNDING PLAN (1/2 page)
+
+{{< pagebreak >}}
+
+# REFERENCES 
+
+::: {#refs}
+:::
+
+{{< pagebreak >}}
+
+# BIOGRAPHICAL SKETCH (5 pages max)
+
+## Principal Investigator - Anish S. Shah, MD, MS 
+
+## Faculty Mentor - Ravi Ranjan, MD
+
+{{< pagebreak >}}
+
+# BUDGET JUSTIFICATION (1 page)
+
+Funding is available for salaries and fringe benefits of post-doctoral fellows, students, technicians, and other non-faculty project personnel, supplies, miscellaneous expenses, and services. Awards will not include indirect costs. Grant funds cannot be used for faculty salaries (summer or academic year); travel (e.g., conferences cannot be supported by this grant); consultants; or office equipment, including computers (unless specifically justified). Please prepare a one-page budget with maximum direct costs of $20,000 for ten months of support. The budget template is not required but may be used for this purpose.
+
+20k for 10 months of support (2k per month about)
+
+
+
