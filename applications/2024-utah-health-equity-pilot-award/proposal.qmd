@@ -4,7 +4,7 @@ format: docx
 
 # COVER PAGE 
 
-Title: Impact of Social Determinants on Atrial Fibrillation Symptom Burden and Management: A Longitudinal Analysis
+Title: Impact of Social Determinants on Atrial Fibrillation Symptom Burden and Management: A Rural Health Initiative
 
 {{< pagebreak >}}
 
@@ -14,11 +14,14 @@ Atrial fibrillation (AF) is a common heart rhythm problem that affects millions 
 It can significantly impact a person's quality of life and increase their risk of stroke and heart failure. 
 Doctors typically manage AF based on how much it bothers patients, but we don't fully understand how a person's social and economic circumstances affect their symptoms and treatment.
 Our research aims to fill this gap by studying how factors like where people live, their race or ethnicity, and their economic status influence their AF symptoms and the care they receive. 
+
+The proposal funding will support a study that will enroll participants from areas with limited access to care.
 We will use a mobile and web-based questionnaire to regularly check how AF is affecting participants' quality of life.
 The AF quality of life reporting will be accompanied by monitoring the heart rhythm over the course of the study. 
 We aim to identify what factors may be leading to disadvantages and advantages in the improvement of symptoms over time.
 We think that geographical factors, like living in a rural neighborhood, may affect how symptoms and quality of life are reported.
 We also think that patients from minority groups or with lower incomes might be less likely to receive certain advanced treatments, even when their symptoms are just as severe as other patients.
+
 By understanding these patterns, we can develop better ways to care for all AF patients, regardless of their background. 
 Our findings could lead to new policies and treatment approaches that ensure everyone with AF receives fair and effective care. 
 Ultimately, this research could help reduce health disparities and improve the lives of many people living with this common heart condition.
@@ -52,21 +55,142 @@ Our findings will inform the development of targeted interventions and policy re
 
 ## Significance
 
+Atrial fibrillation (AF) is the most common cardiac arrhythmia, significantly impacting cardiovascular morbidity and mortality [@Lip2016]. 
+AF management is primarily driven by patient-reported symptom burden, which directly influences treatment decisions [@Darbar2005]. 
+Our preliminary work has demonstrated that social determinants of health (SDoH), particularly neighborhood deprivation and race-ethnicity, significantly impact quality of life in AF patients over time. 
+However, critical gaps remain in understanding how geographical factors intersect with SDoH to influence AF symptom progression and management strategies. 
+The geographical impact on SDoH and AF management represents a crucial area of investigation. 
+While racial and ethnic disparities in AF outcomes have been documented [@Magnani2016], the specific role of geography in mediating these disparities remains poorly understood. 
+This knowledge gap limits our ability to provide equitable care across diverse regions, particularly in areas with limited access to specialized AF management. 
+Our proposed research aims to address this gap by implementing a remote monitoring system for assessing patient-reported symptoms and arrhythmia burden in participants with AF in areas with limited access to care. 
+This novel approach has the potential to overcome geographical barriers to care, providing crucial data on AF progression and management in previously understudied populations. 
+The insights gained may fundamentally change how we manage patients with AF, particularly those in rural or underserved regions, ultimately contributing to more equitable cardiovascular health outcomes.
+
 ## Innovation
+
+Our study attempts to tackle the [complex interplay between social determinants of health (SDoH), geographical factors, and AF symptoms]{.underline}, while also evaluating the relationship between [electrical burden of atrial fibrillation and the patient-reported symptom burden]{.underline}.
+By assessing the impact of overcoming geographical barriers in AF care by implementing a remote monitoring system for rural participants, we are able to evaluate the impact of SDoH and management strategies on AF progression in underserved populations.
+Rural populations are in particularly vulnerable to health disparities, as they are often excluded from clinical studies and have limited access to specialized care [@Sarraju2020].
+By utilizing our approach of integrating patient-reported outcomes with arrhythmia data, we are able to assess multiple facets of AF burden and progression simultaneously.
+Our integrated symptom burden represents an advance over traditional assessment methods [@Spertus2011; @Darbar2005], providing an approach may lead to more nuanced and individualized management strategies [@Essien2021].
+By creating a longitudinal data collection system that combines monthly AFEQT assessments with repeat ECG monitoring, we are able to track both symptom and arrhythmia progression over time.
+Having both subjective and objective data will also allow us to create novel phenotypes of AF progression and trajectory.
+This approach challenges the current paradigm of AF management, which often relies on infrequent in-person visits. 
+Our method has the potential to transform understanding and management of AF in underserved areas, addressing critical gaps in cardiovascular health disparities research [@Benjamin2023].
 
 ## Approach
 
-## Timeline
+Our study will employ a mixed-methods approach to address the complex interplay between social determinants of health (SDoH), geographical factors, and atrial fibrillation (AF) symptoms. 
+We will focus on implementing a remote monitoring system for assessing patient-reported symptoms and arrhythmia burden in participants with AF in areas with limited access to care.
 
-## Deliverables
+__Aim 1: Implement a remote monitoring system for assessing patient reported symptom and arrhythmia burden in participants with AF in areas with limited access to care.__
+
+We will work with our information technology team to develop a mobile/web-based interface for monthly completion of the Atrial Fibrillation Effect on Quality-of-Life (AFEQT) questionnaire [@Spertus2011].
+The AFEQT questionnaire is a validated tool for assessing AF symptom burden and quality of life [@Spertus2011], and can be repeated in monthly (or greater) intervals.
+This questionnaire will be integrated with AF arrhythmia burden data from mobile cardiac telemetry devices, creating a comprehensive tracking system for patient symptom burden.
+Participant recruitment will leverage existing outreach programs in rural areas, including clinics in Vernal and Blanding, UT and Rock Springs, WY.
+Additional recruitment will focus on individuals that have rural addresses attending clinics at the University of Utah.
+Research coordinators will play a crucial role in enrolling participants and providing training on the mobile/web interface.
+Clinical data will be extracted from the electronic medical record, including mobile cardiac telemetry data, to provide a comprehensive view of AF management and outcomes.
+
+*Remote Monitoring System Implementation:*
+
+1. AFEQT Questionnaire: We will administer the validated Atrial Fibrillation Effect on Quality-of-Life (AFEQT) questionnaire [@Spertus2011] monthly via a secure web-based platform or mobile application. This frequent assessment will provide granular data on symptom progression.
+1. ECG Monitoring: Participants, when clinically indicated, will receive short-term and longer ECG recordings that can be used to assess the burden of arrhythmia.
+1. Data Integration: We will develop a secure, HIPAA-compliant system to integrate AFEQT scores and ECG data, providing a comprehensive view of both subjective and objective AF burden.
+
+To ensure efficacy and engagement, our research coordinators will routinely track and evaluate the remote monitoring system, providing feedback directly to participants on how to utilize the system. 
+We will implement automatic reminders for AFEQT completion, with routine check-ins to address any technical issues or concerns.
+If technical issues arise, we will plan to obtain AFEQT scores through phone interviews or in-person visits, ensuring data continuity and quality.
+
+__Aim 2: Determine the impact of social determinants on the progression of both arrhythmia and symptom burden of AF over time.__
+
+To address this aim, we will collect comprehensive demographic and socioeconomic data during enrollment and utilize geospatial data to assess neighborhood-level SDoH factors. 
+Additionally, we will incorporate geospatial techniques to map AF burden in relation to local SDoH factors, analyzing the relationship between geographical barriers to care and AF outcomes.
+We will obtain detailed clinical histories, including comorbidities such as hypertension, diabetes, obesity, heart failure, sleep apnea, as well as lab and imaging data, such as echocardiography. 
+We will utilize data from clinic visits and encounters with arrhythmia specialists to determine management strategies, from non-invasive interventions, such as anti-arrhythmic drug therapy, to invasive procedures such as electrical cardioversion or arrhythmia ablation. 
+Our longitudinal outomce analysis will focus on trends in AFEQT scores, examining overall and domain-specific changes [@Holmes2019], while also quantifying AF episodes, duration, and frequency from ECG data. 
+We will employ mixed-effects models to evaluate the influence of geographical and socioeconomic factors on AF progression, building upon our previous work [@Shah2024]. 
+
+*Team Roles and Investigator Synergy:*
+
+Our team is multidisciplinary, combining expertise in epidemiology and electrophysiology to address the complex interplay between social determinants of health and AF progression.
+The principal investigator, who is a currently a fellow in  training in cardiac electrophysiology, Dr. Anish S. Shah, is an well-trained cardiovascular epidemiologist with experience in health disparities research.
+He brings with him additional outside mentors, including Alvaro Alonso, MD, PhD as a core mentor for his F32 fellowship, and Emelia J. Benjamin, MD, ScM as part of his fellowship with the AF Genetics Consortium, both who are well-recognized cardiovascular epidemiologists.
+The faculty mentor, Ravi Ranjan, MD, PhD is an electrophysiologist and clinical researcher with extensive extramural funding and experience in the clinical management of AF. 
+In particular, Dr. Ranjan leads efforts to provide care to rural and underserved populations, including having rural clinics in Vernal and Blanding, UT.
+This team is supported by postdoctoral and clinical fellows with expertise in research study design and cardiovascular disease management, as well as division-wide cardiovascular biostatisticians.
+
+This team composition ensures a synergistic approach, combining epidemiological expertise, clinical experience in rural settings, advanced statistical capabilities, and cutting-edge signal processing. 
+The collaboration between epidemiology and clinical practice will enable us to translate findings into actionable insights for improving AF care in underserved areas. 
+The integration of biostatistics and electrophysiology expertise will allow for robust analysis of complex, multidimensional data, enhancing our understanding of AF progression in relation to SDoH.
+
+## Timeline and Deliverables
+
+Our project timeline spans the upcoming year, with key activities and deliverables aligned with our 10-month funding period. In the first 3-6 months, we will focus on developing mobile technology and integrating it with ECG/telemetry data. Participant enrollment will commence in late fall, allowing us to begin collecting follow-up data from months 6-10. During this latter period, we will conduct preliminary analyses to assess feasibility.
+Key deliverables include:
+
+A technological product demonstrating the workflow for integrating AF rhythm burden and symptoms.
+Preliminary data analysis and feasibility assessment by the end of the 10-month period.
+A poster presentation at a national meeting on epidemiology/social determinants, showcasing our initial findings and methodology.
+
+While outside the immediate funding period, we anticipate the following future outcomes:
+
+- Continued data collection over the subsequent two years.
+- Manuscript publication within 1-2 years of project initiation.
+- Submission of an R21 or K23 grant application to further explore health disparities in AF management.
+
+Long-term, we aim to incorporate our findings into the EPIC system, enhancing clinical decision-making for AF patients in underserved areas.
+We also intend to expand our findings into other symptom-driven disease conditions, such as congestive heart failure.
+This timeline and set of deliverables allow us to establish the foundation of our integrated monitoring system, begin data collection, and set the stage for future in-depth analyses and broader implementation.
 
 ## Research Environment
 
+The University of Utah provides a supportive environment for cardiovascular and health equity research. Key resources include:
+
+- Health Sciences Center (HSC): Offers a comprehensive biobank, large datasets, and collaborative opportunities with the School of Medicine, College of Nursing, and Department of Biomedical Informatics. 
+- Center for High Performance Computing (CHPC): Provides resources for large-scale data analysis and computational modeling. 
+- Community Engagement: Extensive network of outreach clinics in urban and rural areas, ensuring diverse participant recruitment and strong community ties. 
+- Support and Training Mentorship and Professional Development: Experienced faculty mentors, regular seminars, workshops, and journal clubs. 
+= Grant Writing and Research Support: Office of Sponsored Projects (OSP) assistance for grant writing, budget preparation, and regulatory compliance. 
+
+The University of Utah's dynamic research environment, with its advanced facilities, collaborative opportunities, and strong institutional support, is well-suited to support the proposed study on the impact of social determinants on atrial fibrillation symptom burden and management.
+
 ## Data Sharing Plan
+
+The data generated from this study will be de-identified and available upon reasonable request from other investigators at the University of Utah.
 
 {{< pagebreak >}}
 
 # EXTRAMURAL FUNDING PLAN (1/2 page)
+
+The proposed research aligns well with the NIH's strategic goals to address health disparities and leverage technology to improve health outcomes. 
+Based on the scope and innovative nature of our project, we plan to pursue the following extramural funding opportunities:
+
+*NIH R21 Exploratory/Developmental Research Grant*
+
+We intend to submit an R21 application to the National Heart, Lung, and Blood Institute (NHLBI) for the June 16, 2025 application deadline.
+The R21 mechanism is ideal for our novel, high-risk/high-reward approach to understanding the impact of social determinants of health (SDoH) on atrial fibrillation (AF) progression in underserved areas.
+
+Our application will emphasize:
+
+- The innovative use of remote monitoring in rural AF populations
+- The potential for developing novel AF progression phenotypes
+- The critical need for understanding geographical and SDoH impacts on AF management
+
+*NIH K23 Mentored Patient-Oriented Research Career Development Award*
+
+Concurrently, the principal investigator will apply for a K23 award from the NHLBI, with an expected application date of June 12, 2025.
+This career development award will support the PI's growth as an independent clinical researcher focused on AF disparities and patient-centered outcomes.
+
+- The PI's commitment to a career in patient-oriented research on AF disparities
+- The strong mentorship team available at our institution
+- The potential for this research to lead to larger, multi-center studies on AF management in underserved populations
+
+Both of these funding mechanisms will allow us to expand upon the preliminary data generated from this pilot grant. 
+The R21 will provide resources to scale up our remote monitoring approach and conduct more comprehensive analyses of SDoH impacts on AF progression. 
+The K23 will support the PI's protected research time and additional training in advanced statistical methods and health disparities research.
+By pursuing both mechanisms, we aim to establish a strong foundation for a long-term research program addressing AF disparities, with the ultimate goal of improving outcomes for underserved AF patients.
 
 {{< pagebreak >}}
 
@@ -87,9 +211,16 @@ Our findings will inform the development of targeted interventions and policy re
 
 # BUDGET JUSTIFICATION (1 page)
 
-Funding is available for salaries and fringe benefits of post-doctoral fellows, students, technicians, and other non-faculty project personnel, supplies, miscellaneous expenses, and services. Awards will not include indirect costs. Grant funds cannot be used for faculty salaries (summer or academic year); travel (e.g., conferences cannot be supported by this grant); consultants; or office equipment, including computers (unless specifically justified). Please prepare a one-page budget with maximum direct costs of $20,000 for ten months of support. The budget template is not required but may be used for this purpose.
+Our budget justification is for a total of \$20,000 over a 10-month period. 
+This budget will cover the costs of implementing a remote monitoring system for assessing patient-reported symptoms and arrhythmia burden in participants with atrial fibrillation (AF) in areas with limited access to care.
+We will utilize approximately 60% of the monthly budget to cover the cost of research coordinator time at the rural healthcare sites.
+We expect the coordinator to spend 15-20% of their weekly time on this project, including participant recruitment, training, and data collection.
+Approximately 30% of the budget will be allocated to the cost of developing and maintaining the mobile/web-based interface for the Atrial Fibrillation Effect on Quality-of-Life (AFEQT) questionnaire.
+We will collaborate with the information technology team to develop and host a web-based application for monthly completion of the AFEQT questionnaire.
 
-20k for 10 months of support (2k per month about)
-
+| Category | Role | Duration | Cost | Total |
+| --- | --- | --- | --- | --- |
+| Personnel | Research Coordinator | 10 months | \$1200 | \$12,000 |
+| Services | IT Development | 10 months | \$800 | \$8,000 |
 
 
