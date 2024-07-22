@@ -1,0 +1,31 @@
+---
+title: Research-in-Progress
+author: Anish S. Shah, MD, MS
+institute:
+- University of Utah
+- University of Illinois Chicago
+- Emory University
+format: 
+  revealjs:
+    scrollable: true
+    chalkboard: true
+execute:
+  cache: true
+tbl-cap-location: bottom
+fig-cap-location: bottom
+---
+
+# 07/22/24
+
+## Updates {.smaller}
+
+- AFEQT/SDOH paper revisions to be completed and sent to co-authors by end-of-month
+- ECG/Genetics work-in-progress: meeting with Choi to "tighten" genetic variant selection
+- AF/DM (DS)
+  - Access to MUSE for updated ECG data (roughly 100k more to load), would need permission's reset by Diane Lepsi
+  - Data pull (by me) for DM/AF cohort with matching controls
+
+# References
+
+::: {#refs}
+:::
