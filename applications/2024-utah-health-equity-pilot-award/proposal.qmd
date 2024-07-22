@@ -1,14 +1,37 @@
 ---
 format: docx
+
+csl: ../../../bibliography/jacc.csl
 ---
 
 # COVER PAGE 
 
-Title: Impact of Social Determinants on Atrial Fibrillation Symptom Burden and Management: A Rural Health Initiative
+[Title]{.underline} 
+
+Impact of Social Determinants on Atrial Fibrillation Symptom Burden and Management: A Rural Health Initiative
+
+[Principal Investigator]{.underline}
+
+Anish S. Shah, MD, MS  
+Electrophysiology Fellow  
+Divison of Cardiovascular Medicine  
+Department of Internal Medicine  
+University of Utah  
+anish.shah@hsc.utah.edu  
+
+[Co-Investigator & Faculty Mentor]{.underline}
+
+Ravi Ranjan, MD, PhD  
+Professor of Medicine  
+Divison of Cardiovascular Medicine
+Department of Internal Medicine
+University of Utah
+ravi.ranjan@hsc.utah.edu
+
 
 {{< pagebreak >}}
 
-# LAY ABSTRACT (1/2 page)
+# LAY ABSTRACT 
 
 Atrial fibrillation (AF) is a common heart rhythm problem that affects millions of Americans. 
 It can significantly impact a person's quality of life and increase their risk of stroke and heart failure. 
@@ -82,6 +105,10 @@ Our method has the potential to transform understanding and management of AF in 
 
 Our study will employ a mixed-methods approach to address the complex interplay between social determinants of health (SDoH), geographical factors, and atrial fibrillation (AF) symptoms. 
 We will focus on implementing a remote monitoring system for assessing patient-reported symptoms and arrhythmia burden in participants with AF in areas with limited access to care.
+Our project builds off of preliminary work, seen in @fig-afeqt, that demonstrates the impact of neighborhood deprivation on AF symptom burden over time. 
+We found that increased levels of deprivation, which factor in income, education, household composition, and employment, were associated with worse AF symptom burden over time in a dose-dependent manner. 
+
+![We evaluated AFEQT scores over a 12-month period, and stratified the changes in score by the National Deprivation Index (NDI). Participants in areas with worse or more deprivation showed minimal to no improvement in AFEQT scores regardless of treatment or intervention. This population is approximately 800 individuals from an urban area, seen at an academic hospital](../../figures/shah-2024-afeqt-ndi-dstribution.png){#fig-afeqt}
 
 __Aim 1: Implement a remote monitoring system for assessing patient reported symptom and arrhythmia burden in participants with AF in areas with limited access to care.__
 
@@ -96,7 +123,7 @@ Clinical data will be extracted from the electronic medical record, including mo
 *Remote Monitoring System Implementation:*
 
 1. AFEQT Questionnaire: We will administer the validated Atrial Fibrillation Effect on Quality-of-Life (AFEQT) questionnaire [@Spertus2011] monthly via a secure web-based platform or mobile application. This frequent assessment will provide granular data on symptom progression.
-1. ECG Monitoring: Participants, when clinically indicated, will receive short-term and longer ECG recordings that can be used to assess the burden of arrhythmia.
+1. ECG Monitoring: Participants, when clinically indicated, will receive short-term and long-term ECG recordings that can be used to assess the burden of arrhythmia. Telemetry will include both wearable and implantable devices if available.
 1. Data Integration: We will develop a secure, HIPAA-compliant system to integrate AFEQT scores and ECG data, providing a comprehensive view of both subjective and objective AF burden.
 
 To ensure efficacy and engagement, our research coordinators will routinely track and evaluate the remote monitoring system, providing feedback directly to participants on how to utilize the system. 
@@ -109,7 +136,7 @@ To address this aim, we will collect comprehensive demographic and socioeconomic
 Additionally, we will incorporate geospatial techniques to map AF burden in relation to local SDoH factors, analyzing the relationship between geographical barriers to care and AF outcomes.
 We will obtain detailed clinical histories, including comorbidities such as hypertension, diabetes, obesity, heart failure, sleep apnea, as well as lab and imaging data, such as echocardiography. 
 We will utilize data from clinic visits and encounters with arrhythmia specialists to determine management strategies, from non-invasive interventions, such as anti-arrhythmic drug therapy, to invasive procedures such as electrical cardioversion or arrhythmia ablation. 
-Our longitudinal outomce analysis will focus on trends in AFEQT scores, examining overall and domain-specific changes [@Holmes2019], while also quantifying AF episodes, duration, and frequency from ECG data. 
+Our longitudinal outcome analysis will focus on trends in AFEQT scores, examining overall and domain-specific changes [@Holmes2019], while also quantifying AF episodes, duration, and frequency from ECG data. 
 We will employ mixed-effects models to evaluate the influence of geographical and socioeconomic factors on AF progression, building upon our previous work [@Shah2024]. 
 
 *Team Roles and Investigator Synergy:*
@@ -127,15 +154,15 @@ The integration of biostatistics and electrophysiology expertise will allow for 
 
 ## Timeline and Deliverables
 
-Our project timeline spans the upcoming year, with key activities and deliverables aligned with our 10-month funding period. In the first 3-6 months, we will focus on developing mobile technology and integrating it with ECG/telemetry data. Participant enrollment will commence in late fall, allowing us to begin collecting follow-up data from months 6-10. During this latter period, we will conduct preliminary analyses to assess feasibility.
-Key deliverables include:
+Our project timeline spans the upcoming year, with key activities and deliverables aligned with our 10-month funding period. 
+In the first 3-6 months, we will focus on developing mobile technology and integrating it with ECG/telemetry data. 
+Participant enrollment will commence in late fall, allowing us to begin collecting follow-up data from months 6-10. 
+During this latter period, we will conduct preliminary analyses to assess feasibility.
+Key deliverables, both inside and outside of the immediate funding period, include:
 
-A technological product demonstrating the workflow for integrating AF rhythm burden and symptoms.
-Preliminary data analysis and feasibility assessment by the end of the 10-month period.
-A poster presentation at a national meeting on epidemiology/social determinants, showcasing our initial findings and methodology.
-
-While outside the immediate funding period, we anticipate the following future outcomes:
-
+- A technological product demonstrating the workflow for integrating AF rhythm burden and symptoms.
+-Preliminary data analysis and feasibility assessment by the end of the 10-month period.
+- A poster presentation at a national meeting on epidemiology/social determinants, showcasing our initial findings and methodology.
 - Continued data collection over the subsequent two years.
 - Manuscript publication within 1-2 years of project initiation.
 - Submission of an R21 or K23 grant application to further explore health disparities in AF management.
@@ -162,7 +189,7 @@ The data generated from this study will be de-identified and available upon reas
 
 {{< pagebreak >}}
 
-# EXTRAMURAL FUNDING PLAN (1/2 page)
+# EXTRAMURAL FUNDING PLAN
 
 The proposed research aligns well with the NIH's strategic goals to address health disparities and leverage technology to improve health outcomes. 
 Based on the scope and innovative nature of our project, we plan to pursue the following extramural funding opportunities:
@@ -209,7 +236,7 @@ By pursuing both mechanisms, we aim to establish a strong foundation for a long-
 
 {{< pagebreak >}}
 
-# BUDGET JUSTIFICATION (1 page)
+# BUDGET JUSTIFICATION 
 
 Our budget justification is for a total of \$20,000 over a 10-month period. 
 This budget will cover the costs of implementing a remote monitoring system for assessing patient-reported symptoms and arrhythmia burden in participants with atrial fibrillation (AF) in areas with limited access to care.
