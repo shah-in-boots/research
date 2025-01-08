@@ -15,6 +15,25 @@ tbl-cap-location: bottom
 fig-cap-location: bottom
 ---
 
+# 2024-12-10 | RR
+
+## Agenda {.smaller}
+
+1. Aims timeline
+1. Aims review:
+	a. ANS modulation of EP parameters
+		- APD duration (monophasic catheter)
+		- ANS modulation feasibility 
+	a. MRI-based prediction of AF/re-entry substrate, modulated by ANS
+		- Pipeline for 
+	a. Genetic variants in stress response
+		- Collaboration with Emory for mental stress model
+		- WES/GWAS data with Utah
+		- Epigenetics 
+		- Blood samples during EP study
+1. Holes in application
+		
+
 # 06/28/24 | DD
 
 ## Agenda {.smaller}
@@ -29,7 +48,7 @@ fig-cap-location: bottom
 
 ---
 
-![ECG association with TTN variants, with gradients highlighting heavily weighted features](../figures/shah-2024-ttn-ecg-association.png)
+![ECG association with TTN variants, with gradients highlighting heavily weighted features](./figures/shah-2024-ttn-ecg-association.png)
 
 # O6/24/24 | RR
 
@@ -42,10 +61,10 @@ months (caveat being appropriate clinical progress)
 1. Specific aims for K23
 1. Logistics: IRB, cluster access, compute/statistical support, clinical data registry access
 1. Additional research thoughts/projects:
-        a. Epidemiology & biostatistics background -- communicated with Ben Steinberg about the research resources available
-        a. Co-authorship with yourself, Jared Bunch, Rob MacLeod
-        a. Software development for EGM analysis (ML approach)
-        a. Atrial myopathy phenotyping by genetic variants (ML approach)
+	a. Epidemiology & biostatistics background -- communicated with Ben Steinberg about the research resources available
+	a. Co-authorship with yourself, Jared Bunch, Rob MacLeod
+	a. Software development for EGM analysis (ML approach)
+	a. Atrial myopathy phenotyping by genetic variants (ML approach)
 
 # 06/05/23 | AJS
 
