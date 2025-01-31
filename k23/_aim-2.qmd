@@ -1,5 +1,4 @@
-**Aim 2: Compare the efficacy of computational scar-based models of atrial arrhythmias with predictive models accounting for ANS.** 
-We have designed predictive models of atrial arrhythmias based off of scar patterns identified by clinical imaging.
-This aim will augment the models by incorporating ANS parameters.
-[Hypothesis]{.underline}: Atrial-specific ANS parameters will improve prediction of clinically-relevant arrhythmias. 
-[Secondary hypothesis]{.underline}: ANS parameters obtained from **Aim 1** will validate parameters utilized in computational models. 
+**Aim 2: Characterize the dynamic atrial substrate and fibrillatory area using MRI-based computational modeling to identify potential ablation targets.** 
+*[Hypothesis]{.underline}: Sympathovagal imbalance amplifies conduction heterogeneity in fibrotic tissue, augmenting the dynamic fibrillatory and re-entry area, increasing propensity for AF initiation under stress.*  
+Cardiac MRI before and after PVI can assess scar and fibrosis burden of the atria in static manner. 
+By including the dynamic information of autonomic tone, the true potential fibrillatory thresholds can be determined, which can be obtained and verified during EP study. Moreso, ablation approaches for specific atrial substrates can be tailored to increase efficacy.

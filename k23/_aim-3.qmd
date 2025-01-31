@@ -1,4 +1,4 @@
-**Aim 3: Explore the contribution of ANS genetic variants to the polygenic risk of atrial arrhythmias.**
-Using a two-sample Mendelian randomization study design, we will identify SNPs that contribute to stress-related disorders, including potentially novel loci, and assess their impact on the polygenic risk of AF in a validation cohort. 
-[Hypothesis]{.underline}: Genetic variants associated with abnormalities in the ANS, including stress-related disorders, will overlap with and partially explain both risk and resilience to future development of AF. 
-
+**Aim 3: Explore the genetic and epigenetic determinants of autonomic dysfunction that predispose to AF.** 
+*Hypothesis: Genetic variants associated with neurocardiac regulation, and epigenetic changes on similar trait loci, increases the risk of future AF occurrence.* 
+By creating a polygenic risk for abnormal neurocardiac responses to mental stress (the Emory Myocardial Ischemia and Mental Stress study), key neurocardiac genes can be identified. 
+By evaluating those genes, and their epigenetic modifications, in large biobank databases (Million Veterans Project, UK Biobank), we can quantifiy part of the polygenic and allostatic contribution to AF.

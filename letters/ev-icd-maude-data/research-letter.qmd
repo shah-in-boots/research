@@ -7,17 +7,45 @@ author:
     email: anish.shah@hsc.utah.edu
     affiliations:
       - ref: utah
+  - name: Marc Engels, MD, PhD
+    affiliations:
+      - ref: utah
+  - name: Roger A. Freedman, MD
+    affiliations:
+      - ref: utah
+  - name: Immo Lehmann, MD, PhD
+    affiliations:
+      - ref: utah
+  - name: Klitos Konstantinidis, MD
+    affiliations:
+      - ref: utah
+  - name: Ravi Ranjan, MD, PhD
+    affiliations:
+      - ref: utah
+  - name: Rich Shelton, MD
+    affiliations:
+      - ref: gewva
+  - name: Scott Wall, MD
+    affiliations:
+      - ref: gewva
   - name: T. Jared Bunch, MD, FHRS
     orcid: 0000-0002-9729-1558
     email: jared.bunch@hsc.utah.edu
     affiliations:
       - ref: utah
+    corresponding: true
 affiliations:
   - id: utah
     name: University of Utah
     city: Salt Lake City
     state: UT
+  - id: gewva
+    name: George E. Wahlen Veterans Affairs Medical Center
+    city: Salt Lake City
+    state: UT
+    
 format: typst
+
 bibliography: citations.bib
 ---
 
@@ -145,16 +173,16 @@ tmp <-
 	unlist()
 ```
 
-The first substernal and extracardiac defibrillation system, the extravascular implantable cardioverter-defibrillator (**EV ICD**), provides a novel technology that both allows effective defibrillation at similar energy to intracardiac devices and allows anti-tachycardic pacing, all without the risks of inherent to transvenous systems.
+The first substernal and extracardiac defibrillation system, the extravascular implantable cardioverter-defibrillator (**EV ICD**), provides a novel technology that both allows effective defibrillation at similar energy to intracardiac devices and allows anti-tachycardic pacing, all without the risks inherent to transvenous systems.
 The recently published long-term outcomes of the Extravascular Implantable Cardioverter-Defibrillator (EV ICD) Pivotal Study shows promising results, with follow-up data up to 3 years. 
 @Friedman2024 found that the EV ICD system provided 100% termination of discrete spontaneous ventricular arrhythmias, with no major intraprocedural or ICD complications from implant to final follow-up, with an overall freedom of related complications of 89% at 3 years [@Friedman2024].
 
-Clinical trials however often represent best-case scenarios, with both experienced operators in a controlled setting with careful patient screening and selection. 
+Clinical trials however often represent best-case scenarios, with both experienced operators in a controlled setting with careful patient screening and selection [@Maclean2024]. 
 We analyzed post-market surveillance data from the U.S. Food & Drug Administration (**FDA**) Manufacturer and User Facility Device Experience (**MAUDE**) Database, which provides voluntary reporting for medical devices from health care professionals and mandatory reporting from manufacturers. 
 We searched for reports from the October 23, 2023, the date of FDA approval of the *Aurora EV ICD* system, to December 31, 2024, that were related to either the device itself or the *Epsila* lead. 
 We manually adjudicated each report and categorized events into device-specific complications, including mortality, inappropriate therapies, sensing issues, procedural complications, and infections. 
 
-The MAUDE data contains `r nrow(dat)` independent event reports from `r glue("{min(dat$event_date)} to {max(dat$event_date)}")`.
+The MAUDE data contains `r nrow(dat)` independent event reports from `r glue('{format(min(dat$event_date), "%B %d, %Y")} to {format(max(dat$event_date), "%B %d, %Y")}')`.
 Of the event reports, `r glue("{nrow(subset(dat, study == 1))} ({round(nrow(subset(dat, study == 1))/nrow(dat) * 100)}%)")` were indicated to have been part of a clinical study.
 The most common issue found was oversensing, with `r glue("{nrow(subset(dat, oversensing == 1))} ({round(nrow(subset(dat, oversensing == 1))/nrow(dat) * 100)}%)")` reports of issues with P and T wave oversensing, along with noise that led to the false detection of ventricular arrhythmias.
 The oversensing and noise issues were associated with `r glue("{nrow(subset(dat, inappropriate_shock == 1))} ({round(nrow(subset(dat, inappropriate_shock == 1))/nrow(dat) * 100)}%)")` reports of inappropriate shocks, as well as due to supraventricular arrhythmias that fell into the the ventricular therapy zones.
@@ -170,18 +198,20 @@ We can also extrapolate the frequency of events to the likely number of procedur
 Sensing was the predominant issue, with the majority of reports noting noise, double-counting, and atrial oversensing, with 1 out of 5 of these events resulting in inappropriate shocks.
 Importantly, we found procedural complications such as pericardial damage or laceration, mediastinal damage, and pneumothoraces to be an infrequent but present fraction of event reports, including at least once case of cardiac tamponade requiring pericardiocentesis.
 The *Pivotal* trial reported no pneumothoraces or pericardial effusions, in comparison.
-As a comparator, a nation-wide study by @Kirkfeldt2014 showed that over 1 year, had 562 complications out of 5918 implants. 
+As a reference, a nation-wide study by @Kirkfeldt2014 showed that over 1 year, had 562 complications out of 5918 implants. 
 Out of all complications, they showed `r round((39 + 51)/562 * 100)`% were pneumothoraces, `r round((49 + 69)/562 * 100)`% were superficial and deep wound infections, `r round(38/562 * 100)`% were cardiac perforations, and `r round((10 + 7)/562 * 100)`% were lead dislodgements.
 The MAUDE data is limited to voluntary reporting and lacks the total implant denominator to understand incidence, and moreso reflects the early adoption experience and not reflect long-term performance with increased operator expertise.
 
 Our findings highlight the importance of post-market surveillance and suggest that the safety profile of the EV ICD is not yet well-defined for general implementation. 
 We believe this data should inform shared decision-making and discussion between physicians and patients as the EV ICD disseminates into broader clinical use.
 
+{{< pagebreak >}}
+
 ```{r}
 #| label: fig-events
 #| echo: false
 #| warning: false
-#| fig-cap: "Breakdown of Procedural Complications Reported from the MAUDE Database. The figure breaks down the frequency and summary of key complication reports seen in the MAUDE database for the EV-ICD generator and lead."
+#| fig-cap: "Breakdown of Procedural Complications Reported from the MAUDE Database. The figure breaks down the frequency and summary of key complication reports seen in the MAUDE database for the EV-ICD generator and lead. The figure demonstrates the relative frequency of events. The specific events are displayed alphabetically."
 #| fig-height: 10
 #| fig-width: 10
 
@@ -241,7 +271,7 @@ ggplot(alluvial_dat, aes(y = percent, axis1 = maude, axis2 = major_type, axis3 =
 	geom_stratum(width = 0.3) +
 	#geom_label(stat = "stratum", aes(label = after_stat(stratum))) +
 	geom_text(stat = "stratum", aes(label = after_stat(stratum)), 
-						nudge_x = 0.0, size = 3) + 
+						nudge_x = 0.0, size = 4) + 
 	scale_x_discrete(limits = c("Overall Events", "Event Type", "Specific Event")) +
 	scale_y_continuous(labels = scales::label_percent()) +
 	scale_fill_brewer(palette = "RdPu") +
@@ -253,3 +283,7 @@ ggplot(alluvial_dat, aes(y = percent, axis1 = maude, axis2 = major_type, axis3 =
 	)
 ```
 
+{{< pagebreak >}}
+
+::: {#refs}
+:::

@@ -1,4 +1,3 @@
-**Aim 1: Measure the differential electrophysiologic effects of the ANS on the atrial substrate and risk for atrial arrhythmias.**
-*[Hypothesis]{.underline}: EP characteristics with ANS modulation will show regional differences across the atria.* 
-*[Secondary hypothesis]{.underline}: Scar tissue will have increased heterogeneity of refractoriness in response to ANS modulation, with an exaggerated shortening of APD, relative to baseline.*
-During clinically-indicated EP studies for atrial arrhythmias, we will measure EP characteristics under ANS modulation through both pacing (e.g. vagal stimulation) and pharmacological maneuvers (e.g. isoproterenol infusion). 
+**Aim 1: Profile the autonomic phenotypes of paroxysmal AF who may benefit from combined cardioneuroablation and PVI ablation approaches.** 
+*[Hypothesis]{.underline}: Heightened sympathetic activity and impaired vagal activity will associate with an adrergic phenotype of AF, which will have increased rates of AF recurrence.* 
+Sympathetic outflow, measured through stellate ganglia activity surrogates (skin sympathetic nerve activity, cardiac biomarkers of NPY and Gal1) and parasympathetic outflow (baroreceptor reflex, heart rate variability) are somewhat antagonistic, with exaggerated antagonism being predictive of those at risk of future AF despite PVI. The identification of an adrenergic phenotype of AF can help identify autonomic-targeted therapies in AF.
