@@ -43,5 +43,7 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
-
 /.quarto/
+
+# Potential confidential or research projects
+*.docx
