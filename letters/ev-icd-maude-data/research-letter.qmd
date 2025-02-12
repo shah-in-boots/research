@@ -7,6 +7,7 @@ author:
     email: anish.shah@hsc.utah.edu
     affiliations:
       - ref: utah
+      - ref: gewva
   - name: Marc Engels, MD, PhD
     affiliations:
       - ref: utah
@@ -22,11 +23,6 @@ author:
   - name: Ravi Ranjan, MD, PhD
     affiliations:
       - ref: utah
-  - name: Rich Shelton, MD
-    affiliations:
-      - ref: gewva
-  - name: Scott Wall, MD
-    affiliations:
       - ref: gewva
   - name: T. Jared Bunch, MD, FHRS
     orcid: 0000-0002-9729-1558
@@ -36,18 +32,25 @@ author:
     corresponding: true
 affiliations:
   - id: utah
-    name: University of Utah
-    city: Salt Lake City
-    state: UT
+    name: Department of Medicine, Division of Cardiology, University of Utah, Salt Lake City, UT
   - id: gewva
-    name: George E. Wahlen Veterans Affairs Medical Center
-    city: Salt Lake City
-    state: UT
+    name: Department of Medicine, George E. Wahlen VA Medical Center, Salt Lake City, UT
     
-format: typst
-
+filters:
+  - authors-block
+  
+format:
+  docx:
+    reference-doc: ../../../bibliography/manuscript.docx
+      
 bibliography: citations.bib
+csl: aha.csl
+notes-after-punctuation: true
+link-bibliography: true
+link-citations: true
 ---
+
+{{< pagebreak >}}
 
 ```{r}
 #| label: setup
@@ -61,7 +64,7 @@ library(lubridate)
 library(glue)
 
 # Get all the potential data sets read in
-data_loc <- here::here("letters/ev-icd-maude-data")
+data_loc <- here::here("~/OneDrive - University of Utah/data/maude")
 evicd_df <- readr::read_csv(fs::path(data_loc, "maude-ev-icd.csv"))
 aurora_df <- readr::read_csv(fs::path(data_loc, "maude-medtronic-aurora.csv"))
 epsila_df <- readr::read_csv(fs::path(data_loc, "maude-medtronic-epsila.csv"))
@@ -175,7 +178,7 @@ tmp <-
 
 The first substernal and extracardiac defibrillation system, the extravascular implantable cardioverter-defibrillator (**EV ICD**), provides a novel technology that both allows effective defibrillation at similar energy to intracardiac devices and allows anti-tachycardic pacing, all without the risks inherent to transvenous systems.
 The recently published long-term outcomes of the Extravascular Implantable Cardioverter-Defibrillator (EV ICD) Pivotal Study shows promising results, with follow-up data up to 3 years. 
-@Friedman2024 found that the EV ICD system provided 100% termination of discrete spontaneous ventricular arrhythmias, with no major intraprocedural or ICD complications from implant to final follow-up, with an overall freedom of related complications of 89% at 3 years [@Friedman2024].
+Friedman et al. 2024 found that the EV ICD system provided 100% termination of discrete spontaneous ventricular arrhythmias, with no major intraprocedural or ICD complications from implant to final follow-up, with an overall freedom of related complications of 89% at 3 years [@Friedman2024].
 
 Clinical trials however often represent best-case scenarios, with both experienced operators in a controlled setting with careful patient screening and selection [@Maclean2024]. 
 We analyzed post-market surveillance data from the U.S. Food & Drug Administration (**FDA**) Manufacturer and User Facility Device Experience (**MAUDE**) Database, which provides voluntary reporting for medical devices from health care professionals and mandatory reporting from manufacturers. 
@@ -186,23 +189,24 @@ The MAUDE data contains `r nrow(dat)` independent event reports from `r glue('{f
 Of the event reports, `r glue("{nrow(subset(dat, study == 1))} ({round(nrow(subset(dat, study == 1))/nrow(dat) * 100)}%)")` were indicated to have been part of a clinical study.
 The most common issue found was oversensing, with `r glue("{nrow(subset(dat, oversensing == 1))} ({round(nrow(subset(dat, oversensing == 1))/nrow(dat) * 100)}%)")` reports of issues with P and T wave oversensing, along with noise that led to the false detection of ventricular arrhythmias.
 The oversensing and noise issues were associated with `r glue("{nrow(subset(dat, inappropriate_shock == 1))} ({round(nrow(subset(dat, inappropriate_shock == 1))/nrow(dat) * 100)}%)")` reports of inappropriate shocks, as well as due to supraventricular arrhythmias that fell into the the ventricular therapy zones.
-Operators noted at least `r glue("{nrow(subset(dat, programming_issues == 1))} ({round(nrow(subset(dat, programming_issues == 1))/nrow(dat) * 100)}%)")` times that the device had to be repositioned due to difficulty manipulating hte lead, abnormal sensing, or difficulty in device programming due to noise or position.
+Operators noted at least `r glue("{nrow(subset(dat, programming_issues == 1))} ({round(nrow(subset(dat, programming_issues == 1))/nrow(dat) * 100)}%)")` times that the device had to be repositioned due to difficulty manipulating the lead, abnormal sensing, or difficulty in device programming due to noise or position.
 The lead became dislodged or migrated during follow-up for `r glue("{nrow(subset(dat, dislodgement == 1))} ({round(nrow(subset(dat, dislodgement == 1))/nrow(dat) * 100)}%)")` patients, and there were `r glue("{nrow(subset(dat, infection == 1))} ({round(nrow(subset(dat, infection == 1))/nrow(dat) * 100)}%)")` reports of superficial or deeper infections.
 The listed reasons led to `r glue("{nrow(subset(dat, explant == 1))} ({round(nrow(subset(dat, explant == 1))/nrow(dat) * 100)}%)")` device explantations. 
 During initial implant, pericardial damage or laceration occurred `r glue("{nrow(subset(dat, pericardial == 1))} ({round(nrow(subset(dat, pericardial == 1))/nrow(dat) * 100)}%)")` times, along with pneumothorax and pneumomediastinum `r glue("{nrow(subset(dat, pneumothorax == 1))} ({round(nrow(subset(dat, pneumothorax == 1))/nrow(dat) * 100)}%)")`.
 There were `r glue("{nrow(subset(dat, death == 1))} ({round(nrow(subset(dat, death == 1))/nrow(dat) * 100)}%)")` mortality events, none of which were due to failure of cardioverter/defibrillator therapy.
+There was also a single event where defibrillatory testing failed to cardiovert ventricular fibrillation, leading to the addition of a transvenous system.
 The relative frequency of these events are seen in @fig-events.
 
-We can not compare directly the frequency of events seen in the *Pivotal* trial, but we can see the most common issues that may arise in a real-world practice and novel issues that have not yet been reported.
-We can also extrapolate the frequency of events to the likely number of procedures performed during the first year of this device's approval, and herald the rates to come as the technology is utilized by early-adopters.
+Although we cannot compare directly the rate of adverse events seen in the *Pivotal* trial, we can identify the most frequent complications and novel issues that have not yet been reported.
+The frequency of events can be extrapolated to the suspected number of implants performed during the first year of this device's approval, which likely herald the rates to come with early-adopters.
 Sensing was the predominant issue, with the majority of reports noting noise, double-counting, and atrial oversensing, with 1 out of 5 of these events resulting in inappropriate shocks.
-Importantly, we found procedural complications such as pericardial damage or laceration, mediastinal damage, and pneumothoraces to be an infrequent but present fraction of event reports, including at least once case of cardiac tamponade requiring pericardiocentesis.
-The *Pivotal* trial reported no pneumothoraces or pericardial effusions, in comparison.
-As a reference, a nation-wide study by @Kirkfeldt2014 showed that over 1 year, had 562 complications out of 5918 implants. 
+Importantly, we found procedural complications such as pericardial damage or laceration, mediastinal damage, and pneumothoraces to be an infrequent but present fraction of event reports, including at least once case of cardiac tamponade requiring pericardiocentesis, while *Pivotal* reported no events of this type.
+As a reference, a nation-wide study by Kirkfeld et al. 2014 showed that over 1 year, had 562 complications out of 5918 implants [@Kirkfeldt2014].
 Out of all complications, they showed `r round((39 + 51)/562 * 100)`% were pneumothoraces, `r round((49 + 69)/562 * 100)`% were superficial and deep wound infections, `r round(38/562 * 100)`% were cardiac perforations, and `r round((10 + 7)/562 * 100)`% were lead dislodgements.
 The MAUDE data is limited to voluntary reporting and lacks the total implant denominator to understand incidence, and moreso reflects the early adoption experience and not reflect long-term performance with increased operator expertise.
 
-Our findings highlight the importance of post-market surveillance and suggest that the safety profile of the EV ICD is not yet well-defined for general implementation. 
+Our findings highlight the importance of post-market surveillance and the number of events suggest the need to continue to closely monitor.
+As a new technology, we anticipate that complication rates will continue to improve with growing user experience and training.
 We believe this data should inform shared decision-making and discussion between physicians and patients as the EV ICD disseminates into broader clinical use.
 
 {{< pagebreak >}}
@@ -211,7 +215,7 @@ We believe this data should inform shared decision-making and discussion between
 #| label: fig-events
 #| echo: false
 #| warning: false
-#| fig-cap: "Breakdown of Procedural Complications Reported from the MAUDE Database. The figure breaks down the frequency and summary of key complication reports seen in the MAUDE database for the EV-ICD generator and lead. The figure demonstrates the relative frequency of events. The specific events are displayed alphabetically."
+#| fig-cap: "Breakdown of Procedural Complications Reported from the MAUDE Database. The figure breaks down the frequency and summary of key complication reports seen in the MAUDE database for the EV-ICD generator and lead. From left to right, we show the distribution and frequency of events by major categories to specific events. The specific events are displayed alphabetically. Infections include both superficial and potential deep infections. Oversensing events were predominantly P waves followed by T waves. Undersensing of R waves often led to repositioning. Lead fractures including insulation breaches. Dislodgement were described intraprocedurally, and required repositioning. Pericardial events including lacerations, new effusions, and tamponade. Pneumothoraces also included pneumomediastinum. * = Unspecified injuries reported in the MAUDE database."
 #| fig-height: 10
 #| fig-width: 10
 
@@ -239,9 +243,9 @@ alluvial_dat <-
 	select(spec_type, occurrence) |>
 	mutate(maude = "MAUDE\nReports") |>
 	mutate(major_type = case_when(
-		spec_type %in% c("undersensing", "oversensing", "explant", "inappropriate_shock") ~ "Device/Programmer\nIssue",
-		spec_type %in% c("pericardial", "injury", "pneumothorax", "surgical", "discomfort", "bleeding", "infection") ~ "Implantation\nComplication",
-		spec_type %in% c("lead", "dislodgement") ~ "Lead\nProblem"
+		spec_type %in% c("undersensing", "oversensing", "explant", "inappropriate_shock") ~ "Programming",
+		spec_type %in% c("pericardial", "injury", "pneumothorax", "surgical", "discomfort", "bleeding", "infection") ~ "Implantation",
+		spec_type %in% c("lead", "dislodgement") ~ "Leads"
 	)) |>
 	# Limit to the problems that are of interest
 	filter(!is.na(major_type)) |>
@@ -252,27 +256,25 @@ alluvial_dat <-
 	# Rename and relabel the events
 	mutate(spec_type = case_when(
 		spec_type == "bleeding" ~ "Bleeding",
-		spec_type == "discomfort" ~ "Patient discomfort",
-		spec_type == "dislodgement" ~ "Lead dislodgement",
+		spec_type == "discomfort" ~ "Discomfort",
+		spec_type == "dislodgement" ~ "Dislodgement",
 		spec_type == "explant" ~ "Explantation",
-		spec_type == "inappropriate_shock" ~ "Inappropriate shock",
-		spec_type == "infection" ~ "Superficial/deep infection",
-		spec_type == "injury" ~ "Unspecified injury",
-		spec_type == "lead" ~ "Lead fracture/insulation breach",
-		spec_type == "oversensing" ~ "Oversensing (P/T waves)",
-		spec_type == "pericardial" ~ "Pericardial damage",
-		spec_type == "pneumothorax" ~ "Pneumothorax/mediastinum",
-		spec_type == "surgical" ~ "Surgical revision",
-		spec_type == "undersensing" ~ "Undersensing (R waves)",
+		spec_type == "inappropriate_shock" ~ "Inappropriate\nshock",
+		spec_type == "infection" ~ "Infection",
+		spec_type == "injury" ~ "*",
+		spec_type == "lead" ~ "Lead fracture",
+		spec_type == "oversensing" ~ "Oversensing",
+		spec_type == "pericardial" ~ "Pericardial",
+		spec_type == "pneumothorax" ~ "Pneumothorax",
+		spec_type == "surgical" ~ "Surgery",
+		spec_type == "undersensing" ~ "Undersensing",
 	))
 	
 ggplot(alluvial_dat, aes(y = percent, axis1 = maude, axis2 = major_type, axis3 = spec_type)) +
 	geom_alluvium(aes(fill = major_type), width = 0.1) +
-	geom_stratum(width = 0.3) +
-	#geom_label(stat = "stratum", aes(label = after_stat(stratum))) +
-	geom_text(stat = "stratum", aes(label = after_stat(stratum)), 
-						nudge_x = 0.0, size = 4) + 
-	scale_x_discrete(limits = c("Overall Events", "Event Type", "Specific Event")) +
+	geom_stratum(width = 0.5) +
+	geom_text(stat = "stratum", aes(label = after_stat(stratum)), nudge_x = 0.0, size = 3.5) +
+	scale_x_discrete(limits = c("Overall Events", "Complication Type", "Specific Event")) +
 	scale_y_continuous(labels = scales::label_percent()) +
 	scale_fill_brewer(palette = "RdPu") +
 	guides(fill = "none") + 
@@ -280,10 +282,11 @@ ggplot(alluvial_dat, aes(y = percent, axis1 = maude, axis2 = major_type, axis3 =
 	labs(
 		title = "Distribution of events and event subtypes in the MAUDE database",
 		y = "Percent frequency of event type"
-	)
+	) 
 ```
 
 {{< pagebreak >}}
 
 ::: {#refs}
 :::
+
