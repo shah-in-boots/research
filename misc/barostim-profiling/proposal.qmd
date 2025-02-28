@@ -1,0 +1,65 @@
+---
+title: Autonomic Profiling to Identify Neuromodulation Therapy Candidates in Heart Failure with Reduced Ejection Fraction
+format: typst
+
+author:
+  - name: Anish S. Shah, MD, MS
+    orcid: 0000-0002-9729-1558
+    email: anish.shah@hsc.utah.edu
+    affiliations:
+      - ref: utah
+  - name: Richard Shelton, MD
+    email: richard.shelton@va.gov
+    affiliations:
+      - ref: gewva
+      
+affiliations:
+  - id: utah
+    name: University of Utah
+  - id: gewva
+    name: George E. Wahlen VA Medical Center
+    
+bibliography: citations.bib
+csl: aha.csl
+---
+
+# Background
+
+Baroreflex activation therapy (BAT) is approved for HFrEF patients ineligible for cardiac resynchronization therapy (CRT) who remain symptomatic despite guideline-directed medical therapy. 
+While clinical trials demonstrate symptomatic improvement in most patients, data regarding objective endpoints such as left ventricular ejection fraction (LVEF) remain inconsistent. 
+Current selection criteria for BAT (NYHA II-III, LVEF ≤35%, narrow QRS, NT-proBNP <1600 pg/mL) do not directly assess autonomic function – the primary therapeutic target of BAT [@Abraham2015; @Blanco2023].
+Given the heterogeneity of autonomic dysfunction in HFrEF, pre-procedural autonomic profiling may identify patients most likely to demonstrate objective improvement following BAT. 
+This study addresses the critical knowledge gap between autonomic phenotypes and functional cardiac recovery following neuromodulation.
+
+# Aims
+
+**Aim 1: Develop a comprehensive peri-procedural autonomic assessment protocol to predict objective improvement following BaroStim therapy.** 
+
+We will perform multi-modal autonomic assessment immediately pre-implantation including:
+
+- Parasympathetic function: Baroreflex sensitivity via Oxford technique (phenylephrine/nitroprusside challenge)
+- Sympathetic function: SKNA (skin sympathetic nerve activity) and where feasible, MSNA (muscle sympathetic nerve activity) or direct stellate ganglia recordings
+- Sympathovagal cross-talk: Plasma neuropeptide Y (NPY) levels
+- Standard measures: Heart rate variability parameters, plasma norepinephrine
+
+Objective outcomes (primary: LVEF improvement ≥5%; secondary: LV volume reduction) will be assessed via cardiac imaging at 3, 6, and 12 months post-implantation.
+
+**Aim 2: Identify specific autonomic parameters and threshold values predictive of objectively-defined super-responders to BaroStim therapy.**
+
+We will correlate baseline autonomic parameters with magnitude of LVEF improvement and ventricular remodeling to identify:
+
+- Which autonomic assessment modalities most reliably predict objective improvement
+- Threshold values within each modality that differentiate super-responders (defined as LVEF improvement ≥10% and/or LV end-systolic volume reduction ≥15%)
+- Cost-effectiveness of each assessment method for clinical implementation
+- Changes in NPY at final follow-up compared to baseline in relation to outcomes
+
+# Significance
+
+Our study will establish autonomic profiles for BAT in HFrEF, potentially allowing an increased uptake of a therapy that is personalized and individualized beyond that of guideline-based parameters.
+By identifying specific autonomic profiles associated with objective improvement, we can be start to tailor therapeutic options for individual patients, and potentially extend the indication to a broader population that may also have an impaired autonomic phenotype.
+This approach could significantly advance BAT from a primarily symptomatic therapy to a disease-modifying intervention in appropriately selected HFrEF patients, while providing critical insights into autonomic mechanisms of heart failure progression and reversal.
+
+{{< pagebreak >}}
+
+::: {#refs}
+:::
