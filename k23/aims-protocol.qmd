@@ -1,0 +1,8 @@
+---
+format: 
+  docx:
+    reference-doc: ../template.docx
+    
+csl: ../../bibliography/circulation.csl
+---
+

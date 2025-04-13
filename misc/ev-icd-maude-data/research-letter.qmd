@@ -197,17 +197,18 @@ There were `r glue("{nrow(subset(dat, death == 1))} ({round(nrow(subset(dat, dea
 There was also a single event where defibrillatory testing failed to cardiovert ventricular fibrillation, leading to the addition of a transvenous system.
 The relative frequency of these events are seen in @fig-events.
 
-Although we cannot compare directly the rate of adverse events seen in the *Pivotal* trial, we can identify the most frequent complications and novel issues that have not yet been reported.
+[The total number of implants during the study time period is not able to be disclosed by the EV ICD manufacturer.]{custom-style='red'}
+Although we cannot compare directly the rate of adverse events seen in the *Pivotal* trial, [or the limited post-market surveillance *Enlighten* registry [@Crozier2025], we can identify the ratio of the most frequent complications and novel issues that have not yet been reported.]{custom-style='red'}
 The frequency of events can be extrapolated to the suspected number of implants performed during the first year of this device's approval, which likely herald the rates to come with early-adopters.
 Sensing was the predominant issue, with the majority of reports noting noise, double-counting, and atrial oversensing, with 1 out of 5 of these events resulting in inappropriate shocks.
 Importantly, we found procedural complications such as pericardial damage or laceration, mediastinal damage, and pneumothoraces to be an infrequent but present fraction of event reports, including at least once case of cardiac tamponade requiring pericardiocentesis, while *Pivotal* reported no events of this type.
 As a reference, a nation-wide study by Kirkfeld et al. 2014 showed that over 1 year, had 562 complications out of 5918 implants [@Kirkfeldt2014].
 Out of all complications, they showed `r round((39 + 51)/562 * 100)`% were pneumothoraces, `r round((49 + 69)/562 * 100)`% were superficial and deep wound infections, `r round(38/562 * 100)`% were cardiac perforations, and `r round((10 + 7)/562 * 100)`% were lead dislodgements.
-The MAUDE data is limited to voluntary reporting and lacks the total implant denominator to understand incidence, and moreso reflects the early adoption experience and not reflect long-term performance with increased operator expertise.
+The MAUDE data is limited to voluntary reporting and lacks the total implant denominator to understand incidence, and reflects the early adoption experience and may not reflect long-term performance with increased operator expertise.
 
-Our findings highlight the importance of post-market surveillance and the number of events suggest the need to continue to closely monitor.
+Our findings highlight the importance of post-market surveillance and the number of events suggest the need to continue to closely monitor [not only the long-term follow-up of clinical trial implants, but novel implants not included in other post-market registries [@Crozier2025].]{custom-style='red'}
 As a new technology, we anticipate that complication rates will continue to improve with growing user experience and training.
-We believe this data should inform shared decision-making and discussion between physicians and patients as the EV ICD disseminates into broader clinical use.
+We believe this data should inform shared decision-making, [informed consent]{custom-style='red'}, and discussion between physicians and patients as the EV ICD disseminates into broader clinical use.
 
 {{< pagebreak >}}
 
@@ -215,7 +216,7 @@ We believe this data should inform shared decision-making and discussion between
 #| label: fig-events
 #| echo: false
 #| warning: false
-#| fig-cap: "Breakdown of Procedural Complications Reported from the MAUDE Database. The figure breaks down the frequency and summary of key complication reports seen in the MAUDE database for the EV-ICD generator and lead. From left to right, we show the distribution and frequency of events by major categories to specific events. The specific events are displayed alphabetically. Infections include both superficial and potential deep infections. Oversensing events were predominantly P waves followed by T waves. Undersensing of R waves often led to repositioning. Lead fractures including insulation breaches. Dislodgement were described intraprocedurally, and required repositioning. Pericardial events including lacerations, new effusions, and tamponade. Pneumothoraces also included pneumomediastinum. * = Unspecified injuries reported in the MAUDE database."
+#| fig-cap: "Breakdown of Procedural Complications Reported from the MAUDE Database. The figure breaks down the frequency and summary of key complication reports seen in the MAUDE database for the EV-ICD generator and lead. From left to right, we show the distribution and frequency of events by major categories to specific events. [The specific events are displayed in order of descending frequency.]{custom-style='red'} Infections include both superficial and potential deep infections. Oversensing events were predominantly P waves followed by T waves. Undersensing of R waves often led to repositioning. Lead fractures including insulation breaches. Dislodgement were described intraprocedurally, and required repositioning. Pericardial events including lacerations, new effusions, and tamponade. Pneumothoraces also included pneumomediastinum. * = Unspecified injuries reported in the MAUDE database."
 #| fig-height: 10
 #| fig-width: 10
 
@@ -268,7 +269,19 @@ alluvial_dat <-
 		spec_type == "pneumothorax" ~ "Pneumothorax",
 		spec_type == "surgical" ~ "Surgery",
 		spec_type == "undersensing" ~ "Undersensing",
-	))
+	)) |> 
+	ungroup() 
+
+# Get the ordering right by creating a list of spec_types ordered by major_type
+spec_type_order <- 
+	alluvial_dat |>
+  select(major_type, spec_type, percent) |>
+  arrange(desc(percent), major_type, spec_type) |>
+  pull(spec_type)
+
+alluvial_dat <- 
+	alluvial_dat |>
+  mutate(spec_type = factor(spec_type, levels = spec_type_order))
 	
 ggplot(alluvial_dat, aes(y = percent, axis1 = maude, axis2 = major_type, axis3 = spec_type)) +
 	geom_alluvium(aes(fill = major_type), width = 0.1) +
@@ -286,6 +299,8 @@ ggplot(alluvial_dat, aes(y = percent, axis1 = maude, axis2 = major_type, axis3 =
 ```
 
 {{< pagebreak >}}
+
+# References
 
 ::: {#refs}
 :::

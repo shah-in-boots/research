@@ -1,0 +1,83 @@
+---
+title: Response to Editor and Reviewer Comments
+format: 
+  docx:
+    reference-doc: ../../../bibliography/reviewer-response-template.docx
+    
+bibliography: citations.bib
+csl: aha.csl
+---
+
+Dear Dr. Russo and colleagues, 
+
+We are thankful and appreciative of the opportunity to receive feedback for our research letter, entitled "Real-World Safety Profile of the EV ICD System: Insights from the MAUDE Database". 
+We have addressed the individual comments from the reviewers and editors below. 
+We appreciate the opportunity to submit a revised form of our manuscript.
+You will find the original comments in bold, followed by our [response and extracts from the manuscript in red]{custom-style='red'}.
+
+
+# Editors
+
+1. **If available, the editors ask that you include a possible estimate of total implants (in US), for greater perspective.**
+
+	[**Response**]{.underline}: We agree that the total number of implants in the US would allow for us to directly compare and gain perspective and the event rates, particularly of the novel types of complicatin events. We contacted the senior staff at the associated device company, *Medtronic*, but they noted they were unfortunately unable to disclose the number of implants over that time period. 
+	
+	[Paragraph 4]{.underline}:
+	[The total number of implants during the study time period is not able to be disclosed by the EV ICD manufacturer.]{custom-style='red'}
+
+# Reviewer #1
+
+**This is a research letter examining the Maude database for events related to EV-ICD. The Maude database has significant limitations including lack of denominator, it relies on mostly voluntary reporting from physicians and ?  obligatory reporting from Industry, and last but least the data is limited on the complications and its management.  However, since the EV-ICD is a new technology it is worth it to get the info out specially as the device becomes more main stream.**
+
+[**Response**]{.underline}: We agree that the MAUDE dataset is particularly limited by the lack of denominator, and appreciate the recognition on the importance of this finding despite the limitations.
+
+1. **Figure 1, why are we mentioning the complications in alphabetical order? why not group complications type together?**
+
+	[***Response***]{.underline}: 
+	We have revised the figure to be more informative. We have, instead of by group of complication type, which is readily available through the stratifying complication type and corresponding color, have sorted the events by frequency.
+
+	[Figure 1]{.underline}:
+	Figure 1. Breakdown of Procedural Complications Reported from the MAUDE Database. The figure breaks down the frequency and summary of key complication reports seen in the MAUDE database for the EV-ICD generator and lead. From left to right, we show the distribution and frequency of events by major categories to specific events. [The specific events are displayed in order of descending frequency.]{custom-style='red'} Infections include both superficial and potential deep infections. Oversensing events were predominantly P waves followed by T waves. Undersensing of R waves often led to repositioning. Lead fractures including insulation breaches. Dislodgement were described intraprocedurally, and required repositioning. Pericardial events including lacerations, new effusions, and tamponade. Pneumothoraces also included pneumomediastinum. * = Unspecified injuries reported in the MAUDE database."
+
+# Reviewer #2
+
+**Data from the MAUDE database indicate serious problems with the EV ICD in clinical practice as you indicate. While I do not necessarily question the data from the clinical trials, your submission raises serious concerns about the necessity of and the value of this new technology. Indeed, transvenous leads have their own problems associated with them. Those risks appear less than what we see here. New technology, for technology's sake without an obvious need raises concerns as does the initial clinical trials results. I have no major issues or concerns about your presentation except for some minor grammatical ones that I will leave up to you to address as you wish.**
+
+[**Response**]{.underline}: We appreciate your thoughtful review and comments. We approached this new technology not with the intent of questioning the utility of the EV-ICD system, but the difficulties and challenges when shifting from clinical trials to real-world implementation. We found this pattern similar to the roll-out of the MICRA leadless pacing system, where we learned that septal deployment had decreased perforation rates compared to the original apical deployment. 
+
+1. **You may be correct that, over time, and with experience, the complication rates will drop. Perhaps. We have yet to see data to support that possibility.  Why do you think the controlled clinical trials did not show these problems?  How did careful screening help? "Experienced" operators never had experienced before with these devices.  Correct? Are you suggesting that in "real-life" scenarios, instead, inexperienced operators in an uncontrolled setting move forward without careful patient screening and selection? I doubt that. However, the way you write this raises that question.**
+
+	[**Response**]{.underline}: The phrasing of our words did not carry our intentions. We believe that there is an inherent bias to how an industry-sponsored study enrolls both operators, trial sites, and participants. Once the *Hawthorne effect* is removed, we imagine that regardless of how operators are trained, some selection bias may arise, as well as more relaxed selection criteria e.g. there are studies already examining the use of EV-ICD in post-sternotomy patients [@Chen2023].
+
+1. **Furthermore, the FDA manufacturer and user facility device experience database may not necessarily represent all of the event reports. Are there any real data on the totality of implants to date and complications in that group? Based on this information, one might hypothesize that it would be best to take a step back and halt the implantation of these devices until the reason for these adverse effects is better understood.**
+
+	[**Response**]{.underline}: The total number of implants over the study time period is unknown. On reviewing with the device company directly, they were not able to disclose their implant numbers - a policy similar to other implantable cardiac device companies. Similarly, the MAUDE reports are limited by their voluntary status, and there is a real possibility that a number of events were not disclosed. 
+	
+	[Paragraph 4]{.underline}:
+	[The total number of implants during the study time period is not able to be disclosed by the EV ICD manufacturer.]{custom-style='red'}
+
+1. **In your last paragraph you say that there is a need to "closely monitor". What does that mean?**
+
+	[**Response**]{.underline}: We believe that post-market registries are critical for evaluating new technologies, but that *all devices* should be included in this type of registry to understand the global risk. For example, a recently published post-market study, by @Crozier2025, have registered only 227 new implants. In contrast, by *unofficial estimates*, the number of implants have reached over 1000. 
+	
+	[Paragraph 4]{.underline}: 
+	Although we cannot compare directly the rate of adverse events seen in the *Pivotal* trial, [or the limited post-market surveillance *Enlighten* registry [@Crozier2025], we can identify the ratio of the most frequent complications and novel issues that have not yet been reported.]{custom-style='red'}
+	
+	[Paragraph 5]{.underline}:
+	Our findings highlight the importance of post-market surveillance and the number of events suggest the need to continue to closely monitor [not only the long-term follow-up of clinical trial implants, but novel implants not included in other post-market registries [@Crozier2025].]{custom-style='red'}
+
+1. **When should there be a halt to the use of this device based on complication rates? Is the FDA aware of this high rate of complications and they are okay with proceeding with continued implantation?**
+
+	[**Response**]{.underline}: We cannot necessarily comment on the rates of complications, but more so the ratio of complications. We make the assumption that implanting physicians are being trained effectively, and that the FDA is aware of the total number of implants and can make the appropriate decision on whether or not this new technology should be maintained.
+
+1. **Does there require a change in informed consent documents or documentation in the medical record before implanting one of these devices?**
+
+	[**Response**]{.underline}: We believe that the discussing the risks that developed *de novo* subsequent to the clinical trial, such as pericardial lacerations, pneumothoraces, and mediastinal damage, are important to highlight in the process of providing informed consent. Otherwise, the standard post-operative management process for devices seems to be effective at identifying these issues and are similar to that of transvenous systems, both in type and frequency.
+	
+	[Paragraph 5]{.underline}:
+	We believe this data should inform shared decision-making, [informed consent]{custom-style='red'}, and discussion between physicians and patients as the EV ICD disseminates into broader clinical use.
+
+# References
+
+::: {#refs}
+:::
