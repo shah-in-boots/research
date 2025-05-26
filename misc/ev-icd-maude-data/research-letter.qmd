@@ -1,5 +1,5 @@
 ---
-title: Real-World Safety Profile of the EV ICD System
+title: Real-World Safety Profile of the Extravascular (EV) Implantable Defibrillator System
 subtitle: Insights from the MAUDE Database
 author:
   - name: Anish S. Shah, MD, MS
@@ -29,7 +29,6 @@ author:
     email: jared.bunch@hsc.utah.edu
     affiliations:
       - ref: utah
-    corresponding: true
 affiliations:
   - id: utah
     name: Department of Medicine, Division of Cardiology, University of Utah, Salt Lake City, UT
@@ -49,6 +48,26 @@ notes-after-punctuation: true
 link-bibliography: true
 link-citations: true
 ---
+
+**Address for correspondence**: 	
+
+T. Jared Bunch, M.D.  
+University of Utah School of Medicine  
+Division of Cardiology, Department of Internal Medicine  
+50 N Medical Drive  
+Salt Lake City, Utah 84132  
+Phone: 801-585-7676  
+
+**Word Count**:  
+
+800 words (excluded references and the figure legend text)
+
+**Keywords**:  
+
+- Implantable cardioverter-defibrillators
+- Complications
+- Device malfunction
+- Lead displacement
 
 {{< pagebreak >}}
 
@@ -176,14 +195,27 @@ tmp <-
 	unlist()
 ```
 
+# Nonstandard Abbreviations and Acronyms
+
+| Abbreviation | Definition |
+|--------------|------------|
+| EV ICD       | Extravascular Implantable Cardioverter-Defibrillator |
+| FDA         | Food and Drug Administration |
+| MAUDE        | Manufacturer and User Facility Device Experience |
+
+{{< pagebreak >}}
+
+# Manuscript
+
 The first substernal and extracardiac defibrillation system, the extravascular implantable cardioverter-defibrillator (**EV ICD**), provides a novel technology that both allows effective defibrillation at similar energy to intracardiac devices and allows anti-tachycardic pacing, all without the risks inherent to transvenous systems.
-The recently published long-term outcomes of the Extravascular Implantable Cardioverter-Defibrillator (EV ICD) Pivotal Study shows promising results, with follow-up data up to 3 years. 
-Friedman et al. 2024 found that the EV ICD system provided 100% termination of discrete spontaneous ventricular arrhythmias, with no major intraprocedural or ICD complications from implant to final follow-up, with an overall freedom of related complications of 89% at 3 years [@Friedman2024].
+The recently published long-term outcomes of the Extravascular Implantable Cardioverter-Defibrillator (EV ICD) Pivotal Study shows promising results.
+Friedman et al.[@Friedman2024] found that the EV ICD system provided 100% termination of discrete spontaneous ventricular arrhythmias, with no major intraprocedural or ICD complications from implant to final follow-up, and an overall freedom of related complications of 89% at 3 years.
 
 Clinical trials however often represent best-case scenarios, with both experienced operators in a controlled setting with careful patient screening and selection [@Maclean2024]. 
-We analyzed post-market surveillance data from the U.S. Food & Drug Administration (**FDA**) Manufacturer and User Facility Device Experience (**MAUDE**) Database, which provides voluntary reporting for medical devices from health care professionals and mandatory reporting from manufacturers. 
+We analyzed the post-market surveillance data from the U.S. Food & Drug Administration (**FDA**) publically-available Manufacturer and User Facility Device Experience (**MAUDE**) Database, which provides de-identified voluntary reporting for medical devices from health care professionals and mandatory reporting from manufacturers. 
+Given these characteristics, this study did not rise to the level of “human subjects research” per Federal Common Rule (45 CFR Part 46) and per University of Utah policies did not require Institutional Review Board review.
 We searched for reports from the October 23, 2023, the date of FDA approval of the *Aurora EV ICD* system, to December 31, 2024, that were related to either the device itself or the *Epsila* lead. 
-We manually adjudicated each report and categorized events into device-specific complications, including mortality, inappropriate therapies, sensing issues, procedural complications, and infections. 
+We manually adjudicated each report and categorized events into device-specific complications, including mortality, inappropriate therapies, sensing issues, procedural complications, and infections.
 
 The MAUDE data contains `r nrow(dat)` independent event reports from `r glue('{format(min(dat$event_date), "%B %d, %Y")} to {format(max(dat$event_date), "%B %d, %Y")}')`.
 Of the event reports, `r glue("{nrow(subset(dat, study == 1))} ({round(nrow(subset(dat, study == 1))/nrow(dat) * 100)}%)")` were indicated to have been part of a clinical study.
@@ -194,21 +226,21 @@ The lead became dislodged or migrated during follow-up for `r glue("{nrow(subset
 The listed reasons led to `r glue("{nrow(subset(dat, explant == 1))} ({round(nrow(subset(dat, explant == 1))/nrow(dat) * 100)}%)")` device explantations. 
 During initial implant, pericardial damage or laceration occurred `r glue("{nrow(subset(dat, pericardial == 1))} ({round(nrow(subset(dat, pericardial == 1))/nrow(dat) * 100)}%)")` times, along with pneumothorax and pneumomediastinum `r glue("{nrow(subset(dat, pneumothorax == 1))} ({round(nrow(subset(dat, pneumothorax == 1))/nrow(dat) * 100)}%)")`.
 There were `r glue("{nrow(subset(dat, death == 1))} ({round(nrow(subset(dat, death == 1))/nrow(dat) * 100)}%)")` mortality events, none of which were due to failure of cardioverter/defibrillator therapy.
-There was also a single event where defibrillatory testing failed to cardiovert ventricular fibrillation, leading to the addition of a transvenous system.
+In one report, defibrillatory testing failed to cardiovert ventricular fibrillation, leading to the addition of a transvenous system.
 The relative frequency of these events are seen in @fig-events.
 
-[The total number of implants during the study time period is not able to be disclosed by the EV ICD manufacturer.]{custom-style='red'}
-Although we cannot compare directly the rate of adverse events seen in the *Pivotal* trial, [or the limited post-market surveillance *Enlighten* registry [@Crozier2025], we can identify the ratio of the most frequent complications and novel issues that have not yet been reported.]{custom-style='red'}
+The total number of implants during the study time period is not able to be disclosed by the EV ICD manufacturer.
+Although we cannot compare directly the rate of adverse events seen in the *Pivotal* trial, or the limited post-market surveillance *Enlighten* registry [@Crozier2025], we can identify the ratio of the most frequent complications and novel issues that have not yet been reported.
 The frequency of events can be extrapolated to the suspected number of implants performed during the first year of this device's approval, which likely herald the rates to come with early-adopters.
 Sensing was the predominant issue, with the majority of reports noting noise, double-counting, and atrial oversensing, with 1 out of 5 of these events resulting in inappropriate shocks.
 Importantly, we found procedural complications such as pericardial damage or laceration, mediastinal damage, and pneumothoraces to be an infrequent but present fraction of event reports, including at least once case of cardiac tamponade requiring pericardiocentesis, while *Pivotal* reported no events of this type.
 As a reference, a nation-wide study by Kirkfeld et al. 2014 showed that over 1 year, had 562 complications out of 5918 implants [@Kirkfeldt2014].
 Out of all complications, they showed `r round((39 + 51)/562 * 100)`% were pneumothoraces, `r round((49 + 69)/562 * 100)`% were superficial and deep wound infections, `r round(38/562 * 100)`% were cardiac perforations, and `r round((10 + 7)/562 * 100)`% were lead dislodgements.
-The MAUDE data is limited to voluntary reporting and lacks the total implant denominator to understand incidence, and reflects the early adoption experience and may not reflect long-term performance with increased operator expertise.
+The MAUDE data lacks the total implant denominator to understand incidence.
 
-Our findings highlight the importance of post-market surveillance and the number of events suggest the need to continue to closely monitor [not only the long-term follow-up of clinical trial implants, but novel implants not included in other post-market registries [@Crozier2025].]{custom-style='red'}
-As a new technology, we anticipate that complication rates will continue to improve with growing user experience and training.
-We believe this data should inform shared decision-making, [informed consent]{custom-style='red'}, and discussion between physicians and patients as the EV ICD disseminates into broader clinical use.
+Our findings highlight the importance of post-market surveillance and the number of events suggest the need to continue to closely monitor not only the long-term follow-up of clinical trial implants, but novel implants not included in other post-market registries [@Crozier2025].
+As with many newer technologies, we anticipate that complication rates will improve with growing user experience and training but, although some complications may persist at higher rates due to the complexity of this technology and its implantation.
+We believe this data should inform shared decision-making, informed consent, and discussion between physicians and patients as the EV ICD disseminates into broader clinical use.
 
 {{< pagebreak >}}
 
@@ -216,7 +248,7 @@ We believe this data should inform shared decision-making, [informed consent]{cu
 #| label: fig-events
 #| echo: false
 #| warning: false
-#| fig-cap: "Breakdown of Procedural Complications Reported from the MAUDE Database. The figure breaks down the frequency and summary of key complication reports seen in the MAUDE database for the EV-ICD generator and lead. From left to right, we show the distribution and frequency of events by major categories to specific events. [The specific events are displayed in order of descending frequency.]{custom-style='red'} Infections include both superficial and potential deep infections. Oversensing events were predominantly P waves followed by T waves. Undersensing of R waves often led to repositioning. Lead fractures including insulation breaches. Dislodgement were described intraprocedurally, and required repositioning. Pericardial events including lacerations, new effusions, and tamponade. Pneumothoraces also included pneumomediastinum. * = Unspecified injuries reported in the MAUDE database."
+#| fig-cap: "Breakdown of Procedural Complications Reported from the MAUDE Database. The figure breaks down the frequency and summary of key complication reports seen in the MAUDE database for the EV-ICD generator and lead. From left to right, we show the distribution and frequency of events by major categories to specific events. The specific events are displayed in order of descending frequency. Infections include both superficial and potential deep infections. Oversensing events were predominantly P waves followed by T waves. Undersensing of R waves often led to repositioning. Lead fractures including insulation breaches. Dislodgement were described intraprocedurally, and required repositioning. Pericardial events including lacerations, new effusions, and tamponade. Pneumothoraces also included pneumomediastinum. * = Unspecified injuries reported in the MAUDE database."
 #| fig-height: 10
 #| fig-width: 10
 
@@ -300,8 +332,29 @@ ggplot(alluvial_dat, aes(y = percent, axis1 = maude, axis2 = major_type, axis3 =
 
 {{< pagebreak >}}
 
+# Additional Information
+
+## Sources of Funding
+
+None
+
+## Disclosures
+
+Anish S. Shah: None  
+Marc Engels: None  
+Roger A. Freedman: Consultant for Abbott, Cook Medical, and Merit Medical.  
+Immo Lehmann: None  
+Klitos Konstantinidis: None  
+Ravi Ranjan, MD, PhD: Consultant to Abbott and is also supported by NIH R01 HL 162353.  
+T. Jared Bunch, MD:  None  
+
+## Short-Form Description (*Tweet*)
+
+Post-market surveillance for the EV ICD system, collected from the MAUDE database, shows a number of complications not previously seen.
+
+{{< pagebreak >}}
+
 # References
 
 ::: {#refs}
 :::
-
